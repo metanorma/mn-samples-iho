@@ -1,0 +1,34 @@
+= Guidance on Crowdsourced Bathymetry
+:series: B
+:docnumber: 12
+:version: 2.0.3
+:published-date: 2020-01-20
+:copyright-year: 2020
+:status: in-force
+:doctype: standard
+:imagesdir: images
+:docfile: document.adoc
+:mn-document-class: iho
+:mn-output-extensions: xml,html,doc,rxl
+:local-cache-only:
+:data-uri-image:
+
+include::sections/00-preface.adoc[]
+
+include::sections/00-introduction.adoc[]
+
+include::sections/01-data-contribution.adoc[]
+
+include::sections/02-data-collection.adoc[]
+
+include::sections/03-data-metadata.adoc[]
+
+include::sections/04-uncertainty.adoc[]
+
+include::sections/05-additional.adoc[]
+
+include::sections/91-abbrev.adoc[]
+
+include::sections/92-glossary.adoc[]
+
+include::sections/93-geojson.adoc[]

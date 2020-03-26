@@ -1,0 +1,82 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "properties": {
+    "convention": "CSB 2.0",
+    "platform": {
+      "uniqueID": "SEAID-e8c469f8-df38-11e5-b86d-9a79f06e9478",
+      "type": "Ship",
+      "name": "White Rose of Drachs",
+      "length": 65,
+      "lengthUnitOfMeasure": "meters",
+      "IDType": "IMO",
+      "IDNumber": "1008140",
+      "sensors": [
+        {
+          "type": "Sounder",
+          "make": "Sperry Marine (L3 ELAC)",
+          "model": "ES155100-02",
+          "transducer": ""
+        },
+        {
+          "type": "GNSS",
+          "make": "Litton Marine Systems",
+          "model": "LMX420"
+        }
+      ],
+      "correctors": {
+        "sounderDraft": 4.6,
+        "sounderDraftUnitOfMeasure": "meters",
+        "sounderDraftApplied": false,
+
+        "longitudinalOffsetFromGNSStoSounder": 3.52,
+        "longitudinalOffsetUnitOfMeasure": "meters",
+        "lateralOffsetFromGNSSStoSounder": -0.76,
+         "lateralOffsetUnitOfMeasure": "meters",
+         "positionOffsetsApplied": false,
+
+         "soundSpeed": 1500,
+         "soundSpeedUnitOfMeasure": "m/s"
+       }
+     },
+
+    "providerContactPoint": {
+      "orgName": "Sea-ID",
+      "email": "support@sea-id.org",
+      "logger": "MarkIII",
+      "loggerVersion": "1.0"
+    },
+    "depthUnits": "meters",
+    "timeUnits": "ISO 8601"
+  },
+
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [41.914832, 18.005296]
+      },
+      "properties": {
+        "depth": 15.8,
+        "time": "2016-03-03T18:41:49Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [40.914789, 19.005552]
+      },
+      "properties": {
+        "depth": 15.2,
+        "time": "2016-03-03T18:41:50Z"
+      }
+    }
+  ]
+}

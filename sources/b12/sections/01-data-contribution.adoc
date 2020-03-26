@@ -1,0 +1,73 @@
+
+[[data-contribution]]
+== Data Contribution
+
+This chapter details the process for contributing crowdsourced bathymetry (CSB) data to the IHO Data
+Centre for Digital Bathymetry (DCDB), via Trusted Nodes, and specifies required data formats. CSB data
+collectors and Trusted Nodes are strongly encouraged to provide their data to the DCDB to help fill gaps
+in global bathymetric coverage.
+These data will in turn be made freely and publicly available through the DCDB CSB web portal.
+
+Hydrographic and bathymetric data collected by the National Antarctic Programmes’ ships and others linked with their activity in the Antarctic, should be forwarded by the National Antarctic Programmes, or by other means, to the national hydrographic services using the IHO Collection and Rendering of Hydrographic Data Form available via the IHO website
+footnote:[https://www.iho.int/mtg_docs/rhc/HCA/HCA_Misc/HCA_HPWG/HCA_Hydrography_Priorities_WG.htm].
+This process and form, which are safety-of-
+navigation and charting oriented, do not prevent ships of opportunity from applying guidelines given in B-12, which are multi-purpose oriented as far as bathymetric data are concerned.
+
+=== IHO Data Centre for Digital Bathymetry
+
+The DCDB was established by the IHO in 1988 to steward the worldwide collection of open bathymetric
+data. The Centre archives and shares depth data contributed by mariners and others from across the
+world. The DCDB is hosted by the US National Oceanic and Atmospheric Administration’s (NOAA) National Centers for Environmental Information (NCEI) in Boulder, Colorado. All data hosted by the DCDB is
+accessible online via interactive web map services.
+
+=== The Trusted Node Model
+
+The DCDB currently accepts crowdsourced bathymetry (CSB) contributions through a network of Trusted Nodes, which are organizations or individuals that serve as data liaisons between mariners (data collectors) and the DCDB (<<figure-01>>). Trusted Nodes may assist the mariner by supplying data logging equipment, providing technical support to vessels, downloading data from data loggers, and providing the information to the DCDB. The DCDB works with each Trusted Node to standardize metadata and data formats and define data delivery requirements. This model normalises data contributions and minimizes the requirements and effort for mariners.
+
+At present, individual data contributors are encouraged to join an existing Trusted Node. In the future, the DCDB may expand its capability to support individual contributors or other models of contribution.
+
+[[figure-01]]
+.Data flow from vessels, through Trusted Nodes, to the DCDB.
+image::image-01.jpg[]
+
+Parties interested in becoming a Trusted Node should contact the DCDB at mb.info@noaa.gov.
+
+
+==== Transmission Protocol
+
+Trusted Nodes have the option of making CSB available for collection by the DCDB using a standard network protocol such as FTP, or via an HTTP post. There are no DCDB requirements for frequency or size of data submissions.
+
+==== Authentication Method
+
+The DCDB needs to ensure the integrity of incoming data streams, so a unique key is assigned to each Trusted Node to authenticate the provider. The unique key is submitted with the HTTP post and identifies the validity of the data stream in the post. If the unique key is not submitted, or is unknown, the data submission is rejected, and an HTTP 401 error code is returned to the provider. The unique key is only used for the submission process and is not tied to the data files, which can provide a degree of anonymity to the data provider, if desired.
+
+==== Data and Metadata Formats
+
+All data contributions should conform to the data format and metadata standards described in the Data and Metadata chapter of this document, unless separately and specifically agreed otherwise by the Director, IHO DCDB.
+
+=== Overview of CSB Data Flow
+
+CSB data, identified as belonging to the high seas (according to UNCLOS as “the area”), will be ingested into the DCDB database without restrictions on its further reuse. <<figure-2>> is designed to show future filter processes, including a geographical location checking process and any subsequent masking actions, which will be applied to any incoming CSB data, collected within waters of national jurisdiction, before ingestion into the DCDB database. The flow diagram is of generic nature. The filtered flow of CSB data will be based on the information received by the IHO Secretariat from individual coastal states on request. Further details of which coastal states support CSB activities within their waters of national jurisdiction, along with any caveats they have articulated, will available from the IHO website. CSB data, collected within waters of national jurisdiction of coastal states who did not notify their respective CSB support towards the IHO Secretariat, will not be ingested. This data will be stored and only made available at such time as authorization is received by the IHO from the respective coastal state.
+
+[[figure-02]]
+.A schematic of a filtered flow of CSB data based on the response provided by a coastal state to a future IHO CSB questionnaire.
+image::image-02.jpg[]
+
+==== Submitting CSB data to the DCDB
+
+CSB data submitted to the IHO DCDB are automatically verified upon receipt. The verification confirms that the data are from a trusted source, and that the submission contains valid file types. The files are then logged in a tracking system at the DCDB. Ingest scripts convert data to GeoJSON if necessary, store the files for user access and archiving, and populate a metadata catalogue. An Extract, Transform, and Load (ETL) process then creates file geometries and populates a spatial database with the geometries and a subset of the metadata. <<figure-3>> illustrates the flow of CSB data from the mariner, to the Trusted Node, the IHO DCDB, and finally, to the public.
+
+[[figure-03]]
+.A schematic of the flow of CSB data from the Trusted Node, to the IHO DCDB, and to the public.
+image::image-03.jpg[]
+
+==== Accessing CSB data
+
+The spatial database feeds a map viewer at https://maps.ngdc.noaa.gov/viewers/csb/index.html that enables data discovery (<<figure-4>>). The map viewer is an online tool where users can search for, identify, and obtain CSB data. To help users search for specific data that they are looking for, the map viewer contains filters that correspond to a specified time range or vessel (unless the vessel chooses to remain anonymous). Users can also identify data files geographically, using the Identify tool, which allows users to click on a single point, draw a rectangle or polygon, or input geographic bounds.
+
+Once a selection has been made, a pop-up window shows the corresponding files. Clicking on a file name yields additional information about the file. By selecting “Extract Data,” a data request is made, and the user is taken to the Data Access page, where they can edit or finalize their order. The application then sends this data request, along with the requestor’s email, to the data delivery system, which verifies that the request is well-formed and then queues the work in the processing system. When data retrieval and preparation are complete, the user is notified via email, and is provided with a URL where they can retrieve the data package.
+
+[[figure-04]]
+.The IHO CSB Data Viewer, which enables discovery of, and access to, crowdsourced bathymetry.
+image::image-04.jpg[]
+

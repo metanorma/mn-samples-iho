@@ -1,0 +1,229 @@
+
+== Uncertainty
+
+=== Introduction to Uncertainty
+
+There are many variables that could cause echo-sounder measurements to differ from the true depth of the seafloor. For example, an echo-sounder measures the time it takes for an acoustic pulse to reflect off the seafloor and return to the transducer. That measurement is then converted into a depth measurement, based on an assumption about the speed of sound in water (v) (<<figure-07>>). If the sound speed estimate is incorrect, then the depth (D) will also be incorrect. Similarly, if the sound wave reflects off fish in the water column (<<figure-06>>), or if the echo-sounder captures acoustic noise from other boats in the area, errors (often distinguished as “blunders”) could be introduced into the data.
+
+[[figure-07]]
+.Example of estimating depth with a simple echo-sounder (left), and illustration (right) of the potential for blunders (e.g., the echo-sounder detecting the depth of a school of fish, rather than the seafloor).
+image::image-07.jpg[]
+
+These errors, and others, could lead to uncertainty in the accuracy of a depth measurement, which should be considered when the data is processed, stored, and used. This chapter presents features of uncertainty that may be of interest to data collectors, trusted nodes, and end users of the crowdsourced bathymetry database.
+
+The topic of uncertainty can become quite involved. This document provides an overview of the topic, but IHO Special Publication S-44 (Standards for Hydrographic Surveys, 5ed, 2008), IHO Publication C-13 (Manual on Hydrography, 2010), and the ISO Guide to Uncertainty in Measurements (ISO, 1995) contain additional background material, and may be consulted for further details.
+
+
+
+=== Meaning, Sources, and Consequences of Uncertainty
+
+==== The Meaning of Uncertainty
+
+In a scientific context, “error” is the difference between the measured and the true value of the thing being measured. Unfortunately, it is usually impossible to directly, physically verify the true value, and therefore the actual error is unknown, and unknowable. Instead, we can estimate the likely amount of error in the measurement, which is called the “uncertainty”, and report it with the measurement. A quantified uncertainty is essential in understanding and qualifying a measurement for use. For example, an estimate of the uncertainty of a depth measurement allows data users to determine the data’s suitability for a given purpose, and to apply appropriate processing techniques.
+
+==== Categorisation of Uncertainty
+
+Many different measurements are combined to create a depth estimate. As a result, there are many potential sources for error and therefore uncertainty. It is helpful to categorise the different types of uncertainties that could affect these measurements, and then estimate their individual magnitudes, before combining them into a general estimate of uncertainty. This is typically done in the form of an uncertainty budget (see Section 4.3.2 for a comprehensive example).
+
+For each source of uncertainty, the most common method for categorising the uncertainty type is to estimate the precision (or variance) and accuracy (or bias) of observations. All observations have the potential for both types of uncertainty, although any given observation might be dominated more by one or the other type (which can make estimation simpler). Ideally, estimates of precision and accuracy would be tracked separately for each observation, until all sources of uncertainty are combined.
+
+Figures 8 and 9 show illustrative examples of precision and accuracy. By preference, all depth observations would be both accurate and precise, but random variations in measurements can result in an observation that is accurate, but not precise. Well-calibrated depth estimates often fall into this category (Figures 8-10).
+
+Alternately, depth measurements may be precise, but not accurate, if there is an offset that could be corrected but for some reason is not. For example, if the speed of sound is assumed to be some fixed value, and is not actually measured, depth measurements will be offset from the true depth (i.e., of poor accuracy), even though consecutive measurements appear similar (i.e., of high precision). A correction could be applied to improve the data, but this might not be practical or time-efficient. It might therefore be more pragmatic just to estimate the level of bias and consider it an uncertainty.
+
+Ultimately, it may be difficult to conduct a full analysis of the uncertainty for each observation. So long as what was done is documented, however, any information provided is still valuable.
+
+[[figure-08]]
+.Effects of accuracy and precision (bias and variance) of measurements on the ability of a system to measure.
+image::image-08.jpg[]
+
+[[figure-09]]
+.Example of depth measurements, from the four quadrants of <<figure-08>>.
+image::image-09.jpg[]
+
+[[figure-10]]
+.Effects of accurate, but not precise uncertainty on a depth sounding. Here, on average the depth measured (red line) is correct but point to point it varies from the true depth (yellow line).
+image::image-10.jpg[]
+
+
+
+==== Estimation and Expression of Uncertainty
+
+Different types of uncertainty can be estimated separately, and then combined into an overall value. This works well when there is sufficient metadata available to help with the calculation, which is why it is so important for crowdsourced bathymetry data collectors to provide as much information as possible about a dataset. Unfortunately, this information is not always available, or provided.
+
+Uncertainty can be expressed as a range of values, within which the true value of the measurement is expected to lie. For example, a depth could be specified as being “between 12.3 and 14.2 metres, 95% of the time.” Where the range is known, or assumed to be symmetric, the mean value and spread might be given, so that the depth might be specified as “13.25 ± 0.95 metres, 95% of the time.” Whichever method is used, it is important to clearly state what method has been used (i.e., specify explicitly which confidence limits, or other measures, are being used).
+
+Where available, the simplest method for assessing uncertainty is to collect redundant measurements and compute an empirical estimate of the standard deviation (or other range) by considering the
+variability in the measurements, which are assumed or known to be of the same thing (e.g., the depth). In practice, this is often done by considering lines of soundings that cross each other, or visit the same area, although this only measures the precision of the observations, and not necessarily the accuracy.
+
+Although statistical descriptions of uncertainty are preferred, there might not always be sufficient information to provide a complete description of uncertainty. Under these circumstances, data might be described as “Poor”, “Medium,” or “Good” quality, or rated as an index (e.g., in the range [1,5] with a one end of the scale defined as “best”) based on a subjective assessment of how the data was collected, or by comparing the data with other datasets. The Category Zone of Confidence (CATZOC) characteristic of the S-57 Electronic Navigational Chart (ENC) specification is an example of this type of subjective assessment.
+
+==== Uncertainty for Trusted Nodes and Data Users
+
+There are additional uncertainty components that Trusted Nodes and data users should understand when dealing with crowdsourced bathymetry. These uncertainty concerns are mostly about validation and processing of the data, and therefore can only truly be assessed at the Trusted Node, or from the DCDB as a whole. It is expected that data collectors are unlikely to be able to assess these types of uncertainty, although they may find the information of interest.
+
+===== Effects of Sensor Integration on Data Capture
+
+Integration uncertainty becomes an issue when an instrument is installed incorrectly, or when the installation is poorly documented. For example, if the offset between the echo-sounder transducer and the waterline (<<figure-11>>), or between the GNSS receiver and the transducer (<<figure-12>>), are not measured, or are measured incorrectly, an additional uncertainty will affect the depth estimates. Where possible, therefore, Trusted Nodes should attempt to assess this uncertainty, and provide this estimate with the data to DCDB as metadata. In many cases, the limit of this assessment might be a binary flag to indicate whether such measurements exist or not, and if they have been applied already. Even this level of information in invaluable for end users to determine fitness for purpose.
+
+[[figure-11]]
+.Examples of the effects of not correcting for vertical offsets. Here, not correcting for the offset of the transducer from the waterline leads to a measurement (red line) that differs significantly from reality (yellow line). This gives a bias (systematic) uncertainty to the measurements.
+image::image-11.jpg[]
+
+[[figure-12]]
+.Effects of not correcting for horizontal offsets. Here, not measuring the horizontal offset between the GNSS receiver position and the echo-sounder results in along-track offsets of seafloor features. Red line: measured; yellow line: reality.
+image::image-12.jpg[]
+
+===== Modelling Uncertainty
+
+The seafloor is complex, and most of the seafloor is unsurveyed, but it is often modelled as a continuous mathematical surface with interpolated depths where no observations exist. The assumptions involved in constructing such a model will obviously affect the uncertainty of the resulting depths. This is the most difficult of the uncertainties to estimate, and is often ignored.
+
+Many datasets do not contain sufficient data to allow a model to be built that completely describes the seafloor being reported, or for users to determine the resulting quality. For example, if a model was constructed from depth measurements that are more than 50m apart, it is impossible to assess the shape, location, or presence of objects smaller than 100m. It is possible (although not recommended) to interpolate any data, no matter how sparse, to an arbitrary resolution, such as a 1m grid. However, most
+of the information in this grid would be an artefact of the interpolation scheme, and would not reliably represent the real world.
+
+If data users do not understand these issues, models may appear to be accurate when they are actually heavily, or even mostly, interpolated. Gridded data can be very visually persuasive, which can result in the erroneous belief that the data are better than they are. Those who construct models like this should carefully document the procedures used in order to inform the potential end user. The metadata is an appropriate venue for this.
+
+===== Consequences of Uncertainty
+
+Although the use of uncertainty models and budgets have been a part of modern hydrographic practice since the late 1990s, uncertainties are often computed as part of data processing, but then either forgotten or dropped when the data are presented or interpreted. This is a mistake.
+
+For example, if a depth is reported as 12.0 ± 0.3m (at a 95% confidence interval), it would be unwise to assume that a vessel has at least 12m clearance in this depth area; with the usual probabilistic assumptions of the distribution of the uncertainty this is true only half of the time (<<figure-13>> (a)), which is surely lower odds than any prudent mariner would allow for a navigation decision. A value of 11.74m would be a better choice (<<figure-13>> (b)), but if a mariner wanted a less than 1:1000 chance of the depth being shallower than the declared value, they should use a depth of 11.34m (<<figure-13>> (c)). Clearly, the “safe” depth depends on the user’s needs, and it would be incorrect, and unwise, to report simply the mean depth.
+
+[[figure-13]]
+.Examples of shoal-clearance depths for different probabilities of excession, based on the same basic uncertainty estimate of 12.0 ± 0.3m (95% CI). Assuming a 12.0m clearance is only true 50% of the time (left); a 5% probability of being shallower requires the depth to be reduced to 11.74m (middle); a 1:1000 chance of being shallower requires a clearance depth of 11.34m (right).
+image::image-13.jpg[]
+
+
+Like depths, uncertainties are only estimates: a best guess, based on what the provider assumes to be the behaviour of the data collection system. Hence, it is possible for an observation to have an uncertainty estimate that does not actually reflect the difference between the measurement and the true depth.
+
+Consider, for example, the data in <<figure-14>>. Here, the data from crowdsourced observations have been compared to high-resolution, authoritative data, which shows significant differences between the two in some areas. The mistake here is that vertical offsets (such as tidal corrections) have not been appropriately applied to the crowdsourced observations. This error would not be apparent to individual data contributors, who do not have access to the comparison data. One of the benefits of donating data to the DCDB through a Trusted Node is that these data aggregators can compare individual datasets to other sources and can identify errors or uncertainty in the data.
+
+[[figure-14]]
+.Difference between crowdsourced observations and a reference grid model (data courtesy of SHOM). Errors in the crowdsourced observations are clearly seen in plan view (left) and are reflected in the bimodal distribution of differences (right). The uncertainty associated with the crowdsourced observations might not reflect these differences if the observer’s metadata was incomplete.
+image::image-14.jpg[]
+
+
+Note that a 10% uncertainty in depth would be very important to known about, but a 10% uncertainty in the uncertainty (i.e., that it is in the range 9-11%) is probably not as important. Therefore, so long as the uncertainty estimate is plausible, and free from blunders as outlined above, the requirements for estimating the uncertainty are not as stringent. This idea can be used to rationalise the effort required to estimate uncertainties to a reasonable level.
+
+=== Uncertainty Guidance for User Groups
+
+==== Data Corrections and Depth Calibration
+
+Data users need to know if corrections, such as vessel draft or tidal offsets, should be applied to crowdsourced datasets before use. Metadata (Chapter 3) provides the key information that lets data users determine what corrections are needed: the more information that the users have at their disposal, the more corrections can be applied, and the more useful the data then becomes.
+
+Determining which corrections are necessary is only part of the story. Each correction influences the overall uncertainty of the depth measurements, so recording how corrections were determined and applied is also very important. If there was a degree of uncertainty in a correction applied to the data, then that should be indicated in the metadata.
+
+Areas of known depth, also known as calibration surfaces, are sometimes established by hydrographic agencies or harbour authorities on prominent markers such as channel buoys, fuel docks, or well- trafficked areas. Collecting data over these areas makes a dataset significantly more valuable; collecting many observations while stationary (or very slowly drifting) in such an area also allows the measurement
+uncertainty of the echosounder to be estimated in some cases. If the data collector also conducts a cross- check, by collecting depths perpendicular to a previous track, that information can be useful for identifying internal dataset inconsistencies.
+
+Environmental changes around a vessel can significantly impact depth measurements and may necessitate more frequent calibrations. In coastal areas where there is significant riverine freshwater discharge, for example, changes in the salinity of the water that affect the speed of sound can cause the echo-sounder to register incorrect depths. Details on how to do a full echo-sounder calibration can be found in IHO publication C-13, Manual of Hydrography.
+
+==== Uncertainty Budget
+
+Data collectors can summarise uncertainties associated with their depth observations in a table known as an uncertainty budget. Some components of the uncertainty vary with the depth being measured, others are fixed. An example of an uncertainty budget from a professional survey is shown in <<table-4>>. Volunteer data measurements will probably not be this precise, or provide all of this metadata, but the more information that is gathered and provided, the more valuable the depth measurements become.
+
+
+[[table-4]]
+.Sample uncertainty budget for a shallow-water echo-sounder and modern GNSS system.
+[cols="a,a,a,a",options="header"]
+|===
+|Sources of Uncertainty | Applied (Yes/No) | Example of assessed standard uncertainties (95%) values at 50m | Remarks
+
+| Static draft setting
+|
+| ±0.1 m
+| The static value for draft that was set in the echo- sounder.
+
+| Variation of draft
+|
+| ±0.05 m
+| Change of draft due to variation in loading condition. Average draft to be assessed from full loaded and ballast condition.
+
+| Sound speed
+|
+| ±0.2 m/s
+| Measurement is based on the equipment. It depends on temperature, salinity and depth.
+
+| Echo-sounder instrumental uncertainty
+|
+| ±0.1 m
+| Not to be confused with the resolution of the instrument, this varies with the type of equipment.
+
+| Motion sensor Roll/Pitch
+|
+| ±0.05 deg.
+| This measurement depends on the sensor.
+
+| Heading
+|
+| ±0.05 degrees
+| This measurement depends on the sensor.
+
+| Heave
+|
+| ±0.05 m
+| This measurement depends on the sensor.
+
+| Dynamic draft, settlement and squat
+|
+| ±0.1 m
+| Effects data primarily in shallow water. Settlement depends on speed of vessel and draft.
+
+| Tide measurement
+|
+| ±0.06 m
+| Tide is the variation in sea level and depends on the location at which the tidal measurement is calculated or observed. This location is not always the same place as the depth measurement. Tide measurement not applicable to depths more than 200m.
+
+| Sensor offset
+|
+| ±0.01 – 0.1 m
+| Offset needs to be measured as accurately as possible. Measure of uncertainty depends on how offset was measured.
+
+| Position
+|
+| ±2 – 10 m
+| Measurement depends on the equipment and whether any GNSS sensor offsets have been applied.
+
+| Time Synchronization
+|
+| <1 ms
+| Measurement depends on the equipment.
+
+
+|===
+
+
+
+Creating a complete uncertainty estimate can be time-consuming, but uncertainty variables can be prioritized, based on the vessel’s operating environment. For example, in shallow water, recording draft and water level is particularly important, as variations in these values greatly impact the depth measurement when it is reduced to a charting datum. In deeper water, sound speed information is more important than other factors. In most cases, vessel pitch and roll has a relatively small impact on uncertainty for the data considered here.
+
+==== Uncertainty for Trusted Nodes
+
+Trusted Nodes are in an ideal position to generate uncertainty estimates for data they transmit to the DCDB. They can cross-check between datasets, remove data biases, calculate the uncertainty associated with data collectors and depth measurements, and potentially correct for them. This can greatly increase the value of crowdsourced bathymetry sent to the DCDB, and is recommended for all Trusted Nodes.
+
+Trusted Nodes can apply corrections to the data that individual observers cannot. They can compare data with authoritative datasets or evaluate data for internal consistency. Trusted Nodes may also choose to collaborate with harbour authorities to establish areas of known depth where individual users can calibrate their echo-sounder measurements. Similarly, it may be difficult for many collectors to establish an uncertainty associated with water level offsets. A Trusted Node, however, might be able to establish, from data taken en masse, a plausible buffer to add to the uncertainty budget to represent those corrections.
+
+Analysis of multiple datasets within the same area could also be used to establish baseline uncertainties for data collectors, and to identify data quality issues. Trusted Nodes could then establish a calibration and uncertainty history for each data collector, which could be contributed to the DCDB as part of the metadata supplied with each dataset. A history of user behaviour could also be used to help identify changes in instrumentation.
+
+Trusted Nodes could cross-calibrate data, by using data collected by a vessel with well-established uncertainty and calibration values to determine the installation or measurement uncertainty of other data collectors in the same area. Metadata of this kind can help database users establish confidence in individual data collectors.
+
+Trusted Nodes will have a more direct relationship with data collectors than the DCDB or database users, and as a result they are well-placed to evaluate the metadata and resolve missing, corrupted, or ambiguous information. This can improve the uncertainty associated with each observation, and the end user’s confidence in the data.
+
+Trusted Nodes are also in an ideal position to encourage data collectors to improve the metadata that they provide and to attempt data corrections. They might also provide data collectors with feedback on areas for improvement.
+
+
+
+==== Database Users
+
+Database users should interpret the uncertainty information provided with a dataset and generate new uncertainty estimates for their own work. In doing so, they should be aware that the uncertainties provided by data collectors, or assessed by Trusted Nodes, might not be consistent: the uncertainties assessed by data collectors could be subjective and may not have been verified against authoritative sources of depth information. Very low uncertainty estimates should be treated with caution. There is no universally accepted best practice for the statement of uncertainty, although the 95% confidence interval is very common. The type of uncertainty reported should be well-documented, and embedded in the product’s metadata.
+
+Users Beware. The DCDB provides no guarantee of the correctness of crowdsourced bathymetry observations. However, some Trusted Nodes might provide stronger guarantees for data that they aggregate. The database user must assume that residual blunders might exist that are difficult to capture in conventional uncertainty statistics.
+
+Database users should avoid over-confidence in uncertainty values when using interpolation methods that estimate their uncertainties from the geostatistics of the observations (e.g., kriging), since the data density may be insufficient for the purpose. In practice, the assumption that all significant variability is captured by the geostatistics may not be valid for the real world. Database users should be aware of this, and should identify how they will compensate for sparse data in the dataset. <<figure-15>> provides a diagrammatic example of problems that can arise from applying geostatistical interpolation to sparse datasets.
+
+[[figure-15]]
+.Example of problems that can occur when predicting uncertainty from sparse data, where all objects are not captured in the dataset. From the data (top diagram), geostatistical techniques might predict an uncertainty that the user, without further data or reference, might assume to be the outer limits of the true depth. With objects not captured by the sparse data (bottom diagram), however, there could be discrepancies not captured in the interpolation, outside of the implied bounds predicted by the interpolation method.
+image::image-15.jpg[]
+
+
+Database users are ideally placed to identify problems with individual observers or datasets. Users who identify outliers, or anomalous observers, are encouraged to communicate this information to the DCDB.
+

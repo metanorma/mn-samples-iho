@@ -1,0 +1,28 @@
+[appendix]
+== Abbreviations
+
+AIS:: Automatic Identification System CI:: Confidence interval
+CSB:: Crowdsourced bathymetry
+CSV:: Comma separated values
+DBT:: Depth Below Transducer (NMEA sentence)
+DCDB:: IHO Data Centre for Digital Bathymetry
+ECDIS:: Electronic Chart Display and Information System
+FTP:: File Transfer Protocol
+GGA:: position fix information (NMEA sentence)
+GEBCO:: General Bathymetric Chart of the Ocean
+GLL:: Geographic position, latitude / longitude (NMEA sentence)
+GNSS:: Global Navigation Satellite System
+GPS:: Global Positioning System
+HTTP(S):: Hypertext Transfer Protocol (Secure)
+IHO:: International Hydrographic Organization
+IOC:: Intergovernmental Oceanographic Commission of UNESCO
+IMO:: International Maritime Organization
+MMSI:: Maritime Mobile Service Identity
+NCEI:: National Centers for Environmental Information
+NMEA:: National Marine Electronics Association
+NOAA:: National Oceanic and Atmospheric Administration
+RMC:: Recommended minimum data for GPS (NMEA sentence)
+UNESCO:: United Nations Education Scientific and Cultural Organization
+UPS:: Uninterruptable Power Supply
+UTC:: Coordinated Universal Time
+UUID:: Unique Uniform Identification

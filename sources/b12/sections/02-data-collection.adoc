@@ -1,0 +1,96 @@
+
+== Data Collection
+
+=== Systems and Sensors
+
+Many vessels already possess the minimum equipment needed to collect CSB, and only need to install a data logger, or enable logging software, to begin collecting CSB. The following sections provide basic information about sensors, as well as best practices and recommendations for collecting CSB. For more in-depth information about systems and sensors, please refer to the IHO publication C-13, Manual on Hydrography (Chapters 2 and 3).
+
+==== Echo-sounders
+
+Echo-sounders, or depth sounders, determine the water depth by transmitting sound pulses from a transducer, and recording the time it takes for the sensor to receive the return echo from the seafloor. Transducers are usually mounted on the hull of a vessel, but can be mounted on other platforms, as well. There are two main types of echo-sounders: single beam and multibeam. Either of these echo-sounders can be used to collect crowdsourced bathymetry, however the guidance developed in this document will focus on single beam CSB, as the Trusted Node/DCDB model is currently equipped to receive and process those data. Vessels using multibeam for safety of navigation purposes and wishing to contribute their single profiles should submit their data to the appropriate coastal state national Hydrographic Office under cover of a Hydrographic Note.
+
+===== Single Beam Echo-sounders
+
+Single beam echo-sounders collect a single depth measurement from a relatively narrow beam of sound focussed on the seafloor directly under the transducer. Many vessels are equipped with single beam echo-sounders, as they provide sufficient under-keel clearance information for safe navigation. The Trusted Node model is currently designed for donating single beam echo-sounder data to the DCDB.
+
+===== Multibeam Echo-sounders
+
+Multibeam echo-sounders collect depth measurements by forming many receive beams in a wide arc below (or in the case of forward-looking navigation sonar, in front of) the vessel. Multibeam echo- sounders provide a much more detailed representation of the seafloor than single beam depth sounders, and thus can provide additional information about hazards or objects on the seafloor. Multibeam echo- sounders are often found on research vessels, as well as some commercial vessels, expedition cruise ships, and recreational vessels. Vessels equipped with multibeam echo-sounders that wish to contribute data to the DCDB’s established multibeam pipeline should contact the DCDB directly at mb.info@noaa.gov.
+
+==== Positioning Systems
+Positioning systems help mariners determine their location on the Earth’s surface and provide vital information for CSB. Without accurate location information, CSB has little value. Most vessels carry a Global Navigation Satellite System (GNSS), such as GPS, GLONASS or any other constellation, which obtain position fixes automatically. GNSS positions are typically provided once per second and are accompanied by a time and date stamp. CSB data collection systems should provide a position and timestamp with every depth reading. This allows data users to accurately position depth measurements and apply corrections to the data if needed. The GNSS can also output information about the quality of the signal and interruptions in service, and these data should also be logged, if possible.
+
+==== Motion Sensors
+
+Some vessels may be equipped with motion sensors. Motion sensors measure the movement of a vessel caused by the waves and swell. Motion sensor data is not required data, and it is acknowledged that most vessels will not be equipped with this technology. For single beam echo-sounders, however, motion sensors capture vertical movement, and are used to correct depth measurements for a vessel’s heave. For multibeam echo-sounders, motion sensors measure a vessel’s movement in three dimensions, so that corrections can be applied to the data to account for the heave, pitch, and roll of the vessel. Vessels that are equipped with a motion sensor should include motion sensor data at the time of data collection in the dataset they send to their Trusted Node, as it can greatly improve the quality of the final dataset.
+
+=== Hardware and Software
+
+In addition to depth, positioning, and motion sensors, there are several hardware and software variables that mariners should consider, when collecting CSB data.
+
+==== Data Loggers
+
+Crowdsourced bathymetry data loggers are electronic devices or software that connect to a vessel’s echo- sounder and positioning system and record the sensor outputs. They write to files in a format designated by the designer of the data logger or software, such as NMEA 0183. The recorded data is then relayed to a Trusted Node, who prepares the data for contribution to the DCDB. Software-based data loggers may be available in an ECDIS or electronic chart plotter that already incorporates input from the echo-sounder and the GNSS. Vessels that do not possess a suitable navigation system, or data logging software, will need to install a standalone logger. Current hardware-based data loggers typically require the installation of a simple, small electronic component that connects to the echo-sounder and GNSS and records their output. Trusted Nodes can provide mariners with data loggers, as well as installation guidance and
+assistance.
+
+==== Understanding NMEA 0183
+
+It is helpful for mariners to understand the raw data that is being output by their sensors. Many marine sensors, such as GNSS positioning systems or echo-sounder transducers, transmit data in accordance with standards developed by the National Marine Electronics Association (NMEA). The NMEA 0183 standard data format, or ‘sentences,’ are both human- and machine-readable, and provide information about the sensor measurement and status. All NMEA sentences begin with a $, and each field is comma-delimited. There are many different types of NMEA sentences. The following sections describe a few that may be useful for CSB data collection.
+
+===== GNSS NMEA Sentences
+
+RMC, GGA, and GLL sentences provide output from the GNSS sensor. Each sentence type provides slightly different information. A ‘GLL’ NMEA 0183 sentence provides position and time information, and may look like this: $GPGLL,0424.9921,N,11359.7734,E,012636.21,A,D,*5E. In this sentence, the ‘GLL’ designator is followed by the latitude and longitude (with hemispheres), and the time (but not date), in UTC hhmmss.ss format.
+
+A GNSS ‘GGA’ sentence provides time, position, and fix information, and may look like this: $GPGGA,071953.00,0424.9862,N,11359.7661,E,1,9,1.8,21,M,,M,,*68. In this example, the ‘GGA’ designator is followed by the time (in UTC), the latitude, longitude, and information about the accuracy of the GNSS position fix.
+
+The ‘RMC’ sentence output from a GNSS contains the recommended minimum navigation information, and provides position, velocity, track made good, date, time, and magnetic variation information. It may look like this: $GPRMC,102318.23,A,4537.0226,N,03243.0262,E,015.3,186.3,211217,007.2,W*6A. In this sentence, the ‘RMC’ designator is followed by the time, in UTC (hhmmss.ss), the latitude and longitude, vessel speed (in knots), track made good (in degrees true), date (ddmmyy), and magnetic variation (degrees and E/W).
+
+===== Echo-sounder NMEA Sentences
+
+NMEA ‘DBT’ (depth below transducer) sentences for echo-sounders provide depth measurements in several units, and may look like this: $SDDBT,0006.0,f,0001.828,M,0001.0,F*3A. The depth, in feet, metres, and fathoms are visible in each of the comma-delimited fields, separated by their unit of measure. For this depth measurement, vertical correctors, such as the draft of the vessel and water level, must be added to the DBT depth to derive the full depth of the water column.
+
+===== NMEA Data Logging
+
+Stripping data from an NMEA sentence is not recommended. Saving the data in its original format will help validate sensor readings and troubleshoot potential anomalies in the data. While the IHO DCDB only
+accepts GeoJSON, CSV, or XYZT (longitude, latitude, depth, time) data in one standard format, logging the full NMEA string and submitting it to the Trusted Node is highly recommended. Many data loggers provided by Trusted Nodes already preserve the entire NMEA sentence.
+
+===== Computer Time
+
+A computer’s internal clock typically drifts several seconds per week. To maintain the most correct timestamp possible, which will help to maintain the best position information for the depth data, the data logger, or logging software, should instead be set to incorporate the time provided by the GNSS GGA, GLL, or RMC sentence. If it is necessary to rely on the computer clock for the date, document this, if possible, and investigate how well the computer’s internal clock will keep accurate time after a long period without system power.
+
+==== Onboard Data Storage
+
+Vessel owners and operators should ensure that they have adequate onboard data storage capabilities to log depth and positioning data until they can transfer the data to a Trusted Node. Conducting one or two days of trial data logging may help the mariner identify the average file sizes logged by their unique systems and derive an estimate of data storage requirements for longer voyages. If a vessel is installing a hardware-based data logger, the mariner should consult with the Trusted Node to determine the logger’s data storage limits. If additional storage is needed, the mariner should ask the Trusted Node if it is possible to transfer data from the logger to ancillary storage (such as an external hard drive) while underway.
+
+==== Data Transfer
+
+After the CSB data is logged, it should be transmitted to a Trusted Node. Logging and transmitting processes should be as simple and automated as possible to encourage continued contribution of data. Each Trusted Node or data aggregator will provide mariners with the appropriate procedure for CSB data delivery. Sending and receiving data at sea is challenging, and communication systems and bandwidth may be limited or expensive. Because of this, it is important to note that CSB data are not normally time- sensitive; the most important factor is ensuring that the data are shared. Some mariners may wish to leverage communications systems to transfer data while still underway; however, the method of data transmission could also be as simple as mailing a USB storage device to the Trusted Node. Mariners are encouraged to work with their Trusted Node or data logger supplier to identify the preferred method for data transfer.
+
+==== Continuity of Electrical Power
+
+Continuous power aboard vessels is never a guarantee. Some vessels invest in, or are required to carry, an Uninterruptable Power Supply (UPS) to provide power to navigation equipment in the event of a loss of vessel power. However, not all vessels have a UPS, and even with a UPS, there are times when the
+transition from shore power to a generator causes a momentary loss in power. When this happens, data loggers and instruments must reboot and recover. Consider using a data logger that will recover automatically if there is a power interruption, or one that has a back-up battery.
+
+=== Vessel and Sensor Measurements
+
+The horizontal and vertical measurements between the GNSS and the echo-sounder, and between the waterline and the transducer, are key components of the quality and accuracy of the data. Some systems are programmed to incorporate these offsets when the sensors are installed. If they do not, mariners should record these measurements as best as possible, and include them in their metadata. The following sections provide information about these measurements, and best practices for collecting and recording them.
+
+==== Sensor Offsets
+
+Sensor offsets refer to the fore-and-aft and port-and-starboard distances from a vessel’s GNSS antenna and the transducer. When measuring offsets, it is important to record the axial directions of positive and negative values, as these conventions can vary. The graphic below (<<figure-05>>) shows an example where measurements are taken from the GNSS antenna to the sonar transducer, with positive values towards the bow and starboard. In some systems, the GNSS antenna offset is already incorporated into the echo- sounder’s measurements. If this offset is not automatically integrated, mariners should record their sensor offsets, and relay that information to their Trusted Node. These offset measurements help correct the bathymetric data so that the position indicated by the GNSS is the same as the position of the transducer. This greatly improves the positional accuracy of the depth data.
+
+If the depth information is not corrected with an offset from the GNSS antenna, the depth data may appear to be in a different location than it is. On very large vessels, where the offset between the GNSS antenna and the transducer could be greater, the error could increase.
+
+
+[[figure-05]]
+.How to measure offsets between GNSS antenna and echo-sounder transducer.
+image::image-05.jpg[]
+
+
+==== Variations in Draft
+
+If a vessel takes on cargo, fuel, or supplies, the draft of the vessel will vary, which changes the depth of the echo-sounder transducer below the waterline. This change in depth can make the transducer record measurements that are deeper or shallower than reality. As with the sensor offsets, it is important for the mariner to record this information, so that vertical adjustments can be made to the data during post- processing. This can be accomplished by recording the draft of the vessel, together with the time and date, at the beginning and end of a voyage, and providing that information to the Trusted Node (<<figure-06>>).
+
+[[figure-06]]
+.How to measure the depth of the transducer below the waterline.
+image::image-06.jpg[]

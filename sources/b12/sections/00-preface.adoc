@@ -1,0 +1,87 @@
+
+.Copyright
+This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO) Secretariat. Copyright in some of the material in this publication may be owned by another party, and permission for the translation and/or reproduction of that material must be obtained from the owner.
+
+This document, or partial material from this document, may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO Secretariat and any other copyright holders.
+
+*In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:*
+
+____
+“Material from IHO publication B-12 Edition 1.0.0 is reproduced with the permission of the IHO Secretariat (Permission No ......./...) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”
+____
+
+____
+“This publication is a translation of IHO B-12 Edition 1.0.0 – IHO Guidance on Crowdsourced Bathymetry. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of IHO publication B-12 Edition 1.0.0 in English should be consulted.”
+____
+
+*The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO Secretariat.*
+
+
+.Contributors
+
+Insert logos or names.
+
+.IHO Statement on Crowdsourced Bathymetry
+
+Crowdsourced bathymetry (CSB) is the collection of depth measurements from vessels, using standard
+navigation instruments, while engaged in routine maritime operations. The International Hydrographic
+Organization (IHO) has a long history of encouraging the collection of crowdsourced bathymetry, to help
+improve mankind’s understanding of the shape and depth of the seafloor.
+
+The General Bathymetric Chart of the Ocean (GEBCO) project was initiated in 1903 by Prince Albert I of
+Monaco to provide the most authoritative, publicly-available bathymetry (depth maps) of the world's
+oceans. Over the years, the GEBCO project, now jointly overseen by the IHO and the Intergovernmental
+Oceanographic Commission (IOC) of UNESCO, has produced maps of the ocean floor from depth
+measurements collected by vessels as they journeyed across the oceans. These “passage soundings” have
+enabled the creation of progressively more-detailed seafloor maps and digital data grids. More recently,
+systematic surveys have also been used to improve the maps and grids.
+
+Unfortunately, despite the multitude of data that have been collected since 1903, less than fifteen percent
+of the world’s ocean depths have been measured; the rest of the data used to compile seafloor maps are
+estimated depths. These estimated depths are largely derived from satellite gravity measurements, which
+can miss significant features and provide only coarse-resolution depictions of the largest seamounts,
+ridges and canyons. Progress in mapping coastal waters is only marginally better. IHO publication C-55,
+Status of Surveying and Charting Worldwide, indicates that about fifty percent of the world’s coastal
+waters shallower than 200 metres remain unsurveyed.
+
+While the hydrographic and scientific community lament this lack of data, the world’s interest in seas,
+oceans and waterways continues to increase. The concept of a blue economy is firmly established, along
+with an ever-growing public awareness of mankind’s dependence upon, and vulnerability to, the sea.
+Several high-level global initiatives are now in place that seek to address ocean issues, including the United
+Nation’s 2030 Agenda for Sustainable Development Goals, the Paris Agreement under the United Nations
+Framework Convention on Climate Change, and the Sendai Framework for Disaster Risk Reduction 2015-2030.
+In this context, the shortfall in bathymetric data is even more significant, as it is now recognised
+that knowledge of the depth and shape of the seafloor underpins the safe, sustainable, and cost-effective
+execution of almost every human activity on, or beneath, the sea.
+
+In 2014, the IHO, at its Fifth Extraordinary International Hydrographic Conference (EIHC-5), determined
+to improve this situation by progressing actions to improve the collection, quality and availability of
+hydrographic data worldwide. One of these actions, Proposal 4, concerned crowdsourced bathymetry.
+
+The EIHC-5, considering Proposal 4, and the comments made during the Conference, decided, in Decision
+8, to task the Inter-Regional Coordination Committee (IRCC) to establish a working group to prepare a
+new IHO publication on policy for crowdsourced bathymetry.
+
+The International Maritime Organization (IMO) Safety of Life at Sea (SOLAS) carriage requirements oblige
+all commercial vessels to be equipped with certified echo-sounders and satellite-based navigation
+systems. As a result, the world’s commercial fleet represents a significant, untapped source of potential
+depth measurements. While CSB data may not meet accuracy requirements for charting areas of critical
+under-keel clearance, it holds limitless potential for myriad other uses. If vessels collect and donate depth
+information while on passage, the data can be used to identify uncharted features, to assist in verifying
+charted information, and to help confirm that existing charts are appropriate for the latest traffic patterns.
+Crowdsourced bathymetry can also provide vital information to support national and regional
+development activities, and scientific studies in areas where little or no other data exists.
+Recognizing the relevance of bathymetry to international maritime policy and the blue economy and
+noting that crowdsourced bathymetry may be useful for many potential users of the world’s seas, oceans
+and waterways, the IHO has developed this guidance document to state its policy towards, and provide
+best practices for collecting, crowdsourced bathymetry. It is hoped that this document will provide
+volunteer data collectors and interested parties with guidelines for gathering and assessing the quality of
+CSB data.
+
+*This document provides technical guidelines only that in no way supersede national or international laws and regulations.*
+
+// TODO: Secretary-General signature
+
+Secretary-General
+
+20 January 2020

@@ -1,0 +1,17 @@
+---
+metanorma:
+  deploy:
+    email: "ci@metanorma.org"
+  formats:
+    - xml
+    - rxl
+    - html
+    - doc
+    - pdf
+  source:
+    built_targets:
+      sources/b12.xml: sources/b12/document.adoc
+relaton:
+  collection:
+    organization: "IHO: International Hydrography Organizations"
+    name: "IHO Publications in Metanorma"

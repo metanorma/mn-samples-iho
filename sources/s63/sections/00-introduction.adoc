@@ -1,0 +1,170 @@
+
+[[introduction]]
+== Introduction
+
+The publication “S-63 IHO Data Protection Scheme”, later referred to as ‘the scheme’, describes the recommended standard for the protection of ENC information. It defines security constructs and operating procedures that must be followed to ensure that the data protection scheme is operated correctly and to provide specifications that allow participants to build S-63 compliant systems and distribute data in a secure and commercially viable manner.
+
+The Data Protection Scheme was prepared by the International Hydrographic Organisation's (IHO) Data Protection Scheme Advisory Group (DPSWG). The S-63 standard is based on the protection scheme developed and operated by Primar and Primar-Stavanger as part of their protected ENC service. The Electronic Chart Centre AS and United Kingdom Hydrographic Office were the original contributing organisations.
+
+The Standard was adopted as the official IHO standard, by the IHO member states in December 2002 (IHO CL 66, 2002). It defines the roles and responsibilities for protecting ENC data produced by National Hydrographic Offices and distributed to customers with ECS/ECDIS systems.
+
+=== General Description
+
+This document specifies a method of securing ENC information and maintaining the integrity of an ENC service with multiple data services serving a large customer base. The purpose of data protection is threefold:
+
+Piracy protection and selective access are achieved by encrypting the ENC information and providing cell permits to decrypt them. Data Servers will encrypt ENC data provided by producer nations before supplying it to the Data Client. The encrypted ENC is then decrypted by the ECS/ECDIS prior to being reformatted and imported into the systems SENC. Authentication is provided by means of digital signatures within the data.
+
+The scheme does not specifically address how ENC or SENC information can be protected once it is within an end-user application. This is the responsibility of the OEMs.
+
+The scheme allows for the mass distribution of encrypted ENCs on hard media (e.g. CD-ROM or DVD) and can be accessed and used by all customers with a valid licence containing a set of permits. Selective access to individual cells is supported by providing users with a licenced set of permits containing the encrypted cell keys. This licence is created using a unique hardware identifier of the system and is unique to each Data Client. Consequently licences cannot be exchanged between individual Data Clients.
+
+The scheme uses a compression algorithm to reduce the size of the dataset. Unencrypted ENC data contains many repeating patterns of information, e.g. coordinate information. Compression is therefore always applied before the ENC information is encrypted and uncompressed after the decryption on the data client system (normally an ECS/ECDIS).
+
+=== Participants in the Scheme
+
+There are several types of users of the scheme, these are as follows:
+
+* The Scheme Administrator (SA), of which there is only one.
+
+* The Data Server (DS), of which there can be many.
+
+* The Data Client (DC), of which there are many.
+
+* The Original Equipment Manufacturer (OEM) of which there are many.
+
+A more detailed explanation of these terms is given below.
+
+==== Scheme Administrator
+
+The Scheme Administrator (SA) is solely responsible for maintaining and coordinating the scheme. The SA role is operated by the IHO Secretariat on behalf of the IHO member states.
+
+The SA is responsible for controlling membership of the scheme and ensuring that all participants operate according to defined procedures. The SA maintains the top level digital certificate used to operate the S- 63 Data Protection Scheme and is the only body that can certify the identity of the other participants of the scheme.
+
+The SA is also the custodian of all documentation relating to the S-63 Data Protection Scheme.
+
+==== Data Servers
+
+Data Servers are responsible for the encrypting and signing ENC data in compliance with the procedures and processes defined in the scheme. Data Servers issue ENC licences (permits) so that Data Clients, with valid user permits, can decrypt ENC data.
+
+Data Servers will use the M_KEY and HW_ID information, as supplied by the SA, to issue encrypted ENC cell keys to each specific installation. Even though the cell keys used to encrypt each cell are identical, they will be encrypted using the unique HW_ID and therefore cannot be transferred between other ECDIS from the same manufacturer.
+
+Hydrographic Offices, Value Added Resellers and RENC organisations are examples of Data Servers.
+
+==== Data Clients
+
+Data Clients are the end users of ENC information and will receive protected information from the Data Servers. The Data Client’s software application (OEM System) is responsible for authenticating the ENC digital signatures and decrypting the ENC information in compliance with the procedures defined in the scheme.
+
+Navigators with ECDIS/ECS systems are examples of Data Clients.
+
+The scheme does not impede agents or distributors from providing data services to their customers. Agreements and structures to achieve this are outside the scope of this document. This document contains only the technical specifications to produce S63 compliant data services and systems.
+
+==== Original Equipment Manufacturers (OEM)
+
+OEMs subscribing to the IHO S-63 DPS must build a software application according to the specifications set out in this document and self-verify and validate it according to the terms mandated by the SA. The S- 63 standard contains test data for the verification and validation of OEM applications. The SA will provide successful OEM applicants with their own unique manufacturer key and identification (M_KEY and M_ID).
+
+The manufacturer must provide a secure mechanism within their software systems for uniquely identifying each end user installation. The scheme requires each installation to have a unique hardware identifier (HW_ID).
+
+The software application will be able to decrypt the cell keys using the HW_ID stored in either the hard lock or soft lock devices attached to or programmed within the application to subsequently decrypt and uncompress the ENC data. The CRC value contained within the ENC [1] can then be verified to establish the integrity of the underlying S57 data.
+
+==== S-63 Participant Relationships
+
+The Scheme Administrator (SA), of which there can only be one, authenticates the identity of the other participants within the scheme. All Data Servers and System Manufacturers (OEMs) must apply to the SA to become participants in the scheme and, on acceptance, are supplied with proprietary information unique to them. Data Clients are customers of Data Servers and OEMs where Data Servers supply data services and OEMs the equipment to decrypt and display these services.
+
+.IHO S-63 Data Protection Scheme Relationships
+image::image-01.png[]
+
+
+=== References
+
+// TODO: convert
+
+[1] S57 edition 3.1: IHO Transfer Standard for Digital Hydrographic Data, International Hydrographic Organization (www.iho.int)
+
+[2] Digital Signature Standard (DSS), FIPS Pub 186 (www.itl.nist.gov/div897/pubs/fip186.htm)
+
+[3] Secure Hash Standard (SHA), FIPS Pub 180-1 (www.itl.nist.gov/div897/pubs/fip180-1.htm)
+
+[4] Information Technology – Open Systems Interconnection – The Directory: Authentication Framework. X.509 version 3 - International Telecommunication Union
+
+[6] ZIP File Format Specification, PKWare Inc.
+
+[7] DES Modes of Operation, FIPS Pub 81 (www.itl.nist.gov/fipspubs/fip81.htm)
+
+[8] RFC 1423: Privacy Enhancements for Internet Electronic Mail: Part III: Algorithms, Modes and Identifiers
+
+[9] Blowfish encryption algorithm, B. Schneier, Fast Software Encryption, Cambridge Security Workshop Proceedings (December 1993), Springer-Verlag, 1994, pp. 191-204. (www.counterpane.com)
+
+[10] CRC32 checksum algorithm. Information technology -- Telecommunications and information exchange between systems -- High-level data link control (HDLC) procedures. ISO/IEC 13239:2002.
+
+
+=== Compatibility with Previous Versions
+
+This version of S-63 uses the same algorithms and the same file formats and contents as the security scheme operated by Primar, Primar-Stavanger and IHO S-63 Version 1.0. This version of the S-63 standard has been amended to provide better definitions and explanation on the operation of the protection scheme.
+
+A defined test data set has been produced and should be used by OEMs to verify and validate implementations of the S-63 Data Protection Scheme during self certification.
+
+Version 1.1 of the standard has been produced in light of experience gained by Data Servers and ECS/ECDIS Manufacturers during the operation of the scheme under version 1.0. This version attempts to more clearly define the standard by removing duplication and possible ambiguity. It also contains additional mechanisms that will enable manufacturers to make their systems more intuitive for users of ECS/ECDIS. The following list refers to the revisions within the standard.
+
+1. Removal of unnecessary duplication
+
+2. Specification of how and under what conditions certain files must be used.
+
+3. Removal of the permit dependency on the cell edition.
+
+4. Additional information to enable Data Clients to manage ENC data more effectively and efficiently.
+
+5. Identification of a loading strategy to enable more efficient loading of encrypted ENCs.
+
+It is the responsibility of Data Servers to provide services that are backwardly compatible
+
+
+=== Document Structure
+
+The main body of the document can generally be broken down into four parts. The first part details the components that are fundamental to the scheme and describes their purpose and construction. The second identifies how all the components come together within an S-63 ENC Exchange Set. The third outlines the roles and responsibilities of each type of user participating in the scheme. Finally there is a section that defines the various error and warning messages that must be displayed on the data client when defined conditions occur.
+
+Main Document:
+
+1. Scheme Components:
+
+** Section 2: Data Compression
+** Section 3: Data Encryption
+** Section 4: Data Licensing
+** Section 5: Data Authentication
+** Section 6: Data Management
+
+2. Exchange Set Format and Structure
+** Section 7 Directory and File Structures
+
+3. S-63 Participant Processes
+
+** Section 8: Scheme Administrators Processes
+** Section 9: Data Server Processes
+** Section 10: OEM & Data Client Processes
+
+4. S-63 Error and Warning Messages
+
+** Section 11 S-63 Error Codes and Explanations
+
+Additional Sections:
+
+* S-63 Annex A: Data Server Certificate Request Procedure
+
+* S-63 Annex B: Manufacturer Information Request Procedure
+
+* S-63 Annex C: ENC Update Status Report
+
+Appendices:
+
+* Appendix 1: Contains a definition of available test data which can be used to develop full compliance with all aspects of the Data Protection Scheme.
+
+* Appendix 2: Defines how encrypted ENC exchange sets provided by Data Servers will be stored using mass storage devices such as DVD or USB memory sticks.
+
+
+=== Maintenance
+
+Changes to this standard will conform to the “Principles and procedures for making changes to IHO standards and specifications”, as approved by the 18th CHRIS meeting (Cairns, Australia, Sept. 2006).
+
+
+=== Support
+
+Support in using and implementing this standard is provided to users by members of the IHO DPSWG, via the IHO Secretariat (info@iho.int). In addition an inventory of frequently asked questions (FAQ) is maintained by the IHO Secretariat on the ECDIS section of the IHO website (www.iho.int).

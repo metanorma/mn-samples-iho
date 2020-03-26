@@ -1,0 +1,14 @@
+
+[appendix]
+== GeoJSON Data Contribution Format
+
+*Crowdsourced Bathymetry GeoJSON*
+
+Format Version 2.0
+
+Last Update: April 4, 2018
+
+[source,json]
+----
+include::sections/geojson.json[]
+----

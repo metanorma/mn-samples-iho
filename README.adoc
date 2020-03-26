@@ -1,0 +1,26 @@
+= Metanorma-IHO sample documents
+
+image:https://github.com/metanorma/mn-samples-iho/workflows/publish/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-iho/actions?workflow=publish"]
+
+== Purpose
+
+This repository provides Metanorma-IHO documents in sample form.
+
+== Access
+
+Documents in this repository are available through the deployed mini-site:
+
+* https://metanorma.github.io/mn-samples-IHO/[Metanorma-IHO documents]
+
+
+
+== References for authoring Metanorma IHO documents
+
+This repository also contains references relating to authoring IHO documents, including:
+
+* At least one document per supported IHO "Serie" (B, S)
+** B-12 "`Guidance on Crowdsourced Bathymetry`"
+** S-63 "`IHO Data Protection Scheme`", Edition 1.2.1, March 2020
+
+NOTE: These documents are publicly available on the https://iho.int/en/standards-in-force[IHO website]
+

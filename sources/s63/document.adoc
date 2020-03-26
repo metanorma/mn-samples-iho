@@ -1,0 +1,19 @@
+= IHO DATA PROTECTION SCHEME
+:series: S
+:docnumber: 63
+:version: 1.2.1
+:published-date: 2020-03-01
+:copyright-year: 2020
+:status: in-force
+:doctype: standard
+:imagesdir: images
+:docfile: document.adoc
+:mn-document-class: iho
+:mn-output-extensions: xml,html,doc,rxl
+:local-cache-only:
+:data-uri-image:
+
+include::sections/00-preface.adoc[]
+
+include::sections/00-introduction.adoc[]
+
