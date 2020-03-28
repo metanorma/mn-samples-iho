@@ -1,0 +1,124 @@
+
+[appendix,obligation=normative]
+[[appendixA]]
+== Data Server Certificate Request Procedure
+
+=== Purpose
+
+The purpose of this procedure is to define the process for a Data Server to obtain a SA signed Data Server Certificate from the SA as defined by the IHO S-63 Data Protection Scheme Standard.
+
+=== Responsibility
+
+==== Need for Data Server Certificate
+
+An organisation that encrypts and digitally sign ENC data as part of the IHO S-63 Data Protection Scheme will require a Data Server Certificate signed by the Scheme Administrator.
+
+Users of encrypted and digitally signed ENC data (i.e. ECDIS systems to authenticate a signature and decrypt ENC information) do not need a Data Server Certificate. Agents or Distributors who will only provide ENC services supplied by a Data Server will not require a Data Server Certificate.
+
+==== Hydrographic Offices and RENC Organisations
+
+All Hydrographic Offices and RENC (Regional ENC Coordinating Centre) organisations only have to complete Part I of the attached form and include the required information to apply for a Data Server Certificate. A Data Server can only obtain one Data Server Certificate.
+
+==== Non-Hydrographic Offices and Non-RENC Organisations
+
+Other commercial organisations who wish to operate as Data Servers and encrypt and digitally sign ENC information compliant with the protection scheme can apply for a Data Server Certificate. Such organisations must get a Data Server, already a member of the protection scheme, to endorse the request and complete part II of the form. It is assumed that the Data Server providing the ENC data to the commercial organisation will endorse the request.
+
+==== IHO Secretariat
+
+The IHO Secretariat as Scheme Administrator has the sole responsibility to generate the Data Server Certificates compliant with internal procedures.
+
+=== Definitions
+
+Data Server:: This is the term used to identify an organisation producing encrypted ENC data that is digitally signed and issuing Cell Permits to Data Clients (end-users).
+
+Certificate:: Certificates are digital documents attesting to the binding of a public key to an individual or organisation. They verify that a specific public key belongs to a specific organisation, in this case the IHO.
+
+==== References
+
+[1] IHO S-63 Data Protection Scheme, International Hydrographic Organisation
+
+[2] IHO S-57 Transfer Standard for Digital Hydrographic Data, International Hydrographic Organisation
+
+=== Procedure
+
+This chapter defines the flow of information, responsibilities and detailed work instructions.
+
+[[completion_of_forms_and_attachments]]
+==== Completion of Forms and Attachments
+
+A Data Server, who is already either a Hydrographic Office or a recognised RENC, who wishes to become a participant in the IHO S-63 Data Protection Scheme, is responsible for providing the following information to the IHO Secretariat:
+
+* Asigned IHO Data Server Agreement
+* A signed Certificate Request Form with Part I filled out
+* The Data Server's Public Key
+* The Data Server's Self Signed Certificate (SSK)
+
+[[fig32]]
+[%unnumbered]
+image::image-32.png["","",""]
+
+==== Need for Endorsement
+
+All non-hydrographic offices and non-RENC organisations wishing to become a Data Server must have the Certificate Request Form endorsed by an existing Data Server who is already a member of the scheme.
+
+==== Endorsing Organisation
+
+The endorsing Data Server must complete Part II of the Certificate Request Form and return it to the non-hydrographic offices or non-RENC organisation.
+
+==== Submission of Request to IHO Secretariat
+
+The Data Server is responsible for submitting the completed Request Form together with all other information listed in <<completion_of_forms_and_attachments>> above to the IHO Secretariat.
+
+==== Validation of Certificate Request
+
+The IHO Secretariat will validate the origins of the Certificate Request and authenticate the public key by contacting the Data Server. It will also ensure the need for a Data Server Certificate is applicable by contacting the endorsing Data Server. The IHO Secretariat will report discrepancies back to the originator.
+
+==== Creation of Data Server Certificate
+
+The IHO Secretariat is responsible for the authentication of the SSK created by the Data Server. If authentic the IHO Secretariat then signs the Data Server public key to create the Data Server's Certificate, this is then supplied to the Data Server.
+
+=== Quality Metrics
+
+The IHO Secretariat will archive the Data Server Request information and attachments compliant with internal procedures.
+
+[%unnumbered]
+|===
+.2+a| image::image-33.png["","",""] ^.^a| *IHO S-63 Data Protection Scheme* +
+*Data Server Certificate Request Form* +
+Ed.1-2003 
+^.^a| Form to be returned to: +
+*International Hydrographic Organization* +
+*4, Quai Antoine 1^er^, B.P 445 - MC 98011 MONACO Cedex* +
+*Principality of Monaco* +
+*Tel: +(377) 93 10 81 00, Telefax: +(377) 93 10 81 40*
+2+.<a| *_Part I: To be completed by Data Server organisation_* +
+*Organisation*: ………………………………………… +
+*Address*: ………………………………………… +
+*Address*: ………………………………………… +
+*Address*: ………………………………………… +
+*Postal number/place*: ………………………………………… *Country*: ………………………………………… +
+*Tel*: ………………………………………… *Fax*: ………………………………………… *Web*: ………………………………………… +
+*_Administrative point of contact: Technical point of contact:_* +
+*Name*: ………………………………………… *Name*: ………………………………………… +
+*Tel*: ………………………………………… *Tel*: ………………………………………… +
+*E-mail*: ………………………………………… *E-mail*: ………………………………………… +
+*_Please verify the following information is included_*: +
+□ All fields in Part 1 & 2 of this form are completed +
+□ Data Server Public Key □ Data Server Self Signed Key (SSK) +
+□ Signed IHO S-63 Data Server Agreement, or □ already available with IHO Secretariat +
+*Signed date*: ………………………………………… *Name*: …………………………………………
+2+.<a| 
+2+.<| *_Part II: To be completed by endorsing HO or RENC organisation_* +
+*Organisation*: ………………………………………… +
+*Contact name*: ………………………………………… +
+*Tel*: ………………………………………… *Fax*: ………………………………………… *E-mail*: …………………………………………
+2+.<a| 
+2+.<a| *_Part III: To be completed by IHO Secretariat_* +
+□ Form and attachments validated +
+□ Signed Data Server Agreement, ref. …………………………………………. +
+□ Certificate created date: File ref: ………………………………………… +
+□ Certificate returned to Data Server +
+*Signed date*: ………………………………………… *Name*: …………………………………………
+2+.<a| 
+
+|===

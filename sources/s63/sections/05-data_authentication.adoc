@@ -1,0 +1,320 @@
+
+[[data_authentication]]
+== Data Authentication
+
+[[introduction_to_data_authentication]]
+=== Introduction to Data Authentication and Integrity Checking
+
+The digital signature technique used in the S-63 scheme uses a standard algorithm and key exchange mechanism widely used. S63 digital signatures use asymmetric public key algorithms within a PKI-like infrastructure scheme to unbreakably bind a data file with the identity of the issuer.
+
+The scheme relies on asymmetric encryption {blank}footnote:[Asymmetric cryptography relies on algorithms where encryption and decryption take place with different cryptographic keys. Therefore one person can encrypt data and make available a decryption key for others to decrypt it. These keys are referred to as the “private key” and the “public key”, collectively known as a “key pair”] of a checksum of a data file. By verifying the signature against the issuer's public key, and also verifying the issuer's public key against a top level identity the user is assured of the signer's identity. A detailed explanation digital signatures is beyond the scope of this document and the reader is referred to the Digital Signature Standard (DSS), FIPS Pub 186 ( http://www.itl.nist.gov/div897/pubs/fip186.htm[www.itl.nist.gov/div897/pubs/fip186.htm]) for a more detailed and accessible explanation.
+
+The scheme can be considered to have three distinct phases:
+
+. A Scheme Administrator (SA) verifies the identity of a supplier of ENC information and provides the supplier with data to allow them to sign ENC data.
+. A Data Server (e.g. RENC or VAR) issues ENC data signed with their identity (and its verification by the SA). 
+. The subsequent verification by the Data Client of the Data Server's identity (by its association with the SA) and the integrity of the ENC data.
+
+[[fig6]]
+.ENC AUTHENTICATION PROCESSES
+image::image-06.png["","",""]
+
+[NOTE]
+====
+. The Data Server's Public Key and Self Signed Key (SSK) File are sent to the SA for validation when applying to join the IHO S-63 Data Protection Scheme.
+. If accepted the SA signs the Data Server's SSK with its own private key to produce a SA signed Data Server Certificate which is then returned to the Data Server.
+. The SA Public Key is widely distributed and installed independantly in OEM systems.
+. SA Public and Private Key pairs must be different from all other Data Servers.
+. All Data Server Public and Private Keys must be unique to each other and the SA.
+====
+
+[[fig7]]
+.Data Authentication and Integrity Checking
+image::image-07.png["","",""]
+
+[NOTE]
+====
+If an ECS/ECDIS is using the method depicted above, and if the SA Key Pair is different from the Data Server key pair, then it is able to authenticate and validate ENCs from Data Server 2 (or any other Data Server in the scheme) using the same SA public key.
+
+. *Authentication :* The ECS/ECDIS uses the SA public key, previously installed indepenantly of the CD, to check the certificate part of the signature file to confirm that the supplier's public key in the certificate is valid. That is, the Data Server is a bona fide member of the scheme
+. *Integrity Check:* The ECS/ECDIS uses the public key from the certificate to check the signature of the ENC cell (data) file.
+====
+
+[[sa_verification]]
+==== SA Verification
+
+The ECDIS needs to be able to verify that the ENCs are from a bona fide source. It does this by ensuring that the data server's public key provided within the ENC signature files can be validated against the SA's public key.
+
+The SA provides certificates to each data server in the scheme; each certificate is unique, the SA only has to do this task once for each data server when they join the scheme. To obtain a certificate, data servers generate a key pair and provide the SA with their public key (as a self signed certificate); the SA (using their existing key pair) uses their private key to sign the data server's public key. The resulting certificate contains a signature of the supplier's public key. This certificate is then included within all ENC cells' and updates' signature files.
+
+The SA makes their own public key widely known to the ECDIS community and OEMs should provide a means for the user to load this independently of the data.
+
+[[data_integrity]]
+==== Data Integrity
+
+After the source of the ENC exchange set has been authenticated the ECDIS then checks data integrity by validating the signature file provided for each ENC by the data server.
+
+The data server creates a signature file for each cell which consists of the following two parts:
+
+* The signature of the dataset [which is created using the data server's private key, half of the data server key pair (in essence this is an encrypted checksum of the data) and is different for each cell] 
+* Their Data Server certificate (which remains constant).
+
+The ECDIS uses the data server's public key that is included in the certificate to validate the data file signature (it decodes this data file signature and compares the checksum against the ENC cell). If this validation check is successful then it proves that the ENC has not been corrupted in any way and that the identity of the Data Server within the cell signatures is validated by the SA.
+
+[[digital_certificates_saa]]
+=== Digital Certificates (SA Authentication)
+
+Certificates are digital files issued by a certification authority. They bind a specific public key together with other information to an individual or organisation. Certificates help prevent someone from using a fake public key to impersonate someone else. The scheme uses a chain of certificates, each one certifying the previous one until all parties are confident as to the identities in question. The SA certificate used by the IHO will be a self signed certificate {blank}footnote:[The SA public key signed using the SA private key.] and is the *root certificate* for the scheme.
+
+The SA will issue a digital certificate to all approved Data Servers by signing the Data Server's verified public key file. The following list of high level operations is performed in the issuing of digital certificates.
+
+*Scheme Creation*
+
+* SA creates a unique top level public and private key pair.
+
+*Establishment of a Data Server*
+
+* Data Server creates a unique public and private key pair.
+* Data Server creates a Self Signed Key (SSK) by signing own public key file with own private key.
+* Data Server supplies the SSK to the SA by a trusted means.
+* SA verifies the Data Server's SSK using the Data Server's pubic key.
+* SA signs the verified Data Server public key file using the SA private key.
+* SA supplies the Data Server with its own unique SA signed Data Server Certificate.
+
+*Creation of Signed Data Sets*
+
+* Data Server verifies the resultant certificate with the SA public key (supplied separately).
+* Data Server stores verified certificate and uses it in the creation of ENC signature files.
+
+The format of the various files, certificates and signatures are described in more detail in <<data_authentication_file_formats>>.
+
+NOTE: *the SA public key is made widely available to all interested parties, e.g. Data Servers, Data Clients and OEMs, in a number of ways, e.g. web, e-mail, etc.*
+
+[[the_sa_public_key]]
+==== The SA Public Key
+
+The scheme requires that the SA public key is installed on the Data Client's systems independently of the ENC exchange set. This can be pre-installed by the OEM. However, the Data Client system must have a method of installing a new public key {blank}footnote:[It is envisaged that data servers will supply this independently of the exchange set to coincide with data that authenticates against the new public key.] on the system in the case where a new one is issued by the SA.
+
+If the user installs a new SA certificate or public key the system must confirm that a new one has been installed. If installing a new SA certificate (IHO.CRT) the system must inform the user as follows:
+
+*_"A new SA certificate (public key) has been installed this is valid to [enter expiry date] or unless the SA issues a new one for security reasons."_*
+
+If installing a new SA public key (IHO.PUB) the system must inform the user as follows:
+
+*_"A new SA public key has been installed this is valid until the SA routinely issues a new one or unless one is issued for security reasons."_*
+
+Should the system report an authentication error during the loading process it should alert the user to the possibility that the SA may have changed the public key. Therefore a warning message must be displayed explaining the reason for this as follows:
+
+*_"SSE 06 – The SA Certificate/Public Key is invalid. The SA may have issued a new public key or the ENC may originate from another service. A new SA public key can be obtained from the IHO website or from your distributor."_*
+
+[[new_data_servers]]
+==== New Data Servers
+
+The IHO, in conjunction with the DPSWG, will establish the identity of any organisation or commercial company wishing to join the protection scheme as a Data Server. If the SA revokes a Data Server Certificate, it will inform all Data Servers and Manufacturers about the change.
+
+[[digital_signatures_vdi]]
+=== Digital Signatures (Verify Data Integrity)
+
+A digital signature is an electronic signature that can be used to authenticate the identity of the sender of a message or the signer of a document, and to ensure that the original content of the sent message is unchanged. Digital signatures are portable, easily verified and cannot be forged.
+
+It is also acceptable for Hydrographic offices or other Data Server organisations (e.g. RENC/VAR) to use digital signatures to maintain provenance and data integrity between them in the delivery of ENC information. Each ENC file (both base and update files) will always have a single unique signature file associated with it. No other files in an encrypted ENC exchange set have a digital signature.
+
+NOTE: An exchange set may contain signatures issued by different data servers and therefore each ENC file must be authenticated individually.
+
+[[technical_overview_of_digital_signatures]]
+==== Technical Overview of Digital Signatures
+
+Data authentication is provided using a digital signature compliant with the Digital Signature Standard (DSS) [2]. The DSS uses the Secure Hash Algorithm (SHA-1) [3] to create a message digest (hash). The message digest is then input to the Digital Signature Algorithm (DSA) [2] to generate the digital signature for the message using an asymmetric encryption algorithm and the 'private key' of a key pair. Asymmetric algorithms have the property that data encrypted using the 'private key' of the key pair can only be decrypted using the 'public key' of the key pair.
+
+A consequence of encrypting the message digest with the private key is that anyone who has the public key (which as its name suggests can be made public) can decrypt and verify the message digest.
+Further information on Digital Signatures and their use may be obtained from the IHO website (https://iho.int/[www.iho.int]).
+
+[[enc_signature_file_naming_convention]]
+==== ENC Signature File Naming Convention
+
+The digital signature file will match the cell file name except that the navigational purpose codes, digits 1–6, will be replaced by the characters I – N.
+
+*In general:* +
+ENC file: `CC` *`[1-6]`* `XXXXX.EEE` (see S-57 Appendix B1) +
+Signature file: `CC` *`[I-N]`* `XXXXX.EEE`
+
+[%unnumbered]
+|===
+h| Navigational Purpose h| Signature Character
+| 1. Overview ^.^| `I`
+| 2. General ^.^| `J`
+| 3. Coastal ^.^| `K`
+| 4. Approaches ^.^| `L`
+| 5. Harbour ^.^| `M`
+| 6. Berthing ^.^| `N`
+|===
+
+[%unnumbered]
+====
+Cell file *`GB100001.000`* will have a signature file named *`GBI00001.000`* +
+Cell file *`GB61032A.002`* will have a signature file named *`GBN1032A.002`*
+====
+
+[[storage_of_the_enc_signature_file]]
+==== Storage of the ENC Signature File
+
+The ENC signature file must be uniquely identifiable as belonging to a particular ENC data file as outlined in <<enc_signature_file_naming_convention>> above. The digital signature file will always be located in the same directory as the ENC cell file that it relates to, as illustrated across.
+
+[[fig8]]
+.ENC DIGITAL SIGNATURE FILES PLACEMENT
+image::image-08.png["","",""]
+
+[[data_authentication_file_formats]]
+=== Data Authentication File Formats
+
+There are a number of files associated with the authentication processes within the S-63 Data Protection Scheme. Among these are the certificate and signature files, as described in <<digital_certificates_saa>> & <<digital_signatures_vdi>> and the private and public keys created to sign and authenticate them. Although these may be derived independently the various component parts contained within each file share common elements that are always formatted in the same way. The following table lists the files that are fundamental to the authentication of S-63 encrypted ENCs. This table also identifies those participants of the scheme who create them.
+
+[%unnumbered]
+|===
+h| File Types ^.^h| Scheme Administrator ^.^h| Data Server
+| PQG File ^.^| ✓ ^.^| ✓
+| Private Key (X file) ^.^| ✓ ^.^| ✓
+| Public Key (Y file) ^.^| ✓ ^.^| ✓
+| X509 v3 Certificate ^.^| ✓ ^.^| x
+| Self Signed Key (SSK) ^.^| x ^.^| ✓
+| Certificate ^.^| ✓ ^.^| x
+| Signature ^.^| x ^.^| ✓
+
+|===
+
+[[file_elements]]
+==== File Elements
+
+All elements comprise of two parts, a header and a data string. The following table lists all the possible elements that may go to make up a particular file, certificate or signature:
+
+[%unnumbered]
+|===
+h| Element h| Header h| Data String
+^.^| `R` | `// Signature part R:` | `10 blocks of 4 characters.`
+^.^| `S` | `// Signature part S:` | `10 blocks of 4 characters.`
+^.^| `p` | `// BIG p` | `32 blocks of 4 characters.`
+^.^| `q` | `// BIG q` | `10 blocks of 4 characters.`
+^.^| `g` | `// BIG g` | `32 blocks of 4 characters.`
+^.^| `x` | `// BIG x` | `10 blocks of 4 characters.`
+^.^| `y` | `// BIG y` | `32 blocks of 4 characters.`
+
+|===
+
+[[element_header_and_data_string_formatting]]
+===== Element Header and Data String Formatting
+
+Each data string:
+
+* Is preceded by a single header line. Header lines are indicated by two forward slashes (// ASCII - 0x2F2F) at the start followed by a space (SP ASCII 0x20) and the header characters in ASCII text as per the format descriptions below.. 
+* Is expressed in ASCII text hexadecimal digits (0-9, A-F). Any alphabetic character will be in upper case. 
+* Is terminated by a full stop (. ASCII 0x2E). 
+* Has a space (ASCII SP 0x20) separating each group of 4 characters. 
+* Has a Carriage Return (ASCII CR 0x0D) and New Line (ASCII LF 0x0A) at the end of each data string.
+
+[[examples_of_file_certificate_and_signature_formats]]
+==== Examples of File, Certificate and Signature Formats
+
+The following section includes a set of examples of all the various files associated with this aspect of the S-63 Data Protection Scheme. A detailed explanation of how these files are created is outlined later in this document.
+
+[[pqg_format]]
+===== PQG Format
+
+The PQG parameters are produced from a random string and are used in the creation of the X and Y private/public key pairs. After these have been made, the PQG parameters will be contained within the X and Y private/public key pairs.
+
+P, Q and G are numerical parameters used in the Digital Signature Algorithm as input to the key creation process. Each data server can use a different set of P, Q and G or use an existing set to generate random key pairs. The Digital Signature Standard [2] describes their derivation and use.
+
+[%unnumbered]
+.Example of PQG Format
+====
+`// BIG p` +
+`D0A0 2D76 D210 58DA 4D91 BBC7 30AC 9186 5CB4 036C CDA4 6B49 4650 16BB 6931 2F12` +
+`DF14 A0CC F38E B77C AD84 E6A1 2F2A A0D0 441A 734B 1D2B E944 5D10 BA87 609B 75E3.` +
+`// BIG q` +
+`8E00 82E3 C046 DFE6 C422 F44C C111 DBF6 ADEE 9467.` +
+`// BIG g` +
+`B08D 786D 0ED3 4E39 7C6B 3ACF 8843 C3BF BAB1 A44D 0846 BB2A C3EE D432 B270 E710` +
+`E083 B239 AF0E A5B8 693B F2FC A03B 6A73 E289 84FF 8623 1394 996F 6263 0845 AA94.`
+====
+
+[[the_x_format]]
+===== The X (Private Key) Format
+
+The X file can be written as ASCII text in the following format:
+
+[%unnumbered]
+====
+`// BIG p` +
+`D0A0 2D76 D210 58DA 4D91 BBC7 30AC 9186 5CB4 036C CDA4 6B49 4650 16BB 6931 2F12` +
+`DF14 A0CC F38E B77C AD84 E6A1 2F2A A0D0 441A 734B 1D2B E944 5D10 BA87 609B 75E3.` +
+`// BIG q` +
+`8E00 82E3 C046 DFE6 C422 F44C C111 DBF6 ADEE 9467.` +
+`// BIG g` +
+`B08D 786D 0ED3 4E39 7C6B 3ACF 8843 C3BF BAB1 A44D 0846 BB2A C3EE D432 B270 E710` +
+`E083 B239 AF0E A5B8 693B F2FC A03B 6A73 E289 84FF 8623 1394 996F 6263 0845 AA94.` +
+`// BIG x` +
+`EBAF 2948 1485 7E7C 2F48 C7B2 9334 2F09 DA1A EB04.`
+====
+
+[[the_y_format]]
+===== The Y (IHO or Data Server Public Key) Format
+
+Both the SA and Data Server public key are provided in the following format, the scheme uses a DSA Public Key of length 512 bits.
+
+[%unnumbered]
+====
+`// BIG p` +
+`D0A0 2D76 D210 58DA 4D91 BBC7 30AC 9186 5CB4 036C CDA4 6B49 4650 16BB 6931 2F12` +
+`DF14 A0CC F38E B77C AD84 E6A1 2F2A A0D0 441A 734B 1D2B E944 5D10 BA87 609B 75E3.` +
+`// BIG q` +
+`8E00 82E3 C046 DFE6 C422 F44C C111 DBF6 ADEE 9467.` +
+`// BIG g` +
+`B08D 786D 0ED3 4E39 7C6B 3ACF 8843 C3BF BAB1 A44D 0846 BB2A C3EE D432 B270 E710` +
+`E083 B239 AF0E A5B8 693B F2FC A03B 6A73 E289 84FF 8623 1394 996F 6263 0845 AA94.` +
+`// BIG y` +
+`444B BA17 1758 0DAF 71AB 52A5 6CCA 8EAB 4C51 E970 0E37 B17B BB46 C0B9 4A36 F73F` +
+`0244 7FBD AE5B 7CA9 3870 5AB9 E9EE 471C E7B0 1004 6DF1 3505 42B3 0332 AE67 69C6.`
+====
+
+[[the_sa_digital_certificate_format]]
+===== The SA Digital Certificate (X509v3) Format
+
+The SA Digital Certificate will be in X509v3 format [4] and represents a DSA Public Key of length 512 bits. The SA Digital Certificate will always be available in a file called IHO.CRT. The IHO.CRT file is available from IHO at https://iho.int/[www.iho.int].
+
+All Data Servers providing an ENC service may include the SA certificate, for reference in the root directory of the media (e.g. in D:\IHO.CRT on a CD-ROM) but, as stated in <<the_sa_public_key>>, the installation on a Data Client's system of the SA certificate should be done independently. The check of the validity of the SA signature against each ENC signature must be done from the independently installed version of the SA certificate.
+
+The SA public key in ASCII format (as opposed to the binary X509v3 format) is also made available on the IHO website at https://iho.int/[www.iho.int] (the format is described in <<the_y_format>>).
+
+[[the_ssk_format]]
+===== The Self Signed Key (SSK) Format
+
+This is the file format that the Data Server uses to sign its own public key before sending to the SA for signing. The signature is the signature of the whole public key file (i.e. the PQG and Y parameters).
+
+[%unnumbered]
+====
+[%unnumbered]
+image::image-09.png["","",""]
+====
+
+[[the_sa_signed_ds_certificate_file_format]]
+===== The SA Signed DS Certificate File Format
+
+This is the file format used by the SA when it issues a Data Server Certificate file. The SA also uses a DSA Public Key of length 512 bits. The R & S pair is what is transcribed into the Data Server's ENC signature files.
+
+[%unnumbered]
+====
+[%unnumbered]
+image::image-10.png["","",""]
+====
+
+[[the_enc_signature_file_format]]
+===== The ENC Signature File Format
+
+The signature file must contain a signature and certificate pair. A file with just a signature is invalid as it does not certify the Data Server's identity. The ENC digital signature file has format, structure and order as in the following example:
+
+[%unnumbered]
+====
+[%unnumbered]
+image::image-11.png["","",""]
+====
+
+The second R and S pair is used to authenticate the Data Server digital certificate (p, q, g and y strings). If verified successfully, the Data Server public key (y string) can be extracted and used to verify the digital signature (first R and S pair) of the encrypted ENC. This allows the Data Client to verify the SA digital certificate, to extract the Data Server public key, and to verify the digital signature of the ENC data.

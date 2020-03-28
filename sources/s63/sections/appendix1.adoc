@@ -1,0 +1,52 @@
+
+[appendix,obligation=informative]
+[[appendix1]]
+== Data Protection Scheme Test Data
+
+*Important Notice: S-63 Appendix 1 includes test data which are provided separately as compressed (ZIP) files (see* https://iho.int/en/standards-and-specifications[*S-63 section on the IHO website*]*). Embedded in the ZIP file is a document "Test Data Implementation Guide" providing instructions on how to use the test data. The text below provides a brief presentation of Appendix 1.*
+
+=== Introduction
+
+The S-63 Appendix 1 defines a recommended set of test definitions and test data which can be used by developers of Data Server and Data Client applications to understand the security constructs defined in S-63 and test if their application is compliant with the standard. It includes a "Test Data Implementation Guide" which is provided along with the test data.
+
+The S-63 Appendix 1 will be maintained by the IHO DPSWG. More test data can be included in the future based on user feedback to provide a complete test platform to verify correctness and compliance with the standard, or for end-user applications to identify erroneous situations. The current version of the document provides a complete test sample for compliance testing.
+
+The associated "Test Data Implementation Guide" will be maintained independent of the IHO S-63 main document and new versions will be published on the IHO website.
+
+=== Organisation of the Test Definitions and Test data 
+
+==== Test Definitions
+
+The test definitions offers high level functional tests which are recommended to test for compliance with all security constructs defined in S-63. It does not replace unit testing in software development, but offer structured input to functional software testing.
+
+The test definitions are organised in functional categories and defined in chapter 3 of the "Test Data Implementation Guide". Test definitions for the Scheme Administrator functionality has not been included in the document since only the IHO Secretariat will require these test scenarios.
+
+Each test definition indicates if the test is applicable for Data Server or Data Client applications. Note that a test is relevant for all applications if the type of application is omitted.
+
+There are test definitions for both good and erroneous test conditions to ensure a robust application and reflect operational conditions.
+
+Note that the IEC will be responsible for defining applicable ECDIS type approval tests which will complement this document.
+
+==== Test data
+
+A range of test data has been developed to support the test definitions. The features of each test data set are defined in chapter 4 of the "Test Data Implementation Guide".
+
+All the test data is organised in a ZIP file and will extract into a directory structure where each test data will be located in a separate directory. Note that some of the test data sets are used in multiple test definitions.
+
+Note that the test data can also be used by developers for unit testing or other test situations for their application.
+
+==== Conditions of Use for the Test data
+
+The ENC information (the material) included in the test data has been made available to the recipient solely for the purpose of testing their application and verifying compliance with the S-63 standard. The material is supplied under the conditions shown below. If the recipient does not agree to be bound by these conditions then the material should not be used and it should be destroyed.
+
+===== Conditions of Release
+
+The material supplied is protected by the copyright of the national Hydrographic Office. No part of the supplied material may be reproduced, stored in a retrieval system or transmitted in any form or by any means, electronic, mechanical, photocopying or otherwise except as required to fulfil the purpose described above.
+
+The material is NOT to be used for navigation.
+
+When the material is no longer required to fulfil the purpose, it and any working copies, are to be destroyed.
+
+===== Disclaimer
+
+Whilst the IHO Secretariat and the Hydrographic Offices have used its best endeavours to ensure that the material is suitable to fulfil the purposes, they offer no warranty guarantee or other assurances to the effect that it will meet the requirements. The IHO Secretariat and the Hydrographic Offices will accept no liability for any damage or loss of any nature rising form its use. The material supplied is used entirely at the recipient's own risk.

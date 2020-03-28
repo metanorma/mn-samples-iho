@@ -1,0 +1,60 @@
+
+[[directory_and_file_structure]]
+== Directory and File Structure
+
+[[directory_and_file_structure_introduction]]
+=== Introduction
+
+The scheme does not mandate the use of a particular directory or file structure. However, because the entire ENC data file is encrypted it is difficult to maintain some vital file associations, e.g. text and picture files with the relevant ENC cell file (base or update). The directory structure that has been adopted by existing Data Servers is given in an example below in <<folder_definitions>>. This structure enables text and picture files to be safely managed by maintaining a direct relationship between them and the corresponding ENC data file.
+
+[[s57_file_management]]
+=== S-57 File Management
+
+The directory structure is not mandated and may vary between Data Servers. The location of all S-57 files in an encrypted exchange set is defined in the CATALOG.031 file. That is, the path to all files in the exchange set is specified in each file record.
+
+[[file_structure]]
+=== File Structure
+
+As well as the exchange set [ENC_ROOT] the root directory contains a folder named 'INFO' that contains the PRODUCTS.TXT file (see <<enc_product_listing>>), STATUS.LST (see <<enc_update_management>>) and any additional, or extra, yet to be defined, files as specified by individual Data Servers. The root directory also contains the SERIAL.ENC file (see <<serial_file>>). Each ENC Cell file in the exchange set under ENC_ROOT has a corresponding signature file (see <<digital_signatures_vdi>>).
+
+Data Servers currently supply the authentication certificate (.CRT) with an S-63 encrypted exchange set to support S-63 edition 1.0 implementations. This certificate file is contained in the root directory. Edition 1.1 does not support the supply of this file with S-63 exchange sets. Data Servers will continue to support this for a limited period after which it will be withdrawn from their services.
+
+OEMs can program their systems to automatically detect an exchange set or a group of exchange sets however; this should not be hard coded into the system. If the media contains an unexpected format the system should default to a browse facility so that users can manually specify the location of the ENC_ROOT directory of a required exchange set. An S-63 exchange set must always contain a folder named ENC_ROOT which must contain a single CATALOG.031 file and at least one data set file.
+
+[[folder_and_file_naming]]
+=== Folder and File Naming
+
+All folders and files must be named according to the conventions set out in the IHO S-57 Product Specification and this document. All folders and files in an S-63 encrypted exchange set must be in UPPER CASE.
+
+[[exchange_set_media]]
+=== Exchange Set Media
+
+Data Servers may supply exchange sets to Data Client's using several different methods, for example:
+
+. CD-ROM
+. Large Media Support
+. On-line Services
+
+[[cd_rom]]
+==== CD-ROM
+
+Encrypted exchange sets delivered by this method will be given the volume ID consistent with the IHO S-57 Data Protection Scheme, i.e. V01X03, V01X02, etc. S-63 can be delivered as a single exchange set across multiple CD-ROMs but experience gained by existing Data Servers has shown this to be inadvisable. The method currently operated by certain Data Servers is to issue single exchanges sets across multiple CDs.
+
+[[folder_definitions]]
+===== Folder Definitions
+
+Although the example below is based on a Base CD the Update CD is very similar, the only difference being that the update does not necessarily hold all the base cell data. However the update must contain data that is consistent and sequential for the Base CD to which it applies.
+
+[[fig13]]
+[%unnumbered]
+image::image-13.png["","",""]
+
+[[large_media_support]]
+==== Large Media Support
+
+Large Media Support is defined as devices capable of storing much larger volumes of data than a standard CD-ROM. Details relating to the storage of S-63 encrypted ENCs on such devices is given at <<appendix2>>.
+
+[[online_services]]
+==== On-Line Services
+
+Data Clients can download exchange sets from RENC/VAR as defined by the service provider. The download is then copied to a hard media and depending on the media the RENC/VAR will advise on the volume ID to assign to the media. It must be re-iterated that any copied exchange sets [ENC_ROOT] must at all time conform to section 5.4 of the IHO S-57 Appendix B, Product Specifications.

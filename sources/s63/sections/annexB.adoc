@@ -1,0 +1,123 @@
+[appendix,obligation=normative]
+== Manufacturer Information Request Procedure
+
+=== Purpose
+
+The purpose of this procedure is to define the processes that an OEM has to undertake to become a participant in the IHO S-63 Data Protection Scheme. To participate, OEMs will require their own unique M_ID and M_KEY values. These are supplied by the SA as defined by the IHO S-63 Data Protection Scheme so that OEMs can decrypt S-63 encrypted ENCs.
+
+=== Responsibility
+
+==== OEMs
+
+Only OEMs that develop Data Client applications need a unique M_ID and M_KEY value. The IHO Secretariat as the Scheme Administrator will share this information with all the Data Servers participating in the scheme. An OEM will only be issued with one M_ID and M_KEY pair.
+
+The M_ID and M_KEY values will be returned to the Scheme Administrator if the organisation ceases trading or no longer supports an application that accesses and displays S-63 encrypted ENCs. Data Servers will be informed of such instances so that no new licences are issued for that particular manufacturers system.
+
+There is no need for Data Client to have access to the M_KEY value because it is securely built into the end-user application (e.g. dongle) and supplied to Data Clients in an encrypted form known as a userpermit.
+
+==== IHO Secretariat
+
+The IHO Secretariat as SA has the sole responsibility for generating the M_ID and M_KEY values and supplying them to OEMs and distributing among Data Servers.
+
+=== Definitions
+
+M_ID:: Manufacturer Identification
+
+M_KEY:: Manufacturer Key
+
+OEM:: Original Equipment Manufacturer
+
+Userpermit:: A 28 character alphanumeric string containing the Data Client's HW_ID encrypted with the manufacturer's M_KEY and containing the M_ID.
+
+Dongle:: A hard lock device that contains the HW_ID of the Data Clients system.
+
+==== References
+
+[1] IHO S-63 Data Protection Scheme, International Hydrographic Organisation
+
+[2] IHO S-57 Transfer Standard for Digital Hydro-graphic Data, International Hydrographic Organisation
+
+=== Procedure
+
+This chapter defines the flow of information, responsibilities and detailed work instructions.
+
+==== Completion of Request Form
+
+The OEM is responsible for completing all information in Part I of the attached M_ID and M_KEY request form. The IHO may wish to require further documentation such as Confidentiality Agreements – these are not detailed here.
+
+Note that an OEM can:
+
+* Only be assigned one M_ID and M_KEY pair
+* Must return the information to the Scheme Administrator (SA) if it stops trading or does not deliver products authenticating signatures or no longer has a need to decrypt ENC information.
+
+==== Verification of Request Form
+
+The SA verifies that all information in Part I of the form is completed, or provide information to OEM about missing information.
+
+[%unnumbered]
+image::image-34.png["","",""]
+
+==== Verification of Signed Confidentiality Agreement
+
+The SA verifies that a signed Confidentiality Agreement is included with the request or already available in the IHO Secretariat archive. If an Agreement is not available, inform the OEM about the mandatory need for a signed Agreement.
+
+==== Confirm Successful Testing with S-63 Test data
+
+Verify that the OEM has completed successful testing of application with the available IHO S-63 test data. If not, request the OEM to complete the defined test procedure before M_ID and M_KEY are provided.
+
+==== Check OEM has no Current M_ID and M_KEY
+
+Verify the OEM has no previously assigned M_ID and M_KEY. If not, inform the OEM about the problem.
+
+==== Creation of M_ID and M_KEY
+
+The SA assigns the OEM an available and unique M_ID and M_KEY combination.
+
+==== Inform About New M_ID and M_KEY
+
+The SA informs the OEM about its M_ID and M_KEY. The SA informs all registered Data Servers about the new M_ID and M_KEY information.
+
+==== Inform OEM about Problem with Request
+
+The SA informs the OEM about specific problems with the request and requests updated information to be provided before a M_ID and M_KEY can be assigned. Further processing of the request is terminated.
+
+=== Quality Metrics
+
+The IHO Secretariat will archive the Request form and all relevant information compliant with internal procedures.
+
+[%unnumbered]
+|===
+.2+a| image::image-33.png["","",""] ^.^a| *IHO S-63 Data Protection Scheme* +
+*M_ID and M_KEY Request Form* +
+Ed.1-2003 
+^.^a| Form to be returned to: +
+*International Hydrographic Organization* +
+*4, Quai Antoine 1^er^, B.P 445 - MC 98011 MONACO Cedex* +
+*Principality of Monaco* +
+*Tel: +(377) 93 10 81 00, Telefax: +(377) 93 10 81 40*
+2+.<a| *_Part I: To be completed by OEM organisation_* +
+*Organisation*: ………………………………………… +
+*Address*: ………………………………………… +
+*Address*: ………………………………………… +
+*Address*: ………………………………………… +
+*Postal number/place*: ………………………………………… *Country*: ………………………………………… +
+*Tel*: ………………………………………… *Fax*: ………………………………………… *Web*: ………………………………………… +
+*_Administrative point of contact: Technical point of contact:_* +
+*Name*: ………………………………………… *Name*: ………………………………………… +
+*Tel*: ………………………………………… *Tel*: ………………………………………… +
+*E-mail*: ………………………………………… *E-mail*: ………………………………………… +
+*_Please verify the following information is included_*: +
+□ All fields in Part 1 of this form are completed +
+□ Signed IHO S-63 OEM Agreement, or □ already available with IHO Secretariat +
+□ Completed successful testing of application with the M_ID and M_KEY provided with the S-63 test dataset +
+*Signed date*: ………………………………………… *Name*: …………………………………………
+2+.<a| 
+2+.<a| *_Part II: To be completed by IHO Secretariat_* +
+□ Verify Part 1 is completed□ Signed OEM Agreement available, ref. ………………………………………… +
+□ Verify OEM does not have a previously issued M_ID and M_KEY +
+□ Assigned M_ID: ………………………………………… M_KEY: ………………………………………… +
+□ M_ID and M_KEY returned to OEM and all registered Data Servers +
+*Signed date*: ………………………………………… *Name*: …………………………………………
+2+.<a| 
+
+|===
