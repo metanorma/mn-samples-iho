@@ -1,51 +1,125 @@
-== Glossary
+=== Glossary of S-63 Data Protection Scheme Terms
 
-.Glossary of S-63 Data Protection Scheme Terms
-|===
-| *Blowfish* | Encryption algorithm used by the protection scheme
-| *Cell Key* | Key used to produce encrypted ENC, and required to decrypt the encrypted ENC information.
-| *Cell Permit* | Encrypted form of Cell key, created specifically for a particular user.
-| *Data Client* | Term used to represent an end-user receiving the encrypted ENC information. The Data Client will be using a software application (e.g. ECDIS) to perform many of the operations detailed within the scheme. Typically, an ECDIS user.
-| *Data Server* | Term used to represent an organisation producing encrypted ENCs or issuing Cell Permits to end-users.
-| *M_ID* | The unique identifier assigned by the SA to each manufacture. Data Servers use this to identify which M_KEY to use when decrypting the Userpermit.
-| *M_KEY* | ECDIS manufacturer's unique identification key provided by the Scheme Administrator to the OEM. It is used by OEMs to encrypt the HW_ID when creating a userpermit.
-| *HW_ID* | The unique identifier assigned by an OEM to each implementation of their system. This value is encrypted using the OEM's unique M_KEY and supplied to the data client as a userpermit. This method allows data clients to purchase licences to decrypt ENC cells.
-| *SA* | Scheme Administrator
-| *SHA-1* a| Secure Hash Algorithm 
+
+
+==== Blowfish
+
+Encryption algorithm used by the protection scheme
+
+==== Cell Key
+
+Key used to produce encrypted ENC, and required to decrypt the encrypted ENC information.
+
+==== Cell Permit
+
+Encrypted form of Cell key, created specifically for a particular user.
+
+==== Data Client
+
+Term used to represent an end-user receiving the encrypted ENC information. The Data Client will be using a software application (e.g. ECDIS) to perform many of the operations detailed within the scheme. Typically, an ECDIS user.
+
+==== Data Server
+
+Term used to represent an organisation producing encrypted ENCs or issuing Cell Permits to end-users.
+
+==== M_ID
+
+The unique identifier assigned by the SA to each manufacture. Data Servers use this to identify which M_KEY to use when decrypting the userpermit.
+
+==== M_KEY
+
+ECDIS manufacturer's unique identification key provided by the Scheme Administrator to the OEM. It is used by OEMs to encrypt the HW_ID when creating a userpermit.
+
+==== HW_ID
+
+The unique identifier assigned by an OEM to each implementation of their system. This value is encrypted using the OEM's unique M_KEY and supplied to the data client as a userpermit. This method allows data clients to purchase licences to decrypt ENC cells.
+
+==== SA
+
+Scheme Administrator
+
+==== SHA-1
+
+Secure Hash Algorithm
+
 [.source]
 <<sha,[3]>>
-| *SSK* | Self Signed Key (Self Signed Certificate File)
-| *User Permit* | Encrypted form of HW-ID uniquely identifying the ECDIS system
 
-|===
+==== SSK
 
-.Chart Related Terms
-|===
-| *ECDIS* | Electronic Chart Display and Information System as defined by IMO
-| *ENC* a| Electronic Navigational Chart as defined by the ENC Product Specification 
+Self Signed Key (Self Signed Certificate File)
+
+==== User Permit
+
+Encrypted form of HW-ID uniquely identifying the ECDIS system
+
+
+
+=== Chart Related Terms
+
+
+==== ECDIS
+
+Electronic Chart Display and Information System as defined by IMO
+
+==== ENC
+
+Electronic Navigational Chart as defined by the ENC Product Specification.
+
 [.source]
 <<iho_ts_dhd,[1]>>
-| *S-57* | Transfer standard for ENC defined by IHO
-| *SENC* | System-ENC (This is the internal format that OEMs convert to when importing data)
 
-|===
+==== S-57
 
-.Organisations
-|===
-| *ECC* | Electronic Chart Centre AS (http://www.ecc.as/[www.ecc.as])
-| *HO* | Hydrographic Office (e.g. Data Server)
-| *IHO* | International Hydrographic Organisation
-| *IMO* | International Maritime Organisation
-| *RENC* | Regional ENC Coordinating Centre integrating ENCs from several HOs into a single service (e.g. Data Server)
-| *UKHO* | United Kingdom Hydrographic Office (http://www.ukho.gov.uk/[www.ukho.gov.uk])
+Transfer standard for ENC defined by IHO
 
-|===
+==== SENC
 
-.Computing Terms
+System-ENC (This is the internal format that OEMs convert to when importing data)
 
-|===
-| *CRC* | Cyclic Redundancy Check
-| *Dongle* | Sometimes referred to as a hard lock device, It is a hardware device supplied by the OEMs that has the unique system identifier (HW_ID) stored securely within.
-| *XOR* | Exclusive OR
 
-|===
+
+=== Organisations
+
+
+==== ECC
+
+Electronic Chart Centre AS (http://www.ecc.as/[www.ecc.as])
+
+==== HO
+
+Hydrographic Office (e.g. Data Server)
+
+==== IHO
+
+International Hydrographic Organisation
+
+==== IMO
+
+International Maritime Organisation
+
+==== RENC
+
+Regional ENC Coordinating Centre integrating ENCs from several HOs into a single service (e.g. Data Server)
+
+==== UKHO
+
+United Kingdom Hydrographic Office (http://www.ukho.gov.uk/[www.ukho.gov.uk])
+
+
+
+=== Computing Terms
+
+
+
+==== CRC
+
+Cyclic Redundancy Check
+
+==== Dongle
+
+Sometimes referred to as a hard lock device, It is a hardware device supplied by the OEMs that has the unique system identifier (HW_ID) stored securely within.
+
+==== XOR
+
+Exclusive OR
