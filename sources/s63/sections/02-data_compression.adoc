@@ -10,7 +10,7 @@ An ENC file will, because of its structure, contain repeating patterns of inform
 [[compression_algorithm]]
 === Compression Algorithm
 
-The security scheme uses the ZIP algorithm {blank}footnote:[http://en.wikipedia.org/wiki/ZIP_%28file_format%29] [6] to compress and uncompress ENC data. It is identical to the algorithm used in many commercial applications e.g. WinZip, PKZIP. Potential Data Servers and OEMs should be aware that in the past errors have occurred when Data Servers compress data and it is interpreted by popular implementations of the ZIP algorithm as "text" data. If the data is uncompressed with incorrect parameters it can corrupt the ENC file leading to failing integrity checks. Data Servers and OEMs are advised to carefully implement compression/un-compression within their systems.
+The security scheme uses the ZIP algorithm {blank}footnote:[http://en.wikipedia.org/wiki/ZIP_%28file_format%29] <<zip_ffs,[5]>> to compress and uncompress ENC data. It is identical to the algorithm used in many commercial applications e.g. WinZip, PKZIP. Potential Data Servers and OEMs should be aware that in the past errors have occurred when Data Servers compress data and it is interpreted by popular implementations of the ZIP algorithm as "text" data. If the data is uncompressed with incorrect parameters it can corrupt the ENC file leading to failing integrity checks. Data Servers and OEMs are advised to carefully implement compression/un-compression within their systems.
 
 [[compressed_files]]
 === Compressed Files

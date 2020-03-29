@@ -12,7 +12,7 @@ The SA is responsible for controlling membership of the scheme and ensuring that
 [[scheme_administrator_processes_subsec]]
 === Scheme Administrator Processes
 
-The main responsibilities of the IHO as the S-63 Scheme Administrator are depicted in the following diagram. Each _"Process Box"_ cross references the particular section where these operations are outlined in more detail.
+The main responsibilities of the IHO as the S-63 Scheme Administrator are depicted in the <<fig14>>. Each _"Process Box"_ cross references the particular section where these operations are outlined in more detail.
 
 [[fig14]]
 .Main Scheme Administrator Processes
@@ -34,7 +34,7 @@ image::image-15.png["","",""]
 
 The PQG file only exists by itself for a short period during the creation of the X and Y files. After these have been made, the PQG file will be contained within the X and Y files.
 
-The creation of appropriate PQG parameters is covered in more detail in the Digital Signature Standard (DSS) [2]. For information relating to the format of the PQG file see <<pqg_format>>.
+The creation of appropriate PQG parameters is covered in more detail in the Digital Signature Standard (DSS) <<dss,[2]>>. For information relating to the format of the PQG file see <<pqg_format>>.
 
 [[create_private_key]]
 ==== Create Private Key
@@ -49,7 +49,7 @@ The public key is an output of the key generation process. The public key is sen
 [[create_and_issue_sa_digital_certificate]]
 === Create and Issue SA Digital Certificate (X509v3)
 
-The SA Digital Certificate will be compliant with X509v3 [4]. The SA Digital Certificate will always be provided in a file called IHO.CRT. The IHO.CRT file is available from IHO at https://iho.int/[www.iho.int].
+The SA Digital Certificate will be compliant with X509v3 <<ITU-T_X.509,[4]>>. The SA Digital Certificate will always be provided in a file called IHO.CRT. The IHO.CRT file is available from IHO at https://iho.int/[www.iho.int].
 
 The SA uses a DSA Public Key of length 512 bits.
 

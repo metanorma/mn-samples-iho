@@ -68,7 +68,7 @@ OEMs subscribing to the IHO S-63 DPS must build a software application according
 
 The manufacturer must provide a secure mechanism within their software systems for uniquely identifying each end user installation. The scheme requires each installation to have a unique hardware identifier (HW_ID).
 
-The software application will be able to decrypt the cell keys using the HW_ID stored in either the hard lock or soft lock devices attached to or programmed within the application to subsequently decrypt and uncompress the ENC data. The CRC value contained within the ENC [1] can then be verified to establish the integrity of the underlying S57 data.
+The software application will be able to decrypt the cell keys using the HW_ID stored in either the hard lock or soft lock devices attached to or programmed within the application to subsequently decrypt and uncompress the ENC data. The CRC value contained within the ENC <<iho_ts_dhd,[1]>> can then be verified to establish the integrity of the underlying S57 data.
 
 ==== S-63 Participant Relationships
 
@@ -78,27 +78,28 @@ The Scheme Administrator (SA), of which there can only be one, authenticates the
 image::image-01.png[]
 
 
+[bibliography]
 === References
 
 // TODO: convert
 
-[1] S57 edition 3.1: IHO Transfer Standard for Digital Hydrographic Data, International Hydrographic Organization (www.iho.int)
+* [[[iho_ts_dhd,IHO S57]]], S57 edition 3.1: IHO Transfer Standard for Digital Hydrographic Data, International Hydrographic Organization (www.iho.int)
 
-[2] Digital Signature Standard (DSS), FIPS Pub 186 (www.itl.nist.gov/div897/pubs/fip186.htm)
+* [[[dss,FIPS Pub 186]]], Digital Signature Standard (DSS), FIPS Pub 186 (www.itl.nist.gov/div897/pubs/fip186.htm)
 
-[3] Secure Hash Standard (SHA), FIPS Pub 180-1 (www.itl.nist.gov/div897/pubs/fip180-1.htm)
+* [[[sha,FIPS Pub 180-1]]], Secure Hash Standard (SHA), FIPS Pub 180-1 (www.itl.nist.gov/div897/pubs/fip180-1.htm)
 
-[4] Information Technology – Open Systems Interconnection – The Directory: Authentication Framework. X.509 version 3 - International Telecommunication Union
+* [[[ITU-T_X.509,ITU-T X.509]]], Information Technology – Open Systems Interconnection – The Directory: Authentication Framework. X.509 version 3 - International Telecommunication Union
 
-[6] ZIP File Format Specification, PKWare Inc.
+* [[[zip_ffs,ZIP File Format Specification]]], ZIP File Format Specification, PKWare Inc.
 
-[7] DES Modes of Operation, FIPS Pub 81 (www.itl.nist.gov/fipspubs/fip81.htm)
+* [[[des_mf,FIPS Pub 81]]], DES Modes of Operation, FIPS Pub 81 (www.itl.nist.gov/fipspubs/fip81.htm)
 
-[8] RFC 1423: Privacy Enhancements for Internet Electronic Mail: Part III: Algorithms, Modes and Identifiers
+* [[[rfc1423,RFC 1423]]], RFC 1423: Privacy Enhancements for Internet Electronic Mail: Part III: Algorithms, Modes and Identifiers
 
-[9] Blowfish encryption algorithm, B. Schneier, Fast Software Encryption, Cambridge Security Workshop Proceedings (December 1993), Springer-Verlag, 1994, pp. 191-204. (www.counterpane.com)
+* [[[blowfish,Blowfish encryption algorithm]]], Blowfish encryption algorithm, B. Schneier, Fast Software Encryption, Cambridge Security Workshop Proceedings (December 1993), Springer-Verlag, 1994, pp. 191-204. (www.counterpane.com)
 
-[10] CRC32 checksum algorithm. Information technology -- Telecommunications and information exchange between systems -- High-level data link control (HDLC) procedures. ISO/IEC 13239:2002.
+* [[[crc32,ISO/IEC 13239:2002]]], CRC32 checksum algorithm. Information technology -- Telecommunications and information exchange between systems -- High-level data link control (HDLC) procedures. ISO/IEC 13239:2002.
 
 
 === Compatibility with Previous Versions

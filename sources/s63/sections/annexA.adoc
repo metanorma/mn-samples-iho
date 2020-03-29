@@ -33,11 +33,12 @@ Data Server:: This is the term used to identify an organisation producing encryp
 
 Certificate:: Certificates are digital documents attesting to the binding of a public key to an individual or organisation. They verify that a specific public key belongs to a specific organisation, in this case the IHO.
 
+[bibliography]
 ==== References
 
-[1] IHO S-63 Data Protection Scheme, International Hydrographic Organisation
+* [[[iho_s63,IHO S63]]], IHO S-63 Data Protection Scheme, International Hydrographic Organisation
 
-[2] IHO S-57 Transfer Standard for Digital Hydrographic Data, International Hydrographic Organisation
+* [[[iho_s57,IHO S57]]], IHO S-57 Transfer Standard for Digital Hydrographic Data, International Hydrographic Organisation
 
 === Procedure
 

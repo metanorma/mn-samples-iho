@@ -31,11 +31,12 @@ Userpermit:: A 28 character alphanumeric string containing the Data Client's HW_
 
 Dongle:: A hard lock device that contains the HW_ID of the Data Clients system.
 
+[bibliography]
 ==== References
 
-[1] IHO S-63 Data Protection Scheme, International Hydrographic Organisation
+* [[[iho_s63,IHO S63]]], IHO S-63 Data Protection Scheme, International Hydrographic Organisation
 
-[2] IHO S-57 Transfer Standard for Digital Hydro-graphic Data, International Hydrographic Organisation
+* [[[iho_s57,IHO S57]]], IHO S-57 Transfer Standard for Digital Hydro-graphic Data, International Hydrographic Organisation
 
 === Procedure
 

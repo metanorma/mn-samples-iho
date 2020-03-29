@@ -228,7 +228,7 @@ NOTE: The user should only be prompted to install compatible base media that con
 
 *BASE MEDIA FOLDER AND FILE STRUCTURE*
 
-The diagram below is for illustrative purposes only and outlines the top level folder and file structure that must be used by data servers when supplying S-63 encrypted ENC services utilising large media support. However, it is possible that the structure under each ENC_ROOT folder of each exchanges set may vary between data servers.
+The <<fig36>> is for illustrative purposes only and outlines the top level folder and file structure that must be used by data servers when supplying S-63 encrypted ENC services utilising large media support. However, it is possible that the structure under each ENC_ROOT folder of each exchanges set may vary between data servers.
 
 [[fig36]]
 .LARGE MEDIA SUPPORT FOR S-63 ENCRYPTED ENC SERVICESBASE MEDIA FOLDER AND FILE STRUCTURETHE
@@ -237,7 +237,7 @@ image::image-36.png["","",""]
 
 *UPDATE MEDIA FOLDER AND FILE STRUCTURE*
 
-The diagram below is for illustrative purposes only and outlines the top level folder and file structure that must be used by data servers when supplying S-63 encrypted ENC services utilising large media support. However, it is possible that the structure under each ENC_ROOT folder of each exchanges set may vary between data servers.
+The <<fig37>> is for illustrative purposes only and outlines the top level folder and file structure that must be used by data servers when supplying S-63 encrypted ENC services utilising large media support. However, it is possible that the structure under each ENC_ROOT folder of each exchanges set may vary between data servers.
 
 [[fig37]]
 .UPDATE MEDIA STRUCTURE (Only top level folders & files)
