@@ -83,17 +83,17 @@ image::image-01.png[]
 
 * [[[iho_ts_dhd,(1)IHO S57]]], S57 edition 3.1: IHO Transfer Standard for Digital Hydrographic Data, International Hydrographic Organization (www.iho.int)
 
-* [[[dss,(2)FIPS Pub 186]]], Digital Signature Standard (DSS), FIPS Pub 186 (www.itl.nist.gov/div897/pubs/fip186.htm)
+* [[[dss,(2)NIST FIPS 186]]], Digital Signature Standard (DSS), FIPS Pub 186 (www.itl.nist.gov/div897/pubs/fip186.htm)
 
-* [[[sha,(3)FIPS Pub 180-1]]], Secure Hash Standard (SHA), FIPS Pub 180-1 (www.itl.nist.gov/div897/pubs/fip180-1.htm)
+* [[[sha,(3)NIST FIPS 180-1]]], Secure Hash Standard (SHA), FIPS Pub 180-1 (www.itl.nist.gov/div897/pubs/fip180-1.htm)
 
 * [[[ITU-T_X.509,(4)ITU-T X.509]]], Information Technology – Open Systems Interconnection – The Directory: Authentication Framework. X.509 version 3 - International Telecommunication Union
 
 * [[[zip_ffs,(5)ZIP File Format Specification]]], ZIP File Format Specification, PKWare Inc.
 
-* [[[des_mf,(6)FIPS Pub 81]]], DES Modes of Operation, FIPS Pub 81 (www.itl.nist.gov/fipspubs/fip81.htm)
+* [[[des_mf,(6)NIST FIPS 81]]], DES Modes of Operation, FIPS Pub 81 (www.itl.nist.gov/fipspubs/fip81.htm)
 
-* [[[rfc1423,(7)RFC 1423]]], RFC 1423: Privacy Enhancements for Internet Electronic Mail: Part III: Algorithms, Modes and Identifiers
+* [[[rfc1423,(7)IETF RFC 1423]]], RFC 1423: Privacy Enhancements for Internet Electronic Mail: Part III: Algorithms, Modes and Identifiers
 
 * [[[blowfish_ref,(8)Blowfish encryption algorithm]]], Blowfish encryption algorithm, B. Schneier, Fast Software Encryption, Cambridge Security Workshop Proceedings (December 1993), Springer-Verlag, 1994, pp. 191-204. (www.counterpane.com)
 
