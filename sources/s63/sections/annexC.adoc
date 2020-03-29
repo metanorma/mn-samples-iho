@@ -57,8 +57,10 @@ Reports of both types (complete SENC contents and Filtered by route) are divided
 The data content of each of the header fields is defined in the table below:
 
 [%unnumbered]
+[cols="a,a,a",option="header"]
 |===
-h| Field Name h| Type h| Source.
+| Field Name | Type | Source
+
 | 1. Vessel Name | Text | The name of the vessel as recorded within the ECDIS.
 | 2. Identifier | Text | A unique identifier, the MMSI or vessel IMO number.
 | 3. ENC Update reference date | Date | The data used as the reference for the status of each of the cells. This is the datestamp of the last data server's service media used to update the SENC. The date is taken from the S-63 SERIAL.ENC file as defined in section 6.3 and is expressed both in standard notation "NN MMM YYYY" and week number as defined in S-63 section 6.3. These fields are defined in S-63 section 6.3 as the "Date of Publication" and "Week of Issue" respectively.
@@ -101,7 +103,7 @@ The possibilities for the ENC status are listed in the following table along wit
 
 The detailed tables in each report are arranged by data server – each separate data server or ENC data source within the SENC has its own separate table listing all ENCs by content type (as reported in the "Content" field in the report header). The detailed tables contain the following information:
 
-. Title: Data Server Name- this is the data server identified by the SERIAL.ENC file referred to in the header section as defined in section 
+. Title: Data Server Name- this is the data server identified by the SERIAL.ENC file referred to in the header section as defined in section
 . For each cell installed in the SENC from the data server:
 [type=a]
 .. Cell Name – the name of the cell. The S-57 DSID DSNM subfield (S-57 Appendix B, 6.3.2.1)
@@ -111,12 +113,21 @@ The detailed tables in each report are arranged by data server – each separate
 .. Status – the status of the cell. The status may have one of four values determined according to the criteria in the following table:
 
 [%unnumbered]
+[cols="a,a",option="header"]
 |===
-^.^h| Status Message | Specification
-^.^| *Up to date* a| This is where the SENC has all the latest update and/or new edition information for the cell installed as defined by the latest PRODUCTS.TXT data. The reference date for the most up to date information is defined by the "ENC Update reference date" defined in <<report_header>> (found within the latest SERIAL.ENC file installed on the system). The ENC Update reference date must be within the last four weeks from the time of the report execution or the cell shall be displayed as "Not up to date" regardless of its status as defined by the PRODUCTS.TXT data.
-^.^| *Not Up to date* a| This is where the SENC has NOT installed all the latest update and/or new edition for the cell. Again, the reference point for what should be installed is defined by the ENC Update reference date defined in <<report_header>> (found within the latest SERIAL.ENC file applied to the SENC from the data server). If the reference date is older than four weeks then cells shall be displayed as "not up to date" by definition.
-^.^| *Withdrawn* a| The number of cells which have been withdrawn by the data server or cancelled but which are still available within the SENC.
-^.^| *Unknown* a| Cells for which a status cannot be determined for any reason. If cells from a dataset with a "PARTIAL" PRODUCTS.TXT file are loaded then all cells in a data server's service but not included in the partial PRODUCTS.TXT shall be deemed to be "Unknown" as no definitive information on them can be determined. A "FULL" PRODUCTS.TXT content is required to specify the status of all cells in a data server's service.
+| Status Message | Specification
+
+^.^| *Up to date*
+| This is where the SENC has all the latest update and/or new edition information for the cell installed as defined by the latest PRODUCTS.TXT data. The reference date for the most up to date information is defined by the "ENC Update reference date" defined in <<report_header>> (found within the latest SERIAL.ENC file installed on the system). The ENC Update reference date must be within the last four weeks from the time of the report execution or the cell shall be displayed as "Not up to date" regardless of its status as defined by the PRODUCTS.TXT data.
+
+^.^| *Not Up to date*
+| This is where the SENC has NOT installed all the latest update and/or new edition for the cell. Again, the reference point for what should be installed is defined by the ENC Update reference date defined in <<report_header>> (found within the latest SERIAL.ENC file applied to the SENC from the data server). If the reference date is older than four weeks then cells shall be displayed as "not up to date" by definition.
+
+^.^| *Withdrawn*
+| The number of cells which have been withdrawn by the data server or cancelled but which are still available within the SENC.
+
+^.^| *Unknown*
+| Cells for which a status cannot be determined for any reason. If cells from a dataset with a "PARTIAL" PRODUCTS.TXT file are loaded then all cells in a data server's service but not included in the partial PRODUCTS.TXT shall be deemed to be "Unknown" as no definitive information on them can be determined. A "FULL" PRODUCTS.TXT content is required to specify the status of all cells in a data server's service.
 
 |===
 
@@ -128,16 +139,31 @@ If the OEM wishes to provide more information to end users in the ENC status rep
 . Action. An advisory-only action to be taken by the user based on the status of ENCs within the SENC, their expiry dates and availability of data within the data server's service.
 
 [%unnumbered]
+[cols="a,a",option="header"]
 |===
-h| Action h| Definition
-| Renew | If the expiry date of the ENC permit for the cell is less than 30 days from the time of the execution of the report then the entry in the table shall be "Renew".
-a| To be Ordered +
-(Route Filtered report only) a| If, when running the route filtered report, a cell is identified within the data server's service which intersects the route (as defined in <<filtering_of_enc_update_status>>) but the cell is not currently installed, it shall be included in the table with the Action as "To be Ordered". : Note that +
-1. The cell limits defined in the PRODUCTS.TXT for the data server's service shall be used to establish intersection with the route (as defined in <<filtering_of_enc_update_status>>). +
-2. The "advisory" nature of this column should be made very clear to the user as there may be many small scale charts which intersect a particular route, not all of which the mariner considers necessary.
-| No action | If the cell expiry date is > 30 days from the time of the report execution it shall be marked as "No action".
-| To be removed | If the cell is marked as cancelled or does not appear in the latest edition of the data server's full PRODUCTS.TXT then it should be removed so that out of date information is not maintained within the SENC.
-| To be installed (Route filtered report only). | If a cell is identified as intersecting with the planned route (as defined in <<filtering_of_enc_update_status>>) and a permit is installed within the system but the cell itself is not installed then the entry shall be marked as "To be installed".
+| Action | Definition
+
+| Renew
+| If the expiry date of the ENC permit for the cell is less than 30 days from the time of the execution of the report then the entry in the table shall be "Renew".
+
+| To be Ordered (Route Filtered report only)
+|
+If, when running the route filtered report, a cell is identified within the data server's service which intersects the route (as defined in <<filtering_of_enc_update_status>>) but the cell is not currently installed, it shall be included in the table with the Action as "To be Ordered".
+
+Note that:
+
+. The cell limits defined in the PRODUCTS.TXT for the data server's service shall be used to establish intersection with the route (as defined in <<filtering_of_enc_update_status>>).
+
+. The "advisory" nature of this column should be made very clear to the user as there may be many small scale charts which intersect a particular route, not all of which the mariner considers necessary.
+
+| No action
+| If the cell expiry date is > 30 days from the time of the report execution it shall be marked as "No action".
+
+| To be removed
+| If the cell is marked as cancelled or does not appear in the latest edition of the data server's full PRODUCTS.TXT then it should be removed so that out of date information is not maintained within the SENC.
+
+| To be installed (Route filtered report only)
+| If a cell is identified as intersecting with the planned route (as defined in <<filtering_of_enc_update_status>>) and a permit is installed within the system but the cell itself is not installed then the entry shall be marked as "To be installed".
 
 |===
 
@@ -152,7 +178,7 @@ a| To be Ordered +
 *Identifier*:: IMO 4653321 +
 *ENC Update Reference Date*:: 16 May 2013 : WK24/2013 +
 *Date of Report*:: 1 Jun 2013 +
-*Content*:: Full 
+*Content*:: Full
 
 *Chart Status Summary:*
 
@@ -237,7 +263,7 @@ Unknown:: 0/50
 *Report Date*:: 16^th^ May 2013 +
 *Content*:: Filtered for Route Plan "Goteborg – Kiel" +
 *Start WP*:: Goteborg [57.782324N,11.966667E] +
-*End WP*:: Kiel [54.333742N,10.159607E] 
+*End WP*:: Kiel [54.333742N,10.159607E]
 
 *Chart Status Summary:*
 
