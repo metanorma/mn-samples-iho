@@ -124,7 +124,7 @@ NOTE: An exchange set may contain signatures issued by different data servers an
 [[technical_overview_of_digital_signatures]]
 ==== Technical Overview of Digital Signatures
 
-Data authentication is provided using a digital signature compliant with the Digital Signature Standard (DSS) <<dss,[2]>>. The DSS uses the Secure Hash Algorithm (SHA-1) <<sha,[3]>> to create a message digest (hash). The message digest is then input to the Digital Signature Algorithm (DSA) <<dss,[2]>> to generate the digital signature for the message using an asymmetric encryption algorithm and the 'private key' of a key pair. Asymmetric algorithms have the property that data encrypted using the 'private key' of the key pair can only be decrypted using the 'public key' of the key pair.
+Data authentication is provided using a digital signature compliant with the Digital Signature Standard (DSS) <<dss>>. The DSS uses the Secure Hash Algorithm (SHA-1) <<sha>> to create a message digest (hash). The message digest is then input to the Digital Signature Algorithm (DSA) <<dss>> to generate the digital signature for the message using an asymmetric encryption algorithm and the 'private key' of a key pair. Asymmetric algorithms have the property that data encrypted using the 'private key' of the key pair can only be decrypted using the 'public key' of the key pair.
 
 A consequence of encrypting the message digest with the private key is that anyone who has the public key (which as its name suggests can be made public) can decrypt and verify the message digest.
 Further information on Digital Signatures and their use may be obtained from the IHO website (https://iho.int/[www.iho.int]).
@@ -221,7 +221,7 @@ The following section includes a set of examples of all the various files associ
 
 The PQG parameters are produced from a random string and are used in the creation of the X and Y private/public key pairs. After these have been made, the PQG parameters will be contained within the X and Y private/public key pairs.
 
-P, Q and G are numerical parameters used in the Digital Signature Algorithm as input to the key creation process. Each data server can use a different set of P, Q and G or use an existing set to generate random key pairs. The Digital Signature Standard <<dss,[2]>> describes their derivation and use.
+P, Q and G are numerical parameters used in the Digital Signature Algorithm as input to the key creation process. Each data server can use a different set of P, Q and G or use an existing set to generate random key pairs. The Digital Signature Standard <<dss>> describes their derivation and use.
 
 [%unnumbered]
 .Example of PQG Format
@@ -278,7 +278,7 @@ Both the SA and Data Server public key are provided in the following format, the
 [[the_sa_digital_certificate_format]]
 ===== The SA Digital Certificate (X509v3) Format
 
-The SA Digital Certificate will be in X509v3 format <<ITU-T_X.509,[4]>> and represents a DSA Public Key of length 512 bits. The SA Digital Certificate will always be available in a file called IHO.CRT. The IHO.CRT file is available from IHO at https://iho.int/[www.iho.int].
+The SA Digital Certificate will be in X509v3 format <<ITU-T_X.509>> and represents a DSA Public Key of length 512 bits. The SA Digital Certificate will always be available in a file called IHO.CRT. The IHO.CRT file is available from IHO at https://iho.int/[www.iho.int].
 
 All Data Servers providing an ENC service may include the SA certificate, for reference in the root directory of the media (e.g. in D:\IHO.CRT on a CD-ROM) but, as stated in <<the_sa_public_key>>, the installation on a Data Client's system of the SA certificate should be done independently. The check of the validity of the SA signature against each ENC signature must be done from the independently installed version of the SA certificate.
 

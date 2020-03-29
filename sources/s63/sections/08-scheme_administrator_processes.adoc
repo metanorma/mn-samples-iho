@@ -34,7 +34,7 @@ image::image-15.png["","",""]
 
 The PQG file only exists by itself for a short period during the creation of the X and Y files. After these have been made, the PQG file will be contained within the X and Y files.
 
-The creation of appropriate PQG parameters is covered in more detail in the Digital Signature Standard (DSS) <<dss,[2]>>. For information relating to the format of the PQG file see <<pqg_format>>.
+The creation of appropriate PQG parameters is covered in more detail in the Digital Signature Standard (DSS) <<dss>>. For information relating to the format of the PQG file see <<pqg_format>>.
 
 [[create_private_key]]
 ==== Create Private Key
@@ -49,7 +49,7 @@ The public key is an output of the key generation process. The public key is sen
 [[create_and_issue_sa_digital_certificate]]
 === Create and Issue SA Digital Certificate (X509v3)
 
-The SA Digital Certificate will be compliant with X509v3 <<ITU-T_X.509,[4]>>. The SA Digital Certificate will always be provided in a file called IHO.CRT. The IHO.CRT file is available from IHO at https://iho.int/[www.iho.int].
+The SA Digital Certificate will be compliant with X509v3 <<ITU-T_X.509>>. The SA Digital Certificate will always be provided in a file called IHO.CRT. The IHO.CRT file is available from IHO at https://iho.int/[www.iho.int].
 
 The SA uses a DSA Public Key of length 512 bits.
 

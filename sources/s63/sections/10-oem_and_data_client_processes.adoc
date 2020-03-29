@@ -275,8 +275,8 @@ The authentication procedure is outlined below:
 . Extract the ENC signature file. 
 . Discard the first signature part (i.e. the first two data strings and their attendant headers. This is the Data Server signature of the ENC data). This leaves the SA signed Data Server Certificate. 
 . Extract the remaining signature part (i.e. the first two data strings and their attendant headers from the remaining file obtained from 'b'). This leaves a public key file.
-. Hash the public key file (obtained from 'c') using the algorithm *_SHA-1_* <<sha,[3]>>. All bytes within the file are to be hashed.
-. Verify the signature part (as removed at 'c' above) by passing it (the signature), together with the SA Public Key file (the key) and the hash of the public key file (obtained at 'd') to the *_DSA_* <<dss,[2]>>. This will return a status (correct or incorrect).
+. Hash the public key file (obtained from 'c') using the algorithm *_SHA-1_* <<sha>>. All bytes within the file are to be hashed.
+. Verify the signature part (as removed at 'c' above) by passing it (the signature), together with the SA Public Key file (the key) and the hash of the public key file (obtained at 'd') to the *_DSA_* <<dss>>. This will return a status (correct or incorrect).
 
 If incorrect the system must terminate the process and return the following warning message:
 
@@ -306,8 +306,8 @@ This procedure is performed by Data Client's systems to validate the ENC signatu
 . Extract the ENC signature file uniquely related to an ENC cell file.
 . Extract the first signature part (i.e. the first two data strings and their attendant headers). This leaves the certificate. 
 . Discard the remaining signature part (i.e. the first two data strings and their attendant headers from the remaining file). This leaves a public key file. 
-. Hash the associated ENC Cell File using the algorithm *_SHA-1_* <<sha,[3]>>. All bytes within the file are to be hashed.
-. Verify the signature part (as extracted at 'b' above) by passing it (the signature), the public key - as left at 'c' above (the key) and the hash of the ENC Cell File, as obtained at 'd' above, to the *_DSA_* <<dss,[2]>>. This will return a status (correct or incorrect).
+. Hash the associated ENC Cell File using the algorithm *_SHA-1_* <<sha>>. All bytes within the file are to be hashed.
+. Verify the signature part (as extracted at 'b' above) by passing it (the signature), the public key - as left at 'c' above (the key) and the hash of the ENC Cell File, as obtained at 'd' above, to the *_DSA_* <<dss>>. This will return a status (correct or incorrect).
 
 If the ENC signature is not authenticated correctly, the Data Client shall not decrypt the ENC because its origins cannot be verified. If the ENC is authenticated correctly, the ENC can safely be decrypted.
 
@@ -399,7 +399,7 @@ Note that the unencrypted Cell Keys are 5 bytes in length even though the encryp
 This procedure is performed by the Data Client's system and is carried out as outlined in the flowchart (for <<decrypt_the_cell_keys_in_a_cell_permit>> and <<decrypt_enc_base_cell_or_update_file>>) and the step by step guide below {blank}footnote:[OEMs should note that there is no requirement to check the edition date against the permit or words to this effect.]:
 
 [type=a]
-. Decrypt the ENC file using the Blowfish algorithm with CK1 as the decryption key {blank}footnote:[Rather than decrypting and decompressing the entire ENC file the data client can check that the decrypted header information is compliant with the ZIP standard <<zip_ffs,[5\]>>.]. 
+. Decrypt the ENC file using the Blowfish algorithm with CK1 as the decryption key {blank}footnote:[Rather than decrypting and decompressing the entire ENC file the data client can check that the decrypted header information is compliant with the ZIP standard <<zip_ffs>>.]. 
 . Decompress the ENC file. If decompression is successful, the ENC file is decrypted and ready for import.
 . If decompression is unsuccessful, decrypt the ENC file using the Blowfish algorithm with CK2 as the decryption key. 
 . Decompress the ENC file. If decompression is successful, the ENC file is decrypted and ready for use. 
@@ -412,13 +412,13 @@ This procedure is performed by the Data Client's system and is carried out as ou
 
 This procedure is performed by the Data Client on decrypted ENC files. The procedure is as follows:
 
-Uncompress the ENC file using the ZIP standard <<zip_ffs,[5]>> to create a file fully compliant with the S-57 Edition 3.1 ENC Product Specification.
+Uncompress the ENC file using the ZIP standard <<zip_ffs>> to create a file fully compliant with the S-57 Edition 3.1 ENC Product Specification.
 
 [[fig31]]
 .Decrypt & Uncompress ENC Base Cell and Update Files
 image::image-31.png["","",""]
 
-NOTE: The CRC value of the ENC <<iho_ts_dhd,[1]>> is always computed on the unencrypted ENC information. The application must confirm successful decryption and decompression by conducting the CRC check on all ENC information.
+NOTE: The CRC value of the ENC <<iho_ts_dhd>> is always computed on the unencrypted ENC information. The application must confirm successful decryption and decompression by conducting the CRC check on all ENC information.
 
 [[data_client_permanent_warnings]]
 === Data Client Permanent Warnings

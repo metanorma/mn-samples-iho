@@ -42,7 +42,7 @@ image::image-19.png["","",""]
 
 The PQG file only exists by itself for a short period during the creation of the X and Y files. After these have been made, the PQG file will be contained within the X and Y files
 
-The creation of appropriate PQG parameters is covered in the publication Digital Signature Standard (DSS) <<dss,[2]>>.
+The creation of appropriate PQG parameters is covered in the publication Digital Signature Standard (DSS) <<dss>>.
 
 [[create_private_key_file]]
 ===== Create Private Key File
@@ -66,11 +66,11 @@ The SSK defines a signature of the Data Server's public key. The input to the si
 [[sign_public_key_and_generate_ssk]]
 ===== Sign Public Key and Generate SSK
 
-This procedure is normally performed once by a Data Server to create its self signed key (SSK) which is then sent to the SA who will use it to create a Data Server Certificate. The details of the digital signature algorithm _DSA_ are covered in the publication FIPS 186 Digital Signature Standard (DSS) <<dss,[2]>>. The procedure is as follows:
+This procedure is normally performed once by a Data Server to create its self signed key (SSK) which is then sent to the SA who will use it to create a Data Server Certificate. The details of the digital signature algorithm _DSA_ are covered in the publication FIPS 186 Digital Signature Standard (DSS) <<dss>>. The procedure is as follows:
 
 [type=a]
-. Hash the public key file using the algorithm _SHA-1_ <<sha,[3]>>. All bytes within the file are to be hashed.
-. Sign the public key file (as hashed at 'b' above) by passing the private key file, the hash of the public key file (as obtained at 'b' above) and a random string through the _DSA_ algorithm <<dss,[2]>>. This will return the two signature elements ('R' and 'S'). 
+. Hash the public key file using the algorithm _SHA-1_ <<sha>>. All bytes within the file are to be hashed.
+. Sign the public key file (as hashed at 'b' above) by passing the private key file, the hash of the public key file (as obtained at 'b' above) and a random string through the _DSA_ algorithm <<dss>>. This will return the two signature elements ('R' and 'S'). 
 . Write these to the self signed key file in the format defined in <<the_ssk_format>> and append the public key file to form the self signed key file.
 
 [[authenticate_validate_data_server_ssk]]
@@ -120,8 +120,8 @@ If a failure is reported in either of these two options the process is to be ter
 [type=a]
 . Obtain the SA public key from the IHO website https://iho.int/[www.iho.int] .
 . Extract the signature elements (i.e. the first two data strings and their attendant headers) from the certificate file. This leaves a public key file. 
-. Hash the public key file (obtained from 'b') using the algorithm SHA-1 <<sha,[3]>>. All bytes within the file are to be hashed.
-. Verify the signature elements (as removed at 'a' above) by passing it, together with the SA Public Key (the key as obtained in 'a') and the hash of the public key file (as obtained at 'b' above) to the DSA<<dss,[2]>>. This will return a status (correct or incorrect).
+. Hash the public key file (obtained from 'b') using the algorithm SHA-1 <<sha>>. All bytes within the file are to be hashed.
+. Verify the signature elements (as removed at 'a' above) by passing it, together with the SA Public Key (the key as obtained in 'a') and the hash of the public key file (as obtained at 'b' above) to the DSA <<dss>>. This will return a status (correct or incorrect).
 . If the Data Server Certificate authenticates correctly, its signature elements 'R' and 'S' may then be used in the construction of ENC digital signatures. 
 
 [[fig20]]
@@ -195,7 +195,7 @@ Unencrypted cell keys are 5 bytes long or 10 hexadecimal characters as shown in 
 
 This procedure is normally performed by the Data Server on ENC files before they are encrypted. The procedure is as follows:
 
-* Compress the ENC cell file using the ZIP standard <<zip_ffs,[5]>> documented at ( http://www.pkware.com/[www.pkware.com]).
+* Compress the ENC cell file using the ZIP standard <<zip_ffs>> documented at ( http://www.pkware.com/[www.pkware.com]).
 
 The resulting compressed ENC file is used as input to the Encryption stage of the scheme. Only the ENC cell files (base and update) are compressed. This process is always completed before the data is encrypted and signed.
 
@@ -226,7 +226,7 @@ This procedure is performed by the Data Server. The ENC update file must be comp
 This procedure is performed by Data Servers to digitally sign their ENC data files. The ENC files must be compressed (<<data_compression>> & <<compress_enc_file>>) and encrypted (<<data_encryption>> & <<encrypt_enc_files>>) before they are signed. The procedure is as follows:
 
 [type=a]
-. Pass the data server private key and the encrypted ENC file contents to the DSA algorithm <<dss,[2]>>. The DSA algorithm will hash the encrypted ENC file using the SHA-1 <<sha,[3]>> algorithm.
+. Pass the data server private key and the encrypted ENC file contents to the DSA algorithm <<dss>>. The DSA algorithm will hash the encrypted ENC file using the SHA-1 <<sha>> algorithm.
 . The DSA algorithm will return two cell signature parameters (R & S). 
 . Write these as the first two data strings within a signature file compliant with the format and naming convention defined in <<data_authentication_file_formats>>. The remainder of the file is to be composed of the Data Server Certificate that contains the public key associated with the private key used to create the signature. 
 
