@@ -1,42 +1,49 @@
 [appendix]
 == Glossary
 
+[[term-ais]]
 === Automatic Identification System (AIS)
 
 A tracking system that broadcasts, via VHF, the position, course and speed of a vessel to other vessels in the vicinity, to reduce the risk of collisions.
 
+[[term-ci]]
 === Confidence Interval (CI)
 
 A range of values so defined that there is a specified probability that the value of a parameter lies within it.
 
+[[term-csb]]
 === Crowdsourced bathymetry (CSB)
 
 The collection of depth measurements from vessels, using standard
 navigation instruments, while engaged in routine maritime operations.
 
+[[term-ecdis]]
 === Electronic Chart Display and Information System (ECDIS)
 
 A computer-based navigation system that
 complies with IMO requirements and can be used for navigation instead of paper navigation charts.
 
+[[term-gebco]]
 === General Bathymetric Chart of the Ocean (GEBCO)
 
 Publicly-available bathymetric map, and associated
 products, of the world's oceans. GEBCO is an IHO and IOC joint Project that relies largely on the voluntary efforts of an international collaborating community of scientists and hydrographers with the support of their parent organizations.
 
+[[term-gnss]]
 === Global Navigation Satellite System (GNSS)
 
 A satellite navigation system with global coverage, such as
 the United States’ NAVSTAR Global Positioning System (GPS), the Russian Federation’s GLONASS, and the
 European Union’s Galileo.
 
+[[term-iho]]
 === International Hydrographic Organization (IHO)
 
 The IHO is the intergovernmental consultative and
 technical organization that was established in 1921 to support safety of navigation and the protection of the marine environment. The principal aim of the IHO is to ensure that all the world’s seas, oceans
 and navigable waters are surveyed and charted.
 
-
+[[term-imo]]
 === International Maritime Organization (IMO)
 
 The IMO is the United Nations specialized agency with
@@ -44,16 +51,18 @@ responsibility for the safety and security of shipping and the prevention of mar
 international shipping. Its main role is to create a regulatory framework for the shipping industry that is
 fair and effective, universally adopted and universally implemented.
 
-
+[[term-ioc-unesco]]
 === Intergovernmental Oceanographic Commission of UNESCO (IOC-UNESCO)
 
 The IOC is the United Nation’s competent body for marine science. The IOC’s role is to promote international cooperation and to coordinate programmes in research, services and capacity-building, in order to learn more about the nature and resources of the ocean and coastal areas and to apply that knowledge for the improvement of management, sustainable development, the protection of the marine environment, and the decision-making processes of its Member States.
 
+[[term-nmea]]
 === National Marine Electronics Association (NMEA)
 
 The US-based marine electronics trade organisation
 setting standards of communication between marine electronics
 
+[[term-trusted-nodes]]
 === Trusted Nodes
 
 Organizations or individuals that serve as data liaisons between mariners (data collectors) and the DCDB. Can provide mariners with data loggers, installation and data download assistance, recommendations on best practices for collecting CSB, and providing the information to the DCDB.

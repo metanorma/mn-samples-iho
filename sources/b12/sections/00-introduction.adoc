@@ -27,22 +27,18 @@ informative, as well, although they are not the primary audience.
 
 === Document Structure
 
-This document addresses several topics related to crowdsourced bathymetry. Chapter One, “Data
-Contribution,” provides information about how to send crowdsourced bathymetry to the IHO Data Centre
+This document addresses several topics related to crowdsourced bathymetry. Chapter One, “<<data-contribution>>,” provides information about how to send crowdsourced bathymetry to the IHO Data Centre
 for Digital Bathymetry (DCDB), via Trusted Nodes.
 
-Chapter Two, “Data Collection,” provides a high-level overview of the sensors necessary for collecting
-crowdsourced bathymetry, as well as best practices and recommendations for collecting CSB.
-
-Chapter Three, “Data and Metadata,” describes the importance of data and metadata, and details the information
+Chapter Two, “<<data-collection>>,” provides a high-level overview of the sensors necessary for collecting
+crowdsourced bathymetry, as well as best practices and recommendations for collecting CSB. Chapter Three, “<<data-and-metadata>>,” describes the importance of data and metadata, and details the information
 that is required for submitting CSB to the DCDB, as well as additional information that should be collected
 whenever possible.
 
-Chapter Four, “Uncertainty”, delves into data quality issues, and discusses how mariners and end users
+Chapter Four, “<<uncertainty>>”, delves into data quality issues, and discusses how mariners and end users
 can better understand the impact of various factors on the reliability of a dataset. Chapter Five,
-“Additional Considerations”, discusses issues that collectors and Trusted Nodes may wish to consider
+“<<additional-considerations>>”, discusses issues that collectors and Trusted Nodes may wish to consider
 before engaging in CSB activities.
 
-Additional detail and further reading are provided via Annexes and external links. This guidance document
-is intended to be a living document and will be updated in light of further experience and feedback from
+Additional detail and further reading are provided via <<annex-abbreviations>> and external links. This guidance document is intended to be a living document and will be updated in light of further experience and feedback from data collectors and data users.
 

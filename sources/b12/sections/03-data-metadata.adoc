@@ -1,5 +1,5 @@
 
-[[data-metadata]]
+[[data-and-metadata]]
 == Data and Metadata
 
 === Data vs. Metadata
@@ -79,7 +79,7 @@ of the data for oceanographic research, scientific and feasibility studies and o
 | 65
 
 | ID Type
-| ID numbers used to uniquely identify vessels. Currently, only two types are available: Maritime Mobile Service Identity (MMSI) or International Maritime Organization (IMO) number. The MMSI number is used to uniquely identify a vessel through services such as AIS. The IMO number is linked to a vessel for its lifetime, regardless of change in flag or ownership. Contributors may select only one ID Type.
+| ID numbers used to uniquely identify vessels. Currently, only two types are available: Maritime Mobile Service Identity (MMSI) or International Maritime Organization (IMO) number. The MMSI number is used to uniquely identify a vessel through services such as <<term-ais,AIS>>. The IMO number is linked to a vessel for its lifetime, regardless of change in flag or ownership. Contributors may select only one ID Type.
 | MMSI
 
 | ID Number
