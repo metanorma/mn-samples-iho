@@ -1,4 +1,4 @@
-= IHO DATA PROTECTION SCHEME
+= IHO Data Protection Scheme
 :series: S
 :docnumber: 63
 :version: 1.2.1
@@ -15,5 +15,36 @@
 
 include::sections/00-preface.adoc[]
 
-include::sections/00-introduction.adoc[]
+include::sections/00-glossary.adoc[]
 
+include::sections/01-introduction.adoc[]
+
+include::sections/02-data_compression.adoc[]
+
+include::sections/03-data_encryption.adoc[]
+
+include::sections/04-data_licencing.adoc[]
+
+include::sections/05-data_authentication.adoc[]
+
+include::sections/06-data_management.adoc[]
+
+include::sections/07-directory_and_file_structure.adoc[]
+
+include::sections/08-scheme_administrator_processes.adoc[]
+
+include::sections/09-data_server_processes.adoc[]
+
+include::sections/10-oem_and_data_client_processes.adoc[]
+
+include::sections/11-s63_error_codes_and_explanations.adoc[]
+
+include::sections/annexA.adoc[]
+
+include::sections/annexB.adoc[]
+
+include::sections/annexC.adoc[]
+
+include::sections/appendix1.adoc[]
+
+include::sections/appendix2.adoc[]

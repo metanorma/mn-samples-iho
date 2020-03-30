@@ -29,13 +29,13 @@ Copyright infringement and data piracy are pervasive problems of the digital era
 
 In September 2000, IHO Member States were polled on their views on developing a single IHO Recommended Security Scheme (RSS) (see: IHO Circular Letter 38/2000). Responses indicated that a large majority of the Member States wished to have their ENC data encrypted and agreed that the IHO should adopt a single RSS (see: IHO CL 15/2001 Rev.1). A majority of the Member States responding also supported the adoption of the Primar Security Scheme as the IHO RSS, as it was at the time the de facto standard for ENC protection and the majority of ECDIS manufacturers had already developed the necessary decryption facilities in their systems.
 
-The IHO Committee on Hydrographic Requirements for Information Systems (CHRIS, now HSSC: Hydrographic Services and Standards Committee), at its 13th meeting (Athens, Greece, September 2001), revisited the issue of an RSS and agreed that a small advisory expert group investigate the implications of IHO becoming the security scheme administrator for an RSS and assuming responsibility for the maintenance of an RSS.
+The IHO Committee on Hydrographic Requirements for Information Systems (CHRIS, now HSSC: Hydrographic Services and Standards Committee), at its 13^th^ meeting (Athens, Greece, September 2001), revisited the issue of an RSS and agreed that a small advisory expert group investigate the implications of IHO becoming the security scheme administrator for an RSS and assuming responsibility for the maintenance of an RSS.
 
 The Data Protection Scheme Working Group (DPSWG) reported back to the IHO Secretariat in January 2002 that there were no technical implications to the IHO Secretariat becoming the security scheme administrator and that the level of effort to administer the security scheme would be limited and within the IHO Secretariat resources. The DPSWG further provided a plan to develop an IHO RSS Version 1, based on the Primar Security Scheme. This Report was endorsed by CHRIS Members in February 2002 and the DPSWG was tasked to develop Version 1 of an IHO RSS.
 
-The results were presented to CHRIS, at its 14th meeting (Shanghai, China, August 2002), which recommended that the ENC Security Scheme, as developed by the DPSWG, be submitted to IHO Member States for adoption as an IHO RSS, and that the role as Security Scheme Administrator be transferred to the IHO Secretariat. These proposals (see: IHO CL 44/2002) were approved by a majority of Member States (see: IHO CL 66/2002). As a result, Edition 1.0 of the IHO Data Protection Scheme was adopted in October 2003 as Publication S-63.
+The results were presented to CHRIS, at its 14^th^ meeting (Shanghai, China, August 2002), which recommended that the ENC Security Scheme, as developed by the DPSWG, be submitted to IHO Member States for adoption as an IHO RSS, and that the role as Security Scheme Administrator be transferred to the IHO Secretariat. These proposals (see: IHO CL 44/2002) were approved by a majority of Member States (see: IHO CL 66/2002). As a result, Edition 1.0 of the IHO Data Protection Scheme was adopted in October 2003 as Publication S-63.
 
-The 18th CHRIS meeting (Cairns, Australia, September 2006) tasked the DPSWG to develop a revised edition of S-63 with the following guidance:
+The 18^th^ CHRIS meeting (Cairns, Australia, September 2006) tasked the DPSWG to develop a revised edition of S-63 with the following guidance:
 
 * There would be no introduction of new features; changes would be kept to a minimum.
 
@@ -45,7 +45,7 @@ The 18th CHRIS meeting (Cairns, Australia, September 2006) tasked the DPSWG to d
 
 * There would be a more precise description of the correct implementation of the IHO standard.
 
-Accordingly, a draft Edition 1.1 of S-63 was prepared by DPSWG and endorsed by CHRIS at its 19th meeting (Rotterdam, Netherlands, November 2007). This was subsequently endorsed by Member States and adopted in March 2008. Edition 1.1 included supporting documentation, test data and a method to supply ENCs using “Large Media Support”.
+Accordingly, a draft Edition 1.1 of S-63 was prepared by DPSWG and endorsed by CHRIS at its 19^th^ meeting (Rotterdam, Netherlands, November 2007). This was subsequently endorsed by Member States and adopted in March 2008. Edition 1.1 included supporting documentation, test data and a method to supply ENCs using “Large Media Support”.
 
 In April 2012, small changes were made to Edition 1.1 to remove the hexadecimal limitation of M_ID in order to extend the number of possible M_ID values that the scheme is able to accommodate. This resulted in the publication of edition 1.1.1 of S-63.
 

@@ -1,0 +1,485 @@
+
+[[data_management]]
+== Data Management
+
+[[data_management_introduction]]
+=== Introduction
+
+The loading and import of ENCs to an ECS/ECDIS must be carefully managed; this is especially true in a multiple Data Server environment. Since the scheme encrypts the entire contents of an ENC cell file (base and update), this restricts access to certain subfields in an ENC cell file required by OEM systems to manage the import of ENCs to the ECS/ECDIS SENC. As a consequence additional S-63 files are necessary to supplement this inaccessible data as well as modification to an existing S-57 file, i.e. the CATALOG.031 file.
+
+It has also been identified that the import of large numbers of ENCs has rendered some aspects of S-57 impractical to implement, e.g. a single exchange set split across multiple media volumes. For this reason it has been necessary to modify the loading strategy and utilise the additional S-63 files to better manage the installation and loading of ENCs across multiple exchange sets.
+
+As mentioned previously S-63 is designed to operate in a multiple data supplier environment. S-57 does not have a mechanism to discriminate between ENC exchange sets supplied by different data servers and therefore it has been necessary to cater for this in version 1.1 of this standard.
+
+ENC updates are compiled in accordance with IHO S-57. In order to assist end users in the management of their updates S-63 defines certain files which can assist an ECDIS in informing users of the revision status of their ECDIS. In addition to loading and installation functionality ECDIS manufacturers also are required to implement a report called the ENC update status report, fully defined at Annex C, which lists ENCs loaded into the SENC and their revision information as distributed by a data server.
+
+The content delivered in the additional S-63 files contain important information that, make the S-57 import process more efficient and intuitive for the Data Client and which help meet standard functionality required by the IMO Performance Standard. These files and their use are defined in this section.
+
+The loading/import method can be broken down into the following processes:
+
+* Manage the import of Data Server specific ENC exchange sets using the Data Server ID.
+* Manage a Data Server's service if extended across multiple exchange sets.
+* Manage the import of licenced ENC cells in a contiguous manner, ensuring all ENC base cells and corresponding update files, if any, are imported correctly and sequentially.
+* Manage the import of text and picture files by maintaining a relationship between them and the cell file they are associated with.
+
+The following table lists the additional S-63 files and file modifications together with their main purpose within S-63. These files and their associated formats are described in more detail at <<enc_product_listing>>, <<serial_file>> & <<the_s57_catalogue_file>>.
+
+[%unnumbered]
+|===
+h| File/Field h| Primary Management Function
+| *PRODUCTS.TXT* a| Required to provide the following information: +
+1. The Issue Date of the Products File being installed. +
+2. A catalogue of all available cells in a Data Server's service. +
+3. The coverage of all available cells in a service. +
+4. The latest Issue Date of all available cells in a service (including cancelled cells). +
+5. The destination exchange set (base or update) where the ENC base cell file (EN Application Profile) resides. This may be a base cell, new edition or re-issue.
+| *SERIAL.ENC* a| Required to provide the following information: +
+1. The Data Server ID. +
+2. The Exchange Set week number and date of issue. +
+3. Type of Exchange Set (base or update) +
+4. The Exchange Set number in a multiple series.
+| *CATALOG.031 [CATD-COMT]* | Required to provide information originally contained in the DSID field of the cell file to import the complete, sequential content of an exchange set.
+
+|===
+
+[[enc_product_listing]]
+=== ENC Product Listing (PRODUCTS.TXT)
+
+The file named 'PRODUCTS.TXT' will be supplied with each encrypted exchange set and will be stored in a folder named 'INFO' held in root directory. It is the mechanism for managing data within an ENC Service and exchanging it with data already held in the Data Client's system SENC. The structure and format of this file is described in more detail in <<product_list_file_structure>>, <<product_list_header>>, <<product_list_enc_section>> & <<product_list_ecs_section>>.
+
+There are two types of PRODUCTS.TXT file, "PARTIAL" and "FULL". A partial products listing contains the current status of all ENCs contained in a single exchange set. A full product listing contains the current status of ALL cells in a Data Server's service, that is, all exchange sets. Although procedures may vary between Data Servers a full product listing will always be provided with the weekly update exchange set. In instances where a Data Server issues a complete set of new base media (no weekly update), each base media must contain a full product list of all ENCs in a service
+
+NOTE: OEMs should ensure that their systems are able to handle "FULL" and "PARTIAL" product listings (<<product_list_header>> refers). Base CDs may contain a partial listing with only the contents of the CD included. The Update will always carry a full product listing of all available ENCs in a Data Server's Service.
+
+WARNING: If a PARTIAL exchange set is loaded it may adversely affect the behaviour of the ENC Status report described in Annex C for an ECDIS. Data Servers should be careful to ensure their data clients are aware of this behaviour.
+
+Licence and ENC information from different Data Server's must be stored independently on the manufacturer's system. The SERIAL.ENC file (see <<serial_file>>) contains the Data Server ID and should be used in conjunction with the associated product listing to identify the source of the service. The latest product listing contains the current status of ENC cell data in a service. This file is used to compare available ENC cell data in the exchange set with information already stored in the OEMs SENC. The OEM system can then determine what new data is available for import.
+
+It is recommended that OEMs maintain a copy of the latest product listing on their systems to reflect the current status of a particular service. To manage both "FULL" and "PARTIAL" product listings it is essential that new information is merged with existing stored data and not overwritten.
+
+[[product_list_file_structure]]
+==== Product List File Structure
+
+The content of the product list will be divided into sections. The Product List file is completely encoded in ASCII and contains 3 sections as follows:
+
+[%unnumbered]
+|===
+h| Section h| Description
+| *Header* | Contains general information about the nature of the Product List, e.g. the time of creation, version number.
+| *:ENC* | Contains the current status of all ENC cells/updates provided by the data server.
+| *:ECS* | Contains information about other digital chart information provided by the data server.
+
+|===
+
+[[product_list_header]]
+==== Product List Header
+
+The Product List will always start with one Header Section. The Header Section will consist of several records. Each record will start at a new line and be terminated with ASCII CR/LF characters as within the signature files.
+
+The Header will consist of the information fields defined in the example and table below. All the fields are mandatory and will always be defined in the same order.
+
+[%unnumbered]
+|===
+h| Field h| Fieldname h| Value
+
+| Date and Time | :DATE a| `YYYYMMDD HH:MM` +
+The field name, date and time will be separated by a < space> character. The date will be provided as `20060627` and the time as 09:00:00 using the 24 hour clock. +
+Example: *`:DATE 20061019 09:00:00`*
+
+| Product List Version | :VERSION a| Integer in range 1 to 99. +
+It will be incremented by 1 for each new version of the PRODUCTS.TXT file specification. S-63 Edition 1.1 defines the value as "2". +
+i.e. *`:VERSION 2`*
+
+| Content | :CONTENT a| `"FULL"` Full copy of Product List +
+`"PARTIAL"` Partial copy of Product List +
+Code used to indicate if the Product List file contains a full or partial copy of the complete Product List. +
+Example: *`:CONTENT FULL`*
+|===
+
+[%unnumbered]
+====
+`:DATE 20061019 09:00:00` +
+`:VERSION 1` +
+`:CONTENT FULL`
+====
+
+[[product_list_enc_section]]
+==== Product List 'ENC' Section
+
+The Product List will always contain one ENC Section. It will contain information about the current navigational status of all official ENC cells and updates supported by the Data Server.
+
+This section will start with one _ENC Section Identifier_ record as defined below.
+
+[%unnumbered]
+|===
+h| Field h| Fieldname h| Value
+| ENC Section Identifier | `:ENC` | Not applicable
+
+|===
+
+The ENC Section will then consist of repeating records defining the status of each ENC supported by the data server. The definition of this record is defined in the table below:
+
+[%unnumbered]
+|===
+h| Field h| Value
+| *Product Name* a| Name of product as defined in S57e3 DSID-DSNM subfield. The file extension will always be 000. +
+Example: *`GB202400.000`*
+| *Base Cell Issue Date [EN Application Profile]* a| `YYYYMMDD` +
+This date is only used for the base cell files (i.e. new data sets, re-issue and new edition), not update cell files. All updates dated on or before this date must have been applied by the producer. Cancelled cells with the edition number '0' (zero) will carry the issue date of the update used to cancel it. +
+Example: *`20050222`*
+| *Base Cell Edition* a| Edition number of base [EN] ENC cell. Integer in range `1` to `999` +
+Identical to content of S57e3 DSID-EDTN. In the case where a cell is cancelled the Product Edition will be set to '0' (zero), see <<managing_cancelled_cells_data_servers>>. This allows the ECDIS system to quickly identify cells that have been removed from a service.
+| *Issue Date Latest Update [ER Application Profile]* a| `YYYYMMDD` +
+Date on which the latest update for the current ENC cell edition was issued. This field is used whenever there is an update or a re-issue of the cell.
+| *Latest Update Number* a| Integer in range 1 to 999 +
+Update number of the latest update message issued for the ENC cell edition.Identical to content of DSID-UPDN. Left blank when no update is available for the current edition of the base cell. Used only for updates and re-issues.
+| *File Size* a| Integer in range 1 to 999999 +
+Total file size in Kilobytes for all files issued for the product. This will include the size for the base cell, updates and any applicable text and picture files.
+a| *Cell limit* +
+*Southernmost latitude* a| Degrees of arc, south is negative. +
+Southernmost latitude of data coverage in the ENC product. +
+Example: *`49.898773299986 (49º53´.93N)`*
+a| *Cell limit* +
+*Westernmost longitude* a| Degrees of arc, west is negative. +
+Westernmost longitude of data coverage in the ENC product. +
+Example: *`-1.927277300003 (001º55´.64W)`*
+a| *Cell limit* +
+*Northernmost latitude* a| Degrees of arc, south is negative. +
+Northernmost latitude of data coverage in the ENC product. +
+Example: *`50.922828000014 (50º55´.37N)`*
+a| *Cell limit* +
+*Easternmost longitude* a| Degrees of arc, west is negative. +
+Easternmost longitude of data coverage in the ENC product. +
+Example: *`-0.000166700008 (000º00´.01W)`*
+a| *10 Data Coverage* +
+*Coordinates* a| Optional. Degrees of arc, south and west are negative. +
+10 coordinate pairs can be supplied to indicate the data coverage within the ENC cell. It will be provided as repeating Y-coordinate and X-coordinate pairs.
+| *Compression* a| Integer in range 0 to 99 +
+"0" No compression +
+"1" Compression is used (see <<data_compression>>)
+| *Encryption* a| Integer in range 0 to 99 +
+"0" No encryption +
+"1" Encryption is used (see <<data_encryption>>)
+| *Base cell update number* | In the event of a cell being re-issued the update number current at the time of the re-issue should be inserted here. If a cell edition does not have a re-issue then this field is blank or zero filled.
+| *Last update number for previous edition* | Empty if no previous editions available in the data server database. If previous editions of the cell are available then this field will contain the last update number for the previous edition.
+a| *Base Cell Location* +
+*(See note below)* a| *CD-ROMs* +
+The location within the exchange set where the base cell can be found. Base cells may be located on either one or several base or update exchange sets. This is an integer in range 1 to 99 proceeded either by a 'B' if on a base CD or 'U' if on the update, e.g. *B7*, *B11*, *U1*, etc. +
+*Large Media Support* +
+In the case where a service supports large media this field is divided into two subfields delimited by a "*;*" (semi colon). The first subfield contains the media number ID and the second the exchange set number. The Media ID is designated with a *"M"* followed by a number. The ExSet number is formatted in the same as for CD-ROMs, e.g. *"B1"*. For example a base cell could be located in the following ways, *"M1;B1"*, *"M1;B2"*, *"M2;B10* ,etc. Updates for example, *"M1;U1"* or *M1;U2* if more than one update ExSet on the same media. See <<appendix2>> of this document for details.
+a| *Cancelled Cell Replacements* +
+*(Old Comments Field))* | If a cell is cancelled and a replacement cell(s) is issued this field is used to identify the replacement(s). In cases where there are more than one replacement the cell names will be delimited by a "*;*" (semi-colon). See <<cancelled_enc_cell_replacements>> for further details.
+
+|===
+
+NOTE: The "Base Cell Location" is the location where the latest version of the base cell (EN Profile) resided this can be either the base media or in the case of new cells, new editions or re-issues the update media.
+
+[%unnumbered]
+.Example of Structure and Format:
+====
+[%unnumbered]
+image::image-12.png["","",""]
+====
+
+[[managing_cancelled_cells_data_servers]]
+===== Managing Cancelled Cells (Data Servers)
+
+When a cell is cancelled by a HO an update cell file is created, containing only the Data Set General Information record with the 'Data Set Identifier' [DSID] field. The 'Edition Number' [EDTN] subfield of the DSID field must be set to 0 (zero). Cancellation messages are only used to cancel a base cell file.
+
+In an encrypted service this information is unavailable to the Data Client unless the update is decrypted first. To avoid the need to decrypt first there are two methods of encoding this in an encrypted exchange set as follows:
+
+. The EDTN subfields of the CATD-COMT field in the CATOLOG.031 file (see <<encoding_cancelled_cells>>).
+. The 'Base Cell Edition' field in the PRODUCTS.TXT file (see <<product_list_enc_section>>).
+
+The CATALOG.031 file can be used to identify any cancelled cells in an exchange set at import whilst the PRODUCTS.TXT file acts to highlight all cancelled cells in a Data Server's Service. ENCs that have been cancelled should remain on the base or update media, including references in the PRODUCTS.TXT file, for a minimum of 12 months.
+
+[[managing_cancelled_cells_data_clients]]
+===== Managing Cancelled Cells (Data Clients)
+
+Cancelled cells are those ENCs that have been removed from a data server's ENC service and as such are no longer supported or updated by the issuing authority. There are two options available to manufacturers when managing cancelled cells as follows:
+
+. Automatically remove the cell from the SENC when a cell is identified as cancelled.
+. Allow the user to decide whether to retain the cell in the SENC or remove it.
+
+ECDIS/ECS manufacturers are free to decide which of these options to implement in their systems. However it is important that the system informs the user of the fact that a particular cell is cancelled and, in the case of option 2, the consequences of retaining it.
+
+With option 1 the user must be informed that a particular cell is cancelled either during load time or, preferably, in a report at the end of the process.
+
+With option 2 the user is offered the option to retain or remove the cell from the SENC. If the user chooses to retain the cell a permanent warning must be displayed, on screen, when the cancelled cell is viewed. The message should be similar to the example below:
+
+*_"Cell <name> has been cancelled and may not be up to date. Under no circumstances should it be used for primary navigation"._*
+
+[[cancelled_enc_cell_replacements]]
+===== Cancelled ENC Cell Replacements
+
+In instances where an ENC cell has been cancelled it is often replaced by one or more ENC cell(s). This may be due to re-scheming on the part of data servers. Provision has been made in this edition of S-63 to display this information in the data client. The comments field of the PRODUCTS.TXT has now been made available to display information relating to replaced cells. The formatting of the cell record in the products listing is given in <<product_list_enc_section>>.
+
+When a cell is identified as cancelled the data client should read the "Cancelled Cell Replacement" field to check if there a replaced ENC cell(s) encoded. If there are then the data client is to make this information available to the user. A message similar to the one below should be displayed:
+
+*_"Cell <name> has been cancelled and has been replaced by cell(s), <name1>; <name2>. Please contact your data supplier to obtain the additional ENC permits"._*
+
+[[product_list_ecs_section]]
+==== Product List 'ECS' Section
+
+The Data Server may also issue other types of digital chart products such as backdrop charts that can be used to display chart coverage. Information about these products can also be made available in the Product List if the data server wishes to.
+
+The content of this section is identical to the ENC Section defined in <<product_list_enc_section>>. The only difference is the _Section Identifier_ which will be "*`:ECS`*".
+
+[%unnumbered]
+.Encoding example of a Product List which utilises all the features defined in <<product_list_file_structure>>
+====
+`:DATE 20061019 09:00:00
+:VERSION 1
+:CONTENT FULL
+:ENC
+AR201130.000,20051118,1,20060703,1,,-36.43335487,-57.41667361,-34.69998565,-54.33335853,,,,,,,,,,,,,,,,,,,,,1,1,0,0,B3,
+AR302120.000,20051219,1,20060427,2,,-39.44997766,-62.39166614,-38.74168723,-61.11683505,,,,,,,,,,,,,,,,,,,,,1,1,0,0,B3,
+AR402490.000,20051206,1,20060330,1,,-39.11668811,-61.94017540,-38.95167627,-61.76656919,,,,,,,,,,,,,,,,,,,,,1,1,0,0,B3,
+AR402550.000,20051219,1,20060427,1,,-39.01664968,-62.16649373,-38.88332240,-61.94017540,,,,,,,,,,,,,,,,,,,,,1,1,0,0,B3,
+AR402560.000,20051122,1,20060427,1,,-38.99166872,-62.39166614,-38.74168723,-62.16649373,,,,,,,,,,,,,,,,,,,,,1,1,0,0,B3,
+AR420010.000,20060912,2,,,,-35.16832135,-56.07497834,-35.03499407,-55.84166992,,,,,,,,,,,,,,,,,,,,,1,1,0,3,B3,
+:ECS
+PM1WORLD.000,19990101,1,,,3000,-90,-180.0,90.0,180.0,-90.0,-180.0,90.0,180.0,,,,,,,,,,,,,,,,,,,0,0,,,B5,`
+====
+
+[[serial_file]]
+=== Serial File (SERIAL.ENC)
+
+A file named SERIAL.ENC is supplied so that Data Clients can identify the following information prior to import:
+
+* Data Server ID (registered with the SA)
+* Week of Issue
+* Date of Issue
+* CD Type (Base or Update)
+* Format Version
+* Exchange Set Number (of a series of exchange sets)
+
+[[serial_enc_file_format]]
+==== SERIAL.ENC File Format
+
+The SERIAL.ENC file is provided to assist Data Client's systems manage the import ENC CDs supplied by a specific Data Servers across multiple exchange sets. It should be the first file that is read from the exchange set as it contains important information about the IHO assigned Data Server's ID, the CD Publication Date, type of CD, number of CDs in that particular Data Server's service, etc.
+
+The contents of this file can be cross referenced with the installed permits to check the status of the Data Client's subscription status.
+
+[%unnumbered]
+|===
+h| Field ID h| Domain h| Bytes h| Range h| *Notes (see below)*
+| Data Server ID | character | 2 | Any two alphanumeric ^.^| 1
+| Week of Issue | character | 10 | Any ASCII characters ^.^| 2
+| Date of publication | date | 8 | YYYYMMDD ^.^| 3
+| CD Type | character | 10 | BASE or UPDATE ^.^| 4
+| Format version | decimal | 5 | 01.00 – 99.99 ^.^| 5
+| Exchange Set Number | character | 6 | B01-99X01-99 or U01-99X01-99 ^.^| 6
+| End of record delimiter | hexadecimal | 3 | 0x0B0D0A ^.^| 7
+
+|===
+
+[%unnumbered]
+|===
+h| Notes h| Explanation and Description
+
+^.^| 1 | Data Server ID should be registered with the IHO; where the data server is also an HO the Agency code for the organisation is obtained from S-62 – IHO Codes for Producing Agencies.
+
+^.^| 2 | The week of issue specifies the week and year that the CD is distributed, e.g., *`WK12-99`*, *`WK45-99`*, *`WK23-00`*, etc.
+
+^.^| 3 | Date of publication is in the regular date format, *`YYYYMMDD`*, e.g., *`19990414`*, *`20000102`*, *`20061102`*, etc.
+
+^.^| 4 | The CD can be issued in two different types:BASE: The format should be defined as BASE, the CD contains all ENs and any additional ERs.UPDATE: The format should be defined as UPDATE, contains any new ENs and all ERs issued since the issue of the last relevant Base CD.
+
+^.^| 5 | Format version describes the version of the SERIAL.ENC file. The version that relates to edition 1.1 of S-63 is *02.00*
+
+^.^| 6 | This field must be used to show the exchange set number of a series, e.g. *`B02X03`*, which equates to Base CD 2 of a total of 3 Base CDs, *`U01X01`* which equates to Update CD 1 of a total of 1.
+
+^.^| 7 | The end of the record delimiter consists of binary characters, and therefore care should be taken when attempting to edit the file – it cannot be edited in Windows Notepad! This is the reason why the SERIAL.ENC file must always be edited in an ASCII/Hexadecimal editor. The delimiter does not normally need to be changed. The delimiter used is *`0x0B0D0A`*.
+
+2+| The SERIAL.ENC file should be stored directly under the media root file, i.e. on the same level as the ENC_ROOT and INFO directories.
+
+|===
+
+[%unnumbered]
+.Example of SERIAL.ENC files
+====
+`PRWK15-99 19990414BASE 02.00B02X030x0B0D0A` +
+`PRWK20-99 19990601UPDATE 02.00U01X010x0B0D0A` +
+(Where `0x0B0D0A` is the end of record delimeter converted to hex)
+====
+
+[[the_s57_catalogue_file]]
+=== The S-57 Catalogue File (CATALOG.031)
+
+The "Data Set Identification" [DSID] field is used by ECS/ECDIS to ensure that base cells and update files are imported to the SENC in the correct sequence and without omission. Since the complete ENC Cell file is encrypted, information in the DSID field of each cell file is not available to OEM systems, unless it is decrypted first.
+
+The "Comments" [CATD-COMT] field in each cell record of the CATALOG.031 file is used to store the required DSID information. Since the CATALOG.031 file acts as the table of contents for the exchange set and identifies where all files are stored it is ideally suited for this purpose.
+
+The information stored in this field must be identical to that stored in the DSID field of the cell file which in turn must conform to section 5.7 of the IHO S-57, Appendix A, Product Specification. This is summarised in the table below. This table specifies the rules for encoding ENC EN & ER application profiles.
+
+[%unnumbered]
+|===
+h| Event ^.^h| File Extension ^.^h| EDTN ^.^h| UPDN ^.^h| UADT ^.^h| ISDT ^.^h| Comments
+| New ENC Cell ^.^| .000 ^.^| 1 ^.^| 0 ^.^| 19950104 ^.^| 19950104 ^.^| UADT < or = ISDT
+| Update 1 ^.^| .001 ^.^| 1 ^.^| 1 ^.^| Prohibited ^.^| 19950121 ^.^| ISDT only
+| Update 2 ^.^| .002 ^.^| 1 ^.^| 2 ^.^| Prohibited ^.^| 19950225 ^.^| ISDT only
+7+| ...
+| Update 31 ^.^| .031 ^.^| 1 ^.^| 31 ^.^| Prohibited ^.^| 19950905 ^.^| ISDT only
+| Re-issue of an ENC Cell ^.^| .000 ^.^| 1 ^.^| 31 ^.^| 19950905 ^.^| 19950910 ^.^| UADT < or = ISDT
+| Update 32 ^.^| .032 ^.^| 1 ^.^| 32 ^.^| Prohibited ^.^| 19951023 ^.^| ISDT only
+7+| ...
+| Update 45 ^.^| .045 ^.^| 1 ^.^| 45 ^.^| Prohibited ^.^| 19951112 ^.^| ISDT only
+| New edition of ENC Cell ^.^| .000 ^.^| 2 ^.^| 0 ^.^| 19951201 ^.^| 19951201 ^.^| UADT < or = ISDT
+| Update 1 to edition 2 ^.^| .001 ^.^| 2 ^.^| 1 ^.^| Prohibited ^.^| 19960429 ^.^| ISDT only
+
+|===
+
+Data Servers must extract the necessary information from the DSID field prior to encryption and encode it in the CATD-COMT of the CATALOG.031 file. The structure and format of this field is described in more detail in <<the_catd_comt_structure_and_format>>. Data Client systems must then read the CATD-COMT field as though accessing the DSID field in an unencrypted exchange set.
+
+[[the_catd_comt_structure_and_format]]
+==== The CATD-COMT Structure and Format
+
+The DSID information stored in the CATD-COMT field is subdivided into four or five comma separated subfields. This is dependant on whether the ENC file has an EN or ER application profile. The final subfield is punctuated by a semi colon (;).
+
+[%unnumbered]
+====
+`VERSION=1.0,EDTN=1,UPDN=0,UADT=20060703,ISDT=20060703;` +
+`VERSION=1.0,EDTN=1,UPDN=1,ISDT=20060710;`
+====
+
+[[encoding_cancelled_cells]]
+===== Encoding Cancelled Cells (see also <<product_list_enc_section>>, <<managing_cancelled_cells_data_servers>>, <<managing_cancelled_cells_data_clients>> & <<cancelled_enc_cell_replacements>>)
+
+Since an update is provided containing just the delete message it should be treated as an ER. Therefore for the purposes of the CATD-COMT field it should be encoded as follows:
+
+`VERSION=1.0,EDTN=0,UPDN=2,ISDT=20060814;`
+
+The following table illustrates the conditions that apply to all the different types of transactions.
+
+[%unnumbered]
+|===
+^.^h| Version Number ^.^h| Edition Number ^.^h| Update Number ^.^h| Update Application Date [UADT] ^.^h| Issue Date [ISDT] ^.^h| Comment
+^.^| `VERSION=1.0` | `EDTN=1` ^.^| `UPDN=0` ^.^| `UADT=20060703` ^.^| `ISDT=20060703` ^.^| New Cell (EN)
+^.^| `VERSION=1.0` | `EDTN=1` ^.^| `UPDN=1` ^.^| `Prohibited` ^.^| `ISDT=20060710` ^.^| Update (ER)
+6+a| 
+^.^| `VERSION=1.0` | `EDTN=1` ^.^| `UPDN=10` ^.^| `UADT=20060710` ^.^| `ISDT=20060717` ^.^| Re-issue (EN)
+^.^| `VERSION=1.0` | `EDTN=1` ^.^| `UPDN=11` ^.^| `Prohibited` ^.^| `ISDT=20060724` ^.^| Update (ER)
+^.^| `VERSION=1.0` | `EDTN=2` ^.^| `UPDN=0` ^.^| `UADT=20060731` ^.^| `ISDT=20060731` ^.^| New Edition (EN)
+^.^| `VERSION=1.0` | `EDTN=2` ^.^| `UPDN=1` ^.^| `Prohibited` ^.^| `ISDT=20060807` ^.^| Update (ER)
+^.^| `VERSION=1.0` | `EDTN=0` ^.^| `UPDN=2` ^.^| `Prohibited` ^.^| `ISDT=20060814` ^.^| Cancelled Cell (ER)
+
+|===
+
+[[enc_update_management]]
+=== ENC Update Management
+
+A file is supplied that allows Data Clients to check the compatibility and suitability of a particular ENC update exchange set prior to import. The Data Client can use this file to check that the last Base Exchange sets imported to the SENC are compatible with the update currently being installed on the ECDIS. This file describes the current status of all base media associated with a data server's service. It is named STATUS.LST. The following section describes the format and content in more detail.
+
+[[status_lst_file]]
+==== STATUS.LST File
+
+This file will be stored in the INFO folder on the Update Exchange Media that relates to base media containing either a single media set or multiple ones (see <<appendix2>>). It is supplied so that Data Clients can check the current status of the SENC against available base media. This file can be used to check that an update exchange set is compatible with the latest base media installed on the Data Client. An update media MUST be made available at regular intervals {blank}footnote:[Even if all bases are re-issued in the same week, although this is considered unlikely.] for services provided in accordance with this version of the standard.
+
+NOTE: When the data server issues a new update only one update media will be supplied. However there may be more than one update exchange set on a single update media in the case of services supplied on large media such as DVD.
+
+[[status_header_format]]
+===== Status Header Format
+
+The header is a fixed length record containing the following information:
+
+[%unnumbered]
+|===
+h| Field ID h| Domain h| Bytes h| Range
+| Data Server ID | character ^.^| 2 | Any two alphanumeric
+| Week of Issue | character ^.^| 10 | Any ASCII characters
+| Media Type | character ^.^| 10 | UPDATE
+| Issue Date | decimal ^.^| 8 | YYYYMMDD
+| End of record delimiter | hexadecimal ^.^| 2 | CR/LF
+
+|===
+
+[%unnumbered]
+.Example of Status Header:
+====
+`GBWK15-08 UPDATE 20080403`
+====
+
+[[status_record_format]]
+===== Status Record Format
+
+This is a comma separated record with an end of line CR/LF delimiter.
+
+[%unnumbered]
+|===
+h| Field ID h| Domain h| Bytes h| Range
+| Base Media Number | character ^.^| 2-3 | Alphanumeric [e.g. B1, B11, M2, etc.]
+| Data Server ID | character ^.^| 2 | Alphanumeric [e.g. GB]
+| Week of Issue | character ^.^| 7 | Any ASCII characters [WKWW-YY]
+| User Information | character ^.^| 1-100 | ASCII Text string contained within single quotation marks (') [HEX 27] that can be used as a prompt to the user. (See note below)
+| Base Media Issue Date | decimal ^.^| 8 | YYYYMMDD
+| End of record delimiter | hexadecimal ^.^| 2 | CR/LF
+
+|===
+
+NOTE: This information is intended to be used by Data Clients as a prompt to users. It is the responsibility of the Data Servers to ensure that the "User Information" is consistent with the information contained on the media (CD, DVD, etc) label.
+
+[%unnumbered]
+.Examples of Status Record:
+====
+`B1,GB,WK52-07,'BASE CD 1 dated 27 December 2007',20071227` +
+`M1,GB,WK19-07,'BASE MEDIA 1 dated 10 May 2007',20070510`
+====
+
+Systems must appropriately manage the import of base data from different Data Servers and store information of installed base data. When loading new update media (either CD, DVD, etc) Data Clients should check that latest base media listed in the STATUS.LST is concurrent with those installed on the system. If not the system should report a message similar to the following:
+
+[%unnumbered]
+====
+*_"This 'Update Media' is not compatible with the actual installed 'Base Media'. Please install the following 'Base Media' first and then continue with the 'Update Media'."_* +
+            *_<Field: User Information 1>_* +
+            *_<Field: User Information 2>_* +
+            *_<Field: User Information x> (where x is the base media number)_*
+
+
+*_Example:_*
+
+*_"This 'Update Media' is not compatible with the actual installed 'Base Media'. Please install the following 'Base Media' first and then continue with the 'Update Media'."_*
+
+*_'BASE CD 2 dated 03 April 2008'_*
+====
+
+NOTE: The user should only be prompted to install compatible base media that contains licenced ENC cells.
+
+*Complete Examples* {blank}footnote:[Most Data Servers currently re-issue all their base CDs concurrently it is recognised that this will probably change to an incremental method of issuing bases.] *:*
+
+For updates that relate to base media containing a single exchange set, for example CD
+
+[%unnumbered]
+====
+`GBWK15-08 UPDATE 20080403` +
+`B1,GB,WK52-07,'BASE CD 1 dated 27 December 2007',20071227` +
+`B2,GB,WK14-08,'BASE CD 2 dated 03 April 2008',20080427` +
+`B3,GB,WK07-08,'BASE CD 3 dated 08 February 2008',20080227` +
+`B4,GB,WK07-08,'BASE CD 4 dated 08 February 2008',20080227`
+====
+
+For updates that relate to base media containing multiple exchange sets, for example DVD
+
+[%unnumbered]
+====
+`GBWK37-07 UPDATE 20070913` +
+`M1,GB,WK19-07,'BASE MEDIA 1 dated 10 May 2007',20070510` +
+`M2,GB,WK23-07,'BASE MEDIA 2 dated 07 June 2007',20070607`
+====
+
+[[the_s57_readme_file]]
+=== The S-57 Readme File (README.TXT)
+
+Data Servers, RENCs and ENC producers currently use the README.TXT to encode important information that relates to their services. The structure and content of the file should be as follows:
+
+SECTION 1 – Important General Information: Information relevant to all ENC users such as ECDIS; Temporary and Preliminary Information; Overlapping Policy Descriptions; and Disclaimers. Other information regarded as important may also be added.
+
+SECTION 2 – HOs information: Information provided by individual Producing Agencies providing specific copyright statements and information about their ENCs.
+
+SECTION 3 – Withdrawn Cells: Overview of ENC cells which have been removed from the service due to unforeseen events. ENCs being cancelled as part of producers' normal ENC management routines should not be included.
+
+SECTION 4 – Miscellaneous Information: Placeholder for additional information not fitting in the other sections.
+
+Although the inclusion of the README.TXT file is not mandated in the S-57 Product Specification it has become an important source of information in all commercial ENC services, especially given the increasing amount of ENCs available from many different producer nations.
+
+With this in mind it is strongly recommended that Data Client systems are able to display this file on demand. Since this file is relatively unknown to users it would be useful for the Data Client system to display when installing ENC data to forcibly bring it to their attention.

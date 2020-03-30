@@ -1,0 +1,306 @@
+
+[appendix,obligation=normative]
+[[annexC]]
+== ENC Update Status Report
+
+=== Purpose
+
+This section of S-63 elaborates the definition of an "up to date" ENC. This is required by the IMO Performance Standard and all ECDIS users are required to be able to demonstrate to a vetting inspector that their ECDIS and its embedded ENCs are "up to date".
+
+This Annex of S-63 specifies the format and content of an "ENC update status report" which, if implemented, will demonstrate the revision status of ENCs within the ECDIS SENC.
+
+=== Use and Responsibility
+
+The ENC update status report is designed as a concise and standardised format to assist end users in satisfying themselves that their ENC data is "up to date" and help satisfy inspection requirements in that respect.
+
+The report is designed for two individual use cases:
+
+[type=a]
+. To ensure that all ENC cells loaded into the SENC are up to date for the next leg of a particular route
+. To ensure that all ENCs loaded into the SENC are up to date.
+
+S-57 ENC cells use edition and update numbers to denote their individual revision (see S-57 Appendix B1 – ENC product specification for details). These numbers uniquely identify how up to date a cell is. The difficulty with using edition/update numbers in isolation is that they do not document the date of revision of all cells relative to an installation date of a data server's service giving the end user no indication of whether an ENC (or a collection of ENCs) is up to date with respect to the last S-63 dataset installed.
+
+S-63 provides an issue date within its metadata for an entire ENC service as well as a snapshot of the edition and update information within an S-63 data service. The revision date embedded within the SERIAL.ENC file, is used in the ENC update status report to provide a reference date for every ENC either on the next leg of the vessel's route or for the SENC as a whole.
+
+The driving use case for the ENC update status report is that an inspector (for example flag state, port state or vetting inspector) or end user can check that an ECDIS is up to date with respect to the last dataset installed from each data server's ENCs within the SENC. Note that this report specification is not a concrete definition of what an "up to date" ENC (or ECDIS) is, it only shows a status of each ENC with respect to the last data installed on the system. If a period of time has passed since the last update then ENC data may well be "out of date" relative to the time the report is run – the report only records the up to date status relative to the last data installed (the date being defined by the date contained in the SERIAL.ENC file as described in the specification). If this report is implemented then it should be clear to the user what exact definitions of the ENC status mean.
+
+This report only reports the status of ENCs delivered as part of a data server service complying with the current version of S-63. Where other ENCs are installed on the system from other sources (in particular unencrypted ENCs) then they should be displayed with a status of "unknown" and the end user should be made aware of these definitions by reference to the Operator's manual provided by the manufacturer.
+
+This annex provides a specification for a report which can be run on a compliant ECDIS to determine the status of ENCs held within the SENC.
+
+=== Report Definitions
+
+==== Report Types
+
+The ENC update status report defined in this annex can take one of two forms:
+
+. A report detailing the status of all ENCs within the SENC of the ECDIS. This shows the status of the ENCs with respect to the date contained in the SERIAL.ENC of the last update for each data server's service installed.
+. A report detailing the status of each ENC along a predefined section of a route contained within the ECDIS.
+
+An example of the ENC update status report is shown in the <<fig35>> (a complete version of the report is given in <<examples_of_enc_update_status_report>>).
+
+[[fig35]]
+.Example ENC update status report.
+image::image-35.png["","",""]
+
+The ENC update status report is a formatted output from the ECDIS. It should be formatted to fit within the width of the ECDIS screen and, if printable, split into individual A4 pages.
+
+Reports of both types (complete SENC contents and Filtered by route) are divided into two sections:
+
+. A header containing information on the vessel and report content selected (either filtered for a route (or part of a route) or for the entire SENC contents. This header contains vessel information and report reference dates followed by a summary totals for each report status.
+. A table containing information for each cell within the chosen content type. This provides detailed information on each cell within the chosen content category.
+
+[[report_header]]
+==== Report Header
+
+The data content of each of the header fields is defined in the table below:
+
+[%unnumbered]
+[cols="a,a,a",option="header"]
+|===
+| Field Name | Type | Source
+
+| 1. Vessel Name | Text | The name of the vessel as recorded within the ECDIS.
+| 2. Identifier | Text | A unique identifier, the MMSI or vessel IMO number.
+| 3. ENC Update reference date | Date | The data used as the reference for the status of each of the cells. This is the datestamp of the last data server's service media used to update the SENC. The date is taken from the S-63 SERIAL.ENC file as defined in section 6.3 and is expressed both in standard notation "NN MMM YYYY" and week number as defined in S-63 section 6.3. These fields are defined in S-63 section 6.3 as the "Date of Publication" and "Week of Issue" respectively.
+| 4. Date of report | Date | The date the report was run.
+| 5. Content | Text | This field denotes the content type of the report. There are two possibilities:- "Filtered for Route Plan XXX to YYY" where XXX and YYY are the textual names of the point of origin and destination on the chosen route.- Full SENC contents.
+| 6. Start WP | Text | This field is only present if the report is filtered for a route. It should comprise the textual name of the starting waypoint of the route (if one exists) and the lat/lon coordinates of the waypoint. There is no fixed form that the coordinates should take.
+| 7. End WP | Text | This field is only present if the report is filtered for a route. It should comprise the textual name of the last waypoint of the route (if one exists) and its lat/lon coordinates. There is no fixed form that the coordinates should take.
+
+|===
+
+[[filtering_of_enc_update_status]]
+==== Filtering of ENC update status report for route section
+
+Where the ENC update status report is filtered for a route plan then the cells in the SENC whose status are checked are defined by the intersection of the route corridor with the chart boundaries (as defined by the M_COVR (CATCOV=1) features within the SENC for the installed ENCs).
+
+The width of the filtering corridor is equal to the "user specified distance" implemented inside the ECDIS to fulfil IMO MSC.232(82) _11.3.5:_
+
+_"An indication should be given if the mariner plans a route closer than a user-specified distance from the boundary of a prohibited area or a geographic area for which special conditions exist (see appendix 4). An indication should also be given if the mariner plans a route closer than a user-specified distance from a point object, such as a fixed or floating aid to navigation or isolated danger."_
+
+This is not the same as the XTD distance.
+
+==== Summary Totals
+
+The summary section of the report follows directly after the header. The summary contains the following information:
+
+. The title : *"Chart Status Summary"*
+. Totals of cells with the relevant status in the order defined below. The definitions for each status are defined in <<data_server_content_tables>>.
+[type=a]
+.. Total – the total number of cells available in the SENC for the content type selected for the report (either full or filtered by route).
+.. Up to date – the total number of cells (for the content selected) which have status "Up to date".
+.. Not up to date – the total number of cells (for the content selected) which have status "Not up to date".
+.. Withdrawn – the total number of cells (for the content selected) which have status "Withdrawn".
+.. Cancelled – the total number of cells (for the content selected) which have status "Cancelled".
+.. Unknown – the number of cells for which a status cannot be determined for any reason.
+
+The possibilities for the ENC status are listed in the following table along with their definitions.
+
+[[data_server_content_tables]]
+==== Data Server content tables
+
+The detailed tables in each report are arranged by data server – each separate data server or ENC data source within the SENC has its own separate table listing all ENCs by content type (as reported in the "Content" field in the report header). The detailed tables contain the following information:
+
+. Title: Data Server Name- this is the data server identified by the SERIAL.ENC file referred to in the header section as defined in section
+. For each cell installed in the SENC from the data server:
+[type=a]
+.. Cell Name – the name of the cell. The S-57 DSID DSNM subfield (S-57 Appendix B, 6.3.2.1)
+.. Edition – the edition of the cell in the SENC. S-57 DSID EDTN.
+.. Update – the update number of the cell in the SENC. S-57 DSID UPDN
+.. Issue Date – the S-57 ISDT of the last applied update to the cell in the SENC
+.. Status – the status of the cell. The status may have one of four values determined according to the criteria in the following table:
+
+[%unnumbered]
+[cols="a,a",option="header"]
+|===
+| Status Message | Specification
+
+^.^| *Up to date*
+| This is where the SENC has all the latest update and/or new edition information for the cell installed as defined by the latest PRODUCTS.TXT data. The reference date for the most up to date information is defined by the "ENC Update reference date" defined in <<report_header>> (found within the latest SERIAL.ENC file installed on the system). The ENC Update reference date must be within the last four weeks from the time of the report execution or the cell shall be displayed as "Not up to date" regardless of its status as defined by the PRODUCTS.TXT data.
+
+^.^| *Not Up to date*
+| This is where the SENC has NOT installed all the latest update and/or new edition for the cell. Again, the reference point for what should be installed is defined by the ENC Update reference date defined in <<report_header>> (found within the latest SERIAL.ENC file applied to the SENC from the data server). If the reference date is older than four weeks then cells shall be displayed as "not up to date" by definition.
+
+^.^| *Withdrawn*
+| The number of cells which have been withdrawn by the data server or cancelled but which are still available within the SENC.
+
+^.^| *Unknown*
+| Cells for which a status cannot be determined for any reason. If cells from a dataset with a "PARTIAL" PRODUCTS.TXT file are loaded then all cells in a data server's service but not included in the partial PRODUCTS.TXT shall be deemed to be "Unknown" as no definitive information on them can be determined. A "FULL" PRODUCTS.TXT content is required to specify the status of all cells in a data server's service.
+
+|===
+
+==== Optional columns in ENC update status report
+
+If the OEM wishes to provide more information to end users in the ENC status report then two additional columns may be added to the report. These are defined below:
+
+. Expiry Date. This is the date of expiry of the ENC permit (as defined in S-63 part 3.4).
+. Action. An advisory-only action to be taken by the user based on the status of ENCs within the SENC, their expiry dates and availability of data within the data server's service.
+
+[%unnumbered]
+[cols="a,a",option="header"]
+|===
+| Action | Definition
+
+| Renew
+| If the expiry date of the ENC permit for the cell is less than 30 days from the time of the execution of the report then the entry in the table shall be "Renew".
+
+| To be Ordered (Route Filtered report only)
+|
+If, when running the route filtered report, a cell is identified within the data server's service which intersects the route (as defined in <<filtering_of_enc_update_status>>) but the cell is not currently installed, it shall be included in the table with the Action as "To be Ordered".
+
+Note that:
+
+. The cell limits defined in the PRODUCTS.TXT for the data server's service shall be used to establish intersection with the route (as defined in <<filtering_of_enc_update_status>>).
+
+. The "advisory" nature of this column should be made very clear to the user as there may be many small scale charts which intersect a particular route, not all of which the mariner considers necessary.
+
+| No action
+| If the cell expiry date is > 30 days from the time of the report execution it shall be marked as "No action".
+
+| To be removed
+| If the cell is marked as cancelled or does not appear in the latest edition of the data server's full PRODUCTS.TXT then it should be removed so that out of date information is not maintained within the SENC.
+
+| To be installed (Route filtered report only)
+| If a cell is identified as intersecting with the planned route (as defined in <<filtering_of_enc_update_status>>) and a permit is installed within the system but the cell itself is not installed then the entry shall be marked as "To be installed".
+
+|===
+
+[[examples_of_enc_update_status_report]]
+==== Examples of ENC update status report
+
+[%unnumbered]
+====
+*_ENC Update Status Report._*
+
+*Vessel Name*:: HMS Goteborg +
+*Identifier*:: IMO 4653321 +
+*ENC Update Reference Date*:: 16 May 2013 : WK24/2013 +
+*Date of Report*:: 1 Jun 2013 +
+*Content*:: Full
+
+*Chart Status Summary:*
+
+*Chart Status*:: *Count* +
+Total:: 50 +
+Up to Date:: 38/50 +
+Not Up to Date:: 10/50 +
+Withdrawn:: 2/50 +
+Unknown:: 0/50
+
+[%unnumbered]
+|===
+2+h| *Data Server: GB* | | |
+| *Cell Name* | *Edition* | *Update* | *Issue Date* | *Status*
+| DE316001 | 5 | 1 | 13 Mar 2013 | Not Up to Date
+| DE416010 | 1 | 1 | 12 Apr 2012 | Not Up to Date
+| DE416020 | 6 | 2 | 11 May 2012 | Not Up to Date
+| DE416021 | 8 | 3 | 10 May 2012 | Not Up to Date
+| DE416030 | 3 | 0 | 01 Jan 2013 | Not Up to Date
+| DE516175 | 6 | 6 | 01 Jan 2013 | Not Up to Date
+| DE516200 | 8 | 5 | 04 May 2013 | Not Up to Date
+| DK2KATGS | 4 | 4 | 22 Apr 2012 | Not Up to Date
+| DK2LILBL | 2 | 0 | 14 Nov 2012 | Not Up to Date
+| DK2SKARK | 6 | 7 | 25 Oct 2012 | Not Up to Date
+| DK2STOBL | 9 | 6 | 06 Aug 2011 | Not Up to Date
+| DK4ABFNF | 4 | 9 | 21 Jan 2011 | Withdrawn
+| DK4FAVSF | 2 | 1 | 19 Apr 2011 | Withdrawn
+| DK4KATGN | 1 | 2 | 28 Feb 2013 | Up to Date
+| DK4KATGS | 1 | 11 | 17 Jun 2012 | Up to Date
+| DK4STOBN | 1 | 2 | 14 Nov 2012 | Up to Date
+| DK4STOBS | 4 | 1 | 06 Jun 2013 | Up to Date
+| DK5KALBG | 5 | 8 | 03 Apr 2012 | Up to Date
+| DK5KORSO | 3 | 7 | 16 Aug 2012 | Up to Date
+| SE2BHS0W | 8 | 5 | 19 Nov 2012 | Up to Date
+| SE2BI9SW | 4 | 0 | 04 Jun 2012 | Up to Date
+| SE3CI5D4 | 4 | 3 | 14 Nov 2012 | Up to Date
+| SE3CI9T4 | 5 | 1 | 25 Oct 2012 | Up to Date
+| SE3DI7L8 | 4 | 2 | 06 Aug 2011 | Up to Date
+| SE3DI7LA | 1 | 1 | 21 Jan 2011 | Up to Date
+| SE3DI9T8 | 1 | 5 | 19 Apr 2011 | Up to Date
+| SE4DI7L8 | 2 | 4 | 28 Feb 2013 | Up to Date
+| SE4EI7LA | 1 | 6 | 17 Jun 2012 | Up to Date
+| SE4EI7LB | 7 | 32 | 14 Nov 2012 | Up to Date
+| SE4EI8PB | 8 | 4 | 06 Jun 2013 | Up to Date
+| SE4EI9T8 | 6 | 6 | 03 Apr 2012 | Up to Date
+| SE4EI9T9 | 5 | 14 | 16 Aug 2012 | Up to Date
+| SE4EIAX8 | 9 | 7 | 19 Nov 2012 | Up to Date
+| SE4EIAX9 | 8 | 7 | 04 Jun 2012 | Up to Date
+| SE4FI8PA | 10 | 1 | 14 Nov 2012 | Up to Date
+| SE4GI8PA | 2 | 2 | 25 Oct 2012 | Up to Date
+| SE4HI8PA | 3 | 1 | 06 Aug 2011 | Up to Date
+| SE4II8PA | 1 | 11 | 21 Jan 2011 | Up to Date
+| SE5DI7L8 | 13 | 2 | 14 Nov 2012 | Up to Date
+| SE5EI7LA | 3 | 9 | 25 Oct 2012 | Up to Date
+| SE5EI9T8 | 14 | 8 | 06 Aug 2011 | Up to Date
+| SE5EI9T9 | 2 | 7 | 21 Jan 2011 | Up to Date
+| SE5EIAX8 | 6 | 5 | 19 Apr 2011 | Up to Date
+| SE5EIAX9 | 8 | 3 | 28 Feb 2013 | Up to Date
+| SE5FI7LB | 8 | 4 | 17 Jun 2012 | Up to Date
+| SE5FI8PA | 1 | 1 | 14 Nov 2012 | Up to Date
+| SE5GI7LB | 7 | 2 | 06 Jun 2013 | Up to Date
+
+|===
+
+[%unnumbered]
+|===
+2+h| *Data Server: PM* | | |
+| *Cell Name* | *Edition* | *Update* | *Issue Date* | *Status*
+| SE5GI8PA | 6 | 8 | 03 Apr 2012 | Up to Date
+| SE5HI7LB | 4 | 6 | 16 Aug 2012 | Up to Date
+| SE5HI8PA | 3 | 5 | 19 Nov 2012 | Up to Date
+| SE5II7LB | 5 | 4 | 04 Jun 2012 | Up to Date
+| SE5II8PA | 2 | 4 | 14 Nov 2012 | Up to Date
+| SE6DI7LA | 12 | 3 | 25 Oct 2012 | Up to Date
+
+|===
+
+*_Route Filtered ENC Update Status Report._*
+
+*Vessel Name*:: HMS Goteborg +
+*Identifier*:: IMO 4653321 +
+*Report Date*:: 16^th^ May 2013 +
+*Content*:: Filtered for Route Plan "Goteborg – Kiel" +
+*Start WP*:: Goteborg [57.782324N,11.966667E] +
+*End WP*:: Kiel [54.333742N,10.159607E]
+
+*Chart Status Summary:*
+
+*Chart Status*:: *Count* +
+Total:: 50 +
+Up to Date:: 38/50 +
+Not Up to Date:: 10/50 +
+Withdrawn:: 2/50 +
+Unknown:: 0/50
+
+
+[%unnumbered]
+|===
+2+h| *Data Server: GB* | | | | |
+| *Cell Name* | *Edition* | *Update* | *Issue Date* | *Expiry Date* | *Status* | *Action*
+| DE316001 | 5 | 1 | 13032013 | | Not Up to Date | To be installed
+| DE416010 | 1 | 1 | 12042012 | | Not Up to Date | To be installed
+| DE416020 | 6 | 2 | 11052012 | | Not Up to Date | To be installed
+| DE416021 | 8 | 3 | 10052012 | | Not Up to Date | To be installed
+| DE416030 | 3 | 0 | 01012013 | | Not Up to Date | To be installed
+| DE516175 | 6 | 6 | 01012013 | | Not Up to Date | To be ordered
+| DE516200 | 8 | 5 | 04052013 | | Not Up to Date | To be ordered
+| DK2KATGS | 4 | 4 | 22042012 | | Not Up to Date | To be ordered
+| DK2LILBL | 2 | 0 | 14112012 | | Not Up to Date | To be ordered
+| DK2SKARK | 6 | 7 | 25102012 | | Not Up to Date | To be ordered
+| DK2STOBL | 9 | 6 | 06082011 | | Not Up to Date | To be ordered
+| DK4ABFNF | 4 | 9 | 21012011 | | Withdrawn | To be removed
+| DK4FAVSF | 2 | 1 | 19042011 | | Withdrawn | To be removed
+| DK4KATGN | 1 | 2 | 28022013 | | Up to Date | Renew
+| DK4KATGS | 1 | 11 | 17062012 | | Up to Date | Renew
+| DK4STOBN | 1 | 2 | 14112012 | | Up to Date | Renew
+| DK4STOBS | 4 | 1 | 06062013 | | Up to Date | No action
+| DK5KALBG | 5 | 8 | 03042012 | | Up to Date | No action
+| DK5KORSO | 3 | 7 | 16082012 | | Up to Date | No action
+| SE2BHS0W | 8 | 5 | 19112012 | | Up to Date | No action
+| SE2BI9SW | 4 | 0 | 04062012 | | Up to Date | No action
+| SE3CI5D4 | 4 | 3 | 14112012 | | Up to Date | No action
+
+|===
+====

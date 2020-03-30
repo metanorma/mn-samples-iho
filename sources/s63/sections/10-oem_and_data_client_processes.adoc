@@ -1,0 +1,517 @@
+
+[[oem_and_data_client_processes]]
+== OEM and Data Client Processes
+
+[[data_client]]
+=== Data Clients
+
+Data Clients are the users of ENC information and will receive protected information from Data Servers. The OEM is responsible for developing software applications capable of authenticating the ENC digital signatures and decrypting the ENC information in compliance with the procedures defined in the protection scheme. Navigators with ECDIS/ECS systems are examples of Data Clients.
+
+[[oems]]
+=== Original Equipment Manufacturers (OEMs)
+
+Manufacturers subscribing to the data protection scheme must build software routines in support of the scheme. The S-63 standard contains specifications and test data for validating the manufacturer's software application. The SA will provide the manufacturer with a unique set of manufacturer codes (M_KEY & M_ID). The manufacturer must also provide a secure mechanism within their software systems for uniquely identifying each end user installation. The data protection scheme requires each installation to have a unique hardware identifier (HW_ID). The Data Servers will use the M_KEY and HW_ID information to issue encrypted ENC cell keys to a Data Client specific installation. Each ENC is encrypted with a unique cell key however; by encrypting these using the Data Client's unique HW_ID this ensures that they cannot be transferred between different ECDIS supplied by the same manufacturer.
+
+The manufacturer is required to cooperate in the protection of the ENC information within end user systems. For example, if a hardware device such as a dongle is used to store the HW_ID the Data Client must, periodically check for its continued presence. The Data Client must cease to operate if the device is removed after the application is started. On a networked system the security device must control the number of concurrent users of the application; this will depend on the terms and conditions of a Data Server's service.
+
+[[oem_data_client_processes]]
+=== OEM & Data Client Processes
+
+The main responsibilities of approved OEMs and their software applications are depicted in the <<fig25>>. Each _"Process Box"_ cross references the particular section where these operations are detailed.
+
+[[fig25]]
+.Main OEM/Data Client Processes
+image::image-25.png["","",""]
+
+[[create_data_client_userpermit]]
+=== Create Data Client Userpermit
+
+This procedure is performed by the system manufacturer (OEM) who creates a Data Client specific userpermit. This is provided to the Data Client usually when purchasing an ECS/ECDIS. This userpermit enables Data Clients to obtain cell permits from Data Servers. The cell permits are generated using the encrypted HW_ID that is contained within the userpermit. The format and structure of the User Permit is defined in <<the_userpermit>>.
+
+[[fig26]]
+.OEM - Create Userpermit
+image::image-26.png["","",""]
+
+The procedure for creating a User Permit is as follows:
+
+[type=a]
+. Encrypt HW_ID using the Blowfish algorithm with M_KEY as the key. 
+. Convert the resultant value to a 16 character hexadecimal string. Any alphabetic character should be in upper case. 
+. Hash the 16 hexadecimal characters using the algorithm CRC32. 
+. Convert output from 'c' to an 8 character hexadecimal string. Any alphabetic characters should be in upper case. This is the Check Sum. 
+. Append to 'b' the output from 'd'. 
+. Convert the M_ID to a 4 character string. Any alphabetic characters should be in upper case.
+. Append to 'e' the output from 'f'. This is the User Permit. 
+
+[%unnumbered]
+====
+[%unnumbered]
+|===
+| *HW_ID* | *`3132333438 (ASCII)`*
+
+| *M_KEY* | *`3938373635 (ASCII)`*
+
+| *M_ID* | *`3031 (ASCII)`*
+
+|===
+====
+
+*Expected Results:*
+
+[%unnumbered]
+|===
+| Input to 'a' | *`3132333438`* and *`3938373635`* | HW_ID and M_KEY in hexadecimal.
+
+| Output from 'a' | 8 bytes | Non-printable.
+
+| Input to 'c' | *`73871727080876A0`* | The hexadecimal values of the above string. The bytes are given to the hash function left hand byte first (i.e. 73, then 87, then 17 etc)
+
+| Output from 'c' | *`7E450C04`* | CRC32 result in hexadecimal
+
+| Output from 'e' | *`73871727080876A07E450C04`* | CRC32 result appended to the encrypted HW_ID
+
+| Output from 'f' | *`3031`* | Result appended to encrypted HW_ID & CRC32
+
+| User Permit | *`73871727080876A07E450C043031`* | 
+
+|===
+
+[[enc_cell_permit_installation]]
+=== ENC Cell Permit Installation
+
+New Cell permits are delivered to a Data Client's system in a file named PERMIT.TXT. The structure and format of this file are given in <<the_cell_permit>>. The Data Clients system must be able to read in this file and perform a number of checks. Each cell permit record contains a Data Server ID that enables OEMs to manage permits and data in a multi supplier environment. The following sections outline how this file must be managed and the checks that must be carried out when installing a new permit file.
+
+[[check_for_a_cell_permit]]
+==== Check for a Cell Permit
+
+The Data Client system must first check that a valid cell permit is available to install. A facility should be available for Data Clients to browse to a specific location on the system where the PERMIT.TXT file is available to install. If any text file other than one named PERMIT.TXT file is selected the system should return a warning as follows:
+
+*_"SSE 11 - Cell permit not found"_*
+
+[[check_cell_permit_format]]
+==== Check Cell Permit Format
+
+If a valid PERMIT.TXT is located the system must then check that the format of the file is correct as defined in <<the_cell_permit>>. If not the data client must inform the user as follows:
+
+*_"SSE 12 - Cell permit format is incorrect"._*
+
+[[check_the_hw_id]]
+==== [strike]#Check the HW_ID#
+
+[strike]#Data Client system must check that the HW_ID encoded into the dongle/software security device is comparable with the HW_ID encrypted in the cell permits. If the values are the same the system shall continue with the checks below, if not an error message must be returned as follows:#
+
+[strike]#*_"SSE 19 - Permits are not valid for this system. Contact your data supplier to obtain the correct permits"_*.#
+
+[[check_cell_permit_check_sum]]
+==== Check Cell Permit Check Sum
+
+This procedure is performed by the Data Client system and is comprised of the following steps.
+
+[type=a]
+. Extract the last 16 hex characters (ENC Check Sum) from the Cell Permit. 
+. Convert these 16 hex characters to 8 bytes. 
+. Hash the remainder of the Cell Permit as left after 'a' using the algorithm CRC32. 
+. Append the first byte of HW_ID to the end of HW_ID to form a 6 byte HW_ID (called HW_ID6).
+. Encrypt the hash (output from 'c') using the Blowfish algorithm with HW_ID6 as the key.
+. Compare the output from 'e' with the output from 'b'. If they are the same, the Cell Permit is valid. If they differ, the Cell Permit is corrupt and Cell Permit is not to be used. 
+
+[%unnumbered]
+====
+[%unnumbered]
+|===
+| *HW_ID* | *`3132333438`* | in hexadecimal
+
+| *Cell Permit* | *`NO4D061320000830BEB9BFE3C7C6CE68B16411FD09F96982795C77B204F54D48`* | Example cell permit
+
+|===
+
+[%unnumbered]
+|===
+| Output from 'a' | *`795C77B204F54D48`* | In hexadecimal
+| Output from 'b' | 8 byte non-printable | Encrypted CRC32
+| Input to 'c' | *`NO4D061320000830BEB9BFE3C7C6CE68B16411FD09F96982`* | Cell permit after removal of 16 hex encrypted CRC32The bytes are given to the hash function left hand byte first (i.e. xx, then xx, then xx etc).
+| Output from 'c' | *`780699093`* | 4 byte CRC32 of cell permit after removal of 16 hex encrypted CRC32
+| Output from 'd' | *`313233343831`* | This is HW_ID6
+| Output from 'e' | 8 byte non-printable | Encrypted CRC32
+
+|===
+====
+
+If the calculated CRC32 value is not the same as the value contained in the cell permit the system must inform the Data Client as follows:
+
+*_"SSE 13 Cell Permit is invalid (checksum is incorrect) or the Cell Permit is for a different system"._*
+
+The system must not install any invalid permits.
+
+[[check_cell_permit_expiry_date]]
+==== Check Cell Permit Expiry Date
+
+When installing a new PERMIT.TXT file the Data Client system must check that the permits being installed have not expired. The system must check that the expiry date of each permit against the system date (Computer Clock) and if available the time from the GPS receiver/signal. If the permits have expired the following message should be displayed as follows:
+
+*_"SSE 15 - Subscription service has expired. Please contact your data supplier to renew the subscription licence."_*
+
+NOTE: The system may install expired/valid permits but any cells subsequently displayed in the viewer under these conditions *MUST* display a permanent warning to the user as follows:
+
+*_"SSE 25 - The ENC Permit for this cell has expired. This cell may be out of date and MUST NOT be used for NAVIGATION."_*
+
+See <<check_if_subscription_has_expired>> for checking the expiry date at load time.
+
+If the expiry date of the permit is in advance of the computer clock/GPS signal then a further check must be made to see how long the licenced subscription has to run. If this is 30 days or less then the system should give a warning informing the Data Client as follows:
+
+*_"SSE 20 - Subscription service will expire in less than 30 days. Please contact your data supplier to renew the subscription licence."_*
+
+The Data Client can then take steps to renew the licence before it expires. The system should then proceed to install the permits. If the permit has more than 30 days before expiring the permits should be installed without warning.
+
+[[check_data_server_id]]
+==== Check Data Server ID
+
+The S-63 Data Protection Scheme makes takes account of a multiple supplier environment, that is to say Data Clients may obtain licences from more than one Data Server. There are several instances where Data Clients may have ENC data from multiple suppliers as follows:
+
+* Duplicate cells licenced from different Data Servers
+* Change from one Data Server to another
+
+It is important that Data Client systems are able to manage these instances. Each permit record contains a Data Server ID field (see <<permit_record_fields>>). This field, if filled, contains a two character alphanumeric ID unique to each Data Server assigned by the SA. Since cell permits issued by one Data Server will not necessarily decrypt ENCs supplied by another it is important to maintain an association between the cell permits and encrypted ENCs. OEMs should ensure that their systems are capable of maintaining these associations, e.g. by creating Data Server specific folders where permits are stored.
+
+The Data Server ID for encrypted ENC exchange sets is contained in the SERIAL.ENC file (see <<serial_enc_file_format>>) and is identical to that contained in the cell permit record.
+
+[[fig27]]
+.OEM System - Install & Validate Cell Permit
+image::image-27.png["","",""]
+
+[[enc_authentication_and_integrity_checks]]
+=== ENC Authentication and Integrity Checks
+
+OEM systems must be capable of authenticating the source of the encrypted ENC data and validate its integrity. This is achieved in two ways as follows:
+
+* By Authenticating the SA signature held as part of the Data Server Certificate that forms part of the ENC signature file.
+* By validating the Data Server ENC signature (corresponding to the ENC Cell Data) in the ENC signature file.
+
+OEMs and Data Clients must first of all confirm that the SA certificate (whether X509 or ASCII format) installed on the ECS/ECDIS is correct and current. This is dealt with in <<authenticate_verify_sa_digital_certificate>> below.
+
+
+[[authenticate_verify_sa_digital_certificate]]
+==== Authenticate/Verify SA Digital Certificate
+
+This procedure is performed by OEMs or Data Clients to verify that the SA public key installed on the ECS/ECDIS is correct and current in respect of the IHO S-63 Data Protection Scheme. It is this SA public key that is used to authenticate the SA signed Data Server Certificate supplied by Data Servers as part of the ENC signature file. The procedure is as follows:
+
+Manually compare the SA public key contained within the independently installed SA Digital Certificate with a copy of the printable public key available from the IHO website (https://iho.int/[www.iho.int]). If the above check fails, the system shall not accept the SA Digital Certificate. Otherwise, the SA Digital Certificate is valid and the Data Server public key it contains can be used to authenticate SA signed Data Server Certificate held as part of the ENC signature file.
+
+NOTE: The Data Client must have means by which users can access the installed certificate from the application.
+
+[[manual_checking_of_the_sa_public_key]]
+===== Manual Checking of the SA Public Key
+
+The SA public key can be accessed from the IHO website as follows:
+
+https://iho.int/[www.iho.int] → Home → Publications → Download List → S-63 → S-63 SA Certificate
+
+The following webpage will be displayed:
+
+*_S-63 DIGITAL CERTIFICATES_*
+
+_Digital Certificates are files that bind a specific public key together with other information to an individual or organisation. The S-63 standard uses a 2-level chain of certificates to operate the data protection scheme._
+
+_The IHO Secretariat operates as the Scheme Administrator and has issued the root Digital Certificate for use within the protection scheme. The SA certificate used by IHO Secretariat will be a self-signed certificate. It is available both as a X-509 compliant file *IHO.CRT* and as a text file *Scheme Administrator Public Key.txt*. Both files are contained in an_ https://iho.int/uploads/user/pubs/standards/s-63/S-63_Digital_Certificates_Notes.pdf[*_SA Certificate_*] _compressed file._
+
+_The SA will issue Data Server Certificates to all Data Servers participating in the protection scheme. The Data Server Certificate contains the Data Server Public Key and the SA signature of this Key. Since only the SA can issue Data Server Certificates, the chain of trust can be established by authenticating the SA signature on the Data Server Public Key._
+
+_The protection scheme requires the SA public key to be installed on end user systems by all users of the protection scheme. The Data Server Certificate is contained within each signature file and the Data Server Public Key can be trusted if the SA certificate is valid. The installation of the SA certificate (and the public key held within) should be carried out as a separate, independent operation and be subject to carefully controlled operating procedures._
+
+In the second paragraph above click on *_"SA Certificate"_* link and a *_"File Download"_* dialog will be displayed which gives the user the option to *_"Open"_* or *_"Save"_* the zipped file named *_"S-63_SA_Certificate.zip"_*. This file contains two files as follows:
+
+. *IHO.CRT (The X509 Certificate)* 
++
+--
+Opening this file reveals a *_"Certificate"_* dialog, selecting the *_"Details"_* tab and highlighting *_"Public Key"_* displays the IHO public key. The example below is the IHO public at the time this document was published. Note that the first 4 or 6 characters [024100] represent the certificate parameters and can be either positive [0240] or negative [024100].
+
+[%unnumbered]
+====
+`0241 0096 3F14 E32B A537 2928 F24F 15B0 730C
+49D3 1B28 E5C7 6410 0256 4DB9 5995 B15C F880
+0ED5 4E35 4867 B82B B959 7B15 8269 E079 F0C4
+F492 6B17 761C C89E B77C 9B7E F8`
+====
+
+This character string (minus the certificate parameters) should be compared with the installed certificate to confirm that they are the same. If it is, then the certificate is authentic, if not, it should be rejected.
+--
+
+. *Scheme Administrator Public Key.txt*
++
+--
+Opening this file displays the following SA public key parameters.
+
+[%unnumbered]
+====
+`// BIG p
+FCA6 82CE 8E12 CABA 26EF CCF7 110E 526D B078 B05E DECB CD1E B4A2 08F3 AE16 17AE
+01F3 5B91 A47E 6DF6 3413 C5E1 2ED0 899B CD13 2ACD 50D9 9151 BDC4 3EE7 3759 2E17.
+// BIG q
+962E DDCC 369C BA8E BB26 0EE6 B6A1 26D9 346E 38C5.
+// BIG g
+6784 71B2 7A9C F44E E91A 49C5 147D B1A9 AAF2 44F0 5A43 4D64 8693 1D2D 1427 1B9E
+3503 0B71 FD73 DA17 9069 B32E 2935 630E 1C20 6235 4D0D A20A 6C41 6E50 BE79 4CA4.
+// BIG y
+963F 14E3 2BA5 3729 28F2 4F15 B073 0C49 D31B 28E5 C764 1002 564D B959 95B1 5CF8
+800E D54E 3548 67B8 2BB9 597B 1582 69E0 79F0 C4F4 926B 1776 1CC8 9EB7 7C9B 7EF8.`
+====
+
+If this file is used for authentication it should be checked against the installed certificate or public key file. If checking against an installed certificate then only the *_"BIG y"_* string should be verified to see if it is the same. If checking against SA public key file then all parameters must be verified to see if it is the same. In either case if the file is correct then the public key is authenticated, if not, it must be rejected.
+--
+
+[[authenticate_sa_signed_data_server_certificate_10]]
+==== Authenticate SA signed Data Server Certificate
+
+This procedure is performed by the Data Client's system to authenticate the SA signed Data Server Certificate stored as part of the ENC signature file against the installed SA public key. This process is carried out before the Data Server public key is extracted to authenticate the ENC signature. Refer to <<enc_signature_file_naming_convention>> for the structure of signature/certificate pairs in a signature file.
+
+Prior to the authentication process the system must first check the availability, format and status of the certificate or public key installed on the system. If there are any problems this should be reported to the data client in a meaningful way as follows:
+
+. The SA certificate or public key is not present on the system (*SSE 05* and terminate process).
+. The format of the SA certificate or public key is incorrect (*SSE 08* and terminate process).
+. The SA certificate has expired (*SSE 22* and terminate process).
+
+The authentication procedure is outlined below:
+
+[type=a]
+. Extract the ENC signature file. 
+. Discard the first signature part (i.e. the first two data strings and their attendant headers. This is the Data Server signature of the ENC data). This leaves the SA signed Data Server Certificate. 
+. Extract the remaining signature part (i.e. the first two data strings and their attendant headers from the remaining file obtained from 'b'). This leaves a public key file.
+. Hash the public key file (obtained from 'c') using the algorithm *_SHA-1_* <<sha>>. All bytes within the file are to be hashed.
+. Verify the signature part (as removed at 'c' above) by passing it (the signature), together with the SA Public Key file (the key) and the hash of the public key file (obtained at 'd') to the *_DSA_* <<dss>>. This will return a status (correct or incorrect).
+
+If incorrect the system must terminate the process and return the following warning message:
+
+*_"SSE 06 - "The SA Signed Data Server Certificate is invalid. The SA may have issued a new public key or the ENC may originate from another service. A new SA public key can be obtained from the IHO website or from your data supplier"_*
+
+[[authentication_against_non_sa_signed_dsc]]
+===== Authentication against non-SA signed Data Server Certificate
+
+There may be instances where there is more than one certificate or public key stored on the data client. This may be especially so during the transition to the correct use of the S-63 scheme. Therefore a check is necessary to ensure that the data server certificate authenticates correctly with the IHO.CRT or IHO.PUB installed on the data client.
+
+If the data server certificate authenticates against anything other than the IHO.CRT or IHO.PUB stored on the data client then a warning message *MUST* be displayed as follows:
+
+*_"SSE 26 - "This ENC is not authenticated by the IHO acting as the Scheme Administrator"_*
+
+It is only necessary for data clients to display this warning once and not for every repeated occurrence of the same failure in an exchange set. If this message is displayed the data client should still continue to the next stage of authentication (ENC signature authentication) and decryption.
+
+[[fig28]]
+.Authenticate SA Signed Data Server Certificate
+image::image-28.png["","",""]
+
+[[authenticate_enc_cell_file]]
+==== Authenticate ENC Cell File
+
+This procedure is performed by Data Client's systems to validate the ENC signature (held in the ENC signature file) corresponding to a specific ENC cell file. It is expected that the Data Client has already performed the procedures to authenticate the SA digital certificate (<<authenticate_verify_sa_digital_certificate>>) and the Data Server Certificate within the signature file (<<authenticate_sa_signed_data_server_certificate_10>>). The procedure to authenticate the ENC Cell File is as follows:
+
+[type=a]
+. Extract the ENC signature file uniquely related to an ENC cell file.
+. Extract the first signature part (i.e. the first two data strings and their attendant headers). This leaves the certificate. 
+. Discard the remaining signature part (i.e. the first two data strings and their attendant headers from the remaining file). This leaves a public key file. 
+. Hash the associated ENC Cell File using the algorithm *_SHA-1_* <<sha>>. All bytes within the file are to be hashed.
+. Verify the signature part (as extracted at 'b' above) by passing it (the signature), the public key - as left at 'c' above (the key) and the hash of the ENC Cell File, as obtained at 'd' above, to the *_DSA_* <<dss>>. This will return a status (correct or incorrect).
+
+If the ENC signature is not authenticated correctly, the Data Client shall not decrypt the ENC because its origins cannot be verified. If the ENC is authenticated correctly, the ENC can safely be decrypted.
+
+[[fig29]]
+.Authenticate ENC Cell File - Validate ENC Signature
+image::image-29.png["","",""]
+
+[[decrypt_enc_base_cell_and_update_files]]
+=== Decrypt ENC Base Cell and Update Files
+
+Before decrypting new ENC base cells and update files the system should first check the subscription status of installed cell permits. This process is to determine whether the Data Client is licenced to receive and install new ENC data. It also seeks to give the Data Client adequate warning messages prior to the expiry of the licence.
+
+[[check_subscription_status_of_installed_permits]]
+==== Check Subscription Status of Installed Permits
+
+<<enc_cell_permit_installation>> identified the processes and checks that are carried by the Data Client's system when installing cell permits. This section determines how cell permits are managed by a Data Client's system once installed. It is also designed to give Data Clients advanced warning of subscription permits that are about to expire, especially when ENC data is being used for navigation.
+
+[[check_if_subscription_has_expired]]
+===== Check if Subscription has expired in a Cell Permit – Required Warning
+
+This check is performed on new ENC base cells and update files prior to decryption. This check is required to inform the Data Client that the subscription licence has expired but that additional ENC updates/base cells have become available. The warning is only applicable for subscription licenses and is not to be used for single purchase licenses, ref. <<permit_record_fields>>. The procedure is outlined in the flowchart below and the subsequent step by step description:
+
+[type=a]
+. Extract expiry date of the loaded ENC Cell Permit corresponding to the ENC file to be decrypted.
+. Extract the issue dates of the ENC base cell and latest update file (if available {blank}footnote:[If no updates have been issued for a cell there will be no information available.]) to be decrypted from the PRODUCTS.TXT file. These are located in the second (Product Issue Date) and fourth (Issue Date of Latest Update) fields of the cell record corresponding to the cell being decrypted.
+. If two dates (in fields two and four) are returned at b) then only the latest date {blank}footnote:[The “Issue Date of Latest Update” field, if filled, will not always be in advance of the “Product Issue Date”, for instance in the case of re-issues.] should be used when checking against the expiry date.
+. If the Issue Date of the base cell or the update obtained at b) and c) is newer (in advance of) the permit expiry date obtained at a) the permits are deemed to have expired. A warning message must be displayed as follows:
+
+*_"SSE 15 - Subscription service has expired. Please contact your data supplier to renew the subscription licence."_*
+
+The application may *install expired ENC permits* but must display the *_""SSE 15"_* warning above. It may also decrypt any ENC base cells and update files dated prior to the expiry date of the permits. This can be managed by using the issue date [ISDT] contained in the CATD-COMT field at import. No base cells or updates should be imported if the issue date [ISDT] is greater than the expiry date of the installed cell permits. The application must also display a permanent warning when cells with expired permits are viewed in the data client, see <<expired_enc_permits>>.
+
+[[fig30]]
+.Process to Check Subscription Status before Decryption
+image::image-30.png["","",""]
+
+[[check_subscription_status_30_day_warning]]
+===== Check Subscription Status – Required 30 day warning
+
+This check must be performed every time new ENC base cell or update files are installed and is required to inform the Data Client on the status of the subscription licence ahead of expiry. The intention is to ensure that the Data Client has time to renew their subscription and obtain an updated Cell Permit from the Data Server. The warning is only applicable for subscription licenses and is not to be used for single purchase licenses, ref. <<permit_record_fields>>. The procedure is as follows:
+
+[type=a]
+. Obtain the system date and, if available, any alternative reliable time sources, e.g. GPS signal.
+. Obtain the subscription expiration date from the Cell Permit file.
+. Compare the system date from 'a' and the subscription expiration date from 'b'.
+. If it is 30 days or more before the subscription expires, the system can operate without any further notices to the user.
+. If it is less than _30 days_ before the subscription expires, the system may be able to decrypt and uncompress new information issued during the subscription period. The system should issue a warning message to the user e.g.
+
+*_"SSE 20 - Subscription service will expire in less than 30 days. Please contact your data supplier to renew the subscription licence."_*
+
+[[decrypt_the_cell_keys_in_a_cell_permit]]
+==== Decrypt the Cell Keys in a Cell Permit
+
+This procedure is performed by the Data Client system after the successful authentication of the ENC signature file. The decrypt process begins with the extraction of the cell keys required to decrypt the ENC and comprises of the following:
+
+[type=a]
+. Append the first byte of the Data Client HW_ID to the end of HW_ID to form a 6 byte HW_ID (called HW_ID6).
+. Extract ECK1 from the Cell Permit and convert this from the 16 character hexadecimal string to 8 bytes. 
+. Decrypt the converted ECK1 (output from 'b') using the Blowfish algorithm with HW_ID6 as the key. This will yield CK1. 
+. Extract ECK2 from the Cell Permit and convert this from the 16 character hexadecimal string to 8 bytes. 
+. Decrypt the converted ECK2 (output from 'd') using the Blowfish algorithm with HW_ID6 as the key. This will yield CK2. 
+
+[%unnumbered]
+====
+[%unnumbered]
+|===
+| *HW_ID* | *`3132333438`* | In hexadecimal
+
+| *Cell Permit* | *`NO4D061320000830BEB9BFE3C7C6CE68B16411FD09F96982795C77B204F54D48`* | Example of cell permit
+
+|===
+
+[%unnumbered]
+|===
+| Output from 'a' | *`313233343831`* | HW_ID6
+| Output from 'b' | 8 byte non-printable | Encrypted ECK1
+| Output from 'c' | *`C1CB518E9C`* | Cell key 1 (hex)
+| Output from 'd' | 8 byte non-printable | Encrypted ECK2
+| Output from 'e' | *`421571CC66`* | Cell key 2 (hex)
+
+|===
+====
+
+Note that the unencrypted Cell Keys are 5 bytes in length even though the encrypted cell keys are 8 bytes in length. This is because blowfish pads the Cell Keys to 8 bytes in length when it encrypts them and it un-pads the Encrypted Cell Keys when it decrypts them.
+
+[[decrypt_enc_base_cell_or_update_file]]
+==== Decrypt ENC Base Cell or Update File
+
+This procedure is performed by the Data Client's system and is carried out as outlined in the flowchart (for <<decrypt_the_cell_keys_in_a_cell_permit>> and <<decrypt_enc_base_cell_or_update_file>>) and the step by step guide below {blank}footnote:[OEMs should note that there is no requirement to check the edition date against the permit or words to this effect.]:
+
+[type=a]
+. Decrypt the ENC file using the Blowfish algorithm with CK1 as the decryption key {blank}footnote:[Rather than decrypting and decompressing the entire ENC file the data client can check that the decrypted header information is compliant with the ZIP standard <<zip_ffs>>.]. 
+. Decompress the ENC file. If decompression is successful, the ENC file is decrypted and ready for import.
+. If decompression is unsuccessful, decrypt the ENC file using the Blowfish algorithm with CK2 as the decryption key. 
+. Decompress the ENC file. If decompression is successful, the ENC file is decrypted and ready for use. 
+. If decompression is unsuccessful in 'b' and 'd', this means that the Cell Permit does not contain any valid cell keys. The system should return a relevant warning message and advise the Data Client that a new Cell Permit should be obtained from the Data Server.
+
+*_"SSE 21 – Decryption failed no valid cell permit found. Permits may be for another system or new permits may be required, please contact your supplier to obtain a new licence."_*
+
+[[decompass_enc_file]]
+==== Decompress ENC file (base cell or update)
+
+This procedure is performed by the Data Client on decrypted ENC files. The procedure is as follows:
+
+Uncompress the ENC file using the ZIP standard <<zip_ffs>> to create a file fully compliant with the S-57 Edition 3.1 ENC Product Specification.
+
+[[fig31]]
+.Decrypt & Uncompress ENC Base Cell and Update Files
+image::image-31.png["","",""]
+
+NOTE: The CRC value of the ENC <<iho_ts_dhd>> is always computed on the unencrypted ENC information. The application must confirm successful decryption and decompression by conducting the CRC check on all ENC information.
+
+[[data_client_permanent_warnings]]
+=== Data Client Permanent Warnings
+
+The data client already carries out checks when loading ENC permits and data files to validate conformance with this standard. However any resultant errors or warnings messages are not always translated through to the ECDIS when it is in use, e.g. route planning or navigation. It is possible, under the current data protection scheme, to use ENCs that are out-of-date without the user being aware of it. The purpose of this section is to identify any messages that should be permanently displayed by the data client when in use.
+
+The data client must display permanent warning messages in the viewer when it can be determined that ENC information contained in the SENC is or may be out-of-date. The data client must carry out the following checks when displaying a cell in the ECDIS:
+
+* Have the installed ENC permits expired?
+* Is installed SENC data out-of-date in respect to the latest installed PRODUCTS.TXT file?
+
+[[expired_enc_permits]]
+==== Expired ENC Permits
+
+The data client must check the status of the installed ENC permit when displaying a particular ENC cell. If the permit has expired the ECDIS is to display a permanent warning informing the user that this ENC cell may be out of date as follows:
+
+*_"SSE 25 - The permit for ENC<cell name> has expired. This cell may be out of date and MUST NOT be used for Primary NAVIGATION"._*
+
+[[out_of_date_senc_data]]
+==== Out-of Date SENC Data
+
+The data client must check the status of the ENC cell being displayed against the known status of that cell in a particular data server's service. This must be carried out by comparing the current Edition [EDTN] and Update [UPDN] contained in the SENC for any given cell against the corresponding cell record listed in the latest PRODUCTS.TXT file.
+
+A permanent warning must be given when the ENC cell being displayed by the ECDIS is not updated to the latest new edition or update in service as follows:
+
+*_"SSE 27 - ENC<cell name> is not up to date. A New Edition, Re-issue or Update for this cell is missing and therefore MUST NOT be used for Primary NAVIGATION"._*
+
+[[qa_procedures_data_client]]
+=== QA Procedures – Data Client
+
+[[acceptance_and_checking_of_the_sa_dc]]
+==== Acceptance and Checking of the SA Digital Certificate (and Public Key)
+
+A Data Client will receive the SA public key in two formats, as an X.509 Digital Certificate and as a printable public key. The Data Client shall have the capability to load the SA digital certificate and manually compare the public key against the printed public key (see <<manual_checking_of_the_sa_public_key>>). The Data Client shall only accept the SA public key when this has been done. This process applies to the original SA public key and to any subsequent public keys issued by the SA.
+
+[[creation_of_user_permit]]
+==== Creation of User Permit
+
+The system/application suppliers shall be able to create their own User Permit containing the encrypted HW_ID. The User Permit will be provided to Data Servers who will then create Cell Permits for the requested ENC information. A User Permit shall only be created to request Cell Permits from a Data Server.
+
+[[verification_of_data_server_certificate]]
+==== Verification of Data Server Certificate
+
+The Manufacturer application shall allow the verification of a Data Server Certificate contained within an ENC signature file using the SA public key. If the Data Server Certificate is verified successfully, the application shall then extract the Data Server public key from the Data Server Certificate and use it to verify the ENC signature.
+
+The SA will inform the Manufacturer about revoked Data Server Certificates.
+
+[[validation_of_cell_permits]]
+==== Validation of Cell Permits
+
+The Data Client system must have the ability to validate the integrity of a Cell Permit by checking the encrypted check sum. This shall be done by following the procedure set out in <<check_cell_permit_check_sum>> of the specification.
+
+The Data Client must be able to manage Cell Permits provided by several Data Servers. The Data Client must also be able to manage Cell Permits for the same ENC provided by multiple Data Servers.
+
+The Data Client must have the ability to manage stored Cell Permits so that old ones can be deleted and new ones added to, or merged with, those stored.
+
+The Data Client application should not allow the Data Client to be able to view or copy the decrypted cell keys.
+
+[[authentication_and_decryption_of_enc_information]]
+==== Authentication and Decryption of ENC Information
+
+The Data Client must be able to accept a signed and encrypted ENC data set by following the procedure defined in <<enc_authentication_and_integrity_checks>> and <<decrypt_enc_base_cell_and_update_files>>.
+
+[[qa_procedures_manufacturers]]
+=== QA Procedures – Manufacturers (OEMs)
+
+[[confidentiality_agreement]]
+==== Confidentiality Agreement
+
+The SA will provide a manufacturer with copies of all information required to operate the Data Protection Scheme within a Confidentiality Agreement. The Manufacturer shall abide by the terms and conditions of the Confidentiality Agreement and ensure that all supplied information is kept up to date.
+
+[[system_compliance_testing]]
+==== System Compliance Testing
+
+The Manufacturer shall perform internal compliance testing of their implementation of the protection scheme, based on the descriptions provided in this document and the supplied test data.
+
+The SA will only issue M_IDs and M_KEYs on successful compliance as provided by a self certification document.
+
+[[qa_storage_of_mids_and_mkeys]]
+==== Storage of M_IDs and M_KEYs
+
+When the Manufacturer has joined the scheme, the SA shall provide the proprietary M_ID and M_KEY information for the creation of User Permits.
+
+The users of the Manufacturer application must not be able to view or extract the M_KEY information.
+
+[[creation_of_user_hw_ids]]
+==== Creation of HW_IDs
+
+The Manufacturer shall have the ability to create HW_IDs of the format required within the standard. These are to be random so that they will not be sequential and cannot be duplicated.
+
+The users of the Manufacturer application must not be able to view or extract the HW_ID information from the application.
+
+[[recording_of_hw_ids]]
+==== Recording of HW_IDs
+
+The Manufacturer must record, in an *HW_ID Register*, the values of each HW_ID created. These details are to be made available to the SA upon request.

@@ -1,0 +1,95 @@
+
+[[s63_error_codes_and_explanations]]
+== S-63 Error Codes and Explanations 
+
+The following error codes and messages are defined in the flowcharts in <<scheme_administrator_processes>>, <<data_server_processes>>, and <<oem_and_data_client_processes>>. It is expected that application developers support the error conditions with an appropriate error message. When an error occurs, this can in some instances, prevent further processing of the data.
+
+[%unnumbered]
+|===
+h| Error Code h| Error/Warning Message
+| *SSE 01* | _"Self Signed Key is invalid"_
+| *SSE 02* | _"Format of Self Signed Key file is incorrect"_
+| *SSE 03* | _"SA Signed Data Server Certificate is invalid"_
+| *SSE 04* | _"Format of SA Signed DS Certificate is incorrect"_
+| *SSE 05* | _"SA Digital Certificate (X509) file is not available. A valid certificate can be obtained from the IHO website or your data supplier"_
+| *SSE 06* | _"The SA Signed Data Server Certificate is invalid. The SA may have issued a new public key or the ENC may originate from another service. A new SA public key can be obtained from the IHO website or from your data supplier"_
+| *SSE 07* | _"SA signed DS Certificate file is not available. A valid certificate can be obtained from the IHO website or your data supplier"_
+| *SSE 08* | _SA Digital Certificate (X509) file incorrect format._ _A valid certificate can be obtained from the IHO website or your data supplier_
+| *SSE 09* | _ENC Signature is invalid_
+| *SSE 10* | _Permits not available for this Data Server. Contact your data supplier to obtain the correct permits._
+| *SSE 11* | _Cell Permit__not found. Load the permit file provided by the data supplier._
+| *SSE 12* | _Cell Permit format is incorrect. Contact your data supplier and obtain a new permit file._
+| *SSE 13* | _Cell Permit is invalid (checksum is incorrect) or the Cell Permit is for a different system"._ _Contact your data supplier and obtain a new or valid permit file._
+| *SSE 14* | _Incorrect system date, check that the computer clock (if accessible) is set correctly or contact your system supplier._
+| *SSE 15* | _Subscription service has expired. Please contact your data supplier to renew the subscription licence_
+| *SSE 16* | _ENC CRC value is incorrect. Contact your data supplier as ENC(s) may be corrupted or missing data._
+| *SSE 17* | _Userpermit is invalid (checksum is incorrect). Check that the correct hardware device (dongle) is connected or contact your system supplier to obtain a valid userpermit._
+| *SSE 18* | _HW_ID is incorrect format_
+| *SSE 19* | _Permits are not valid for this system. Contact your data supplier to obtain the correct permits_
+| *SSE 20* | _Subscription service will expire in less than 30 days. Please contact your data supplier to renew the subscription licence_
+| *SSE 21* | _Decryption failed no valid cell permit found. Permits may be for another system or new permits may be required, please contact your supplier to obtain a new licence_
+| *SSE 22* | _SA Digital Certificate (X509) has expired. A new SA public key can be obtained from the IHO website or from your data supplier._
+| *SSE 23* | _Non sequential update, previous update(s) missing try reloading from the base media. If the problem persists contact your data supplier._
+| *SSE 24* | _ENC Signature format incorrect, contact your data supplier_
+| *SSE 25* | _Viewer – "The permit for ENC <cell name> has expired. This cell may be out of date and_ _MUST NOT_ _be used for Primary_ _NAVIGATION"._
+| *SSE 26* | _This ENC is not authenticated by the IHO acting as the Scheme Administrator_
+| *SSE 27* | _Viewer –_ _"ENC <cell name> is not up to date. A New Edition, Re-issue or Update for this cell is missing_ _and therefore MUST NOT be used for Primary NAVIGATION"._
+
+|===
+
+*SSE 01* must be returned when a self signed key (SSK) cannot be validated against the public stored as part of the SSK. The data server must check that its own SSK is valid before sending it to the SA. The SA will confirm that the date server SSK before returning the SA signed data server certificate.
+
+*SSE 02* must be returned if the SSK is wrongly formatted. That is elements of the SSK or characters are missing. The SA and data servers must complete this check.
+
+*SSE 03* must be returned if the SA signed data server certificate does not authenticate correctly against the SA public key. This validation process must be carried out by the SA before supplying it to the data server. The data server must validate the SA certificate received from the SA. The data client must validate the SA certificate contained in the ENC signature file prior to decryption.
+
+*SSE 04* must be returned if the SA signed data server certificate is wrongly formatted. This must be carried out by the data server on receipt from the SA.
+
+*SSE 05* must be returned if there is no certificate installed on the data client or the path to it cannot be found.
+
+*SSE 06* must be returned if the SA digital certificate (public key) does not validate against the following:
+
+SA digital certificate will not validate against the SA public key.
+The SA public key contained in the digital certificate will not authenticate against the signature contained in the ENC signature file. This could be a case of the certificate being invalid or an invalid or badly formatted signature.
+
+*SSE 07* must be returned if the SA signed data server certificate is not available to the data server for checking or is not present in the ENC signature file when the data client attempts to authenticate it.
+
+*SSE 08* must be returned if the SA public key held in the SA digital certificate is wrongly formatted or the certificate file is unreadable.
+
+*SSE 09* must be returned if the ENC signature element in the ENC signature file does not authenticate against the data server public key contained in the certificate element of the ENC signature file.
+
+*SSE 10* must be returned if there are no cell permits available for a particular data server corresponding to the exchange set being loaded.
+
+*SSE 11* must be returned if there are no permits installed on the system.
+
+*SSE 12* must be returned if the cell permits are formatted incorrectly.
+
+*SSE 13* must be returned if the calculated CRC of the cell permit does not validate against the CRC held in that cell permit. [Data Clients] This may be a HW_ID problem, corruption during transmission or the permits are for a different system.
+
+*SSE 14* must be returned if the system date does not agree with the date obtained from any alternative, reliable date source, e.g. GPS. [Data Clients]
+
+*SSE 15* must be returned if the expiry date of the cell permit has an earlier date than that obtained from the validated system date. [Data Clients]
+
+*SSE 16* must be returned if the calculated CRC value of the ENC (after decryption and uncompressing) does not validate against the corresponding CRC value in the CATALOG.031 file. This also applies to the unencrypted signature, text and picture files. [Data Clients]
+
+*SSE 17* must be returned if the CRC contained in the userpermit does not validate against the calculated CRC of the extracted HW_ID. [Data Servers]
+
+[strike]#*SSE 18* must be returned if the if the decrypted HW_ID extracted from the userpermit is incorrectly formatted. [Data servers]#
+
+*SSE 19* must be returned if the HW_ID stored within the hardware/software security device cannot decrypt the cell permits being loaded or already installed on the system.
+
+*SSE 20* must be returned if the subscription licence is due to expire within 30 days or less.
+
+*SSE 21* must be returned if a valid cell key (decryption key) cannot be obtained from the relevant cell permit to enable the system to decrypt the corresponding ENC cell.
+
+*SSE 22* must be returned if the SA Digital Certificate (X509) has expired. That is if the *_"Valid to"_* date in the certificate is older than the validated system date.
+
+*SSE 23* must be returned if the ENC update being imported is not sequential with the latest update already contained in the SENC for any given cell. Under these conditions the update process (for the cell) must be terminated and the ECDIS is to display a warning when the cell is displayed stating that the cell is not up to date and should not be used for navigation.
+
+*SSE 24* must be returned if the ENC signature format (first R & S pair) is not compatible with the format outlined in this document. Under these conditions the import process for the cell should be terminated but the system should continue to authenticate the integrity of any remaining cells.
+
+*SSE 25* must be returned if the stored ENC permit for any given cell has expired. It should be possible to view the cell but a permanent warning message must be displayed informing the user, e.g. _"The permit for ENC <cell name> has expired. This cell may be out of date and MUST NOT be used for Primary NAVIGATION"._
+
+*SSE 26* must be returned if the signed certificate (in the ENC signature file) authenticates against a certificate or public key file stored on the Data Client other than the one provided by the SA. This caters for instances where more than one certificate or public key is stored in the Data Client.
+
+*SSE 27* must be returned if the status of the cell being viewed is not as up-to-date in respect of the latest PRODUCTS.TXT file loaded or maintained on the system. A permanent warning message must be displayed on screen informing the user, e.g. _"ENC <cell name> is not up to date. A New Edition, Re-issue or Update for this cell is missing and therefore MUST NOT be used for Primary NAVIGATION"._

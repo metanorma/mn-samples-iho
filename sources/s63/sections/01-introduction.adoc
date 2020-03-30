@@ -12,6 +12,10 @@ The Standard was adopted as the official IHO standard, by the IHO member states 
 
 This document specifies a method of securing ENC information and maintaining the integrity of an ENC service with multiple data services serving a large customer base. The purpose of data protection is threefold:
 
+. *Piracy Protection:* To prevent unauthorised use of data by encrypting the ENC information.
+. *Selective Access:* To restrict access to ENC information to only those cells that a customer has been licenced for.
+. *Authentication:* To provide assurance that the ENC data has come from approved sources
+
 Piracy protection and selective access are achieved by encrypting the ENC information and providing cell permits to decrypt them. Data Servers will encrypt ENC data provided by producer nations before supplying it to the Data Client. The encrypted ENC is then decrypted by the ECS/ECDIS prior to being reformatted and imported into the systems SENC. Authentication is provided by means of digital signatures within the data.
 
 The scheme does not specifically address how ENC or SENC information can be protected once it is within an end-user application. This is the responsibility of the OEMs.
@@ -64,7 +68,7 @@ OEMs subscribing to the IHO S-63 DPS must build a software application according
 
 The manufacturer must provide a secure mechanism within their software systems for uniquely identifying each end user installation. The scheme requires each installation to have a unique hardware identifier (HW_ID).
 
-The software application will be able to decrypt the cell keys using the HW_ID stored in either the hard lock or soft lock devices attached to or programmed within the application to subsequently decrypt and uncompress the ENC data. The CRC value contained within the ENC [1] can then be verified to establish the integrity of the underlying S57 data.
+The software application will be able to decrypt the cell keys using the HW_ID stored in either the hard lock or soft lock devices attached to or programmed within the application to subsequently decrypt and uncompress the ENC data. The CRC value contained within the ENC <<iho_ts_dhd>> can then be verified to establish the integrity of the underlying S57 data.
 
 ==== S-63 Participant Relationships
 
@@ -74,27 +78,26 @@ The Scheme Administrator (SA), of which there can only be one, authenticates the
 image::image-01.png[]
 
 
+[bibliography]
 === References
 
-// TODO: convert
+* [[[iho_ts_dhd,(1)IHO S57]]], S57 edition 3.1: IHO Transfer Standard for Digital Hydrographic Data, International Hydrographic Organization (www.iho.int)
 
-[1] S57 edition 3.1: IHO Transfer Standard for Digital Hydrographic Data, International Hydrographic Organization (www.iho.int)
+* [[[dss,(2)NIST FIPS 186]]], Digital Signature Standard (DSS), FIPS Pub 186 (www.itl.nist.gov/div897/pubs/fip186.htm)
 
-[2] Digital Signature Standard (DSS), FIPS Pub 186 (www.itl.nist.gov/div897/pubs/fip186.htm)
+* [[[sha,(3)NIST FIPS 180-1]]], Secure Hash Standard (SHA), FIPS Pub 180-1 (www.itl.nist.gov/div897/pubs/fip180-1.htm)
 
-[3] Secure Hash Standard (SHA), FIPS Pub 180-1 (www.itl.nist.gov/div897/pubs/fip180-1.htm)
+* [[[ITU-T_X.509,(4)ITU-T X.509]]], Information Technology – Open Systems Interconnection – The Directory: Authentication Framework. X.509 version 3 - International Telecommunication Union
 
-[4] Information Technology – Open Systems Interconnection – The Directory: Authentication Framework. X.509 version 3 - International Telecommunication Union
+* [[[zip_ffs,(5)ZIP File Format Specification]]], ZIP File Format Specification, PKWare Inc.
 
-[6] ZIP File Format Specification, PKWare Inc.
+* [[[des_mf,(6)NIST FIPS 81]]], DES Modes of Operation, FIPS Pub 81 (www.itl.nist.gov/fipspubs/fip81.htm)
 
-[7] DES Modes of Operation, FIPS Pub 81 (www.itl.nist.gov/fipspubs/fip81.htm)
+* [[[rfc1423,(7)IETF RFC 1423]]], RFC 1423: Privacy Enhancements for Internet Electronic Mail: Part III: Algorithms, Modes and Identifiers
 
-[8] RFC 1423: Privacy Enhancements for Internet Electronic Mail: Part III: Algorithms, Modes and Identifiers
+* [[[blowfish_ref,(8)Blowfish encryption algorithm]]], Blowfish encryption algorithm, B. Schneier, Fast Software Encryption, Cambridge Security Workshop Proceedings (December 1993), Springer-Verlag, 1994, pp. 191-204. (www.counterpane.com)
 
-[9] Blowfish encryption algorithm, B. Schneier, Fast Software Encryption, Cambridge Security Workshop Proceedings (December 1993), Springer-Verlag, 1994, pp. 191-204. (www.counterpane.com)
-
-[10] CRC32 checksum algorithm. Information technology -- Telecommunications and information exchange between systems -- High-level data link control (HDLC) procedures. ISO/IEC 13239:2002.
+* [[[crc32,(9)ISO/IEC 13239:2002]]], CRC32 checksum algorithm. Information technology -- Telecommunications and information exchange between systems -- High-level data link control (HDLC) procedures. ISO/IEC 13239:2002.
 
 
 === Compatibility with Previous Versions
@@ -122,7 +125,7 @@ It is the responsibility of Data Servers to provide services that are backwardly
 
 The main body of the document can generally be broken down into four parts. The first part details the components that are fundamental to the scheme and describes their purpose and construction. The second identifies how all the components come together within an S-63 ENC Exchange Set. The third outlines the roles and responsibilities of each type of user participating in the scheme. Finally there is a section that defines the various error and warning messages that must be displayed on the data client when defined conditions occur.
 
-Main Document:
+*Main Document:*
 
 1. Scheme Components:
 
@@ -145,7 +148,7 @@ Main Document:
 
 ** Section 11 S-63 Error Codes and Explanations
 
-Additional Sections:
+*Additional Sections:*
 
 * S-63 Annex A: Data Server Certificate Request Procedure
 
@@ -153,7 +156,7 @@ Additional Sections:
 
 * S-63 Annex C: ENC Update Status Report
 
-Appendices:
+*Appendices:*
 
 * Appendix 1: Contains a definition of available test data which can be used to develop full compliance with all aspects of the Data Protection Scheme.
 
@@ -162,7 +165,7 @@ Appendices:
 
 === Maintenance
 
-Changes to this standard will conform to the “Principles and procedures for making changes to IHO standards and specifications”, as approved by the 18th CHRIS meeting (Cairns, Australia, Sept. 2006).
+Changes to this standard will conform to the _“Principles and procedures for making changes to IHO standards and specifications”_, as approved by the 18th CHRIS meeting (Cairns, Australia, Sept. 2006).
 
 
 === Support

@@ -1,0 +1,244 @@
+
+[appendix,obligation=informative]
+[[appendix2]]
+== Large Media Support
+
+=== Introduction 
+
+Until recently the majority of ECDIS/ECS only had the capability to load ENC Exchange Sets (ExSets) from CD-ROMs. However, it is becoming increasingly common for new OEM hardware to be delivered with DVD drives or other Large Media Support {blank}footnote:[Large Media Support can also be referred to as Mass Storage Devices.] (LMS). The inclusion of this media support now offers data servers the potential to include more ENC data on a single media.
+
+Several issues have emerged during the operation of the existing S-63 encrypted ENC services using edition 1.0 of the standard. Not least of these is the fact that providing large exchange sets has resulted in unacceptable load times to the ECDIS/ECS. This is one of the principle reasons why data servers did not provide services that included single exchange sets spanning multiple CD-ROMs.
+
+To store a single ENC exchange set on a mass storage device such as a DVD or USB that was similar in size to that stored on CD-ROM, would be an inefficient use of the media and the available memory. This being the case it would make sense to store multiple exchange sets on the same media, each about the same size as those currently stored on CD-ROM. Since this method of storage is not defined in the IHO S-57 Product Specifications or Edition 1.0 of S-63 a new configuration will have to be specified.
+
+When designing the media structure the following considerations have been taken into account:
+
+* ENC Services may be provided across multiple media sets
+* ENC Services may contain data from more than one Data Server
+* Suitable files must be provided so that manufacturer systems can manage and import S-63 encrypted ENCs in an efficient and expeditious manner and create intuitive systems which manage multiple pieces of media easily.
+
+=== Media Overview
+
+The following section gives a high level view of how the data will be structured on the media. It also outlines how the S-63 exchange set structure has been modified for large media support; this is further supported by diagrams in Annexes A and B of this appendix. Detailed information relating to the content and format of these folders and files are provided later in this appendix.
+
+==== Media Types
+
+There will be two types of media, *_"BASE"_*, containing one or more Base Exchange sets and, *_"UPDATE"_*, containing the weekly ENC updates, these may be contained in one or more exchanges sets on the update media. It was considered that because of the increased capacity which these types of media offer it could be possible to re-issue base ExSets on the update media and conversely weekly updates on the base media.
+
+==== Media Folder and File Structure
+
+All exchange sets are located in the root directory of each media each within their own specific sub-directory. The configuration of all exchange sets are the same as outlined in 7.5.1 of the main document with the one notable exception. The *_"INFO"_* folder that includes the *_"PRODUCTS.TXT"_* file will no longer be stored in the root directory of the exchange set(s) but in the root directory of the media.
+
+The *_"INFO"_* will continue to be used by data servers to include additional files unique and specific to their S-63 encrypted ENC services. Note that any data server specific files stored in this folder must be named in such a way that they *DO NOT* conflict with the S-63 file naming convention.
+
+===== Additional Media File
+
+An additional file named *_"MEDIA.TXT"_* will be included on each piece of media to assist data clients in managing multiple exchange sets on the same media and across multiple media sets. It will also enable data clients systems to prompt users to insert the relevant media by including a machine readable string in each record referring to each piece of media. A more detailed explanation of the format of the *_MEDIA.TXT_* file is provided later in <<media_file_formats>>.
+
+==== Media Identification
+
+There must be a method for differentiating between services provided on CD and those supplied using large media support. The first differentiator is the volume ID of the media (see <<media_labelling>>). This will identify the use of large media format and notify the data client of the expected folder and file structure.
+
+A further indication is the presence of the new MEDIA.TXT file is in the root directory of the media is a further indication that an ENC service is being provided using large media support.
+
+[[media_labelling]]
+===== Media Labelling
+
+For large media support the media labelling convention will be similar to that used in the IHO S-57 product specification. Instead of "V01X01", where "V" stands for "Volume", the letter "M" for "Media" will be substituted.
+
+The volume label for large media support will also indicate how many media sets there are in a service. Therefore if there are three media sets they will be labelled as follows:
+
+M01X03 [Media set 1 of 3] +
+M02X03 [Media set 2 of 3] +
+M03X03 [Media set 3 of 3]
+
+NOTE: This only identifies the number of media sets in an ENC service and does not imply that this is a single exchange set covering multiple media sets. This purpose of this naming convention is to assist data clients to identify the media where licenced cells are located.
+
+[[media_file_formats]]
+=== Media File Formats
+
+==== Product Listing (PRODUCTS.TXT)
+
+For *_"Base Media"_* the *_"PRODUCTS.TXT"_* file will contain records for all cells held on that particular media. The header as defined in section 6.2.2 of the main document will be labelled as *_"FULL"_* if there is only one media in a particular service. However if there is more than one media this will be labelled *_"PARTIAL"_*. A *_"FULL"_* products listing will always be provided on the *_"Update Media"_* with records of all cells in a data server's service.
+
+It is important that ECDIS/ECS manufacturers manage these records carefully; *_"PARTIAL"_* product listings must be merged with the *_"FULL"_* listing stored within the system. It must be noted that the system may contain product information from more than one data server. Therefore it is important not to overwrite *_"FULL"_* listings unless they are stored independently according to data server.
+
+==== Media Listing (MEDIA.TXT)
+
+This is a new file designed to manage services supplied using large media support. It is located in the root directory of the base and update media and contains information relating to all media in a data server's service and the exchange sets contained on the media. The main purpose of this file is as follows:
+
+* To provide data clients with a means to manage the import of a data server's service that supports large media.
+* To provide information to allow data clients to manage multiple media sets.
+* To provide "User Information" so that data clients can make the import process more intuitive for the end user.
+
+NOTE: The latest update media *will always* contain the current status of the most recent base media (STATUS.LST) and base exchanges sets (MEDIA.TXT) in a data server's service. This can be used to check the latest Base Media and Base Exchange sets have been installed. Further details on the structure and format of this file are outlined below.
+
+===== Header Format
+
+The purpose of the MEDIA.TXT header is similar to that of the SERIAL.ENC file stored with the exchange set. It is used to manage the media installation by identifying the following:
+
+* The media service provider
+* The media date and week of issue
+* The media number and media type
+* Machine readable media name to display to users
+
+The header is provided in two lines each containing a single record, the first is a fixed length, and the second is comma separated. The following table defines the format in more detail:
+
+[%unnumbered]
+|===
+h| Field ID h| Domain h| Bytes h| Range
+
+| *Data Server ID* | Character | 2 | Any pair of alphanumeric, e.g. *`PR`*
+
+| *Week of Issue* | Character | 10 | Any ASCII Characters, e.g. *`WKNN_YY`*
+
+| *Date of Issue* | Date | 8 | *`YYYYMMDD`*
+
+| *Media Type* | Character | 10 | *`BASE`* or *`UPDATE`*
+
+| *Media Label ID* | Character | 6 | *`M[01-99]X[01-99]`*
+
+| *End of record delimiter* | hexadecimal | 2 | *`CR/LF`*
+
+| *Media ID* | Character | 2-3 | For example, *`M1`*, *`M2`* or *`M11`*.
+
+| *Machine Readable Media Name* | 'Character' | 0-100 | Text string contained within quotation marks
+
+| *Regional Information [Optional]* | 'Character' | 0-100 | Text string contained within quotation marks
+
+| *End of record delimiter* | hexadecimal | 2 | *`CR/LF`*
+
+|===
+
+[%unnumbered]
+====
+*`GBWK27_07` `20070621BASE` `M01X03`*
+*`M1,'UKHO Week 27_07 BASE MEDIA 1','Europe, Africa, and Middle East'`*
+====
+
+===== Media Record Format
+
+The *_"MEDIA.TXT"_* file also contains a list of records that identifies all current exchange sets in a data server's service and the destination media where they can be located. Its purpose, together with the STATUS.LST, is to provide data clients with a means of managing the import of encrypted ENCs across multiple media sets and provide "User Information" so that the data client can prompt, using the STATUS.LST file, end users to load the appropriate media.
+
+The *_"MEDIA.TXT"_* file stored on the *UPDATE* media will always contain a *FULL* list of media/ exchange sets contained in a data server's service. It will also carry the date when the exchange sets were last issued, this way the ECDIS/ECS can always validate, together with the STATUS.LST, whether it holds the latest information.
+
+The *_"MEDIA.TXT"_* file stored on the *BASE* media will contain a list of those exchange sets stored on the media. It will *NOT* contain information about the other volumes in the service.
+
+[%unnumbered]
+|===
+h| Field ID h| Domain h| Bytes h| Range h| Notes (see below)
+
+| *Media/Exchange Set Location* | Character | 5-7 a| *`M1`* to *`M99;B1`* to *`B99`* +
+e.g. *`M2;B7`* [Media 2, Base ExS 7] +
+*`M1`* to *`M99;U1`* to *`U99`* +
+e.g. *`M1;U2`* [Media 1, Update ExS 2] ^.^| {blank}footnote:[This field identifies on what media the base or update exchange set is located.]
+
+| *Exchange Set Issue Date* | Date | 8 | *YYYYMMDD*, e.g. 20070621 ^.^| {blank}footnote:[The ExSet Issue Date. This is the date when an ExSet is issued or re-issued2 on the base or update media. Although it may be more practical to re-issue all ExSets on a particular media simultaneously there may be occasions when the media is re-issued with just one ExSet re-issued. Data Clients may use this date to validate the status of the currently installed cells from the update media.]
+
+| *Media Set Number [Long Name]* | Character | | 'Any ASCII Characters' ^.^| {blank}footnote:[This is a machine readable text string that Data Clients can use to prompt end users to load the appropriate media.]
+
+| *Regional Information [Optional]* | Character | | 'Any ASCII Characters' ^.^| {blank}footnote:[This is an optional machine readable text string that can used by data clients to display additional information relating to the regions/producer nations on a particular media..]
+
+| *Reserved Field* | Character | | ^.^| {blank}footnote:[Future Use]
+
+| *Comments Field* | Character | | ^.^| {blank}footnote:[Additional comment information]
+
+|===
+
+[%unnumbered]
+====
+*`M1;B1,20070614,'Base Dataset 1',Europe',,`* 
+====
+
+The update media *_"MEDIA.TXT"_* file will always contain the latest issue dates and information for all base media exchange sets in a media set. _Although provision has been made to have more than one update ExSet on the update media, it is not recommended for the reasons mentioned in <<media_management_data_servers>>. However, if there are more than one then this can be managed by the entries in the PRODUCTS.TXT and MEDIA.TXT file on the update media._
+
+[%unnumbered]
+.Example of a complete *MEDIA.TXT [UPDATE]*:
+====
+`GBWK28_07 20070628UPDATE M01X02` +
+`U1,'UKHO Week 28_07 UPDATE MEDIA 1 of 2','Europe'` +
+`M1;B1,20070614,'UKHO BASE MEDIA 1','Europe, Africa and Middle East',,` +
+`M1;B2,20070614,'UKHO BASE MEDIA 1','Europe, Africa and Middle East',,` +
+`M1;B3,20070621,'UKHO BASE MEDIA 1','Europe, Africa and Middle East',,` +
+`M2;B4,20070517,'UKHO BASE MEDIA 2','North and South America',,` +
+`M2;B5,20070517,'UKHO BASE MEDIA 2','Morth and South America',,` +
+`M3;B6,20070405,'UKHO BASE MEDIA 3','Far East and Australasia',,` +
+`M3;B7,20070405,'UKHO BASE MEDIA 3','Far East and Australasia',,` +
+`M1;U1,20070628,'UKHO WK28_07 ENC Update','Europe',,` +
+`M1;U2,20070628,'UKHO WK28_07 ENC Update','Rest of the World',,`
+====
+
+[%unnumbered]
+.Example of complete *MEDIA.TXT [BASE]* file on:
+====
+`GBWK27_07 20070621BASE M01X03` +
+`M1,'UKHO Week 27_07 BASE MEDIA 1','Europe, Africa, and Middle East'` +
+`M1;B1,20070614,'Base Dataset 1',Europe',,` +
+`M1;B2,20070614,'Base Dataset 2','Africa',,` +
+`M1;B3,20070621,'Base Dataset 3','Middle East',,`
+====
+
+
+[[media_management_data_servers]]
+=== Media Management (Data Servers)
+
+The issue and re-issue of base media is very much at the discretion of the data server. However, to prevent the continual renewal of base media it is recommended that individual exchange sets are not issued independently of one another on the same media. However, there may be occasions when this is necessary, e.g. the introduction of ENCs from a new country or essential management of the update exchange set.
+
+It is probable that data servers will operate a two tier service, e.g. they will support both a CD-ROM and DVD services. To fulfil the recommendation in the paragraph above it may not be possible to maintain synchronicity between the two levels of service due to the greater flexibility that large media offers. DVDs for instance are capable of storing more data and therefore it may not be necessary to re-issue media as frequently as, for example, CDs.
+
+NOTE: It may be that a data server issue the base media using the large media option but, for reasons of cost, issues the update media on CD. In these instances it is important to note that the content and structure of the update MUST be consistent with that of the base media it relates to.
+
+=== Media Management (Data Clients)
+
+As the volume of ENCs continues to grow a more intelligent and "smarter" method of loading them into ECDIS/ECS is required. Since most customer only purchase a subset of all available ENCs it would seem prudent to base the import of S-63 encrypted ENCs directly against the customers permit holdings. The following bullet points are provided to illustrate the recommended steps for importing encrypted ENCs.
+
+* Insert, read and validate the *'PERMIT.TXT* file
+* Insert the *'Update Media'*
+* Read the *_"FULL"_* products listing form the *'PRODUCTS.TXT'* file
+* Identify and flag all cells that are licenced (have valid permits)
+* Indentify the target *'Base Media'* and *'BASE Exchange Set'* location of each licenced ENC
+* Prompts the user to install the appropriate *'Base Media'*
+* Install all licenced ENCs from the relavant *'Base Media'* and *'Base Exchange Sets'*
+* Prompt the user to insert the latest *'Update Media'* to bring all licenced ENCs up to date and complete the ENC loading cycle.
+
+NOTE: In the case of encrypted ENC data it is not necessary or desirable to read the complete CATALOG.031 file. This file should only be used to identify the target location of all licenced ENCs and any associated files in the exchange set.
+
+==== Media Warnings
+
+When the weekly update media is loaded data clients must check that the issue date of all installed base media are current and up to date. The *_"STATUS.LST"_* on the latest update media will always contain the latest issue date of each base media in the service.
+
+If the ECDIS/ECS does not have the latest base media loaded a warning must be given informing the user similar to the following example:
+
+[%unnumbered]
+====
+*_"This 'Update Media' is not compatible with the actual installed 'Base Media'. Please install the following 'Base Media' first and then continue with the 'Update Media'."_* +
+            *_ <Field: User Information 1> _* +
+            *_ <Field: User Information 2> _* +
+            *_ <Field: User Information x> (where x is the base media number) _*
+
+*_Example:_*
+
+*_"This 'Update Media' is not compatible with the actual installed 'Base Media'. Please install the following 'Base Media' first and then continue with the 'Update Media'."_*
+
+*_'Base Media 2 dated 07 June 2007'_*
+====
+
+NOTE: The user should only be prompted to install compatible base media that contains licenced ENC cells.
+
+
+*BASE MEDIA FOLDER AND FILE STRUCTURE*
+
+The <<fig36>> is for illustrative purposes only and outlines the top level folder and file structure that must be used by data servers when supplying S-63 encrypted ENC services utilising large media support. However, it is possible that the structure under each ENC_ROOT folder of each exchanges set may vary between data servers.
+
+[[fig36]]
+.LARGE MEDIA SUPPORT FOR S-63 ENCRYPTED ENC SERVICESBASE MEDIA FOLDER AND FILE STRUCTURETHE
+image::image-36.png["","",""] 
+
+
+*UPDATE MEDIA FOLDER AND FILE STRUCTURE*
+
+The <<fig37>> is for illustrative purposes only and outlines the top level folder and file structure that must be used by data servers when supplying S-63 encrypted ENC services utilising large media support. However, it is possible that the structure under each ENC_ROOT folder of each exchanges set may vary between data servers.
+
+[[fig37]]
+.UPDATE MEDIA STRUCTURE (Only top level folders & files)
+image::image-37.png["","",""]
