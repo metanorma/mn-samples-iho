@@ -4,7 +4,7 @@
 
 === Data vs. Metadata
 
-It is important to understand the difference between data and metadata. Data is the core information, and metadata describes the data. For crowdsourced bathymetry, the data are the depths and geographic positions collected by a vessel, along with the date and time that they were collected. The metadata provides additional, supporting information about the data, such as the make and model of the echo- sounder and GNSS, the vessel’s draft, where the sensors were installed on the vessel, and so forth.
+It is important to understand the difference between data and metadata. Data is the core information, and metadata describes the data. For crowdsourced bathymetry, the data are the depths and geographic positions collected by a vessel, along with the date and time that they were collected. The metadata provides additional, supporting information about the data, such as the make and model of the echo- sounder and GNSS, the vessel's draft, where the sensors were installed on the vessel, and so forth.
 
 === The Importance of Metadata
 
@@ -16,7 +16,7 @@ Crowdsourced bathymetry that is submitted to the IHO DCDB should not have tidal 
 
 ==== Sensor Offsets
 
-Information about a transducer’s vertical offset from the waterline, or its horizontal offset from a GNSS receiver, allow users to apply vessel draft and horizontal positioning corrections to the data.
+Information about a transducer's vertical offset from the waterline, or its horizontal offset from a GNSS receiver, allow users to apply vessel draft and horizontal positioning corrections to the data.
 By applying corrections based on information in the metadata, data users can greatly improve the accuracy and value of the bathymetric data for research, industry, or other applications. Refer to section 2.3.1 for more information about sensor offsets.
 
 === Metadata and Data Formats
@@ -34,11 +34,11 @@ A minimum of information is required, to enable Trusted Nodes to receive and pro
 |Data Field | Description | Example
 
 | Longitude
-| The vessel’s longitudinal geographic position, in WGS84 decimal degrees, to a precision of six decimal places. This can be extracted from the NMEA RMC, GGL or GGA String. Negative values are in the western hemisphere; positive values are in the eastern hemisphere.
+| The vessel's longitudinal geographic position, in WGS84 decimal degrees, to a precision of six decimal places. This can be extracted from the NMEA RMC, GGL or GGA String. Negative values are in the western hemisphere; positive values are in the eastern hemisphere.
 | -19.005236
 
 | Latitude
-| The vessel’s latitudinal geographic position, in WGS84 decimal degrees, to a precision of six decimal places. This can be extracted from the NMEA GGA, GLL or RMC String. Negative values are in the southern hemisphere; positive values are in the northern hemisphere.
+| The vessel's latitudinal geographic position, in WGS84 decimal degrees, to a precision of six decimal places. This can be extracted from the NMEA GGA, GLL or RMC String. Negative values are in the southern hemisphere; positive values are in the northern hemisphere.
 | 40.914812
 
 | Depth
@@ -83,12 +83,12 @@ of the data for oceanographic research, scientific and feasibility studies and o
 | MMSI
 
 | ID Number
-| The value for the ID Type. MMSI numbers are often nine digits, while IMO numbers are the letters “IMO,” followed by a seven- digit number.
+| The value for the ID Type. MMSI numbers are often nine digits, while IMO numbers are the letters "`IMO,`" followed by a seven- digit number.
 | 369958000
 
 
 | Sensor Type Sounder
-| This indicates the type of echo-sounder. The only current option is ‘Sounder.’’ ‘Sounders’ are simple single beam echo- sounders. In the future, ‘Multibeam’ may be added as an option. ‘Multibeam’ refers to vessels equipped with swath sonar systems.
+| This indicates the type of echo-sounder. The only current option is 'Sounder.'' 'Sounders' are simple single beam echo- sounders. In the future, 'Multibeam' may be added as an option. 'Multibeam' refers to vessels equipped with swath sonar systems.
 | Sounder
 
 | Sounder Make
@@ -104,40 +104,40 @@ of the data for oceanographic research, scientific and feasibility studies and o
 | Dual Freq 200/400 kHz
 
 | Sounder Draft
-| The vertical distance, in metres, from the waterline to the echo-sounder’s transducer. The draft should be expressed as a positive value, in metres, with decimetre or better precision if possible. For vessels that operate with a range of drafts, recommended to put in the summer load line.
+| The vertical distance, in metres, from the waterline to the echo-sounder's transducer. The draft should be expressed as a positive value, in metres, with decimetre or better precision if possible. For vessels that operate with a range of drafts, recommended to put in the summer load line.
 | 4.6
 
 | Uncertainty of Sounder Draft
-| The data contributor’s estimate of the uncertainty of the echo-sounder’s draft measurement, expressed as metres. Vessel draft may be affected by cargo, fuel, or other factors. It is helpful for the data contributor to provide an estimate of how these factors may have affected the transducer’s normal depth below waterline, at the time of data collection. Refer to chapter on Uncertainty for more information about how to calculate this value.
+| The data contributor's estimate of the uncertainty of the echo-sounder's draft measurement, expressed as metres. Vessel draft may be affected by cargo, fuel, or other factors. It is helpful for the data contributor to provide an estimate of how these factors may have affected the transducer's normal depth below waterline, at the time of data collection. Refer to chapter on Uncertainty for more information about how to calculate this value.
 | 1.0
 
 | Sounder Draft Applied
-| Some echo-sounder systems apply vessel draft in real-time. This field allows the data contributor to state whether draft corrections were applied during data collection (‘True’) or if they were not (‘False’).
+| Some echo-sounder systems apply vessel draft in real-time. This field allows the data contributor to state whether draft corrections were applied during data collection ('True') or if they were not ('False').
 | False
 
 | Sound Speed Applied
-| Some systems may have the ability to provide sound speed data and correct the sounding. This field allows the data contributor to state whether sound speed corrections were applied during data collection (‘True’) or if they were not (‘False’)
+| Some systems may have the ability to provide sound speed data and correct the sounding. This field allows the data contributor to state whether sound speed corrections were applied during data collection ('True') or if they were not ('False')
 | False
 
 | Reference point for Depth
-| The reference point is the location on the vessel to which all echo-sounder depths are referenced. Echo-sounder depths can be referenced to the waterline, the vessel’s keel, the echo-sounder transducer, or the GNSS receiver. Information about the reference point helps data users standardise the depth data to a common water level.
+| The reference point is the location on the vessel to which all echo-sounder depths are referenced. Echo-sounder depths can be referenced to the waterline, the vessel's keel, the echo-sounder transducer, or the GNSS receiver. Information about the reference point helps data users standardise the depth data to a common water level.
 | Transducer
 
 
 | Sensor Type GNSS
-| This field defines the sensor type for GNSS receivers. This must always be defined as: “GNSS,” and is not a value that data contributors can change.
+| This field defines the sensor type for GNSS receivers. This must always be defined as: "`GNSS,`" and is not a value that data contributors can change.
 | GNSS
 
 | GNSS Make
-| The make of the vessel’s GNSS receiver, which may be selected from a list provided by a Trusted Node.
+| The make of the vessel's GNSS receiver, which may be selected from a list provided by a Trusted Node.
 | Litton Marine Systems
 
 | GNSS Model
-| The model of the vessel’s GNSS receiver, which may be selected from a list provided by a Trusted Node.
+| The model of the vessel's GNSS receiver, which may be selected from a list provided by a Trusted Node.
 | LMX420
 
 | Longitudinal Offset from GNSS to Sounder
-| This is the longitudinal (fore-and-aft) measurement (offset) between the GNSS receiver and the echo-sounder’s transducer. This value should be expressed in metres, with centimetre precision. If the GNSS receiver is aft of the sounder, the measurement value is positive. If the GNSS receiver is forward of the sounder, the measurement value is negative.
+| This is the longitudinal (fore-and-aft) measurement (offset) between the GNSS receiver and the echo-sounder's transducer. This value should be expressed in metres, with centimetre precision. If the GNSS receiver is aft of the sounder, the measurement value is positive. If the GNSS receiver is forward of the sounder, the measurement value is negative.
 | 3.52
 
 
@@ -146,12 +146,12 @@ of the data for oceanographic research, scientific and feasibility studies and o
 | -0.76
 
 | Position Offsets Applied
-| This field describes whether the final vessel position (longitude and latitude) has been corrected for the lateral and longitudinal offsets between the GNSS receiver and the echo-sounder transducer (“True”), or if they were not (“False”).
+| This field describes whether the final vessel position (longitude and latitude) has been corrected for the lateral and longitudinal offsets between the GNSS receiver and the echo-sounder transducer ("`True`"), or if they were not ("`False`").
 | False
 
 | Contributor comments
 | If the contributor believes there were any problems or events that may have degraded the quality of the position or depth measurements, they can enter that information in this free-text field.
-| On 3/8/2018, at 20:30 UTC, the echo-sounder lost bottom tracking after the vessel crossed another vessel’s wake.
+| On 3/8/2018, at 20:30 UTC, the echo-sounder lost bottom tracking after the vessel crossed another vessel's wake.
 
 |===
 
@@ -167,15 +167,15 @@ Trusted Nodes should assign additional metadata to crowdsourced bathymetry befor
 | Metadata Field | Description | Example
 
 | Provider Contact Point Organization Name
-| The Trusted Node’s name, in free-text format.
+| The Trusted Node's name, in free-text format.
 | Sea-ID
 
 | Provider Email
-| A free-text field for the Trusted Node’s email address, so that data users can contact the Trusted Node with questions about the data.
+| A free-text field for the Trusted Node's email address, so that data users can contact the Trusted Node with questions about the data.
 | support@sea-id.org/
 
 | Unique Vessel ID
-| Generated by the Trusted Node, this number identifies the Trusted Node and uniquely identifies the contributing vessel. The first five characters identify the Trusted Node, followed by a hyphen (-), and then the vessel’s unique identifier. The UUID assigned by the Trusted Node is consistent for each contributing vessel, throughout the life of service of the vessel. However, if the vessel chooses to remain anonymous to data users, the Trusted Node does not need to publish the vessel name in association with the UUID.
+| Generated by the Trusted Node, this number identifies the Trusted Node and uniquely identifies the contributing vessel. The first five characters identify the Trusted Node, followed by a hyphen (-), and then the vessel's unique identifier. The UUID assigned by the Trusted Node is consistent for each contributing vessel, throughout the life of service of the vessel. However, if the vessel chooses to remain anonymous to data users, the Trusted Node does not need to publish the vessel name in association with the UUID.
 | SEAID-UUID
 
 | Convention

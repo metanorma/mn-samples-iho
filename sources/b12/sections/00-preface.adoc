@@ -7,11 +7,11 @@ This document, or partial material from this document, may be translated, reprod
 *In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:*
 
 ____
-“Material from IHO publication B-12 Edition 1.0.0 is reproduced with the permission of the IHO Secretariat (Permission No ......./...) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”
+"`Material from IHO publication B-12 Edition 1.0.0 is reproduced with the permission of the IHO Secretariat (Permission No ......./...) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.`"
 ____
 
 ____
-“This publication is a translation of IHO B-12 Edition 1.0.0 – IHO Guidance on Crowdsourced Bathymetry. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of IHO publication B-12 Edition 1.0.0 in English should be consulted.”
+"`This publication is a translation of IHO B-12 Edition 1.0.0 – IHO Guidance on Crowdsourced Bathymetry. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of IHO publication B-12 Edition 1.0.0 in English should be consulted.`"
 ____
 
 *The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO Secretariat.*
@@ -32,7 +32,7 @@ The General Bathymetric Chart of the Ocean (GEBCO) project was initiated in 1903
 Monaco to provide the most authoritative, publicly-available bathymetry (depth maps) of the world's
 oceans. Over the years, the GEBCO project, now jointly overseen by the IHO and the Intergovernmental
 Oceanographic Commission (IOC) of UNESCO, has produced maps of the ocean floor from depth
-measurements collected by vessels as they journeyed across the oceans. These “passage soundings” have
+measurements collected by vessels as they journeyed across the oceans. These "`passage soundings`" have
 enabled the creation of progressively more-detailed seafloor maps and digital data grids. More recently,
 systematic surveys have also been used to improve the maps and grids.
 
