@@ -1,7 +1,10 @@
+
+[[annex-abbreviations]]
 [appendix]
 == Abbreviations
 
-AIS:: Automatic Identification System CI:: Confidence interval
+AIS:: Automatic Identification System
+CI:: Confidence interval
 CSB:: Crowdsourced bathymetry
 CSV:: Comma separated values
 DBT:: Depth Below Transducer (NMEA sentence)
