@@ -40,7 +40,7 @@ The DCDB needs to ensure the integrity of incoming data streams, so a unique key
 
 ==== Data and Metadata Formats
 
-All data contributions should conform to the data format and metadata standards described in the "`<<data-and-metadata>>, Data and Metadata`" chapter of this document, unless separately and specifically agreed otherwise by the Director, IHO DCDB.
+All data contributions should conform to the data format and metadata standards described in the <<data-and-metadata,"`Data and Metadata`">> chapter of this document, unless separately and specifically agreed otherwise by the Director, IHO DCDB.
 
 === Overview of CSB Data Flow
 
