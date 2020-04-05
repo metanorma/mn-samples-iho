@@ -63,204 +63,204 @@ image::fig-implementation-of-classes.png[]
 
 ====== BathymetryCoverage
 
-*BathymetryCoverage semantics*
+======= BathymetryCoverage semantics
 
 The class *BathymetryCoverage* has the attributes _minimumDepth_, _maximumDepth_, _minimumUncertainty_, and _maximumUncertainty_ which bound the depth attribute and the uncertainty attribute from the *S102_BathymetryValues* record. *BathymetryCoverage* also contains the attributes _minimumDisplayScale_ and _maximumDisplayScale_ which define the appropriate scale range for the coverage. *BathymetryCoverage* additionally contains the inherited attributes _origin_, _offsetVectors_, _dimension_, _axisName_, _extent_, _sequenceRule_, and _startSequence_ from *S100_Grid* and *CV_Grid*.
 
 The origin is a position in a specified coordinate reference system, and a set of offset vectors specify the direction and distance between the grid lines. It also contains the additional geometric characteristics of a rectified grid.
 
-*maximumDisplayScale*
+======= maximumDisplayScale
 
 The smaller value of the ratio of the linear dimensions of the features of a dataset presented in the display and the actual dimensions of the features represented (smallest scale) of the scale range of the dataset. A list of display scale ranges is available in <<tab-informative-grid-resolution-and-resulting-tile-size-at-chart-scale>>, 1st column.
 
 
-*minimumDepth*
+======= minimumDepth
 
 The attribute _minimumDepth_ has the value type _Real_ and describes the lower bound of the depth estimate for all the _depth_ values in *S102_BathymetryValues* record. This attribute is required. There is no default.
 
-*maximumDepth*
+======= maximumDepth
 
 The attribute _maximumDepth_ has the value type _Real_ and describes the upper bound of the depth estimate for all the depth values in *S102_BathymetryValues* record. This attribute is required. There is no default.
 
-*minimumDisplayScale*
+======= minimumDisplayScale
 
 The larger value of the ratio of the linear dimensions of the features of a dataset presented in the display and the actual dimensions of the features represented (largest scale) of the scale range of the dataset. A list of display scale ranges is available in <<tab-informative-grid-resolution-and-resulting-tile-size-at-chart-scale>>, 1st column.
 
-*minimumUncertainty*
+======= minimumUncertainty
 
 The attribute _minimumUncertainty_ has the value type _Real_ and describes the lower bound of the uncertainty of the depth estimate for all the depth values in *S102_BathymetryValues* record. This attribute is required. There is no default.
 
-*maximumUncertainty*
+======= maximumUncertainty
 
 The attribute _maximumUncertainty_ has the value type Real and describes the upper bound of the uncertainty of the depth estimate for all the depth values in *S102_BathymetryValues* record. This attribute is required. There is no default.
 
-*origin*
+======= origin
 
 The attribute _origin_ has the value class _DirectPosition_ which is a position that shall locate the origin of the rectified grid in the coordinate reference system. This attribute is required. There is no default.
 
-*offsetVectors*
+======= offsetVectors
 
 The attribute _offsetVectors_ has the value class _Sequence<Vector>_ that shall be a sequence of offset vector elements that determine the grid spacing in each direction. The data type Vector is specified in <<iso-ts-19103>>. This attribute is required. There is no default.
 
-*dimension*
+======= dimension
 
 The attribute _dimension_ has the value class Integer that shall identify the dimensionality of the grid. The value of the grid dimension in this product specification is 2. This value is fixed in this Product Specification and does not need to be encoded.
 
-*axisNames*
+======= axisNames
 
 The attribute _axisNames_ has the value class _Sequence<CharacterString>_ that shall be used to assign names to the grid axis. The grid axis names shall be "Latitude" and "Longitude" for unprojected data sets or "`Northing`" and "`Easting`" in a projected space.
 
-*extent*
+======= extent
 
 The attribute extent has the value class *CV_GridEnvelope* that shall contain the extent of the spatial domain of the coverage. It uses the value class *CV_GridEnvelope* which provides the grid coordinate values for the diametrically opposed corners of the grid. The default is that this value is derived from the bounding box for the data set or tile in a multi tile data set.
 
-*sequencingRule*
+======= sequencingRule
 
 The attribute _sequencingRule_ has the value class *CV_SequenceRule* that shall describe how the grid points are ordered for association to the elements of the sequence values. The default value is "Linear". No other options are allowed.
 
-*startSequence*
+======= startSequence
 
 The attribute _startSequence_ has the value class *CV_GridCoordinate* that shall identify the grid point to be associated with the first record in the values sequence. The default value is the lower left corner of the grid. No other options are allowed.
 
 
 ====== S102_BathymetryValues
 
-*S102_BathymetryValues semantics*
+======= S102_BathymetryValues semantics
 
 The class *S102_BathymetryValues* is related to BathymetryCoverage by a composition relationship in which an ordered sequence of _depth_ values provide data values for each grid cell. The class *S102_BathymetryValues* inherits from S100_Grid.
 
-*values*
+======= values
 
 The attribute _values_ has the value type *_S102_BathymetryValueRecord_* which is a sequence of value items that shall assign values to the grid points. There are two attributes in the bathymetry value record, depth and _uncertainty_ in the *S102_BathymetryValues* class. The definition for the _depth_ is defined by the _depthCorrectionType_ attribute in the *S102_DataIdentification* class. The definition of the type of data in the values record is defined by the _verticalUncertaintyType_ attribute in the *S102_DataIdentification* class.
 
 
 ====== DirectPosition
 
-*DirectPosition semantics*
+======= DirectPosition semantics
 
 The class DirectPosition hold the coordinates for a position within some coordinate reference system.
 
-*coordinate*
+======= coordinate
 
 The attribute _coordinate_ is a sequence of Numbers that hold the coordinate of this position in the specified reference system.
 
-*dimension*
+======= dimension
 
 The attribute _dimension_ is a derived attribute that describes the length of coordinate.
 
 ====== CV_GridEnvelope
 
-*CV_GridEnvelope semantics*
+======= CV_GridEnvelope semantics
 
 The class *CV_GridEnvelope* provides the grid coordinate values for the diametrically opposed corners of an envelope that bounds a grid. It has two attributes.
 
-*low*
+======= low
 
 The attribute _low_ shall be the minimal coordinate values for all grid points within the envelope. For this specification this represents the Southwestern coordinate.
 
-*high*
+======= high
 
 The attribute _high_ shall be the maximal coordinate values for all grid points within the envelope. For this specification this represents the Northeastern coordinate.
 
 ====== CV_GridCoordinate
 
-*CV_GridCoordinate semantics*
+======= CV_GridCoordinate semantics
 
 The class *CV_GridCoordinate* is a data type for holding the grid coordinates of a *CV_GridPoint*.
 
-*coordValues*
+======= coordValues
 
 The attribute _coordValues_ has the value class _Sequence<Integer>_ that shall hold one integer value for each dimension of the grid. The ordering of these coordinate values shall be the same as that of the elements of _axisNames_. The value of a single coordinate shall be the number of offsets from the origin of the grid in the direction of a specific axis.
 
 
 ====== CV_SequenceRule
 
-*CV_SequenceRule semantics*
+======= CV_SequenceRule semantics
 
 The class *CV_SequenceRule* contains information for mapping grid coordinates to a position within the sequence of records of feature attribute values. It has two attributes.
 
-*type*
+======= type
 
 The attribute _type_ shall identify the type of sequencing method that shall be used. A code list of scan types is provided in S-100 Part 8. Only the value -- linear‖ shall be used in S-102, which describes scanning row by row by column.
 
-*scanDirection*
+======= scanDirection
 
 The attribute _scanDirection_ has the value class _Sequence<CharacterString>_ a list of axis names that indicates the order in which grid points shall be mapped to position within the sequence of records of feature attribute values. The scan direction for all layers in S-102 is "Longitude" and "Latitude" or west to east, then south to north.
 
 ====== TrackingListCoverage
 
-*TrackingListCoverage semantics*
+======= TrackingListCoverage semantics
 
 The class *TrackingListCoverage* has the attributes domainExtent, rangeType, _CommonPointRule_ and _metadata_ inherited from *S100_PointCoverage*. The *TrackingListCoverage* is a discrete point coverage which is used to track overridden nodes in the *BathymetryCoverage* by allowing a hydrographer to apply a bias for safety of navigation. The attribute metadata provides one method of linking the metadata to the coverage inherited from S-100, however it is not required in S-102 because there is no need for specific metadata at the feature (class) level. The attribute _commonPointRule_ is also not required because the value has been established for the whole of the S-102 data product to be "average". The attribute rangeType takes on the value class _RecordType_. This is modelled by the composition of multiple instances of *S102_TrackingListValues*. Therefore, only the attribute domainExtent is required, and it has a default value.
 
-*domainExtent*
+======= domainExtent
 
 The attribute _domainExtent_ has the value class _EX_GeographicExtent_ which describes the spatial boundaries of the tracking list elements within the bounds established by CV_GridEnvelope for the *BathymetryCoverage*. The _default is the bounds established by the attribute CV_GridEnvelope_.
 
 ====== S102_TrackingListValues
 
-*S102_TrackingListValues semantics*
+======= S102_TrackingListValues semantics
 
 The class *S102_TrackingListValues* has the attributes trackCode and listSeries, and the attributes _geometry_, and value inherited from *S100_VertexPoint* and *CV_GeometryValuePair*. The tracking list is a discrete coverage used to furnish the set of values that were overridden in the *S102_BathymetryValues* class. To assure alignment of tracking list values with the grid cells in the bathymetry coverage grid, the reference system for the tracking list is the bathymetry coverage regular grid.
 
 The _trackCode_ value and the _listSeries_ value provide context for the override a value from the bathymetry coverage. The trackCode value is a text string that describes the reason for the override.
 
-*trackCode*
+======= trackCode
 
 The optional attribute _trackCode_ has the value type _CharacterString_ which may contain a text string describing the reason for the override of the corresponding depth and uncertainty values in the bathymetry coverage. This is a user definable field with values defined in the lineage metadata.
 
-*listSeries*
+======= listSeries
 
 The attribute _listSeries_ has the value type Integer which contains an index number into a list of metadata elements describing the reason for the override of the corresponding _depth_ and _uncertainty_ values in the bathymetry coverage.
 
-*geometry*
+======= geometry
 
 The attribute _geometry_ has the value class *GM_Point* which is a position that shall locate the tracking list value. When the *TrackingListCoverage* discrete coverage and the *BathymetryCoverage* are conflated the values that are overridden in the sequence of the attribute *S102_BathymetryValues* are located by position. The value class is *GM_Point* which is the x, y grid post coordinate of the coverage.
 
-*value*
+======= value
 
 The attribute _value_ has the value class _Record_ which is a sequence of value items that shall assign values to the discrete grid point. There are two values in each record in the *S102_TrackingListValues* class. These are the _depth_ and the _uncertainty_ values that were overridden in corresponding grid coverages.
 
 
 ====== GM_Point
 
-*GM_Point semantics*
+======= GM_Point semantics
 
 The class *GM_Point* is taken from <<iso19107>> and is the basic data type for a geometric object consisting of one and only one point. It has one attribute.
 
-*position*
+======= position
 
 The attribute _position_ is derived from *DirectPosition* for the geometry primitive GM_Point. To assure alignment of tracking list values with the grid points in the bathymetry coverage grid, the reference system for the tracking list is the bathymetry coverage regular grid. This means that the position attribute corresponds to a grid point. For a uniform regular grid this is the row and column of the grid point position.
 
 ====== EX_GeographicExtent
 
-*EX_GeographicExtent semantics*
+======= EX_GeographicExtent semantics
 
 The class *EX_GeographicExtent* is a metadata class from <<iso19115>>. It is a component of the metaclass *EX_Extent*. The use of *EX_GeographicExtent* is optional. When used it describes the spatial boundaries of the Tracking List elements within the bounds established by *CV_GridEnvelope* for the BathymetryCoverage. That is, the tracking list may carry information corresponding only to a portion of the spatial extent covered by the *BathymetryCoverage*. There is one attribute and one subtype.
 
-*extentTypeCode*
+======= extentTypeCode
 
 The attribute _extentTypeCode_ is a Boolean value. It is used to indicate whether the bounding polygon/box encompasses an area covered by the data or an area where data is not present. In S-102 it is set to 1.
 
 ====== EX_GeographicBoundingBox
 
-*EX_GeographicBoundingBox semantics*
+======= EX_GeographicBoundingBox semantics
 
 The class *EX_GeographicBoundingBox* is a metadata class from <<iso19115>>. It is a subtype of the abstract class EX_GeographicExtent. It defines a bounding box used to indicate the spatial boundaries of the tracking list elements within the bounds established by *CV_GridEnvelope* for the *BathymetryCoverage*. It has four attributes.
 
-*westBoundLongitude*
+======= westBoundLongitude
 
 The attribute _westBoundLongitude_ is a coordinate value providing the west bound longitude for the bound.
 
-*eastBoundLongitude*
+======= eastBoundLongitude
 
 The attribute _eastBoundLongitude_ is a coordinate value providing the east bound longitude for the bound.
 
-*southBoundLatitude*
+======= southBoundLatitude
 
 The attribute _southBoundLatitude_ is a coordinate value providing the south bound longitude for the bound.
 
-*northBoundLatitude*
+======= northBoundLatitude
 
 The attribute _northBoundLatitude_ is a coordinate value providing the north bound longitude for the bound.
 
