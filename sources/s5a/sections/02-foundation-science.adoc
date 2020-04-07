@@ -1,0 +1,557 @@
+
+== FOUNDATION SCIENCE SUBJECTS
+
+[[f1-earth-models]]
+=== F1: Earth Models
+
+[%unnumbered]
+[cols="a,a,a"]
+|===
+h|Topic/Element h|Content h|Learning outcomes
+
+3+h|F1.1 Physical geodesy
+
+|F1.1a The
+gravity field of
+the Earth
+
+_(B)_
+.2+|
+. Newton's law of gravitation
+. Centrifugal acceleration
+. Gravity (acceleration)
+. Gravity potential
+. Level or equipotential surfaces
+. The Geoid
+. Normal gravity and ellipsoidal
+models such as GRS80.
+. Gravity anomalies
+. Gravity observations
+|Describe relationships between the gravity
+field of the Earth, normal gravity and
+level surfaces.
+
+|F1.1b Gravity
+observations and
+their reduction.
+
+_(B)_
+|Explain methods for observing gravity
+and computation of gravity anomalies
+
+|F1.1c Height systems and height determination
+
+_(B)_
+.2+|
+. Dynamic heights
+. Orthometric heights
+. Normal heights
+. Level ellipsoid
+. Theoretical misclosure of a leveling loop
+. Geopotential models
+. High resolution global and local geoid grids
+. Deflection of the vertical
+|Describe different height models and the
+role of gravity-based heights in modern
+levelling networks.
+
+|F1.1d Geopotential and geoidal Modelling
+
+_(I)_
+|Describe techniques used to model the
+Earth's geopotential.
+
+Discuss the application and limitations of
+geopotential models and their verification
+in height determination.
+
+3+h|F1.2 Coordinate Systems
+
+|F1.2a Coordinate Systems for Positioning
+
+_(I)_
+.2+|
+. Traditional geodetic datums
+. Terrestrial reference systems
+and reference frames.
+. Modern geodetic datums based
+on terrestrial reference frames.
+. Datum transformation techniques including similarity transformations and grid based approaches.
+|Explain principles of astronomic and
+geocentric datums together with their
+practical realizations.
+
+|F1.2b Datum transformation techniques
+
+_(A)_
+|Compare datum transformation methods
+and transform coordinates between
+datums and between reference frames.
+
+Estimate transformation parameters from
+observations.
+
+|F1.2c Geodetic
+computations on
+the ellipsoid
+
+_(I)_
+|
+. Grid computations and
+spherical trigonometry.
+. Forward and inverse
+computations for geodesic and
+normal section curves on the
+ellipsoid.
+|Assess the various solutions available for
+forward and inverse computations on the
+ellipsoid.
+
+Compare grid and spherical methods with
+ellipsoidal computations.
+
+|F1.2d Three-
+Dimensional
+Geodetic
+Modeling
+
+_(A)_
+|
+. Local and global Cartesian
+coordinate frames. Reference
+to physical plumb line and
+ellipsoidal normal. Geoid heights and deflections of the
+vertical.
+. 3D observation equations and 3D adjustment. Laplace equation.
+|Explain the mathematical model of 3D
+geodesy, integrating satellite and
+terrestrial observations.
+
+Evaluate a typical hybrid network, using commercial software. Describe application of 3D Geodesy to hydrographic survey control and 3D positioning of survey vessels.
+
+3+h|F1.3 Land surveying methods and techniques
+
+|F1.3a
+Trigonometric
+surveys
+_(I)_
+
+.5+|
+. Principles of distance
+measurement and angle
+measurement
+. Atmospheric and radiometric
+corrections for optical
+measurements.
+. Calibration requirements and
+documentation
+. Sextant (in legacy context)
+. Theodolite
+. Total Station
+. Intersection, Resection, Polar
+and Traverse
+. Astronomic methods for
+determination of orientation.
+. Establishing ground control
+using GNSS, distance and
+angle measurements.
+. Control station recovery
+. Logistical aspects of providing
+control
+|Select appropriate methods and use
+corresponding instruments for local
+positioning.
+
+|F1.3b Existing
+survey control
+
+_(I)_
+|Recover survey marks and associated
+documentation with an appreciation for
+the datum and accuracy associated with
+the historical survey.
+
+|F1.3c
+Establishing
+survey control
+_(I)_
+
+|Establish terrestrial control using GNSS
+in accordance with published quality
+control procedures
+
+|F1.3d
+Instrument tests
+
+_(I)_
+|Field test and use distance and angle
+measurement instruments.
+
+Select appropriate field validation
+procedures
+
+|F1.3e Historical
+surveys
+
+_(B)_
+|Relate historical surveys to legacy
+positioning systems.
+
+3+h|F1.4 Levelling
+
+|F1.4a Levelling
+instruments
+
+_(I)_
+.2+|
+. Levelling instruments
+. Total stations
+. Effects of curvature and
+refraction
+. Reduction of levels and
+correction to the relevant
+height datum
+. Calibration requirements and
+documentation
+|Explain the principles of operation of
+instruments used in determination of
+height differences.
+
+|F1.4b Height
+reduction
+
+_(A)_
+|Conduct surveys in accordance with
+standards.
+
+Reduce elevation measurements and use
+adjustment procedures.
+
+3+h|F1.5 Map Projections
+
+|F1.5a Map
+Projections
+
+_(A)_
+|
+. Equidistant, equal area,
+azimuthal and conformal
+projections.
+. Properties and applications of
+cylindrical, conical and
+stereographic projections.
+. Grids, graticules and
+associated coordinates.
+. Convergence, scale factors and
+arc to chord corrections.
+. Worldwide cartographic
+systems Including UTM, GK
+and UPS.
+|Classify the properties of projections.
+
+Use parameters associated with map
+projections to compute distortion and
+apply corrections between geodetic and
+grid coordinates.
+
+Use geometrical properties of map
+projections to contrast and compare the
+use of different projections for different
+applications.
+
+3+h|F1.6 Trigonometry and least-squares
+
+|F1.6a
+Trigonometry
+
+_(B)_
+|
+. Plane trigonometry
+. Sphere, great circle, rhumb
+lines, spherical triangles and
+spherical excess
+|Apply plane and spherical trigonometry to
+surveying problems.
+
+|F1.6b Theory of
+observations
+
+_(I)_
+|
+. Measurements and observation
+equations
+. Notion of uncertainty related
+to observations
+. Accuracy, precision,
+reliability, repeatability
+. Linearized observation
+equations and variance
+propagation law
+. Propagation of uncertainty in
+observations through multiple
+measurements
+. Relative and absolute
+confidence ellipse
+|Differentiate between accuracy, precision,
+reliability and repeatability of
+measurements. Relate these notions to
+statistical information.
+
+Apply the variance propagation law to a
+simple observation equation, and derive
+an estimate uncertainty as a function of
+observations covariances.
+
+|F1.6c Least squares
+
+_(A)_
+|
+. Least squares principle
+. Covariance of observation
+. Weighted least squares
+. Orthogonal least square
+. Total Least Square
+. Problems with explicit
+solutions
+. Condition equations
+. Covariance of estimated parameters
+. Unit variance factor estimate
+. Internal and external reliability
+|Solve geodetic problems by least squares
+estimation.
+
+Determine quality measures for least
+square solution to geodetic problems, to
+include reliability and confidence levels.
+
+|===
+
+[[f2-oceanography]]
+=== F2: Oceanography
+
+[%unnumbered]
+[cols="a,a,a"]
+|===
+h|Topic/Element h|Content h|Learning outcomes
+
+3+h|F2.1 Physical Oceanography and measurements
+
+|F2.1a Water
+masses and
+circulation
+
+_(I)_
+|
+. Global ocean circulation
+. Mechanisms of regional
+circulation.
+. Global and local water masses
+and their physical properties.
+. World oceanographic
+databases
+. Seasonal and daily variability
+of temperature and salinity
+profiles.
+. Types of estuaries and their
+associated salinity profiles.
+|Use the knowledge of spatial and
+temporal variability of the water masses to
+plan surveys.
+
+Establish a water column sampling regime
+for use within survey operations
+
+|F2.1b Physical
+properties of sea
+water
+
+_(A)_
+.2+|
+. Sound Velocity Profilers,
+Conductivity, Temperature,
+Depth sensors, Expendable
+probes.
+. Units used in measuring and
+describing physical properties
+of sea water, normal ranges
+and relationships including:
+salinity, conductivity,
+temperature, pressure, density.
+. Sound speed equations
+. Oceanographic sampling.
+. Oceanographic sensors:
+* Current meters
+* ADCP
+* Turbidity sensors and need for calibration
+|Specify oceanographic sensors to measure
+physical properties of sea water.
+
+Apply appropriate equation to estimate
+density and speed of sound.
+
+Create a sound speed profile.
+
+|F2.1c
+Oceanographic
+measurements
+
+_(I)_
+|Specify equipment and procedures for
+oceanographic measurement to meet
+survey requirements.
+
+Configure and use oceanographic sensors
+and sampling equipment.
+
+|F2.1d Waves
+
+_(B)_
+|
+. Wave measurement by radar
+and buoys
+. Wave parameters and
+elements involved in the wave
+growth process including fetch
+and bathymetry
+. Tsunamis
+. Breaking waves, long-shore
+drift and rip current processes
+in relation to beach surveys.
+. Beach profiles
+
+|Outline wave generation processes.
+
+Describe the principles of wave
+measurement systems.
+
+Describe how beach survey monitoring
+strategies are related to wave regimes.
+
+|===
+
+[[f3-geology-and-geophysics]]
+=== F3: Geology and geophysics
+
+[%unnumbered]
+[cols="a,a,a"]
+|===
+h|Topic/Element h|Content h|Learning outcomes
+
+3+h|F3.1 Geology
+
+|F3.1a Earth structure
+
+_(B)_
+|
+. Plate tectonics and other Earth
+processes
+. Earthquakes zones
+. Types of continental margins
+. Ocean basins, trenches, ridges
+and other ocean floor features
+. Different types of rocks in the
+marine environment
+. Subsidence and uplift
+|Describe the structure of the Earth and
+explain the relationship between Earth
+processes and bathymetric /topographic
+features of the Earth.
+
+|F3.1b Geomorphology
+
+_(A)_
+|
+. Types of coast
+. Seafloor features and bed
+forms
+. Erosion, transport and
+deposition
+. Estuaries and inlets
+. Seafloor temporal variability
+. Sediment sampling
+|Interpret geological information and relate
+expected seafloor features to hydrographic
+survey methodology and need for
+repeated hydrographic surveys.
+
+|F3.1c Substrates
+
+_(I)_
+|
+. Sediment types
+. Outcropping rocks
+. Submerged aquatic vegetation
+. Corals
+|Predict seafloor type and characteristics
+based on observations of local geological
+information.
+
+3+h|F3.2 Geophysics 
+
+|F3.2a Gravity fields and gravity surveys
+
+_(B)_
+|
+. Gravity meters
+. Relative and absolute gravity
+measurements
+. Bathymetric corrections for
+gravity measurements
+. Local gravity anomalies and
+gravity surveys
+. Influence of gravity on sea
+surface topography and
+correlation with seafloor
+features
+|Explain the principle of operation of
+gravity meters and the need for
+corrections.
+
+Discuss the objectives of gravity surveys
+in relation to seabed features.
+
+|F3.2b Magnetic fields
+
+_(B)_
+|
+. Magnetic fields of the Earth
+. Magnetic anomalies in relation to rock types and tectonic history
+. Temporal variations
+. Magnetic Earth models and databases
+|Describe the Earth magnetic field, its
+spatial and temporal variability.
+
+|F3.2c Seismic surveys
+
+_(I)_
+|
+. Continuous
+reflection/refraction seismic
+profiling.
+. Typical sound sources,
+receivers and recorders.
+. Analogue high resolution
+seismic systems (including
+pinger, boomers, sparkers,
+chirp)
+. Frequency and wavelength in
+relation to resolution and
+penetration
+. Equipment configuration for
+towing, launch and recovery
+. Applications such as pipeline
+or hazard detection, seabed
+sediment identification for
+mapping, shallow sedimentary
+channels.
+. Principles of seismic
+stratigraphy
+|Evaluate coverage and penetration of
+systems and correlate equipment with
+applications.
+
+Distinguish between noise, outliers, and
+real seafloor features and sub-seafloor
+geometry
+
+|===

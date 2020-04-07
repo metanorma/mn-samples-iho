@@ -1,0 +1,127 @@
+
+[.preface]
+== Introduction
+All components of the hydrographic surveying  and nautical cartography profession face challenges as to how best to ensure the continuance of high standards and how best to ensure the continuation of best practices based on minimum standards of competence world-wide. In order to achieve these objectives, three international organizations (FIG, IHO and ICA) have developed Standards of competence that institutions or professional bodies may adopt for their educational/training programmes and competency schemes.
+
+Standards indicate the minimum competences necessary for hydrographic surveyors. Standards recognize two levels of competence. Category "A" programmes introduces competences from the underlying principles level. Category "B" programmes introduce the competences from a practical level.
+
+The intention is that a Category "A" individual with appropriate experience, would be a senior professional in their chosen field (government, industry, academia). Category "B" individuals with appropriate experience would be technical professionals leading and delivering products and services to meet specifications and outcomes.
+
+[.preface]
+== Definitions
+
+=== Subjects, topics, and elements
+The S5-A standard contains the following list of _Basic subjects, Foundation Science subjects and Hydrographic Science subjects_:
+
+* <<b1-mathematics-statistics-theory-of-observations,B1: Mathematics, statistics, theory of observations>>
+* <<b2-information-and-communication-technology,B2: Information and Communication Technology>>
+* <<b3-physics,B3: Physics>>
+* <<b4-nautical-science,B4: Nautical science>>
+* <<b5-meteorology,B5: Meteorology>>
+* <<f1-earth-models,F1: Earth Models>>
+* <<f2-oceanography,F2: Oceanography>>
+* <<f3-geology-and-geophysics,F3: Geology and geophysics>>
+* <<h1-positioning,H1: Positioning>>
+* <<h2-underwater-sensors-and-data-processing,H2: Underwater Sensors and Data Processing>>
+* <<h3-lidar-and-remote-sensing,H3: LiDAR and Remote Sensing>>
+* <<h4-survey-operations-and-applications,H4: Survey Operations and Applications>>
+* <<h5-water-levels-and-flow,H5: Water Levels and Flow>>
+* <<h6-hydrographic-data-acquisition-and-processing,H6: Hydrographic Data Acquisition and Processing>>
+* <<h7-management-of-hydrographic-data,H7: Management of Hydrographic Data>>
+* <<h8-legal-aspects,H8: Legal Aspects>>
+* <<cmfp-complex-multidisciplinary-field-project,CMFP: COMPLEX MULTIDISCIPLINARY FIELD PROJECT>>
+
+
+*Topics and Elements*:
+
+* Each *Foundation Science, Hydrographic Science or Basic* _subject_ comprises a list of _topics_ which are denoted by Bx.y, Fx.y, or Hx.y;
+* Each topic contains _elements_ which are denoted by Bx.y<c> Fx.y<c> or Hx.y<c>.
+
+For example, the _subject_ H1 "`Positioning`" contains the _topic_ H1.1 Vessel and sensor reference frames that has the _element_ H1.1a "`Common reference frames for sensors`".
+
+
+=== Learning outcomes and list of content
+It is important to understand that each element is associated with:
+
+* one or more intended _learning outcomes_, that a student should be able to achieve on completion of the programme. All _learning outcomes_ should be assessed. This may be done through one of, or a combination of, the following: examination, assessed exercise or presentation, laboratory report, or final project
+work.
+* a list of _content_. This list is associated with one or more _learning outcomes_ and describes the theoretical knowledge or practical/technical context which the course syllabi should address in order to meet a particular _learning outcome_.
+
+[.preface]
+== Programme preparation and submission
+The preparation of a programme submission to the IBSC should be done in accordance with the document entitled GUIDELINES FOR THE IMPLEMENTATION OF THE STANDARDS OF COMPETENCE FOR HYDROGRAPHIC SURVEYORS. This document is available from the IHO website: link:http://www.iho.int/[www.iho.int] -> Standards & Publications.
+
+The cross reference table is a mandatory requirement for a programme submission and *MUST* be completed. A template is specified and is available from the IHO website: link:http://www.iho.int/[www.iho.int]
+
+
+=== List of acronyms and initialisms used in this document
+
+1D:: One-dimensional
+2D:: Two-dimensional
+3D:: Three-dimensional
+A:: Advanced (level of knowledge)
+ADCP:: Acoustic Doppler Current Profiler
+AIS:: Automatic Identification System
+ASV:: Autonomous Surface Vehicle
+AUV:: Autonomous Underwater Vehicle
+B:: Basic (level of knowledge)
+CAD:: Computer Aided Design
+CMFP:: Complex Multidisciplinary Field Project
+CW:: Continuous Wavelength
+DOP:: Dilution of Precision
+ECDIS:: Electronic Chart Display and Information System
+ECS:: Electronic Chart System
+ENC:: Electronic Navigational Chart
+EPIRB:: Emergency Position Indicating Radio Beacon
+F:: Fundamental Sciences Subjects
+FIG:: International Federation of Surveyors
+FOG:: Fiber Optic Gyroscope
+GEBCO:: General Bathymetric Chart of the Oceans
+GIS:: Geographical Information System
+GK:: Gauss-Krüger
+GLONASS:: GLObal NAvigation Satellite System
+GMDSS:: Global Maritime Distress and Safety System
+GNSS:: Global Navigation Satellite System
+GPS:: Global Positioning System
+GRS80:: Geodetic Reference System (1980)
+H:: Hydrographic Sciences Subjects
+HAT:: Highest Astronomical Tide
+I:: Intermediate (level of knowledge)
+IBSC:: International Board on Standards of Competence for Hydrographic Surveyors and Nautical Cartographers
+ICA:: International Cartographic Association
+IHO:: International Hydrographic Organization
+IMU:: Inertial Motion Unit
+INS:: Inertial Navigation System
+LAN:: Local Area Network
+LAT:: Lowest Astronomical Tide
+LiDAR:: Light Detection And Ranging
+MBES:: Multi-Beam Echo Sounder
+MEMS:: Microelectromechanical systems
+MSDI:: Marine Spatial Data Infrastructure
+MSI:: Maritime Safety Information
+MSL:: Mean Sea Level
+NAVTEX:: Navigational Telex
+NMEA:: National Marine Electronics Association
+NtoM:: Notice to Mariners
+P:: Practicals (fieldwork and/or laboratories)
+RAM:: Random Access Memory
+RINEX:: Receiver Independent Exchange Format
+RNC:: Raster Navigational Chart
+ROV:: Remotely Operated Underwater Vehicle
+S-44:: IHO Publication S-44 - _Standards for Hydrographic Surveys_
+S-100:: IHO Publication S-100 _Universal Hydrographic Data Model_
+S-102:: IHO Publication S-102 _Bathymetric Surface Product Specification_
+SARSAT:: Search And Rescue Satellite Aided Tracking
+SAS:: Synthetic Aperture Sonar
+SBES:: Single Beam Echo Sounder
+SG:: Self-guided exercises (or student's personal independent work)
+SQL:: Structured Query Language
+SSDM:: Standard Seabed Data Model
+T:: Theoretical (theory through lectures)
+TIN:: Triangulated Irregular Network
+UNCLOS:: United Nations Convention on the Law of the Sea
+UPS:: Universal Polar Stereographic
+USBL:: Ultra Short Baseline
+UTM:: Universal Transverse Mercator
+WWNWS:: World Wide Navigational Warning Service
+XML:: Extended Markup Language
