@@ -5,218 +5,135 @@
 === H1: Positioning
 
 [%unnumbered]
-[cols="a,a,a"]
+[cols="a,a,a",options="header"]
 |===
-h|Topic/Element h|Content h|Learning outcomes
+|Topic/Element |Content |Learning outcomes
 
 3+h|H1.1 Vessel and sensor reference frames
 
-|H1.1a Common reference frames for sensors
-
-_(A)_
+|H1.1a Common reference frames for sensors _(A)_
 |
-. Identification of a common
-reference point and reference
-frame for the vessel
-. Centre of rotation for the
+. Identification of a common reference point and reference frame for the
 vessel
-. Centers of measurement for
-sensors
+. Centre of rotation for the vessel
+. Centers of measurement for sensors
 . Sensor offset measurements.
-|Specify a suitable vessel reference frame
-for sensor offsets and configure software
-to use values accordingly.
 
-Reconcile the application of offsets
-between various hardware and software
-components of the survey system.
+|
+Specify a suitable vessel reference frame for sensor offsets and
+configure software to use values accordingly.
 
-|H1.1b
-Integration of
-reference frames
+Reconcile the application of offsets between various hardware and
+software components of the survey system.
 
-_(A)_
+|H1.1b Integration of reference frames _(A)_
+
 |
 . Sensor body reference frames.
-. Transformations between
-reference frames associated
-with sensor bodies, the vessel
-and local geodetic frame.
+. Transformations between reference frames associated with sensor
+bodies, the vessel and local geodetic frame.
 
-|Define and apply appropriate
-transformations between the different
+|Define and apply appropriate transformations between the different
 frames in the navigation solution.
 
 3+h|H1.2 GNSS positioning
 
-|H1.2a GNSS
-Signals
+|H1.2a GNSS Signals _(I, B)_
 
-_(I, B)_
 |
-. GNSS Systems, such as GPS,
-GLONASS, Galileo, Beidou,
-etc.
+. GNSS Systems, such as GPS, GLONASS, Galileo, Beidou, etc.
 . Signal structure.
-. Frequencies, time keeping and
-logistical segments: Ground,
-Space, User.
-. Broadcast almanac
-ephemerides and precise orbit
-information.
-. Ionospheric and tropospheric
-effects.
+. Frequencies, time keeping and logistical segments: Ground, Space, User.
+. Broadcast almanac ephemerides and precise orbit information.
+. Ionospheric and tropospheric effects.
 . Earth rotation information.
-|Describe the structure of signals broadcast
-by GNSS and explain the impact of the
-atmosphere on these signals. _(I)_
 
-Describe the characteristics of different
-components of GNSS and detail sources
-of information relating to the orbital and
-timing parameters. _(B)_
-
-|H1.2b GNSS
-observables
-
-_(A)_
 |
-. Code phase and carrier phase
-observables, mixed
-observables.
-. Differencing using carrier
-phase including single, fixed
-and float double, and triple
-differences.
-. Corrections for earth rotation,
-ionosphere, and troposphere.
-|Write observation equations for different
-GNSS observables and develop
-mathematical and stochastic models for
-the solutions that include earth rotation
-and ionospheric elements.
+Describe the structure of signals broadcast by GNSS and explain the
+impact of the atmosphere on these signals. _(I)_
 
-|H1.2c Relative
-and absolute
-techniques
+Describe the characteristics of different components of GNSS and detail
+sources of information relating to the orbital and timing parameters.
+_(B)_
 
-_(A)_
+|H1.2b GNSS observables _(A)_
 |
-. Differential and Wide area
-augmentation services.
-. Real time kinematic and postprocessed
-kinematic
-techniques.
-. Precise Point Positioning
-techniques and services.
-. System selection in alignment
-with survey requirements.
-|Evaluate and select appropriate system for
-applications by aligning survey
-requirements with capabilities and
-limitations of GNSS techniques
-
-|H1.2d
-Installation and
-operation
-
-_(A)_
+. Code phase and carrier phase observables, mixed observables.
+. Differencing using carrier phase including single, fixed and float
+double, and triple differences.
+. Corrections for earth rotation, ionosphere, and troposphere.
 |
-. Antenna installation to
-consider coverage, stability
-and multipath environment.
-. Levels of redundancy in
-systems and communications
-. Data exchange formats and
-protocols such as RINEX and
-NMEA
-|Specify, supervise and test the installation
-of GNSS hardware and software for both
-inshore and offshore operations.
+Write observation equations for different GNSS observables and develop
+mathematical and stochastic models for the solutions that include earth
+rotation and ionospheric elements.
 
-|H1.2e Quality
-control
-
-_(A)_
+|H1.2c Relative and absolute techniques _(A)_
 |
-. Sources of error including
-multipath, atmospheric effects,
-base station network, sensor
-offsets, etc.
-. Measures and monitoring of
-precision (DOP variations) and
-reliability (statistical testing).
-. Integrity monitoring of base
-station data.
-. Verification checks between
-systems or against known
-points.
-|Develop a quality control plan for GNSS
-operations including risk management
-associated with GNSS components and
-services.
+. Differential and Wide area augmentation services.
+. Real time kinematic and postprocessed kinematic techniques.
+. Precise Point Positioning techniques and services.
+. System selection in alignment with survey requirements.
+|Evaluate and select appropriate system for applications by aligning
+survey requirements with capabilities and limitations of GNSS techniques
 
-Assess the performance of GNSS
-positioning against the defined quality
+|H1.2d Installation and operation _(A)_
+|
+. Antenna installation to consider coverage, stability and multipath
+environment.
+. Levels of redundancy in systems and communications
+. Data exchange formats and protocols such as RINEX and NMEA
+|Specify, supervise and test the installation of GNSS hardware and
+software for both inshore and offshore operations.
+
+|H1.2e Quality control _(A)_
+|
+. Sources of error including multipath, atmospheric effects, base
+station network, sensor offsets, etc.
+. Measures and monitoring of precision (DOP variations) and reliability
+(statistical testing).
+. Integrity monitoring of base station data.
+. Verification checks between systems or against known points.
+|
+Develop a quality control plan for GNSS operations including risk
+management associated with GNSS components and services.
+
+Assess the performance of GNSS positioning against the defined quality
 control criteria.
 
 3+h|H1.3 Inertial navigation systems
 
-|H1.3a
-Accelerometers
-and gyroscopes,
-inclinometers,
-and compass
-
-_(A)_
+|H1.3a Accelerometers and gyroscopes, inclinometers, and compass _(A)_
 |
-. Accelerometers technology
-(pendulums, vibrating
-elements)
-. Gyroscopes (FOG, Ring laser,
-Sagnac effect)
+. Accelerometers technology (pendulums, vibrating elements)
+. Gyroscopes (FOG, Ring laser, Sagnac effect)
 . MEMS
 . Inclinometers
 . Flux gate compass
-|Describe accelerometer technologies, and
-differentiate between inclinometers,
-compass and gyroscopes. Describe error
-sources associated with these devices.
-
-|H1.3b
-Strapdown
-inertial
-measurement
-units
-
-_(A)_
 |
-. Technologies available for
-IMU measurements through
-gyroscopes and accelerometers
-. Sources of error in inertial
-sensors: bias; scale factor; and,
-noise.
-. The inertial navigation
-equation and error equations.
+Describe accelerometer technologies, and differentiate between
+inclinometers, compass and gyroscopes. Describe error sources associated
+with these devices.
+
+|H1.3b Strapdown inertial measurement units _(A)_
+|
+. Technologies available for IMU measurements through gyroscopes and
+accelerometers
+. Sources of error in inertial sensors: bias; scale factor; and, noise.
+. The inertial navigation equation and error equations.
 . Static alignment of the IMU.
-. Heave estimation from gyros
-and accelerometers.
+. Heave estimation from gyros and accelerometers.
 . Induced heave.
-|Describe the technologies used in inertial
-measurements and quantify associated
-navigation errors.
+|
+Describe the technologies used in inertial measurements and quantify
+associated navigation errors.
 
 Undertake static alignment of an IMU.
 
-Develop strategies for mitigating induced
-heave and select filter parameters for
-heave estimation.
+Develop strategies for mitigating induced heave and select filter
+parameters for heave estimation.
 
 |H1.3c Kalman
-filtering
-
-_(I)_
+filtering _(I)_
 |
 . Bayesian estimation
 . State representation of a
@@ -237,9 +154,7 @@ observation processes
 
 |H1.3d Aided
 inertial
-navigation
-
-_(I)_
+navigation _(I)_
 |
 . INS and GNSS loosely and
 tightly coupled solutions.
@@ -260,9 +175,7 @@ smoothing for aided navigation solutions.
 
 |H1.4a Acoustic
 positioning
-principles
-
-_(A)_
+principles _(A)_
 .3+|
 . Long base line
 . Short baseline
@@ -284,9 +197,7 @@ observation equations.
 
 |H1.4b Acoustic
 positioning
-systems
-
-_(A)_
+systems _(A)_
 |Explain how acoustic positioning
 observables, orientation and surface
 positioning data are used to achieve
@@ -298,9 +209,7 @@ positioning systems.
 
 |H1.4c Acoustic
 positioning error
-analysis
-
-_(I)_
+analysis _(I)_
 |Compute the total propagated uncertainty
 in acoustic positioning, accounting for
 time, sound speed and other observable
@@ -308,9 +217,7 @@ errors.
 
 |H1.4d. Acoustic
 positioning
-applications
-
-_(B)_
+applications _(B)_
 |
 . Towed vehicles
 . Autonomous vehicles
@@ -326,9 +233,7 @@ considering potential sources of error.
 3+h|H1.5 Line keeping
 
 |H1.5a Track
-guidance
-
-_(B)_
+guidance _(B)_
 |
 . Track guidance and route
 following information systems.
@@ -365,18 +270,16 @@ survey area/in a river estuary.
 
 
 [%unnumbered]
-[cols="a,a,a"]
+[cols="a,a,a",options="header"]
 |===
-h|Topic/Element h|Content h|Learning outcomes
+|Topic/Element |Content |Learning outcomes
 
 3+h|H2.1 Underwater acoustics
 
 |H2.1a
 Transducers and
 generation of
-acoustic waves
-
-_(I)_
+acoustic waves _(I)_
 .5+|
 . Piezoelectric principles
 . Transducer arrays design,
@@ -431,9 +334,7 @@ available sonar specification.
 
 |H2.1b
 Propagation of
-acoustic waves
-
-_(A)_
+acoustic waves _(A)_
 |Explain how properties of the acoustic
 medium and source frequency affect the
 propagation of acoustic waves.
@@ -443,9 +344,7 @@ situations, using medium property
 observations and available tables.
 
 |H2.1c Acoustic
-noise
-
-_(I)_
+noise _(I)_
 |Identify the sources of noise and describe
 the effect of noise on echo sounding.
 Define the directivity index.
@@ -458,9 +357,7 @@ directivity circumstances.
 Reflection,
 scattering and
 system
-performance.
-
-_(I)_
+performance. _(I)_
 |Define the characteristic impedance of an
 acoustic medium.
 
@@ -470,9 +367,7 @@ strength.
 
 |H2.1e
 Refraction and
-ray-tracing.
-
-_(A)_
+ray-tracing. _(A)_
 |Use the sound speed profile to compute
 the path of sound ray through the water
 column.
@@ -482,9 +377,7 @@ column.
 |H2.2a Single
 beam echo
 sounders
-principles
-
-_(I)_
+principles _(I)_
 .2+|
 . Single beam, split beam and
 dual beam concepts
@@ -504,18 +397,14 @@ returns.
 
 |H2.2b Single
 beam returns
-interpretation
-
-_(A)_
+interpretation _(A)_
 |Interpret single beam returns including
 analysis of full echo envelopes and
 features of the sea bed and water column.
 
 |H2.2c Single
 beam survey
-system
-
-_(A)_
+system _(A)_
 |
 . Components of a single beam
 echo sounder system to
@@ -539,9 +428,7 @@ column analysis.
 
 |H2.2d
 Processing of
-single beam data
-
-_(I, A)_
+single beam data _(I, A)_
 |
 . Systematic effects in system
 components:
@@ -562,9 +449,7 @@ for product generation. _(A)_
 3+h|H2.3 Sonar imagery systems
 
 |H2.3a Side-scan
-sonar systems
-
-_(A)_
+sonar systems _(A)_
 |
 . Principles, components and
 geometry of side scan sonar
@@ -578,9 +463,7 @@ sonar in alignment with survey
 operational needs.
 
 |H2.3b Synthetic
-Aperture Sonar
-
-_(I)_
+Aperture Sonar _(I)_
 |
 . Principles of synthetic aperture
 imaging
@@ -592,9 +475,7 @@ systems.
 
 |H2.4a Multibeam
 echo
-sounders
-
-_(A, I)_
+sounders _(A, I)_
 .2+|
 . Principles and geometry of
 multi-beam sonar systems
@@ -630,9 +511,7 @@ relate them to depth uncertainty. _(A)_
 
 |H2.4b Multibeam
 system
-parameters
-
-_(A)_
+parameters _(A)_
 |Tune acoustic parameters on-line for
 depth _and_ backscatter.
 
@@ -646,9 +525,7 @@ Explain the use of water column returns
 and differentiate from bottom detection.
 
 |H2.4c Multibeam
-systems
-
-_(A)_
+systems _(A)_
 |
 . positioning system, telemetry,
 motion and attitude sensors,
@@ -662,9 +539,7 @@ application requirements.
 
 |H2.4d Multibeam
 data
-processing
-
-_(A)_
+processing _(A)_
 |
 . Multi-beam data elements:
 . Beam and travel-time data
@@ -684,9 +559,7 @@ preparation for data processing.
 
 |H2.4e
 Interferometric
-Sonar
-
-_(A)_
+Sonar _(A)_
 |
 . Principles and geometry of
 interferometric (phase
@@ -724,9 +597,7 @@ from side scan,
 interferometric
 swath sonars
 and multi-beam
-echo sounders
-
-_(A)_
+echo sounders _(A)_
 |
 . Relationship between
 backscatter content and
@@ -758,16 +629,14 @@ compensated backscatter mosaic.
 === H3: LiDAR and Remote Sensing
 
 [%unnumbered]
-[cols="a,a,a"]
+[cols="a,a,a",options="header"]
 |===
-h|Topic/Element h|Content h|Learning outcomes
+|Topic/Element |Content |Learning outcomes
 
 3+h|H3.1 LiDAR
 
 |H3.1a Airborne
-LiDAR systems
-
-_(A)_
+LiDAR systems _(A)_
 .3+|
 . Wavelength, water penetration,
 ground detection and laser
@@ -814,9 +683,7 @@ process data.
 
 |H3.1b Airborne
 LiDAR data
-products
-
-_(I, A)_
+products _(I, A)_
 |Identify potential sources of error in
 combined topographic and bathymetric
 LiDAR data and apply corrective
@@ -834,9 +701,7 @@ _(A)_
 
 |H3.1c
 Terrestrial
-LiDAR
-
-_(B)_
+LiDAR _(B)_
 |Determine situations where terrestrial and
 vessel-based LiDAR data can be used to
 complement other coastal and offshore
@@ -873,9 +738,7 @@ properties of both the water and the
 seabed.
 
 |H3.2b Satellite
-altimetry
-
-_(B)_
+altimetry _(B)_
 |
 . Missions and sensors
 . Products
@@ -885,9 +748,7 @@ satellite altimetry products including sea-surface topography and derived bathym
 |H3.2c Optical
 methods of
 shoreline
-delineation
-
-_(I)_
+delineation _(I)_
 |
 . Color imagery and
 multispectral imagery.
@@ -923,18 +784,16 @@ of LiDAR for shoreline delineation
 
 
 [%unnumbered]
-[cols="a,a,a"]
+[cols="a,a,a",options="header"]
 |===
-h|Topic/Element h|Content h|Learning outcomes
+|Topic/Element |Content |Learning outcomes
 
 3+h|H4.1 Hydrographic survey projects
 
 |H4.1a
 Hydrographic
 survey
-requirements
-
-_(A)_
+requirements _(A)_
 |
 . IHO S-44 and other survey
 quality standards.
@@ -980,9 +839,7 @@ environmental factors on survey results.
 |H4.1b
 Hydrographic
 survey project
-management
-
-_(A)_
+management _(A)_
 |
 . Hydrographic instructions and
 tenders.
@@ -1020,9 +877,7 @@ interim project deliverables.
 3+h|H4.2 Hydrographic survey operations
 
 |H4.2a Survey
-planning
-
-_(A)_
+planning _(A)_
 |
 . Components of survey
 planning including on-board
@@ -1047,9 +902,7 @@ aircraft and for towed, remote and
 autonomous vehicles.
 
 |H4.2b Single
-Beam operations
-
-_(A)_
+Beam operations _(A)_
 |
 . Transducer mounting
 . Calibration techniques and
@@ -1079,9 +932,7 @@ water, and water column analysis.
 |H4.2c Multibeam
 and
 Interferometric
-operations
-
-_(A)_
+operations _(A)_
 |
 . Selection of platform and
 deployment (hull mount, pole
@@ -1114,9 +965,7 @@ operational factors and respond
 appropriately.
 
 |H4.2d Magnetic
-surveys
-
-_(i)_
+surveys _(i)_
 |
 . Operating principles and
 sensitivity characteristics of
@@ -1139,9 +988,7 @@ of magnetometers and gradiometers in
 conducting object detection surveys.
 
 |H4.2e Airborne
-LiDAR surveys
-
-_(I)_
+LiDAR surveys _(I)_
 |
 . Calibration techniques and
 requirements
@@ -1169,9 +1016,7 @@ Consider operational and environmental
 conditions in planning LiDAR surveys.
 
 |H4.2f Side scan
-sonar operations
-
-_(A)_
+sonar operations _(A)_
 |
 . Selection of platform and
 deployment (tow, hull mount,
@@ -1198,9 +1043,7 @@ conditions.
 
 |H4.2g Side-scan
 sonar data
-interpretation
-
-_(A)_
+interpretation _(A)_
 |
 . Side scan sonar backscatter
 and sea floor reflection.
@@ -1229,9 +1072,7 @@ topography.
 |H4.3a
 Classification
 from acoustic
-data
-
-_(I)_
+data _(I)_
 |
 . SBES full echo envelope
 . Sub-bottom profiler full echoenvelope
@@ -1253,9 +1094,7 @@ characteristics from acoustic sensors.
 |H4.3b
 Classification
 from optical
-data
-
-_(B)_
+data _(B)_
 |
 . Hyperspectral and
 multispectral sensors images
@@ -1268,9 +1107,7 @@ differences in seabed and inter-tidal zone
 characteristics from optical sensors.
 
 |H4.3c Seabed
-sampling
-
-_(I)_
+sampling _(I)_
 |
 . Grabs
 . Corers
@@ -1282,9 +1119,7 @@ Use remotely sensed information to select
 sampling sites.
 
 |H4.3d Seabed
-characterization
-
-_(I)_
+characterization _(I)_
 |
 . Classification standards
 . Classification methods
@@ -1302,16 +1137,14 @@ characterization results.
 
 
 [%unnumbered]
-[cols="a,a,a"]
+[cols="a,a,a",options="header"]
 |===
-h|Topic/Element h|Content h|Learning outcomes
+|Topic/Element |Content |Learning outcomes
 
 3+h|H5.1 Principles of Water Levels
 
 |H5.1a Tide
-theory
-
-_(I)_
+theory _(I)_
 |
 . Tide generating forces, the
 equilibrium and real tides.
@@ -1328,9 +1161,7 @@ hydrographic features.
 
 |H5.1b Non-tidal
 water level
-variations
-
-_(I)_
+variations _(I)_
 |
 . Changes in water level caused
 by: atmospheric pressure,
@@ -1347,9 +1178,7 @@ hydrographic survey.
 3+h|H5.2 Water level measurements
 
 |H5.2a Water
-level gauges
-
-_(A)_
+level gauges _(A)_
 .3+|
 . Principles of operation of
 various types of water level
@@ -1385,9 +1214,7 @@ evaluating sources of errors and applying
 appropriate corrections.
 
 |H5.2b Tidal
-measurement
-
-_(A)_
+measurement _(A)_
 |Evaluate and select appropriate sites for
 water level monitoring.
 
@@ -1398,9 +1225,7 @@ appropriate quality control measures.
 
 |H5.2c
 Uncertainty in
-water level
-
-_(I)_
+water level _(I)_
 |Assess and quantify the contribution of
 water level observations to uncertainties
 in survey measurements.
@@ -1413,9 +1238,7 @@ level gauge.
 3+h|H5.3 Tide modelling
 
 |H5.3a Harmonic
-analysis
-
-_(I)_
+analysis _(I)_
 |
 . Harmonic constituents from
 astronomical periods
@@ -1441,9 +1264,7 @@ residuals of two tide stations using
 harmonic analysis.
 
 |H5.3b Ocean
-water level
-
-_(B)_
+water level _(B)_
 |
 . Earth tide
 . Harmonic astronomic
@@ -1458,9 +1279,7 @@ observation methods.
 
 |H5.4a
 Separation
-models
-
-_(I)_
+models _(I)_
 .3+|
 . Single-point and regional models
 . Principle of Separation surface construction
@@ -1478,16 +1297,12 @@ Apply relevant offsets to convert between
 datums
 
 |H5.4b Vertical
-Datums
-
-_(A)_
+Datums _(A)_
 |Select, establish, interpolate and transfer a
 vertical datum in various environments.
 
 |H5.4c Sounding
-reduction
-
-_(A)_
+reduction _(A)_
 |Reduce ellipsoidal referenced survey data
 to a water level datum using an
 appropriate separation model with an
@@ -1499,9 +1314,7 @@ soundings to a chart datum.
 3+h|H5.5 Currents
 
 |H5.5a Tidally
-induced currents
-
-_(B)_
+induced currents _(B)_
 .2+|
 . The relationship between
 currents and tides
@@ -1525,9 +1338,7 @@ current.
 |H5.5b Current
 measurement,
 portrayal and
-surveys
-
-_(I)_
+surveys _(I)_
 |Select, use techniques and instruments for
 current measurement.
 
@@ -1543,48 +1354,41 @@ and displaying current data.
 
 
 [%unnumbered]
-[cols="a,a,a"]
+[cols="a,a,a",options="header"]
 |===
-h|Topic/Element h|Content h|Learning outcomes
+|Topic/Element |Content |Learning outcomes
 
 3+h|H6.1 Real-time data acquisition and control
 
-|H6.1a
-Hydrographic
-Data acquisition
-
-_(A)_
+|H6.1a Hydrographic Data acquisition _(A)_
 .2+|
-. Integration of data from
-various sensors in accordance
-with survey specifications to
-include equipment such as:
-* Echo-sounder (SBES, MBES)
-* Terrestrial and airborne LiDAR
-* Sound velocity profiler, surface velocity probe
-* Side-scan sonar
-* Surface positioning system
-* IMU / INS
-* Subsea positioning system (USBL)
-* ROVs and AUVs
+
+. Integration of data from various sensors in accordance with survey
+specifications to include equipment such as:
+** Echo-sounder (SBES, MBES)
+** Terrestrial and airborne LiDAR
+** Sound velocity profiler, surface velocity probe
+** Side-scan sonar
+** Surface positioning system
+** IMU / INS
+** Subsea positioning system (USBL)
+** ROVs and AUVs
+
 . Data acquisition system and software
 . Time-tagging
 . Data visualization
 . Data quality control methods
 . Types and sources of errors
 . System errors identification methods
-|Define, configure and validate a complex
-survey suite for different types of surveys
-in accordance with technical specification.
 
-Specify and configure communication
-interfaces between survey devices and
-system components.
+|Define, configure and validate a complex survey suite for different
+types of surveys in accordance with technical specification.
 
-|H6.1b Real-time
-data monitoring
+Specify and configure communication interfaces between survey devices
+and system components.
 
-_(A)_
+|H6.1b Real-time data monitoring _(A)_
+
 |Evaluate performance of an integrated
 survey system against survey
 specifications using quality control
@@ -1596,9 +1400,7 @@ and undertake system analysis.
 
 |E6.1c Survey
 data storage and
-transfer
-
-_(A)_
+transfer _(A)_
 |
 . Content of files in different formats used to record data in survey planning, data acquisition and products.
 . Multiple data types
@@ -1621,9 +1423,7 @@ with different data types and products.
 |H6.2 a Filtering
 and estimation
 of single beam
-data
-
-_(A)_
+data _(A)_
 |
 . Data cleaning techniques (manual and automated)
 . Identification of outliers
@@ -1652,9 +1452,7 @@ shortcomings in survey data.
 |H6.2b Filtering
 and estimation
 of multi-beam
-data
-
-_(A)_
+data _(A)_
 |
 . Data cleaning techniques
 (manual and automated)
@@ -1688,9 +1486,7 @@ quality, and specify remedial surveys.
 
 |H6.2c Spatial
 data quality
-control
-
-_(A)_
+control _(A)_
 |
 . A posteriori and a priori total propagated uncertainty (horizontal and vertical)
 . Primary and secondary survey sensors used for quality control
@@ -1707,9 +1503,7 @@ accept or reject data.
 
 |H6.2d Spatial
 data
-interpolation
-
-_(I, A)_
+interpolation _(I, A)_
 |
 . 1D polynomial interpolation
 . Interpolating splines, BSplines,
@@ -1730,9 +1524,7 @@ gridded surfaces and contouring. _(A)_
 
 |H6.2e Spatial
 data
-representation
-
-_(I, A)_
+representation _(I, A)_
 |
 . Point Clouds
 . Surface models
@@ -1755,15 +1547,13 @@ representation. _(A)_
 === H7: Management of Hydrographic Data
 
 [%unnumbered]
-[cols="a,a,a"]
+[cols="a,a,a",options="header"]
 |===
-h|Topic/Element h|Content h|Learning outcomes
+|Topic/Element |Content |Learning outcomes
 
 3+h|H7.1 Data organization and presentation
 
-|H7.1a Databases
-
-_(I)_
+|H7.1a Databases _(I)_
 |
 . Relational databases
 . Spatial databases
@@ -1779,9 +1569,7 @@ survey elements and define relationships
 between those elements.
 
 |H7.1b Marine
-GIS basics
-
-_(B)_
+GIS basics _(B)_
 |
 . Features and feature types of
 point, line and polygon with
@@ -1805,9 +1593,7 @@ transformations.
 
 3+h|H7.2 Marine data sources and dissemination
 
-|H7.2a MSDI
-
-_(B)_
+|H7.2a MSDI _(B)_
 |
 . Basic concept of MSDI
 . Importance and role of data standards
@@ -1818,9 +1604,7 @@ Marine Spatial Data Infrastructures.
 
 |H7.2b Open
 access marine
-data
-
-_(B)_
+data _(B)_
 |
 . Open access databases
 including GEBCO
@@ -1834,9 +1618,7 @@ data as a measure of reliability and utility.
 3+h|H7.3 Spatial data integration and deliverables
 
 |H7.3a Spatial
-data integration
-
-_(I)_
+data integration _(I)_
 |
 . Tools and method for integration and comparison of hybrid data sets
 . Co-registration of hybrid data sets
@@ -1846,23 +1628,18 @@ survey.
 
 |H7.3b Spatial
 data
-visualisation
-
-_(A)_
+visualisation _(A)_
 |
 . Use of color schemes
 . Shading and illumination
 . Vertical exaggeration
 . Standards
-|Evaluate and select the best visualization
-method to highlight features of interest
-and quality-control a hydrographic data
-set.
+
+|Evaluate and select the best visualization method to highlight features
+of interest and quality-control a hydrographic data set.
 
 |H7.3c
-Deliverables
-
-_(A)_
+Deliverables _(A)_
 |
 . Products provided directly
 from source data such as
@@ -1904,72 +1681,54 @@ survey.
 
 
 [%unnumbered]
-[cols="a,a,a"]
+[cols="a,a,a",options="header"]
 |===
-h|Topic/Element h|Content h|Learning outcomes
+|Topic/Element |Content |Learning outcomes
 
 3+h|H8.1 Product liability
 
-|H8.1a
-Responsibilities
-of the hydrographic
-surveyor
-
-_(B, I)_
+|H8.1a Responsibilities of the hydrographic surveyor _(B, I)_
 |
 . Nautical charts.
 . Notice to mariners.
 . Survey notes and reports.
-. Fundamentals of professional
-liability relating to surveying
-. Professional ethics relating to
-commercial and government
-projects
-. Legal issues and liability
-associated with hydrographic
-equipment and products.
-|Detail the role and responsibilities of the
-hydrographic surveyor as required under
-industrial standards and national/international
+. Fundamentals of professional liability relating to surveying
+. Professional ethics relating to commercial and government projects
+. Legal issues and liability associated with hydrographic equipment and
+products.
+
+|
+Detail the role and responsibilities of the hydrographic surveyor as
+required under industrial standards and national/international
 legislation/conventions. _(B)_
 
-Identify the sources of ethical guidance
-and discuss ethical considerations when
-dealing in a professional capacity with
-client and contracts. _(I)_
+Identify the sources of ethical guidance and discuss ethical
+considerations when dealing in a professional capacity with client and
+contracts. _(I)_
 
-Discuss the potential liability of the
-hydrographic surveyor in common
+Discuss the potential liability of the hydrographic surveyor in common
 hydrographic endeavors. _(I)_
 
 
-|H8.1b Contracts
-
-_(I)_
+|H8.1b Contracts _(I)_
 |
-. Invitation to tender and survey
-work specifications
+. Invitation to tender and survey work specification
 . Response to tender
-. Contractual obligations and
-insurance
+. Contractual obligations and insurance
 . Survey work and deliverables
-|Develop the technical content of an
-invitation to tender.
 
-Analyze the risk and develop the technical
-content of a response that would include
-details and cost of necessary resources.
+|Develop the technical content of an invitation to tender.
 
-Interpret contractual obligations in terms
-of survey planning, execution and
-deliverables.
+Analyze the risk and develop the technical content of a response that
+would include details and cost of necessary resources.
+
+Interpret contractual obligations in terms of survey planning, execution
+and deliverables.
 
 3+h|H8.2 Maritime zones
 
-|H8.2a
-Delimitations
+|H8.2a Delimitations _(B)_
 
-_(B)_
 |
 . Historical development of
 1982 UNCLOS.
@@ -1996,29 +1755,18 @@ and maritime boundaries.
 Describe the legal operational constraints
 that apply within maritime zones.
 
-|E8.2b Impact of
-surveys
+|E8.2b Impact of surveys _(I)_
 
-_(I)_
 |
-. Vessel speed restrictions and
-permanent and temporary
-threshold shifts (hearing) and
-harassment levels for marine
-mammals.
-. Limitation of use of physical
-techniques such as bottom
-sampling and moorings in
-environmentally sensitive
-areas.
-. Respect for cultural traditions
-in relation to use of the
-environment
+. Vessel speed restrictions and permanent and temporary threshold shifts
+(hearing) and harassment levels for marine mammals.
+. Limitation of use of physical techniques such as bottom sampling and
+moorings in environmentally sensitive areas.
+. Respect for cultural traditions in relation to use of the environment
 . Marine protected areas
-|Specify appropriate procedures and
-limitations for use of surveying equipment
-in compliance with environmental laws
-and marine protected area regulations.
 
+|Specify appropriate procedures and limitations for use of surveying
+equipment in compliance with environmental laws and marine protected
+area regulations.
 
 |===

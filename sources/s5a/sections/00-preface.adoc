@@ -1,7 +1,8 @@
 
 [.preface]
 == Introduction
-All components of the hydrographic surveying  and nautical cartography profession face challenges as to how best to ensure the continuance of high standards and how best to ensure the continuation of best practices based on minimum standards of competence world-wide. In order to achieve these objectives, three international organizations (FIG, IHO and ICA) have developed Standards of competence that institutions or professional bodies may adopt for their educational/training programmes and competency schemes.
+
+All components of the hydrographic surveying and nautical cartography profession face challenges as to how best to ensure the continuance of high standards and how best to ensure the continuation of best practices based on minimum standards of competence world-wide. In order to achieve these objectives, three international organizations (FIG, IHO and ICA) have developed Standards of competence that institutions or professional bodies may adopt for their educational/training programmes and competency schemes.
 
 Standards indicate the minimum competences necessary for hydrographic surveyors. Standards recognize two levels of competence. Category "A" programmes introduces competences from the underlying principles level. Category "B" programmes introduce the competences from a practical level.
 
@@ -41,6 +42,7 @@ For example, the _subject_ H1 "`Positioning`" contains the _topic_ H1.1 Vessel a
 
 
 === Learning outcomes and list of content
+
 It is important to understand that each element is associated with:
 
 * one or more intended _learning outcomes_, that a student should be able to achieve on completion of the programme. All _learning outcomes_ should be assessed. This may be done through one of, or a combination of, the following: examination, assessed exercise or presentation, laboratory report, or final project
@@ -49,6 +51,7 @@ work.
 
 [.preface]
 == Programme preparation and submission
+
 The preparation of a programme submission to the IBSC should be done in accordance with the document entitled GUIDELINES FOR THE IMPLEMENTATION OF THE STANDARDS OF COMPETENCE FOR HYDROGRAPHIC SURVEYORS. This document is available from the IHO website: link:http://www.iho.int/[www.iho.int] -> Standards & Publications.
 
 The cross reference table is a mandatory requirement for a programme submission and *MUST* be completed. A template is specified and is available from the IHO website: link:http://www.iho.int/[www.iho.int]

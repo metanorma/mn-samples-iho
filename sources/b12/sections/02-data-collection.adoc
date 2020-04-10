@@ -16,7 +16,7 @@ Single beam echo-sounders collect a single depth measurement from a relatively n
 
 ===== Multibeam Echo-sounders
 
-Multibeam echo-sounders collect depth measurements by forming many receive beams in a wide arc below (or in the case of forward-looking navigation sonar, in front of) the vessel. Multibeam echo- sounders provide a much more detailed representation of the seafloor than single beam depth sounders, and thus can provide additional information about hazards or objects on the seafloor. Multibeam echo- sounders are often found on research vessels, as well as some commercial vessels, expedition cruise ships, and recreational vessels. Vessels equipped with multibeam echo-sounders that wish to contribute data to the DCDB's established multibeam pipeline should contact the DCDB directly at mailto:mb.info@noaa.gov[].
+Multibeam echo-sounders collect depth measurements by forming many receive beams in a wide arc below (or in the case of forward-looking navigation sonar, in front of) the vessel. Multibeam echo-sounders provide a much more detailed representation of the seafloor than single beam depth sounders, and thus can provide additional information about hazards or objects on the seafloor. Multibeam echo- sounders are often found on research vessels, as well as some commercial vessels, expedition cruise ships, and recreational vessels. Vessels equipped with multibeam echo-sounders that wish to contribute data to the DCDB's established multibeam pipeline should contact the DCDB directly at mailto:mb.info@noaa.gov[].
 
 ==== Positioning Systems
 

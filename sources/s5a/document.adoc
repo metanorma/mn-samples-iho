@@ -15,10 +15,12 @@
 :imagesdir: images
 :stem:
 
-
 include::sections/00-preface.adoc[]
-include::sections/01-basic-subjects.adoc[]
-include::sections/02-foundation-science.adoc[]
-include::sections/03-hydrographic-science.adoc[]
-include::sections/04-cmfp.adoc[]
 
+include::sections/01-basic-subjects.adoc[]
+
+include::sections/02-foundation-science.adoc[]
+
+include::sections/03-hydrographic-science.adoc[]
+
+include::sections/04-cmfp.adoc[]
