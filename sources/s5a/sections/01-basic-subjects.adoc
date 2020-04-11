@@ -1,0 +1,484 @@
+
+== BASIC SUBJECTS
+
+[[b1-mathematics-statistics-theory-of-observations]]
+=== B1: Mathematics, statistics, theory of observations
+
+[%unnumbered]
+[cols="a,a,a",option="header"]
+|===
+|Topic/Element |Content |Learning outcomes
+
+3+h|B1.1 Geometry and Linear Algebra
+
+|B1.1a Geometry _(B)_
+
+|
+. Conic Sections, geometry of the ellipse and of the ellipsoid.
+. Parametric equations of curves and surfaces.
+|
+Express curves and surfaces in parametric form.
+
+Compute lengths and coordinates on an ellipse.
+
+|B1.1b Linear Algebra _(I)_
+|
+. Vector and affine spaces, vector and inner products, norms.
+. Linear operators, matrix representation, composition, transpose.
+. Translations, rotations, coordinate transformations, similitudes,
+orthogonal projection.
+
+|Derive and compute 2D and 3D transformations, as typically involved in
+geodesy, surveying and survey data georeferencing.
+
+|B1.1c Numerical methods for linear systems of equations _(I)_
+
+|
+. Systems of linear equations, Gauss elimination.
+. Matrix decomposition, and factorization.
+. Condition number of a matrix.
+
+|Solve linear equations by numerical methods in a scientific computing
+environment and analyze error bounds.
+
+3+h|B1.2 Differential calculus and differential equations
+
+|B1.2a Differential and integral calculus _(B)_
+|
+. Real and vector valued functions.
+. Series, Taylor expansions
+. Gradient of a real-valued functions.
+. Jacobian matrix
+. Integrals of real-valued functions.
+. Numerical integration methods.
+|
+Apply differential calculus to real and vector valued functions from a
+n-dimensional vector space.
+
+Calculate integral of classical functions and approximate numerical
+values.
+
+|B1.2b Differential equations _(I)_
+|
+. Linear ordinary differential equations, general solution with right
+hand side.
+. Nonlinear differential equations, and linearization.
+. Numerical methods for nonlinear ordinary differential equations.
+
+|
+Compute explicit solutions for linear ordinary differential equations
+and apply numerical methods to approximate solutions to non-linear
+differential equations.
+
+|B1.2c Numerical solutions of non-linear equation
+|
+. Iterative methods.
+. Rounding and numerical
+errors.
+|Apply numerical methods to find approximate solutions for non-linear equations.
+
+
+3+h|B1.3 Probability and statistics
+
+|B1.3a Probabilities and Bayesian estimation _(B, I)_
+|
+. Probability measures, density functions
+. Mathematical expectation, variance
+. Covariance, correlation
+. Conditional probabilities, Bayes law
+. Minimum mean square estimation
+. Distributions including normal, chi-squared, t and F
+|Define probability measures, derive associated formulae and calculate values from data. _(B)_
+
+Select a distribution for a given random variable and apply a Bayesian estimation method. _(I)_
+
+|B1.3b Statistics _(I)_
+|
+. Random variables, mean, variance, standard deviation
+
+. Estimation of mean, variance, covariance
+
+. Statistical testing, confidence intervals
+
+|Compute confidence intervals and associated statistical measures for
+random variables using various distributions.
+
+|===
+
+[[b2-information-and-communication-technology]]
+=== B2: Information and Communication Technology
+
+[%unnumbered]
+[cols="a,a,a",options="header"]
+|===
+|Topic/Element |Content |Learning outcomes
+
+|B2.1 Computer systems _(I)_
+|
+. Central Processing Unit
+. RAM, data storage devices and standards
+. Communication board, serial links, communication ports and standards,
+  buffers, Ethernet links, data transmission rates
+. Communication protocols
+. Clocks, clocks drift, time tagging and synchronization of data
+. Operating systems
+. Device drivers
+
+|
+Describe the different components of a real-time data acquisition system, including various modes of communication and time-tagging.
+
+Describe the role of a device driver and its relation to data exchange.
+
+Create/Configure a data link and evaluate any time delays across the link.
+
+|B2.2 Office work software suites _(B)_
+|
+. Word processors
+. Spreadsheets
+. Graphics software
+|
+Use classical office work software suites. Prepare a poster describing
+scientific or project results.
+
+|B2.3 Programming _(B)_
+|
+. Basic operations of a computer program or script
+. Algorithms (loops, conditional instructions)
+. Scientific computation environments
+. Application to data exchange, file conversion
+|
+Write a program or script for data format conversion and/or basic
+algorithm computation.
+
+Configure a small network and transfer data over that network
+
+|B2.4 Web and network services _(B)_
+|
+. Networks (LANs)
+. Network and cloud storage
+. Internet
+. Networks integrity
+. Communication protocols
+|
+Describe the different network options used in remote data exchange and
+storage applications.
+
+|B2.5 Databases _(B)_
+|
+. File types (binary, text, XML)
+. Relational databases
+. Geospatial databases
+. Database management systems and query languages
+|
+Describe different types of geospatial data and their representation.
+
+Construct a database, populate it and query its content using a database
+language, such as SQL.
+
+|===
+
+
+[[b3-physics]]
+=== B3: Physics
+
+
+[%unnumbered]
+[cols="a,a,a",options="header"]
+|===
+|Topic/Element |Content |Learning outcomes
+
+|B3.1 Kinematics _(B)_
+|
+. Angular and linear velocities, accelerations
+. Angular velocities addition rules, accelerations due to rotational
+motion, Coriolis Law
+
+|
+Explain the principle and the relationship between position, velocity
+and acceleration for both rotational and linear motion.
+
+|B3.2 Gravity _(B)_
+|
+. The inertial frame
+. Newton's law, forces, accelerations, energy
+. Center of gravity, center of instantaneous rotation
+. Gravitational field
+. Potential fields
+|
+Differentiate between inertial and Earth fixed frames.
+
+Differentiate center of gravity from center of instantaneous rotation.
+
+Develop the mathematical relationship between potential and acceleration
+in a gravitational field.
+
+|B3.3 Magnetism _(B)_
+|
+. Magnetic characteristic of ferrous bodies
+. Magnetic field
+|
+Describe ferromagnetic properties and resulting magnetic field.
+
+|B3.4 Waves _(B)_
+|
+. Harmonic waves modeling and wave parameters (amplitude, frequency,
+wavelength, celerity and phase)
+. Longitudinal and transverse waves
+. Intensity, Decibel scale
+. Attenuation
+. Doppler effect
+. Interferometric principles
+|Explain harmonics in the context of waves and resulting constructive and destructive interferences patterns from multiple waves and sources.
+
+Use the Decibel scale to define intensity and characterize attenuation.
+
+Explain the Doppler effect.
+
+|B3.5 Electromagnetic waves _(B)_
+|
+. Electromagnetic waves properties and propagation
+. Radiation, emission and absorption
+. Reflection, refraction, diffraction
+. Optical reflectance
+|Calculate field of view and resolving power of optics.
+
+Describe aberrations.
+
+Describe the effect of wavelength on the propagation in a medium.
+
+Describe the effect of a medium in the propagation of an electromagnetic
+wave
+
+|B3.6 Geometrical optics _(B)_
+|
+. Mirror, prisms, lenses and filters
+. Telescopic optics and magnification
+. Snell-Descartes law
+
+|
+Model a light ray-path through medium with various reflective and
+refractive properties.
+
+Use the characteristics of a lens to calculate geometrical properties of
+an image.
+
+|B3.7 Lasers _(B)_
+|
+. Principle of lasers
+. Laser parameters (frequency, wavelength)
+. Types of lasers
+. Laser attenuation
+
+|
+Describe the operation, unique properties, and applications of
+stimulated sources of emission.
+
+|B3.8 Transducers and clocks _(B)_
+|
+. Pressure transducers
+. Thermal transducers
+. Types of clocks
+. Measurement of elapsed time
+|
+Describe different types of transducers and their calibration
+requirements. Describe time measurement devices in relation to their
+drift coefficient and accuracy.
+
+|===
+
+[[b4-nautical-science]]
+=== B4: Nautical science
+
+
+[%unnumbered]
+[cols="a,a,a",options="header"]
+|===
+|Topic/Element |Content |Learning outcomes
+
+|B4.1 Conventional aids to navigation _(B)_
+|
+. Types of buoys and beacons
+. Radar beacons
+. AIS systems
+|
+Describe the characteristics and purposes of fixed and floating aids to
+navigation and the use of automatic identification systems.
+
+|B4.2 GMDSS _(B)_
+|
+. Sea areas
+. EPIRBs and SARSAT
+. Digital selective calling
+. NAVTEX
+. SafetyNET
+. Promulgation of Maritime Safety Information (MSI)
+. World Wide Navigational Warning Service (WWNWS) |Describe the
+components and purpose of GMDSS.
+
+|B4.3 Nautical charts _(B)_
+|
+. Content, datum, projection, scale and types of nautical charts
+. Chart symbols
+. Chart graticules
+. Uncertainty indicators (e.g. source diagram, reliability diagram, zone
+of confidence, notes)
+. Navigational hazards
+. Plotting instruments
+. ECDIS, ENC, RNC and ECS
+|
+Plan and layout a route on a nautical chart, enter/plot positions,
+identify navigational hazards and revise navigational plan as required.
+
+Describe the content of a nautical chart and explain datum, projection
+and scale.
+
+Describe the uncertainty indicators associated with nautical charts.
+
+|B4.4 Navigation publications _(B)_
+|
+. Sailing directions,
+. Light and radio lists,
+. Tides and current tables
+. Notice to Mariners (NtoM) and Urgent Notice to Mariners
+
+|
+Use content of nautical publications in a survey planning context.
+
+|B4.5 Compasses _(B)_
+|
+. Magnetic compasses
+. Gyros
+. Compass error and corrections
+|
+Describe the capabilities, limitations and sources of errors of magnetic
+and gyro compasses.
+
+Determine and apply corrections for magnetic and gyro compass error.
+
+|B4.6 Emergency procedures _(B)_
+|
+. Fire extinguishers
+. Life preservers and cold water survival suits, life rafts
+. Distress signals and EPIRB
+. Procedures for man-overboard, fire, and abandoning ship
+|
+Explain the importance of the emergency equipment and procedures.
+
+Identify types of fire extinguishers and their use.
+
+|B4.7 Safe working practice _(B)_
+|
+. Water-tight doors and hatches
+. Suspended loads
+. Enclosed spaces
+. Working aloft, with equipment over the side, life lines.
+. Work permitting
+. Securing equipment for sea
+. Cables and antenna installation
+. Earthing (grounding) of electrical equipment
+. High voltage electrical safety
+. Personal protective equipment
+|
+Describe procedures for maintaining a safe working environment.
+
+Design safe cable routes for survey instruments.
+
+Define procedures for securing equipment for heavy weather.
+
+|B4.8 Rope and wires _(B)_
+|
+. Types of wire and rope
+. Characteristics (stretch, floating, strength) of ropes and wires.
+. Basic knots
+|Select and tie basic knots.
+
+Select appropriate wire or rope.
+
+|B4.9 Towed and over the side instruments _(I)_
+|
+. Rosette systems and instruments
+. ROVs, AUVs, ASVs, towed systems, catenary and layback
+. A-frames, cable blocks, electro-mechanical wire, wire strength factor
+for deep casts, slip rings and optical cabling
+. Moon pools
+. Launch and recovery
+. Station keeping and maneuvering
+|
+Specify procedures for deployment and recovery of oceanographic and
+hydrographic equipment.
+
+|B4.10 Anchoring _(B)_
+|
+. Shipboard ground tackle including anchor, chain, windlass, stoppers
+. Small boat anchoring
+. Multiple anchors
+|
+Describe ship and small boats anchoring and ground tackle.
+
+Explain how the final position of the vessel can be adjusted through the
+use of anchors.
+
+|B4.11 Instrument moorings _(I)_
+|
+. Launch and recovery
+. Anchors and acoustic releases
+. Scope, wire, flotation, tension
+. Weights
+|
+Specify types of mooring and procedures for mooring underwater
+instruments.
+
+|===
+
+
+[[b5-meteorology]]
+=== B5: Meteorology
+
+
+[%unnumbered]
+[cols="a,a,a",options="header"]
+|===
+|Topic/Element |Content |Learning outcomes
+
+|B5.1 Weather fundamentals and observations (B)
+.2+|
+. Vertical structure and the variability of the atmosphere
+. Temperature, humidity, dewpoint, frost-point
+. Atmospheric pressure, winds
+. Clouds and precipitations
+. Rain, snow
+. Visibility, advection fog and radiation fog
+. Pressure systems
+. Geostrophic winds, anabatic and katabatic winds
+. Instruments and sensors used to register temperatures, pressure,
+direction and intensity of wind
+. Sea state scales, weather warning categories, wave height, periods and
+direction
+|
+Define physical meteorological parameters
+
+Operate instruments and sensors used to register temperature, pressure,
+direction and intensity of wind. Record these parameters according to
+internationally accepted standards.
+
+Identify characteristics of weather by simple observation of the sea and
+the sky.
+
+
+|B5.2 Wind, waves and seas _(B)_
+|
+Explain the relation between atmospheric pressure, temperature and wind.
+
+Describe wind circulation around pressure systems and the effect of
+friction
+
+|B5.3 Weather forecasting _(B)_
+|
+. Synoptic charts
+. Weather forecast
+|
+Interpret a synoptic chart. Produce an operational short range forecast
+based on meteorological information, weather bulletins and facsimile
+charts.
+
+|===
