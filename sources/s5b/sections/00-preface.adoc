@@ -1,0 +1,118 @@
+[.preface]
+== Introduction
+
+All components of the hydrographic surveying and nautical cartography professions face challenges as how best to ensure the continuance of high standards and how best to ensure the continuation of best practices based on minimum standards of competence world-wide. In order to achieve these objectives, three international organizations (FIG, IHO and ICA) have developed Standards of competence that institutions or professional bodies may adopt for their educational/training programmes and competency schemes.
+
+Standards indicate the minimum competences considered necessary for hydrographic surveyors.
+
+Standards recognize two levels of programme.&nbsp;Category A programmes introduces content and learning outcomes primarily from the underlying principles level. Category B programmes introduce them primarily from a practical level.
+
+The intention is that a Category A qualified individual with appropriate experience, would be a senior professional in their chosen field (government, industry, academia). Category B qualified individuals with appropriate experience would be technical professionals preparing and delivering products and services to meet specifications and outcomes.
+
+[.preface]
+== Definitions
+
+=== Subjects, topics, and elements
+
+The S5-B standard contains the following list of _Basic subjects_ and _Essential subjects:_
+
+<<b1_maths_stats_toe, B1: Mathematics, Statistics, Theory of Errors>>
+
+<<b2_ict, B2: Information and Communication Technology>>
+
+<<b3_physics, B3: Physics>>
+
+<<b4_earth_sciences, B4: Earth Sciences>>
+
+<<b5_nautical_science, B5: Nautical science>>
+
+<<b6_meteorology, B6: Meteorology>>
+
+<<e1_underwater_acoustics, E1: Underwater Acoustics>>
+
+<<e2_remote_sensing, E2: Remote Sensing>>
+
+<<e3_water_levels_and_flow, E3: Water Levels and Flow>>
+
+<<e4_positioning, E4: Positioning>>
+
+<<e5_hydrographic_practice, E5: Hydrographic Practice>>
+
+<<e6_hydrographic_data, E6: Hydrographic Data Management>>
+
+<<e7_environment, E7: Environment>>
+
+<<cffp, CFFP: COMPREHENSIVE FINAL FIELD PROJECT>>
+
+
+*Topics and Elements:*
+
+* Each *Essential* or *Basic* _subject_ is comprised of a list of _topics_ which are denoted by Ex.y or Bx.y; 
+* Each _topic_ contains _elements_ which aredenoted by Ex.y<c>.
+
+For example, the _subject_ E5 "Hydrographic practice" contains the _topic_ E5.1 "Hydrographic survey projects" which has the _element_ E5.1a "Hydrographic surveys purposes".
+
+=== Learning outcomes and list of content
+
+It is important to understand that each _element_ is associated with:
+
+* an intended _learning outcome_, that a student should be able to achieve on completion of the programme. All _learning outcomes_ should be evaluated, either by or through a combination of, assessment, examination, laboratory work or final project work. 
+* a list of _content_. This list is associated with one or more _learning outcomes_ and describes the theoretical knowledge or practical/technical context which the course syllabi should address in order to meet a particular _learning outcome_.
+
+For the sake of clarity, a level of knowledge associated with each learning outcome has been defined. It is indicated in italics in the left column, by a letter (_B: Basic, I: Intermediate;_ see "Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors"). This letter designation (_B: Basic, I: Intermediate_) complements the learning outcome description associated with each element.
+
+[.preface]
+== Programme preparation and submission
+
+The preparation of a programme submission to the IBSC should be done in accordance with the document entitled GUIDELINES FOR THE IMPLEMENTATION OF THE STANDARDS OF COMPETENCE FOR HYDROGRAPHIC SURVEYORS. This document is available from the IHO website: http://www.iho.int/[www.iho.int] → Standards & Publications.
+
+The cross reference table is a mandatory requirement for a programme submission and *MUST* be completed. A template is specified and is available from the IHO website: http://www.iho.int/[www.iho.int]
+
+=== List of acronyms and initialisms used in this document
+
+1D:: One-dimensional
+2D:: Two-dimensional
+ADCP:: Acoustic Doppler Current Profiler
+AIS:: Automatic Identification System
+ASV:: Autonomous Surface Vehicle
+AUV:: Autonomous Underwater Vehicle
+B:: Basic (level of knowledge)
+CAD:: Computer Aided Design
+CFFP:: Comprehensive Final Field Project
+DGNSS:: Differential Global Navigation Satellite System
+EPIRB:: Emergency Position Indicating Radio Beacon
+FIG:: International Federation of Surveyors
+GIS:: Geographical Information System
+GMDSS:: Global Maritime Distress and Safety System
+GNSS:: Global Navigation Satellite System
+GRS80:: Geodetic Reference System (1980)
+I:: Intermediate (level of knowledge)
+IBSC:: International Board on Standards of Competence for Hydrographic Surveyors and Nautical Cartographers
+ICA:: International Cartographic Association
+IHO:: International Hydrographic Organization
+IMU:: Inertial Motion Unit
+INS:: Inertial Navigation System
+LAN:: Local Area Network
+LiDAR:: Light Detection And Ranging
+MBES:: Multi Beam Echo Sounder
+MSL:: Mean Sea Level
+NAVTEX:: Navigational Telex
+P:: Practicals (fieldwork and/or laboratories)
+RAM:: Random Access Memory
+ROV:: Remotely Operated Underwater Vehicle
+S-44:: IHO Publication S-44 - _Standards for Hydrographic Surveys_
+S-100:: IHO Publication S-100 _Universal Hydrographic Data Model_
+S-102:: IHO Publication S-102 _Bathymetric Surface Product Specification_
+SARSAT:: Search And Rescue Satellite Aided Tracking
+SBES:: Single Beam Echo Sounder
+SDB:: Satellite Derived Bathymetry
+SDI:: Spatial Data Infrastructure
+SG:: Self-guided exercises (or student's personal independent work)
+SSDM:: Standard Seabed Data Model
+T:: Theoretical (theory through lectures)
+TIN:: Triangulated Irregular Network
+UNCLOS:: United Nations Convention on the Law of the Sea
+USBL:: Ultra Short Baseline
+UTM:: Universal Transverse Mercator
+WGS84:: World Geodetic System (1984)
+XML:: Extended Markup Language
