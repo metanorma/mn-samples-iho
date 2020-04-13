@@ -1,0 +1,283 @@
+== Basic subjects
+
+[[b1_maths_stats_toe]]
+=== B1: Mathematics, Statistics, Theory of Errors
+
+[%unnumbered]
+|===
+h| Topic/Element h| Content h| Learning outcomes
+
+a| B1.1 Linear Algebra +
+_(B)_ a|
+. Vector and affine spaces, vector and inner products, norms.
+. Linear equations, determinants.
+. Analytical geometry, line and plane equations.
+. Linear operators, matrix representation, composition, inverse, transpose.
+. Translations, rotations, coordinate transformations. a| Describe and apply 2D transformations involved in surveying and mapping. (E4.1c) +
+Solve linear equations using matrix methods.
+
+a| B1.2 Differential calculus +
+_(B)_ a|
+. Real and vector valued functions.
+. Gradient of real-valued functions and their discrete approximations. 
+. Series and integrals. a| Compute the gradient of a vector valued function. Define a function as a series. +
+Calculate explicit integrals of classical functions.
+
+a| B1.3 Trigonometry +
+_(B)_ a|
+. Basic trigonometry
+. Sphere, great circle, rhumb lines, sphere angles, spherical triangles and spherical excess. | Apply plane and spherical trigonometry to surveying problems.
+
+a| B1.4 Statistics +
+_(I)_ a|
+. Random variables, mean, variance, standard deviation
+. Covariance and correlation
+. Estimation of mean, variance, covariance
+. Normal distribution | Explain what is meant by a random variable, estimate the mean, variance and standard deviation for a random variable and also the covariance between random variables.
+
+a| B1.5 Theory of errors +
+_(B)_ a|
+. Linear observation equations 
+. Covariance propagation law | Apply the variance propagation law to a linear observation equation, and derive a measurement uncertainty as a function of observables' covariances.
+
+a| B1.6 Least squares +
+_(B)_ a|
+. Least squares procedure
+. Covariance of estimated parameters
+. Use of unit variance factor estimate 
+. Interpretation of ellipses of confidence a| Interpret results from a least square estimation applied to survey measurements.
+
+a| B1.7 Interpolation +
+_(B)_ a|
+. 1D polynomial interpolation
+. Spatial interpolation by inverse distance weighting methods | Differentiate between 1-D and spatial interpolation methods. Create and compare interpolated surfaces from one set of sparse survey measurements using appropriate software under different configurations.
+|===
+
+[[b2_ict]]
+=== B2: Information and Communication Technology
+
+[%unnumbered]
+|===
+h| Topic/Element h| Content h| Learning outcomes
+
+a| B2.1 Computer systems +
+_(I)_ a|
+. Central Processing Unit
+. RAM, data storage
+. Communication board, serial links, communication ports buffers, Ethernet links, data transmission rates
+. Communication protocols
+. Clocks, clocks drift, time tagging and synchronization of data
+. Operating systems 
+. Device drivers a| Describe the different components of a real-time data acquisition system, including various modes of communication and time-tagging. +
+Describe the role of a device driver and its relation to data exchange.
+
+a| B2.2 Office work software suites +
+_(I)_ a|
+. Word processors
+. Spreadsheets 
+. Graphics and image processing software
+. Database management systems and query languages a| Use classical office work software suites. +
+Construct a database, populate it and query its content.
+
+a| B2.3 Programming +
+_(I)_ a|
+. Basic operations of a computer program or script
+. Algorithms (loops, conditional instructions)
+. Scientific computation environments
+. Application to data exchange, file conversion a| Write a program for data format conversion and/or basic algorithm computation.
+
+a| B2.4 Web and network communications +
+_(B)_ a|
+. Networks (LANs)
+. Internet 
+. Networks integrity
+. Communication protocols | Describe the different network communication protocols used in remote data exchange applications.
+
+a| B2.5 Databases +
+_(B)_ a|
+. File types (binary, text, XML)
+. Relational databases
+. Geospatial databases | Describe different types of geospatial data and their representation.
+|===
+
+[[b3_physics]]
+=== B3: Physics
+
+[%unnumbered]
+|===
+h| Topic/Element h| Content h| Learning outcomes
+
+a| B3.1 Mechanics +
+_(B)_ a|
+. Kinematics (angular and linear velocities, accelerations)
+. Coriolis Effect
+. Newton's law, forces, accelerations, energy | Describe the relationship between linear and rotational motions through acceleration and velocity
+
+a| B3.2 Gravity +
+_(B)_ a|
+. Gravity field of the earth
+. Equipotential surfaces | Describe the gravity field of the earth in terms of acceleration and potential
+
+a| B3.3 Waves +
+_(B)_ a|
+. Electromagnetic waves
+. Pressure waves
+. Ocean waves
+. Wave Propagation
+. Electromagnetic spectrum
+. Radiation, emission and absorption
+. Reflection, refraction, diffraction a| Differentiate between types of waves and their generation and propagation. +
+Explain how medium parameters affect wave behavior.
+|===
+
+[[b4_earth_sciences]]
+=== B4: Earth Sciences
+
+[%unnumbered]
+|===
+h| Topic/Element h| Content h| Learning outcomes
+
+a| B4.1 Geography and geology +
+_(B)_ a|
+. Plate tectonics, earthquakes zones
+. Different types of rocks
+. Erosion and deposition
+. Rivers and estuaries | Describe the internal structure, the physical characters and dynamics of the Earth referring to ocean basin structure, and the major processes affecting coastal morphology
+
+a| B4.2 Substrates +
+_(B)_ a|
+. Sediment types
+. Sedimentary cycles
+. Siltation
+. Submerged aquatic vegetation 
+. Corals | Distinguish common seafloor characteristics. Describe the ocean bottom as a multilayered structure composed of sediment deposits
+|===
+
+[[b5_nautical_science]]
+=== B5: Nautical science
+
+[%unnumbered]
+|===
+h| Topic/Element h| Content h| Learning outcomes
+
+a| B5.1 Conventional aids to navigation +
+_(B)_ a|
+. Types of buoys and beacons
+. Radar beacons
+. AIS systems | Describe the principal fixed and floating aids to navigation and the use of automatic identification systems.
+
+a| B5.2 GMDSS +
+_(B)_ a|
+. Sea areas
+. EPIRBs and SARSAT
+. Digital selective calling
+. NAVTEX
+. Inmarsat-C | Describe the components and purpose of GMDSS.
+
+a| B5.3 Nautical charts +
+_(B)_ a|
+. Content, datum, projection, scale and types of nautical charts
+. Chart symbols
+. Chart graticules
+. Uncertainty indicators (e.g. source diagram, reliability diagram, zone of confidence, notes)
+. Navigational hazards
+. Plotting instruments a| Layout a route on a nautical chart, plot positions, identifies navigational hazards and revise navigational plan as required. +
+Describe the content of a nautical chart and explain datum, projection, scale +
+Describe the uncertainty indicators associated with nautical charts.
+
+a| B5.4 Navigation publications +
+_(B)_ a|
+. Sailing directions, 
+. Light and radio lists, 
+. Tides and current tables
+. Notice to mariners | Use content of nautical publications in a survey planning context.
+
+a| B5.5 Compasses +
+_(B)_ a|
+. Earth magnetic field
+. Magnetic compasses
+. Gyros
+. Compass error and corrections | Describe the capabilities, limitations and errors of magnetic and gyro compasses. Determine and apply corrections for magnetic and gyro compass error.
+
+a| B5.6 Emergency procedures +
+_(B)_ a|
+. Fire extinguishers 
+. Life preservers and cold water survival suits, life rafts
+. Distress signals and EPIRB
+. Procedures for man-overboard, fire, and abandoning ship a| Explain the importance of the emergency equipment and procedures.
+
+a| B5.7 Safe working practice +
+_(B)_ a|
+. Water-tight doors and hatches
+. Suspended loads
+. Enclosed spaces
+. Working aloft, with equipment over the side
+. Work permitting
+. Securing equipment for sea
+. Cables and antenna installation
+. Earthing of electrical equipment
+. High voltage electrical safety
+. Personal protective equipment a| Describe procedures for maintaining a safe working environment. +
+Draw a diagram to indicate safe cable routes for survey instruments. +
+Describe methods for securing equipment for heavy weather.
+
+a| B5.8 Rope and wires +
+_(B)_ a|
+. Types of wire and rope 
+. Characteristics (stretch, floating, strength) of ropes.
+. Basic knots a| Select and tie basic knots. +
+Select appropriate wire or rope.
+
+a| B5.9 Towed and over the side instruments +
+_(B)_ a|
+. Rosette systems and instruments
+. ROVs, AUVs, towed systems, catenary and layback
+. A-frames, cable blocks, electro-mechanical wire, slip rings and optical cabling
+. Moonpools
+. Launch and recovery 
+. Station keeping and maneuvering  a| Deploy and recover oceanographic and hydrographic equipment
+
+a| B5.10 Anchoring +
+_(B)_ a|
+. Shipboard ground tackle including anchor, chain, windlass, stoppers
+. Small boat anchoring
+. Multiple anchors a| Describe ship and small boats anchoring and ground tackle. +
+Explain how the final position of the vessel can be adjusted through the use of anchors.
+
+a| B5.11 Instrument moorings +
+_(B)_ a|
+. Launch and recovery
+. Anchors and acoustic releases
+. Scope, wire, flotation, tension
+. Weights a| Prepare, deploy and recover seabed instruments.
+|===
+
+[[b6_meteorology]]
+=== B6: Meteorology
+
+[%unnumbered]
+|===
+h| Topic/Element h| Content h| Learning outcomes
+
+a| B6.1 Weather observations +
+_(B)_ .2+a|
+. Vertical structure and the variability of the atmosphere
+. Temperature, humidity, dew-point, frost-point
+. Atmospheric pressure, winds
+. Clouds and precipitations
+. Rain, snow
+. Visibility, advection fog and radiation fog
+. Pressure systems
+. Geostrophic winds, anabatic and katabatic winds
+. Instruments and sensors used to register temperatures, pressure, direction and intensity of wind a| Define physical meteorological parameters +
+Operate instruments and sensors used to register temperature, pressure, direction and intensity of wind. Record these parameters according to internationally accepted standards. +
+Identify characteristics of weather by simple observation of the sea and the sky.
+
+a| B6.2 Wind +
+_(B)_ | Explain the relation between atmospheric pressure, temperature and wind. Describe wind circulation around pressure systems and the effect of friction.
+
+a| B6.3 Weather forecasting +
+_(B)_ a|
+. Synoptic charts
+. Weather forecast | Interpret a synoptic chart. Produce an operational short range forecast based on meteorological information, weather bulletins and facsimile charts
+|===
