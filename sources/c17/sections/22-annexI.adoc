@@ -1,0 +1,34 @@
+[[annexI]]
+[appendix]
+== SDI Business Plans – Links to examples
+
+. *The Philippine Geospatial Data Infrastructure (PGDI) Master Plan 2011-2020* 
++
+http://namria.gov.ph/Downloads/PGDIMasterPlan.pdf[http://namria.gov.ph/Downloads/PGDIMasterPlan.pdf]
+
+. *USA - Advancing State-wide Spatial Data Infrastructures in Support of the National Spatial Data Infrastructure (NSDI) - Strategic Plan Guidelines*
++
+https://www.fgdc.gov/initiatives/50states/newspbp/StrategicPlanGuidelines_v2_052809_FinalVersion.pdf[https://www.fgdc.gov/initiatives/50states/newspbp/StrategicPlanGuidelines_v2_052809_FinalVersion.pdf]
+
+. *Pacific Islands - Spatial Data Infrastructure Implementation (PACGEO)*
++
+http://www.iho.int/mtg_docs/com_wg/MSDIWG/MSDIWG7/Open/OF1-2_Sachindra%20Singh%20(SPC).pdf[http://www.iho.int/mtg_docs/com_wg/MSDIWG/MSDIWG7/Open/OF1-2_Sachindra%20Singh%20(SPC).pdf] or http://geonetwork.sopac.org/geonetwork
+
+. *National Spatial Data Infrastructure – The Case of Brazil (INDE)*
++
+http://www.infodev.org/infodev-files/resource/InfodevDocuments_1105.pdf[http://www.infodev.org/infodev-files/resource/InfodevDocuments_1105.pdf] and http://www.inde.gov.br/[http://www.inde.gov.br/]
+
+. *The Spatial Data Infrastructure of Germany (GDI-DE)*
++
+--
+http://www.geoportal.de/EN/Geoportal/Services/Spatial-Data-and-Services-in-Web/_functions/germany/germany_table.html[http://www.geoportal.de/EN/Geoportal/Services/Spatial-Data-and-Services-in-Web/_functions/germany/germany_table.html]?
+
+[NOTE]
+====
+_A list of existing SDI/NSDI and MSDI initiatives across the World and map showing existing national geoportals can be found at:_
+
+http://www.iho.int/mtg_docs/com_wg/MSDIWG/MSDIWG_Misc/SDI-portals.pdf[http://www.iho.int/mtg_docs/com_wg/MSDIWG/MSDIWG_Misc/SDI-portals.pdf] and
+
+http://www.iho.int/gis/msdi.gis.html[http://www.iho.int/gis/msdi.gis.html]
+====
+--

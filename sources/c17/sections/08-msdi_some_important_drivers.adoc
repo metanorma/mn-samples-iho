@@ -1,0 +1,122 @@
+== MSDI – Some Important Drivers
+
+=== Blue Economy and Blue Growth
+
+The concept of a "blue economy" came out of the 2012 Rio+20 Conference and emphasizes conservation and sustainable management, based on the premise that healthy ocean ecosystems are more productive and a must for sustainable ocean-based economies. To support a shift to this new approach, the UN Food and Agriculture Organization (FAO) launched the Blue Growth {blank}footnote:[http://www.fao.org/zhc/detail-events/en/c/233765/] Initiative (<<fig4>>), through which it will assist countries in developing and implementing blue economy and growth agendas and the European Union developed its long term strategy to support sustainable growth in the marine and maritime sectors as a whole. Seas and oceans are drivers for the European economy and have great potential for innovation and growth. It is the maritime contribution to achieving the goals of the Europe 2020 strategy for smart, sustainable and inclusive growth. {blank}footnote:[http://ec.europa.eu/maritimeaffairs/policy/blue_growth/index_en.htm]
+
+The 'blue' economy represents roughly 5.4 million jobs and generates a gross added value of almost €500 billion a year. However, further growth is possible in a number of areas which are highlighted within the strategy.
+
+[[fig4]]
+.Blue Growth schematic
+image::image004.png["",369,581]
+
+The strategy consists of three components:
+
+. Develop the sectors with potential for sustainable jobs and growth: 
+* aquaculture and fisheries
+* coastal tourism
+* marine biotechnology
+* ocean energy generation
+* seabed mining
+
+. Providing knowledge, legal certainty and security in the blue economy:
+* marine knowledge to improve access to information about the sea;
+* maritime spatial planning to ensure an efficient and sustainable management of activities at sea;
+* integrated maritime surveillance to give authorities a better picture of what is happening at sea.
+
+. Sea basin strategies to ensure tailor-made measures and to foster cooperation between countries in the following sea basins:
+* Adriatic and Ionian Seas
+* Arctic Ocean
+* Atlantic Ocean
+* Baltic Sea
+* Black Sea
+* Mediterranean Sea
+* North Sea
+
+=== UN-GGIM
+
+The United Nations initiative on Global Geospatial Information Management (UN-GGIM) {blank}footnote:[http://ggim.un.org/] is now playing a leading role in setting the agenda for the development of global geospatial information and to promote its use to address key global challenges. It provides a forum to liaise and coordinate among Member States, and between Member States and international organizations.
+
+The IHO currently has observer status at UN-GGIM and has recently stated that in the marine space, the future role of the IHO and its MS will be crucial to enabling the wider reach and use of HO data as part of the framework of work activities such as:
+
+* Development of the global geodetic reference frame;
+* Development of a global map for sustainable development;
+* Geospatial information supporting Sustainable Development and the post-2015 development agenda;
+* Adoption and implementation of standards by the global geospatial information community;
+* Development of a knowledge base for geospatial information;
+* Identification of trends in national institutional arrangements in geospatial information management;
+* Integrating geospatial statistics and other information;
+* Legal and policy frameworks, including critical issues related to authoritative data;
+* Development of shared statement of principles on the management of geospatial Information {blank}footnote:[http://ggim.un.org/docs/statement%20of%20shared%20guiding%20principles%20flyer.pdf]; and
+* Determining fundamental data sets.
+
+=== G8 Open Data Charter
+
+In June 2013, the G8 Group of major economic nations signed the Open Data Charter {blank}footnote:[https://www.gov.uk/government/publications/open-data-charter/g8-open-data-charter-and-technical-annex]. The world is witnessing the growth of a global movement facilitated by technology and social media and fueled by information; one that contains enormous potential to create more accountable, efficient, responsive and effective governments and businesses, and to spur economic growth.
+
+Access to data allows individuals and organizations to develop new insights and innovations that can improve the lives of others and help to improve the flow of information within and between countries. While governments and businesses collect a wide range of data, they do not always share these data in ways that are easily discoverable, useable, or understandable by the public.
+
+People expect to be able to access information and services electronically when and how they want. Increasingly, this is true of government data as well. We have arrived at a tipping point, heralding a new era in which people can use open data to generate insights, ideas, and services to create a better world for all.
+
+Open data can increase transparency about what government and business are doing. Open data also increase awareness about how countries' natural resources are used, how extractives revenues are spent, and how land is transacted and managed. All of which promotes accountability and good governance, enhances public debate, and helps to combat corruption. Transparent data on G8 development assistance are also essential for accountability.
+
+Providing access to government data can empower individuals, the media, civil society, and business to fuel better outcomes in public services such as health, education, public safety, environmental protection, and governance.
+
+A set of principles will be the foundation for access to, and the release and re-use of data made available by G8 governments. They are:
+
+* Open Data by Default
+* Quality and Quantity
+* Useable by All
+* Releasing Data for Improved Governance
+* Releasing Data for Innovation
+
+While working within national political and legal frameworks, implementation of these principles in accordance with the technical best practice and timeframes will need to be set out in our national action plans.
+
+=== Smart Oceans {blank}footnote:[http://www.globalopportunitynetwork.org/report-2016/smart-ocean/#.Vx3SrnrHmv8]
+
+Smart monitoring and observations by utilizing existing activities in the ocean to collect and manage data can close the knowledge gap we have about the ocean and the opportunities the ocean provides (<<fig5>>). Whereas monitoring technology has hitherto been constrained by the limits to duration of research vessel expeditions (e.g. battery life) and weather conditions resulting in observing short-term events or taking snapshots of longer term events; smart ocean systems represents a major shift in how science and ocean monitoring is conducted. They address the limitation of conventional technologies to allow continuous year-round, sub-second observations with dozens of measurement types, accessible through the internet, in very-near real time to any audience. New data products and services are now being designed, tested and operated that can now be monitored and managed by researchers, industry and users anywhere in the world.
+
+[[fig5]]
+.Smart Oceans: Interoperability
+image::image005.png["",726,275]
+
+=== Infrastructure for Spatial Information in Europe (INSPIRE)
+
+In Europe a major development has been the entering in force of the INSPIRE Directive {blank}footnote:[http://inspire.ec.europa.eu/] in May 2007. This legislative Directive 2007/2/EC of the European Parliament established an infrastructure for spatial information in Europe to support Community environmental policies, and policies or activities which may have an impact on the environment. It is operated by the 28 Member States of the European Union.
+
+The Directive addresses 34 spatial data themes needed for environmental applications, with key components specified through technical implementing rules, of which several are marine and maritime themes. INSPIRE is a unique example of a legislative "regional" approach to SDI.
+
+To ensure that the spatial data infrastructures of the Member States are compatible and usable in a Community and transboundary context, the Directive requires that common Implementing Rules (IR) are adopted in a number of specific areas (Metadata, Data Specifications, Network Services, Data and Service Sharing and Monitoring and Reporting). These IRs are adopted as Commission Decisions or Regulations, and are binding in their entirety.
+
+=== e-Navigation
+
+The IMO e-navigation initiative also has a vision beyond current navigational products. The Strategy Implementation Plan (SIP) states that _'as shipping moves into the digital world, e-navigation is expected to provide digital information and infrastructure for the benefit of maritime safety, security and protection of the environment, reducing administrative burden and increasing the efficiency of maritime trade and transport._' E-navigation relies on S-100 as an enabler, but also on data not currently held by HOs. Thus in sympathy with MSDI, e-navigation requires interoperability of data.
+
+The challenge at this time is to establish a digital network of information that connects ship to ship, ship to shore, shore to ship and shore to shore by a maritime digital infrastructure. International Association of Marine Aids to Navigation and Lighthouse Authorities (IALA) is also engaged in e-Navigation and supporting the establishment of a maritime digital infrastructure using IHO S-100 Standards.
+
+=== Emergency Planning and Response
+
+A driver is to develop and provide improved plans for and a far more proactive way of responding to natural and man-made disasters and emergencies in the world's sea space. We have seen several very high profile devastating events in the last five years including:
+
+* Gulf of Mexico oil spill (Sept 2010) 
+* Japan earthquake and tsunami ( March 2011) 
+* Korean ferry disaster (April 2014) 
+* Loss of Malaysia Airlines MH370 (March 2015)
+
+<<fig6>> shows images of the Gulf of Mexico oil spill and of the earthquake and tsunami that hit Japan.
+
+Reaction to each of these, and numerous other events, requires a multi-disciplinary approach including emergency response, environmental protection and longer term regional planning. Although precompiled products are currently essential, the knowledge they convey, which can be inadequate for the purpose, is often trapped in a form (whether paper or digital) that is not easily compatible with the tools and systems used by non-marine agencies. This prompts the need for greater interoperability across both data and response agencies.
+
+[[fig6]]
+.Images showing the Gulf of Mexico oil spill (left) and the Japanese tsunami (right)
+image::image006.png[]
+
+=== Rising Sea Levels
+
+Evidence of climate change is leading to raised concerns for the coastal zone both in terms of rising sea levels and the increasing occurrence of extreme weather patterns leading to greater coastal flooding. A growth in the use of cross-polar routes as the Arctic ice sheet melts may put environmental pressure on developing new sea routes in that region as well as increasing the challenges of disaster response. These new initiatives will require interoperable spatial data.
+
+=== Population growth
+
+With over 50% of the world's populations now living with 50km of the sea, the drive for additional infrastructure development in the coastal zone is growing year on year. Overall population growth is putting great pressure on energy generation, food production and other resources as well as on both the marine environment and seaborne trade. This in turn puts pressure on HOs to provide suitable support to marine spatial planning.
+
+All of the above change agents demonstrate the need for better utilization of marine data, such that more informed decision making can lead to effective solutions.

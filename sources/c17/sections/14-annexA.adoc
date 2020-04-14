@@ -1,0 +1,68 @@
+[[annexA]]
+[appendix]
+== SDI Best Practice
+
+. Oil Spill Response
++
+--
+Oil spills remain one of the most serious environmental risks for the oil and shipping industries as the environment and livelihoods can be considerably affected in the event of a significant incident. Although large spills from tankers and oil industry operations have become less frequent in the last few decades, accidents still happen and, because of their potential impact, they represent a serious risk that must be effectively managed.
+
+Responding to an oil spill requires access to and understanding of many types of information. Effective, coordinated operations for the response are based on a shared, common picture of the situation. Interoperability provides shared situational awareness of the crisis and the response activities. What is needed is a common picture of reality for different organizations that have different views of the spill so that they all can deal with it collectively. <<fig8>> shows the impact and response to oil spills.
+
+[[fig8]]
+.Impact and response to oil spills
+image::image008.png[]
+
+The Open Geospatial Consortium (OGC®) announced in March 2016 that the International Association of Oil & Gas Producers (IOGP) through the Geomatics Committee and IPIECA (the global oil and gas industry association for environmental and social issues) have issued, in cooperation with OGC and Resource Data, Inc., the OGC IOGP/IPIECA Recommended Practice for a Common Operating Picture for Oil Spill Response (OSR).
+
+In the final report of the IOGP/IPIECA Joint Industry Project, the recommended practice was provided for GIS/Mapping in support of Oil Spill Response and for the use of GIS technology and geospatial information to form a Common Operating Picture (COP) for management of the response {blank}footnote:[https://www.iho.int/mtg_docs/com_wg/MSDIWG/MSDIWG7/MSDIWG7-2.7D-OGP-IPIECA_COP_architecture.pdf]
+
+<<fig9>> highlights the geospatial information in a COP while <<fig10>> displays the schematics for an OSR Common Operating Picture (COP) delivery architecture.
+
+[[fig9]]
+.Common Operating Picture, highlighting geospatial information
+image::image009.png["",468,295]
+
+[[fig10]]
+.OSR Common Operating Picture (COP) delivery architecture
+image::image010.jpg["",653,489]
+--
+
+. Arctic SDI
++
+--
+Improved access to geospatial data can help us better to predict, understand and react to changes in the Arctic. Responses to the impact of climate change and human activities in the Arctic (<<fig11>>) requires accessible and reliable data to facilitate monitoring, management, emergency preparedness and decision making.
+
+The Arctic SDI governance model is based on cooperation on prioritized activities where, as agreed to in the Arctic SDI Memorandum of Understanding, activities are developed and managed through the voluntary commitment of each agency. The Arctic Spatial Data Infrastructure (SDI) provides such an infrastructure and its development is facilitated by the National Mapping Agencies of the eight Arctic countries.
+
+[[fig11]]
+.Environment and the human presence in the Arctic
+image::image011.png[]
+
+Important data sets are produced and distributed by many stakeholders – public and commercial sector – and most of it can be geographically referenced. A spatial data infrastructure provides tools for data distributors to ensure that their geospatial data is easier for users to access, validate and combine with other data.
+
+The role of the eight National Mapping Agencies of the Arctic countries is to provide stakeholders access to a coherent and authoritative Arctic reference map through the publication of selected data from their respective holdings as well as to lead and guide the development of an Arctic SDI to in order to develop best practice. {blank}footnote:[http://arctic-sdi.org/] <<fig12>> shows the activities supported by the Arctic SDI.
+
+[[fig12]]
+.Schematic showing the activities supported by Arctic SDI
+image::image012.png["",400,373]
+--
+
+. New Zealand Geospatial Strategy and National Spatial Data Infrastructure 
++
+--
+The New Zealand Geospatial Strategy and the national spatial data infrastructure (SDI) managed by the New Zealand Geospatial Office (NZGO), helps to ensure New Zealand's geospatial data is easy to find, share, and use. The Geospatial Executives Group (GEG) sets or amends the strategic direction of the cross-government Geospatial Strategy, monitors its progress, and identifies options for advancing the Strategy whilst the Geospatial Senior Officials Group (GSOG) actively drives the adoption of the Geospatial Strategy work programme and oversees progress against target (<<fig13>>). This is a true collaborative effort {blank}footnote:[http://www.linz.govt.nz/about-linz/our-location-strategy/geospatial-strategy-for-spatial-data-infrastructure].
+
+The aims of the SDI are to:
+
+* Define the approach needed to ensure New Zealand's geospatial information infrastructure meets the ongoing business needs of government.
+* To provide the framework for the leadership and direction needed for managing geospatial information.
+* To optimize the collective benefit from public investment in geospatial infrastructure.
+* To ensure quality priority geospatial data is available to all.
+
+[[fig13]]
+.The key pillars of the New Zealand Geospatial Strategy
+image::image013.png["",763,579]
+
+The collaborative New Zealand Open Government Information and Data Programme {blank}footnote:[http://www.linz.govt.nz/about-linz/what-were-doing/projects/open-government-information-and-data-programme] is a collaboration involving users, the open data community, civil society, and government agencies (the data suppliers). It makes public government-held information more widely available for people, communities, and businesses to re-use. Land Information New Zealand (LINZ) hosts New Zealand's Open Government Information and Data Programme. In promoting open government information and data, the Programme is a key tool in helping New Zealand maintain its strong history of open and transparent government.
+--

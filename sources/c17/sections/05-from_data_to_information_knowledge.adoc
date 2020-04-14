@@ -1,0 +1,23 @@
+== From Data to Information to Knowledge
+
+The principle of data being the foundation of knowledge is well known (<<fig3>>). In essence, knowledge is only of value if conveyed, and as the pyramid shows with a broad base of data required to extract a smaller volume of knowledge. What is less often articulated is the amount of redundancy in many knowledge systems, where far more data is held than actually converted into conveyed knowledge. The conversion of detailed bathymetric surveys into charts with sparse soundings is a good example of this. A large amount of data is collected, and although it presents a lot of information to the compiler, only a small amount of the knowledge is passed on to the recipient of the product. Thus, the knowledge transfer is only a small part of the potential of the original data. Many hydrographic data sets have the potential to convey a range of knowledge categories.
+
+[[fig3]]
+.The Data Information Knowledge triangle
+image::image003.png["",458,236]
+
+Continuing with the bathymetric survey example, in addition to providing knowledge relevant to a navigational chart (where the knowledge conveyed is shoal biased to ensure a suitable depth of water safety margin) the data could also be used for the following purposes:
+
+* Full 3D seafloor modeling for engineering purposes (e.g. underwater construction; pipeline/cable laying; dumping and dredging operations) for which shoal bias is inappropriate;
+* Seafloor type definition from backscatter data for sedimentary studies; engineering planning;
+* Sound velocity data for oceanographic studies;
+* Wreck and obstruction data in more detail than portrayed on charts (e.g. for historical studies, defense applications, recreational diving interest) and
+* Geodetic and tidal information for datum studies.
+
+In addition to the bathymetric survey case described, HOs have a wealth of other data including navigational marks, traffic schemes, boundaries and limits. The idea of exploiting as much of the data as possible, for numerous applications has to make sense in the modern world.
+
+Work remains to be done to derive benefit from HOs maritime data heritage in order to satisfy the breadth of current and future customers' needs. It seems difficult to determine non SOLAS off-the-shelf products that would meet the various possible marine data requirements. Therefore the future may lie in developing systems and workflows that would meet user requirements and from such systems derive fit-for-purpose products/maps without human assistance except at the user interface: the concept of marine ontologies may be the solution to achieve this?
+
+But what are ontologies? They are a representation of knowledge, in a particular subject domain, such as marine, that are written with a standardized and structured syntax. Ontologies can relate resources to other resources, either internally or in other ontologies. For example, an individual resource is associated with a class ("apple" is a member of "fruit") or a class is associated with an ontology (class "fruit" is described in an ontology called "food").
+
+A formal specification of a (controlled) vocabulary can be something we are all familiar with: a plain list of words, a dictionary, a taxonomy, a thesaurus or it could be a more technical document such as an Object Model in Unified Modeling Language (UML) diagram, or an eXtensible Markup Language (XML) schema. Simply expressing a controlled vocabulary in a Web Ontology Language (OWL) file makes it qualify as an ontology.

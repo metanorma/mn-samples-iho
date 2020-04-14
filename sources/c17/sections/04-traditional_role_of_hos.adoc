@@ -1,0 +1,5 @@
+== The traditional role of HOs
+
+All HOs depend on data, but mostly think and operate in terms of products. The creation of ENCs requires chart information to be decomposed into features and attributes, but the output is still a generalized product, albeit provided as data sets. The delivery of these data sets is also on a cell-by-cell basis, characterized by scale. They are therefore restricted in their use by design.
+
+Most HOs focus on supplying products to a narrow sector of navigational users. The driving force is navigational safety, with any additional use, being an opportunistic spin-off. The opportunity to service a wider user community (outside of navigation) of approximately 5 million potential users has been overlooked in the past but now needs to be seriously considered. The imperative to engage with this much wider community of users has grown with the demand for access to marine and maritime geospatial data from commerce, government, academia and the citizen.
