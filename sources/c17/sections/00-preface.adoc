@@ -1,0 +1,15 @@
+.Preface
+
+The 17^th^ International Hydrographic Conference held in May 2007, directed that CHRIS (now the IHO Hydrographic Services and Standards Committee - HSSC) establish a Marine Spatial Data Infrastructures Working Group (MSDIWG) to identify the Hydrographic Community inputs to National Spatial Data Infrastructures (NSDI). In 2015, the responsibility for the MSDIWG moved from HSSC to the Inter-Regional Coordination Committee (IRCC). This change reflected the ongoing nature of the work of the MSDIWG in tackling predominantly non-technical matters. The Terms of Reference of and other information about the MSDIWG are available at:
+
+http://www.iho.int/[www.iho.int] → Committees & WG → MSDIWG
+
+IHO publication M-2 outlines the benefits and options for the development of a national hydrographic policy that ensures a State has a knowledge of the physical features of the seabed and coast, as well as the currents, tides and certain physical properties of the sea water, such that the needs of safety of navigation and protection of the marine environment can be met. A successful national hydrographic policy will not only meet the requirements of the mariner but can provide additional and often greater benefits to the State.
+
+Having such hydrographic policies in place led to the adoption of IHO Resolution 5/2009, on MSDI policy, by the 4th Extraordinary International Hydrographic Conference in Monaco in June 2009. It stated _inter alia_ that:
+
+"_The IHO will support Member States in the identification, development and implementation of an appropriate role in national Spatial Data Infrastructure (SDI) and MSDI initiatives. This will be achieved through the development and maintenance of a Special Publication that will provide a definitive procedural guide to establishing the role of the national hydrographic authority in MSDI._"
+
+Accordingly, a procedural guide to establishing the role of the national hydrographic authority in MSDI was developed by the MSDIWG, under the title _Spatial Data Infrastructures: "The Marine Dimension" - Guidance for Hydrographic Offices_. This document was endorsed by the HSSC at its 1st meeting (Singapore, October 2009), and subsequently approved by IHO Member States as edition 1.0 of a new publication C-17. This document was subsequently updated in 2011, incorporating minor changes, as version 1.1.0.
+
+Due to the ongoing dynamic developments in MSDI the MSDIWG made selected and important changes. This version was subsequently adopted by the IHO Member States as version 2.0.0.
