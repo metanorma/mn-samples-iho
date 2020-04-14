@@ -1,0 +1,62 @@
+= SPATIAL DATA INFRASTRUCTURES "THE MARINE DIMENSION"
+:title-en: Guidance for Hydrographic Offices
+:series: C
+:edition: 2
+:docnumber: 17
+:version: 2.0.0
+:published-date: 2017-01
+:copyright-year: 2017
+:status: published
+:doctype: standard
+:imagesdir: images
+:docfile: document.adoc
+:mn-document-class: iho
+:mn-output-extensions: xml,html,doc,rxl
+:local-cache-only:
+:data-uri-image:
+
+include::sections/00-preface.adoc[]
+
+include::sections/01-introduction.adoc[]
+
+include::sections/02-sdi.adoc[]
+
+include::sections/03-current_landscape.adoc[]
+
+include::sections/04-traditional_role_of_hos.adoc[]
+
+include::sections/05-from_data_to_information_knowledge.adoc[]
+
+include::sections/06-data_duplication_and_conflict.adoc[]
+
+include::sections/07-why_is_msdi_important_to_a_ho.adoc[]
+
+include::sections/08-msdi_some_important_drivers.adoc[]
+
+include::sections/09-what_role_should_a_ho_have_in_msdi.adoc[]
+
+include::sections/10-business_planning.adoc[]
+
+include::sections/11-steps.adoc[]
+
+include::sections/12-the_challenges_for_hos.adoc[]
+
+include::sections/13-a_look_into_the_future.adoc[]
+
+include::sections/14-annexA.adoc[]
+
+include::sections/15-annexB.adoc[]
+
+include::sections/16-annexC.adoc[]
+
+include::sections/17-annexD.adoc[]
+
+include::sections/18-annexE.adoc[]
+
+include::sections/19-annexF.adoc[]
+
+include::sections/20-annexG.adoc[]
+
+include::sections/21-annexH.adoc[]
+
+include::sections/22-annexI.adoc[]
