@@ -1,0 +1,7 @@
+[[annexB]]
+[appendix]
+== Example Conceptual Model for a National SDI {blank}footnote:[https://data.gov.uk/sites/default/files/conceptual-model1_10.pdf]
+
+[[fig14]]
+.UK Government conceptual model of NSDI
+image::image014.png["",854,617]

@@ -1,0 +1,105 @@
+[[annexE]]
+[appendix]
+== Fundamentals of a Marine Spatial Data Infrastructure (MSDI)
+
+=== 1-Day Briefing Session Template
+
+[%unnumbered]
+[cols="a,a,a,a",options="header"]
+|===
+^.^| Time 2+^.^| Description ^.^| Outcome
+
+| 0830 - 0845
+2+a| *Introduction*
+
+* Welcome and introductions
+* Aims and objectives of the day
+|
+
+| 0845 - 0930
+2+a| *Session 1: Spatial Data Infrastructure* +
+_Instructor presentation on SDI_ :
+
+* Policy and Governance (People)
+* Technical Standards (Standards)
+* Information Systems / Services (ICT)
+* Geographic Content (Data)
+a| Have a basic understanding of spatial data infrastructures (SDI) and the important marine components (MSDI)
+
+| 0930 - 1015
+2+a| *Session 2: Wider uses and applications of HO data* +
+_Instructor led group discussion on:_
+
+* The future role of Hydrographic Offices
+* Supporting "The Blue Economy"
+* The role of HOs within a SDI
+a| Understand the strengths, weaknesses, opportunities and threats facing HOs and how HOs can contribute to the wider economy
+
+| 1015 - 1030
+3+^.^| *BREAK*
+
+| 1030 - 1100
+2+a| *Session 3: Data Sharing and Efficiencies* +
+_Instructor led group discussions_ introducing
+
+* Achieving best practice
+* Data sharing
+* Delivering operational efficiencies
+a| Have the knowledge and understanding of how other organizations are tackling SDI development at the national or regional level
+
+| 1100 - 1200
+2+a| *Session 4: Data Management and Data Base Development* +
+_Instructor presentations_ giving a theoretical understanding including:
+
+* Data policies and principles
+* Data management systems and design
+* Metadata
+* Sources of data
+* Structure, attribution and relationships
+* Versioning and data outputs a| Gain an understanding of the fundamentals of effective data management, database design structure and implementation and why metadata is as important as data itself!
+
+| 1200 - 1300
+3+^.^| *BREAK*
+
+| 1300 - 1400
+2+a| *Session 5: Technical Standards* +
+_Instructor presentation_ and _group discussion:_ about the importance and role of data standards including the IHO S-100: Universal Hydrographic Data Model and extending S-100 for other products and services a| Gain a basic knowledge of standards employed in the geospatial world; the implications of S-100 for the HO community and the opportunities to extend the S-1XX specifications in a common manner
+
+| 1400 - 1430
+2+a| *Session 6: Introduction to Data Publishing in the Electronic Age* +
+_Instructor presentation_ on the work of the Open Geospatial Consortia (OGC); Data Sharing and Network Services (Discover, View and Download) a| Have an understanding of what publishing means using a variety of media and how web services are developing to assist the user to access metadata and data for onward use
+
+| 1430 - 1445
+3+^.^| *BREAK*
+
+| 1445 - 1530
+a| *Session 7: MSDI - Obstacles to progress?* +
+_Instructor presentation_ introducing and addressing challenges facing HOs:
+
+* People as individuals and as part of teams
+* Organizational culture
+* Organizational structures
+* Making the business case for MSDI
+* Making change happen
+* Sustainable change
+2+a| Understand why "change" is mission critical to achieving best practice and delivering MSDI and why without the support of people, success is far from guaranteed!
+
+| 1530 - 1600
+a| *Session 8: If it's so good, why isn't it happening?* +
+_Interactive group session_ discussing the factors that hinder development, how these can be overcome by understanding, careful design, sympathetic communication with stakeholders and an understanding and appreciation of the value and benefit that change brings over time
+2+a| Have the confidence and knowledge to manage and / or contribute to the change process and identify the benefits and opportunities of MSDI and the role HOs should play in NSDI
+
+| 1600 - 1630
+a| *Session 9: What have you learnt today?* +
+_Interactive group discussion:_
+
+* Review Key Points and Messages
+* Has the briefing met your expectations?
+* How can you deliver MSDI and best practice?
+* What will success look like?
+* What are the next steps? 2+a| Reinforce key messages learnt so that attendees have a knowledge and understanding and of the fundamentals of MSDI and how people, organizations and processes influence outcomes
+
+a|
+3+^.^| *End of Briefing Session*
+
+|===

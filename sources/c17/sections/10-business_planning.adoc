@@ -1,0 +1,18 @@
+== Business Planning
+
+In order to develop the HO approach towards an SDI, it will be necessary to undertake some business planning to ensure the organization is prepared. This might take the form of a business plan and would typically include the following elements:
+
+* Have a Vision for the organization as part of an MSDI;
+* Prepare a Mission Statement (e.g. "The HO will be the center of expertise for all hydrographic information");
+* Identify existing data, products and services;
+* Confirm the HO organizational structure and governance approach;
+* Define the key objectives to ensure success;
+* Prepare an Implementation plan or "Road Map";
+* Identify the value SDI involvement will deliver to stakeholders;
+* Make the business case for MSDI including:
+** The level of investment required
+** Defining the process to assess the value and benefits
+** Identification of the risks and constraints
+** Identification of the Return on Investment (ROI)
+
+<<annexI>> lists some examples of business cases.

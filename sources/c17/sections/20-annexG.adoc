@@ -1,0 +1,42 @@
+[[annexG]]
+[appendix]
+== How HOs might engage in SDI
+
+*Through the IHO*
+
+* Website (IHO MSDIWG page and dropdown options containing guidance documents, case studies and body of knowledge) {blank}footnote:[https://www.iho.int/srv1/index.php?option=com_content&view=article&id=483&Itemid=370&lang=en]
+* Links to S-100 Universal Hydrographic Data Model data page {blank}footnote:[http://www.iho.int/iho_pubs/standard/S-100_Index.htm]
+* Regional Hydrographic Commissions (RHCs)
+* International Hydrographic Conferences
+* Capacity Building activities
+
+*Through Regional and / or National SDI focused events*
+
+* Seminars (e.g. EuroSDR, OceanWise)
+* Workshops (e.g. IHO SDI Awareness)
+* Conferences (e.g. INSPIRE; GSDI; ICC; IHO)
+* Industry (e.g. CARIS; Esri; OceanWise; Envitia)
+
+*Outreach through other Associations*
+
+* International Federation of Hydrographic Societies (IFHS)
+* Inter-Governmental Oceanographic Commission (IOC)
+* International Cartographic Association (ICA)
+* User Groups (e.g. Esri; 1Spatial)
+* Association for Geographic Information (AGI)
+* Open Geospatial Consortia (OGC)
+* World Wide Web Consortia (W3C)
+
+*Media*
+
+* Providing SDI related articles to relevant journals (e.g. Hydro magazine)
+* Advertorial in regional or national press
+* Public Relations through exhibiting and / or sponsorship of events
+
+*Leverage and influencing*
+
+* Using public relations expertise
+* Using political contacts in-country to further SDI policy development
+* Through contact with SDI regional, national or marine SDI "Champion"
+* Through Funding bodies for financial support (e.g. UNESCO; World Bank)
+* By lobbying as part of the wider SDI stakeholder group

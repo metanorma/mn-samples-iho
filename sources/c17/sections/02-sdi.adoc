@@ -1,0 +1,69 @@
+== What is a Spatial Data Infrastructure (SDI)?
+
+Spatial Data is the data or information that identifies the geographic location of features and boundaries on Earth and Space, such as natural or constructed features, oceans and space but also includes encoding attributes, observations and other metrics concerning these features and boundaries.
+
+Spatial data is usually stored as coordinates and topology, and is data that can be mapped. Spatial data is often accessed, manipulated or analyzed through Geographic Information Systems (GIS).
+
+[quote, Global Spatial Data Infrastructure (GSDI) Cookbook]
+____
+SDI is "the relevant base collection of technologies, policies and institutional arrangements that facilitate the availability of and access to spatial data".
+____
+
+
+It embraces:
+
+* The processes that integrate technologies, policies, standards, organizations and people.
+* The structure of working practices and relationships across data producers and users for access, sharing and analyzing geospatial information across government and commerce.
+* The hardware, software and system components necessary to support the processes.
+
+<<annexH>> presents an example of a conceptual model for a SDI currently in use in the United Kingdom. Frequently asked questions about SDI are found in <<annexC>>.
+
+*A Marine Spatial Data Infrastructure (MSDI)* is that element of an SDI that focuses on the marine input in terms of governance, standards, ICT and content. The concept of MSDI is now gaining wider appreciation in terms of the way a variety of data types might be combined for efficient analysis by a wide range of disciplines, such as spatial planning, environmental management and emergency response. This requires the data to be held in a generic way, rather than for a particular product for a limited user group or for a specific purpose. An MSDI is not a collection of hydrographic products, but an infrastructure that promote interoperability of data at all levels.
+
+This document focuses on the importance of MSDI to IHO MS and provides guidance towards engaging in MSDI and provides evidence of data management best practice and use cases for consideration.
+
+=== What constitutes an MSDI?
+
+An MSDI can be described as a framework comprising the key components shown in <<fig1>>.
+
+[[fig1]]
+.The Four pillars of MSDI
+image::image001.png["",622,350]
+
+==== Policy and Governance
+
+A policy should exist defining the need to create information that is interoperable. This policy is often linked to a regional, national or organizational strategy for sharing and exchanging geographic information (e.g. _INSPIRE_ in the EU {blank}footnote:[http://inspire.ec.europa.eu/], and _LINZ_ in New Zealand {blank}footnote:[http://www.linz.govt.nz/about-linz/our-location-strategy/connecting-and-sharing-geospatial-data]). <<annexF>> presents best practice guidelines for data policy.
+
+==== People & Organizations
+
+Functional MSDI requires willingness and practical co-operation between the various organizations that create, share and use information to implement the overall policy. There should also be a clearly defined governance structure and transparency in decision-making and reporting to foster a shared sense of working towards a common goal.
+
+==== Enablers
+
+The enablers in MSDI are the essential building blocks that provide the framework for data acquisition, management, updating and dissemination:
+
+* Standards: International Standards for geographic information exist or are being developed and, in many areas, sector-based standards are being put in place that depend on these over-arching standards. For example; IHO S-57 and also S-100 relies in turn on the ISO 19100 series of geographic standards. The standards work of the Open Geospatial Consortium (OGC) especially in the areas of data content modelling, data transport, and web services are critical to developing a robust SDI approach;
+
+* Technology: The provision of technical infrastructure (both hardware and software) will enable the delivery of data and services to allow the viewing, sharing {blank}footnote:[One of the key objectives on any SDI is enabling data sharing among SDI participants, this does not necessarily mean "free and unlimited access", but controlled and regulated by the SDI authorities and contributors.], transformation and downloading of data to complement informational products. As the technical infrastructure matures, development can enable the SDI not only to work in different geodetic systems but also enable the user to transform data to create informational products (such as maps) in different projections.
+
+* Metadata: At its simplest, metadata is "data about data" and describes the characteristics of a dataset (i.e. content, value and limitations) and is normally held in a metadata management system or clearinghouse to provide mechanisms of search and retrieval. .. It is a vital component in "discovering" data and information and understanding how the data can be used. The most common way to search for data through its metadata in a quick and easy manner is using a web portal
+
+* IHO S-100 Universal Hydrographic Data Model: the S-100 provides the data framework for the development of not only the next generation of ENC products, but also other related digital datasets and products required by the hydrographic, maritime and GIS communities. Specifications based on S-100 are now being developed for a range of thematic data resources such as S-102 for bathymetry and S-122 for Marine Protected Areas (MPA).
+
+==== Content
+
+Arguably, the most important component of SDI is the information content which is available to users. Without content, expressed within a consistent coordinate reference system, SDI is of minimal use. At the core of this information is reference information (i.e. the common datasets, themes or spatial data layers that "most people use most of the time" and which collectively make up a digital base "map" that can be viewed and queried).
+
+* Reference information may be defined as any geographic feature that is used as _a location reference_ for application information, or can be used in geographic analysis. It is sometimes arbitrarily divided into base and associated thematic reference information with base information comprising fundamental topographic features (e.g. buildings, roads and elevation) describing complete and detailed coverage of the Earth's surface. Associated reference information comprises supplementary datasets where this is also commonly used to support geo-referencing or analysis (e.g. transport networks, land cover).
+
+* Application information provides the _outer layer_ of information which is generally "application" or "business" specific. It may contain no spatial reference(s) other than provided by the reference information and consist only as supplementary properties.
+
+==== Education and Learning
+
+SDI cannot be successfully delivered without the four key pillars above. However, a fifth key element which underpins the four pillars; education and learning, is very important but often overlooked (<<fig2>>). In the HO community, involvement in MSDI take up and adoption has been slow. A lack of understanding of SDI has been responsible, in part, for MSDI input lagging behind its terrestrial counterparts with MSDI, as part of existing SDI not considered a priority orconsidered unnecessary.
+
+<<annexE>> introduces a 1-Day Training Session template with the Fundamentals of a Marine Spatial Data Infrastructure (MSDI).
+
+[[fig2]]
+.MSDI Framework with additional inputs to ensure success
+image::image002.png["",755,486]

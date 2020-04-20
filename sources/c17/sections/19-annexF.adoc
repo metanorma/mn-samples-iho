@@ -1,0 +1,20 @@
+[[annexF]]
+[appendix]
+== Example Uses of Hydrographic Data for Purposes Other Than Navigation
+
+* Spatial Planning
+* Coastal Zone Management
+* Habitat mapping & heritage assessment
+* Conservation assessment & designation
+* Site selection (e.g. renewable energy and oil & gas extraction)
+* Route optimization
+* Vessel location and disposal monitoring
+* Homeland security and defense
+* Aggregates extraction
+* Fisheries regulation
+* Coastal protection & shoreline management
+* Licensing & consent evaluation
+* Emergency planning & management
+* Emergency response
+* Survey planning & execution
+* Leisure & Tourism

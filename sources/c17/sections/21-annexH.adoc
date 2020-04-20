@@ -1,0 +1,53 @@
+[[annexH]]
+[appendix]
+== Stakeholders to be considered by IHO member states in developing their understanding and engagement in SDI
+
+*Standards / Normalization experts*
+
+To ensure common approach to data standards and specifications is followed (e.g. ISO, OGC)
+
+*National Mapping Agencies/ Survey Departments/Environment Departments*
+
+To discuss interoperability and potential harmonization of land and sea spatial data
+
+*Government contacts in-country*
+
+* Policy level – to identify legislative drivers for SDI
+* Administration level – to develop stakeholder involvement
+* Political level - to gain influence and leverage through the SDI "Champion"
+
+*Private Sector partners*
+
+To assist in technical requirements for SDI compliance
+
+* Software companies (e.g. CARIS; Esri, Envitia)
+* System integrators (e.g. IBM, BAE Systems)
+* Data Management specialists (e.g. OceanWise)
+
+*Users*
+
+To identify what customers of HO data require, how and when they require it to be provided
+
+*IHO Working Groups & Committees*
+
+To learn what developments and / or changes to specifications and processes are happening.
+
+*Regional or National Spatial Data Infrastructure (SDI) initiatives* such as:
+
+* European Commission (INSPIRE): Joint Research Centre in Ispra; Italy http://inspire.jrc.ec.europa.eu/[http://inspire.jrc.ec.europa.eu/]
+* Kartverket – Norway NSDI: http://kartverket.no/en/Systempages/Ordbok/N/NSDI/[http://kartverket.no/en/Systempages/Ordbok/N/NSDI/]
+* Natural Resources Canada - GeoConnections (CGDI): http://www.nrcan.gc.ca/earth-sciences/geomatics/canadas-spatial-data-infrastructure/8906[http://www.nrcan.gc.ca/earth-sciences/geomatics/canadas-spatial-data-infrastructure/8906]
+* Malaysia (MaCGDI): http://www.mygeoportal.gov.my/international-sdi[http://www.mygeoportal.gov.my/international-sdi]
+* Latin America and Caribbean: http://www.geosur.info/geosur/index.php/en/[http://www.geosur.info/geosur/index.php/en/]
+
+*GSDI*
+
+To promote international cooperation and collaboration in support of local, national and international spatial data infrastructure developments. http://gsdiassociation.org/[http://gsdiassociation.org/]
+
+*Other data providers* (e.g. geology, seismic, science)
+
+To enable interoperability at both the organizational and data level
+
+*Other marine/ maritime organizations* (e.g. ports; coast- guards; environment)
+
+To gain a wider perspective on how information and services provided by other organizations impacts on those provided by the HO and to engender collaboration and co-operation in developing SDI capability

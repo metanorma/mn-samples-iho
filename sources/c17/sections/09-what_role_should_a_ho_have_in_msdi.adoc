@@ -1,0 +1,90 @@
+== What role should a HO have in MSDI?
+
+Most HOs hold data in order to support nautical charting requirements with limited emphasis placed on providing that same data to support wider environmental and commercial coastal and offshore activities.
+
+MSDI places a greater emphasis on the unlocking of all geospatial information, including hydrographic information, and to make that information more widely available to support the myriad of uses described in <<annexB>> of this document. HOs are well placed to support SDIs in that it provides a natural extension in the management and dissemination of the underpinning hydrographic information to a wider user community in an integrated manner. All HOs should therefore carefully consider how they might engage and play a full role in the development of, or participation in a SDI. <<annexG>> show possible ways for a HO to engage in SDI.
+
+Hydrographic Offices (HO) should be able to play a central role in the development of the marine component of all SDIs. Hydrography, with its subset of data themes (e.g. bathymetry, coastline, geographic names) forms the key "base reference" or "core geography" layers for the sea space in each State or region. In this capacity, HO data is in a position to provide a rich and unparalleled resource for users at all levels.
+
+However, in some countries the HO has to struggle with other national organizations to have its data recognized as reference data so how might a HO achieve being recognized as a major component of its national MSDI? This might require discussions at a higher level within government and / or with other data providers to "make the case" for hydrographic data to be treated as a core geographic layer. Therefore the question may be "_how can HO achieve being recognized as a major component of its national MSDI"?_ The HO being convinced is not enough and making the case is sometimes not well articulated.
+
+Some HOs are already be involved in MSDI, some are considering participation (and how such involvement might benefit both the HO and other marine/maritime data providers) whilst others have yet to consider MSDI. At this time, the picture across the HO community is far from clear.
+
+Some will be seeking ways to improve their knowledge and understanding of MSDI. Being involved in MSDI does not mean that the data must be provided to a central information "warehouse" or database; it can and should be held and managed at the organizational level.
+
+=== What are the benefits to an HO in supporting an MSDI?
+
+The following benefits and opportunities are likely to be realized when HOs engage with stakeholders involved in MSDI:
+
+* greater appreciation of the inherent value in HO data and information which will lead to its wider use through the development of new products and services by the HO or its data licensees;
+* improved decision making (in respect of marine planning, integrated coastal zone management, flood mitigation, climate change adaptation, emergency response);
+* increased efficiencies in organizational processes (e.g. data collection and management) by reducing duplication and encouraging co-ordination;
+* improved data management practices especially in the critical areas of land and marine convergence across the coastal zone;
+* increased and wider exposure through hydrographic information provided for purposes other than navigation;
+* greater recognition and understanding of the role and functions of the HO through multiple use of its data;
+* cost savings through efficiencies leading to more effective use of public funds;
+* involvement in the mainstream of geospatial decision making;
+* greater co-operation with other information providers;
+* increased security in data use and reduction of risk;
+* increased opportunities for resources and funding; and
+* additional opportunities for licensing and revenue generation.
+
+A list of stakeholders to be considered by IHO Member States in developing their understanding and engagement in SDI is provided in <<annexH>>.
+
+=== What are the organizational challenges that HOs face in an MSDI?
+
+Some challenges will be apparent at the HO level but others may be at the Government or State level:
+
+* The HO showing a willingness to work with other organizations and adopting a partnership approach (e.g. developing a new joint policy on MSDI).
+* Adapting the HO organizational culture by winning over those people who are skeptical of change and, in doing so, gaining buy-in from decision makers.
+* Challenging the way things are currently done to ensure they are undertaken more effectively and efficiently in the future.
+* Accepting that hydrographic data is information, rather than a product, and taking steps to migrate from a product to a data centric operation and workflow.
+* Investing in improved business processes and information management.
+* Engaging with the non-marine community to enable them to better understand MSDI components, unique challenges and relevance.
+* Making the case for MSDI when there is a lack of funding to progress involvement.
+* Persuading decision makers and budget managers to support MSDI activities.
+* The decision to engage in MSDI may rest at a higher level within Government rather than within the HO. It is therefore important that the HO works with Government decision- makers to gain the necessary trust and authority of higher authority stakeholders to support the HO role in MSDI.
+* Ensuring the HO has the knowledge, training and skills for involvement in MSDI.
+* Getting a priority commitment for Data Management and MSDI. If no priority is given by decision makers then, regardless of how well advanced the HO is in data centric management and MSDI, this activity runs the risk of being suspended or stopped.
+
+=== Step by step approach to MSDI involvement
+
+MSDI can operate at the organization level (as an enterprise SDI), at the country/state level (as part of a national SDI) or at the regional level across borders (e.g. Arctic SDI). In all cases, it is necessary to follow the steps below to ensure success:
+
+. Prepare and define the HO policy and role for MSDI (if not done already).
+. Identify an MSDI "champion" to influence, lead and gain support for MSDI at the highest levels of leadership (this may need to be at Ministerial and/or Senior Management level).
+. Identify key HO stakeholders and their requirements.
+. Build support for engagement at Senior Management level.
+. Identify national or regional initiatives/legislation which might support SDI.
+. Participate in the appropriate IHO Regional Hydrographic Commission(s).
+. Join and actively participate in the IHO MSDI Working Group {blank}footnote:[http://www.iho.int/srv1/index.php?option=com_content&view=article&id=483&Itemid=370&lang=en]
+. Identify other data providers to the MSDI:
+.. Who are they and what is their data?
+.. How does that data complement that of the HO?
+.. Who are the key people in that organization to engage with?
+.. What do they expect from the HO by way of data content, skills and knowledge?
+.. How do they interact with other organizations in the MSDI?
+.. What are their data sharing and exchange protocols?
+. Invite other relevant marine and terrestrial data providers to engage with you.
+. Plan engagement with stakeholders and all other data providers and work to get stakeholder support (e.g. users, influencers, enablers):
+. If the MSDI is new and the HO is the lead organization, consider developing a "White Paper" for discussion and comment by senior management, decision makers and politicians across all stakeholders. Note: IHO MSDIWG has produced a White Paper {blank}footnote:[http://www.iho.int/mtg_docs/com_wg/MSDIWG/MSDIWG_Misc/MSDIWG-BOK.html]
+. Promote the benefits and opportunities to be derived from MSDI to all non-HO stakeholders.
+. Gain necessary HO approvals for involvement.
+. Set up and/or participate in MSDI stakeholder groups (e.g. Steering Group).
+. Scope out a work plan or "road map" (including timescales).
+. Identify internal HO benefits and promote them to all colleagues and decision makers.
+. Engage, respond, and communicate with all stakeholders.
+. Develop HO involvement in the MSDI.
+
+=== Building the Team to deliver MSDI
+
+Identify the appropriate skills and knowledge in your workforce to enable the development of SDI within the HO to progress. These skills should include:
+
+* Understanding what constitutes an MSDI and how it might be developed and delivered;
+* Understanding the data (e.g. its constituents, capture, aggregation);
+* Understanding the variety of potential users of the MSDI and their specific needs can better inform decision making regarding content, accessibility and metadata;
+* A knowledge of data management (standards, metadata, architecture, modelling, best practice);
+* A knowledge of Information and Communications Technology (ICT) such as web services and delivery, interoperability, data sharing and exchange, geo-portal development;
+* The ability to communicate (e.g. with users to determine requirements and describe data; with management to gain support, acceptance and funding to provide the best service);
+* A knowledge of software solutions across the geospatial information industry (e.g. platforms for delivery, database design and operation); and
+* Experience in team working to ensure delivery of common MSDI goals.

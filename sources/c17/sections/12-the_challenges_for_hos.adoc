@@ -1,0 +1,35 @@
+== The Challenges for Hydrographic Offices
+
+=== Developing a Wider Remit
+
+Given the scope of MSDI, e-navigation and no doubt other initiatives, HOs need to consider the extent of their domain and influence, and how this might need to change to address future expectations. At present most HOs work in a relatively restricted domain, mostly due to their government status, tightly defined responsibilities and funding arrangements. This limits their opportunities to reach their full potential as data custodians rather than as product producers.
+
+_Authorities who define the role of HOs therefore need to be challenged to encourage them to support the wider potential of hydrographic data._
+
+To make data accessible to users outside of the HO community, it needs to be held in a universally recognized format. S-57 is an established format, but limited to ENCs. S-100 provides the universal data model for holding a wide range of data in a widely recognized format. It is understandable that S-100 data is not yet widely available, as the product specifications based on the data model are still under development. However, HOs need to carefully consider whether they will simply export their existingdata into appropriate S-100 specifications, or convert their internal data holdings according to the principles of the S-100 universal data model.
+
+Moving to an internal data holding based on S-100, will also provide the opportunity to remove duplication and ambiguity. The aim must be to only hold each feature once such that it is known to be authoritative. If scale dependent portrayal is required, this should be an attribute of the feature and not an excuse to hold the feature more than once.
+
+The potential for HOs to contribute to national and regional SDI is becoming more realistic. This requires serious consideration in terms of the consequences to how data is managed. It is therefore important to:
+
+* Use a data centric approach, holding unique features with an identifier [UID] such that they are stored once but can be used many times;
+* Use the S-100 standard internally; and
+* Consider and promote the wider use of data.
+
+These matters could be advanced through the sharing of best practice, promotion of case studies and, given a higher level of importance, through engagement with local and national government to gain support for maintaining MSDI as an enabler to better environmental management, faster response to disasters as well as for the promotion of more efficient navigation and shipping practices.
+
+=== Data Sharing and Exchange
+
+HOs often have difficulties gaining access to commercial surveys of their national waters and in some cases they may not be aware that surveys have been undertaken. In order to obtain these surveysHOs should consider engaging further with both commercial and its wider government partner's to seek ways of gaining access to survey data that, hitherto, may not have been made available to HOs for its primary purpose of supporting safe navigation. The lack of access to survey data coupled with reducing budgets impacting on its ability to undertake the necessary surveys means there is a risk of not being able to provide a reliable service.
+
+Access to commercial surveys undertaken for other purposes, such as oil and gas exploration, dredging campaigns, offshore renewable site surveys and conservation must be considered if the HO remit is to remain relevant and affordable in future. The cost of sharing, exchanging or even licensing such data will be significantly less that undertaking repeat surveys in areas where at least some existing data is known to exist, or undertaking new surveys where the HO bears the entire cost.
+
+Examples exist whereby governments and/or commerce work together to ensure that where surveys are undertaken, that they meet S-44 standards even though the primary purpose of that survey may not be for SOLAS purposes, but perhaps for example, for seismic or conservation purposes. In the UK Dependent Territories, UKHO and the Centre for Environment, Fisheries and Aquaculture Science (Cefas) are pooling resources to ensure that future surveys undertaken can satisfy a wider need that purely hydrography in supporting future economic and socio-economic development. In France, SHOM and IFREMER share resources in a similar way gaining "economies of scale" from the outcomes of a particular survey project.
+
+In order to facilitate the wider availability of bathymetric data there are three main issues that need to be addressed by HOs:
+
+. Contractual arrangements that enable survey operators to provide appropriate bathymetric information to HOs for use in navigational products and for wider marine use, without compromising commercial or other sensitivities. This may be generalized or reduced density data.
+
+. Notification, to the HO, of intended survey operations to allow it to consider what data already exists, what will be collected and what is required by the HO to fulfil national and international obligations;
+
+. An obligation on all marine survey operators to report any information that might cause a risk to marine and / or maritime activities, particularly with respect to SOLAS dangers to navigation.

@@ -1,0 +1,9 @@
+== Introduction
+
+The purpose of this document isto explain the way that a Hydrographic Office (HO) should promote, support, and participate in Spatial Data Infrastructures (SDIs). It is not definitive in its nature, preferring instead to provide guidance on how best to achieve this through practical advice, simple step by step processes, useful links to reference material and examples of best practice.
+
+We now have a growing body of knowledge and information available to the HO community that provides guidelines rather than advice to enable us to better understand and appreciate the value and benefit of SDI. Rather than repeat this general information at length, the relevant literature reviews are provided at <<annexA>> of this document.
+
+The reader is encouraged to consult these references at an early stage of any SDI development so that the HO can make the right choices regarding whether it wishes to take a leading role in SDI development or seeks to support an existing SDI initiative or work with others to develop an SDI. In all cases, however, the HO should be seen as the competent authority concerning the provision of hydrographic and related data under any national and/or regional Marine Spatial Data Infrastructure (MSDI)
+
+There are many advantages and benefits to sharing hydrographic data and services at either a national or regional level. An HO may therefore choose to participate in a wider SDI effort, and/or to develop its own SDI at an "enterprise" level. This document provides a useful template to developing an enterprise SDI capability.

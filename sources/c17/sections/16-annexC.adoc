@@ -1,0 +1,74 @@
+[[annexC]]
+[appendix]
+== Frequently Asked Questions (FAQs) about SDI
+
+*1. What is a SDI?*
+
+SDI is a term used to summarize a range of activities, processes, relationships and physical entities that, taken together, provide for integrated management of spatial data, information and services. The term covers the processes that integrate technology, policies, criteria, standards and people necessary to promote geospatial data sharing throughout all levels of the public sector; embraces the structure of working practices and relationships among data producers and users that facilitates data sharing and use. It covers the set of actions and new ways of accessing, sharing and using geographic data that enable far more comprehensive analysis at all levels of government, the commercial and not-for-profit sectors and academia; and describes the hardware, software and system components necessary to support these processes
+
+*2. In what way does SDI affect Hydrographic Offices?*
+
+A Hydrographic Service (HO), through systematic data collection carried out on the coast and at sea, produces and disseminates information in support of maritime navigation safety and marine environment preservation, defense and exploitation. The development of an SDI is a natural extension in the management and dissemination of such information in an integrated manner.
+
+An HO is uniquely placed to play a central role in the development of the marine component of SDI‟s. Hydrography, with its subset of data themes, forms the key "core geography" layer for the sea space in a particular country or region. In this capacity, HO data provides a rich and unparalleled resource for users at all levels.
+
+*3. Why is it important that a Hydrographic Office gets involved?*
+
+By getting involved, the HO will gain a greater appreciation of the inherent value in its information which will lead to the wider use of hydrographic data and information in the development of new products and services. It would also demonstrate that the HO is a vital element of the national spatial data infrastructure and that it has a role to play. It will also allow the HO to work in cooperation with others to tackle some of the difficult issues affecting geospatial data at this time.
+
+*4. What does an HO need to consider in establishing a presence in SDI?*
+
+Firstly, the HO should prepare and define its policy relating to data to take account of its potential outside of charting and navigational use. The HO needs to identify key internal stakeholders and their requirements as well as identify an SDI "champion" for its involvement or leadership. It can then build support for engagement at Senior Management level within the HO and gain the necessary approvals for involvement.
+
+Identifying National or Regional initiatives/legislation which might support and/or mandate SDI is important as there may already be a framework in place. This process would require engagement with external SDI stakeholders. The IHO Regional Hydrographic Commissions (RHC) has a role as a stakeholder so the appropriate commission(s) should be notified. There needs to be willingness and practical co-operation between the various organizations that create, shares and uses information to implement the overall policy. There should also be a clearly defined governance structure, transparency in decision making, and reporting to foster a shared sense of a working towards a common goal.
+
+*5. In what ways is Hydrographic information important to SDI?*
+
+HO data should be an integral part of an SDI as it comprises "core reference" geographic data themes which represent a key element of the marine component of a National SDI (NSDI). MSDI is the component of an SDI that encompasses marine geographic and business information in its widest sense. This would typically include seabed topography (bathymetry), geology, marine infrastructure (e.g. wrecks, offshore installations, pipelines and cables), administrative and legal boundaries and oceanography. Much of this information resides in the HO as "source" data (e.g. dense bathymetric data) and/or product data (e.g. ENC data, digital nautical publications, digital elevation models) complete with metadata (data about data).
+
+*6. Standards play an important role in the development of SDI. What practical steps does the HO need to take to ensure it complies with the relevant standards?*
+
+International standards for geographic information exist or are being created and, in many areas, sector-based standards are being put in place that depend on these over-arching standards; for example, IHO S-100 relies on the ISO 19100 series of geographic standards. The standards work of the Open Geospatial Consortium (OGC) especially in the areas of data content modelling, data transport, and web services are critical to developing a robust SDI approach.
+
+SDI requires that data can be "discovered", managed, shared, exchanged and disseminated. At its simplest, metadata is „data about data‟ and describes the characteristics of a dataset (i.e. content, value and limitations) and normally held in a metadata management system or clearinghouse to provide mechanisms of search and retrieval. It is a vital component in "discovering" data and information and understanding how it can be used.
+
+With web-based dissemination, the use of services based on OGC standards (e.g. Web Feature Service, Web Map Services, Web Coverage Services) are becoming increasingly popular. The practical way to ensure compliance is to ensure that the basic steps in best practice data management are followed. In doing so, a metadata search facility (e.g. a portal) should be developed to allow users to find data. Specifications for data capture and management should follow industry or sector standards to ensure it is interoperable.
+
+*7. What is the value and benefit of SDI?*
+
+Engaging in SDI affords real benefits to the HO irrespective of its chosen business model. The greater appreciation of the inherent value in HO information will lead to the wider use of hydrographic data and information in the development of new products and services, improved decision making (e.g. spatial planning, integrated coastal zone management, flood mitigation and climate change adaptation).
+
+Efficiencies in organizational processes (e.g. data collection and management) will be gained by reducing duplication and encouraging co-ordination of activities promoting the more effective use of public funds. It will also enable the HO to be in the mainstream of geospatial decision making through co-operation and working together with other information providers. Downstream benefits from this approach will be realized in three ways; enhanced commercial activity in the marine environment, supporting national or regional legislative initiatives and through developing the knowledge economy.
+
+*8. How much is this likely to cost the organization?*
+
+The real cost of developing the framework within the HO to support an SDI is relatively low. In some respects the costs of not doing this is greater in the longer term, in that the HO will be "left behind" in key areas of organizational efficiency and excellence. There is no requirement for a HO to capture new information or to change the way data is ingested, managed or disseminated as part of SDI development. What it does require is a change in the way the HO approaches the components of SDI in order to achieve best practice and drive through efficiencies and effectiveness in the organization. Investing in improved business processes and information management may be necessary but as part of business improvement plans.
+
+*9. What challenges is the HO likely to encounter in developing its role in SDI?*
+
+There will be obstacles to be encountered on the route to SDI engagement and participation. A number of these obstacles will not necessarily be technological but about the organization and its people. Being able to work with other organizations and adopting a partnership approach is critical to success, but equally important is persuading HO staff to challenge the way things are currently done to ensure they are undertaken more efficiently in the future and to change the culture of the organization; winning over sceptics whilst at the same time educating the non-marine community about marine SDI components. It is essential that the HO has the knowledge, training and skills for involvement in SDI.
+
+SDI is all about accepting that hydrographic data is information rather than products such as charts. Provision of funding across the HO community is always an issue so one challenge might be persuading the budget manager to support such activities.
+
+*10. What are appropriate timescales over which an SDI might be developed?*
+
+An SDI will be developed over a period of time. It is not something that can be delivered quickly. In the European Union (EU), the INSPIRE programme is set to develop over a 13 year period, but that does involve 28 States in the EU. At the national level 3-5 years might be considered a realistic ambition for development.
+
+*11. How can an HO ensure it remains at the forefront of SDI in the future?*
+
+An HO can remain engaged in the process by delivering best practice in terms of data and organizational management and by communicating with others involved at all times on developments and innovation in the way progress of the SDI is managed and monitored.
+
+*12. How can a HO make the Business Case for investment in MSDI?*
+
+It is vital that HO decision makers and stakeholders work together to put together a sound financial and operational case for MSDI. In addition to a project definition, the complete business case should include the following elements:
+
+* Financial Analysis
+** This is usually a summary of key financial metrics and highlights including: detailed assumptions, calculations, and the complete sensitivity analysis.
+* Strategic Analysis
+** This includes internal and external benefits and project interrelationships. In the case of collaborative projects, this will describe the full project, the cost-sharing methodology, and if relevant, the benefits to other participants and the community.
+* Recommended Course of Action
+** If the business case is persuasive, it should conclude with a recommendation to make the investment (perhaps with other participating agencies). If the business case is not persuasive, it may end with a recommendation to table the project concept for future consideration.
+
+Falling technology costs, the growth of commercially available spatial data, and regulatory changes can make a difference in the costs and benefits of a MSDI project. Participating agencies may wish to revisit tabled business cases as part of an annual strategic planning process to determine whether circumstances have changed sufficiently to warrant an updated analysis.
+
+A business case may be extremely brief or may be significantly longer. Larger investments often require more detailed business cases {blank}footnote:[https://www.fgdc.gov/policyandplanning/future-directions/action-plans/draftroiworkbook].

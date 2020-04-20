@@ -1,0 +1,11 @@
+== The Current Landscape
+
+Since C-17 was first published in 2009 the landscape in which HOs operate has rapidly changed due to, for example, the need for greater access and sharing of public data; open data initiatives; the development of new and potentially disruptive technologies and the advent of the power of "place" driven by the expectations of users viewing, analyzing and using spatial data.
+
+New data capture technologies such as satellite derived bathymetry, crowd sourced data and the use of Underwater Autonomous and Remotely Operated Vehicles (UAV and ROV) are now being actively employed as more cost effective methods in sea regions and depths where either existing data is poor or non-existent and where conditions allow for the use of these technologies. Ship-borne survey may over time become the capture platform of last resort for some purposes. The emergence of e-Navigation, a concept developed by IMO, embraces the harmonized collection, integration, exchange, presentation and analysis of maritime information on board ship and ashore. It does this by electronic means to enhance berth to berth navigation and related services, for safety and security at sea and protection of the marine environment.
+
+Politicians are now taking a far greater interest in the world's sea space in terms of its potential to generate economic and socio-economic benefits and to maximize this within national territorial sea limits. The recent spate of disasters at sea across the World have all heightened the urgency for better access and re-use of HO data for emergency response purposes.
+
+Geospatial data and information is no longer seen as "special" or "different" as the citizen, thanks to Google, Microsoft and other global technology companies providing mapping "mash ups", now use such information without even thinking about where it came from and any intrinsic value contained therein. We now have mobile devices capable of doing what a mainframe computer did 10 years ago for a fraction of the cost in a fraction of the time.
+
+The value of geospatial data has fallen by approximately 80% in the last 5 years. It is now considered to be a commodity resource. In turn the advent of Open Data strategies by nations, allowing the re-use of data in a free and open manner is itself stimulating the growth of applications developed by commercial companies.

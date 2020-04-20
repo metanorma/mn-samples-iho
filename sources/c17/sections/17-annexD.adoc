@@ -1,0 +1,47 @@
+[[annexD]]
+[appendix]
+== Hydrographic Data Policy
+
+=== Best Practice Guidelines for Hydrographic Offices
+
+*Background*
+
+Fit for purpose Hydrographic data and information, which is authoritative and up to date, is essential in underpinning evidence-based decision making and asset management enabling Governments and the commercial sector to deliver their policy objectives for the marine environment and coastal zone.
+
+Ensuring good governance and the most productive use of existing and new data and information is a key aim of emergent marine monitoring and science strategies as well as underpinning coastal zone management.
+
+Hydrographic data and information is acquired, managed, manipulated, and disseminated primarily by Hydrographic Offices (HOs). Its use outside of navigational products and services has been limited to date but the requirement for such information from other users, both public and private sector, is growing very swiftly across the World.
+
+Hydrographic Data Policies underpinned by best practice are needed to support the requirements of a Spatial Data Infrastructure (SDI) of which geospatial information in the marine space is a major component.
+
+*Policy Aim*
+
+The overall aims of a HO Data Policy is to provide Government and the commercial sector with appropriate data and information to deliver its marine objectives; to support the safe, sustainable use and development of its coastline and seas, whilst encouraging data sharing and re-use and the optimization of public funds.
+
+These aims shall be achieved by HOs by implementing the following policy statements whilst working together with others to the benefit of the wider marine community.
+
+*Policy Statements*
+
+. HOs acquiring or holding hydrographic data shall document the existence of these datasets (themselves or via a third party) and make this information publicly available through the creation and dissemination of metadata to ISO standards.
+
+. Where it is impractical to use data directly (for example, it is not to a required specification) consideration shall be given to making existing data usable prior to undertaking nugatory work.
+
+. HOs shall adopt and assist in the development of common standards, technology and inter-organizational relationships that promote and facilitate data sharing and re-use.
+
+. HOs shall define terms and conditions associated with data sharing and re-use, adopting common and user friendly licensing procedures, wherever possible, in line with any emerging simplified licensing requirements.
+
+. HOs shall ensure the appropriate governance framework, knowledge and skills necessary to acquire, manage, manipulate, use and re-use data effectively are put in place.
+
+. HOs along with other organizations shall collaborate to coordinate marine and coastal data acquisition thereby avoiding replication and ensuring cost effective and efficient use of public funds.
+
+. HOs shall collaborate to create common reference datasets (e.g. elevation of the sea bed) by utilizing existing data wherever possible.
+
+. HOs identified as authorities for core geographic reference data (e.g. seabed characterization or topography) shall maintain this data to the required standards and at as close to source scale as possible, to ensure its re-use applicability now and in the future.
+
+. HOs must ensure that it owns, or has the appropriate rights to, the data that allows the HO to populate the SDI with that data.
+
+. In order to enable the maximum re-use and sharing of all information held by the HO, best practice in data management will be adopted.
+
+. HOs, as data owners or custodians, shall maximize the value and benefit of Hydrographic data by defining appropriate and flexible rights of use and not impose unreasonable restrictions on use.
+
+. Organizations involved in SDI (including HOs) will seek to establish and maintain interoperability of marine information with associated land information and underground information so that users on-shore or off-shore may use common datasets in solving coastal zone issues.
