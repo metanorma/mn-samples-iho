@@ -67,7 +67,7 @@ It is vital that HO decision makers and stakeholders work together to put togeth
 * Strategic Analysis
 ** This includes internal and external benefits and project interrelationships. In the case of collaborative projects, this will describe the full project, the cost-sharing methodology, and if relevant, the benefits to other participants and the community.
 * Recommended Course of Action
-** If the business case is persuasive, it should conclude with a recommendation to make the investment (perhaps with other participating agencies). If the business case is not persuasive, it may end with a recommendation to table the project concept for future consideration. 
+** If the business case is persuasive, it should conclude with a recommendation to make the investment (perhaps with other participating agencies). If the business case is not persuasive, it may end with a recommendation to table the project concept for future consideration.
 
 Falling technology costs, the growth of commercially available spatial data, and regulatory changes can make a difference in the costs and benefits of a MSDI project. Participating agencies may wish to revisit tabled business cases as part of an annual strategic planning process to determine whether circumstances have changed sufficiently to warrant an updated analysis.
 

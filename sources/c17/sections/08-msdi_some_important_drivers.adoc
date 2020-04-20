@@ -12,7 +12,7 @@ image::image004.png["",369,581]
 
 The strategy consists of three components:
 
-. Develop the sectors with potential for sustainable jobs and growth: 
+. Develop the sectors with potential for sustainable jobs and growth:
 * aquaculture and fisheries
 * coastal tourism
 * marine biotechnology
@@ -98,9 +98,9 @@ The challenge at this time is to establish a digital network of information that
 
 A driver is to develop and provide improved plans for and a far more proactive way of responding to natural and man-made disasters and emergencies in the world's sea space. We have seen several very high profile devastating events in the last five years including:
 
-* Gulf of Mexico oil spill (Sept 2010) 
-* Japan earthquake and tsunami ( March 2011) 
-* Korean ferry disaster (April 2014) 
+* Gulf of Mexico oil spill (Sept 2010)
+* Japan earthquake and tsunami ( March 2011)
+* Korean ferry disaster (April 2014)
 * Loss of Malaysia Airlines MH370 (March 2015)
 
 <<fig6>> shows images of the Gulf of Mexico oil spill and of the earthquake and tsunami that hit Japan.

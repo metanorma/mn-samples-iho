@@ -1,12 +1,11 @@
-= SPATIAL DATA INFRASTRUCTURES "THE MARINE DIMENSION"
-:title-en: Guidance for Hydrographic Offices
+= Spatial Data Infrastructures "The Marine Dimension"
 :series: C
-:edition: 2
 :docnumber: 17
 :version: 2.0.0
+:title-en: Guidance for Hydrographic Offices
 :published-date: 2017-01
 :copyright-year: 2017
-:status: published
+:status: in-force
 :doctype: standard
 :imagesdir: images
 :docfile: document.adoc

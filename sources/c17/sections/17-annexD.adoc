@@ -22,26 +22,26 @@ These aims shall be achieved by HOs by implementing the following policy stateme
 
 *Policy Statements*
 
-. HOs acquiring or holding hydrographic data shall document the existence of these datasets (themselves or via a third party) and make this information publicly available through the creation and dissemination of metadata to ISO standards. 
+. HOs acquiring or holding hydrographic data shall document the existence of these datasets (themselves or via a third party) and make this information publicly available through the creation and dissemination of metadata to ISO standards.
 
-. Where it is impractical to use data directly (for example, it is not to a required specification) consideration shall be given to making existing data usable prior to undertaking nugatory work. 
+. Where it is impractical to use data directly (for example, it is not to a required specification) consideration shall be given to making existing data usable prior to undertaking nugatory work.
 
 . HOs shall adopt and assist in the development of common standards, technology and inter-organizational relationships that promote and facilitate data sharing and re-use.
 
-. HOs shall define terms and conditions associated with data sharing and re-use, adopting common and user friendly licensing procedures, wherever possible, in line with any emerging simplified licensing requirements. 
+. HOs shall define terms and conditions associated with data sharing and re-use, adopting common and user friendly licensing procedures, wherever possible, in line with any emerging simplified licensing requirements.
 
-. HOs shall ensure the appropriate governance framework, knowledge and skills necessary to acquire, manage, manipulate, use and re-use data effectively are put in place. 
+. HOs shall ensure the appropriate governance framework, knowledge and skills necessary to acquire, manage, manipulate, use and re-use data effectively are put in place.
 
-. HOs along with other organizations shall collaborate to coordinate marine and coastal data acquisition thereby avoiding replication and ensuring cost effective and efficient use of public funds. 
+. HOs along with other organizations shall collaborate to coordinate marine and coastal data acquisition thereby avoiding replication and ensuring cost effective and efficient use of public funds.
 
-. HOs shall collaborate to create common reference datasets (e.g. elevation of the sea bed) by utilizing existing data wherever possible. 
+. HOs shall collaborate to create common reference datasets (e.g. elevation of the sea bed) by utilizing existing data wherever possible.
 
-. HOs identified as authorities for core geographic reference data (e.g. seabed characterization or topography) shall maintain this data to the required standards and at as close to source scale as possible, to ensure its re-use applicability now and in the future. 
+. HOs identified as authorities for core geographic reference data (e.g. seabed characterization or topography) shall maintain this data to the required standards and at as close to source scale as possible, to ensure its re-use applicability now and in the future.
 
-. HOs must ensure that it owns, or has the appropriate rights to, the data that allows the HO to populate the SDI with that data. 
+. HOs must ensure that it owns, or has the appropriate rights to, the data that allows the HO to populate the SDI with that data.
 
-. In order to enable the maximum re-use and sharing of all information held by the HO, best practice in data management will be adopted. 
+. In order to enable the maximum re-use and sharing of all information held by the HO, best practice in data management will be adopted.
 
-. HOs, as data owners or custodians, shall maximize the value and benefit of Hydrographic data by defining appropriate and flexible rights of use and not impose unreasonable restrictions on use. 
+. HOs, as data owners or custodians, shall maximize the value and benefit of Hydrographic data by defining appropriate and flexible rights of use and not impose unreasonable restrictions on use.
 
 . Organizations involved in SDI (including HOs) will seek to establish and maintain interoperability of marine information with associated land information and underground information so that users on-shore or off-shore may use common datasets in solving coastal zone issues.

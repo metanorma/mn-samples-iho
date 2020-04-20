@@ -12,9 +12,9 @@ Ensure the necessary skills and knowledge is available to enable the development
 
 HO data which *should* be part of an MSDI includes any navigational or other water body data {blank}footnote:[This will depend on the constitution and remit of the HO and fellow Government Agencies. In some cases the only data the HO could offer may be bathymetry as other data falls under the responsibility of other Departments and Agencies and they may have good reasons for not releasing the information.] and comprises at least:
 
-* "source" data (e.g. dense bathymetric data) and/or 
-* product data (e.g. ENC data, digital nautical publications, Digital Elevation Model) complete with 
-* metadata (data about data). 
+* "source" data (e.g. dense bathymetric data) and/or
+* product data (e.g. ENC data, digital nautical publications, Digital Elevation Model) complete with
+* metadata (data about data).
 
 Identify those themes of data that would support the MSDI as "core or base reference" information (e.g. bathymetry, seabed characterization, and coastline).
 
@@ -26,17 +26,17 @@ The HO should also identify the organization's data custodians/stewards for each
 
 Types of Hydrographic data (by theme) suitable for MSDI mayinclude:
 
-* Bathymetry (e.g. Digital Elevation Model, Triangulated Irregular Network, Grid, points); 
-* Coastline; 
-* Tidal data (heights and streams); 
-* Oceanographic data (e.g. sound velocity, salinity, temperature, currents); 
-* Aids to Navigation (e.g. lights, landmarks, buoys); 
-* Maritime information and regulations (e.g. administrative limits, traffic separation schemes); 
-* Obstructions and wrecks; 
-* Geographical names (e.g. sea names, undersea feature names, charted coastal names); 
-* Seafloor type (e.g. sand, rocks, mud); 
-* Constructions/infrastructure at sea (e.g. wind farms, oil platforms, submarine cables, pipelines); 
-* Shoreline constructions/infrastructures (e.g. tide gauges, jetties) and 
+* Bathymetry (e.g. Digital Elevation Model, Triangulated Irregular Network, Grid, points);
+* Coastline;
+* Tidal data (heights and streams);
+* Oceanographic data (e.g. sound velocity, salinity, temperature, currents);
+* Aids to Navigation (e.g. lights, landmarks, buoys);
+* Maritime information and regulations (e.g. administrative limits, traffic separation schemes);
+* Obstructions and wrecks;
+* Geographical names (e.g. sea names, undersea feature names, charted coastal names);
+* Seafloor type (e.g. sand, rocks, mud);
+* Constructions/infrastructure at sea (e.g. wind farms, oil platforms, submarine cables, pipelines);
+* Shoreline constructions/infrastructures (e.g. tide gauges, jetties) and
 * Practice and Exercise and /or Restricted areas. {blank}footnote:[If allowed to be released to the MSDI.]
 
 Some of the above themes of data might be held by other authorities who are also providing inputs to an SDI. Ideally, the HO should discuss with other data providers where potential overlaps exist in data holdings. Part of this discussion would involve the need to de-conflict data where overlap occurs. Source data should prevail over derived/generalized product data.
@@ -49,11 +49,11 @@ The minimum set of metadata required for data discovery for hydrographic require
 
 Metadata should:
 
-* provide data producers with appropriate information to characterize their data properly; 
-* facilitate discovery, retrieval and reuse of data so that users will be better able to locate, access, evaluate, and utilize their resources; 
-* enable users to apply data in the most efficient way by knowing its basic characteristics; 
-* provide optional metadata elements to allow for more detailed description of data; 
-* Use the ISO 19115 as the standard to ensure full interoperability. 
+* provide data producers with appropriate information to characterize their data properly;
+* facilitate discovery, retrieval and reuse of data so that users will be better able to locate, access, evaluate, and utilize their resources;
+* enable users to apply data in the most efficient way by knowing its basic characteristics;
+* provide optional metadata elements to allow for more detailed description of data;
+* Use the ISO 19115 as the standard to ensure full interoperability.
 
 An essential part of metadata includes information on the Geographic Reference Systems used {blank}footnote:[Iliffe, J and Lott, R (2008) "Datums and Map Projections": Whittles Publishing; Dunbeath]
 . This includes both horizontal and vertical datum and projection (e.g. EPSG [European Petroleum Survey Group] codes, Coordinates [e.g. xyz, WGS84 datum, Vertical Datum [e.g. local and regional]).
@@ -62,10 +62,10 @@ An essential part of metadata includes information on the Geographic Reference S
 
 <<fig7>> shows the 5 Star approach to digital data form. In general:
 
-* scan manuscript documents into raster formats ensuring that the scan density is such that it can be used without resorting to the hard copy to resolve readability; and/or 
-* capture data in vector format where possible. This could be done using optical character recognition methods or capture using double digitization to ensure the quality and completeness of data capture (e.g. hand-drawn soundings). 
-* ensure rigorous checking and validation is in place. 
-* capture data as close to source scale or highest resolution as possible (i.e. not at product scale). 
+* scan manuscript documents into raster formats ensuring that the scan density is such that it can be used without resorting to the hard copy to resolve readability; and/or
+* capture data in vector format where possible. This could be done using optical character recognition methods or capture using double digitization to ensure the quality and completeness of data capture (e.g. hand-drawn soundings).
+* ensure rigorous checking and validation is in place.
+* capture data as close to source scale or highest resolution as possible (i.e. not at product scale).
 
 [[fig7]]
 .The 5 star approach to digital data management (http://5stardata.info/[http://5stardata.info])
@@ -75,35 +75,35 @@ image::image007.png["",616,381]
 
 In order for data to be more easily shared and exchanged as part of an SDI, certain things have to be considered:
 
-* Apply MSDI implementation rules (defined by the MSDI to which the HO is joining). 
-* Study best practice guidelines if the HO is creating an MSDI itself. 
-* Identify where harmonizing the data from other providers to meet MSDI requirements in terms of its interoperability is possible. Always keep it simple. 
-* Define the standards with which the HO is already compliant (e.g. S-57, S-100, ISO 19100 series, OGC standards). 
-* Use of "web-based" services based on OGC standards (e.g. Web Map Services [WMS], Web Feature Service [WFS], Web Coverage Services [WCS] or Tile Map Services [TMS]). 
+* Apply MSDI implementation rules (defined by the MSDI to which the HO is joining).
+* Study best practice guidelines if the HO is creating an MSDI itself.
+* Identify where harmonizing the data from other providers to meet MSDI requirements in terms of its interoperability is possible. Always keep it simple.
+* Define the standards with which the HO is already compliant (e.g. S-57, S-100, ISO 19100 series, OGC standards).
+* Use of "web-based" services based on OGC standards (e.g. Web Map Services [WMS], Web Feature Service [WFS], Web Coverage Services [WCS] or Tile Map Services [TMS]).
 
 *Step 7: Make the Metadata Searchable*
 
-* Initially on your website (but ideally through SDI Geo-portal if available). 
-* Update the metadata to identify raster or vector data availability. 
-* Enable the search for metadata by type, area and/or key word. 
+* Initially on your website (but ideally through SDI Geo-portal if available).
+* Update the metadata to identify raster or vector data availability.
+* Enable the search for metadata by type, area and/or key word.
 
 *Step 8: Make the Data Available*
 
-* Develop download facilities for data sets (note that for some dense datasets, the use of web delivery is not possible). 
-* Develop automated search and download of data sets via web mapping services (WMS, TMS). 
-* Develop a seamless validated database of vector data using international standards (e.g. S-57 object catalogue or S-100 concept dictionary or data model). 
+* Develop download facilities for data sets (note that for some dense datasets, the use of web delivery is not possible).
+* Develop automated search and download of data sets via web mapping services (WMS, TMS).
+* Develop a seamless validated database of vector data using international standards (e.g. S-57 object catalogue or S-100 concept dictionary or data model).
 * Where security of data is an issue, develop an acceptable level at which data can be made available either in-country or internationally. This may involve data thinning or gridding to a level where data might be declassified. It is important to promote the fact that "data can be released unless there is a very good reason why it cannot".
-* Facilitate automated search and download of data via web feature services (WFS). 
-* Establish a licensing and, if required, a cost recovery regime supported and underpinned by an organizational and/or government policy. 
+* Facilitate automated search and download of data via web feature services (WFS).
+* Establish a licensing and, if required, a cost recovery regime supported and underpinned by an organizational and/or government policy.
 
 *Step 9: Monitoring and Reporting*
 
 Every HO should provide update reports, regarding their status in respect of building, engagement and/or contributing to an SDI in their country or region, to their respective Regional Hydrographic Commission (RHC) meetings. Such a report should include:
 
-* What data is being disseminated (through web-based access or manual dissemination); 
-* Identification of which datasets complete with metadata are to be provided into an SDI and report progress on preparation; 
-* Monitoring and report on feedback from users and stakeholders; and 
-* Defining the type of data services and products being offered by the HO. 
+* What data is being disseminated (through web-based access or manual dissemination);
+* Identification of which datasets complete with metadata are to be provided into an SDI and report progress on preparation;
+* Monitoring and report on feedback from users and stakeholders; and
+* Defining the type of data services and products being offered by the HO.
 
 *Step 10: Making MSDI Involvement Sustainable*
 

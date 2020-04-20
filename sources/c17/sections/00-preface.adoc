@@ -8,7 +8,9 @@ IHO publication M-2 outlines the benefits and options for the development of a n
 
 Having such hydrographic policies in place led to the adoption of IHO Resolution 5/2009, on MSDI policy, by the 4th Extraordinary International Hydrographic Conference in Monaco in June 2009. It stated _inter alia_ that:
 
-"_The IHO will support Member States in the identification, development and implementation of an appropriate role in national Spatial Data Infrastructure (SDI) and MSDI initiatives. This will be achieved through the development and maintenance of a Special Publication that will provide a definitive procedural guide to establishing the role of the national hydrographic authority in MSDI._"
+____
+The IHO will support Member States in the identification, development and implementation of an appropriate role in national Spatial Data Infrastructure (SDI) and MSDI initiatives. This will be achieved through the development and maintenance of a Special Publication that will provide a definitive procedural guide to establishing the role of the national hydrographic authority in MSDI.
+____
 
 Accordingly, a procedural guide to establishing the role of the national hydrographic authority in MSDI was developed by the MSDIWG, under the title _Spatial Data Infrastructures: "The Marine Dimension" - Guidance for Hydrographic Offices_. This document was endorsed by the HSSC at its 1st meeting (Singapore, October 2009), and subsequently approved by IHO Member States as edition 1.0 of a new publication C-17. This document was subsequently updated in 2011, incorporating minor changes, as version 1.1.0.
 

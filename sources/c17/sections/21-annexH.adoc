@@ -12,15 +12,15 @@ To discuss interoperability and potential harmonization of land and sea spatial 
 
 *Government contacts in-country*
 
-* Policy level – to identify legislative drivers for SDI 
-* Administration level – to develop stakeholder involvement 
-* Political level - to gain influence and leverage through the SDI "Champion" 
+* Policy level – to identify legislative drivers for SDI
+* Administration level – to develop stakeholder involvement
+* Political level - to gain influence and leverage through the SDI "Champion"
 
 *Private Sector partners*
 
 To assist in technical requirements for SDI compliance
 
-* Software companies (e.g. CARIS; Esri, Envitia) 
+* Software companies (e.g. CARIS; Esri, Envitia)
 * System integrators (e.g. IBM, BAE Systems)
 * Data Management specialists (e.g. OceanWise)
 

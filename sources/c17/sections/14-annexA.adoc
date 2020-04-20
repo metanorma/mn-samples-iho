@@ -48,7 +48,7 @@ The role of the eight National Mapping Agencies of the Arctic countries is to pr
 image::image012.png["",400,373]
 --
 
-. New Zealand Geospatial Strategy and National Spatial Data Infrastructure 
+. New Zealand Geospatial Strategy and National Spatial Data Infrastructure
 +
 --
 The New Zealand Geospatial Strategy and the national spatial data infrastructure (SDI) managed by the New Zealand Geospatial Office (NZGO), helps to ensure New Zealand's geospatial data is easy to find, share, and use. The Geospatial Executives Group (GEG) sets or amends the strategic direction of the cross-government Geospatial Strategy, monitors its progress, and identifies options for advancing the Strategy whilst the Geospatial Senior Officials Group (GSOG) actively drives the adoption of the Geospatial Strategy work programme and oversees progress against target (<<fig13>>). This is a true collaborative effort {blank}footnote:[http://www.linz.govt.nz/about-linz/our-location-strategy/geospatial-strategy-for-spatial-data-infrastructure].

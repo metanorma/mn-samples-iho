@@ -5,7 +5,10 @@ Spatial Data is the data or information that identifies the geographic location 
 Spatial data is usually stored as coordinates and topology, and is data that can be mapped. Spatial data is often accessed, manipulated or analyzed through Geographic Information Systems (GIS).
 
 [quote, Global Spatial Data Infrastructure (GSDI) Cookbook]
-*_SDI is "the relevant base collection of technologies, policies and institutional arrangements that facilitate the availability of and access to spatial data"._*
+____
+SDI is "the relevant base collection of technologies, policies and institutional arrangements that facilitate the availability of and access to spatial data".
+____
+
 
 It embraces:
 

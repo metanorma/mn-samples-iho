@@ -2,7 +2,7 @@
 [appendix]
 == SDI Business Plans – Links to examples
 
-. *The Philippine Geospatial Data Infrastructure (PGDI) Master Plan 2011-2020* 
+. *The Philippine Geospatial Data Infrastructure (PGDI) Master Plan 2011-2020*
 +
 http://namria.gov.ph/Downloads/PGDIMasterPlan.pdf[http://namria.gov.ph/Downloads/PGDIMasterPlan.pdf]
 
