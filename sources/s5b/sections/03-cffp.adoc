@@ -1,0 +1,15 @@
+[[cffp]]
+== CFFP: Comprehensive Final Field Project
+
+Programmes must include a supervised and evaluated Comprehensive Final Field Project with a minimum aggregate period of *at least four weeks*; see "GUIDELINES FOR THE IMPLEMENTATION OF THE STANDARDS OF COMPETENCE FOR HYDROGRAPHIC SURVEYORS AND NAUTICAL CARTOGRAPHERS".
+
+The Comprehensive Final Field Project for Category "B" level shall comprise a comprehensive field survey incorporating different aspects of hydrography in a complex environment with varying sea-floor and oceanographic conditions.
+
+Students should undertake:
+
+* Survey specification and planning;
+* Hydrographic and oceanographic measurements using a comprehensive suite of instruments;
+* Data processing, quality control and quality assurance ;
+* Preparation of different type of product deliverables and reports.
+
+NOTE: the Comprehensive Final Field Project does not include the practical exercises that form a part of the course modules syllabi and are designed to complement the theory.

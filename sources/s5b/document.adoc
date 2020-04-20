@@ -1,0 +1,23 @@
+= STANDARDS OF COMPETENCE FOR CATEGORY "B" HYDROGRAPHIC SURVEYORS
+:series: S
+:docnumber: 5B
+:doctype: standard
+:version: 1.0.1
+:language: en
+:published-date: 2017-06
+:copyright-year: 2017
+:status: published
+:docfile: document.adoc
+:mn-document-class: iho
+:mn-output-extensions: xml,html,doc,rxl
+:local-cache-only:
+:data-uri-image:
+:imagesdir: images
+
+include::sections/00-preface.adoc[]
+
+include::sections/01-basic_subjects.adoc[]
+
+include::sections/02-essential_subjects.adoc[]
+
+include::sections/03-cffp.adoc[]

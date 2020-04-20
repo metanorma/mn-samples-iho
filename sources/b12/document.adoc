@@ -1,17 +1,18 @@
 = Guidance on Crowdsourced Bathymetry
 :series: B
 :docnumber: 12
+:doctype: standard
 :version: 2.0.3
+:language: en
 :published-date: 2020-01-20
 :copyright-year: 2020
 :status: in-force
-:doctype: standard
-:imagesdir: images
 :docfile: document.adoc
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,rxl
 :local-cache-only:
 :data-uri-image:
+:imagesdir: images
 
 include::sections/00-preface.adoc[]
 

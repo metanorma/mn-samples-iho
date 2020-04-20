@@ -1,19 +1,18 @@
 = STANDARDS OF COMPETENCE FOR CATEGORY "A" HYDROGRAPHIC SURVEYORS
-:doctype:
-:edition: 1.0.2
+:series: S
+:docnumber: 5A
+:doctype: standard
+:version: 1.0.2
 :language: en
 :published-date: 2018-06
 :copyright-year: 2018
 :status: published
-:committee: technical
-:docnumber: S-5A
 :docfile: document.adoc
 :mn-document-class: iho
-:mn-output-extensions: xml,html,doc,pdf,rxl
+:mn-output-extensions: xml,html,doc,rxl
 :local-cache-only:
 :data-uri-image:
 :imagesdir: images
-:stem:
 
 include::sections/00-preface.adoc[]
 
