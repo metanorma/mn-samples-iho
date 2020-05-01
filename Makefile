@@ -65,6 +65,7 @@ documents/%.html: documents/%.xml | documents
 	${PREFIX_CMD} metanorma $<
 
 documents/%.xml: sources/%.xml | documents
+	mkdir -p $(dir $@)
 	mv $< $@
 
 # Build canonical XML output
@@ -173,3 +174,17 @@ published: documents.html
 	mkdir -p $@ && \
 	cp -a documents $@/ && \
 	cp $< $@/index.html;
+
+#
+# PDF
+#
+
+PDFTEXT := $(patsubst %.pdf,%.txt,$(subst /pdfs,/text,$(wildcard reference-docs/pdfs/*.pdf)))
+
+pdf2text: $(PDFTEXT)
+
+reference-docs/text:
+	mkdir -p $@
+
+reference-docs/text/%.txt: reference-docs/pdfs/%.pdf | reference-docs/text
+	ps2ascii "$<" "$@"
