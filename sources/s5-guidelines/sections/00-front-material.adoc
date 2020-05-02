@@ -1,0 +1,39 @@
+
+[.preface]
+== ABSTRACT
+
+All components of the hydrographic surveying and nautical cartography professions face challenges as how best to ensure the continuance of high standards and how best to ensure the continuation of best practices world-wide based on minimum standards of competence. In order to achieve these objectives, three international organizations (FIG, IHO and ICA) have developed Standards of Competence that institutions or professional bodies may adopt for their educational/training programmes and competency schemes.
+
+Standards indicate the minimum degree of knowledge considered necessary for hydrographic surveyors and nautical cartographers to meet national and international hydrographic and charting requirements and the diverse needs of industry.
+
+The standards developed are known as S-5 describing the competencies for hydrographic surveyors and S-8 describing the competencies for nautical cartographers.
+
+Both Standards recognize two levels of programme. Category "A" programmes introduce content and learning outcomes primarily from the underlying principles level. Category "B" programmes introduce them primarily from a practical level.
+
+The intention is that a Category "A" qualified individual, with appropriate experience, would be a senior professional in their chosen area of activity (government, industry, academia). Category "B" qualified individuals, with appropriate experience, would be technical professionals preparing and delivering products and services to meet specifications and outcomes.
+
+
+[.preface]
+== ABBREVIATIONS AND ACRONYMS
+
+B:: Basic subjects
+C:: Cartographic science subjects
+CCP:: Comprehensive Cartographic Project
+CFCP:: Complex Final Cartographic Project
+CFFP:: Comprehensive Final Field Project
+CMFP:: Complex Multi-disciplinary Field Project
+CPD:: Continuing Professional Development/Education
+CV:: Curriculum Vitae
+E:: Essential subjects
+F:: Foundation science subjects
+FIG:: International Federation of Surveyors
+H:: Hydrographic science subjects
+IBSC:: International Board on Standards of Competence for Hydrographic Surveyors and Nautical Cartographers
+ICA:: International Cartographic Association
+IHO:: International Hydrographic Organization
+ILO:: Intended Learning Outcome
+NFP:: National Focal Point
+P:: Practicals (fieldwork and/or laboratories)
+SG:: Self-guided exercises (or student's personal independent work)
+T:: Theoretical (theory through lectures)
+WG:: Working Group

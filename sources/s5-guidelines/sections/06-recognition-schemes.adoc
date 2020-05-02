@@ -1,0 +1,173 @@
+
+[[cl-professional-certification]]
+== PROFESSIONAL CERTIFICATION OR INDIVIDUAL RECOGNITION SCHEMES
+
+The Board _does not provide recognition to individuals_ directly. It does however seek to recognize formal systems and schemes that review and assess individuals' experience in order to provide them with professional certification or individual recognition of their Competency. These Schemes offer to monitor and assess individuals at regular intervals and to register them in a formal system so that an individual may gain professional certification or individual recognition at a defined level of competency which may include Category "A" and Category "B".
+
+
+=== Background, Board Philosophy and Process Concerning Schemes for Professional Certification of Individual Recognition
+
+[%inline-header]
+==== {blank}
+In issuing the guidelines the IBSC fully recognizes and anticipates dialogue with national bodies seeking such recognition as the guidelines are developed to a level of maturity acceptable internationally. In this sense, the guidelines are issued in this document without prejudice. The IBSC encourages schemes to adopt common requirements and levels of competency based on the IBSC standards which will facilitate mutual recognition.
+
+
+[%inline-header]
+==== {blank}
+The underpinning philosophy of the work of the Board in recognizing professional certification schemes for individuals is that competence equals knowledge plus experience, and must be demonstrated. Thus, upon successful achievement by any individual of a Category "A" or a Category "B" Programme, a competency certification within any Scheme consists of _both_ successful completion of a programme of study which addresses the topics within the relevant Standard _and_ a satisfactory period of relevant experience during which competence has been demonstrated. In addition, the IBSC notes that hydrographic technology is constantly advancing and that, in order to maintain competence, an individual must pursue continuing professional training and education to ensure that they maintain currency. Consequently national organizations and academic institutions may decide to recognize and/or certify individuals in order to monitor competency and currency. The IBSC requires that professional certification of individual competency should be based on completion of:
+
+. A programme of formal education or training, normally as outlined in <<scl-cat-programmes-schemes>>;
+
+. Experience, as outlined in <<cl-field-office-experience>>;
+
+. A methodology to demonstrate and document competencies;
+
+. Continuing professional education and training.
+
+The IBSC will consider recognizing schemes that, in addition to a pathway including completion of a Category "`A`" or Category "`B`" program, contain alternative pathways to certification, provided the above conditions are met.
+
+[[iscl-submissions-to]]
+[%inline-header]
+==== {blank}
+
+Submissions to the Board must be written in the English language and as a minimum must demonstrate the ability to monitor and assess individuals at the Category "A" and/or Category "B" specified competency level.
+
+[%inline-header]
+==== {blank}
+
+The Board shall approve the final wording on the Certificate awarded by the Scheme to individuals.
+
+[%inline-header]
+==== {blank}
+
+The Board declares that in publishing these Guidelines it is not its intention to override or challenge any legal or procedural processes imposed upon the Scheme by government or law.
+
+[%inline-header]
+==== {blank}
+
+The Board shall expect the following elements in a national or regional Scheme submitted for recognition.
+
+[[scl-guidelines-national-regional]]
+=== Guidelines for National and Regional Schemes Submitted for Recognition
+
+[%inline-header]
+==== {blank}
+
+The Board shall normally recognize only one Scheme per country or identifiable region for the Standards and thus, a submission must clearly describe its authority and geographic area. It may include endorsements from the appropriate NFP of the Scheme submitted. It may also include, where appropriate, the endorsement of academic institutions, government bodies and professional associations. The Board shall not arbitrate between Schemes within one jurisdiction.
+
+
+[%inline-header]
+==== {blank}
+
+An individual certified by the submitting Scheme as having met the levels of Category "A" or "B" must have completed a recognized Category "A" or "B" Programme. It is required that the submitted Scheme shall describe in detail how the professional certification or individual recognition process functions. Where prior learning and experience are taken into account within a Scheme the processes undertaken by the accrediting body must be fully described and justified.
+
+
+[%inline-header]
+==== {blank}
+
+The Board shall expect adherence to its currently issued Standard(s) and shall expect that a Scheme will take into account the currency (or validity) of an individual's experience. Currency will be clearer if the individual has recently satisfied a programme recognized by the Board and has also satisfied the experience minima. Where the certification or process includes vocational training, a full detailed description is required by the Board.
+
+
+[%inline-header]
+==== {blank}
+
+The Scheme should clearly articulate processes and sub-Schemes of Continuing Professional Development/Education (CPD) and show where and how these build relevant units for professional certification or individual recognition. Clear reference shall be made to the current content of the Standards to enable the Board to assess that the processes of CPD adopted provide relevant currency between Editions of the Standards for those individuals who originally certified or accredited against earlier Editions of the Standards.
+
+
+[%inline-header]
+==== {blank}
+
+The process whereby an individual can enter the Scheme should be described in detail. Processes for application should be detailed, including all examples of documentation used. The Board considers that a Scheme should include a degree of examination for entry which might include all or some of the following: interview, oral or written examination with recording of the process being retained to ensure objectivity. Examples of the process using an individual's work and the records of the reviewers are to be submitted as part of the application process.
+
+
+[%inline-header]
+==== {blank}
+
+It is essential that an individual has recourse to an independent process of appeal to any decision taken by the Panel which administers the entry process into a Scheme. This process of appeal will not be to the IBSC. Appeals must be resolved satisfactorily at the national or regional level in accordance with standards of due process and objectivity. The Board's interest is in assessing the efficiency of such a process. Thus, the Board will expect the submitting Scheme to fully describe its adopted appeals process.
+
+
+[%inline-header]
+==== {blank}
+
+The Board shall expect to be able to assess from the documentation provided by a Scheme that peer certification forms part of its system supervision. It follows that a Scheme shall be administered by a panel comprising of members who represent the wider hydrographic surveying and nautical cartography communities including, but not necessarily limited to, members representing its constituent organizations (government, professional, academic, National Focal Point as well as Offshore Industry and Ports where appropriate).
+
+
+[%inline-header]
+==== {blank}
+
+The processes of the Scheme shall include clear record-keeping that details all processes adopted: records of decision, timing, appeals, reasoning, forms and register, follow up processes for assessing currency (validity) etc. These should be comprehensively detailed in the submission.
+
+
+[%inline-header]
+==== {blank}
+
+The Scheme should advise the Board if there are other Schemes within its area of jurisdiction (or elsewhere if there is mutual recognition) and detail how its own status has been defined and agreed in regard to those Schemes. It should also detail its communication processes with such Schemes with particular detail on the method it adopts to communicate and share its findings, and how any differences or ambiguities are resolved. In particular it should describe how it deals with individuals making multiple applications, and whether there is a degree of harmonization, standardization of processes and reciprocity.
+
+
+[%inline-header]
+==== {blank}
+
+The Scheme should publish its Rules and Processes together with its critical dates. This shall be kept current and may be achieved by way of a website. Currency will ensure publication of relevant Rules and Processes before critical dates on which they impact.
+
+
+[%inline-header]
+==== {blank}
+
+A Scheme can operate in the national language but see <<iscl-submissions-to>> above for the Board's language requirement for submission documentation.
+
+
+[%inline-header]
+==== {blank}
+
+The Board reserves the right to inspect specific Scheme documents, such as the Register of Individuals, where it feels this is necessary to aid it in its own recognition assessment process.
+
+
+[%inline-header]
+==== {blank}
+
+A Scheme might, within its own processes, distinguish different levels of competency. Where these exist they should be fully described; the Board will look for detailed cross-referencing to the IBSC Standards, and an explanation as to how such processes contribute to the overall system and ongoing recognition of an individual's competence.
+
+
+[%inline-header]
+==== {blank}
+
+A Scheme might include an overall set of competencies as well as subsets based on topics such as port surveying, bathymetry, shore-lining etc. Where these exist they should be fully described, and the Board will look for detailed cross-referencing to the Standards and an explanation as to how such processes contribute to the overall system of professional certification or individual recognition.
+
+
+[%inline-header]
+==== {blank}
+
+Where a submission considers it cannot meet the Guidelines of the Board due to government imposed procedures or legal requirements, the Board will expect a fully detailed explanation sufficient for the Board to take them into account during its deliberations.
+
+
+[%inline-header]
+==== {blank}
+
+The Board shall look to the comprehensiveness of submitted Schemes and completeness of documentation including, where relevant, documents which authenticate claims made in the submission and reserves the right to seek any clarifying documentation or explanation it needs to assist in its process of review.
+
+
+=== Statement to be Included in the Scheme's Certificate
+
+[%inline-header]
+==== {blank}
+
+Schemes providing a professional certification or individual recognition process, which has been recognized as outlined in <<scl-guidelines-national-regional>>, shall be required to issue successful candidates with a certificate of the successful assessment of their professional competencies. Such a certificate may acknowledge that the Scheme has received the Board's recognition, specifying the level of that recognition. The certificate issued by the Scheme shall include text similar to the following example:
+____
+"`This Assessment Scheme has been recognized as meeting the requirements for professional certification or individual recognition in the FIG/IHO/ICA Standards of Competence for Hydrographic Surveyors or Nautical Cartographers`".
+____
+
+
+[%inline-header]
+==== {blank}
+
+The submitted Scheme should include examples of its certificates for all levels awarded by the Scheme. There must be clear, unambiguous discrimination between the certificates awarded for pathways that include completion of Category A or B programmes and those that do not. An example of the type of text used by a Scheme on its certificate to an individual who has completed an IBSC recognized programme follows:
+
+____
+*"`Having completed a Category "A"("B") programme recognized by the IBSC against the S-5A/B or S-8A/B Edition NN.N.N of the Standards of Competence for Category "A/B" Hydrographic Surveyors or Nautical Cartographers and, having been successfully assessed by the Scheme recognized by the IBSC, the ... institution ...... grants ...(name)............the Hydrographic Surveyor or Nautical Cartographer Category "A"("B") certificate of professional recognition`"*
+____
+
+
+[%inline-header]
+==== {blank}
+
+*Documentation and Submission*. The procedure for recognition of schemes will generally follow that described for programmes at <<cl-procedures-recognition-programmes>> below. The documentation required for schemes will vary depending on the scope of each scheme but as a minimum must comply with the requirements of <<cl-professional-certification>> and include other relevant general information such as that described in <<chapter1-programme-Identification>> and <<chapter1-aims-programme>>.

@@ -1,0 +1,7 @@
+
+[[annex-application-process-flow-diagram]]
+[appendix,obligation="informative"]
+== Application Process Flow Diagram
+
+[%unnumbered]
+image::fig1.png[]

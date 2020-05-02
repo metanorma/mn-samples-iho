@@ -1,0 +1,92 @@
+
+[[annex-submitting-institutions]]
+[appendix,obligation="informative"]
+== S-5A/B and S-8A/B Checklist for Submitting Institutions
+
+* [ ] Inform Chair and Secretary of intention to submit a programme for recognition (starting the dialogue)
+
+* [ ] Prepare an internal project plan to meet 31 December deadline for submission (focus on deadline)
+
+* [ ] Receive the invoice for payment of fees from the IHO Secretariat
+
+* [ ] Pay fee and deliver submission (pay fees)
+
+* [ ] Assemble the programme documentation into a single coherent submission in the English language with unique page numbers, a contents page and a version control table (focus on documentation requirements), following the structure below (ref. Chapter 7 of the Guidelines):
+
+
+[cols="a,a,a",options="unnumbered"]
+|===
+3+h|Ref: GUIDELINES FOR THE IMPLEMENTATION OF THE STANDARDS OF COMPETENCE FOR HYDROGRAPHIC SURVEYORS AND NAUTICAL CARTOGRAPHERS
+
+|ITEM |TITLE |
+
+|1
+|General information on the programme
+^.^| * [ ] &nbsp;
+
+|1.1
+|Programme Identification
+^.^| * [ ] &nbsp;
+
+|1.2
+|Aims of the programme
+^.^| * [ ] &nbsp;
+
+|1.3
+|Entry requirements
+^.^| * [ ] &nbsp;
+
+|2.1
+|Staff list
+^.^| * [ ] &nbsp;
+
+|2.2
+|Facilities available to students
+^.^| * [ ] &nbsp;
+
+|3.1
+|Programme structure
+^.^| * [ ] &nbsp;
+
+|3.2
+|Information about each module in the programme
+^.^| * [ ] &nbsp;
+
+|3.3
+|Texts and reference material
+^.^| * [ ] &nbsp;
+
+|4.1
+|Student assessment and grading
+^.^| * [ ] &nbsp;
+
+|4.2
+|Examination papers
+^.^| * [ ] &nbsp;
+
+|5
+|Practical Exercises
+^.^| * [ ] &nbsp;
+
+.3+|6
+|Final Project (CFFP, CCP, CMFP or CFCP)) Cross-reference table – MUST BE COMPLETED IN THE SPECIFIED TEMPLATE PROVIDED ^.^| * [ ] &nbsp;
+|Project specification (hydrographic or cartographic instruction) as provided to students for the final project ^.^| * [ ] &nbsp;
+|Sample of deliverables and reports submitted by students for the final project ^.^| * [ ] &nbsp;
+
+|7
+|Programme Cross-reference table – MUST BE COMPLETED IN THE SPECIFIED TEMPLATE PROVIDED
+^.^| * [ ] &nbsp;
+
+|8
+|Student Feedback
+^.^| * [ ] &nbsp;
+
+|9
+|Internal Review
+^.^| * [ ] &nbsp;
+
+|===
+
+* [ ] Submit the programme documentation to the Secretary by the deadline (focus on final submission)
+
+* [ ] Inform Chair and Secretary of attendance at the IBSC meeting (focus on meeting and presentation)

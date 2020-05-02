@@ -1,0 +1,39 @@
+
+[appendix,obligation="informative"]
+== Revision history
+
+[cols="a,a,a",options="unnumbered,header"]
+|===
+|Date |Edition |Description and changes
+
+| May 2019
+| 2.1.0
+|
+* General editing and formatting
+* Section 6. Professional Certification or Recognition Schemes clarified
+* Section 7.1 a single PDF digital submission only
+* Section 7.1.3. Inserted an example of a Module Schedule Table
+* Section 7.1.3Requirement for a Timeline of the programme
+* Section 7.2.3. Inserted an example of the Practical Exercises Table
+* Section 8.1 & 8.2. Clarified IBSC review and Evaluation Process
+* Section 9.3 & 9.4. Requirements for Annual Report modified
+* Annex A. Checklist and flow diagrams modified
+
+| March 2017
+| 2.0.0
+|
+* Covers both S-5 and S-8
+
+|July 2016
+|1.1.0
+|
+* General editing and formatting
+* Section 3.2 on time frames modified
+* Modification of section 8.2. Define eligible submission, split review process between individual evaluation and IBSC review process.
+* Inserted checklist and flow diagrams to Annex A
+
+|January 2016
+|1.0.0
+|First edition
+
+|===

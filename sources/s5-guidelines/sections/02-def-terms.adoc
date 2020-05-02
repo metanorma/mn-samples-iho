@@ -1,0 +1,116 @@
+
+== DEFINITIONS AND TERMINOLOGY
+
+For purposes of recognition, a _programme_ is a complete schedule of study, practical exercises and final project that leads to graduation, including all learning outcomes and content defined in the standards. For purposes of delivery and assessment, a programme will typically be broken down into modules. The term module will be used hereafter to describe a delivery component.
+
+
+[[scl-cat-programmes-schemes]]
+=== Categories of Programmes and Schemes
+
+Categories of programmes and schemes for hydrographic and cartographic personnel are defined with respect to the theoretical background and working knowledge of those who successfully graduate from such programmes. The following programmes and schemes are eligible for international recognition by the FIG/IHO/ICA IBSC:
+
+
+==== Category "A" Programmes:
+
+A programme which provides a comprehensive and broad-based knowledge in all aspects of the theory and practice of hydrography, nautical cartography and allied disciplines for individuals who will practice analytical reasoning, decision making and development of solutions to non-routine problems.
+
+
+==== Category "B" Programmes:
+
+A programme which provides a practical comprehension of hydrographic surveying and nautical cartography for individuals with the skill to carry out the various hydrographic surveying and cartography tasks.
+
+
+==== Schemes for Professional Certification:
+
+A regional or national Scheme for the review, assessment and professional certification of an individual to ensure that they possess the relevant and up to date competencies to perform the role of a hydrographic surveyor or nautical cartographer at the appropriate level. The term "`Scheme`" will be used to differentiate professional certification from educational programmes.
+
+
+[[scl-recognition-programmes-schemes]]
+=== Recognition of Programmes and Schemes
+
+==== Recognition:
+
+The Board may grant recognition for _programmes_ meeting the S-5A/B or S-8A/B Standards of Competence. The Board may also grant recognition for _schemes_, which follow the guidelines described hereafter, and referring in their review assessment process to the S-5A/B and/or S-8A/B Standards of Competence.
+
+
+==== Period of Recognition:
+
+Programme or Scheme recognition remains valid for six (6) years, after which a new submission is required. The Board does not grant retrospective recognition to any Programme or Scheme.
+
+
+==== Recognition of Individuals:
+
+The Board does not grant recognition to individuals.
+
+
+==== Professional certification:
+
+The Board may grant recognition to National or Regional Schemes for professional/competency certification of individuals.
+
+
+=== Classes of Subjects
+
+==== _Basic_ Subjects
+
+These are the subjects underlying all aspects of hydrographic surveying and nautical cartography. They contain the knowledge necessary for understanding the general principles of hydrography and cartography, including mathematics, statistics, information communication technologies, physics, earth sciences, nautical science and meteorology, as applicable.
+
+
+==== _Essential_ Subjects for S-5B and S-8B
+
+These subjects are considered essential for all hydrographic surveyors and nautical cartographers and together with the basic subjects, form the core of the academic syllabus within the S-5B and S-8B Standards.
+
+
+==== _Foundation Science_ Subjects for S-5A and S-8A
+
+These subjects provide a detailed knowledge of the underlying principles that support hydrography and nautical cartography. These are common to other science fields such as geomatics or marine science, and contribute to the core of hydrography and nautical cartography.
+
+
+==== _Hydrographic Science and Cartography Science_ Subjects for S-5A and S-8A
+
+These subjects are considered essential for all hydrographic surveyors and nautical cartographers respectively at the Category "A" level. When combined with _Foundation Science_ knowledge they constitute a comprehensive knowledge of hydrography or nautical cartography.
+
+
+=== Exemptions
+
+[%inline-header]
+==== {blank}
+
+Within any submission, the Board will consider cases when an institution intends not to deliver a particular subject/topic/element within _Basic_ or _Foundation Science_ subjects to some or all of the students. No exemptions are permitted from Essential (S-5B/S-8B) or Hydrographic Science (S-5A) or Cartography Science (S-8A) subjects.
+
+
+[%inline-header]
+==== {blank}
+
+Exemptions may be granted from _Basic_ or _Foundation Science_ subjects, topics, or elements when entry requirements for a programme completely cover their content and learning outcomes. The list of elements, as indicated in the Standards, must be evidenced to have been completely covered by prior knowledge of students. Claims for exemptions must clearly describe how the student's prior learning is assessed and validated. If an entry examination process is employed to determine exemptions, it must demonstrate the student's competence in the _subjects/topics/elements_ to be exempted.
+
+
+=== Elective Modules
+
+To be recognized against the Standards, a programme must demonstrate that, independently of the student choice of elective modules, all of the S-5A/B or S-8A/B elements are covered by the common programme syllabus.
+
+
+=== Level of Knowledge
+
+Bloom's taxonomy has been used as the basis to describe each intended learning outcome of the Standards and the associated verbs are an indication of the expected level of knowledge. One of the three following levels of knowledge is associated with each element of the S-5A/B and S-8A/B.
+
+
+[%inline-header]
+==== {blank}
+
+*Basic* - Basic knowledge of the subject provides familiarity with the concepts. Active verbs (indicating recall, recognition and comprehension of materials) associated with learning outcomes include: define, identify, describe, explain, differentiate, predict.
+
+
+[%inline-header]
+==== {blank}
+
+*Intermediate* - Knowledge of the subject as far as theory and principles are concerned, sufficient to enable their application in practice in all common hydrographic and nautical cartography tasks. Active verbs (indicating application and analysis) associated with learning outcomes include: apply, use, calculate, solve, classify, analyze.
+
+
+[%inline-header]
+==== {blank}
+
+*Advanced* - Thorough knowledge of the subject in all its aspects to enable its application in all hydrographic and nautical cartography activities including the most difficult areas. Active verbs (indicating synthesis and evaluation) associated with learning outcomes include: evaluate, select, design, specify, plan, create.
+
+____
+Category "B" programmes are intended to deliver Basic and Intermediate levels of knowledge and Category "A" programmes are intended to deliver Basic, Intermediate and Advanced levels of knowledge.
+____
