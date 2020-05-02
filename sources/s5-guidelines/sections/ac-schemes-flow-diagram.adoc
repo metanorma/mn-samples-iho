@@ -1,0 +1,7 @@
+
+[[annex-recognition-schemes-flow-diagram]]
+[appendix,obligation="informative"]
+== Procedure for Recognition of Programmes and Schemes Flow Diagram
+
+[%unnumbered]
+image::fig2.png[]

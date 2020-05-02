@@ -1,0 +1,567 @@
+
+[[cl-procedures-recognition-programmes]]
+== PROCEDURES FOR RECOGNITION OF PROGRAMMES
+
+=== Documentation to be submitted
+
+See <<annex-submitting-institutions>>: *S-5A/B and S-8A/B* Checklist for Submitting Institutions. The checklist will assist the submitting institution in ensuring all documentation is included.
+
+It is the experience of the Board that a well-prepared submission is one of clarity with detailed cross-referencing of the submitted programme syllabus to the content and learning outcomes provided in the standards.
+
+See ANNEX for process diagrams. Giving an overview of both the timeline for submission and recognition process of the Board, the following flow diagrams have also been included in the ANNEX:
+
+* Application Process Flow Diagram
+* Procedure for Recognition of Programmes Flow Diagram
+
+THE AIM AND SCOPE OF THE PROGRAMME SHOULD BE CLEARLY STATED AND THE PROGRAMME STRUCTURE DEFINED IN THIS CONTEXT.
+
+It is important that the submission is comprehensive and adequately documented to reflect the purpose of the programme and is not simply a copy of the programme texts.
+
+In summary, the preferred submissions to review are those that are clear, completely cross-related to the Standards, include relevant photographs, and are submitted with explanations of any deviations. The Board recognizes that model pedagogical theory and practice supports a variety of blended innovations of teaching techniques. The Board will expect that a submission should demonstrate how the required learning outcomes are achieved by the teaching methods and assessment strategy.
+
+&#x200c;[Comment: While the IBSC appreciates that many submitting organizations do not use English as a first language and many do not teach using English, it is nevertheless essential that submitting organizations strive to make the submitted documentation as clear as possible. Submitting organizations will need to submit a digital submission only. It should be confined to a single searchable PDF (Portable Document Format) document file digitally indexed with hypertext links that is clearly and accurately numbered and cross-referenced.]
+
+THE FOLLOWING INFORMATION MUST BE INCLUDED IN ALL SUBMISSIONS:
+
+
+==== CHAPTER 1: General Information on the Programme.
+
+Chapter 1 of the submission must include the following sections:
+
+. [[chapter1-programme-Identification]] *Programme Identification*
++
+--
+[%unnumbered]
+|===
+|Name of the Programme
+|Institution submitting the Programme for recognition
+|Previous recognition year (if any)
+|Standard and Edition against which recognition is sought
+|Level of recognition sought (Category "A" or Category "B")
+|Duration of the Programme relevant to the Standards in weeks
+|Total study hours and the breakdown for Theory, Practical and Self-Guided (excluding the final project hours)
+|Duration of the final project (CFFP, CCP, CMFP or CFCP) in weeks
+|Country of submitting institution
+|Language(s) in which the Programme is delivered
+||Programme coordinator name and full contact details
+|Submitting institution primary full contact details for IBSC correspondence
+|Programme capacity (expected/actual number of students taking the programme each year. For multi-year programmes, the expected total number of students progressing through the programme)
+|Geographical position of the institution (latitude/longitude)
+|===
+--
+
+. [[chapter1-aims-programme]] *Aims of the Programme*
++
+--
+The submission should, in this section, provide a clear narrative outline of the programme, with details of the target audience and intended outcome and where it fits within the institution and national/international hydrographic/cartographic community. The section should describe the academic elements of the programme and the objectives set for each student and their general learning outcomes.
+
+&#x200c;[Comment: The Board is interested in the underlying rationale for the programme to the extent this assists its review process. It is necessary for the Board to know as much of the background detail as necessary to comprehend why the programme is designed the way it is, especially if there is some specific or even unique local learning outcome required.]
+--
+
+. *Entry Requirements and Exemptions*
++
+--
+Identify normal qualifications required for entry and alternative qualification routes that may be acceptable for entry.
+For Programmes seeking exemption of some or all the _Basic_ or _Foundation Science_ subjects, provide a clear indication of where students would previously have attained that knowledge, and a clear description of the formal procedures used to evaluate claims for such exemptions. *_No exemptions are permitted for Essential, Hydrographic and Cartographic Science subjects_*.
+
+&#x200c;[Comment: The Board will examine in detail the entry processes of the submitting organization. It will be focused on ensuring the entry requirements are properly and adequately met. Where an entry examination or test is employed the Board requires an outline of how the examination or test addresses the entry standards required.]
+--
+
+
+==== CHAPTER 2: Information About the Programme Infrastructure
+
+Chapter 2 of the submission must include the following sections:
+
+. Staff List:
++
+--
+For each instructor contributing to the programme, provide a Curriculum Vitae (CV) which will include:
+
+* Module taught;
+* Academic qualifications;
+* Hydrographic or cartographic experience; and
+* Recent publications.
+
+&#x200c;[Comment: The Board will look closely at staff CVs, in particular at the specific experience brought to teaching of the programme.]
+--
+
+. *Facilities Available to Students:*
++
+--
+* Equipment: Provide a list of relevant equipment/systems that will be used in the delivery of practical work and in the final project;
+
+* Software: List specific software (with emphasis on hydrographic and cartographic software);
+
+* List of training aids (including any e-learning components and associated platforms for their delivery);
+
+* Laboratories (description);
+
+* Training vessels (description, photographs);
+
+* Library List:
+** total number of volumes held;
+** approximate number of volumes relevant to Hydrography and Cartography;
+** other media available (e.g. charts, maps, audio-visual resources); and
+** availability and access policies to online digital resources.
+--
+
+
+==== CHAPTER 3: Programme Description
+
+Chapter 3 of the submission must include the following sections:
+
+. *Programme Structure*
++
+--
+The Programme may involve a series of modules and formal training sessions that must include practicals, tutorials and field experience to reinforce and complement theoretical material. It is important that the programme structure is clearly described within the submission and that sufficient details of the components are provided. As a minimum the submission should include:
+
+* Table of programme modules;
+
+* Schedule of programme modules identifying where in the sequence each module it taken by students (programme timetable); and
+
+* The duration (in weeks) of each module
+
+* Timeline of the complete programme (see <<it-timeline>> below)
+--
+
+. *Information About Each Module in the Programme*
++
+--
+This section should be easily understood and contain a full and detailed description of each programme module, including a reference to _elements_ of the Standards for each course module item. This enables the institution to describe fully the programme in relation to the Standards and aids greatly in the Board's review. Each module of the programme being submitted should be described in more detail than the Standards, with a tabulation of theory, practical exercises and self-guidance hours devoted to the elements of the Standards. This will allow the Board to relate the module and lectures to the cross-reference table (see <<scl-chapter7>>) and tabulated programme description.
+
+*A schedule should be provided that shows all delivered items (lectures, tutorials, assignments and practicals) within the module and relates them to _elements_ of the Standards*. This must include for each delivered item: means of delivery; hours allocated; reference to _elements_ of the Standards. For the purpose of these Guidelines the nominal duration of a teaching hour is 50 minutes. If less, then this must be stated in the submission. An example of a Module Schedule that might be delivered in an S-5B programme is provided in <<tab-example-module-schedule>> where the teaching scheme shows the first five lectures and associated practical/tutorial work. Coverage in the example is aligned with a student intake directly from high school with passes in mathematics and physics where no previous knowledge or experience in spatial science exists, hence the extended introduction offering familiarisation with relevant fundamentals. Time allocated is indicative of the entry level.
+
+[[tab-example-module-schedule]]
+.Example of a Module Schedule
+[cols="a,a,a,a,a,a"]
+|===
+6+h|Geodesy
+h|Learning Activities |Lectures |Tutorials |Practical 2+|Self-Guided Study
+h|Hours |36 |8 |20 2+|27
+h|Assessment type |Theory Exams/Tests |Practical Exams/Tests |Written Assignments 2+|Presentations
+h|Hours |2 |4 |7 2+|
+6+|*Module Outline:*
+
+A first course in geodesy that provides students with foundations in reference frames and surfaces used in surveying. Knowledge and skills acquired in this module are essential in underpinning further module content within the programme. Through the combination of theory and practical work with computer software the module offers an applied approach to the subject. Geodesy concerns the dimensions and shape of the Earth and reference frames used in data collection and computations for position. From geophysical data used to determine the figure of the Earth as a surface, mathematical approximations that are used in surveying are presented and realization of reference systems for practical applications defined. A contrast is drawn between traditional methods employed for control of surveys using terrestrial data and the use of modern satellite methods adopted for real-time mapping applications as well as techniques for precise geodetic control used in national mapping and geodynamics.
+
+6+|*Learning Outcomes*
+
+. Identify properties and needs for different surfaces used to represent the Earth for different applications and undertake geodetic computations in relation to such surfaces.
+
+. Describe the reference frames used in geodesy with appreciating their applications, compare methods for moving positional data between them and perform associated computations.
+
+. Explain traditional methods used in the establishment and realisation of traditional datums for horizontal and vertical control and reasons why this approach has changed with development of satellite technology.
+
+. Through the use of international examples, explain how modern horizontal and vertical datums for surveying and mapping at national level are established and realised to accommodate temporal components and perform associated computations.
+
+. Distinguish between broadcast and precise satellite ephemerides, identifying the parameters involved in each case and perform computations to determine satellite location at a particular time in a standard reference frame and relative to the location of a receiver on the surface of the Earth.
+
+6+|*Module Reference Material and Bibliography:*
+
+Meyer, T.H. Introduction to Geometrical and Physical Geodesy: Foundations of Geomatics, ESRI Press, March 2018. +
+Hofman-Wellenhof, B. and Moritz, H. Physical Geodesy. Springer, September 2006. +
+National Imagery and Mapping Agency, Department of Defense World Geodetic System 1984. Technical Report Technical Report NIMA 8350.2, January 2000. +
+ICSM ANZLIC Committee on Surveying and Mapping. Geocentric Datum of Australia, Technical manual Version 2.4, December 2014. +
+IERS. Terrestrial reference systems and frames. IERS Technical Note No. 36. +
+Dawson, J. and Woods, A. ITRF to GDA94 coordinate transformations, Journal of Applied Geodesy No. 4, 2010 +
+Thomas, C.M., and Featherstone, W.E. Validation of Vincenty's Formulas for the Geodesic Using a New Fourth-Order Extension of Kivioja's Formula. Journal of Surveying Engineering, February 2005. +
+Amos, M. New Zealand Vertical Datum 2009. New Zealand Surveyor, No. 300, 2010.
+
+6+h|Module Activity Breakdown
+
+h|Activity - Lecture, Practical, Assignment
+h|Contents
+h|T
+h|P
+h|SG
+h|S5B Topic
+
+h|Lecture 1 Introduction to Geodesy
+|An overview of the course as a whole to place material covered into context. The development of geodesy from measurements to determine the shape of the Earth from 200 years BC through early geodetic surveys to modern reference frames used with GNSS data.
+|2.0
+|
+|
+|E1.2
+
+h|Tutorial 1
+|Determine formula and undertake computations using historical data obtained by Eratosthenes, Poseidonius, al-Ma'Mun, Abu Rayan al-Biruni and results from early baseline observations to determine the size of the Earth.
+|
+|1.0
+|
+|E1.1
+
+h|Lecture 2
+|The Earth as a sphere, defining points in 3D by latitude, longitude and radius, Defining great circles, small circles rhumb lines and azimuth.
+Spherical trigonometry and its application.
+Use of solar observations to determine azimuth.
+|3.0
+|
+|
+|B1.3, E4.3a
+
+h|Tutorial 2
+|Solution of problems using spherical trigonometry
+|
+|2.0
+|1.0
+|B1.3
+
+h|Assignment 1
+|The Equatorial Sundial
+
+Working in pairs, use 4 rounds of observations to the Sun to determine azimuth of an RO and hence align a sundial to North.
+
+Write a report with (i) Introduction; (ii) Principles detailing how the Sun can be used to determine both direction and time to explain corrections required to data for both components and computations required for solutions; (iii) Field booking sheet and computations for azimuth performed in the field; (iv) a discussion on precision of the azimuth using results from 4 rounds and accuracy from corrected time read from the sundial with true local time; and, (v) conclusions.
+|
+|2.0
+|5.0
+|B1.3, E4.3a
+
+h|Lecture 3
+|Gravity, Newtons laws. Gravity and potential due to mass and centrifugal force. Gravity measurement and normal gravity (GRS80). Gravity anomalies. Geopotential models (EGM2008)
+|3.0
+|
+|
+|B3.2, E4.1a
+
+h|Practical 1 (computer lab)
+|Use locally acquired gravity data to produce maps of gravity anomalies and compare with a similar maps from EGM2008. Consider results in alignment with geological structures.
+|
+|2.0
+|2.0
+|E4.1a, B4.1
+
+h|Lecture 4
+|The Earth as a spheroid. Latitude, longitude, radius of curvature and meridional distance. Lines of sight and geodesic on the spheroid. Computations on the spheroid by Normal Section, Vincenty's formula and Kivioja's algorithm.
+Deflection of the vertical, geoid/spheroid separation and their relationship.
+|3.0
+|
+|
+|E4.1d
+
+h|Practical 2 (computer lab)
+|Use of scripts, spreadsheets and on-line resources to perform spheroidal computations and reverse computations on lines of different length. Use software for visualization of lines of sight and the geodesic.
+|
+|2.0
+|2.0
+|E4.1d
+
+h|Lecture 5
+|Vertical control. Approximating the geoid from Sea level data. Use of levelling to transfer control and influences of Earth potential. The geopotential number and orthometric heights. Review of alternative heighting methods (Helmert heights and dynamic heights). Determining a reference surface for normal-orthometric heights with benefits and applications in surveying.
+|3.0
+|
+|
+|E4.4a +
+E4.1c
+
+h|Practical test 1 (computer lab)
+|Computations relation to; (i) Comparing traditional bench mark data with heights obtained from GNSS corrected with global and local geoidal models; (ii) Use of normal-orthometric heights. Discussion of methods and results in both parts.
+|
+|2.0
+|
+|E4.4a +
+E4.1c
+
+|⁞
+|⁞
+|⁞
+|⁞
+|⁞
+|⁞
+
+|===
+
+
+Each assessment component (through exams, assignments, etc.) must be clearly defined and related to learning outcomes from the Standards. It must be supported with assignment specifications and assessment criteria (i.e. the way each assignment and exam is graded).
+
+Where e-learning components are used, the expected student total working time for each component, the estimated number of tutor-student interaction hours, e-lecture schedule, tests, exercises, and the way the student study time is monitored should be provided.
+
+The IBSC does not intend to be prescriptive in how the modules or sub-components of a Programme are structured, but it requires that they be properly and fully related to the cross-reference table.
+--
+
+. *Texts and Reference Material*
++
+--
+A list of texts and reference material used for each subject area, with an indication of the editorial house/publisher, and year of publication should be provided. Where e-learning components are included, then a description of the e-learning materials, including their source, year of publication and a description of the material access method, should be submitted.
+
+&#x200c;[Comment: The Board will look to the adequacy and relevance of texts and reference materials. The section also serves as important feedback to the Board itself as to the availability of adequate and up to date teaching material. The IBSC wishes to ensure that students are adequately supported in terms of access and availability to required texts and reference material.]
+--
+
+. [[it-timeline]] *Timeline*
++
+--
+Provide a graphical representation (e.g. Gantt chart) of the complete programme schedule detailing the sequence in which all modules are delivered and assessed in chronological order.
+--
+
+
+==== CHAPTER 4: Student Assessment
+
+Chapter 4 of the submission must include the following sections:
+
+. *Student Assessment and Grading:*
++
+--
+* Describe how a mark in each module is determined on the basis of assessment components within that module together with requirements for obtaining a pass.
+
+* Describe how grades awarded within the Programme are combined to give an overall grade and the requirement for award of recognition.
+
+* Provide details of mechanisms to support students who fail a particular component of a Programme.
+
+* Describe how individuals are assessed in the final project
+
+&#x200c;[Comment: The expectation of the IBSC is that all learning outcomes of the Standards will be assessed in some form for example by examination, quiz, assignments, practical tasks, field-work, office-work or project tasks.]
+--
+
+. *Examination Papers*
++
+--
+Representative examination papers, sample writing or self-guided assignments, and e-learning assessment components from each _Subject_ area, taken by students during the programme (i.e. not only the final examination), must be submitted. For new programmes a prospective sample set must be provided.
+
+&#x200c;[Comment: In reviewing a submission the Board will check that the format and level of the examinations and tests employed are appropriate to the learning outcomes required and the category of recognition sought. New submissions will be expected to have developed as a minimum an examining or testing strategy appropriate to the planned course.]
+--
+
+
+==== CHAPTER 5: Practical Exercises
+
+Chapter 5 of the submission must include a list and details of all practical exercises, listed by _Essential_ subject (S-5B/S-8B), _Foundation Science_ subjects and _Hydrographic Science_ subjects (S-5A) or _Cartographic_ Science (S-8A) as described in <<scl-practical-exercises>> must be provided. An example is provided in <<tab-list-practical-exercises>>.
+
+[[tab-list-practical-exercises]]
+.Example of the List of Practical Exercises
+[cols="a,a,a,a",options="header"]
+|===
+|Practical Exercise
+|Programme module
+|Hours
+|S-5/S-8 (B or A) topic/element
+
+|*Fire Extinguishers*
+
+Types and operation of fire extinguishers.
+Demonstration and hands-on practice using various types of fire extinguishers, led by university fire department.
+|*OE 677 Class 4*
+|3.0
+|B4.6
+
+|...
+|...
+|
+|
+
+|*Oceanographic Mooring and Instrument Deployment Exercise*
+
+Guided exercise rigging, deploying and recovering an oceanographic instrument mooring and buoy from R/V _Gulf Surveyor_
+|*OE 677 Class 28*
+|2.0
+|B4.7, B4.8, B4.9, B4.11
+
+|...
+|...
+|
+|
+
+|*Surveyors Notebook*
+
+The do's and don'ts of note keeping
+|*OE 771 Lab 1*
+|1.0
+|H8.1a
+
+|*Leveling*
+
+Observing and calculating a leveling loop, calculate heights, distribute errors, Kukkamaki method, Proper note keeping
+|*OE 771 Lab 2*
+|10.0
+|F1.4a, F1.4b
+
+|...
+|...
+|
+|
+
+|*ADCP*
+
+In Lab: With instructor supervision, install/deploy and recover an acoustic Doppler current profiler at the waterfront. Collect and download current observation data.
+
+On own: Prepare and submit a report describing the sensor, the installation/deployment procedure and any possible difficulties encountered, and assessing sources of uncertainty in current measurements.
+|*OE 775 Lab 2C*
+|9.5
+|H5.5b
+
+|...
+|...
+|
+|
+|===
+
+
+==== CHAPTER 6: Final Project
+
+A detailed and comprehensive narrative description of the Final Project (CFFP, CCP. CMFP or CFCP) is to be provided. Describe the timescale and schedule. Explain student participation as groups or individuals, the assessment criteria for groups and individuals and who will conduct the assessment. Include the project specification (hydrographic or cartographic instruction) as provided to the students and a sample of submitted student deliverables and reports.
+
+In addition, a table MUST BE COMPLETED IN THE SPECIFIED TEMPLATE PROVIDED, as prescribed below. In this table the Final Project, whether CFFP, CCP. CMFP or CFCP, should be described in terms of Task Outcomes. Tasks defined by the institution, must ensure that the programme content is covered in an integrated manner. These tasks are to be cross-referenced to the *Essential, Foundation or Hydrographic/Cartographic Science* _subjects_.
+
+
+. *Guidance to Complete the Final Project Description Table*
++
+--
+The project should be described as a series of phases and associated tasks (project activities) each itemized as separate rows of the table (example in <<tab-final-project-descriptive-tables>>). Each task should be identified in the first column and the other columns populated with attributes of that task.
+
+The Task Outcome describes the intended result of the completed task. The required resources, equipment, software, data sources, etc. for each task are to be itemized. The number of hours devoted by the student to a particular task is to be itemized.
+
+Each task should refer to the module identifier for the project and related (S-5 or S-8) subjects from the Standards.
+
+
+[[tab-final-project-descriptive-tables]]
+.Final Project Descriptive Tables
+[cols="6"]
+|===
+6+|*Final Project (Hydrographic) Description Table (CFFP or CMFP)*
+
+h|Phase & Task h|Task Outcome h|Resources: equipment, software, data sources etc. h|Hours h|Programme Module(s) h|Related S-5 Elements
+
+|*Planning* | | | | |
+|*Task 1* | | | | |
+|*Task 2* | | | | |
+|*Task...* | | | | |
+|*Preparation* | | | | |
+|*Task 1* | | | | |
+|*Acquisition* | | | | |
+|*Task 1* | | | | |
+|*Task 2* | | | | |
+|*Task 3* | | | | |
+|*Processing* | | | | |
+|*Task 1* | | | | |
+|*Task...* | | | | |
+|*Deliverables* | | | | |
+|&nbsp; | | | | |
+|&nbsp; | | | | |
+|&nbsp; | | | | |
+|*Reports* | | | | |
+|&nbsp; | | | | |
+|&nbsp; | | | | |
+
+6+|*Final Project (Cartographic) Description Table (CCP or CFCP)*
+
+h|Phase & Task h|Task Outcome h|Resources: equipment, software, data sources etc. h|Hours h|Programme Module(s) h|Related S-5 Elements
+
+|*Planning* | | | | |
+|*Task 1* | | | | |
+|*Task...* | | | | |
+|*Preparation* | | | | |
+|*Task 1* | | | | |
+|*Task...* | | | | |
+|*Acquisition & Processing* | | | | |
+|*Task 1* | | | | |
+|*Task...* | | | | |
+|*Composition* | | | | |
+|*Task 1* | | | | |
+|*Task...* | | | | |
+|*Deliverables - Paper* | | | | |
+|*Deliverables - ENC* | | | | |
+|&nbsp; | | | | |
+|*Reports* | | | | |
+|&nbsp; | | | | |
+|&nbsp; | | | | |
+|===
+--
+
+
+[[scl-chapter7]]
+==== CHAPTER 7: Programme Cross-Reference Table
+
+This table is the most important information used by the Board to assess submitted programmes and MUST BE COMPLETED IN THE SPECIFIED TEMPLATE PROVIDED, as prescribed below. This table contains a mapping of the hours for theory (T), practicals (P), self-guided (SG) devoted to each element and learning outcomes of the Standards and classified by subject. The information provided is required to demonstrate that every element's contents and learning outcomes are covered by the programme modules.
+
+&#x200c;[Comment: Particular care should be taken in ensuring the cross-referencing is completed accurately and comprehensively. The Board needs to reference the learning outcomes sought against the content delivered.]
+
+. *Guidance to Complete the Cross-Reference Table*
++
+--
+Submitting institutions MUST complete the Module and content and the Hours columns of the table shown below for each _Basic, Essential, Foundation, Hydrographic or Cartographic_ Science subject:
+
+* T/P/SG (Theory/Practicals or Labs/Self-guided):
+**  Theory through lectures;
+**  Practicals (fieldwork and/or laboratories);
+**  Self-guided exercises (or student's personal independent work).
+
+For each element, the combined means of delivery should be clearly and uniquely identified.
+
+* Hours: Indicate the number of teaching hours for the different categories of delivery;
+
+* Module and content: For each relevant course module to a S-5 element, indicate its name and the list of content it is addressing.
+
+The following <<tab-generic-example>> provides a generic example for an element <c> of an essential subject topic Ex.y
+
+[[tab-generic-example]]
+.Generic Example
+[cols="7"]
+|===
+7+|*_Ex (subject)_*
+7+|*_Ex.y (topic)_*
+.2+h|Element .2+h|Content .2+h|Learning outcomes .2+h|Module and content 3+h|Hours
+h|T h|P h|SG
+
+a|Ex.y<c>
+
+_(B/I)_
+|Core content which are required to achieve the learning outcomes. These may apply to multiple elements and learning outcomes.
+|Students should be able to meet these outcomes at the completion of the programme. All _learning outcomes_ should be evaluated either by, or a combination of, assessment, examination, laboratory work or final project
+|Course module reference and associated content
+|N
+|N'
+|N"
+
+|Total 3+| | | |
+|===
+
+Each _Basic, Essential, Foundation, Hydrographic or Cartographic Science subject_ is comprised of a list of topics which are denoted by Bx.y, Ex.y, Fx.y, Hx.y or Cx.y. Each topic contains elements which are denoted by <c>.
+
+All modules of a programme submission MUST include a detailed breakdown of content and associated hours. The cross-reference should refer to those modules as provided in the following example (<<tab-detailed-breakdown-content-associated-hours>>):
+
+[[tab-detailed-breakdown-content-associated-hours]]
+.Detailed Breakdown of Content and Associated Hours
+[cols="a,a,a,a,a,a,a"]
+|===
+7+|*_Ex (subject)_*
+7+|*_Ex.y (topic)_*
+
+.2+h|Element .2+h|Content .2+h|Learning outcomes .2+h|Module and content 3+h|Hours
+h|T h|P h|SG
+
+.3+|Ex.y<c1>
+
+.5+|
+. Content 1
+. Content 2
+. Content 3
+. Content 4
+. Content 5
+. Content 6
+
+.3+|Learning outcome Ex.y<c1>
+
+|GEOM302 (i)(iii)(iv) |5 |3 |3
+|HYDRO304 (i)(vi) |3 |2 |5
+|Total |*8* |*5* |*8*
+
+.2+|Ex.y<c2>
+.2+|Learning outcome Ex.y<c2>
+|HYDRO501 (ii)(iv)(v) |8 |4 |
+|Total |*8* |*4* |
+
+|Total 3+| | | |
+|===
+--
+
+
+==== CHAPTER 8: Student Feedback
+
+The IBSC strives to ensure that quality control measures are in place and a part of this process involves consultation with the student body. It is important that students enrolled in the Programme are able to contribute to development and change. Mechanisms such as student liaison meetings help in dealing with issues that arise during delivery. On completion of the Programme a questionnaire should be circulated to solicit opinions on matters such as accessibility to resources and delivery of each course. Summary results from questionnaires should be included in the submission.
+
+
+==== CHAPTER 9: Internal Review
+
+Institutions are required to have in place an internal review process for the Programme. It is recommended that any Programme will also undergo a comprehensive internal review every 3-5 years, to address any issues that may arise and to update course content.
+
+The methodology adopted by the institution for the internal review will need to be furnished in detail. The summary of any recent internal review undertaken for a programme submitted for recognition will need to be included in the submission. This should not be taken as precluding newly developed programmes not yet able to satisfy these items.
+
+The Board wishes to see how feedback from all sources, including students, is formally taken into account within and by the Programme.

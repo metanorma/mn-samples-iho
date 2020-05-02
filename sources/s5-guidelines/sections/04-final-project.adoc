@@ -1,0 +1,37 @@
+
+== PRACTICAL EXERCISES AND FINAL PROJECT
+
+Because hydrography and nautical cartography are applied disciplines, every student undertaking a Category "A" or Category "B" Programme is expected to receive hands-on experience under direct supervision of the instructors. This experience should form an important part of the student's assessment, and should be considered in two parts, practical exercises and a final project.
+
+
+[[scl-practical-exercises]]
+=== Practical Exercises
+
+Both Category "A" and Category "B" Programmes should contain practical hydrographic surveying or nautical charting exercises related to modules. These should include, for example: experiments, exercises, laboratory work and fieldwork designed to complement the theory component.
+
+
+=== Final Project (CFFP, CCP, CMFP and CFCP)
+
+Any qualifying programme should also include a minimum period of at least four (4) weeks devoted to a supervised comprehensive final project. These projects should reflect the level of the overall knowledge outlined in the programme, and a full report should be compiled by students. Assessment of intended learning outcomes associated to this project is an important factor and an evaluation scheme for the final project must consider alignment for individual students.
+
+The _Comprehensive Final Field Project_ (CFFP) for a Category "B" hydrographic surveying programme will exercise the skills of the students to carry out the various hydrographic surveying tasks.
+
+The _Comprehensive Cartographic Project_ (CCP) for a Category "B" nautical charting programme will exercise the skills of the students to carry out the various nautical charting tasks.
+
+For students of a S-5 Category "A" Programme, a _Complex Multi-disciplinary Field Project_ (CMFP) is required, which will include analytical reasoning, decision making and development of solutions to non-routine problems.
+
+For students of a S-8 Category "A" Programme, a _Complex Final Cartographic Project_ (CFCP) is required, which will include analytical reasoning, decision making and development of solutions to non-routine problems.
+
+
+=== Guidelines for Practical Exercises and Final Project
+
+The (educational) purpose of the practical exercises and field training project(s), for both Category "A" and Category "B", is to give every student experience in performing as many hydrographic and nautical charting tasks as possible. For example, levelling, tide gauge installation, shore lining, multi-beam surveying, spatial data acquisition, spatial data evaluation and processing, composition, generalization, chart production and reproduction, etc.
+
+Practical exercises associated with the educational modules should occur throughout the programme of study.
+
+The final project should occur at the end of the programme, so that knowledge gained in earlier work can be put into practice, and the practical limitations involved in field and office operations experienced by the student. Final projects must reflect the level of knowledge outlined in the programme syllabus.
+
+Reference material should be available to students, including an archive of case study material, equipment and costing information in order to allow students to plan and design the survey/nautical chart.
+Consideration should be given to involving experienced hydrographers and nautical cartographers, and, when necessary, equipment provided by external agencies in the final project, in order to supplement the resources of the training institution.
+
+Students should prepare a complete final project report and associated survey or nautical charting deliverables. The final project report must form part of the performance assessment for students.

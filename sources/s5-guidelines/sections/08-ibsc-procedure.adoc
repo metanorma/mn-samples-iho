@@ -1,0 +1,56 @@
+
+== IBSC PROCEDURE FOR RECOGNITION OF PROGRAMMES
+
+=== IBSC Review and Evaluation
+
+See <<annex-application-process-flow-diagram>> for the Application Process Flow Diagram.
+
+The Board meets annually during March/April to review and evaluate programmes. The deadline of 31 December each prior year is chosen in order that submissions reach all Board members and the Secretary by mid-January. It is helpful for the IBSC in setting its work program to know as early as possible that a submission is being made.
+
+The completeness of each submission will be checked to determine if it is eligible for Board review. A submission is declared eligible for review if:
+
+* fees have been paid;
+
+* the structure of the submission is in accordance with Chapter 7 of the Guidelines;
+
+* information about each module in the programme is provided;
+
+* the final project description and the final project cross-reference table is provided; and
+
+* the programme cross-reference table is provided.
+
+&#x200c;[Comment: the above check is conducted by the Secretary and is restricted to reviewing the format and structure of the submission. It is not a qualitative assessment of the content, which is the responsibility of the Board.]
+
+If the submission is not eligible, the institution will have to update the documentation by 31 January. If the updated documentation is not provided by this deadline or if it does not meet the eligibility criterion for Board Review, the submission will not be reviewed. _Only eligible submissions will be reviewed_.
+
+Since the Board is charged with reviewing a significant number of submissions each year as well as maintaining the Standards themselves, it is essential that submitting organizations assist with the Board's timing requirement. In the experience of the Board, the better submissions are those which are most straightforward for it to review and these are typically those prepared well ahead of the submission date and which have been thoroughly reviewed internally by the submitting organization.
+
+
+=== Review Process
+
+See <<annex-recognition-schemes-flow-diagram>> for the *Procedure for Recognition of Programmes and Schemes* _Flow Diagram_.
+
+Once a submission is declared eligible for Review, the Chair of the Board assigns it to a primary Review Team who are responsible for leading the detailed review. Between the 31 January and the IBSC meeting Board Members have the opportunity to review submissions individually. All Members of the Board will review all submissions in plenary at the annual meeting.
+
+Should there be any contact between institutions and Board Members prior to the annual IBSC meeting, please note that any advice given is in good faith with the best intention of assisting the institution in preparing its submission. It should not be construed as formal feedback from the IBSC. The institution should not expect that compliance with any requests or recommendations will necessarily result in recognition of the programme. The formal consideration and any decision relating to any programme can only be undertaken by the full IBSC.
+
+While not mandatory, *in the experience of the Board it is beneficial for a submitting organization to send a representative (a maximum of 2 persons) to the meeting where its submission will be reviewed*. The representative(s) should be prepared to make a presentation to the Board of no longer than 20 minutes, and be qualified to respond authoritatively to questions posed or clarifications sought by the IBSC in plenary.
+
+The Board's decision will be one of the following:
+
+. *RECOGNISED*: no further requirements or changes are necessary;
+
+. *RECOGNISED WITH CONDITIONS*: further requirements or changes are necessary in response to identified issues. The required information is to be submitted within a period specified by the Board;
+
+. *NOT RECOGNISED*: a full resubmission is required, including all documentation (In exceptional circumstances the Board may consider an inter-sessional resubmission).
+
+The Board will inform the submitting organization of its decision during the meeting and will follow up with a formal letter explaining its decision and requirements.
+
+
+=== Certificate of Programme Completion
+
+Institutions providing a programme which has been recognized as outlined in <<scl-recognition-programmes-schemes>>, are encouraged to issue successful students with a certificate of programme completion. Such certificate may acknowledge that the Programme has received the Board's recognition, specifying the category of that recognition, as in the following example:
+
+"`This Programme has been recognized as meeting the requirements of the FIG/IHO/ICA S-5A/B or S-8A/B Standards of Competence for Category "A" (or "B") Hydrographic Surveyors or Standards of Competence for Category "A" (or "B") Nautical Cartographers`"
+
+Institutions cannot include any FIG, IHO, ICA or IBSC logos in their certificates.

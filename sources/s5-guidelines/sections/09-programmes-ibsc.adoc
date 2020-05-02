@@ -1,0 +1,166 @@
+
+== FOLLOW-UP OF RECOGNIZED PROGRAMMES BY THE IBSC
+
+=== Programme Reviews and On-Site Visits
+
+Institutions with recognized Programmes should be prepared to allow an IBSC visit, to view the facilities and to meet staff and students involved. The guidelines for the IBSC visit are:
+
+
+==== Scope
+
+A Programme review is a process for evaluating and continuously enhancing the quality and currency of Programmes. The evaluation is conducted through a combination of self-assessment, followed by peer on-site consultation by the IBSC, for the mutual benefit of all parties. In addition, a visit serves to raise the profile of hydrography and nautical cartography with other in-country agencies and regionally.
+
+
+==== Purpose of Programme Review
+
+The purpose of the on-site review is to confirm the internal review document presented by the host institution, in accordance with the Standards of Competence for Hydrographic Surveyors (S-5A/B) and the Standards of Competence for Nautical Cartographers (S-8A/B). This is designed to assess institutions' alignment of their Programmes with the Standards and to review educational processes.
+
+
+==== Internal Review Document
+
+A prerequisite for the on-site review is the submission of an internal review document prepared by the hosting institution covering a period of up to 5 years, from either: the last on-site review visit; or, commencement of the current Programme. This should be submitted in English at least one month prior to the on-site visit with content as indicated below:
+
+* The Annual Review Document(s) as detailed in <<scl-annual-report>>.
+
+* If requested, the final submission from the current recognized programme as presented to the Board for recognition
+
+* Any changes to the course content, staff, delivery, facilities, field training, equipment and other resources
+
+* Programme statistics relating to students including, entry, progression, completion and destinations (employment)
+
+* Relevant institutional research
+
+The Review Team will comprise two or three reviewers and the duration of the on-site review is typically two to three days.
+
+Further documentation to be made available during the visit includes:
+
+* A full set of programme documentation
+
+* Exam papers and sample scripts
+
+* Assignment specifications and sample submissions
+
+* Specifications for practical exercises and field training with sample submissions
+
+* Final project submissions
+
+* Internal course assessment procedures and sample results
+
+* Programme review documentation
+
+
+==== The On-Site Visit
+
+During the on-site visit the Review Team will undertake the following activities in accordance with a schedule that is agreed in advance with the hosting institution:
+
+* Preliminary discussion:
+**  Clarify the information provided in the Internal Review document
+**  Outline the schedule and objectives for the on-site visit
+
+* Meet current students, faculty members, administrators, and staff
+
+* Meet former students and employers
+
+* Visit classrooms, labs, survey vessels and other key facilities
+
+* Provide oral feedback to the institution
+
+
+==== On-Site Visit Outcomes
+
+Within one month of the visit a written report detailing the findings and recommendations of the Review Team for the programme will be provided to the hosting institution for response and sent to the Board. Recommendations made by the Review Team will be considered by the Board with possible outcomes as follows:
+
+* Programme is satisfactory;
+
+* There is a need for minor modifications that can be rectified internally by the hosting institution;
+
+* The findings of the Review Team refer to major issues requiring significant changes to the documentation and/or practices as detailed in the report. Modifications are to be implemented within an agreed timeframe indicated by the Board and documentary evidence of the modifications will be required;
+
+* The findings of the Review Team refer to major issues and therefore a new submission is required at a time to be agreed with the Board.
+
+
+=== Register of Recognized Programs and Schemes
+
+Recognition is granted on the understanding that institutions undertake to update their programme/scheme content according to changes in technology as reflected in the latest edition of the Standards. The IBSC reserves the right to monitor programme syllabi in conformity with the current published Standards. The Board annually updates its Register of Recognized Programmes and Schemes, which is published in the Board Annual Meeting report. Programmes that have been recognized within the previous six (6) years are listed in this Register. To remain on the Register beyond six (6) years, programmes and schemes will need to be re-submitted against the then current Standards.
+
+[[scl-annual-report]]
+=== Annual Report for Recognized Programmes
+
+All institutions hosting a recognized Programme/Scheme must send a short annual report to the Board's Secretariat. A template is available from the IHO website.
+
+The annual report should be provided by the end of January each calendar year and contain the following information:
+
+[width=70%,options="unnumbered"]
+|===
+|*Name of Programme:* 3+|
+|*Name of Contact Person:* 3+|
+|*Contact information:* 3+|
+|*Period Covered:*  | ^|*to* |
+|===
+
+
+*Programme Changes*
+
+* Describe any changes made to the programme such as structure, sequence or timing with a rationale.
+
+* Describe any changes made to modules within a programme such as content and assessment strategy.
+
+* Identify significant changes to key staff involved in delivery.
+
+
+*Programme Statistics*
+
+The minimum statistical information/data concerning courses within the programme are required as follows:
+
+* Number of students entering the programme and their nationality.
+
+* Number of students completing the programme.
+
+
+*Internal Assessment*
+
+Internal assessment is the appraisal process performed by the institution responsible for the Programme. Please provide a summary of feedback from students and staff and any action taken as a result.
+
+
+*Deadline for Annual Reports for Recognized Programmes*
+
+Annual reports are to be submitted to the IBSC by 31 January, independent of the programme timeline.
+
+
+=== Annual Reports for Recognized Schemes
+
+All entities operating a recognized Scheme must submit a concise annual report summarizing the operation and any administrative changes to the Scheme over the previous calendar year.
+
+The annual report should contain the following header information:
+
+[width=70%,options="unnumbered"]
+|===
+|*Name of Scheme:* 3+|
+|*Name of Contact Person:* 3+|
+|*Contact information:* 3+|
+|*Period Covered:*  | ^|*to* |
+|===
+
+
+The content of the report should include:
+
+* a general description of the operation of the scheme, initiatives in promotion, relationships with other schemes or authorities, recognition by other parties, other relevant observations;
+
+* any changes that are being considered, proposed or implemented;
+
+* a table of the board/panel members, showing changes/dates of service;
+
+* the number of meeting held, dates, number of board/panel members in attendance and whether they were face to face or remotely;
+
+* the number of applications considered, the status of these applications, and details of pathways to certification applied for;
+
+* cumulative statistics summarizing applications since inception/recognition;
+
+* any planned future initiatives; and
+
+* any other information that they scheme considers may be of interest to the IBSC.
+
+
+*Deadline for Annual Reports for Schemes*
+
+Annual reports for Schemes are to be submitted to the IBSC by 31 January.
