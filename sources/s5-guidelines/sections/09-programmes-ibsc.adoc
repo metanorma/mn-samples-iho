@@ -90,13 +90,12 @@ All institutions hosting a recognized Programme/Scheme must send a short annual 
 
 The annual report should be provided by the end of January each calendar year and contain the following information:
 
-[width=70%,options="unnumbered"]
-|===
-|*Name of Programme:* 3+|
-|*Name of Contact Person:* 3+|
-|*Contact information:* 3+|
-|*Period Covered:*  | ^|*to* |
-|===
+
+*Name of Programme:* _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ +
+*Name of Contact Person:* _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ +
+*Contact information:* _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ +
+*Period Covered:* _ _ _ _ _ _ _ _ _ _ _ _ *to* _ _ _ _ _ _ _ _ _ _ _ _
+
 
 
 *Programme Changes*
@@ -133,14 +132,10 @@ All entities operating a recognized Scheme must submit a concise annual report s
 
 The annual report should contain the following header information:
 
-[width=70%,options="unnumbered"]
-|===
-|*Name of Scheme:* 3+|
-|*Name of Contact Person:* 3+|
-|*Contact information:* 3+|
-|*Period Covered:*  | ^|*to* |
-|===
-
+*Name of Scheme:* _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ +
+*Name of Contact Person:* _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ +
+*Contact information:*  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ +
+*Period Covered:* _ _ _ _ _ _ _ _ _ _ _ _  *to* _ _ _ _ _ _ _ _ _ _ _ _
 
 The content of the report should include:
 

@@ -9,11 +9,13 @@ The Board _does not provide recognition to individuals_ directly. It does howeve
 
 [%inline-header]
 ==== {blank}
+
 In issuing the guidelines the IBSC fully recognizes and anticipates dialogue with national bodies seeking such recognition as the guidelines are developed to a level of maturity acceptable internationally. In this sense, the guidelines are issued in this document without prejudice. The IBSC encourages schemes to adopt common requirements and levels of competency based on the IBSC standards which will facilitate mutual recognition.
 
 
 [%inline-header]
 ==== {blank}
+
 The underpinning philosophy of the work of the Board in recognizing professional certification schemes for individuals is that competence equals knowledge plus experience, and must be demonstrated. Thus, upon successful achievement by any individual of a Category "A" or a Category "B" Programme, a competency certification within any Scheme consists of _both_ successful completion of a programme of study which addresses the topics within the relevant Standard _and_ a satisfactory period of relevant experience during which competence has been demonstrated. In addition, the IBSC notes that hydrographic technology is constantly advancing and that, in order to maintain competence, an individual must pursue continuing professional training and education to ensure that they maintain currency. Consequently national organizations and academic institutions may decide to recognize and/or certify individuals in order to monitor competency and currency. The IBSC requires that professional certification of individual competency should be based on completion of:
 
 . A programme of formal education or training, normally as outlined in <<scl-cat-programmes-schemes>>;
