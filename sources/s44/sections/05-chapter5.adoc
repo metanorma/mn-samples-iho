@@ -1,0 +1,62 @@
+
+== SURVEYS ABOVE THE VERTICAL DATUM
+
+=== Introduction
+
+Surveys above the vertical datum are necessary for safe and efficient navigation and mooring. Topographic and geodetic measurements that are of specific importance for navigation are presented in the following sections. Their corresponding allowable uncertainties (<<def-thu,THU>> and <<def-tvu,TVU>> as applicable) are defined in <<tab-other-minimum>>.
+
+Additional information such as drawings or photographs of these features should be captured where possible to support the measurement.
+
+For Chart and Land Survey Vertical Datum Connection requirements see <<scl-datum-connections>>.
+
+
+[[scl-fixed-topographic-navigation]]
+=== Fixed Aids and Topographic Features Significant to Navigation
+
+Fixed aids to navigation include, but are not limited to: beacons, day marks, range markers, and lighthouses.
+
+Topographic <<def-feature,features>> significant to navigation are conspicuous <<def-feature,features>>, landmarks, and objects which assist mooring, docking, and manoeuvring in confined spaces and / or provide some aid in navigation.
+
+Conspicuous <<def-feature,features>> which provide some aid in navigation without being a dedicated aid to navigation may include, but are not limited to, conspicuous natural features, cultural features, and landmarks such as: chimneys, flare stacks, hill or mountain tops, masts, monuments, towers, refineries, religious buildings, silos, single buildings, tanks, tank farms, towers, and windmills. <<def-feature,Features>> of this type may be both significant to navigation and less significant to navigation (<<scl-features-navigation>>) depending on the feature's individual characteristics and surroundings.
+
+Essential harbour, mooring, and docking <<def-feature,features>> include, but are not limited to: groins, moles, wharfs (quays), piers (jetties), mooring dolphins, piles, bollards, slipways, docks, lock gates, and breakwaters.
+
+Allowable <<def-thu,THU>> and <<def-tvu,TVU>> for the positioning of these fixed aids and <<def-feature,features>> significant to navigation are presented in <<tab-other-minimum>>.
+
+One may consider drying <<def-feature,features>> (including rocks) which are positioned by topographic means to be topographic <<def-feature,features>> significant to navigation. Regardless of the positioning methodology, maximum allowable uncertainties for drying <<def-feature,features>> shall not exceed those specified in this standard for the adjacent permanently submerged <<def-feature,features>> (unless a different order of survey has intentionally been specified by the commissioning authority).
+
+[[scl-floating-objects]]
+=== Floating Objects and Aids to Navigation
+
+Floating objects and aids to navigation include, but are not limited to: buoys, articulated beacons, fish farms, and floating docks.
+
+
+For floating objects, the surveyed position <<def-uncertainty,uncertainty>> should be significantly lower than the sway (object's allowed movement). Sway due to currents, wind, and water level must be taken into account when computing the mean position of these objects.
+
+Allowable THU for the positioning of these objects are presented in <<tab-other-minimum>>. Allowable <<def-tvu,TVU>> is not applicable to these measurements.
+
+
+[[scl-coastline]]
+=== Coastline
+
+IHO S-32, _IHO Hydrographic Dictionary_, generally defines coastline or shoreline as the line where shore and water meet. IHO S-4, _Regulations of the IHO for International (INT) Charts and Chart Specification of the IHO_, describes it more specifically as high water mark, or the line of mean water level where there is no appreciable tide or change in water level. The coastline may also be defined as the low water line. Allowable <<def-thu,THU>> for the positioning of these objects are presented in <<tab-other-minimum>>. Allowable <<def-tvu,TVU>> is not applied to these measurements within this standard.
+
+
+[[scl-features-navigation]]
+=== Features Less Significant to Navigation
+
+<<def-feature,Features>> less significant to navigation are non-conspicuous <<def-feature,features>> which provide context and additional information, but are not likely to aid navigation. As stated in <<scl-fixed-topographic-navigation>>, topographic <<def-feature,features>> of the same type may be both conspicuous / significant to navigation and less conspicuous / less significant to navigation depending on the feature's individual characteristics and surroundings. Topographic <<def-feature,features>> less significant to navigation may include, but are not limited to non-conspicuous landmarks such as: chimneys, flare stacks, hill or mountain tops, masts, monuments, towers, refineries, religious buildings, silos, single buildings, tanks, tank farms, and windmills.
+
+Allowable <<def-thu,THU>> and <<def-tvu,TVU>> for the positioning of these objects are presented in <<tab-other-minimum>>.
+
+
+[[scl-overhead-clearances]]
+=== Overhead Clearances, Range Line and Sector Lights Heights
+
+Overhead obstructions such as bridges and cables may pose a hazard to navigation. Range line and sector light heights may be of use for determining distance from shore. Allowable <<def-thu,THU>> and <<def-tvu,TVU>> for the positioning of overhead clearances (including associated horizontal clearances), range line and sector light heights are presented in <<tab-other-minimum>>.
+
+
+[[scl-angula-measurements]]
+=== Angular Measurements
+
+Angular measurements include, but are not limited to: limits of sectors and arcs of visibility of lights, alignments of leading lights and clearing lights, directions for passing off-lying dangers, and alignment of recommended tracks. Allowable <<def-thu,THU>> for the measurement of these angles is presented in <<tab-other-minimum>>. Allowable <<def-tvu,TVU>> is not applicable to these measurements

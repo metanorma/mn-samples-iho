@@ -1,0 +1,563 @@
+
+[%portrait]
+<<<
+
+[[annex-matrix-guidance]]
+[appendix]
+== MATRIX GUIDANCE
+
+=== Introduction
+
+The <<scl-matrix-description,Matrix>>, as presented in <<scl-matrix>>, includes a range of selectable criteria for hydrographic survey parameters / data types. It is organised by the following data classes: Bathymetry, Other Positioning, Water Flow, and Nature of the Bottom.
+
+The criteria are derived through a series of alphanumeric codes which reference the cells in the <<scl-matrix-description,Matrix>>. A criterion requires three characters to reference a cell address:
+
+. The first character is a capital letter denoting the class of data.
+. The second character is a lower-case letter referencing the intended criteria by row.
+. The third character is a number referencing the intended criteria value by column.
+
+The string should include only those parameters and data types required for both specification and classification of surveys. Omission of a cell reference indicates that there is no requirement for the associated criteria and that "`0`" should be used in required formulas.
+
+[[tab-matrix-classes]]
+[cols="3",options="header"]
+|===
+| | Class | Description
+
+| *B* | Bathymetry | Depth and features
+| *P* | Other Positioning | Location of features above the vertical reference
+| *W* | Water Flow | Direction and speed of currents
+| *N* | Nature of the Bottom | Bottom characterisation
+
+|===
+
+
+[[fig-pb4]]
+.Example: (Pb4) derivation of Fixed Aids, Features Significant to Navigation TVU = 0.5 m
+image::figA1.png[]
+
+
+=== Examples of Matrix Realisations:
+
+==== Matrix Representations
+
+<<scl-matrix-description,Matrix>> realisations may be communicated in a variety of representations including: diagrams, tables, text strings, and shaded matrices.
+
+
+==== Table Examples
+
+The following table presents two examples of "`Matrix Realisations`": Order 1a Surveys, and a Customised Specification. This table includes the values associated with a <<scl-matrix-description,Matrix>> cell. Although it may be helpful to provide those values in a technical specification for a survey, it is not explicitly necessary in order to communicate the requirement. Cells in colour highlight the differences between Order 1a and the customised specification, which is more demanding.
+
+[cols="6*^.^",options="header,unnumbered"]
+|===
+| B | BATHYMETRY | Order 1a Value | Matrix Cell Ref. | Custom | Matrix Cell Ref.
+
+| *a*
+| *Depth* THU [m]
+| 5
+| Ba8
+| 5
+| Ba8
+
+| *b*
+| *Depth* THU [% of depth]
+| 5
+| Bb3
+| 5
+| Bb3
+
+| *c*
+| *Depth* TVU "a" [m]
+| 0.5
+| Bc8
+| ---
+| ---
+
+| *d*
+| *Depth* TVU "b"
+| 0.013
+| Bd6
+| 0.010
+| Bd7
+
+| *e*
+| *Feature Detection* [m]
+| 2 +
+(≤40 m)
+| Be5 +
+(≤40 m)
+| 1 +
+(≤40 m)
+| Be6
+
+| *f*
+| *Feature Detection* [% of Depth]
+| 10 +
+(>40 m)
+| Bf3 +
+(>40 m)
+| 10
+| Bf3
+
+| *g*
+| *Feature Search* [%]
+| 100
+| Bg9
+| 100
+| Bg9
+
+| *h*
+| *Bathymetric Coverage* [%]
+| ≤ 100
+| ≤ Bh9
+| 100
+| Bh9
+
+h| P h| OTHER POSITIONING h| h| h| h|
+
+| *a*
+| *Fixed Aids, Features Significant to Navigation* THU [m]
+| 2
+| Pa6
+| 2
+| Pa6
+
+| *b*
+| *Fixed Aids, Features Significant to Navigation* TVU [m]
+| 1
+| Pb3
+| 1
+| Pb3
+
+| *c*
+| *Floating Aids and Objects* THU [m]
+| 10
+| Pc3
+| 10
+| Pc3
+
+| *d*
+| *Coastline* THU (high, low, MWL water lines, etc.) [m]
+| 10
+| Pd2
+| 10
+| Pd2
+
+| *e*
+| *Topographic Features Less Significant to Navigation* THU [m]
+| 20
+| Pe2
+| 5
+| Pe4
+
+| *f*
+| *Topographic Features Less Significant to Navigation* TVU [m]
+| 1
+| Pf3
+| 1
+| Pf3
+
+| *g*
+| *Overhead Clearance and Range line, Sector Light Heights* THU [m]
+| 5
+| Pg2
+| 5
+| Pg2
+
+| *h*
+| *Overhead Clearance and Range line, Sector Light Heights* TVU [m]
+| 1
+| Ph3
+| 1
+| Ph3
+
+| *i*
+| *Angular Measurements* [degrees]
+| 0.5
+| Pi4
+| 0.5
+| Pi4
+
+h| T h| WATER FLOW h| h| h| h|
+
+| *a*
+| *Flow Direction* [degrees]
+| 10
+| Ta1
+| 5
+| Ta3
+
+| *b*
+| *Flow Speed Uncertainty* [knots]
+| 0.1
+| Tb5
+| 0.1
+| Tb5
+
+h| N h| NATURE OF THE BOTTOM h| h| h| h|
+
+| *a*
+| *Bottom Characterisation Method*
+| ---
+| ---
+| INF w/ GT (VIS & LAB)
+| Na7
+
+| *b*
+| *Bottom Sampling Frequency*
+| ---
+| ---
+| As Req to GT
+| Nb1
+
+|===
+
+==== Text String Examples
+
+The following text strings present examples of "`Matrix Realisations`": Order 1a Surveys, and a Crowd Sourced dataset example.
+
+
+.Order 1a Matrix text string example
+====
+Classified according to the S-44 Matrix as:
+
+_Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (>40m), Bg9, ≤Bh9, Pa6, Pb3, Pc3, Pd2, Pe1, Pf3, Pg2, Ph3, Pi4, Wa1, Wb5._
+
+Can be divided into the separate parts as not all parameters need to be surveyed at all times depending on area and survey specification requirements. Classified according to the S-44 Matrix as:
+
+* Bathymetry: _Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (>40m), Bg9, ≤ Bh9_
+* Fixed Objects, Aids, Features Above the Vertical Reference Significant to Navigation: _Pa6, Pb3_
+* Floating Aids and Objects: _Pc3_
+* Coastline: _Pd2_
+* Features Above the Vertical Reference Less Significant to Navigation: _Pe2, Pf3_
+* Overhead Clearances and Range Line, Sector Light Heights: _Pg2, Ph3_
+* Angular Measurements: _Pi4_
+* Water Flow: _Wa1, Wb5_
+====
+
+.Crowd Sourced Dataset Example
+====
+A "`Crowd Sourced`" bathymetric dataset acquired in deep water, with a single beam echosounder and no sound velocity correction, could be classified by the use of <<def-tvu,TVU>> and <<def-thu,THU>> (the coverage is of no use as it is not a systematic survey):
+
+Classified according to the S-44 Matrix as: _Ba3, Bc5, Bd3_
+====
+
+*Referencing:*
+
+The use of text strings for classification of datasets should be articulated with a clear reference to the <<ch-safety-navigation-surveys,S-44 Survey Order>> and / or <<scl-matrix-description,Matrix>>, highlighting any variance from the Survey Order.
+
+Examples could be: "`_Classified according to the S-44 Matrix as: (Ba8, Bb3...)_`" or "`_Classified according to the S-44 Survey Order and Matrix as: Special Order, *Ba12*_`" (where Ba12 shows a further augmentation of Special Order in this case).
+
+NOTE: the use of text strings alone has a higher probability of translation error.
+
+
+[%landscape]
+<<<
+
+==== Matrix Example
+
+Example: Order 1b using the SPECIFICATION MATRIX
+m = metres, all <<def-uncertainty,uncertainties>> at 95% confidence level, *Order 1b cells*
+
+[cols="16*^.^",options="header,unnumbered"]
+|===
+| | Criteria | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14
+
+h| B 15+h| BATHYMETRY
+
+| *a*
+| *Depth* <<def-thu,THU>> [m]
+| 500
+| 200
+| 100
+| 50
+| 20
+| 15
+| 10
+| *5*
+| 2
+| 1
+| 0.5
+| 0.35
+| 0.1
+| 0.05
+
+| *b*
+| *Depth* <<def-thu,THU>> [% of depth]
+| 20
+| 10
+| *5*
+| 2
+| 1
+| 0.5
+| 0.25
+| 0.1 | | | | | |
+
+| *c*
+| *Depth* <<def-tvu,TVU>> "a" [m]
+| 100
+| 50
+| 25
+| 10
+| 5
+| 2
+| 1
+| *0.5*
+| 0.3
+| 0.25
+| 0.2
+| 0.15
+| 0.1
+| 0.05
+
+| *d*
+| *Depth* <<def-tvu,TVU>> "b"
+| NOTE 1
+| 0.20
+| 0.10
+| 0.05
+| 0.023
+| 0.02
+| *0.013*
+| 0.01
+| 0.0075
+| 0.004
+| 0.002 | | |
+
+| *e*
+| *Feature Detection* [m]
+| 50
+| 20
+| 10
+| 5
+| 2
+| 1
+| 0.75
+| 0.7
+| 0.5
+| 0.3
+| 0.25
+| 0.2
+| 0.1
+| 0.05
+
+| *f*
+| *Feature Detection* [% of Depth]
+| 25
+| 20
+| 10
+| 5
+| 3
+| 2
+| 1
+| 0.5
+| 0.25 | | | | |
+
+| *g*
+| *Feature Search* [%]
+| 1
+| 3
+| 5
+| 10
+| 20
+| 30
+| 50
+| 75
+| 100
+| 120
+| 150
+| 200
+| 300 |
+
+| *h*
+| *Bathymetric Coverage* [%]
+| 1
+| 3
+| *5*
+| 10
+| 20
+| 30
+| 50
+| 75
+| 100
+| 120
+| 150
+| 200
+| 300 |
+
+
+h| P 15+h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
+
+
+| *a*
+| *Fixed Aids, Features Significant to Navigation* <<def-thu,THU>> [m]
+| 50
+| 20
+| 10
+| 5
+| 3
+| *2*
+| 1
+| 0.5
+| 0.2
+| 0.1
+| 0.05
+| 0.01 | |
+
+| *b*
+| *Fixed Aids, Features Significant to Navigation* <<def-tvu,TVU>> [m]
+| 3
+| *2*
+| 1
+| 0.5
+| 0.25
+| 0.1
+| 0.05
+| 0.01 | | | | | |
+
+| *c*
+| *Floating Aids and Objects* <<def-thu,THU>> [m]
+| 50
+| 20
+| *10*
+| 5
+| 2
+| 1
+| 0.5 | | | | | | |
+
+| *d*
+| *Coastline* <<def-thu,THU>> (high, low, MWL water lines, etc.) [m]
+| 20
+| *10*
+| 5
+| 1
+| 0.5
+| 0.25
+| 0.1 | | | | | | |
+
+| *e*
+| *Features Less Significant to Navigation* <<def-thu,THU>> [m]
+| 50
+| *20*
+| 10
+| 5
+| 3
+| 2
+| 1
+| 0.5
+| 0.2
+| 0.1
+| 0.05
+| 0.01 | |
+
+| *f*
+| *Features Less Significant to Navigation* <<def-tvu,TVU>> [m]
+| 3
+| *2*
+| 1
+| 0.5
+| 0.3
+| 0.25
+| 0.1
+| 0.05
+| 0.01 | | | | |
+
+| *g*
+| *Overhead Clearance and Range line, Sector Light Heights* <<def-thu,THU>> [m]
+| *10*
+| 5
+| 2
+| 1
+| 0.5
+| 0.2
+| 0.1
+| 0.05
+| 0.01 | | | | |
+
+| *h*
+| *Overhead Clearance and Range line, Sector Light Heights* <<def-tvu,TVU>> [m]
+| 3
+| *2*
+| 1
+| 0.5
+| 0.3
+| 0.1
+| 0.05
+| 0.01 | | | | | |
+
+| *i*
+| *Angular Measurements* [degrees]
+| 5
+| 2.5
+| 1
+| *0.5*
+| 0.2
+| 0.1
+| 0.05 | | | | | | |
+
+
+h| W 15+h| WATER FLOW
+
+| *a*
+| *Flow Direction* [degrees]
+| <<scl-water-flow>>
+| *10*
+| 7.5
+| 5.0
+| 2.5
+| 1.0
+| 0.5
+| 0.25
+| 0.10 | | | | |
+
+| *b*
+| *Flow Speed* [knots]
+| <<scl-water-flow>>
+| 2
+| 1
+| 0.5
+| 0.25
+| *0.10* | | | | | | | |
+
+
+h| N 15+h| NATURE OF THE BOTTOM
+
+| *a*
+| *Bottom Characterisation Method* +
+<<scl-nature-bottom>> +
+NOTE 2
+| PHY - VIS
+| PHY - LAB
+| PHY - VIS & LAB
+| INF
+| INF w/ GT (VIS)
+| INF w/ GT (LAB)
+| INF w/ GT (VIS & LAB) | | | | | | |
+
+| *b*
+| *Bottom Sampling Frequency approximate* [m] +
+<<scl-nature-bottom>> +
+NOTE 2
+| As Req to GT
+| 10,000
+| 5,000
+| 2,500
+| 1,852
+| 1,000
+| 500
+| 250
+| 100
+| 75
+| 50
+| 25
+| 10
+| 5
+
+|===
+
+
+NOTE: To use the parameter as a percentage of depth multiply by 100.
+
+NOTE: PHY = Physical Sampling. VIS = Visual Analysis. LAB = Laboratory Analysis. INF = Inference Technique. w/ = With. GT = Ground Truth. As Req to GT = As Required to Ground Truth any Inference Technique.
+
+[%portrait]
+<<<
