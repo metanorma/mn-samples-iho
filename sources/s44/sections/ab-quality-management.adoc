@@ -5,7 +5,7 @@
 
 NOTE: This annex is *not* an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, _Manual on Hydrography_.
 
-*Quality control*: Quality evaluation procedure for maintaining standards in products by testing the output against the specification.
+Quality control:: Quality evaluation procedure for maintaining standards in products by testing the output against the specification.
 
 
 === Quality Control
