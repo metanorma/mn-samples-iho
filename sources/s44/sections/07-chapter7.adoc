@@ -1,0 +1,474 @@
+
+[[ch-tables-specification-matrix]]
+== TABLES AND SPECIFICATION MATRIX
+
+=== Introduction
+
+As in previous editions, this edition of S-44 presents key elements of safety of navigation survey specifications in table format. This edition has two Tables (1 and 2) and provides a new specification <<scl-matrix-description,Matrix>> for added flexibility for other types of hydrographic surveys carried out for purposes beyond safety of navigation. The new <<scl-matrix-description,Matrix>> allows for customisation and enhancement of safety of navigation survey standards.
+
+
+=== Safety of Navigation Standards
+
+Minimum bathymetry standards are defined in <<tab-minimum-bathymetry>>. Other minimum standards for positioning and water flow measurements are defined in <<tab-other-minimum>>. Both tables must be read in conjunction with the detailed text in this document.
+
+As stated above, all standards defined in <<tab-minimum-bathymetry>> and <<tab-other-minimum>> are included in the specification <<scl-matrix-description,Matrix>> within ranges of specification values which are available to enhance and customise safety of navigation surveys. Although the <<scl-matrix-description,Matrix>> is available for this purpose, its usage will not reduce the minimum standards defined for safety of navigation survey orders. See Annex A for guidance on how to use the Specification <<scl-matrix-description,Matrix>>.
+
+
+==== Bathymetry Standards
+
+<<tab-minimum-bathymetry>> defines minimum bathymetry standards for safety of navigation surveys. The standards are intended to be purpose specific but technology independent in design. The order achieved for bathymetry data (<<tab-minimum-bathymetry>>) may be assessed independently of order achieved for other positioning data (<<tab-other-minimum>>), so as not to unnecessarily degrade the representation of quality of bathymetry in nautical charts and products. <<tab-minimum-bathymetry>> follows.
+
+
+==== Other Positioning Standards, Tidal Stream and Currents
+
+<<tab-other-minimum>> defines minimum navigational aid, structural, and topographic positioning standards for safety of navigation surveys above the vertical datum. It also includes minimum standards for angular measurement in relation to range lines, sectors lights, and similar aids to navigation used on an established course or heading. Finally, requirements are set for direction and speed measurements for tidal stream and current. These standards only apply where such measurements are required for the survey. <<tab-other-minimum>> follows.
+
+[%landscape]
+<<<
+
+=== Minimum Bathymetry Standards for Safety of Navigation Hydrographic Surveys
+
+To be read in conjunction with the full text set out in this document, m = metres, all <<def-uncertainty,uncertainties>> at 95% confidence level, * = Matrix Reference.
+
+[[tab-minimum-bathymetry]]
+[cols="7*^.^",options="header"]
+|===
+|Reference |Criteria |Order 2 |Order 1b |Order 1a |Special Order | Exclusive Order
+
+| <<ch-safety-navigation-surveys>>
+| *Area description* +
+(Generally)
+| Areas where a general description of the sea floor is considered adequate.
+| Areas where underkeel clearance is not considered to be an issue for the type of surface shipping expected to transit the area.
+| Areas where underkeel clearance is considered not to be critical but features of concern to surface shipping may exist.
+| Areas where underkeel clearance is critical
+| Areas where there is strict minimum underkeel clearance and manoeuvrability criteria
+
+| <<scl-uncertainties>>
+| Depth <<def-thu,THU>> +
+[m] +
++ +
+[&#x200c;% of Depth]
+| 20 m +
++ +
+10% of depth +
+*Ba5, Bb2
+| 5 m  +
++ +
+5% of depth +
+*Ba8, Bb3
+| 5 m +
++ +
+5% of depth +
+*Ba8, Bb3
+| 2 m +
+*Ba9
+| 1 m +
+*Ba10
+
+| <<scl-uncertainties>> +
+<<scl-depth>> +
+<<scl-maximum-allowable>>
+| Depth <<def-tvu,TVU>> +
+(a) [m] +
+and (b)
+| a = 1.0 m +
+b = 0.023 +
+*Bc7, Bd4
+| a = 0.5 m +
+b = 0.013 +
+*Bc8, Bd6
+| a = 0.5 m +
+b = 0.013 +
+*Bc8, Bd6
+| a = 0.25 m +
+b = 0.0075 +
+*Bc10, Bd8
+| a = 0.15 m +
+b = 0.0075 +
+*Bc12, Bd8
+
+| <<scl-feature-detection>>
+| <<def-feature_detection,Feature Detection>> +
+[m] +
+or +
+[% of Depth]
+| Not Specified
+| Not Specified
+| Cubic features > 2 m, in depths down to 40 m; 10% of depth beyond 40 m  +
+*Be5, Bf3 beyond 40m
+| Cubic features > 1 m +
+*Be6
+| Cubic features > 0.5 m +
+*Be9
+
+| <<scl-feature-search>>
+| <<def-feature_search,Feature Search>> +
+[&#x200c;%]
+| Recommended but Not Required
+| Recommended but Not Required
+| 100% +
+*Bg9
+| 100% +
+*Bg9
+| 200% +
+*Bg12
+
+| <<scl-bathymetric-coverage>>
+| <<def-bathymetric_coverage,bathymetric coverage>> +
+[&#x200c;%]
+| 5% +
+*Bh3
+| 5% +
+*Bh3
+| ≤ 100% +
+*≤ Bh9
+| 100% +
+*Bh9
+| 200% +
+*Bh12
+|===
+
+[%portrait]
+<<<
+
+=== Other Minimum Standards for Safety of Navigation Surveys
+
+To be read in conjunction with the full text set out in this document. Standards for <<tab-other-minimum>> data types only apply where such measurements are required for the survey.
+
+m = metres. All <<def-uncertainty,uncertainties>> at 95% <<def-confidence_level,confidence level>>. * = Matrix Reference.
+
+
+[[tab-other-minimum]]
+[cols="^.^a,^.^a,^.^a,^.^a,^.^a,^.^a,^.^a,^.^a",options="header"]
+|===
+| Reference | Criteria | Uncertainty Type | Order 2 | Order 1b | Order 1a | Special Order | Exclusive Order
+
+.2+| <<scl-fixed-topographic-navigation>>
+.2+| *Fixed Objects, Aids, Features Above the Vertical Reference Significant to Navigation*
+| <<def-thu,THU>> [m]
+| 5 m +
+*Pa4
+| 2 m +
+*Pa6
+| 2 m +
+*Pa6
+| 2 m +
+*Pa6
+| 1 m +
+*Pa7
+| <<def-tvu,TVU>> [m]
+| 2 m +
+*Pb2
+| 2 m +
+*Pb2
+| 1 m +
+*Pb3
+| 0.5 m +
+*Pb4
+| 0.25 m +
+*Pb5
+
+| <<scl-floating-objects>>
+| *Floating Objects and Aids to Navigation*
+| <<def-thu,THU>> [m]
+| 20 m +
+*Pc2
+| 10 m +
+*Pc3
+| 10 m +
+*Pc3
+| 10 m +
+*Pc3
+| 5 m +
+*Pc4
+
+| <<scl-coastline>>
+| *Coastline* +
+(high, low, MWL water lines, etc)
+| <<def-thu,THU>> [m]
+| 10 m +
+*Pd2
+| 10 m +
+*Pd2
+| 10 m +
+*Pd2
+| 10 m +
+*Pd2
+| 5 m +
+*Pd3
+
+.2+| <<scl-features-navigation>>
+.2+| *Features Above the Vertical Reference Less Significant to Navigation*
+| <<def-thu,THU>> [m]
+| 20 m +
+*Pe2
+| 20 m +
+*Pe2
+| 20 m +
+*Pe2
+| 10 m +
+*Pe3
+| 5 m +
+*Pe4
+| <<def-tvu,TVU>> [m]
+| 3 m +
+*Pf1
+| 2 m +
+*Pf2
+| 1 m +
+*Pf3
+| 0.5 m +
+*Pf4
+| 0.3 m +
+*Pf5
+
+.2+| <<scl-overhead-clearances>>
+.2+| *Overhead Clearances and Range Line, Sector Light Heights*
+| <<def-thu,THU>> [m]
+| 10 m +
+*Pg1
+| 10 m +
+*Pg1
+| 5 m +
+*Pg2
+| 2 m +
+*Pg3
+| 1 m +
+*Pg4
+| <<def-tvu,TVU>> [m]
+| 3 m +
+*Ph1
+| 2 m +
+*Ph2
+| 1 m +
+*Ph3
+| 0.5 m +
+*Ph4
+| 0.3 m +
+*Ph5
+
+| <<scl-angula-measurements>>
+| *Angular Measurements*
+| [&#x200c;degrees]
+5+| 0.5 degrees +
+*Pi4
+
+| <<scl-water-flow>>
+| *Water Flow Direction*
+| [&#x200c;degrees]
+5+| 10 degrees +
+*Wa1
+
+| <<scl-water-flow>>
+| *Water Flow Speed*
+| [&#x200c;knots]
+5+| 0.1 knots +
+*Wb5
+|===
+
+
+[[scl-matrix-description]]
+=== Matrix Description
+
+The Specification Matrix provides a range of selectable criteria for bathymetric parameters and other data types collected, reported, and delivered as part of a hydrographic survey. It is introduced to allow flexibility and customisation in the tasking and assessing of hydrographic surveys, accommodation of new and emerging technologies, and inclusion of hydrographic surveys conducted for purposes other than safety of navigation. By design, it is expandable and can evolve in future S-44 editions. The Matrix can be used both as a tool when specifying a survey, but also as a tool for classification of data after a completed survey.
+
+It is important to note that the <<scl-matrix-description,Matrix>> alone does not define any standards for hydrographic survey. Safety of navigation survey standards (as defined in <<tab-minimum-bathymetry>> and <<tab-other-minimum>>) are referenced to the <<scl-matrix-description,Matrix>> criteria and the <<scl-matrix-description,Matrix>> can be used to customise and enhance these minimum standards. Standards for surveys conducted for purposes other than safety of navigation (e.g. geophysical, oil and gas, dredging, and geotechnical) are not currently defined in this document. However, the range of accuracies presented in the <<scl-matrix-description,Matrix>> was designed to accommodate these surveys and to provide a common framework for tasking and assessing hydrographic surveys in general.
+
+Additionally, with the emergence of new nautical products and associated specifications / data models (e.g. Electronic Nautical Charts (ENC) and S-101 ENC Product Specification), additional types of information will be available to the mariner. The <<scl-matrix-description,Matrix>> can be used to help define and categorise the increasing variety of data that will be used in these evolving products.
+
+See <<annex-matrix-guidance>> for guidance and additional information on how to use the Specification <<scl-matrix-description,Matrix>>.
+
+
+[%landscape]
+<<<
+
+[[scl-matrix]]
+=== MATRIX
+
+<<scl-matrix-description,Matrix>> for Hydrographic Surveys. To be read in conjunction with the full text set out in this document, m = metres, all <<def-uncertainty,uncertainties>> at 95% confidence level.
+
+
+[cols="16*^.^",options="header,unnumbered"]
+|===
+| | Criteria | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14
+h| B 15+^h| BATHYMETRY
+
+| *a*
+| *Depth* <<def-thu,THU>> [m]
+| 500
+| 200
+| 100
+| 50
+| 20
+| 15
+| 10
+| 5
+| 2
+| 1
+| 0.5
+| 0.35
+| 0.1
+| 0.05
+
+| *b*
+| *Depth* <<def-thu,THU>> [% of depth]
+| 20
+| 10
+| 5
+| 2
+| 1
+| 0.5
+| 0.25
+| 0.1 | | | | | |
+
+| *c*
+| *Depth* <<def-tvu,TVU>> "a" [m]
+| 100
+| 50
+| 25
+| 10
+| 5
+| 2
+| 1
+| 0.5
+| 0.3
+| 0.25
+| 0.2
+| 0.15
+| 0.1
+| 0.05
+
+| *d*
+| *Depth* <<def-tvu,TVU>> "b" +
+NOTE 1
+| 0.20
+| 0.10
+| 0.05
+| 0.023
+| 0.02
+| 0.013
+| 0.01
+| 0.0075
+| 0.004
+| 0.002 | | | |
+
+| *e*
+| <<def-feature_detection,Feature Detection>> [m]
+| 50
+| 20
+| 10
+| 5
+| 2
+| 1
+| 0.75
+| 0.7
+| 0.5
+| 0.3
+| 0.25
+| 0.2
+| 0.1
+| 0.05
+
+| *f*
+| <<def-feature_detection,Feature Detection>> [% of Depth]
+| 25
+| 20
+| 10
+| 5
+| 3
+| 2
+| 1
+| 0.5
+| 0.25 | | | | |
+
+| *g*
+| <<def-feature_search,Feature Search>> [%]
+| 1
+| 3
+| 5
+| 10
+| 20
+| 30
+| 50
+| 75
+| 100
+| 120
+| 150
+| 200
+| 300 |
+
+| *h*
+| <<def-bathymetric_coverage,bathymetric coverage>> [%]
+| 1
+| 3
+| 5
+| 10
+| 20
+| 30
+| 50
+| 75
+| 100
+| 120
+| 150
+| 200
+| 300 |
+
+h| W 15+^h| WATER FLOW
+
+| *a*
+| *Flow Direction* [degrees]
+| 10
+| 7.5
+| 5.0
+| 2.5
+| 1.0
+| 0.5
+| 0.25
+| 0.10 | | | | | |
+
+| *b*
+| *Flow Speed* [knots]
+| 2
+| 1
+| 0.5
+| 0.25
+| 0.10 | | | | | | | | |
+
+
+h| N 15+^h| NATURE OF THE BOTTOM
+
+| *a*
+| *Bottom Characterisation Method* +
+NOTE 2
+| PHY - VIS
+| PHY - LAB
+| PHY - VIS & LAB
+| INF
+| INF w/ GT (VIS)
+| INF w/ GT (LAB)
+| INF w/ GT (VIS & LAB) | | | | | | |
+
+| *b*
+| *Bottom Sampling Frequency approximate* [m] +
+NOTE 2
+| As Req to GT
+| 10,000
+| 5,000
+| 2,500
+| 1,852
+| 1,000
+| 500
+| 250
+| 100
+| 75
+| 50
+| 25
+| 10
+| 5
+
+|===
+
+NOTE: To use the parameter "`b`", as a percentage of depth, multiply it by 100.
+
+NOTE: PHY = Physical Sampling. VIS = Visual Analysis. LAB = Laboratory Analysis. INF = Inference Technique. w/ = With. GT = Ground Truth. As Req to GT = As Required to Ground Truth any Inference Technique (see <<scl-nature-bottom>>).
