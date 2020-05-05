@@ -43,36 +43,53 @@ For the purpose of this Publication the words:
 
 Terms that are only used within the Annexes are not included in this Glossary; these are defined within the Annexes.
 
-[[def-bathymetric_coverage]]*Bathymetric coverage*: Extent to which an area has been surveyed using a systematic method of measuring the depth and is based on the combination of the survey pattern and the theoretical area of detection of the survey instrumentation.
+[[def-bathymetric_coverage]] Bathymetric coverage::
+Extent to which an area has been surveyed using a systematic method of measuring the depth and is based on the combination of the survey pattern and the theoretical area of detection of the survey instrumentation.
 
-[[def-confidence_level]]*Confidence level*: Probability that the true value of a measurement will lie within the specified <<def-uncertainty,uncertainty>> from the measured value.
+[[def-confidence_level]] Confidence level::
+Probability that the true value of a measurement will lie within the specified <<def-uncertainty,uncertainty>> from the measured value.
 
-[[def-correction]]*Correction*: Compensation applied to data to adjust for an estimated systematic effect.
+[[def-correction]] Correction::
+Compensation applied to data to adjust for an estimated systematic effect.
 
-[[def-error]]*Error*: Difference between a measured value and the correct or true value. Errors can be categorised as <<def-systematic_error,systematic>> or <<def-random_error,random errors>>.
+[[def-error]] Error::
+Difference between a measured value and the correct or true value. Errors can be categorised as <<def-systematic_error,systematic>> or <<def-random_error,random errors>>.
 
-[[def-feature]]*Feature*: Any object, whether natural or manmade, which is distinct from the surrounding area.
+[[def-feature]] Feature::
+Any object, whether natural or manmade, which is distinct from the surrounding area.
 
-[[def-feature_detection]]*Feature detection*: Ability of a system to detect <<def-feature,features>> of a defined size.
+[[def-feature_detection]] Feature detection::
+Ability of a system to detect <<def-feature,features>> of a defined size.
 
-[[def-feature_search]]*Feature search*: Extent to which an area has been surveyed using a systematic method of identifying features.
+[[def-feature_search]] Feature search::
+Extent to which an area has been surveyed using a systematic method of identifying features.
 
-[[def-metadata]]*Metadata*: Data describing a data set and its usage.
+[[def-metadata]] Metadata::
+Data describing a data set and its usage.
 
-[[def-random_error]]*Random error*: Noise within a measurement caused by factors which vary between measurements and cannot be controlled but can be quantified by statistical means.
+[[def-random_error]] Random error::
+Noise within a measurement caused by factors which vary between measurements and cannot be controlled but can be quantified by statistical means.
 
-[[def-reduced-depth]]*Reduced depth*: Observed depth including all <<def-correction,corrections>> related to the survey, post processing, and reduction to the appropriate vertical datum.
+[[def-reduced-depth]] Reduced depth::
+Observed depth including all <<def-correction,corrections>> related to the survey, post processing, and reduction to the appropriate vertical datum.
 
-[[def-significant_feature]]*Significant Feature*: <<def-feature,Feature>> that poses a potential danger to navigation or object one would expect to see depicted on a nautical chart or product.
+[[def-significant_feature]] Significant Feature::
+<<def-feature,Feature>> that poses a potential danger to navigation or object one would expect to see depicted on a nautical chart or product.
 
-[[def-systematic_error]]*Systematic error*: Component of measurement <<def-error,error>> that remains constant or varies in a predictable manner.
+[[def-systematic_error]] Systematic error::
+Component of measurement <<def-error,error>> that remains constant or varies in a predictable manner.
 
-[[def-thu]]*Total horizontal uncertainty (THU)*: Component of <<def-tpu,total propagated uncertainty>> (TPU) calculated in the horizontal dimension. THU is a two-dimensional quantity with all contributing horizontal measurement uncertainties included.
+[[def-thu]] Total horizontal uncertainty (THU)::
+Component of <<def-tpu,total propagated uncertainty>> (TPU) calculated in the horizontal dimension. THU is a two-dimensional quantity with all contributing horizontal measurement uncertainties included.
 
-[[def-tpu]]*Total propagated uncertainty (TPU)*: Three dimensional <<def-uncertainty,uncertainty>> with all contributing measurement <<def-uncertainty,uncertainties>> included.
+[[def-tpu]] Total propagated uncertainty (TPU)::
+Three dimensional <<def-uncertainty,uncertainty>> with all contributing measurement <<def-uncertainty,uncertainties>> included.
 
-[[def-tvu]]*Total vertical uncertainty (TVU)*: Component of <<def-tpu,total propagated uncertainty>> (TPU) calculated in the vertical dimension. TVU is a one-dimensional quantity with all contributing vertical measurement uncertainties included.
+[[def-tvu]] Total vertical uncertainty (TVU)::
+Component of <<def-tpu,total propagated uncertainty>> (TPU) calculated in the vertical dimension. TVU is a one-dimensional quantity with all contributing vertical measurement uncertainties included.
 
-[[def-uncertainty]]*Uncertainty*: Estimate characterising the range of values within which the true value of a measurement is expected to lie as defined within a particular <<def-confidence_level,confidence level>>. It is expressed as a positive value.
+[[def-uncertainty]] Uncertainty::
+Estimate characterising the range of values within which the true value of a measurement is expected to lie as defined within a particular <<def-confidence_level,confidence level>>. It is expressed as a positive value.
 
-[[def-underkeel_clearance]]*Underkeel Clearance*: Distance between the lowest point of the ship's hull and the seabed, riverbed, etc.
+[[def-underkeel_clearance]] Underkeel Clearance::
+Distance between the lowest point of the ship's hull and the seabed, riverbed, etc.
