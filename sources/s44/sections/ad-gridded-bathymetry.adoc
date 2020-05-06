@@ -41,22 +41,23 @@ Gridded bathymetric models are also used for small-scale applications such as re
 
 === Definitions
 
-*Area Representation*: Representation of gridded data where the entire cell is assumed to be the same value, and changes only occur at the borders of cells. (The DEM User's Manual)
+Area Representation:: Representation of gridded data where the entire cell is assumed to be the same value, and changes only occur at the borders of cells. (The DEM User's Manual)
 
-[[def-bathymetric_model]]*Bathymetric model*: Digital representation of the topography of the bottom by coordinates and depths.
+[[def-bathymetric_model]] Bathymetric model:: Digital representation of the topography of the bottom by coordinates and depths.
 
-*Grid*: A network composed of two or more sets of curves in which the members of each set intersect the members of the other sets in a systematic way. (ISO 19123)
+Grid:: A network composed of two or more sets of curves in which the members of each set intersect the members of the other sets in a systematic way. (ISO 19123)
 
-*Grid Cell*: An area defined within the interstices between the grid lines. (ISO 19123)
+Grid Cell:: An area defined within the interstices between the grid lines. (ISO 19123)
 
-*Grid Line Registration*: Registration method where grid nodes are centred on the intersection of the grid lines. (GEBCO)
+Grid Line Registration:: Registration method where grid nodes are centred on the intersection of the grid lines. (GEBCO)
 
-*Grid Node*: A data point, with an exact geographic location referenced by grid definition and registration. The value contained within the grid describes selected information at this location. (ONSWG)
+Grid Node:: A data point, with an exact geographic location referenced by grid definition and registration. The value contained within the grid describes selected information at this location. (ONSWG)
 
-*Holiday*: An unintentional unsurveyed area within a given hydrographic survey where the spacing between sounding lines or surveys exceeds the maximum allowable limits (IHO Dictionary S-32).
-Pixel Centred Registration: Registration method where grid nodes are centred in the grid cells. (GEBCO)
+Holiday:: An unintentional unsurveyed area within a given hydrographic survey where the spacing between sounding lines or surveys exceeds the maximum allowable limits (IHO Dictionary S-32).
 
-*Surface Representation*: Representation of gridded data where the grid node represents the surface value at the centroid of each cell. The area between cell centres is assumed to be a value between that of adjacent cells (The DEM User's Manual).
+Pixel Centred Registration:: Registration method where grid nodes are centred in the grid cells. (GEBCO)
+
+Surface Representation:: Representation of gridded data where the grid node represents the surface value at the centroid of each cell. The area between cell centres is assumed to be a value between that of adjacent cells (The DEM User's Manual).
 
 
 === Grid Considerations
