@@ -341,7 +341,7 @@ h| B 15+^h| BATHYMETRY
 
 | *d*
 | *Depth* <<def-tvu,TVU>> "b" +
-NOTE 1
+<<note-parameter-use-1,NOTE 1>>
 | 0.20
 | 0.10
 | 0.05
@@ -440,7 +440,7 @@ h| N 15+^h| NATURE OF THE BOTTOM
 
 | *a*
 | *Bottom Characterisation Method* +
-NOTE 2
+<<note-acronyms-1,NOTE 2>>
 | PHY - VIS
 | PHY - LAB
 | PHY - VIS & LAB
@@ -451,7 +451,7 @@ NOTE 2
 
 | *b*
 | *Bottom Sampling Frequency approximate* [m] +
-NOTE 2
+<<note-acronyms-1,NOTE 2>>
 | As Req to GT
 | 10,000
 | 5,000
@@ -469,6 +469,6 @@ NOTE 2
 
 |===
 
-NOTE: To use the parameter "`b`", as a percentage of depth, multiply it by 100.
+NOTE: [[note-parameter-use-1]] To use the parameter "`b`", as a percentage of depth, multiply it by 100.
 
-NOTE: PHY = Physical Sampling. VIS = Visual Analysis. LAB = Laboratory Analysis. INF = Inference Technique. w/ = With. GT = Ground Truth. As Req to GT = As Required to Ground Truth any Inference Technique (see <<scl-nature-bottom>>).
+NOTE: [[note-acronyms-1]] PHY = Physical Sampling. VIS = Visual Analysis. LAB = Laboratory Analysis. INF = Inference Technique. w/ = With. GT = Ground Truth. As Req to GT = As Required to Ground Truth any Inference Technique (see <<scl-nature-bottom>>).
