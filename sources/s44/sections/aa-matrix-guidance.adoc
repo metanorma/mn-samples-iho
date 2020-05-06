@@ -310,8 +310,8 @@ h| B 15+h| BATHYMETRY
 | 0.05
 
 | *d*
-| *Depth* <<def-tvu,TVU>> "b"
-| NOTE 1
+| *Depth* <<def-tvu,TVU>> "b" +
+<<note-parameter-use-2,NOTE 1>>
 | 0.20
 | 0.10
 | 0.05
@@ -321,7 +321,7 @@ h| B 15+h| BATHYMETRY
 | 0.01
 | 0.0075
 | 0.004
-| 0.002 | | |
+| 0.002 | | | |
 
 | *e*
 | *Feature Detection* [m]
@@ -524,7 +524,7 @@ h| N 15+h| NATURE OF THE BOTTOM
 | *a*
 | *Bottom Characterisation Method* +
 <<scl-nature-bottom>> +
-NOTE 2
+<<note-acronyms-2,NOTE 2>>
 | PHY - VIS
 | PHY - LAB
 | PHY - VIS & LAB
@@ -536,7 +536,7 @@ NOTE 2
 | *b*
 | *Bottom Sampling Frequency approximate* [m] +
 <<scl-nature-bottom>> +
-NOTE 2
+<<note-acronyms-2,NOTE 2>>
 | As Req to GT
 | 10,000
 | 5,000
@@ -555,9 +555,9 @@ NOTE 2
 |===
 
 
-NOTE: To use the parameter as a percentage of depth multiply by 100.
+NOTE: [[note-parameter-use-2]] To use the parameter as a percentage of depth multiply by 100.
 
-NOTE: PHY = Physical Sampling. VIS = Visual Analysis. LAB = Laboratory Analysis. INF = Inference Technique. w/ = With. GT = Ground Truth. As Req to GT = As Required to Ground Truth any Inference Technique.
+NOTE: [[note-acronyms-2]] PHY = Physical Sampling. VIS = Visual Analysis. LAB = Laboratory Analysis. INF = Inference Technique. w/ = With. GT = Ground Truth. As Req to GT = As Required to Ground Truth any Inference Technique.
 
 [%portrait]
 <<<
