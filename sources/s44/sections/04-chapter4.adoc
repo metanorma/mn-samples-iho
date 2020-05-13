@@ -1,0 +1,28 @@
+
+== WATER LEVELS AND FLOW
+
+=== Introduction
+
+In this chapter, water levels are considered in the context of supporting the vertical solution of depth measurements, rather than water level measurements as a discrete dataset to define tidal harmonics etc, which are covered within other IHO documents. Tides and other changes in water levels which impact the <<def-tvu,TVU>> of depth data must be considered for any hydrographic survey regardless of the technology used to conduct the survey. Flow observations will often be required to support safe navigation, and when specified in the survey requirement, those observations must meet the parameters presented in this standard.
+
+For requirements to clearly determine chart and land survey vertical datum connections, or relationships, see <<scl-datum-connections>>.
+
+
+=== Water Level (Tidal) Predictions
+
+Water level observations may be required to facilitate generation and maintenance of tidal prediction models and the production of Tide Tables. Water level observations should cover as long a period as possible and preferably not less than 30 days.
+
+
+=== Reductions for Water Level Observations
+
+Whenever surveyed/predicted water levels or tides are used to reduce soundings to a datum, allowance shall be made in the <<def-tvu,TVU>> calculations for the <<def-uncertainty,uncertainty>> of the values. Observed values are preferred over predicted.
+
+
+[[scl-water-flow]]
+=== Water Flow (Tidal Stream and Current) Observations
+
+The speed and direction of water flows (tidal streams and currents) which may exceed 0.5 knots should be observed in key areas, if not already defined. For example, at the entrances to harbours and channels, at any change in direction of a channel, in anchorages, and adjacent to wharf areas. It is also recommended to measure coastal and offshore streams and currents when they are of sufficient strength to affect surface navigation.
+
+The water flow (tidal stream and current) at each position should be measured at depths sufficient to meet the requirements of normal surface navigation in the survey area. In the case of tidal streams, simultaneous observations of tidal height and meteorological conditions should be made. It is recommended that the period of observation be at least 30 days.
+
+The speed and direction of the water flow (tidal stream and current) must be measured at 95% <<def-confidence_level,confidence level>> as defined in <<tab-other-minimum>>. Where there is reason to believe that other factors (e.g. seasonal river discharge) influence the water flows, measurements should be made to cover the entire period of variability.

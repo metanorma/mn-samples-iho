@@ -1,0 +1,53 @@
+
+== HORIZONTAL AND VERTICAL POSITIONING
+
+=== Introduction
+
+Positioning is a fundamental part for every survey operation. The hydrographer must consider the geodetic reference frame, horizontal and vertical reference systems, their connections to other systems in use (e.g. land survey datums), as well as the uncertainty inherent within associated measurements.
+
+In this standard, position and its uncertainty refer to the horizontal component of the sounding or feature, while the depth and its uncertainty refers to the vertical component of the same sounding or feature.
+
+=== Geodetic Reference Frame
+
+Positions should be referenced to a geodetic reference frame, which can be the realisation of either a global (e.g. ITRF2018, WGS84(G1762)) or a regional (e.g. ETRS89, NAD83) reference frame and their later iterations. As there are frequent updates to geodetic reference frames, it is essential that the epoch is recorded for surveys with low positioning <<def-uncertainty,uncertainty>>.
+
+Since positions are most often referenced in a compound coordinate reference system/frame such as geodetic, geopotential, and height reference system/frame, they can be separated into horizontal and vertical components.
+
+
+=== Horizontal Reference System
+
+If horizontal positions are referenced to a local datum, the name and epoch of the datum should be specified and the datum should be tied to a realisation of a global (e.g. ITRF2018, WGS84(G1762)) or a regional (e.g. ETRS89, NAD83) reference frame and their later iterations. Transformations between reference frames/epochs should be taken into account, especially for surveys with low <<def-uncertainty,uncertainty>>.
+
+
+=== Vertical Reference System
+
+If the vertical component of the positions is referenced to a local vertical datum, the name and epoch of the datum should be specified. The vertical component of the positions (e.g. depths, drying heights) should be referenced to a vertical reference frame that is suitable for the data type and intended use. This vertical reference frame may be based on tidal observations (e.g. LAT, MWL, etc), on a physical model (i.e. geoid) or a reference ellipsoid.
+
+
+[[scl-datum-connections]]
+=== Chart and Land Survey Vertical Datum Connections
+
+In order for bathymetric data to be correctly and fully utilised, chart and land survey vertical datum connections or relationships must be clearly determined and described. The IHO Resolution on Datums and Benchmarks, Resolution 3/1919, as amended, resolves practices which, where applicable, should be followed in the determination of these vertical datum connections.
+
+This essential resolution 3/1919, as amended, is available in the IHO Publication M-3, Resolutions of the International Hydrographic Organization, which is downloadable from the IHO homepage http://www.iho.int/[www.iho.int].
+
+
+[[scl-uncertainties]]
+=== Uncertainties
+
+This standard addresses <<def-tpu,total propagated uncertainty (TPU)>> by the two components; <<def-thu,total horizontal uncertainty (THU)>> and <<def-tvu,total vertical uncertainty (TVU)>>. The <<def-tvu,TVU>> and <<def-thu,THU>> values must be understood as an interval of ± the stated value.
+
+A statistical method, combining all <<def-uncertainty,uncertainty>> sources for determining both the horizontal and the vertical positioning <<def-uncertainty,uncertainty>> should be adopted to obtain <<def-thu,THU>> and <<def-tvu,TVU>> respectively. The uncertainties at the 95% <<def-confidence_level,confidence level>> must be recorded with the survey data.
+
+The ability of the survey system should be demonstrated by a _priori_ <<def-uncertainty,uncertainty>> calculations (<<def-thu,THU>> and <<def-tvu,TVU>>). These calculations are predictive and must be calculated for the survey system as a whole, including all instrument, measurement, and environmental <<def-uncertainty,uncertainty>> sources. This estimation should be updated during the survey to reflect changes from environmental conditions such as wind, waves, etc. in order to make appropriate changes to survey parameters.
+
+Final <<def-uncertainty,uncertainty>> values for the survey may consist of an a priori and a posteriori calculation, explicitly empirical values (e.g. based on standard deviation of vertical depths alone), or some combination of the aforementioned values. The <<def-metadata,metadata>> should include a description of the <<def-uncertainty,uncertainty>> type and the <<def-uncertainty,uncertainty(s)>> achieved.
+
+Within this standard, for ease of use, allowable horizontal uncertainty is assumed to be equal in both dimensions. Therefore, assuming a normal distribution of error, the position uncertainty is expressed as a single number.
+
+
+=== Confidence Level
+
+In this standard the term <<def-confidence_level,confidence level>> is not the strict statistical definition, but is equivalent to the terms "level of confidence" or "coverage probability" as discussed in the _Guide to the Expression of Uncertainty in Measurement_, JCGM 100:2008, section 6.2.2.
+
+It must be noted that <<def-confidence_level,confidence levels>> (e.g. 95%) depend on the assumed statistical distribution of the data and are calculated differently for one-dimensional (1D) and two-dimensional (2D) quantities. In the context of this standard, which assumes normal distribution of <<def-error,error>>, the 95% <<def-confidence_level,confidence level>> for 1D quantities (e.g. depth) is defined as 1.96 x standard deviation, and the 95% <<def-confidence_level,confidence level>> for 2D quantities (e.g. position) is defined as 2.45 x standard deviation.

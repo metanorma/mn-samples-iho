@@ -1,0 +1,64 @@
+
+== METADATA
+
+=== Introduction
+
+<<def-metadata,Metadata>> is fundamental to ensure that survey data is correctly understood and utilised as required for chart production or other purposes. This Standard identifies the minimum <<def-metadata,metadata>> that is to be provided with hydrographic surveys conducted for safety of navigation. Where additional <<def-metadata,metadata>> is available this should be included to enhance the value of the survey data for other uses. Examples of <<def-metadata,metadata>> include overall quality, data set title, source, positional uncertainty, and ownership.
+
+
+=== Metadata Content
+
+<<def-metadata,Metadata>> can be provided in any format such as in the Report of Survey, or embedded within a specific <<def-metadata,metadata>> file. The chosen format should support discovery, clarity of understanding, and software compatibility. Each hydrographic office or authority may adopt <<def-metadata,metadata>> requirements beyond that specified here and should develop and document a list of additional <<def-metadata,metadata>> used for their survey data. The table below should be seen as a schema, and not a final data model.
+
+<<def-metadata,Metadata>> should be comprehensive, but should include, as a minimum, information on:
+
+
+[cols="2",options="unnumbered"]
+|===
+| Category or Group | Description
+
+| Survey Type
+| e.g. safety of navigation, passage, reconnaissance/sketch, examination
+
+| Technique of vertical / depth measurement
+| e.g. echo-sounder, side scan sonar, multi-beam, diver, lead-line, wire-drag, photogrammetry, satellite derived bathymetry, lidar
+
+| Order of survey achieved
+| In accordance with S-44
+
+| Horizontal and vertical datum and separation models used
+| Including ties to a geodetic reference frame based on ITRS (e.g. WGS84) and epoch information, if a local datum or realisation is used
+
+| Uncertainties achieved (at 95% <<def-confidence_level,Confidence Level>>)
+| For both horizontal and vertical components: <<def-thu,THU>> and <<def-tvu,TVU>>
+
+| <<def-feature_detection,Feature detection>> ability
+| In metres
+
+| <<def-feature_search,Feature search>>
+| % of survey area searched
+
+| <<def-bathymetric_coverage,bathymetric coverage>>
+| % of survey area covered
+
+| Survey date range
+| Survey's start and end dates
+
+| Survey undertaken by
+| Surveyor, survey company, survey authority
+
+| Data ownership
+| e.g. funding body, government
+
+| Grid attributes
+| Where a grid is the deliverable (i.e. resolution, method, underlying data density, <<def-uncertainty,uncertainty>>)
+
+| Data density
+| Description of average or range of density of source data (e.g. number of accepted points per surface unit)
+
+| Usage constraints
+| e.g. none, classified, not for navigation, or restricted
+
+|===
+
+<<def-metadata,Metadata>> should preferably be an integral part of the digital survey record and conform to the "`IHO S-100 Discovery <<def-metadata,Metadata>> Standard`", when this is adopted. Prior to the adoption of S-100, ISO 19115 can be used as a model for the <<def-metadata,Metadata>>. If this is not feasible, similar information should be included in the documentation of a survey.

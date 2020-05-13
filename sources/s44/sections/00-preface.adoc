@@ -1,0 +1,95 @@
+
+[.preface]
+== PREFACE
+
+This Publication (S-44) defines the standard applicable to hydrographic surveys and takes its place amongst the other International Hydrographic Organization (IHO) publications, designed to improve the safety of navigation, knowledge and protection of the marine environment.
+
+Formal discussions on establishing standards for hydrographic surveys began at the 7^th^ International Hydrographic Conference (IHC) in 1957. The 1^st^ edition of S-44 entitled "`Accuracy Standards Recommended for Hydrographic Surveys`" was published in January 1968. Since then, the IHO has endeavoured to update this standard regularly to keep pace with the existing technologies and methods. Four successive editions have thus been released since the 1968 original issue: the 2^nd^ edition was published in 1982, the 3^rd^ in 1987, the 4th in 1998, and finally, the 5^th^ edition in 2008. The point of these being to maintain continuity of the original idea throughout successive changes.
+
+By Circular Letter (CL) 68/2016 of 20 December 2016, the IHO established a Hydrographic Surveys Project Team (HSPT) tasked with updating the standard and in its CL 26/2017 further defined the composition of the team. The HSPT tasks consist of three goals: firstly, evaluate the 5^th^ edition of the standard; secondly, prepare an S-44 6^th^ edition; and finally, if necessary, set up a permanent Working Group tasked with addressing all hydrographic surveys concerns. The HSPT team was comprised of representatives from the IHO Member States, observers from international organisations (IFHS and FIG), other expert contributors, and the Secretariat of the IHO.
+
+Hydrographic technologies and requirements are continually evolving, as is the expanding community of users. While hydrographers logically follow these changes, the S-44 standard needs to continue to evolve in order to remain the international reference for hydrographic surveys.
+
+In the creation of this new edition, the IHO Hydrographic Surveys Project Team liaised with the hydrographic community and received input from IHO stakeholders (including industry). This input was crucial to express the needs of the community and drive the updates of this edition, while remaining committed to the IHO mandate.
+
+
+[.preface]
+== INTRODUCTION
+
+This publication aims to provide a set of standards for hydrographic surveys primarily used to compile navigational charts essential for the safety of navigation, knowledge and the protection of the marine environment. It specifies the *minimum standards* to be achieved based on the intended use. Where and when necessary, hydrographic offices or organisations are encouraged to define more stringent or specific requirements as national or regional realisations of the standard. This publication does not contain procedures for setting up equipment, conducting the survey, or for processing the resultant data. IHO Publication C-13, _Manual on Hydrography_, should be consulted for information on those topics (downloadable from the IHO homepage: https://iho.int/[www.iho.int]).
+
+In this edition, a new, more stringent Exclusive Order has been introduced. The use of Exclusive Order should be limited to areas with exceptional conditions and specific requirements. The other orders for safety of navigation surveys have kept the same names, but their interpretation has changed from the previous edition due to the introduction of the <<def-bathymetric_coverage,bathymetric coverage>> concept. Special Order now explicitly requires full <<def-bathymetric_coverage,bathymetric coverage>>. Furthermore, the orders have been divided into requirements above and below the vertical datum.
+
+This edition aims to encourage the use of S-44 for purposes beyond the safety of navigation. It introduces the concept of a <<scl-matrix-description,Matrix>> of parameters and data types to define realisations of survey standards and specifications. This <<scl-matrix-description,Matrix>> alone is not a standard. It should be considered as a reference to specifying dedicated surveys, as appropriate, and to provide a tool for a broader classification of surveys. It is, by design, expandable and can evolve in future S-44 versions. <<annex-matrix-guidance>> provides guidance on how the Matrix can be used for specification and classification of surveys.
+
+S-44 vocabulary has been revised in order to more closely align with references typically used in metrology (e.g. Guide to the expression of uncertainty in measurement). Horizontal positioning standards for aids to navigation have been revised and standards on their vertical positioning have been added. Emphasis has been placed upon the main components of hydrographic surveys while being technology independent.
+
+While the hydrographic surveyor may have some flexibility on how to conduct survey operations, it remains the decision of the responsible authority on whether the standard has been achieved. Furthermore, the surveyor is an essential component of the survey process and must possess sufficient knowledge and experience to be able to operate the system to the required standard. Measuring this can be difficult, although surveying qualifications may be a basis in making this assessment. Available education in this field is (amongst others) Category A and/or B educational programme formed by International Board on Standards of Competence for Hydrographic Surveyors and Nautical Cartographers (IBSC), International Hydrographic Organization (IHO), International Federation of Surveyors (FIG), International Cartographic Association (ICA).
+
+The information contained in <<annex-guidelines-quality-management>>, <<annex-guidance-priori>>, and <<annex-gridded-bathymetry>> provide some guidance on quality control, data processing, and considerations for gridded bathymetry. These Annexes are not an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, _Manual on Hydrography_.
+
+NOTE: The publication of this new edition of the standard does not invalidate surveys, or the safety of navigation products based on surveys conducted in accordance with previous editions.
+
+[.preface]
+== GLOSSARY
+
+NOTE: The terms defined below are those that are most relevant to this publication. A much larger selection of terms is defined in IHO Special Publication S-32 (Hydrographic Dictionary) and should be consulted if the required term is not listed here. If a term listed below has a different definition in S-32, the definition given below should be used in relation to these standards.
+
+For the purpose of this Publication the words:
+
+*must*:: indicates a mandatory requirement;
+*should*:: indicates a recommended requirement;
+*may*:: indicates an optional requirement;
+
+Terms that are only used within the Annexes are not included in this Glossary; these are defined within the Annexes.
+
+[[def-bathymetric_coverage]] Bathymetric coverage::
+Extent to which an area has been surveyed using a systematic method of measuring the depth and is based on the combination of the survey pattern and the theoretical area of detection of the survey instrumentation.
+
+[[def-confidence_level]] Confidence level::
+Probability that the true value of a measurement will lie within the specified <<def-uncertainty,uncertainty>> from the measured value.
+
+[[def-correction]] Correction::
+Compensation applied to data to adjust for an estimated systematic effect.
+
+[[def-error]] Error::
+Difference between a measured value and the correct or true value. Errors can be categorised as <<def-systematic_error,systematic>> or <<def-random_error,random errors>>.
+
+[[def-feature]] Feature::
+Any object, whether natural or manmade, which is distinct from the surrounding area.
+
+[[def-feature_detection]] Feature detection::
+Ability of a system to detect <<def-feature,features>> of a defined size.
+
+[[def-feature_search]] Feature search::
+Extent to which an area has been surveyed using a systematic method of identifying features.
+
+[[def-metadata]] Metadata::
+Data describing a data set and its usage.
+
+[[def-random_error]] Random error::
+Noise within a measurement caused by factors which vary between measurements and cannot be controlled but can be quantified by statistical means.
+
+[[def-reduced-depth]] Reduced depth::
+Observed depth including all <<def-correction,corrections>> related to the survey, post processing, and reduction to the appropriate vertical datum.
+
+[[def-significant_feature]] Significant Feature::
+<<def-feature,Feature>> that poses a potential danger to navigation or object one would expect to see depicted on a nautical chart or product.
+
+[[def-systematic_error]] Systematic error::
+Component of measurement <<def-error,error>> that remains constant or varies in a predictable manner.
+
+[[def-thu]] Total horizontal uncertainty (THU)::
+Component of <<def-tpu,total propagated uncertainty>> (TPU) calculated in the horizontal dimension. THU is a two-dimensional quantity with all contributing horizontal measurement uncertainties included.
+
+[[def-tpu]] Total propagated uncertainty (TPU)::
+Three dimensional <<def-uncertainty,uncertainty>> with all contributing measurement <<def-uncertainty,uncertainties>> included.
+
+[[def-tvu]] Total vertical uncertainty (TVU)::
+Component of <<def-tpu,total propagated uncertainty>> (TPU) calculated in the vertical dimension. TVU is a one-dimensional quantity with all contributing vertical measurement uncertainties included.
+
+[[def-uncertainty]] Uncertainty::
+Estimate characterising the range of values within which the true value of a measurement is expected to lie as defined within a particular <<def-confidence_level,confidence level>>. It is expressed as a positive value.
+
+[[def-underkeel_clearance]] Underkeel Clearance::
+Distance between the lowest point of the ship's hull and the seabed, riverbed, etc.

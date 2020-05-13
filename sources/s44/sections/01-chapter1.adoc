@@ -1,0 +1,40 @@
+
+[[ch-safety-navigation-surveys]]
+== CLASSIFICATION OF SAFETY OF NAVIGATION SURVEYS
+
+=== Introduction
+
+This chapter describes the orders of safety of navigation surveys which are considered acceptable by hydrographic offices or authorities to generate navigational products and services that allow surface vessels to navigate safely. As requirements vary with water depth, geophysical properties, and expected shipping types, five different orders of survey are defined; each designed to cater to a range of needs.
+
+The five orders are described below along with a description of the intended area(s) of usage. The minimum standards required to achieve each order (<<tab-minimum-bathymetry>> and <<tab-other-minimum>>) along with a new tool for enhancing and customising these orders (Specification <<scl-matrix-description,Matrix>>) is presented in <<ch-tables-specification-matrix>>.
+
+The hydrographic offices or authorities responsible for acquiring surveys should select the order of survey that is most appropriate for the requirements for safety of navigation in the area. A single order may not be appropriate for the entire area to be surveyed and, in these cases, the different orders should be explicitly defined through the survey area. For example, in an area traversed by Very Large Crude Carriers (VLCCs) and expected to be deeper than 40 metres, an Order 1a survey may have been specified. However, if the surveyor discovers shoals of less than 40 metres depth, then it may be more appropriate to survey these shoals and surrounding areas to Special Order or even Exclusive Order in some limited circumstances.
+
+To be fully compliant with an S-44 Order, a hydrographic survey must comply with all bathymetric and feature detection requirements (<<tab-minimum-bathymetry>>) for that order and with all the other requirements (<<tab-other-minimum>>) for the same order, where applicable. Additionally, the tables must be read in conjunction with the detailed text in the following chapters. The challenge presented by each order, in particular Special and Exclusive Orders, is establishing the appropriate survey methodology to achieve the specified standards.
+
+To ensure surveys are systematic where <<def-bathymetric_coverage,bathymetric coverage>> is specified at less than 100%, the horizontal distance between registered positions of depths should be no greater than 3 times the depth or 25 metres, whichever is greater.
+
+
+=== Order 2
+
+This is the least stringent order and is intended for areas where the depth of water is such that a general depiction of the bottom is considered adequate. As a minimum, an evenly distributed <<def-bathymetric_coverage,bathymetric coverage>> of 5% is required for the survey area. It is recommended that Order 2 surveys are conducted in areas which are deeper than 200 metres. Once the water depth exceeds 200 metres, the existence of features that are large enough to impact on surface navigation and yet still remain undetected by an Order 2 survey is considered to be unlikely.
+
+
+=== Order 1b
+
+This order is intended for areas where the types of surface vessels expected to transit the area is such that a general depiction of the bottom is considered adequate. As a minimum, an evenly distributed <<def-bathymetric_coverage,bathymetric coverage>> of 5% is required for the survey area. This means some features will not be detected, although the distance between areas of bathymetric coverage will limit the size of those features. This order of survey is only recommended where <<def-underkeel_clearance,underkeel clearance>> is considered not to be an issue. An example would be an area where the bottom characteristics are such that the likelihood of there being a <<def-feature,feature>> on the bottom that will endanger the type of surface vessel expected to navigate the area is low.
+
+
+=== Order 1a
+
+This order is intended for areas where <<def-feature,features>> on the bottom may become a concern for the type of surface traffic expected to transit the area but where the <<def-underkeel_clearance,underkeel clearance>> is considered not to be critical. A 100% feature search is required in order to detect features of a specified size. <<def-bathymetric_coverage,bathymetric coverage>> less than or equal to 100% is appropriate as long as the least depths over all <<def-significant_feature,significant features>> are obtained and the bathymetry provides an adequate depiction of the nature of the bottom topography. <<def-underkeel_clearance,Underkeel clearance>> becomes less critical as depth increases, so the size of the feature to be detected increases with depth in areas where the water depth is greater than 40 metres. Examples of areas that may require Order 1a surveys are coastal waters, harbours, berthing areas, fairways and channels.
+
+
+=== Special Order
+
+This order is intended for those areas where <<def-underkeel_clearance,underkeel clearance>> is critical. Therefore, 100% <<def-feature_search,feature search>> and 100% <<def-bathymetric_coverage,bathymetric coverage>> are required and the size of the <<def-feature,features>> to be detected by this search is deliberately more demanding than for Order 1a. Examples of areas that may require Special Order surveys are: berthing areas, harbours, and critical areas of fairways and shipping channels.
+
+
+=== Exclusive Order
+
+Exclusive Order hydrographic surveys are an extension of IHO Special Order with more stringent uncertainty and data coverage requirements. Their use is intended to be restricted to shallow water areas (harbours, berthing areas and critical areas of fairways and channels) where there is an exceptional and optimal use of the water column and where specific critical areas with minimum <<def-underkeel_clearance,underkeel clearance>> and bottom characteristics are potentially hazardous to vessels. For this order, a 200% <<def-feature_search,feature search>> and a 200% <<def-bathymetric_coverage,bathymetric coverage>> are required. The size of <<def-feature,features>> to be detected is deliberately more demanding than for Special Order.
