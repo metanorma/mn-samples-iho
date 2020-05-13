@@ -2,11 +2,11 @@
 :series: S
 :docnumber: 5B
 :doctype: standard
-:version: 1.0.1
+:edition: 1.0.1
 :language: en
 :published-date: 2017-06
 :copyright-year: 2017
-:status: published
+:status: in-force
 :docfile: document.adoc
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,rxl

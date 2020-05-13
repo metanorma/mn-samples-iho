@@ -1,7 +1,7 @@
 = IHO Data Protection Scheme
 :series: S
 :docnumber: 63
-:version: 1.2.1
+:edition: 1.2.1
 :published-date: 2020-03-01
 :copyright-year: 2020
 :status: in-force

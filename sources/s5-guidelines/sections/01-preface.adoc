@@ -1,4 +1,5 @@
 
+[.preface]
 == PREFACE
 
 *Historical development of the Standards*: During the International Congress of Surveyors (FIG) at Wiesbaden in 1971, a Working Group (WG) was formed by Commission IV (Hydrography) to develop International Standards of Competence within the profession of surveying at sea. In 1972, during the International Hydrographic Conference in Monaco, the International Hydrographic Organization (IHO) set up a working group for the compilation of training programmes in Hydrography conducted by Member States. In 1974, at the XIV FIG Congress in Washington, it was resolved that the FIG and IHO working groups combine to study and modify the Report of the FIG working group on Educational Standards.

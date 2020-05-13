@@ -53,7 +53,6 @@ This document describes an S-100 compliant product specification for a bathymetr
 * [[[iso-10646-1,ISO/IEC 10646-1:2000]]], Information technology -- Universal Multiple-Octet Coded Character Set (UCS) -- Part 1: Architecture and Basic Multilingual Plane
 
 
-
 [%bibitem]
 ====  The Navigation Surface: A New Database Approach to Creating Multiple Products from High-Density Surveys
 id:: MavigationSurface

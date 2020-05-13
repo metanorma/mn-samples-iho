@@ -4,7 +4,7 @@
 :language: en
 :published-date: 2019-10
 :copyright-year: 2019
-:status: published
+:status: in-force
 :committee: technical
 :docnumber: s-102
 :submitting-organizations:
