@@ -7,6 +7,7 @@
 :published-date: 2018-06
 :copyright-year: 2018
 :status: in-force
+:committee: hssc
 :docfile: document.adoc
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,rxl

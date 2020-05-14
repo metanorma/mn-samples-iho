@@ -6,6 +6,7 @@
 :published-date: 2017-01
 :copyright-year: 2017
 :status: in-force
+:committee: hssc
 :doctype: standard
 :imagesdir: images
 :docfile: document.adoc

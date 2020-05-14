@@ -5,6 +5,7 @@
 :published-date: 2020-03-01
 :copyright-year: 2020
 :status: in-force
+:committee: hssc
 :doctype: standard
 :imagesdir: images
 :docfile: document.adoc

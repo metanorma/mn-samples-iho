@@ -7,6 +7,7 @@
 :published-date: 2020-01-20
 :copyright-year: 2020
 :status: in-force
+:committee: hssc
 :docfile: document.adoc
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,rxl
