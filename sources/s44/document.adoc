@@ -1,12 +1,12 @@
-= IHO STANDARDS FOR HYDROGRAPHIC SURVEYS
+= IHO Standards for Hydrographic Surveys
 :series: S
 :docnumber: 44
 :doctype: standard
-:version: 6.0.0
+:edition: 6.0.0
 :language: en
 :published-date: 2020-03
 :copyright-year: 2020
-:status: published
+:status: in-force
 :docfile: document.adoc
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,rxl
@@ -14,17 +14,28 @@
 :data-uri-image:
 :imagesdir: images
 
-
 include::sections/00-preface.adoc[]
+
 include::sections/01-chapter1.adoc[]
+
 include::sections/02-chapter2.adoc[]
+
 include::sections/03-chapter3.adoc[]
+
 include::sections/04-chapter4.adoc[]
+
 include::sections/05-chapter5.adoc[]
+
 include::sections/06-chapter6.adoc[]
+
 include::sections/07-chapter7.adoc[]
+
 include::sections/aa-matrix-guidance.adoc[]
+
 include::sections/ab-quality-management.adoc[]
+
 include::sections/ac-quality-control.adoc[]
+
 include::sections/ad-gridded-bathymetry.adoc[]
+
 

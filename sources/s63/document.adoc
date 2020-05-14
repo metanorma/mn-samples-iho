@@ -2,6 +2,7 @@
 :series: S
 :docnumber: 63
 :edition: 1.2.1
+:doctype: standard
 :published-date: 2020-03-01
 :copyright-year: 2020
 :status: in-force
