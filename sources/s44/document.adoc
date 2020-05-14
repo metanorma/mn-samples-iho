@@ -1,6 +1,6 @@
 = IHO STANDARDS FOR HYDROGRAPHIC SURVEYS
 :series: S
-:docnumber: S-44
+:docnumber: 44
 :doctype: standard
 :version: 6.0.0
 :language: en

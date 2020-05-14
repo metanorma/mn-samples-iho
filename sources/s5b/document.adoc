@@ -1,4 +1,4 @@
-= STANDARDS OF COMPETENCE FOR CATEGORY "B" HYDROGRAPHIC SURVEYORS
+= Standards of Competence for Category "B" Hydrographic Surveyors
 :series: S
 :docnumber: 5B
 :doctype: standard

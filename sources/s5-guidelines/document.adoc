@@ -1,7 +1,7 @@
-= GUIDELINES FOR THE IMPLEMENTATION OF THE STANDARDS OF COMPETENCE FOR HYDROGRAPHIC SURVEYORS AND NAUTICAL CARTOGRAPHERS
+= Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers
 :series: S
-:docnumber: Guidelines
-:doctype:
+:docnumber: Guidelines-S5-S8
+:doctype: guidelines
 :edition: 2.1.0
 :language: en
 :published-date: 2019-05
@@ -15,27 +15,31 @@
 :data-uri-image:
 :imagesdir: images
 
-
 include::sections/00-front-material.adoc[]
+
 include::sections/01-preface.adoc[]
+
 include::sections/02-def-terms.adoc[]
+
 include::sections/03-time-frames.adoc[]
+
 include::sections/04-final-project.adoc[]
+
 include::sections/05-office-experience.adoc[]
+
 include::sections/06-recognition-schemes.adoc[]
+
 include::sections/07-procedures.adoc[]
+
 include::sections/08-ibsc-procedure.adoc[]
+
 include::sections/09-programmes-ibsc.adoc[]
+
 include::sections/aa-checklist-institutions.adoc[]
+
 include::sections/ab-flow-diagram.adoc[]
+
 include::sections/ac-schemes-flow-diagram.adoc[]
+
 include::sections/ad-revision-history.adoc[]
-
-
-
-
-
-
-
-
 

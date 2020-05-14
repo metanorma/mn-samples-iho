@@ -1,7 +1,7 @@
 
 [[annex-guidelines-quality-management]]
 [appendix]
-== GUIDELINES FOR QUALITY MANAGEMENT
+== Guidelines for Quality Management
 
 NOTE: This annex is *not* an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, _Manual on Hydrography_.
 
