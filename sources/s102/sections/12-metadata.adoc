@@ -16,14 +16,16 @@ The following table outlines the core metadata elements (mandatory and recommend
 [cols="a,a"]
 |===
 
-|*Dataset title (M)* +
+|*Dataset title (M)*
+
 S102_DS_DiscoveryMetadata > citation > CI_Citation.title +
 or +
 S102_Tile_DiscoveryMetadata > citation > CI_Citation.title
 
 from: (MD_Metadata.identificationInfo > MD_DataIdentification.citation > CI_Citation.title)
 
-|*Spatial representation type (O)* +
+|*Spatial representation type (O)*
+
 S102_DS_DiscoveryMetadata > spatialRepresentationType: MD_ DataIdentification. spatialRepresentationType +
 or +
 S102_Tile_DiscoveryMetadata > spatialRepresentationType: MD_ DataIdentification. spatialRepresentationType
@@ -32,35 +34,40 @@ S102_Tile_DiscoveryMetadata > spatialRepresentationType: MD_ DataIdentification.
 
 from: (MD_Metadata.identificationInfo > MD_DataIdentification.spatialRepresentationType)
 
-|*Dataset reference date (M)* +
+|*Dataset reference date (M)*
+
 S102_DS_DiscoveryMetadata > citation > CI_Citation.date +
 or +
 S102_Tile_DiscoveryMetadata > citation > CI_Citation.date
 
 from: (MD_Metadata.identificationInfo > MD_DataIdentification.citation > CI_Citation.date)
 
-|*Reference system (O)* +
+|*Reference system (O)*
+
 S102_StructureMetadataBlock > hRefSystem +
 and +
 S102_StructureMetadataBlock > vRefSystem
 
 from: (MD_Metadata.referenceSystemInfo > MD_ReferenceSystem.referenceSystemIdentifier > RS_Identifier)
 
-|*Resource point of contact (O)* +
+|*Resource point of contact (O)*
+
 S102_DS_DiscoveryMetadata > pointOfContact > CI_Responsiblity +
 or +
 S102_Tile_DiscoveryMetadata > pointOfContact > CI_Responsiblity
 
 from: (MD_Metadata.identificationInfo > MD_DataIdentification.pointOfContact > CI_Responsiblity)
 
-|*Lineage (O)* +
+|*Lineage (O)*
+
 S102_QualityMetadataBlock > S102_LI_Source +
 and +
 S102_QualityMetadataBlock > S102_LI_ProcessStep
 
 from: (MD_Metadata.resourceLineage > > LI_Lineage)
 
-|*Geographic location of the dataset (by four coordinates or by geographic identifier) (C)* +
+|*Geographic location of the dataset (by four coordinates or by geographic identifier) \(C)*
+
 S102_DS_DiscoveryMetadata > extent > EX_Extent +
 or +
 S102_Tile_DiscoveryMetadata > extent > EX_Extent
@@ -69,25 +76,29 @@ from: (MD_Metadata.identificationInfo > MD_identification.extent > EX_Extent > E
 or +
 EX_GeographicDescription)
 
-|*On-line link to resource (O)* +
+|*On-line link to resource (O)*
+
 (MD_Metadata.distributionInfo > MD_Distribution > + MD_DigitalTransferOption.onLine > CI_OnlineResource)
 
 Optional - not required
 
-|*Dataset language (M)* +
+|*Dataset language (M)*
+
 S102_DS_DiscoveryMetadata > language
 or +
 S102_Tile_DiscoveryMetadata > language
 
 from: (MD_Metadata.identificationInfo > MD_DataIdentification.language)
 
-|*Metadata file parent identifier (C)* +
+|*Metadata file parent identifier \(C)*
+
 (MD_Metadata.parentMetadata > CI_Citation.identifier)
 
 Implicit in S-102 product specification reference to
 <<iso-19115-1>> as a normative reference
 
-|*Dataset character set (C)* +
+|*Dataset character set \(C)*
+
 set to default = "utf8". [not required when set to default from <<iso19115>>]
 
 from: (MD_Metadata.identificationInfo > MD_DataIdentification.defaultLocale > PT_Locale.characterEncoding)
@@ -98,7 +109,8 @@ from: (MD_Metadata.identificationInfo > MD_DataIdentification.defaultLocale > PT
 
 Implicit in S-102 product specification reference to <<iso-19115-1>> as a normative reference
 
-|*Dataset topic category (M)* +
+|*Dataset topic category (M)*
+
 S102_DS_DiscoveryMetadata > topicCategory: +
 Or +
 S102_Tile_DiscoveryMetadata > topicCategory:
@@ -110,41 +122,48 @@ MD_TopicCategoryCode +
 
 Frome: (MD_Metadata.identificationInfo > MD_Identification.topicCategory)
 
-|*Metadata standard version (O)* +
+|*Metadata standard version (O)*
+
 (MD_Metadata.metadataStandardVersion) +
 Implicit in S-102 product specification reference to <<iso-19115-1>> as a normative reference
 
 |*Spatial resolution of the dataset (O)*
+
 (MD_Metadata.identificationInfo > MD_DataIdentification.spatialResolution > MD_Resolution.equivalentScale +
 or +
 MD_Resolution.distance) +
 Since this data set is a grid coverage resolution is defined by the coverage grid parameters
 
 |*Metadata language \(C)*
+
 (MD_Metadata. defaultLocale > PT_Locale.language)
 
 The language is set to English. In addition, additional languages may be used in accordance with the structure for handling multi-languages per <<iso-19115-1>>
 
 |*Abstract describing the dataset (M)*
+
 S102_DS_DiscoveryMetadata > abstract +
 or +
 S102_Tile_DiscoveryMetadata > abstract
 
 from: (MD_Metadata.identificationInfo > MD_DataIdentification.abstract)
 
-|*Metadata character set \(C)* +
+|*Metadata character set \(C)*
+
 set to default = "utf8". [not required when set to default from <<iso-19115-1>>]
 
 from: (MD_Metadata. defaultLocale > PT_Locale.characterEncoding)
 
-|*Distribution format (O)* +
+|*Distribution format (O)*
+
 (MD_Metadata.distributionInfo > MD_Distribution > MD_Format)
 
 Optional - not applicable
 
 To maintain the separation of carrier and content the content model does not contain any format information. This would be included in a transmittal or by file types.
 
-|*Party responsible for the metadata information (M)* +
+|*Party responsible for the metadata information (M)*
+
 S102_DS_DiscoveryMetadata > contact +
 or +
 S102_Tile_DiscoveryMetadata > contact
@@ -153,25 +172,30 @@ from: (MD_Metadata.contact > CI_Responsibility.CI_Individual +
 or +
 MD_Metadata.contact > CI_Responsibility.CI_Organisation)
 
-|*Temporal extent information for the dataset (O)* +
+|*Temporal extent information for the dataset (O)*
+
 (MD_Metadata.identificationInfo > MD_Identification.extent > EX_Extent.temporalElement
 
-|*Date(s) associated with the metadata (M)* +
+|*Date(s) associated with the metadata (M)*
+
 S102_DS_DiscoveryMetadata > dateInfo +
 or
 S102_Tile_DiscoveryMetadata > dateInfo
 
 from: (MD_Metadata.dateInfo > CI_Date)
 
-|*Vertical extent information for the dataset (O)* +
+|*Vertical extent information for the dataset (O)*
+
 MD_Metadata.identificationInfo > MD_DataIdentification.extent > EX_Extent.verticalElement > EX_VerticalExtent
 
-|*Name of the scope/type of resource for which the metadata is provided (M)* +
+|*Name of the scope/type of resource for which the metadata is provided (M)*
+
 S102_DS_DiscoveryMetadata > resourceScope +
 or +
 S102_Tile_DiscoveryMetadata > resourceScope
 
 from: (MD_Metadata.metadataScope > MD_MetadataScope.resourceScope > MD_ScopeCode (codelist -- <<iso-19115-1>>))
+
 |===
 
 
@@ -334,6 +358,7 @@ otherLocale need be populated only if the dataset uses more than one language
 |1
 |CharacterString
 |see <<tab-code-defining-how-uncertainty-was-determined>>
+
 |===
 
 
@@ -352,6 +377,7 @@ The class *S102_DataIdentification* provides an extension to the metadata availa
 |NA |Depth not measured acoustically
 |Carters |Depths corrected using Carter's Tables
 |Unknown |
+
 |===
 
 
@@ -366,6 +392,7 @@ The class *S102_DataIdentification* provides an extension to the metadata availa
 |CUBE_Std_Dev |Dev "CUBE Standard Deviation " - Standard deviation of soundings captured by a CUBE hypothesis (that is, CUBE's standard output of uncertainty)
 |Product_Uncert |"Product Uncertainty" - NOAA standard product uncertainty V1.0 (a blend of CUBE uncertainty and other measures)
 |Historical_Std_Dev |"Historical Standard Deviation " -- Estimated standard deviation based on historical/archive data
+
 |===
 
 
