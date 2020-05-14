@@ -15,7 +15,7 @@ The grid data in a S-102 Bathymetric Surface coverage (either depth or uncertain
 
 [[fig-s102-grid-node-location]]
 .S-102 Grid Node location
-image::fig-s102-grid-node-location.png[]
+image::figure-s102-grid-node-location.png[]
 
 
 === Horizontal Coordinate Reference System

@@ -55,7 +55,7 @@ Since this is a 0.5° X 0.5° system, the total footprint at Nadir is: *0.17m X 
 
 [[fig-sonar-footprint-at-nadir]]
 .Sonar Footprint at Nadir
-image::fig-sonar-footprint-at-nadir.png[]
+image::figure-sonar-footprint-at-nadir.png[]
 
 
 ==== Sonar Coverage
@@ -64,7 +64,7 @@ A benefit of multibeam sonars is the ability to collect a swath of depth estimat
 
 [[fig-swath-coverage-of-survey-vessel]]
 .Swath Coverage of survey vessel
-image::fig-swath-coverage-of-survey-vessel.png[]
+image::figure-swath-coverage-of-survey-vessel.png[]
 
 
 Total coverage:
@@ -91,4 +91,4 @@ NOTE: If the 6-metre surface serves as the source for a complimentary S-102 data
 
 [[fig-charted-sounding-vs-6-metre-s102-grid]]
 .Charted Sounding vs 6-metre S-102 Grid
-image::fig-charted-sounding-vs-6-metre-s102-grid.png[]
+image::figure-charted-sounding-vs-6-metre-s102-grid.png[]

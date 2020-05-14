@@ -38,7 +38,7 @@ The structure of the data product follows the form given in S-100 Part 10C -- HD
 
 [[fig-outline-of-the-generic-data-file-structure]]
 .Outline of the generic data file structure
-image::fig-outline-of-the-generic-data-file-structure.png[]
+image::figure-outline-of-the-generic-data-file-structure.png[]
 
 <<fig-outline-of-the-generic-data-file-structure>> shows the four levels defined within the HDF encoding. Below is a further definition of these levels.
 

@@ -62,9 +62,9 @@ h|Name h|Type h|Size h|Name h|Type h|Size
 
 [[fig-informative-grid-extents-for-a-10mb-uncompressed-dataset]]
 .Informative grid extents for a 10 MB Uncompressed Dataset
-image::fig-informative-grid-extents-for-a-10mb-uncompressed-dataset.png[]
+image::figure-informative-grid-extents-for-a-10mb-uncompressed-dataset.png[]
 
 
 [[fig-informative-grid-extents-for-a-256mb-uncompressed-dataset]]
 .Informative grid extents for a 256 MB Uncompressed Dataset
-image::fig-informative-grid-extents-for-a-256mb-uncompressed-dataset.png[]
+image::figure-informative-grid-extents-for-a-256mb-uncompressed-dataset.png[]

@@ -69,7 +69,7 @@ An essential part of metadata includes information on the Geographic Reference S
 
 [[fig7]]
 .The 5 star approach to digital data management (http://5stardata.info/[http://5stardata.info])
-image::image007.png["",616,381]
+image::image007.jpg["",616,381]
 
 *Step 6: Develop a technical architecture and environment*
 

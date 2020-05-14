@@ -4,4 +4,4 @@
 
 [[fig14]]
 .UK Government conceptual model of NSDI
-image::image014.png["",854,617]
+image::image014.jpg["",854,617]

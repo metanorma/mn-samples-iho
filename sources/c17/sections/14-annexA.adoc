@@ -11,7 +11,7 @@ Responding to an oil spill requires access to and understanding of many types of
 
 [[fig8]]
 .Impact and response to oil spills
-image::image008.png[]
+image::image008.jpg[]
 
 The Open Geospatial Consortium (OGC®) announced in March 2016 that the International Association of Oil & Gas Producers (IOGP) through the Geomatics Committee and IPIECA (the global oil and gas industry association for environmental and social issues) have issued, in cooperation with OGC and Resource Data, Inc., the OGC IOGP/IPIECA Recommended Practice for a Common Operating Picture for Oil Spill Response (OSR).
 
@@ -21,7 +21,7 @@ In the final report of the IOGP/IPIECA Joint Industry Project, the recommended p
 
 [[fig9]]
 .Common Operating Picture, highlighting geospatial information
-image::image009.png["",468,295]
+image::image009.jpg["",468,295]
 
 [[fig10]]
 .OSR Common Operating Picture (COP) delivery architecture
@@ -37,7 +37,7 @@ The Arctic SDI governance model is based on cooperation on prioritized activitie
 
 [[fig11]]
 .Environment and the human presence in the Arctic
-image::image011.png[]
+image::image011.jpg[]
 
 Important data sets are produced and distributed by many stakeholders – public and commercial sector – and most of it can be geographically referenced. A spatial data infrastructure provides tools for data distributors to ensure that their geospatial data is easier for users to access, validate and combine with other data.
 
@@ -45,7 +45,7 @@ The role of the eight National Mapping Agencies of the Arctic countries is to pr
 
 [[fig12]]
 .Schematic showing the activities supported by Arctic SDI
-image::image012.png["",400,373]
+image::image012.jpg["",400,373]
 --
 
 . New Zealand Geospatial Strategy and National Spatial Data Infrastructure

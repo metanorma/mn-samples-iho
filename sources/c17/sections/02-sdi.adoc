@@ -66,4 +66,4 @@ SDI cannot be successfully delivered without the four key pillars above. However
 
 [[fig2]]
 .MSDI Framework with additional inputs to ensure success
-image::image002.png["",755,486]
+image::image002.jpg["",755,486]

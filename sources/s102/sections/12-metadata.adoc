@@ -207,7 +207,7 @@ Metadata in *S102_DiscoveryMetadataBlock* is encoded as embedded metadata in the
 
 [[fig-s102-discovery-metadata]]
 .S-102 Discovery Metadata
-image::fig-s102-discovery-metadata.png[]
+image::figure-s102-discovery-metadata.png[]
 
 
 <<fig-s102-discovery-metadata>> shows the *S102_DiscoveryMetadataBlock*. It has two subtypes S102_DS_DiscoveryMetadata and *S102_Tile_DiscoveryMetadata*. The only difference is that the resourceScope is set to "dataset" for the whole data set and "tile" for a tile. These two classes implement the metadata classes from <<iso19115>>. First implementation classes have been developed corresponding to each of the <<iso19115>> classes that have been referenced in which only the applicable attributes have been included. The classes *S102_DS_DiscoveryMetadata* and *S102_Tile_DiscoveryMetadata* inherit their attributes from these S-102 specific implementation classes. In addition, an additional component *S102_DataIdentification* has been added.
@@ -407,7 +407,7 @@ Metadata in *S102_StructureMetadataBlock* is encoded as embedded metadata in the
 
 [[fig-s102-structure-metadata]]
 .S-102 Structure Metadata
-image::fig-s102-structure-metadata.png[]
+image::figure-s102-structure-metadata.png[]
 
 
 [[tab-structuremetadatablock-class-attributes]]
@@ -474,7 +474,7 @@ Metadata in *S102_QualityMetadataBlock* is encoded as embedded metadata in the H
 
 [[fig-s102-quality-metadata]]
 .S-102 Quality Metadata
-image::fig-s102-quality-metadata.png[]
+image::figure-s102-quality-metadata.png[]
 
 
 <<tab-quality-metadata-block-description>> provides a description of each attribute of the S102_QualityMetadataBlock class attributes and those of its components.
@@ -605,19 +605,19 @@ The discovery metadata classes have numerous attributes which enable important i
 
 [[fig-realization-of-the-exchange-set-classes]]
 .Realization of the Exchange Set classes
-image::fig-realization-of-the-exchange-set-classes.png[]
+image::figure-realization-of-the-exchange-set-classes.png[]
 
 [[fig-s102-exchange-set-catalogue]]
 .S-102 Exchange Set Catalogue
-image::fig-s102-exchange-set-catalogue.png[]
+image::figure-s102-exchange-set-catalogue.png[]
 
 [[fig-s102-exchange-set]]
 .S-102 Exchange Set
-image::fig-s102-exchange-set.png[]
+image::figure-s102-exchange-set.png[]
 
 [[fig-s102-exchange-set-class-details]]
 .S-102 Exchange Set - class details
-image::fig-s102-exchange-set-class-details.png[]
+image::figure-s102-exchange-set-class-details.png[]
 
 
 The following clauses define the mandatory and optional metadata needed for S-102. In some cases, the metadata may be repeated in a national language. If this is the case it is noted in the Remarks column.

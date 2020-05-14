@@ -8,7 +8,7 @@ The 'blue' economy represents roughly 5.4 million jobs and generates a gross add
 
 [[fig4]]
 .Blue Growth schematic
-image::image004.png["",369,581]
+image::image004.jpg["",369,581]
 
 The strategy consists of three components:
 
@@ -109,7 +109,7 @@ Reaction to each of these, and numerous other events, requires a multi-disciplin
 
 [[fig6]]
 .Images showing the Gulf of Mexico oil spill (left) and the Japanese tsunami (right)
-image::image006.png[]
+image::image006.jpg[]
 
 === Rising Sea Levels
 

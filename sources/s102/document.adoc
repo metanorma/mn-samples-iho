@@ -1,4 +1,6 @@
 = Bathymetric Surface Product Specification
+:series: S
+:docnumber: 102
 :doctype: standard
 :edition: 2.0.0
 :language: en
@@ -6,7 +8,6 @@
 :copyright-year: 2019
 :status: in-force
 :committee: hssc
-:docnumber: s-102
 :docfile: document.adoc
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,pdf,rxl
