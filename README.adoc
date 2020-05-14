@@ -13,7 +13,7 @@ This repository provides Metanorma-IHO documents in sample form.
 
 Documents in this repository are available through the deployed mini-site:
 
-* https://metanorma.github.io/mn-samples-IHO/[Metanorma-IHO documents]
+* https://metanorma.github.io/mn-samples-iho/[Metanorma-IHO documents]
 
 
 
