@@ -25,7 +25,7 @@ If the data is transformed in S-102 it must not be changed.
 This Product Specification defines the encoding which must be used as a default for transmission of data between parties.
 
 The encoding encapsulates exchange set elements as follows:
-
+--
 
 Mandatory Elements:::
 * S-102 datasets -- HDF encoding
@@ -35,7 +35,7 @@ Mandatory Elements:::
 Optional Elements:::
 * S-102 Feature Catalogue -- If it is necessary to deliver the latest Feature Catalogue to the end user it may be done using the S-102 exchange set mechanism for datasets
 * S-102 Portrayal Catalogue -- If it is necessary to deliver the latest Portrayal Catalogue to the end user it may be done using the S-102 exchange set mechanism for datasets.
---
+
 
 === Dataset
 
