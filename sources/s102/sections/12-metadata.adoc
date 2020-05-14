@@ -715,7 +715,7 @@ S100_DatasetDiscoveryMetadata
 |
 
 |Role
-|--
+|-
 |Metadata for catalogue
 |0..*
 |Aggregation +
