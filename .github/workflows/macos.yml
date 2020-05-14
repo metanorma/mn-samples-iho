@@ -6,15 +6,14 @@ on:
   push:
     branches: [ master ]
   pull_request:
-
+    paths-ignore:
+      - .github/workflows/docker.yml
+      - .github/workflows/ubuntu.yml
+      - .github/workflows/windows.yml
 jobs:
   test-macos:
     name: Test on Ruby ${{ matrix.ruby }} macOS
     runs-on: macos-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        ruby: [ '2.6', '2.5', '2.4' ]
     steps:
       - uses: actions/checkout@master
       - name: Checkout submodules
@@ -30,20 +29,21 @@ jobs:
           path: ~/.cache/xml2rfc
           key: xml2rfc
           restore-key: xml2rfc
-      - name: Use Ruby
-        uses: actions/setup-ruby@v1
-        with:
-          ruby-version: ${{ matrix.ruby }}
-          architecture: 'x64'
-      - name: Install bundler
-        run: |
-          sudo gem install bundler
       - name: Use Metanorma
         run: |
           brew update
           brew install yq
           brew install https://raw.githubusercontent.com/metanorma/homebrew-metanorma/master/Formula/metanorma.rb
           metanorma version
+      - name: Setup Fonts
+        run: |
+          brew install cabextract gettext
+          brew link --force gettext
+          export RENAME_FONTS=false
+          curl -Ls https://raw.githubusercontent.com/metanorma/vista-fonts-installer/master/vista-fonts-installer.sh | bash
+      - name: Install bundler
+        run: |
+          sudo gem install bundler
       - name: Metanorma compile
         env:
           JAVA_OPTS: "java.awt.headless=true"
