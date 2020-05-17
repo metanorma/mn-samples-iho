@@ -7,7 +7,7 @@ There are many variables that could cause echo-sounder measurements to differ fr
 
 [[figure-07]]
 .Example of estimating depth with a simple echo-sounder (left), and illustration (right) of the potential for blunders (e.g., the echo-sounder detecting the depth of a school of fish, rather than the seafloor).
-image::image-07.jpg[]
+image::image-07.png[]
 
 These errors, and others, could lead to uncertainty in the accuracy of a depth measurement, which should be considered when the data is processed, stored, and used. This chapter presents features of uncertainty that may be of interest to data collectors, trusted nodes, and end users of the crowdsourced bathymetry database.
 
@@ -68,11 +68,11 @@ Integration uncertainty becomes an issue when an instrument is installed incorre
 
 [[figure-11]]
 .Examples of the effects of not correcting for vertical offsets. Here, not correcting for the offset of the transducer from the waterline leads to a measurement (red line) that differs significantly from reality (yellow line). This gives a bias (systematic) uncertainty to the measurements.
-image::image-11.jpg[]
+image::image-11.png[]
 
 [[figure-12]]
 .Effects of not correcting for horizontal offsets. Here, not measuring the horizontal offset between the GNSS receiver position and the echo-sounder results in along-track offsets of seafloor features. Red line: measured; yellow line: reality.
-image::image-12.jpg[]
+image::image-12.png[]
 
 ===== Modelling Uncertainty
 
@@ -87,11 +87,11 @@ If data users do not understand these issues, models may appear to be accurate w
 
 Although the use of uncertainty models and budgets have been a part of modern hydrographic practice since the late 1990s, uncertainties are often computed as part of data processing, but then either forgotten or dropped when the data are presented or interpreted. This is a mistake.
 
-For example, if a depth is reported as 12.0 ± 0.3m (at a 95% <<term-ci,confidence interval>>), it would be unwise to assume that a vessel has at least 12m clearance in this depth area; with the usual probabilistic assumptions of the distribution of the uncertainty this is true only half of the time (<<figure-13>> (a)), which is surely lower odds than any prudent mariner would allow for a navigation decision. A value of 11.74m would be a better choice (<<figure-13>> (b)), but if a mariner wanted a less than 1:1000 chance of the depth being shallower than the declared value, they should use a depth of 11.34m (<<figure-13>> (c)). Clearly, the "`safe`" depth depends on the user's needs, and it would be incorrect, and unwise, to report simply the mean depth.
+For example, if a depth is reported as 12.0 ± 0.3m (at a 95% <<term-ci,confidence interval>>), it would be unwise to assume that a vessel has at least 12m clearance in this depth area; with the usual probabilistic assumptions of the distribution of the uncertainty this is true only half of the time (<<figure-13>> (a)), which is surely lower odds than any prudent mariner would allow for a navigation decision. A value of 11.74m would be a better choice (<<figure-13>> (b)), but if a mariner wanted a less than 1:1000 chance of the depth being shallower than the declared value, they should use a depth of 11.34m (<<figure-13>> (&#x200c;c)). Clearly, the "`safe`" depth depends on the user's needs, and it would be incorrect, and unwise, to report simply the mean depth.
 
 [[figure-13]]
 .Examples of shoal-clearance depths for different probabilities of excession, based on the same basic uncertainty estimate of 12.0 ± 0.3m (95% CI). Assuming a 12.0m clearance is only true 50% of the time (left); a 5% probability of being shallower requires the depth to be reduced to 11.74m (middle); a 1:1000 chance of being shallower requires a clearance depth of 11.34m (right).
-image::image-13.png[]
+image::image-13.jpg[]
 
 
 Like depths, uncertainties are only estimates: a best guess, based on what the provider assumes to be the behaviour of the data collection system. Hence, it is possible for an observation to have an uncertainty estimate that does not actually reflect the difference between the measurement and the true depth.
@@ -100,7 +100,7 @@ Consider, for example, the data in <<figure-14>>. Here, the data from crowdsourc
 
 [[figure-14]]
 .Difference between crowdsourced observations and a reference grid model (data courtesy of SHOM). Errors in the crowdsourced observations are clearly seen in plan view (left) and are reflected in the bimodal distribution of differences (right). The uncertainty associated with the crowdsourced observations might not reflect these differences if the observer's metadata was incomplete.
-image::image-14.png[]
+image::image-14.jpg[]
 
 
 Note that a 10% uncertainty in depth would be very important to known about, but a 10% uncertainty in the uncertainty (i.e., that it is in the range 9-11%) is probably not as important. Therefore, so long as the uncertainty estimate is plausible, and free from blunders as outlined above, the requirements for estimating the uncertainty are not as stringent. This idea can be used to rationalise the effort required to estimate uncertainties to a reasonable level.
@@ -223,7 +223,7 @@ Database users should avoid over-confidence in uncertainty values when using int
 
 [[figure-15]]
 .Example of problems that can occur when predicting uncertainty from sparse data, where all objects are not captured in the dataset. From the data (top diagram), geostatistical techniques might predict an uncertainty that the user, without further data or reference, might assume to be the outer limits of the true depth. With objects not captured by the sparse data (bottom diagram), however, there could be discrepancies not captured in the interpolation, outside of the implied bounds predicted by the interpolation method.
-image::image-15.png[]
+image::image-15.jpg[]
 
 
 Database users are ideally placed to identify problems with individual observers or datasets. Users who identify outliers, or anomalous observers, are encouraged to communicate this information to the DCDB.

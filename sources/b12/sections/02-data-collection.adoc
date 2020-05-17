@@ -20,7 +20,7 @@ Multibeam echo-sounders collect depth measurements by forming many receive beams
 
 ==== Positioning Systems
 
-Positioning systems help mariners determine their location on the Earth's surface and provide vital information for CSB. Without accurate location information, CSB has little value. Most vessels carry a <<term-gnss,GNSS>>, such as GPS, GLONASS or any other constellation, which obtain position fixes automatically. GNSS positions are typically provided once per second and are accompanied by a time and date stamp. CSB data collection systems should provide a position and timestamp with every depth reading. This allows data users to accurately position depth measurements and apply corrections to the data if needed. The GNSS can also output information about the quality of the signal and interruptions in service, and these data should also be logged, if possible.
+Positioning systems help mariners determine their location on the Earth's surface and provide vital information for CSB. Without accurate location information, CSB has little value. Most vessels carry a <<term-gnss,Global Navigation Satellite System>> (GNSS), such as GPS, GLONASS or any other constellation, which obtain position fixes automatically. GNSS positions are typically provided once per second and are accompanied by a time and date stamp. CSB data collection systems should provide a position and timestamp with every depth reading. This allows data users to accurately position depth measurements and apply corrections to the data if needed. The GNSS can also output information about the quality of the signal and interruptions in service, and these data should also be logged, if possible.
 
 ==== Motion Sensors
 
@@ -41,15 +41,15 @@ It is helpful for mariners to understand the raw data that is being output by th
 
 ===== GNSS NMEA Sentences
 
-RMC, GGA, and GLL sentences provide output from the GNSS sensor. Each sentence type provides slightly different information. A 'GLL' NMEA 0183 sentence provides position and time information, and may look like this: `$GPGLL,0424.9921,N,11359.7734,E,012636.21,A,D,*5E`. In this sentence, the 'GLL' designator is followed by the latitude and longitude (with hemispheres), and the time (but not date), in UTC hhmmss.ss format.
+RMC, GGA, and GLL sentences provide output from the GNSS sensor. Each sentence type provides slightly different information. A 'GLL' NMEA 0183 sentence provides position and time information, and may look like this: *`$GPGLL,0424.9921,N,11359.7734,E,012636.21,A,D,*5E`*. In this sentence, the 'GLL' designator is followed by the latitude and longitude (with hemispheres), and the time (but not date), in UTC hhmmss.ss format.
 
-A GNSS 'GGA' sentence provides time, position, and fix information, and may look like this: `$GPGGA,071953.00,0424.9862,N,11359.7661,E,1,9,1.8,21,M,,M,,*68`. In this example, the 'GGA' designator is followed by the time (in UTC), the latitude, longitude, and information about the accuracy of the GNSS position fix.
+A GNSS 'GGA' sentence provides time, position, and fix information, and may look like this: *`$GPGGA,071953.00,0424.9862,N,11359.7661,E,1,9,1.8,21,M,,M,,*68`*. In this example, the 'GGA' designator is followed by the time (in UTC), the latitude, longitude, and information about the accuracy of the GNSS position fix.
 
-The 'RMC' sentence output from a GNSS contains the recommended minimum navigation information, and provides position, velocity, track made good, date, time, and magnetic variation information. It may look like this: `$GPRMC,102318.23,A,4537.0226,N,03243.0262,E,015.3,186.3,211217,007.2,W*6A`. In this sentence, the 'RMC' designator is followed by the time, in UTC (hhmmss.ss), the latitude and longitude, vessel speed (in knots), track made good (in degrees true), date (ddmmyy), and magnetic variation (degrees and E/W).
+The 'RMC' sentence output from a GNSS contains the recommended minimum navigation information, and provides position, velocity, track made good, date, time, and magnetic variation information. It may look like this: *`$GPRMC,102318.23,A,4537.0226,N,03243.0262,E,015.3,186.3,211217,007.2,W*6A`*. In this sentence, the 'RMC' designator is followed by the time, in UTC (hhmmss.ss), the latitude and longitude, vessel speed (in knots), track made good (in degrees true), date (ddmmyy), and magnetic variation (degrees and E/W).
 
 ===== Echo-sounder NMEA Sentences
 
-NMEA 'DBT' (depth below transducer) sentences for echo-sounders provide depth measurements in several units, and may look like this: `$SDDBT,0006.0,f,0001.828,M,0001.0,F*3A`. The depth, in feet, metres, and fathoms are visible in each of the comma-delimited fields, separated by their unit of measure. For this depth measurement, vertical correctors, such as the draft of the vessel and water level, must be added to the DBT depth to derive the full depth of the water column.
+NMEA 'DBT' (depth below transducer) sentences for echo-sounders provide depth measurements in several units, and may look like this: *`$SDDBT,0006.0,f,0001.828,M,0001.0,F*3A`*. The depth, in feet, metres, and fathoms are visible in each of the comma-delimited fields, separated by their unit of measure. For this depth measurement, vertical correctors, such as the draft of the vessel and water level, must be added to the DBT depth to derive the full depth of the water column.
 
 ===== NMEA Data Logging
 
