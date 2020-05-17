@@ -27,8 +27,8 @@ http://www.geoportal.de/EN/Geoportal/Services/Spatial-Data-and-Services-in-Web/_
 ====
 _A list of existing SDI/NSDI and MSDI initiatives across the World and map showing existing national geoportals can be found at:_
 
-http://www.iho.int/mtg_docs/com_wg/MSDIWG/MSDIWG_Misc/SDI-portals.pdf[http://www.iho.int/mtg_docs/com_wg/MSDIWG/MSDIWG_Misc/SDI-portals.pdf] and
-
+[align=left]
+http://www.iho.int/mtg_docs/com_wg/MSDIWG/MSDIWG_Misc/SDI-portals.pdf[http://www.iho.int/mtg_docs/com_wg/MSDIWG/MSDIWG_Misc/SDI-portals.pdf] and +
 http://www.iho.int/gis/msdi.gis.html[http://www.iho.int/gis/msdi.gis.html]
 ====
 --
