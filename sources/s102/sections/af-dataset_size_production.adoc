@@ -12,7 +12,7 @@ Given that the contents of these metadata attributes will vary between producers
 === Data Records/Nodes
 The data contained within an S-102 file consists of two distinct data types. The first layer is the *TrackingListCoverage* and is defined as a single dimensional array of nodes. Each of the nodes, within this array, contains five data values. The first and last two values in the array are stored as a 4-byte integers. The remaining value is stored as a 4-byte floating point. The total size of each node therefore is 20 bytes.
 
-The second layer is the BathymetryCoverage and is defined as a two-dimensional array of nodes containing bathymetric data. Each of the nodes within this array contains two data values (depth and uncertainty). Both values are stored as a 4-byte floating point. The total size of each node will therefore be 8 bytes.
+The second layer is the *BathymetryCoverage* and is defined as a two-dimensional array of nodes containing bathymetric data. Each of the nodes within this array contains two data values (depth and uncertainty). Both values are stored as a 4-byte floating point. The total size of each node will therefore be 8 bytes.
 
 The size of each of these arrays is independent of the other. The number of elements in a tracking list will vary significantly between geographic areas. A worst-case estimate of the overall number of entries is 100,000. This number is several orders of magnitude greater than is reasonable expected and results in an estimated total size of 1 Mb.
 

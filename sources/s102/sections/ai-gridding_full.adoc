@@ -10,17 +10,17 @@ As stated in <<sec-data-content-and-structure>>, the majority of modern hydrogra
 
 ==== Example Collection Scenario
 
-Environmental Characteristics:: Relatively Flat Seafloor +
+*Environmental Characteristics*:: Relatively Flat Seafloor +
 Average Water Depth: 20 metres
 
-Charting Parameters::
+*Charting Parameters*::
 Intended charting scale: 1:22,000
 
-Survey Plan::
+*Survey Plan*::
 Survey Length: 30 days +
 Daily Collection Window: 12 hours each day Collection Speed: 8 kts.
 
-Collection Sonar Characteristics::
+*Collection Sonar Characteristics*::
 Sonar Frequency: 400kHz +
 Beam Width: 0.5° X 0.5° +
 Number of Beams Across Swath: 400 soundings per ping +
@@ -69,9 +69,9 @@ image::figure-swath-coverage-of-survey-vessel.png[]
 
 Total coverage:
 
-_17.8 km2 of coverage each day._
+_17.8 km^2^ of coverage each day._
 
-_533.4 km2 of total coverage after 30 days._
+_533.4 km^2^ of total coverage after 30 days._
 
 
 === Post Survey Process
