@@ -16,6 +16,8 @@
 :data-uri-image:
 :imagesdir: images
 
+include::sections/00-foreword.adoc[]
+
 include::sections/00-front-material.adoc[]
 
 include::sections/01-preface.adoc[]
