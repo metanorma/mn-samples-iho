@@ -1,13 +1,14 @@
 = Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers
 :series: S
 :docnumber: Guidelines-S5-S8
-:doctype: guidelines
+:doctype: specification
 :edition: 2.1.0
 :language: en
 :published-date: 2019-05
 :copyright-year: 2019
 :status: in-force
 :committee: hssc
+:workgroup: ibsc
 :docfile: document.adoc
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,rxl
