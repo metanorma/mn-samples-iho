@@ -6,7 +6,9 @@
 :language: en
 :published-date: 2020-03
 :copyright-year: 2020
-:status: in-force
+:status: draft-proposal
+:committee: hssc
+:workgroup: hspt
 :docfile: document.adoc
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,rxl
