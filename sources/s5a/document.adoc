@@ -8,12 +8,15 @@
 :copyright-year: 2018
 :status: in-force
 :committee: hssc
+:workgroup: ibsc
 :docfile: document.adoc
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,rxl
 :local-cache-only:
 :data-uri-image:
 :imagesdir: images
+
+include::sections/00-foreword.adoc[]
 
 include::sections/00-preface.adoc[]
 
