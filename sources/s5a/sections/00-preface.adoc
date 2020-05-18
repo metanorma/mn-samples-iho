@@ -11,8 +11,10 @@ The intention is that a Category "A" individual with appropriate experience, wou
 [.preface]
 == Definitions
 
+[.nonterm]
 === Subjects, topics, and elements
-The S5-A standard contains the following list of _Basic subjects, Foundation Science subjects and Hydrographic Science subjects_:
+
+The S5-A standard contains the following list of _**B**asic subjects, **F**oundation Science subjects and **H**ydrographic Science subjects_:
 
 * <<b1-mathematics-statistics-theory-of-observations,B1: Mathematics, statistics, theory of observations>>
 * <<b2-information-and-communication-technology,B2: Information and Communication Technology>>
@@ -36,11 +38,11 @@ The S5-A standard contains the following list of _Basic subjects, Foundation Sci
 *Topics and Elements*:
 
 * Each *Foundation Science, Hydrographic Science or Basic* _subject_ comprises a list of _topics_ which are denoted by Bx.y, Fx.y, or Hx.y;
-* Each topic contains _elements_ which are denoted by Bx.y<c> Fx.y<c> or Hx.y<c>.
+* Each _topic_ contains _elements_ which are denoted by Bx.y<c> Fx.y<c> or Hx.y<c>.
 
 For example, the _subject_ H1 "`Positioning`" contains the _topic_ H1.1 Vessel and sensor reference frames that has the _element_ H1.1a "`Common reference frames for sensors`".
 
-
+[.nonterm]
 === Learning outcomes and list of content
 
 It is important to understand that each element is associated with:
