@@ -1,7 +1,7 @@
 = Bathymetric Surface Product Specification
 :series: S
 :docnumber: 102
-:doctype: standard
+:doctype: specification
 :edition: 2.0.0
 :language: en
 :published-date: 2019-10
