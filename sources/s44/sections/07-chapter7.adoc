@@ -271,7 +271,7 @@ m = metres. All <<def-uncertainty,uncertainties>> at 95% <<def-confidence_level,
 [[scl-matrix-description]]
 === Matrix Description
 
-The Specification Matrix provides a range of selectable criteria for bathymetric parameters and other data types collected, reported, and delivered as part of a hydrographic survey. It is introduced to allow flexibility and customisation in the tasking and assessing of hydrographic surveys, accommodation of new and emerging technologies, and inclusion of hydrographic surveys conducted for purposes other than safety of navigation. By design, it is expandable and can evolve in future S-44 editions. The Matrix can be used both as a tool when specifying a survey, but also as a tool for classification of data after a completed survey.
+The Specification <<scl-matrix-description,Matrix>> provides a range of selectable criteria for bathymetric parameters and other data types collected, reported, and delivered as part of a hydrographic survey. It is introduced to allow flexibility and customisation in the tasking and assessing of hydrographic surveys, accommodation of new and emerging technologies, and inclusion of hydrographic surveys conducted for purposes other than safety of navigation. By design, it is expandable and can evolve in future S-44 editions. The Matrix can be used both as a tool when specifying a survey, but also as a tool for classification of data after a completed survey.
 
 It is important to note that the <<scl-matrix-description,Matrix>> alone does not define any standards for hydrographic survey. Safety of navigation survey standards (as defined in <<tab-minimum-bathymetry>> and <<tab-other-minimum>>) are referenced to the <<scl-matrix-description,Matrix>> criteria and the <<scl-matrix-description,Matrix>> can be used to customise and enhance these minimum standards. Standards for surveys conducted for purposes other than safety of navigation (e.g. geophysical, oil and gas, dredging, and geotechnical) are not currently defined in this document. However, the range of accuracies presented in the <<scl-matrix-description,Matrix>> was designed to accommodate these surveys and to provide a common framework for tasking and assessing hydrographic surveys in general.
 
@@ -399,7 +399,7 @@ h| B 15+^h| BATHYMETRY
 | 300 |
 
 | *h*
-| <<def-bathymetric_coverage,bathymetric coverage>> [%]
+| <<def-bathymetric_coverage,Bathymetric Coverage>> [%]
 | 1
 | 3
 | 5

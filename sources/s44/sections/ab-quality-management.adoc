@@ -5,7 +5,7 @@
 
 NOTE: This annex is *not* an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, _Manual on Hydrography_.
 
-Quality control:: Quality evaluation procedure for maintaining standards in products by testing the output against the specification.
+*Quality control*:: Quality evaluation procedure for maintaining standards in products by testing the output against the specification.
 
 
 === Quality Control
@@ -15,7 +15,7 @@ Quality control requires more than proving that the end results of the survey ar
 
 === Equipment
 
-The equipment in use must be capable of producing data that meets the required standards. First, the total propagated uncertainties of all equipment and corrections used to derive the reported surveyed value must be included. The temporal and spatial influence of the medium, in which measurements take place, must be considered in this <<def-tpu,total propagated uncertainty>> calculation. By an a priori calculation of the <<def-tpu,total propagated uncertainty>> in a certain environment, it can be determined if the instrumental setup is sufficient for the required quality. If uncertainties cannot be calculated prior to the survey, an alternative methodology of describing the achieved uncertainties must be undertaken to verify that the required standards will be met.
+The equipment in use must be capable of producing data that meets the required standards. First, the total propagated uncertainties of all equipment and corrections used to derive the reported surveyed value must be included. The temporal and spatial influence of the medium, in which measurements take place, must be considered in this <<def-tpu,total propagated uncertainty>> calculation. By an _a priori_ calculation of the <<def-tpu,total propagated uncertainty>> in a certain environment, it can be determined if the instrumental setup is sufficient for the required quality. If uncertainties cannot be calculated prior to the survey, an alternative methodology of describing the achieved uncertainties must be undertaken to verify that the required standards will be met.
 
 Secondly, the equipment in use should be free of (<<def-systematic_error,systematic>>) <<def-error,errors>> which must be determined by calibration and qualification.
 
@@ -26,7 +26,7 @@ The use of calibrated equipment that can achieve the required data quality is th
 
 Using standardised procedures for hydrographic data collection and processing can reduce the risk of <<def-error,errors>>. By describing the total of procedures, it is possible to incorporate checks and tests on <<def-error,errors>> that occur in an early stage of the process. This is important for <<def-error,errors>> that cannot be detected afterwards.
 
-Procedures may involve complete flow schedules that can be used for external auditing and standardised data products. In the procedures, the a posteriori quality checks must be admitted.
+Procedures may involve complete flow schedules that can be used for external auditing and standardised data products. In the procedures, the _a posteriori_ quality checks must be admitted.
 
 
 === Personnel

@@ -5,7 +5,7 @@
 
 Surveys above the vertical datum are necessary for safe and efficient navigation and mooring. Topographic and geodetic measurements that are of specific importance for navigation are presented in the following sections. Their corresponding allowable uncertainties (<<def-thu,THU>> and <<def-tvu,TVU>> as applicable) are defined in <<tab-other-minimum>>.
 
-Additional information such as drawings or photographs of these features should be captured where possible to support the measurement.
+Additional information such as drawings or photographs of these <<def-feature,features>> should be captured where possible to support the measurement.
 
 For Chart and Land Survey Vertical Datum Connection requirements see <<scl-datum-connections>>.
 

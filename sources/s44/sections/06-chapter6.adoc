@@ -3,7 +3,7 @@
 
 === Introduction
 
-<<def-metadata,Metadata>> is fundamental to ensure that survey data is correctly understood and utilised as required for chart production or other purposes. This Standard identifies the minimum <<def-metadata,metadata>> that is to be provided with hydrographic surveys conducted for safety of navigation. Where additional <<def-metadata,metadata>> is available this should be included to enhance the value of the survey data for other uses. Examples of <<def-metadata,metadata>> include overall quality, data set title, source, positional uncertainty, and ownership.
+<<def-metadata,Metadata>> is fundamental to ensure that survey data is correctly understood and utilised as required for chart production or other purposes. This Standard identifies the minimum <<def-metadata,metadata>> that is to be provided with hydrographic surveys conducted for safety of navigation. Where additional <<def-metadata,metadata>> is available this should be included to enhance the value of the survey data for other uses. Examples of <<def-metadata,metadata>> include overall quality, data set title, source, positional <<def-uncertainty,uncertainty>>, and ownership.
 
 
 === Metadata Content
