@@ -62,6 +62,7 @@ The submission should, in this section, provide a clear narrative outline of the
 +
 --
 Identify normal qualifications required for entry and alternative qualification routes that may be acceptable for entry.
+
 For Programmes seeking exemption of some or all the _Basic_ or _Foundation Science_ subjects, provide a clear indication of where students would previously have attained that knowledge, and a clear description of the formal procedures used to evaluate claims for such exemptions. *_No exemptions are permitted for Essential, Hydrographic and Cartographic Science subjects_*.
 
 &#x200c;[Comment: The Board will examine in detail the entry processes of the submitting organization. It will be focused on ensuring the entry requirements are properly and adequately met. Where an entry examination or test is employed the Board requires an outline of how the examination or test addresses the entry standards required.]
@@ -170,15 +171,15 @@ Amos, M. New Zealand Vertical Datum 2009. New Zealand Surveyor, No. 300, 2010.
 6+h|Module Activity Breakdown
 
 h|Activity - Lecture, Practical, Assignment
-h|Contents
-h|T
-h|P
-h|SG
-h|S5B Topic
+^.^h|Contents
+^.^h|T
+^.^h|P
+^.^h|SG
+^.^h|S5B Topic
 
 h|Lecture 1 Introduction to Geodesy
 |An overview of the course as a whole to place material covered into context. The development of geodesy from measurements to determine the shape of the Earth from 200 years BC through early geodetic surveys to modern reference frames used with GNSS data.
-|2.0
+^.^|2.0
 |
 |
 |E1.2
@@ -186,7 +187,7 @@ h|Lecture 1 Introduction to Geodesy
 h|Tutorial 1
 |Determine formula and undertake computations using historical data obtained by Eratosthenes, Poseidonius, al-Ma'Mun, Abu Rayan al-Biruni and results from early baseline observations to determine the size of the Earth.
 |
-|1.0
+^.^|1.0
 |
 |E1.1
 
@@ -194,7 +195,7 @@ h|Lecture 2
 |The Earth as a sphere, defining points in 3D by latitude, longitude and radius, Defining great circles, small circles rhumb lines and azimuth.
 Spherical trigonometry and its application.
 Use of solar observations to determine azimuth.
-|3.0
+^.^|3.0
 |
 |
 |B1.3, E4.3a
@@ -202,8 +203,8 @@ Use of solar observations to determine azimuth.
 h|Tutorial 2
 |Solution of problems using spherical trigonometry
 |
-|2.0
-|1.0
+^.^|2.0
+^.^|1.0
 |B1.3
 
 h|Assignment 1
@@ -213,13 +214,13 @@ Working in pairs, use 4 rounds of observations to the Sun to determine azimuth o
 
 Write a report with (i) Introduction; (ii) Principles detailing how the Sun can be used to determine both direction and time to explain corrections required to data for both components and computations required for solutions; (iii) Field booking sheet and computations for azimuth performed in the field; (iv) a discussion on precision of the azimuth using results from 4 rounds and accuracy from corrected time read from the sundial with true local time; and, (v) conclusions.
 |
-|2.0
-|5.0
+^.^|2.0
+^.^|5.0
 |B1.3, E4.3a
 
 h|Lecture 3
 |Gravity, Newtons laws. Gravity and potential due to mass and centrifugal force. Gravity measurement and normal gravity (GRS80). Gravity anomalies. Geopotential models (EGM2008)
-|3.0
+^.^|3.0
 |
 |
 |B3.2, E4.1a
@@ -227,14 +228,14 @@ h|Lecture 3
 h|Practical 1 (computer lab)
 |Use locally acquired gravity data to produce maps of gravity anomalies and compare with a similar maps from EGM2008. Consider results in alignment with geological structures.
 |
-|2.0
-|2.0
+^.^|2.0
+^.^|2.0
 |E4.1a, B4.1
 
 h|Lecture 4
 |The Earth as a spheroid. Latitude, longitude, radius of curvature and meridional distance. Lines of sight and geodesic on the spheroid. Computations on the spheroid by Normal Section, Vincenty's formula and Kivioja's algorithm.
 Deflection of the vertical, geoid/spheroid separation and their relationship.
-|3.0
+^.^|3.0
 |
 |
 |E4.1d
@@ -242,13 +243,13 @@ Deflection of the vertical, geoid/spheroid separation and their relationship.
 h|Practical 2 (computer lab)
 |Use of scripts, spreadsheets and on-line resources to perform spheroidal computations and reverse computations on lines of different length. Use software for visualization of lines of sight and the geodesic.
 |
-|2.0
-|2.0
+^.^|2.0
+^.^|2.0
 |E4.1d
 
 h|Lecture 5
 |Vertical control. Approximating the geoid from Sea level data. Use of levelling to transfer control and influences of Earth potential. The geopotential number and orthometric heights. Review of alternative heighting methods (Helmert heights and dynamic heights). Determining a reference surface for normal-orthometric heights with benefits and applications in surveying.
-|3.0
+^.^|3.0
 |
 |
 |E4.4a +
@@ -257,17 +258,17 @@ E4.1c
 h|Practical test 1 (computer lab)
 |Computations relation to; (i) Comparing traditional bench mark data with heights obtained from GNSS corrected with global and local geoidal models; (ii) Use of normal-orthometric heights. Discussion of methods and results in both parts.
 |
-|2.0
+^.^|2.0
 |
 |E4.4a +
 E4.1c
 
-|⁞
-|⁞
-|⁞
-|⁞
-|⁞
-|⁞
+^.^|⁞
+^.^|⁞
+^.^|⁞
+^.^|⁞
+^.^|⁞
+^.^|⁞
 
 |===
 
@@ -327,11 +328,11 @@ Chapter 5 of the submission must include a list and details of all practical exe
 
 [[tab-list-practical-exercises]]
 .Example of the List of Practical Exercises
-[cols="a,a,a,a",options="header"]
+[cols="a,^.^a,^.^a,a",options="header"]
 |===
-|Practical Exercise
-|Programme module
-|Hours
+^.^h|Practical Exercise
+^.^h|Programme module
+^.^h|Hours
 |S-5/S-8 (B or A) topic/element
 
 |*Fire Extinguishers*
@@ -469,14 +470,14 @@ h|Phase & Task h|Task Outcome h|Resources: equipment, software, data sources etc
 [[scl-chapter7]]
 ==== CHAPTER 7: Programme Cross-Reference Table
 
-This table is the most important information used by the Board to assess submitted programmes and MUST BE COMPLETED IN THE SPECIFIED TEMPLATE PROVIDED, as prescribed below. This table contains a mapping of the hours for theory (T), practicals (P), self-guided (SG) devoted to each element and learning outcomes of the Standards and classified by subject. The information provided is required to demonstrate that every element's contents and learning outcomes are covered by the programme modules.
+This table is the most important information used by the Board to assess submitted programmes and MUST BE COMPLETED IN THE SPECIFIED TEMPLATE PROVIDED, as prescribed below. This table contains a mapping of the hours for theory (T), practicals (P), self-guided (SG) devoted to each _element_ and learning outcomes of the Standards and classified by _subject_. The information provided is required to demonstrate that every element's contents and learning outcomes are covered by the programme modules.
 
 &#x200c;[Comment: Particular care should be taken in ensuring the cross-referencing is completed accurately and comprehensively. The Board needs to reference the learning outcomes sought against the content delivered.]
 
 . *Guidance to Complete the Cross-Reference Table*
 +
 --
-Submitting institutions MUST complete the Module and content and the Hours columns of the table shown below for each _Basic, Essential, Foundation, Hydrographic or Cartographic_ Science subject:
+Submitting institutions MUST complete the Module and content and the Hours columns of the table shown below for each _Basic, Essential, Foundation, Hydrographic or Cartographic Science subject_:
 
 * T/P/SG (Theory/Practicals or Labs/Self-guided):
 **  Theory through lectures;
