@@ -8,7 +8,8 @@
 |===
 | Topic/Element | Content | Learning outcomes
 
-| B1.1 Linear Algebra _(B)_
+| B1.1 Linear Algebra +
+_(B)_
 |
 . Vector and affine spaces, vector and inner products, norms.
 . Linear equations, determinants.
@@ -18,20 +19,23 @@
 | Describe and apply 2D transformations involved in surveying and mapping. (E4.1c) +
 Solve linear equations using matrix methods.
 
-| B1.2 Differential calculus _(B)_
+| B1.2 Differential calculus +
+_(B)_
 |
 . Real and vector valued functions.
 . Gradient of real-valued functions and their discrete approximations.
 . Series and integrals. | Compute the gradient of a vector valued function. Define a function as a series. +
 Calculate explicit integrals of classical functions.
 
-| B1.3 Trigonometry _(B)_
+| B1.3 Trigonometry +
+_(B)_
 |
 . Basic trigonometry
 . Sphere, great circle, rhumb lines, sphere angles, spherical triangles and spherical excess.
 | Apply plane and spherical trigonometry to surveying problems.
 
-| B1.4 Statistics _(I)_
+| B1.4 Statistics +
+_(I)_
 |
 . Random variables, mean, variance, standard deviation
 . Covariance and correlation
@@ -39,13 +43,15 @@ Calculate explicit integrals of classical functions.
 . Normal distribution
 | Explain what is meant by a random variable, estimate the mean, variance and standard deviation for a random variable and also the covariance between random variables.
 
-| B1.5 Theory of errors _(B)_
+| B1.5 Theory of errors +
+_(B)_
 |
 . Linear observation equations
 . Covariance propagation law
 | Apply the variance propagation law to a linear observation equation, and derive a measurement uncertainty as a function of observables' covariances.
 
-| B1.6 Least squares _(B)_
+| B1.6 Least squares +
+_(B)_
 |
 . Least squares procedure
 . Covariance of estimated parameters
@@ -53,7 +59,8 @@ Calculate explicit integrals of classical functions.
 . Interpretation of ellipses of confidence
 | Interpret results from a least square estimation applied to survey measurements.
 
-| B1.7 Interpolation _(B)_
+| B1.7 Interpolation +
+_(B)_
 |
 . 1D polynomial interpolation
 . Spatial interpolation by inverse distance weighting methods
@@ -69,7 +76,8 @@ Calculate explicit integrals of classical functions.
 |===
 | Topic/Element | Content | Learning outcomes
 
-| B2.1 Computer systems _(I)_
+| B2.1 Computer systems +
+_(I)_
 |
 . Central Processing Unit
 . RAM, data storage
@@ -81,7 +89,8 @@ Calculate explicit integrals of classical functions.
 | Describe the different components of a real-time data acquisition system, including various modes of communication and time-tagging. +
 Describe the role of a device driver and its relation to data exchange.
 
-| B2.2 Office work software suites _(I)_
+| B2.2 Office work software suites +
+_(I)_
 |
 . Word processors
 . Spreadsheets
@@ -90,7 +99,8 @@ Describe the role of a device driver and its relation to data exchange.
 | Use classical office work software suites. +
 Construct a database, populate it and query its content.
 
-| B2.3 Programming _(I)_
+| B2.3 Programming +
+_(I)_
 |
 . Basic operations of a computer program or script
 . Algorithms (loops, conditional instructions)
@@ -98,7 +108,8 @@ Construct a database, populate it and query its content.
 . Application to data exchange, file conversion
 | Write a program for data format conversion and/or basic algorithm computation.
 
-| B2.4 Web and network communications _(B)_
+| B2.4 Web and network communications +
+_(B)_
 |
 . Networks (LANs)
 . Internet
@@ -106,7 +117,8 @@ Construct a database, populate it and query its content.
 . Communication protocols
 | Describe the different network communication protocols used in remote data exchange applications.
 
-| B2.5 Databases _(B)_
+| B2.5 Databases +
+_(B)_
 |
 . File types (binary, text, XML)
 . Relational databases
@@ -123,20 +135,23 @@ Construct a database, populate it and query its content.
 |===
 | Topic/Element | Content | Learning outcomes
 
-| B3.1 Mechanics _(B)_
+| B3.1 Mechanics +
+_(B)_
 |
 . Kinematics (angular and linear velocities, accelerations)
 . Coriolis Effect
 . Newton's law, forces, accelerations, energy
 | Describe the relationship between linear and rotational motions through acceleration and velocity
 
-| B3.2 Gravity _(B)_
+| B3.2 Gravity +
+_(B)_
 |
 . Gravity field of the earth
 . Equipotential surfaces
 | Describe the gravity field of the earth in terms of acceleration and potential
 
-| B3.3 Waves _(B)_
+| B3.3 Waves +
+_(B)_
 |
 . Electromagnetic waves
 . Pressure waves
@@ -158,7 +173,8 @@ Explain how medium parameters affect wave behavior.
 |===
 | Topic/Element | Content | Learning outcomes
 
-| B4.1 Geography and geology _(B)_
+| B4.1 Geography and geology +
+_(B)_
 |
 . Plate tectonics, earthquakes zones
 . Different types of rocks
@@ -166,7 +182,8 @@ Explain how medium parameters affect wave behavior.
 . Rivers and estuaries
 | Describe the internal structure, the physical characters and dynamics of the Earth referring to ocean basin structure, and the major processes affecting coastal morphology
 
-| B4.2 Substrates _(B)_
+| B4.2 Substrates +
+_(B)_
 |
 . Sediment types
 . Sedimentary cycles
@@ -185,14 +202,16 @@ Explain how medium parameters affect wave behavior.
 |===
 | Topic/Element | Content | Learning outcomes
 
-| B5.1 Conventional aids to navigation _(B)_
+| B5.1 Conventional aids to navigation +
+_(B)_
 |
 . Types of buoys and beacons
 . Radar beacons
 . AIS systems
 | Describe the principal fixed and floating aids to navigation and the use of automatic identification systems.
 
-| B5.2 GMDSS _(B)_
+| B5.2 GMDSS +
+_(B)_
 |
 . Sea areas
 . EPIRBs and SARSAT
@@ -200,7 +219,8 @@ Explain how medium parameters affect wave behavior.
 . NAVTEX
 . Inmarsat-C | Describe the components and purpose of GMDSS.
 
-| B5.3 Nautical charts _(B)_
+| B5.3 Nautical charts +
+_(B)_
 |
 . Content, datum, projection, scale and types of nautical charts
 . Chart symbols
@@ -212,14 +232,16 @@ Explain how medium parameters affect wave behavior.
 Describe the content of a nautical chart and explain datum, projection, scale +
 Describe the uncertainty indicators associated with nautical charts.
 
-| B5.4 Navigation publications _(B)_
+| B5.4 Navigation publications +
+_(B)_
 |
 . Sailing directions,
 . Light and radio lists,
 . Tides and current tables
 . Notice to mariners | Use content of nautical publications in a survey planning context.
 
-| B5.5 Compasses _(B)_
+| B5.5 Compasses +
+_(B)_
 |
 . Earth magnetic field
 . Magnetic compasses
@@ -227,7 +249,8 @@ Describe the uncertainty indicators associated with nautical charts.
 . Compass error and corrections
 | Describe the capabilities, limitations and errors of magnetic and gyro compasses. Determine and apply corrections for magnetic and gyro compass error.
 
-| B5.6 Emergency procedures _(B)_
+| B5.6 Emergency procedures +
+_(B)_
 |
 . Fire extinguishers
 . Life preservers and cold water survival suits, life rafts
@@ -235,7 +258,8 @@ Describe the uncertainty indicators associated with nautical charts.
 . Procedures for man-overboard, fire, and abandoning ship
 | Explain the importance of the emergency equipment and procedures.
 
-| B5.7 Safe working practice _(B)_
+| B5.7 Safe working practice +
+_(B)_
 |
 . Water-tight doors and hatches
 . Suspended loads
@@ -251,7 +275,8 @@ Describe the uncertainty indicators associated with nautical charts.
 Draw a diagram to indicate safe cable routes for survey instruments. +
 Describe methods for securing equipment for heavy weather.
 
-| B5.8 Rope and wires _(B)_
+| B5.8 Rope and wires +
+_(B)_
 |
 . Types of wire and rope
 . Characteristics (stretch, floating, strength) of ropes.
@@ -259,7 +284,8 @@ Describe methods for securing equipment for heavy weather.
 | Select and tie basic knots. +
 Select appropriate wire or rope.
 
-| B5.9 Towed and over the side instruments _(B)_
+| B5.9 Towed and over the side instruments +
+_(B)_
 |
 . Rosette systems and instruments
 . ROVs, AUVs, towed systems, catenary and layback
@@ -269,7 +295,8 @@ Select appropriate wire or rope.
 . Station keeping and maneuvering
 | Deploy and recover oceanographic and hydrographic equipment
 
-| B5.10 Anchoring _(B)_
+| B5.10 Anchoring +
+_(B)_
 |
 . Shipboard ground tackle including anchor, chain, windlass, stoppers
 . Small boat anchoring
@@ -277,7 +304,8 @@ Select appropriate wire or rope.
 | Describe ship and small boats anchoring and ground tackle. +
 Explain how the final position of the vessel can be adjusted through the use of anchors.
 
-| B5.11 Instrument moorings _(B)_
+| B5.11 Instrument moorings +
+_(B)_
 |
 . Launch and recovery
 . Anchors and acoustic releases
@@ -295,7 +323,8 @@ Explain how the final position of the vessel can be adjusted through the use of 
 |===
 | Topic/Element | Content | Learning outcomes
 
-| B6.1 Weather observations _(B)_
+| B6.1 Weather observations +
+_(B)_
 
 .2+|
 . Vertical structure and the variability of the atmosphere
@@ -312,11 +341,13 @@ Explain how the final position of the vessel can be adjusted through the use of 
 Operate instruments and sensors used to register temperature, pressure, direction and intensity of wind. Record these parameters according to internationally accepted standards. +
 Identify characteristics of weather by simple observation of the sea and the sky.
 
-| B6.2 Wind _(B)_
+| B6.2 Wind +
+_(B)_
 |
 Explain the relation between atmospheric pressure, temperature and wind. Describe wind circulation around pressure systems and the effect of friction.
 
-| B6.3 Weather forecasting _(B)_
+| B6.3 Weather forecasting +
+_(B)_
 |
 . Synoptic charts
 . Weather forecast
