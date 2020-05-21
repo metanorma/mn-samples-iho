@@ -9,8 +9,7 @@
 | Topic/Element | Content | Learning outcomes
 
 3+h| E1.1 Acoustic Theory
-| E1.1a Generation of acoustic waves +
-_(B)_
+| E1.1a Generation of acoustic waves _(B)_
 .4+a|
 . Plane and spherical waves in terms of wavelength, amplitude and frequency.
 . Speed of sound in relation to water properties and profile in the water column.
@@ -21,23 +20,19 @@ _(B)_
 . System parameters including bandwidth, pulse length, pulse repetition rate, gain, detection threshold, range resolution and spatial resolution. 
 | Explain how transducer parameters impact upon beam characteristics.
 
-| E1.1b Propagation of acoustic waves +
-_(I)_
+| E1.1b Propagation of acoustic waves _(I)_
 | Using appropriate units, describe acoustic wave behavior with reference to physical properties of the water column. +
 Create a sound speed profiles from water column measurements and describe its effect on the acoustic ray path.
 
-| E1.1c Reflection, scattering and system performance +
-_(B)_
+| E1.1c Reflection, scattering and system performance _(B)_
 | Detail sources of noise and the impact of noise on operation of acoustic systems.
 
-| E1.1d Reception of acoustic waves +
-_(B)_
+| E1.1d Reception of acoustic waves _(B)_
 | Explain how a system is optimized in terms of environmental factors for measurement and target detection.
 
 3+h| E1.2 Single Beam Systems & Side Scan Sonar
 
-| E1.2a Single beam echo sounders +
-_(I)_
+| E1.2a Single beam echo sounders _(I)_
 .4+a|
 . Split beam and dual beam echo sounders
 . Components of a single beam echo sounder.
@@ -53,22 +48,18 @@ _(I)_
 | Set up, deploy and operate a single beam echo sounder. +
 Select appropriate range, scale, frequency and pulse repetition rate for specific applications in relation to spatial resolution, bottom penetration and depth of water.
 
-| E1.2b Single beam echo sounder data recording. +
-_(I)_
+| E1.2b Single beam echo sounder data recording. _(I)_
 | Interpret echo sounder returns through differentiation between return signals.
 
-| E1.2c Range uncertainty +
-_(I)_
+| E1.2c Range uncertainty _(I)_
 | Detail and quantify components contributing to uncertainty in derived ranges.
 
-| E1.2d Side scan sonar +
-_(I)_
-| Set up, deploy and operate side scan sonar. Interpret side scan sonar records considering target characteristics, system configuration, potential sources of noise and distortion. +
+| E1.2d Side scan sonar _(I)_
+| Set up, deploy and operate side scan sonar. Interpret side scan sonar records considering target characteristics, system configuration, potential sources of noise and distortion.
 
 3+h| E1.3 Swath Systems
 
-| E1.3a Beam characteristics +
-_(B)_
+| E1.3a Beam characteristics _(B)_
 .6+a|
 . Transducer elements and arrays. 
 . Beam forming and beam steering
@@ -83,25 +74,20 @@ _(B)_
 | Define characteristics of beams in relation to transducer settings. +
 Compare phase and interferometric systems with multi-beam systems
 
-| E1.3b Backscatter and water column returns +
-_(B)_
+| E1.3b Backscatter and water column returns _(B)_
 | Describe characteristics of returns in the context of seabed type, angle of incidence and scatter from within the water column
 
-| E1.3c Bottom spatial coverage +
-_(I)_
+| E1.3c Bottom spatial coverage _(I)_
 | Determine sounding density and object detection capability as functions of system parameters
 
-| E1.3d Installation and configuration +
-_(B)_
+| E1.3d Installation and configuration _(B)_
 | Describe suitable mounting structure and location for transducers given operational constraints
 
-| E1.3e Range and angle uncertainty +
-_(I)_
+| E1.3e Range and angle uncertainty _(I)_
 | Differentiate between error sources in phase and amplitude detection modes. +
 Identify sources of range and angle uncertainty depending on acoustic parameter configuration
 
-| E1.3f Operation +
-_(I)_
+| E1.3f Operation _(I)_
 | Set up, deploy and operate a swath sonar system. +
 Identify problems or artefacts in on-line data due to inappropriate configuration or changing environmental parameters. +
 Tune acoustic parameters for optimum performance. +
@@ -118,8 +104,7 @@ Apply quality control procedures to data acquisition and on-line processing
 
 3+h| E2.1 LiDAR
 
-| E2.1a Airborne LiDAR systems +
-_(B)_
+| E2.1a Airborne LiDAR systems _(B)_
 .3+a|
 . Wavelength, water penetration and ground detection
 . Scanning frequency and pattern in relation to power, coverage and spatial density.
@@ -133,27 +118,23 @@ _(B)_
 | Explain the principles, capabilities and limitations of topographic and bathymetric LiDAR. +
 Describe the physical environment and operational situations in which bathymetric LiDAR surveys are complementary to echo sounder surveys
 
-| E2.1b Airborne LiDAR data products +
-_(B)_
+| E2.1b Airborne LiDAR data products _(B)_
 | Extract high and low water lines from bathymetric and topographic LiDAR data sets. +
 Use topographic and bathymetric LiDAR data to complement other spatial data.
 
-| E2.1c Terrestrial LiDAR +
-_(B)_
+| E2.1c Terrestrial LiDAR _(B)_
 | Use terrestrial LiDAR data to complement other coastal spatial data.
 
 3+h| E2.2 Remote Sensing
 
-| E2.2a Remotely sensed bathymetry +
-_(B)_
+| E2.2a Remotely sensed bathymetry _(B)_
 a|
 . Multispectral imagery and water penetration in relation to wavelength
 . Satellite Derived Bathymetry (SDB) 
 . Spatial resolution and accuracy available. 
 | Demonstrate awareness of techniques and data sources in remotely sensed bathymetric data and the spatial parameters associated with such data.
 
-| E2.2b Shoreline delineation +
-_(B)_
+| E2.2b Shoreline delineation _(B)_
 a|
 . Multispectral imagery, reflectance in relation to wavelength and terrain characteristics.
 . Geometrical properties of satellite images and aerial photographs a| Describe geometrical properties of images and use them to create a shoreline map from images and aerial photographs.
@@ -169,8 +150,7 @@ a|
 
 3+h| E3.1 Principles of Water Levels
 
-| E3.1a Tidal fundamentals +
-_(B)_
+| E3.1a Tidal fundamentals _(B)_
 a|
 . Tide generating forces, the equilibrium and real tides. 
 . Major harmonic constituents and different types of tide. 
@@ -178,15 +158,13 @@ a|
 . Geomorphological influences on tidal characteristics 
 | Explain tidal characteristics in terms of tide raising forces and local and regional morphological features.
 
-| E3.1b Tidal information +
-_(B)_
+| E3.1b Tidal information _(B)_
 a|
 . Tide and current tables
 . Tide prediction tools 
 | Use tide tables and appropriate software to determine predicted water levels and tidal currents.
 
-| E3.1c Non-tidal water level variations +
-_(B)_
+| E3.1c Non-tidal water level variations _(B)_
 a|
 . Changes in water level caused by: atmospheric pressure, wind, seiches, ocean temperature and precipitation.
 . Water level variations in estuaries, wetlands and rivers
@@ -195,8 +173,7 @@ Describe sources of water level variations occurring in inland waters
 
 3+h| E3.2 Water Level Measurement
 
-| E3.2a Water level gauges +
-_(I)_
+| E3.2a Water level gauges _(I)_
 .4+a|
 . Operating principles of various types of water level gauges including pressure (vented and unvented), GNSS buoys, float, radar, acoustic sensors and tide poles/boards/staffs.
 . Installing water level gauges, establishment and levelling of associated survey marks
@@ -209,23 +186,19 @@ _(I)_
 | Explain the principles of operation of different types of water level gauges. +
 Install, level and calibrate a water level gauge.
 
-| E3.2b Tidal measurement +
-_(I)_
+| E3.2b Tidal measurement _(I)_
 | Configure water level gauges for logging data, data communication, data download and for network operation with appropriate quality control measures.
 
-| E3.2c Water level datums +
-_(B)_
+| E3.2c Water level datums _(B)_
 | Define various tidally based reference levels on the basis of tide time series and explain how these values are computed. +
 Describe how vertical reference levels in rivers and lakes are defined, and determined in practice.
 
-| E3.2d Uncertainty in water level +
-_(B)_
+| E3.2d Uncertainty in water level _(B)_
 | Relate uncertainty in water levels to uncertainties in measurement, duration and distance from water level gauge.
 
 3+h| E3.3 Water Level Reduction
 
-| E3.3a Water level reduction of soundings +
-_(I)_
+| E3.3a Water level reduction of soundings _(I)_
 .2+a|
 . Vessel draft, squat
 . Lever-arms and Position Reference Point offsets
@@ -236,14 +209,12 @@ _(I)_
 . Reduction of survey data using water level observations 
 | Use tidal information, and vessel parameters to reduce soundings to a specified datum.
 
-| E3.3b Reduction of soundings using GNSS observations +
-_(I)_
+| E3.3b Reduction of soundings using GNSS observations _(I)_
 | Configure and calibrate GNSS to reduce soundings to a specified survey datum.
 
 3+h| E3.4 Currents
 
-| E3.4a Tidal streams and currents +
-_(B)_
+| E3.4a Tidal streams and currents _(B)_
 .2+a|
 . The relationship between currents and tides 
 . Rectilinear and rotary tidal streams 
@@ -253,8 +224,7 @@ _(B)_
 . Portraying current data 
 | Explain the forces behind currents and change in currents with tides.
 
-| E3.4b Current measurement and portrayal +
-_(B)_
+| E3.4b Current measurement and portrayal _(B)_
 | Describe techniques for current measurement and identify appropriate methods for acquiring and displaying current data.
 |===
 
@@ -268,8 +238,7 @@ _(B)_
 
 3+h| E4.1 Geodesy
 
-| E4.1a Introduction to Geodesy +
-_(B)_
+| E4.1a Introduction to Geodesy _(B)_
 .4+a|
 . Shape of the Earth as a sphere, ellipsoid of revolution and the geoid; 
 . Definitions of astronomical terms and time.
@@ -281,22 +250,18 @@ _(B)_
 . Datums and datum transformation techniques 
 | Describe the shape of the Earth in terms of potential and ellipsoidal models
 
-| E4.1b Coordinate systems, frames and datums +
-_(B)_
+| E4.1b Coordinate systems, frames and datums _(B)_
 | Describe modern geodetic reference systems and associated reference frames.
 
-| E4.1c Geodetic transformations and associated computations +
-_(B)_
-| Describe horizontal and vertical datum transformation concepts +
+| E4.1c Geodetic transformations and associated computations _(B)_
+| Describe horizontal and vertical datum transformation concepts
 
-| E4.1d Ellipsoidal computations +
-_(B)_
+| E4.1d Ellipsoidal computations _(B)_
 | Describe geometry of lines on the ellipsoid and perform forward and inverse computations on the ellipsoidal surface using available software.
 
 3+h| E4.2 Principles of Cartography
 
-| E4.2 Map projections +
-_(B)_
+| E4.2 Map projections _(B)_
 a|
 . Geometrical properties of map projections
 . Cylindrical, conical projections including the UTM system and stereographic
@@ -307,8 +272,7 @@ Explain the selection of projection type and apply appropriate projection formul
 
 3+h| E4.3 Positioning Measurements, Methods and Techniques
 
-| E4.3a Positioning fundamentals +
-_(I)_
+| E4.3a Positioning fundamentals _(I)_
 .5+a|
 . Principles of distance measurement and angle measurement
 . Principles of 2D adjustment
@@ -328,27 +292,22 @@ _(I)_
 | Undertake control surveys, establish, mark and describe control stations, describe horizontal positioning procedures, apply appropriate methods and use corresponding instruments for positioning. +
 Correct gyros using astronomic methods.
 
-| E4.3b Satellite positioning +
-_(I)_
+| E4.3b Satellite positioning _(I)_
 | Explain the GNSS concept and principles. Define pseudo ranging and carrier phase based modes of satellite positioning Differentiate between base station and permanent networks, real-time and post-processing.
 
-| E4.3c Positioning systems +
-_(I)_
+| E4.3c Positioning systems _(I)_
 | Field test and use distance and angle measurement instruments. Apply field validation procedures +
 Operate GNSS and DGNSS equipment, assess accuracy and precision, post-process GNSS data using appropriate software.
 
-| E4.3d Historical surveys +
-_(B)_
+| E4.3d Historical surveys _(B)_
 | Relate historical surveys to legacy positioning systems.
 
-| E4.3e Survey control +
-_(I)_
+| E4.3e Survey control _(I)_
 | Establish, mark, and describe control stations, particularly hydrographic stations.
 
 3+h| E4.4 Vertical Positioning
 
-| E4.4a Height systems +
-_(B)_
+| E4.4a Height systems _(B)_
 .2+a|
 . Height systems (dynamic, orthometric and normal)
 . Leveling instruments
@@ -357,16 +316,14 @@ _(B)_
 . GNSS observations 
 | Differentiate between gravity-related and ellipsoidal heights
 
-| E4.4b Elevation measurements and computation +
-_(I)_
+| E4.4b Elevation measurements and computation _(I)_
 | Describe methods for determining elevation differences. +
 Determine height using GNSS equipment. +
 Compute elevations and leveling networks from observed leveling data. Use observation techniques for correction of curvature and refraction.
 
 3+h| E4.5 Acoustic Positioning
 
-| E4.5a Acoustic positioning concepts +
-_(B)_
+| E4.5a Acoustic positioning concepts _(B)_
 .2+a|
 . Long baseline
 . Short baseline
@@ -377,14 +334,12 @@ _(B)_
 . Use of acoustics for positioning towed vehicles, ROVs and AUVs 
 | Describe the deployment, calibration, signal structure and performance of acoustic positioning devices. Describe the use of acoustic positioning systems in offshore survey operations.
 
-| E4.5b Acoustic positioning systems +
-_(B)_
+| E4.5b Acoustic positioning systems _(B)_
 | Describe the principles of integrated subsea positioning systems and their application to remote survey platforms
 
 3+h| E4.6 Inertial Navigation
 
-| E4.6a Inertial Measurement Units +
-_(B)_
+| E4.6a Inertial Measurement Units _(B)_
 .2+a|
 . Gyros and accelerometers
 . IMU 
@@ -396,15 +351,13 @@ _(B)_
 .. USBL/Depth/INS 
 | Describe principles and use of IMU's including north finding and heave estimation. Compare IMU heading measurements with magnetic and gyro compasses.
 
-| E4.6b Inertial Navigation Systems +
-_(B)_
+| E4.6b Inertial Navigation Systems _(B)_
 | Distinguish IMUs and INS, and describe dynamic alignment of INS. +
 Explain the concepts of aided inertial navigation system.
 
 3+h| E4.7 Uncertainty in Positioning
 
-| E4.7 Sources of uncertainty +
-_(I)_
+| E4.7 Sources of uncertainty _(I)_
 a|
 . Static surveys:
 .. GNSS observations
@@ -429,8 +382,7 @@ Monitor, review and assess the performance of each positioning system to be used
 
 3+h| E5.1 Hydrographic Survey Projects
 
-| E5.1a Hydrographic survey purposes +
-_(I)_
+| E5.1a Hydrographic survey purposes _(I)_
 .3+a|
 . IHO S-44 and other survey quality standards.
 . Hydrographic instructions and tenders
@@ -448,18 +400,15 @@ _(I)_
 .. Pipeline route, pipeline installation and cable laying surveys 
 | Compare, interpret and apply hydrographic instructions and tenders associated with survey specifications.
 
-| E5.1b Hydrographic survey execution requirements +
-_(I)_
-| Identify the different phases and terminology associated with types of survey operations. +
+| E5.1b Hydrographic survey execution requirements _(I)_
+| Identify the different phases and terminology associated with types of survey operations.
 
-| E5.1c Hydrographic survey project organization +
-_(B)_
+| E5.1c Hydrographic survey project organization _(B)_
 | Distinguish the roles and responsibilities of individuals within a survey team.
 
 3+h| E5.2 Hydrographic Survey Operations
 
-| E5.2a Operational survey data transfer +
-_(I)_
+| E5.2a Operational survey data transfer _(I)_
 a|
 . Remote water level measurement,
 . Shore based stations in support of positioning systems 
@@ -469,8 +418,7 @@ a|
 | Describe data telemetry in support of on board survey data including applications and methods. +
 Implement a data telemetry link between a survey infrastructure component and a survey system for real-time use.
 
-| E5.2b Survey systems +
-_(I)_
+| E5.2b Survey systems _(I)_
 .2+a|
 . Installation and calibration requirements for:
 .. Echo sounders
@@ -482,26 +430,22 @@ _(I)_
 . Data acquisition and integration systems
 . Bar check
 . Boresight calibration for alignment bias
-. Layback calculations a| Explain the importance of the correct installation, calibration and determination of the attitude and position of each sensor. +
+. Layback calculations a| Explain the importance of the correct installation, calibration and determination of the attitude and position of each sensor.
 
-| E5.2c Calibration and corrections +
-_(I)_
+| E5.2c Calibration and corrections _(I)_
 | Setup, integrate and test survey system including sensors, acquisition system time-stamping strategy with appropriate physical offset determination. +
 Explain the purposes and apply speed of sound measurements in acoustic systems.
 
-| E5.2d Line planning +
-_(I)_
+| E5.2d Line planning _(I)_
 .2+a|
 . Planning for data acquisition including line spacing and sample locations in alignment with tasks to be performed on surveys and equipment to be used.
 . Planning of survey operation considering currents, tides and survey speed.
 . Track guidance and route following information systems. a| Plan survey vessel survey lines as well as towed, remote vehicle and autonomous vehicle lines in space and time.
 
-| E5.2e Line keeping +
-_(B)_
+| E5.2e Line keeping _(B)_
 | Explain the methods of maintaining a survey vessel or survey system on a planned survey line or route. Describe the effects on the survey quality due to the vessel motion (speed over the ground, angular velocity).
 
-| E5.2f Survey operations +
-_(B)_
+| E5.2f Survey operations _(B)_
 .2+a|
 . Survey parameters including: 
 .. scale, 
@@ -521,14 +465,12 @@ _(B)_
 .. Sound speed 
 | Describe the roles and the relationships of the following survey parameters: scale, positional accuracy, survey speed, line orientation, survey lines, interlines, cross lines, fix interval, data coverage.
 
-| E5.2g Quality control +
-_(I)_
-| Explain methods for quality control of survey data and the quality assurance of survey operations. +
+| E5.2g Quality control _(I)_
+| Explain methods for quality control of survey data and the quality assurance of survey operations.
 
 3+h| E5.3 Hydrographic Survey Documentation
 
-| E5.3a Documentation +
-_(I)_
+| E5.3a Documentation _(I)_
 a|
 . Production of reports associated with the survey to include items such as:
 .. Coverage including special investigation areas
@@ -543,17 +485,15 @@ Describe the sources and means by which metadata files are created and populated
 
 3+h| E5.4 Legal Aspects
 
-| E5.4a Liability of the hydrographic surveyor +
-_(B)_
+| E5.4a Liability of the hydrographic surveyor _(B)_
 a|
 . Nautical charts.
 . Notice to mariners.
 . Survey reports.
 . Fundamentals of professional liability relating to surveying a| Detail the role and responsibilities of the hydrographic surveyor as required under professional ethics, industry standards and national/international legislation/conventions. +
-Explain the potential liability of the hydrographic surveyor +
+Explain the potential liability of the hydrographic surveyor
 
-| E5.4b Delimitations +
-_(B)_
+| E5.4b Delimitations _(B)_
 a|
 . Historical development of 1982 UNCLOS Baselines – normal (including closing lines); straight and archipelagic
 . Base points
@@ -576,8 +516,7 @@ a|
 
 3+h| E6.1 Real-Time Data Acquisition and Control
 
-| E6.1a Hydrographic Data acquisition +
-_(I)_
+| E6.1a Hydrographic Data acquisition _(I)_
 .2+a|
 . Integration and logging of data from various sensors in accordance with survey specifications to include equipment such as:
 .. Echo sounder (SBES, MBES)
@@ -592,12 +531,10 @@ _(I)_
 . Time-tagging
 . Data visualization a| Configure the data collection and recording software for sensors and select sampling rates, gating and filtering settings. Describe the process of on-line data validation and selection.
 
-| E6.1b Real-time data monitoring +
-_(I)_
+| E6.1b Real-time data monitoring _(I)_
 | Demonstrate that the data meets survey requirements through on-line monitoring of display and visualization tools. Use monitoring software to detect possible biases and errors in the data.
 
-| E6.1c Data transfer and storage +
-_(I)_
+| E6.1c Data transfer and storage _(I)_
 a|
 . Content of files in different formats used to record data in survey planning, data acquisition and products.
 . Organization of survey databases
@@ -606,16 +543,14 @@ Configure systems for secure storage, transfer and backup of survey data
 
 3+h| E6.2 Data Processing and Analysis
 
-| E6.2a Spatial data cleaning +
-_(I)_
+| E6.2a Spatial data cleaning _(I)_
 a|
 . Data cleaning techniques (manual and automated)
 . Identification of outliers
 . Identification of real features a| Apply data cleaning techniques using appropriate software. +
 Distinguish between noise, outliers & real features
 
-| E6.2b Spatial data quality control +
-_(I)_
+| E6.2b Spatial data quality control _(I)_
 a|
 . Total propagated uncertainty - horizontal
 . Total propagated uncertainty - vertical
@@ -624,8 +559,7 @@ a|
 . Identification of systematic errors 
 | Assess the total propagated uncertainty of survey data relative to the survey specificationApply procedures used to assess, accept and reject data.
 
-| E6.2c Spatial data representation +
-_(I)_
+| E6.2c Spatial data representation _(I)_
 a|
 . Data interpolation techniques
 . Grids and TINs
@@ -636,16 +570,14 @@ Apply estimation procedures to survey measurements and volume computations.
 
 3+h| E6.3 Data Organization and Presentation
 
-| E6.3a Databases +
-_(B)_
+| E6.3a Databases _(B)_
 a|
 . Raster and vector data models and commonly used file types
 . Spatial Data Infrastructures including GIS
 . Databases to hold different types of feature and geographical information 
 | Explain the concepts of raster and vector data models. Describe the concepts of Spatial Data Infrastructures (SDI). Use file types that support the exchange of hydrographic data to transfer data between acquisition, database and GIS environments.
 
-| E6.3b Marine GIS basics +
-_(I)_
+| E6.3b Marine GIS basics _(I)_
 a|
 . Features and feature types of point, line and polygon with marine examples.
 . Marine and coastal data bases
@@ -654,10 +586,9 @@ a|
 . Survey metadata
 . Base maps and images a| Explain the concept and use of Geographical Information Systems (GIS) within the marine environment. +
 Create a GIS project using marine spatial data. +
-Merge and mash up data sets of different origin by applying datum and projection transformations. +
+Merge and mash up data sets of different origin by applying datum and projection transformations.
 
-| E6.3c Visualization and presentation +
-_(I)_
+| E6.3c Visualization and presentation _(I)_
 a|
 . Symbology
 . Use of color schemes
@@ -666,8 +597,7 @@ a|
 . Vertical scale / exaggeration 
 | Configure elements of a viewing package to highlight features of interest within a hydrographic data set.
 
-| E6.3d Deliverables +
-_(I)_
+| E6.3d Deliverables _(I)_
 a|
 . Products provided directly from source data such as sounding data files and metadata.
 . Feature databases such as wrecks, rocks and obstructions
@@ -678,7 +608,7 @@ a|
 . Product standards including: 
 .. IHO S-100 and product standards such as S-102.
 .. Standard Seabed Data Model (SSDM). a| Describe hydrographic deliverables and produce paper products as well as digital products in accordance with specifications and standards. +
-Prepare a report on a hydrographic survey. +
+Prepare a report on a hydrographic survey.
 |===
 
 [[e7_environment]]
@@ -691,19 +621,16 @@ Prepare a report on a hydrographic survey. +
 
 3+h| E7.1 Oceanography
 
-| E7.1a Physical properties of sea water +
-_(I)_
+| E7.1a Physical properties of sea water _(I)_
 .2+a|
 . Units used in measuring and describing physical properties of sea water, normal ranges and relationships including: salinity, conductivity, temperature, pressure, density. 
 . Oceanographic sampling and methods for measuring common oceanographic parameters and profiles
 . oceanographic sensors (e.g. for temperature, conductivity, and depth) and need for calibration a| Use oceanographic sensors to measure physical properties of sea water and compute speed of sound using observed physical properties of sea water.
 
-| E7.1b Oceanographic measurements +
-_(I)_
+| E7.1b Oceanographic measurements _(I)_
 | Set up, test and verify oceanographic survey sensors to meet specifications.
 
-| E7.1c Waves +
-_(B)_
+| E7.1c Waves _(B)_
 a|
 . Wave parameters and elements involved in the wave growth process including fetch and bathymetry
 . Breaking waves, long-shore drift and rip current processes. 
@@ -711,23 +638,20 @@ a|
 
 3+h| E7.2 Marine Geology and Geophysics
 
-| E7.2a Seabed characteristics +
-_(B)_
+| E7.2a Seabed characteristics _(B)_
 a|
 . Seabed samplers such as grabs, corers and dredges and basic sediment types.
 . Types of seabed
 . Processes involved in seabed dynamics
 
 | Explain the objectives of seabed sampling detailing sampling equipment and how samples are stored and analyzed.
-| E7.2b Magnetic surveys +
-_(B)_
+| E7.2b Magnetic surveys _(B)_
 a|
 . Magnetic fields and anomalies
 . Objectives of magnetic surveys to detect pipelines, cables and ordnance. 
 . Magnetometers a| Describe Earth's magnetic field and explain the use of magnetometers and the objectives of magnetic surveys.
 
-| E7.2c Seismic surveys +
-_(B)_
+| E7.2c Seismic surveys _(B)_
 a|
 . Continuous reflection/refraction seismic profiling. 
 . Typical sound sources, receivers and recorders.
@@ -737,8 +661,7 @@ a|
 
 3+h| E7.3 Environmental impact
 
-| E7.3a Impact of surveys +
-_(B)_
+| E7.3a Impact of surveys _(B)_
 a|
 . Permanent and temporary threshold shifts (hearing) for marine mammals.
 . Use of physical techniques such as bar sweeps in environmentally sensitive areas.
