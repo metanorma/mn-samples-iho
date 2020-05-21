@@ -34,9 +34,9 @@ Dongle:: A hard lock device that contains the HW_ID of the Data Clients system.
 [bibliography]
 ==== References
 
-* [[[iho_s63,IHO S63]]], IHO S-63 Data Protection Scheme, International Hydrographic Organisation
+* [[[iho_s63_ab,IHO S63]]], IHO S-63 Data Protection Scheme, International Hydrographic Organisation
 
-* [[[iho_s57,IHO S57]]], IHO S-57 Transfer Standard for Digital Hydro-graphic Data, International Hydrographic Organisation
+* [[[iho_s57_ab,IHO S57]]], IHO S-57 Transfer Standard for Digital Hydro-graphic Data, International Hydrographic Organisation
 
 === Procedure
 

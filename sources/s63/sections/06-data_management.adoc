@@ -97,6 +97,7 @@ Example: *`:CONTENT FULL`*
 |===
 
 [%unnumbered]
+[EXAMPLE]
 ====
 `:DATE 20061019 09:00:00` +
 `:VERSION 1` +
@@ -175,7 +176,8 @@ a| *Cancelled Cell Replacements* +
 NOTE: The "Base Cell Location" is the location where the latest version of the base cell (EN Profile) resided this can be either the base media or in the case of new cells, new editions or re-issues the update media.
 
 [%unnumbered]
-.Example of Structure and Format:
+[EXAMPLE]
+.Example of Structure and Format
 ====
 [%unnumbered]
 image::image-12.png["","",""]
@@ -207,7 +209,9 @@ With option 1 the user must be informed that a particular cell is cancelled eith
 
 With option 2 the user is offered the option to retain or remove the cell from the SENC. If the user chooses to retain the cell a permanent warning must be displayed, on screen, when the cancelled cell is viewed. The message should be similar to the example below:
 
+____
 *_"Cell <name> has been cancelled and may not be up to date. Under no circumstances should it be used for primary navigation"._*
+____
 
 [[cancelled_enc_cell_replacements]]
 ===== Cancelled ENC Cell Replacements
@@ -216,7 +220,9 @@ In instances where an ENC cell has been cancelled it is often replaced by one or
 
 When a cell is identified as cancelled the data client should read the "Cancelled Cell Replacement" field to check if there a replaced ENC cell(s) encoded. If there are then the data client is to make this information available to the user. A message similar to the one below should be displayed:
 
+____
 *_"Cell <name> has been cancelled and has been replaced by cell(s), <name1>; <name2>. Please contact your data supplier to obtain the additional ENC permits"._*
+____
 
 [[product_list_ecs_section]]
 ==== Product List 'ECS' Section
@@ -226,6 +232,7 @@ The Data Server may also issue other types of digital chart products such as bac
 The content of this section is identical to the ENC Section defined in <<product_list_enc_section>>. The only difference is the _Section Identifier_ which will be "*`:ECS`*".
 
 [%unnumbered]
+[EXAMPLE]
 .Encoding example of a Product List which utilises all the features defined in <<product_list_file_structure>>
 ====
 `:DATE 20061019 09:00:00
@@ -297,6 +304,7 @@ h| Notes h| Explanation and Description
 |===
 
 [%unnumbered]
+[EXAMPLE]
 .Example of SERIAL.ENC files
 ====
 `PRWK15-99 19990414BASE 02.00B02X030x0B0D0A` +
@@ -338,6 +346,7 @@ Data Servers must extract the necessary information from the DSID field prior to
 The DSID information stored in the CATD-COMT field is subdivided into four or five comma separated subfields. This is dependant on whether the ENC file has an EN or ER application profile. The final subfield is punctuated by a semi colon (;).
 
 [%unnumbered]
+[EXAMPLE]
 ====
 `VERSION=1.0,EDTN=1,UPDN=0,UADT=20060703,ISDT=20060703;` +
 `VERSION=1.0,EDTN=1,UPDN=1,ISDT=20060710;`
@@ -395,7 +404,8 @@ h| Field ID h| Domain h| Bytes h| Range
 |===
 
 [%unnumbered]
-.Example of Status Header:
+[EXAMPLE]
+.Example of Status Header
 ====
 `GBWK15-08 UPDATE 20080403`
 ====
@@ -420,7 +430,8 @@ h| Field ID h| Domain h| Bytes h| Range
 NOTE: This information is intended to be used by Data Clients as a prompt to users. It is the responsibility of the Data Servers to ensure that the "User Information" is consistent with the information contained on the media (CD, DVD, etc) label.
 
 [%unnumbered]
-.Examples of Status Record:
+[EXAMPLE]
+.Examples of Status Record
 ====
 `B1,GB,WK52-07,'BASE CD 1 dated 27 December 2007',20071227` +
 `M1,GB,WK19-07,'BASE MEDIA 1 dated 10 May 2007',20070510`
@@ -429,6 +440,7 @@ NOTE: This information is intended to be used by Data Clients as a prompt to use
 Systems must appropriately manage the import of base data from different Data Servers and store information of installed base data. When loading new update media (either CD, DVD, etc) Data Clients should check that latest base media listed in the STATUS.LST is concurrent with those installed on the system. If not the system should report a message similar to the following:
 
 [%unnumbered]
+[EXAMPLE]
 ====
 *_"This 'Update Media' is not compatible with the actual installed 'Base Media'. Please install the following 'Base Media' first and then continue with the 'Update Media'."_* +
             *_<Field: User Information 1>_* +
@@ -450,6 +462,7 @@ NOTE: The user should only be prompted to install compatible base media that con
 For updates that relate to base media containing a single exchange set, for example CD
 
 [%unnumbered]
+[EXAMPLE]
 ====
 `GBWK15-08 UPDATE 20080403` +
 `B1,GB,WK52-07,'BASE CD 1 dated 27 December 2007',20071227` +
@@ -461,6 +474,7 @@ For updates that relate to base media containing a single exchange set, for exam
 For updates that relate to base media containing multiple exchange sets, for example DVD
 
 [%unnumbered]
+[EXAMPLE]
 ====
 `GBWK37-07 UPDATE 20070913` +
 `M1,GB,WK19-07,'BASE MEDIA 1 dated 10 May 2007',20070510` +

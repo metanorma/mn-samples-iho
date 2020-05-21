@@ -25,7 +25,7 @@ h| Error Code h| Error/Warning Message
 | *SSE 16* | _ENC CRC value is incorrect. Contact your data supplier as ENC(s) may be corrupted or missing data._
 | *SSE 17* | _Userpermit is invalid (checksum is incorrect). Check that the correct hardware device (dongle) is connected or contact your system supplier to obtain a valid userpermit._
 | *SSE 18* | _HW_ID is incorrect format_
-| *SSE 19* | _Permits are not valid for this system. Contact your data supplier to obtain the correct permits_
+| [strike]#*SSE 19*# | [strike]#_Permits are not valid for this system. Contact your data supplier to obtain the correct permits_#
 | *SSE 20* | _Subscription service will expire in less than 30 days. Please contact your data supplier to renew the subscription licence_
 | *SSE 21* | _Decryption failed no valid cell permit found. Permits may be for another system or new permits may be required, please contact your supplier to obtain a new licence_
 | *SSE 22* | _SA Digital Certificate (X509) has expired. A new SA public key can be obtained from the IHO website or from your data supplier._
@@ -74,9 +74,9 @@ The SA public key contained in the digital certificate will not authenticate aga
 
 *SSE 17* must be returned if the CRC contained in the userpermit does not validate against the calculated CRC of the extracted HW_ID. [Data Servers]
 
-[strike]#*SSE 18* must be returned if the if the decrypted HW_ID extracted from the userpermit is incorrectly formatted. [Data servers]#
+*SSE 18* must be returned if the if the decrypted HW_ID extracted from the userpermit is incorrectly formatted. [Data servers]
 
-*SSE 19* must be returned if the HW_ID stored within the hardware/software security device cannot decrypt the cell permits being loaded or already installed on the system.
+[strike]#*SSE 19* must be returned if the HW_ID stored within the hardware/software security device cannot decrypt the cell permits being loaded or already installed on the system.#
 
 *SSE 20* must be returned if the subscription licence is due to expire within 30 days or less.
 

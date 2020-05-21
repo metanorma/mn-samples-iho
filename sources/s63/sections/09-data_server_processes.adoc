@@ -258,6 +258,7 @@ This procedure is performed by the Data Server to extract the HW_ID (unique syst
 Data Servers should confirm that any derived HW_IDs are of the correct length as defined in <<hw_id_format>>.
 
 [%unnumbered]
+[EXAMPLE]
 ====
 [%unnumbered]
 |===
@@ -303,6 +304,7 @@ The process to create cell permits is performed by Data Servers based on a Data 
 . Append to 'i' the output from 'l'. This is the Cell Permit.
 
 [%unnumbered]
+[EXAMPLE]
 ====
 [%unnumbered]
 |===

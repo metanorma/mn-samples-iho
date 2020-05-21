@@ -97,15 +97,21 @@ The scheme requires that the SA public key is installed on the Data Client's sys
 
 If the user installs a new SA certificate or public key the system must confirm that a new one has been installed. If installing a new SA certificate (IHO.CRT) the system must inform the user as follows:
 
+____
 *_"A new SA certificate (public key) has been installed this is valid to [enter expiry date] or unless the SA issues a new one for security reasons."_*
+____
 
 If installing a new SA public key (IHO.PUB) the system must inform the user as follows:
 
+____
 *_"A new SA public key has been installed this is valid until the SA routinely issues a new one or unless one is issued for security reasons."_*
+____
 
 Should the system report an authentication error during the loading process it should alert the user to the possibility that the SA may have changed the public key. Therefore a warning message must be displayed explaining the reason for this as follows:
 
+____
 *_"SSE 06 – The SA Certificate/Public Key is invalid. The SA may have issued a new public key or the ENC may originate from another service. A new SA public key can be obtained from the IHO website or from your distributor."_*
+____
 
 [[new_data_servers]]
 ==== New Data Servers
@@ -150,6 +156,7 @@ h| Navigational Purpose h| Signature Character
 |===
 
 [%unnumbered]
+[EXAMPLE]
 ====
 Cell file *`GB100001.000`* will have a signature file named *`GBI00001.000`* +
 Cell file *`GB61032A.002`* will have a signature file named *`GBN1032A.002`*
@@ -224,6 +231,7 @@ The PQG parameters are produced from a random string and are used in the creatio
 P, Q and G are numerical parameters used in the Digital Signature Algorithm as input to the key creation process. Each data server can use a different set of P, Q and G or use an existing set to generate random key pairs. The Digital Signature Standard <<dss>> describes their derivation and use.
 
 [%unnumbered]
+[EXAMPLE]
 .Example of PQG Format
 ====
 `// BIG p` +
@@ -242,6 +250,7 @@ P, Q and G are numerical parameters used in the Digital Signature Algorithm as i
 The X file can be written as ASCII text in the following format:
 
 [%unnumbered]
+[EXAMPLE]
 ====
 `// BIG p` +
 `D0A0 2D76 D210 58DA 4D91 BBC7 30AC 9186 5CB4 036C CDA4 6B49 4650 16BB 6931 2F12` +
@@ -261,6 +270,7 @@ The X file can be written as ASCII text in the following format:
 Both the SA and Data Server public key are provided in the following format, the scheme uses a DSA Public Key of length 512 bits.
 
 [%unnumbered]
+[EXAMPLE]
 ====
 `// BIG p` +
 `D0A0 2D76 D210 58DA 4D91 BBC7 30AC 9186 5CB4 036C CDA4 6B49 4650 16BB 6931 2F12` +
@@ -290,6 +300,7 @@ The SA public key in ASCII format (as opposed to the binary X509v3 format) is al
 This is the file format that the Data Server uses to sign its own public key before sending to the SA for signing. The signature is the signature of the whole public key file (i.e. the PQG and Y parameters).
 
 [%unnumbered]
+[EXAMPLE]
 ====
 [%unnumbered]
 image::image-09.png["","",""]
@@ -301,6 +312,7 @@ image::image-09.png["","",""]
 This is the file format used by the SA when it issues a Data Server Certificate file. The SA also uses a DSA Public Key of length 512 bits. The R & S pair is what is transcribed into the Data Server's ENC signature files.
 
 [%unnumbered]
+[EXAMPLE]
 ====
 [%unnumbered]
 image::image-10.png["","",""]
@@ -312,6 +324,7 @@ image::image-10.png["","",""]
 The signature file must contain a signature and certificate pair. A file with just a signature is invalid as it does not certify the Data Server's identity. The ENC digital signature file has format, structure and order as in the following example:
 
 [%unnumbered]
+[EXAMPLE]
 ====
 [%unnumbered]
 image::image-11.png["","",""]
