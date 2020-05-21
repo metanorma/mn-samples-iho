@@ -11,8 +11,7 @@
 
 3+h|B1.1 Geometry and Linear Algebra
 
-|B1.1a Geometry +
-_(B)_
+|B1.1a Geometry _(B)_
 
 |
 . Conic Sections, geometry of the ellipse and of the ellipsoid.
@@ -22,8 +21,7 @@ Express curves and surfaces in parametric form.
 
 Compute lengths and coordinates on an ellipse.
 
-|B1.1b Linear Algebra +
-_(I)_
+|B1.1b Linear Algebra _(I)_
 |
 . Vector and affine spaces, vector and inner products, norms.
 . Linear operators, matrix representation, composition, transpose.
@@ -33,8 +31,7 @@ orthogonal projection.
 |Derive and compute 2D and 3D transformations, as typically involved in
 geodesy, surveying and survey data georeferencing.
 
-|B1.1c Numerical methods for linear systems of equations +
-_(I)_
+|B1.1c Numerical methods for linear systems of equations _(I)_
 
 |
 . Systems of linear equations, Gauss elimination.
@@ -46,8 +43,7 @@ environment and analyze error bounds.
 
 3+h|B1.2 Differential calculus and differential equations
 
-|B1.2a Differential and integral calculus +
-_(B)_
+|B1.2a Differential and integral calculus _(B)_
 |
 . Real and vector valued functions.
 . Series, Taylor expansions
@@ -62,8 +58,7 @@ n-dimensional vector space.
 Calculate integral of classical functions and approximate numerical
 values.
 
-|B1.2b Differential equations +
-_(I)_
+|B1.2b Differential equations _(I)_
 |
 . Linear ordinary differential equations, general solution with right
 hand side.
@@ -75,8 +70,7 @@ Compute explicit solutions for linear ordinary differential equations
 and apply numerical methods to approximate solutions to non-linear
 differential equations.
 
-|B1.2c Numerical solutions of non-linear equation +
-_(B)_
+|B1.2c Numerical solutions of non-linear equation _(B)_
 |
 . Iterative methods.
 . Rounding and numerical
@@ -86,8 +80,7 @@ errors.
 
 3+h|B1.3 Probability and statistics
 
-|B1.3a Probabilities and Bayesian estimation +
-_(B, I)_
+|B1.3a Probabilities and Bayesian estimation _(B, I)_
 |
 . Probability measures, density functions
 . Mathematical expectation, variance
@@ -99,8 +92,7 @@ _(B, I)_
 
 Select a distribution for a given random variable and apply a Bayesian estimation method. _(I)_
 
-|B1.3b Statistics +
-_(I)_
+|B1.3b Statistics _(I)_
 |
 . Random variables, mean, variance, standard deviation
 
@@ -121,8 +113,7 @@ random variables using various distributions.
 |===
 |Topic/Element |Content |Learning outcomes
 
-|B2.1 Computer systems +
-_(I)_
+|B2.1 Computer systems _(I)_
 |
 . Central Processing Unit
 . RAM, data storage devices and standards
@@ -140,8 +131,7 @@ Describe the role of a device driver and its relation to data exchange.
 
 Create/Configure a data link and evaluate any time delays across the link.
 
-|B2.2 Office work software suites +
-_(B)_
+|B2.2 Office work software suites _(B)_
 |
 . Word processors
 . Spreadsheets
@@ -150,8 +140,7 @@ _(B)_
 Use classical office work software suites. Prepare a poster describing
 scientific or project results.
 
-|B2.3 Programming +
-_(B)_
+|B2.3 Programming _(B)_
 |
 . Basic operations of a computer program or script
 . Algorithms (loops, conditional instructions)
@@ -163,8 +152,7 @@ algorithm computation.
 
 Configure a small network and transfer data over that network
 
-|B2.4 Web and network services +
-_(B)_
+|B2.4 Web and network services _(B)_
 |
 . Networks (LANs)
 . Network and cloud storage
@@ -175,8 +163,7 @@ _(B)_
 Describe the different network options used in remote data exchange and
 storage applications.
 
-|B2.5 Databases +
-_(B)_
+|B2.5 Databases _(B)_
 |
 . File types (binary, text, XML)
 . Relational databases
@@ -200,8 +187,7 @@ language, such as SQL.
 |===
 |Topic/Element |Content |Learning outcomes
 
-|B3.1 Kinematics +
-_(B)_
+|B3.1 Kinematics _(B)_
 |
 . Angular and linear velocities, accelerations
 . Angular velocities addition rules, accelerations due to rotational
@@ -211,8 +197,7 @@ motion, Coriolis Law
 Explain the principle and the relationship between position, velocity
 and acceleration for both rotational and linear motion.
 
-|B3.2 Gravity +
-_(B)_
+|B3.2 Gravity _(B)_
 |
 . The inertial frame
 . Newton's law, forces, accelerations, energy
@@ -227,16 +212,14 @@ Differentiate center of gravity from center of instantaneous rotation.
 Develop the mathematical relationship between potential and acceleration
 in a gravitational field.
 
-|B3.3 Magnetism +
-_(B)_
+|B3.3 Magnetism _(B)_
 |
 . Magnetic characteristic of ferrous bodies
 . Magnetic field
 |
 Describe ferromagnetic properties and resulting magnetic field.
 
-|B3.4 Waves +
-_(B)_
+|B3.4 Waves _(B)_
 |
 . Harmonic waves modeling and wave parameters (amplitude, frequency,
 wavelength, celerity and phase)
@@ -251,8 +234,7 @@ Use the Decibel scale to define intensity and characterize attenuation.
 
 Explain the Doppler effect.
 
-|B3.5 Electromagnetic waves +
-_(B)_
+|B3.5 Electromagnetic waves _(B)_
 |
 . Electromagnetic waves properties and propagation
 . Radiation, emission and absorption
@@ -267,8 +249,7 @@ Describe the effect of wavelength on the propagation in a medium.
 Describe the effect of a medium in the propagation of an electromagnetic
 wave
 
-|B3.6 Geometrical optics +
-_(B)_
+|B3.6 Geometrical optics _(B)_
 |
 . Mirror, prisms, lenses and filters
 . Telescopic optics and magnification
@@ -281,8 +262,7 @@ refractive properties.
 Use the characteristics of a lens to calculate geometrical properties of
 an image.
 
-|B3.7 Lasers +
-_(B)_
+|B3.7 Lasers _(B)_
 |
 . Principle of lasers
 . Laser parameters (frequency, wavelength)
@@ -293,8 +273,7 @@ _(B)_
 Describe the operation, unique properties, and applications of
 stimulated sources of emission.
 
-|B3.8 Transducers and clocks +
-_(B)_
+|B3.8 Transducers and clocks _(B)_
 |
 . Pressure transducers
 . Thermal transducers
@@ -316,8 +295,7 @@ drift coefficient and accuracy.
 |===
 |Topic/Element |Content |Learning outcomes
 
-|B4.1 Conventional aids to navigation +
-_(B)_
+|B4.1 Conventional aids to navigation _(B)_
 |
 . Types of buoys and beacons
 . Radar beacons
@@ -326,8 +304,7 @@ _(B)_
 Describe the characteristics and purposes of fixed and floating aids to
 navigation and the use of automatic identification systems.
 
-|B4.2 GMDSS +
-_(B)_
+|B4.2 GMDSS _(B)_
 |
 . Sea areas
 . EPIRBs and SARSAT
@@ -338,8 +315,7 @@ _(B)_
 . World Wide Navigational Warning Service (WWNWS) |Describe the
 components and purpose of GMDSS.
 
-|B4.3 Nautical charts +
-_(B)_
+|B4.3 Nautical charts _(B)_
 |
 . Content, datum, projection, scale and types of nautical charts
 . Chart symbols
@@ -358,8 +334,7 @@ and scale.
 
 Describe the uncertainty indicators associated with nautical charts.
 
-|B4.4 Navigation publications +
-_(B)_
+|B4.4 Navigation publications _(B)_
 |
 . Sailing directions,
 . Light and radio lists,
@@ -369,8 +344,7 @@ _(B)_
 |
 Use content of nautical publications in a survey planning context.
 
-|B4.5 Compasses +
-_(B)_
+|B4.5 Compasses _(B)_
 |
 . Magnetic compasses
 . Gyros
@@ -381,8 +355,7 @@ and gyro compasses.
 
 Determine and apply corrections for magnetic and gyro compass error.
 
-|B4.6 Emergency procedures +
-_(B)_
+|B4.6 Emergency procedures _(B)_
 |
 . Fire extinguishers
 . Life preservers and cold water survival suits, life rafts
@@ -393,8 +366,7 @@ Explain the importance of the emergency equipment and procedures.
 
 Identify types of fire extinguishers and their use.
 
-|B4.7 Safe working practice +
-_(B)_
+|B4.7 Safe working practice _(B)_
 |
 . Water-tight doors and hatches
 . Suspended loads
@@ -413,8 +385,7 @@ Design safe cable routes for survey instruments.
 
 Define procedures for securing equipment for heavy weather.
 
-|B4.8 Rope and wires +
-_(B)_
+|B4.8 Rope and wires _(B)_
 |
 . Types of wire and rope
 . Characteristics (stretch, floating, strength) of ropes and wires.
@@ -423,8 +394,7 @@ _(B)_
 
 Select appropriate wire or rope.
 
-|B4.9 Towed and over the side instruments +
-_(I)_
+|B4.9 Towed and over the side instruments _(I)_
 |
 . Rosette systems and instruments
 . ROVs, AUVs, ASVs, towed systems, catenary and layback
@@ -437,8 +407,7 @@ for deep casts, slip rings and optical cabling
 Specify procedures for deployment and recovery of oceanographic and
 hydrographic equipment.
 
-|B4.10 Anchoring +
-_(B)_
+|B4.10 Anchoring _(B)_
 |
 . Shipboard ground tackle including anchor, chain, windlass, stoppers
 . Small boat anchoring
@@ -449,8 +418,7 @@ Describe ship and small boats anchoring and ground tackle.
 Explain how the final position of the vessel can be adjusted through the
 use of anchors.
 
-|B4.11 Instrument moorings +
-_(I)_
+|B4.11 Instrument moorings _(I)_
 |
 . Launch and recovery
 . Anchors and acoustic releases
@@ -472,8 +440,7 @@ instruments.
 |===
 |Topic/Element |Content |Learning outcomes
 
-|B5.1 Weather fundamentals and observations +
-(B)
+|B5.1 Weather fundamentals and observations _(B)_
 .2+|
 . Vertical structure and the variability of the atmosphere
 . Temperature, humidity, dewpoint, frost-point
@@ -498,16 +465,14 @@ Identify characteristics of weather by simple observation of the sea and
 the sky.
 
 
-|B5.2 Wind, waves and seas +
-_(B)_
+|B5.2 Wind, waves and seas _(B)_
 |
 Explain the relation between atmospheric pressure, temperature and wind.
 
 Describe wind circulation around pressure systems and the effect of
 friction
 
-|B5.3 Weather forecasting +
-_(B)_
+|B5.3 Weather forecasting _(B)_
 |
 . Synoptic charts
 . Weather forecast
