@@ -414,6 +414,115 @@ h| B 15+^h| BATHYMETRY
 | 200
 | 300 |
 
+h| P 15+^h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
+
+| *a*
+| *Fixed Aids, Features Significant to Navigation* <<def-thu,THU>> [m]
+| 50
+| 20
+| 10
+| 5
+| 3
+| 2
+| 1
+| 0.5
+| 0.2
+| 0.1
+| 0.05
+| 0.01 | |
+
+| *b*
+| *Fixed Aids, Features Significant to Navigation* <<def-tvu,TVU>> [m]
+| 3
+| 2
+| 1
+| 0.5
+| 0.25
+| 0.1
+| 0.05
+| 0.01 | | | | | |
+
+| *c*
+| *Floating Aids and Objects* <<def-thu,THU>> [m]
+| 50
+| 20
+| 10
+| 5
+| 2
+| 1
+| 0.5 | | | | | | |
+
+| *d*
+a| Coastline <<def-thu,THU>> +
+(high, low, MWL water lines, etc.) [m]
+| 20
+| 10
+| 5
+| 1
+| 0.5
+| 0.25
+| 0.1 | | | | | | |
+
+| *e*
+| *Features Less Significant to Navigation* <<def-thu,THU>> [m]
+| 50
+| 20
+| 10
+| 5
+| 3
+| 2
+| 1
+| 0.5
+| 0.2
+| 0.1
+| 0.05
+| 0.01 | |
+
+| *f*
+| *Features Less Significant to Navigation* <<def-tvu,TVU>> [m]
+| 3
+| 2
+| 1
+| 0.5
+| 0.3
+| 0.25
+| 0.1
+| 0.05
+| 0.01 | | | | |
+
+| *g*
+| *Overhead Clearance and Range line, Sector Light Heights* <<def-thu,THU>> [m]
+| 10
+| 5
+| 2
+| 1
+| 0.5
+| 0.2
+| 0.1
+| 0.05
+| 0.01 | | | | | 
+
+| *h*
+| *Overhead Clearance and Range line, Sector Light Heights* <<def-tvu,TVU>> [m]
+| 3
+| 2
+| 1
+| 0.5
+| 0.3
+| 0.1
+| 0.05
+| 0.01 | | | | | | 
+
+| *i*
+| *Angular Measurements* [degrees]
+| 5
+| 2.5
+| 1
+| 0.5
+| 0.2
+| 0.1
+| 0.05 | | | | | | |
+
 h| W 15+^h| WATER FLOW
 
 | *a*
@@ -472,3 +581,4 @@ h| N 15+^h| NATURE OF THE BOTTOM
 NOTE: [[note-parameter-use-1]] To use the parameter "`b`", as a percentage of depth, multiply it by 100.
 
 NOTE: [[note-acronyms-1]] PHY = Physical Sampling. VIS = Visual Analysis. LAB = Laboratory Analysis. INF = Inference Technique. w/ = With. GT = Ground Truth. As Req to GT = As Required to Ground Truth any Inference Technique (see <<scl-nature-bottom>>).
+
