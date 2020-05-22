@@ -34,13 +34,13 @@ h|EPSG Code h|Coordinate Reference System
 |===
 
 
-Horizontal Coordinate Reference System:: EPSG (see <<tab-s102-coordinate-reference-systems-epsg-codes>>)
-Projection:: NONE/UTM/UPS
-Temporal reference system:: Gregorian Calendar
-Coordinate reference system registry:: link:http://www.epsg-registry.org/[EPSG Geodetic Parameter Registry]
-Date type (according to <<iso19115>>):: 002 - publication
-Responsible party:: International Organisation of Oil and Gas Producers (OGP)
-URL:: http://www.ogp.org.uk/
+*Horizontal Coordinate Reference System*:: EPSG (see <<tab-s102-coordinate-reference-systems-epsg-codes>>)
+*Projection*:: NONE/UTM/UPS
+*Temporal reference system*:: Gregorian Calendar
+*Coordinate reference system registry*:: link:http://www.epsg-registry.org/[EPSG Geodetic Parameter Registry]
+*Date type (according to <<iso19115>>)*:: 002 - publication
+*Responsible party*:: International Organisation of Oil and Gas Producers (OGP)
+*URL*:: http://www.ogp.org.uk/
 
 
 === Vertical Coordinate Reference System

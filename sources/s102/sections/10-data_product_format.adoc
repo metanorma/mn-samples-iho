@@ -5,30 +5,31 @@
 === Introduction
 The S-102 data set must be encoded using the Hierarchical Data Format standard, Version 5 (HDF5).
 
-Format Name:: HDF5
+*Format Name*:: HDF5
 
-Version:: 1.8
+*Version*:: 1.8
 
-Character Set:: UTF-8
+*Character Set*:: UTF-8
 
-Specification:: https://www.hdfgroup.org/
+*Specification*:: https://www.hdfgroup.org/
 
 The key idea behind the S-102 product structure is that each coverage is a feature. Each of these features is co-located with the others. Therefore, they share the same spatial metadata and each is required to correctly interpret the others.
+
 For the use of HDF5, the following key concepts (S-100 Part 10c, clause 10c-5.1) are important:
 
-File:: a contiguous string of bytes in a computer store (memory, disk, etc.), and the bytes represent zero or more objects of the model;
+*File*:: a contiguous string of bytes in a computer store (memory, disk, etc.), and the bytes represent zero or more objects of the model;
 
-Group:: a collection of objects (including groups);
+*Group*:: a collection of objects (including groups);
 
-Dataset:: a multidimensional array of data elements with attributes and other metadata;
+*Dataset*:: a multidimensional array of data elements with attributes and other metadata;
 
-Dataspace:: a description of the dimensions of a multidimensional array;
+*Dataspace*:: a description of the dimensions of a multidimensional array;
 
-Datatype:: a description of a specific class of data element including its storage layout as a pattern of bits;
+*Datatype*:: a description of a specific class of data element including its storage layout as a pattern of bits;
 
-Attribute:: a named data value associated with a group, dataset, or named datatype;
+*Attribute*:: a named data value associated with a group, dataset, or named datatype;
 
-Property List:: a collection of parameters (some permanent and some transient).
+*Property List*:: a collection of parameters (some permanent and some transient).
 
 In addition, datasets may be a compound (a single record consisting of an array of simple value types) and have multiple dimensions.
 
@@ -42,15 +43,15 @@ image::figure-outline-of-the-generic-data-file-structure.png[]
 
 <<fig-outline-of-the-generic-data-file-structure>> shows the four levels defined within the HDF encoding. Below is a further definition of these levels.
 
-Level 1:: At the top level lies the Root Group, and it contains the Root Metadata and two subsidiary groups. The Root Metadata applies to all S-100 type products.
+*Level 1*:: At the top level lies the Root Group, and it contains the Root Metadata and two subsidiary groups. The Root Metadata applies to all S-100 type products.
 
-Level 2:: The next Level contains the Feature Information Group and the Feature Container Group. The Feature Information Group contains the feature names (BathymetryCoverage, TrackingListCoverage) and the feature attribute codes. The Feature Container Group contains the Feature Metadata and one or more Feature Instance Groups.
+*Level 2*:: The next Level contains the Feature Information Group and the Feature Container Group. The Feature Information Group contains the feature names (*BathymetryCoverage, TrackingListCoverage*) and the feature attribute codes. The Feature Container Group contains the Feature Metadata and one or more Feature Instance Groups.
 
-Level 3:: This contains one or more Feature Instances. A feature instance is a bathymetric gridded data for a single region, or a tracking list of nodal overrides.
+*Level 3*:: This contains one or more Feature Instances. A feature instance is a bathymetric gridded data for a single region, or a tracking list of nodal overrides.
 
-Level 4:: This contains the actual data for each feature.
+*Level 4*:: This contains the actual data for each feature.
 
-In <<tab-overview-of-s102-data-product>> below, levels refer to HDF5 structuring (see S-100 Part 10c, Figure 10c-9). Naming in each box below the header line is as follows: Generic name; S-100 or S-102 name, or [] if none; and (HDF5 type) group, attribute or attribute list, or dataset.
+In <<tab-overview-of-s102-data-product>> below, levels refer to HDF5 structuring (see S-100 Part 10c, Figure 10c-9). Naming in each box below the header line is as follows: Generic name; S-100 or S-102 name, or [] if none; and (_HDF5 type_) group, attribute or attribute list, or dataset.
 
 
 [[tab-overview-of-s102-data-product]]
@@ -61,67 +62,67 @@ In <<tab-overview-of-s102-data-product>> below, levels refer to HDF5 structuring
 
 |General Metadata +
 (metadata) +
-(h5_attribute)
+_(h5_attribute)_
 |
 |
 |
 
 |Feature Codes +
 Group_F +
-(h5_group)
+_(h5_group)_
 |Feature Name +
 BathymetryCoverage +
-(h5_dataset)
+_(h5_dataset)_
 |
 |
 
 |
 |Feature Name +
 TrackingListCoverage +
-(h5_dataset)
+_(h5_dataset)_
 |
 |
 
 |
 |Feature Codes +
 featureCode +
-(h5_dataset)
+_(h5_dataset)_
 |
 |
 
 |Feature Type +
 BathymetryCoverage +
-(h5_group)
+_(h5_group)_
 |Type Metadata +
 (metadata) +
-(h5_attribute)
+_(h5_attribute)_
 |
 |
 
 |
 |Feature Instance +
 BathymetryCoverage.01 +
-(h5_group)
+_(h5_group)_
 |Instance Metadata +
 (metadata) +
-(h5_attribute)
+_(h5_attribute)_
 |
 
 |
 |
 |First data group +
 Group.001 +
-(h5_group)
+_(h5_group)_
 |Group Metadata +
 (metadata) +
-(h5_attribute)
+_(h5_attribute)_
 
 |
 |X and Y Axis Names +
 axisNames +
-(h5_dataset)
+_(h5_dataset)_
 |
-|Bathymetric Data Array values (h5_dataset)
+|Bathymetric Data Array values _(h5_dataset)_
 
 |
 |...
@@ -131,25 +132,25 @@ axisNames +
 |Feature Type TrackingListCoverage
 |Type Metadata +
 (metadata) +
-(h5_attribute)
+_(h5_attribute)_
 |
 |
 
 |
 |Feature Instance TrackingListCoverage.01 +
-(h5_group)
+_(h5_group)_
 |Instance Metadata +
 (metadata) +
-(h5_attribute)
+_(h5_attribute)_
 |
 
 |
 |
 |First data group +
 Group.001 +
-(h5_group)
+_(h5_group)_
 |Tracking_List values +
-(h5_dataset)
+_(h5_dataset)_
 |===
 
 
@@ -158,11 +159,11 @@ The following sections explain entries in <<tab-overview-of-s102-data-product>> 
 ==== Feature Codes (Group_F)
 This group specifies the S-100 features to which the data applies, and consists of three components:
 
-featureName:: a dataset with the name(s) of the S-100 feature(s) contained in the data product. For S-102, the dataset has two elements. These elements are *BathymetryCoverage* and *TrackingListCoverage*.
+*featureName*:: a dataset with the name(s) of the S-100 feature(s) contained in the data product. For S-102, the dataset has two elements. These elements are *BathymetryCoverage* and *TrackingListCoverage*.
 
-BathymetryCoverage:: One of the features described in the featureName. This dataset contains the standard definition of the feature class (<<tab-sample-contents-of-the-two-dimensional-bathymetrycoverage-array>> shows an example).
+*BathymetryCoverage*:: One of the features described in the featureName. This dataset contains the standard definition of the feature class (<<tab-sample-contents-of-the-two-dimensional-bathymetrycoverage-array>> shows an example).
 
-TrackingListCoverage:: One of the features described in the featureName. This dataset contains the standard definition of the feature class.
+*TrackingListCoverage*:: One of the features described in the featureName. This dataset contains the standard definition of the feature class.
 
 
 [[tab-sample-contents-of-the-two-dimensional-bathymetrycoverage-array]]
@@ -221,9 +222,9 @@ For bathymetric gridded data, the dataset includes a two-dimensional array conta
 For tracking list data, the dataset includes a single dimension array containing the position (X, Y) of each override, defined as row/col of the bathymetric grid, the original value, the type of override and the index into the metadata that defines the override. The number of overrides in the array is defined by the originator and this dataset could be empty if no overrides were required.
 
 ==== Data Arrays
-Within the *BathymetryCoverage*, the depth and uncertainty values (depth and uncertainty) are stored in two dimensional arrays named values, with a prescribed number of columns (_numCOL_) and rows (_numROW_). This grid is defined as a regular grid (_dataCodingFormat = 2_), therefore; the depth and uncertainty values will be for each discrete point in the grid. The data array values is two-dimensional.
+Within the *BathymetryCoverage*, the depth and uncertainty values (depth and uncertainty) are stored in two dimensional arrays named _values_, with a prescribed number of columns (_numCOL_) and rows (_numROW_). This grid is defined as a regular grid (_dataCodingFormat = 2_), therefore; the depth and uncertainty values will be for each discrete point in the grid. The data array _values_ is two-dimensional.
 
-Within the *TrackingListCoverage*, entries are stored in a single dimensional array named values. The number of rows in this array is dynamic as entries into this dataset are optional as not all data sources require modifications to the *BathymetryCoverage*. This grid is defined as a point set (_dataCodingFormat = 1_), if it exists.
+Within the *TrackingListCoverage*, entries are stored in a single dimensional array named _values_. The number of rows in this array is dynamic as entries into this dataset are optional as not all data sources require modifications to the *BathymetryCoverage*. This grid is defined as a point set (_dataCodingFormat = 1_), if it exists.
 
 
 ==== Summary of Generalized Dimensions

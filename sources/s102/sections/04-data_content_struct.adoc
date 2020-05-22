@@ -27,7 +27,7 @@ image::figure-data-set-structure-s102.png[]
 
 The model in <<fig-data-set-structure-s102>> states that:
 
-* An S-102 data set (*S102_DataSet*), which is inherited from *S100_DataSet*, references an S-102 Image and Gridded Data Collection (*S102_IGCollection*). The relationship allows a 1 to many (1..*) multiplicity which means that there may be multiple instances of S-102 data collections. Each collection may or may not correspond to a tiling scheme, and each S102 Dataset would correspond to a single tile. The S-102 discovery metadata class (*S102_DiscoveryMetadata*) describes the metadata entities required for the identification of the entire data set. The required discovery metadata is implemented through the *S102_DSMetadataBlock* class.
+* An S-102 data set (*S102_DataSet*), which is inherited from *S100_DataSet*, references an S-102 Image and Gridded Data Collection (*S102_IGCollection*). The relationship allows a 1 to many (*1..**) multiplicity which means that there may be multiple instances of S-102 data collections. Each collection may or may not correspond to a tiling scheme, and each S102 Dataset would correspond to a single tile. The S-102 discovery metadata class (*S102_DiscoveryMetadata*) describes the metadata entities required for the identification of the entire data set. The required discovery metadata is implemented through the *S102_DSMetadataBlock* class.
 
 * An instance of an S-102 Image and Gridded Data Collection (*S102_IGCollection*) which is a subtype of *S100_IGCollection*, is described by a set of S-102 Collection Metadata (*S102_CollectionMetadata*). This relationship is 1 to 1 meaning that there is one set of collection metadata for each instance of *S102_IGCollection*. There is a large choice of metadata that may be used in a S-100 compliant data product. Only a small amount of this metadata is mandated by <<iso19115>> for discovery. The choice of metadata is discussed in clause 9.2.5. Much of the metadata can be resolved as part of the product specification. Only that metadata that varies IG_collection item to item needs be included in the S102_MetadataBlock implementation class.
 
@@ -84,7 +84,7 @@ The attribute _minimumDepth_ has the value type _Real_ and describes the lower b
 [level=7]
 ===== maximumDepth
 
-The attribute _maximumDepth_ has the value type _Real_ and describes the upper bound of the depth estimate for all the depth values in *S102_BathymetryValues* record. This attribute is required. There is no default.
+The attribute _maximumDepth_ has the value type _Real_ and describes the upper bound of the depth estimate for all the _depth_ values in *S102_BathymetryValues* record. This attribute is required. There is no default.
 
 [level=7]
 ===== minimumDisplayScale
@@ -143,7 +143,7 @@ The attribute _startSequence_ has the value class *CV_GridCoordinate* that shall
 [level=7]
 ===== S102_BathymetryValues semantics
 
-The class *S102_BathymetryValues* is related to BathymetryCoverage by a composition relationship in which an ordered sequence of _depth_ values provide data values for each grid cell. The class *S102_BathymetryValues* inherits from S100_Grid.
+The class *S102_BathymetryValues* is related to *BathymetryCoverage* by a composition relationship in which an ordered sequence of _depth_ values provide data values for each grid cell. The class *S102_BathymetryValues* inherits from S100_Grid.
 
 [level=7]
 ===== values
@@ -225,7 +225,7 @@ The attribute _scanDirection_ has the value class _Sequence<CharacterString>_ a 
 [level=7]
 ===== TrackingListCoverage semantics
 
-The class *TrackingListCoverage* has the attributes domainExtent, rangeType, _CommonPointRule_ and _metadata_ inherited from *S100_PointCoverage*. The *TrackingListCoverage* is a discrete point coverage which is used to track overridden nodes in the *BathymetryCoverage* by allowing a hydrographer to apply a bias for safety of navigation. The attribute metadata provides one method of linking the metadata to the coverage inherited from S-100, however it is not required in S-102 because there is no need for specific metadata at the feature (class) level. The attribute _commonPointRule_ is also not required because the value has been established for the whole of the S-102 data product to be "average". The attribute rangeType takes on the value class _RecordType_. This is modelled by the composition of multiple instances of *S102_TrackingListValues*. Therefore, only the attribute domainExtent is required, and it has a default value.
+The class *TrackingListCoverage* has the attributes _domainExtent_, _rangeType_, _CommonPointRule_ and _metadata_ inherited from *S100_PointCoverage*. The *TrackingListCoverage* is a discrete point coverage which is used to track overridden nodes in the *BathymetryCoverage* by allowing a hydrographer to apply a bias for safety of navigation. The attribute _metadata_ provides one method of linking the metadata to the coverage inherited from S-100, however it is not required in S-102 because there is no need for specific metadata at the feature (class) level. The attribute _commonPointRule_ is also not required because the value has been established for the whole of the S-102 data product to be "average". The attribute _rangeType_ takes on the value class _RecordType_. This is modelled by the composition of multiple instances of *S102_TrackingListValues*. Therefore, only the attribute _domainExtent_ is required, and it has a default value.
 
 [level=7]
 ===== domainExtent
@@ -238,9 +238,9 @@ The attribute _domainExtent_ has the value class _EX_GeographicExtent_ which des
 [level=7]
 ===== S102_TrackingListValues semantics
 
-The class *S102_TrackingListValues* has the attributes trackCode and listSeries, and the attributes _geometry_, and value inherited from *S100_VertexPoint* and *CV_GeometryValuePair*. The tracking list is a discrete coverage used to furnish the set of values that were overridden in the *S102_BathymetryValues* class. To assure alignment of tracking list values with the grid cells in the bathymetry coverage grid, the reference system for the tracking list is the bathymetry coverage regular grid.
+The class *S102_TrackingListValues* has the attributes _trackCode_ and _listSeries_, and the attributes _geometry_, and _value_ inherited from *S100_VertexPoint* and *CV_GeometryValuePair*. The tracking list is a discrete coverage used to furnish the set of values that were overridden in the *S102_BathymetryValues* class. To assure alignment of tracking list values with the grid cells in the bathymetry coverage grid, the reference system for the tracking list is the bathymetry coverage regular grid.
 
-The _trackCode_ value and the _listSeries_ value provide context for the override a value from the bathymetry coverage. The trackCode value is a text string that describes the reason for the override.
+The _trackCode_ value and the _listSeries_ value provide context for the override a value from the bathymetry coverage. The _trackCode_ value is a text string that describes the reason for the override.
 
 [level=7]
 ===== trackCode
@@ -250,7 +250,7 @@ The optional attribute _trackCode_ has the value type _CharacterString_ which ma
 [level=7]
 ===== listSeries
 
-The attribute _listSeries_ has the value type Integer which contains an index number into a list of metadata elements describing the reason for the override of the corresponding _depth_ and _uncertainty_ values in the bathymetry coverage.
+The attribute _listSeries_ has the value type _Integer_ which contains an index number into a list of metadata elements describing the reason for the override of the corresponding _depth_ and _uncertainty_ values in the bathymetry coverage.
 
 [level=7]
 ===== geometry
@@ -274,7 +274,7 @@ The class *GM_Point* is taken from <<iso19107>> and is the basic data type for a
 [level=7]
 ===== position
 
-The attribute _position_ is derived from *DirectPosition* for the geometry primitive GM_Point. To assure alignment of tracking list values with the grid points in the bathymetry coverage grid, the reference system for the tracking list is the bathymetry coverage regular grid. This means that the position attribute corresponds to a grid point. For a uniform regular grid this is the row and column of the grid point position.
+The attribute _position_ is derived from *DirectPosition* for the geometry primitive GM_Point. To assure alignment of tracking list values with the grid points in the bathymetry coverage grid, the reference system for the tracking list is the bathymetry coverage regular grid. This means that the _position_ attribute corresponds to a grid point. For a uniform regular grid this is the row and column of the grid point position.
 
 [level=6]
 ===== EX_GeographicExtent
@@ -367,7 +367,7 @@ image::figure-s102-tiling-scheme.png[]
 |attribute
 |rangeType
 |Description of the range of the coverage
-1 |RecordType |The record value for each grid cell in a tiling scheme consists of a single entry corresponding to the tile
+|1 |RecordType |The record value for each grid cell in a tiling scheme consists of a single entry corresponding to the tile
 
 |attribute
 |commonPointRule
@@ -456,7 +456,7 @@ S-102 is a coverage feature product. There are two coverages defined in this spe
 
 
 ===== Geographic
-Geographic (geo) feature types form the principle content of the dataset and are fully defined by their associated attributes and information types. In S-102, BathymetryCoverage has been registered as a geographic feature type.
+Geographic (geo) feature types form the principle content of the dataset and are fully defined by their associated attributes and information types. In S-102, *BathymetryCoverage* has been registered as a geographic feature type.
 
 ===== Meta
 The only meta feature within an S-102 dataset is the tracking list. The tracking list is a simple list of nodes that have been modified to account for hydrographer over-rides of the basic surface definition (for example as originally computed by an algorithmic method). Each record within the list contains the original depth value (referenced to the associated node within the surface) and information about the override that occurred. The tracking list dataset and corresponding information contained in the metadata exist to provide an audit trail record of changes made to the data by manual intervention.
@@ -489,7 +489,7 @@ image::figure-feature-association.png[]
 h|Type h|Definition
 
 |Enumeration |A fixed list of valid identifiers of named literal values
-|Boolean |A value representing binary logic. The value can be either True or False. The default state for Boolean type attributes (i.e. where the attribute is not populated for the feature) is False
+|Boolean |A value representing binary logic. The value can be either _True_ or _False_. The default state for Boolean type attributes (i.e. where the attribute is not populated for the feature) is _False_
 |Real |A signed Real (floating point) number consisting of a mantissa and an exponent
 |Integer |A signed integer number. The representation of an integer is encapsulation and usage dependent
 |CharacterString |An arbitrary-length sequence of characters including accents and special characters from a repertoire of one of the adopted character sets
@@ -511,7 +511,7 @@ Bathymetric Surface datasets are represented as a discrete array of points conta
 ==== Regular Grid
 
 ===== S-102 Coverages
-The major components of the Bathymetric Surface product are the *BathymetryCoverage* and the *TrackingListCoverage*. The BathymetryCoverage contains depth and, optionally, uncertainty. The general structure of each is defined in <<iho-s100>> Part 8 as a georectified grid. Spatial metadata parameters are defined in *S102_StructureMetadataBlock*. Furthermore, the two values are co-located within the *BathymetryCoverage*. Each layer contains a two-dimensional matrix organized in row major order, and starting from the south-western most data point, where each value is defined to be at an exactly specified geographic point (or grid node).
+The major components of the Bathymetric Surface product are the *BathymetryCoverage* and the *TrackingListCoverage*. The *BathymetryCoverage* contains depth and, optionally, uncertainty. The general structure of each is defined in <<iho-s100>> Part 8 as a georectified grid. Spatial metadata parameters are defined in *S102_StructureMetadataBlock*. Furthermore, the two values are co-located within the *BathymetryCoverage*. Each layer contains a two-dimensional matrix organized in row major order, and starting from the south-western most data point, where each value is defined to be at an exactly specified geographic point (or grid node).
 
 The units of the depth values are in metres, and the sign convention is for z to be positive for values above the vertical datum. The reference vertical datum for the surface is one of the mandatory Metadata items. This sign convention follows directly from the right-hand coordinate system definition to which the standard adheres.
 
@@ -526,9 +526,9 @@ The undetermined state for uncertainty is defined to be 1,000,000.0 (1.0e6).
 The Bathymetric Surface Product Specification is extensible. This includes both extensions to the content model and to the encodings supporting the content model. Extensions are optional coverages and not required for a file to be qualified nor do they invalidate a compliant product. Additional layers of information not related to the bathymetric scope of this product specification should be defined in separate S.100 and S.10x compliant layers.
 
 === Multiple Datasets
-In order to facilitate the efficient processing of S-102 data, the geographic coverage of a given maximum display Scale may be split into multiple datasets.
+In order to facilitate the efficient processing of S-102 data, the geographic coverage of a given *maximum display Scale* may be split into multiple datasets.
 
-The discovery or exchange metadata of a dataset must list all extents or the Data Coverage features contained within that dataset and their assigned scale attributions.
+The discovery or exchange metadata of a dataset must list all extents or the *Data Coverage* features contained within that dataset and their assigned scale attributions.
 
 === Dataset Rules
 Each S-102 dataset must only have a single extent as it is a coverage feature.

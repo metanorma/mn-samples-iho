@@ -114,7 +114,7 @@ h|Attribute h|Allowable Encoding Value h|Type h|Multiplicity
 
 |Remarks:
 
-* Bound by numPointsLongitudinal (S100 Part 10c)
+* Bound by _numPointsLongitudinal_ (S100 Part 10c)
 
 |*Y*: IHO Definition: GRID POINT; point located at the intersection of two or more curves in a grid [<<iso-19123>>]
 
