@@ -42,6 +42,7 @@ h| Encrypted HW_ID h| Check Sum (CRC) h| M_ID (Manufacturer ID)
 |===
 
 [%unnumbered]
+[EXAMPLE]
 .Userpermit Structure
 ====
 [%unnumbered]
@@ -139,6 +140,7 @@ i.e. *`:VERSION`* `2`
 |===
 
 [%unnumbered] 
+[EXAMPLE]
 ====
 *`:DATE 20080809 11:11`* +
 *`:VERSION 2`* +
@@ -209,6 +211,7 @@ e.g. The ENC Check Sum in the example below is: *`795C77B204F54D48`*
 |===
 
 [%unnumbered]
+[EXAMPLE]
 .Cell Permit Field
 ====
 [%unnumbered]
@@ -216,6 +219,7 @@ image::image-04.png["","",""]
 ====
 
 [%unnumbered]
+[EXAMPLE]
 .Cell Permit Record
 ====
 [%unnumbered]

@@ -61,13 +61,13 @@ The data content of each of the header fields is defined in the table below:
 |===
 | Field Name | Type | Source
 
-| 1. Vessel Name | Text | The name of the vessel as recorded within the ECDIS.
-| 2. Identifier | Text | A unique identifier, the MMSI or vessel IMO number.
-| 3. ENC Update reference date | Date | The data used as the reference for the status of each of the cells. This is the datestamp of the last data server's service media used to update the SENC. The date is taken from the S-63 SERIAL.ENC file as defined in section 6.3 and is expressed both in standard notation "NN MMM YYYY" and week number as defined in S-63 section 6.3. These fields are defined in S-63 section 6.3 as the "Date of Publication" and "Week of Issue" respectively.
-| 4. Date of report | Date | The date the report was run.
-| 5. Content | Text | This field denotes the content type of the report. There are two possibilities:- "Filtered for Route Plan XXX to YYY" where XXX and YYY are the textual names of the point of origin and destination on the chosen route.- Full SENC contents.
-| 6. Start WP | Text | This field is only present if the report is filtered for a route. It should comprise the textual name of the starting waypoint of the route (if one exists) and the lat/lon coordinates of the waypoint. There is no fixed form that the coordinates should take.
-| 7. End WP | Text | This field is only present if the report is filtered for a route. It should comprise the textual name of the last waypoint of the route (if one exists) and its lat/lon coordinates. There is no fixed form that the coordinates should take.
+| [start=1] . Vessel Name | Text | The name of the vessel as recorded within the ECDIS.
+| [start=2] . Identifier | Text | A unique identifier, the MMSI or vessel IMO number.
+| [start=3] . ENC Update reference date | Date | The data used as the reference for the status of each of the cells. This is the datestamp of the last data server's service media used to update the SENC. The date is taken from the S-63 SERIAL.ENC file as defined in section 6.3 and is expressed both in standard notation "NN MMM YYYY" and week number as defined in S-63 section 6.3. These fields are defined in S-63 section 6.3 as the "Date of Publication" and "Week of Issue" respectively.
+| [start=4] . Date of report | Date | The date the report was run.
+| [start=5] . Content | Text | This field denotes the content type of the report. There are two possibilities:- "Filtered for Route Plan XXX to YYY" where XXX and YYY are the textual names of the point of origin and destination on the chosen route.- Full SENC contents.
+| [start=6] . Start WP | Text | This field is only present if the report is filtered for a route. It should comprise the textual name of the starting waypoint of the route (if one exists) and the lat/lon coordinates of the waypoint. There is no fixed form that the coordinates should take.
+| [start=7] . End WP | Text | This field is only present if the report is filtered for a route. It should comprise the textual name of the last waypoint of the route (if one exists) and its lat/lon coordinates. There is no fixed form that the coordinates should take.
 
 |===
 
@@ -78,7 +78,9 @@ Where the ENC update status report is filtered for a route plan then the cells i
 
 The width of the filtering corridor is equal to the "user specified distance" implemented inside the ECDIS to fulfil IMO MSC.232(82) _11.3.5:_
 
+____
 _"An indication should be given if the mariner plans a route closer than a user-specified distance from the boundary of a prohibited area or a geographic area for which special conditions exist (see appendix 4). An indication should also be given if the mariner plans a route closer than a user-specified distance from a point object, such as a fixed or floating aid to navigation or isolated danger."_
+____
 
 This is not the same as the XTD distance.
 
@@ -171,6 +173,7 @@ Note that:
 ==== Examples of ENC update status report
 
 [%unnumbered]
+[EXAMPLE]
 ====
 *_ENC Update Status Report._*
 

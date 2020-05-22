@@ -111,6 +111,7 @@ h| Field ID h| Domain h| Bytes h| Range
 |===
 
 [%unnumbered]
+[EXAMPLE]
 ====
 *`GBWK27_07` `20070621BASE` `M01X03`*
 *`M1,'UKHO Week 27_07 BASE MEDIA 1','Europe, Africa, and Middle East'`*
@@ -146,6 +147,7 @@ e.g. *`M1;U2`* [Media 1, Update ExS 2] ^.^| {blank}footnote:[This field identifi
 |===
 
 [%unnumbered]
+[EXAMPLE]
 ====
 *`M1;B1,20070614,'Base Dataset 1',Europe',,`* 
 ====
@@ -153,6 +155,7 @@ e.g. *`M1;U2`* [Media 1, Update ExS 2] ^.^| {blank}footnote:[This field identifi
 The update media *_"MEDIA.TXT"_* file will always contain the latest issue dates and information for all base media exchange sets in a media set. _Although provision has been made to have more than one update ExSet on the update media, it is not recommended for the reasons mentioned in <<media_management_data_servers>>. However, if there are more than one then this can be managed by the entries in the PRODUCTS.TXT and MEDIA.TXT file on the update media._
 
 [%unnumbered]
+[EXAMPLE]
 .Example of a complete *MEDIA.TXT [UPDATE]*:
 ====
 `GBWK28_07 20070628UPDATE M01X02` +
@@ -169,6 +172,7 @@ The update media *_"MEDIA.TXT"_* file will always contain the latest issue dates
 ====
 
 [%unnumbered]
+[EXAMPLE]
 .Example of complete *MEDIA.TXT [BASE]* file on:
 ====
 `GBWK27_07 20070621BASE M01X03` +
@@ -210,11 +214,12 @@ When the weekly update media is loaded data clients must check that the issue da
 If the ECDIS/ECS does not have the latest base media loaded a warning must be given informing the user similar to the following example:
 
 [%unnumbered]
+[EXAMPLE]
 ====
 *_"This 'Update Media' is not compatible with the actual installed 'Base Media'. Please install the following 'Base Media' first and then continue with the 'Update Media'."_* +
-            *_ <Field: User Information 1> _* +
-            *_ <Field: User Information 2> _* +
-            *_ <Field: User Information x> (where x is the base media number) _*
+            *_<Field: User Information 1>_* +
+            *_<Field: User Information 2>_* +
+            *_<Field: User Information x> (where x is the base media number)_*
 
 *_Example:_*
 

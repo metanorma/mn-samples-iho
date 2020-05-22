@@ -3,10 +3,11 @@
 :docnumber: 63
 :edition: 1.2.1
 :doctype: standard
-:published-date: 2020-03-01
+:published-date: 2020-03
 :copyright-year: 2020
 :status: in-force
 :committee: hssc
+:workgroup: dpswg
 :doctype: standard
 :imagesdir: images
 :docfile: document.adoc

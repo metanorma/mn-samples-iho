@@ -165,7 +165,7 @@ The main body of the document can generally be broken down into four parts. The 
 
 === Maintenance
 
-Changes to this standard will conform to the _“Principles and procedures for making changes to IHO standards and specifications”_, as approved by the 18th CHRIS meeting (Cairns, Australia, Sept. 2006).
+Changes to this standard will conform to the _“Principles and procedures for making changes to IHO standards and specifications”_, as approved by the 18^th^ CHRIS meeting (Cairns, Australia, Sept. 2006).
 
 
 === Support
