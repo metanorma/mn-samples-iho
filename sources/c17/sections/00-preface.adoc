@@ -2,6 +2,7 @@
 
 The 17^th^ International Hydrographic Conference held in May 2007, directed that CHRIS (now the IHO Hydrographic Services and Standards Committee - HSSC) establish a Marine Spatial Data Infrastructures Working Group (MSDIWG) to identify the Hydrographic Community inputs to National Spatial Data Infrastructures (NSDI). In 2015, the responsibility for the MSDIWG moved from HSSC to the Inter-Regional Coordination Committee (IRCC). This change reflected the ongoing nature of the work of the MSDIWG in tackling predominantly non-technical matters. The Terms of Reference of and other information about the MSDIWG are available at:
 
+[align=center]
 http://www.iho.int/[www.iho.int] → Committees & WG → MSDIWG
 
 IHO publication M-2 outlines the benefits and options for the development of a national hydrographic policy that ensures a State has a knowledge of the physical features of the seabed and coast, as well as the currents, tides and certain physical properties of the sea water, such that the needs of safety of navigation and protection of the marine environment can be met. A successful national hydrographic policy will not only meet the requirements of the mariner but can provide additional and often greater benefits to the State.
