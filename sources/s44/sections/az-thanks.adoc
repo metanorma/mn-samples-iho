@@ -38,7 +38,7 @@ James WALTON, Expert Contributor (AML) +
 Neil WESTON, USA (NOAA) +
 Enrico ZANONE, Italy (IIM) +
 Anders ÅKERBERG, Sweden (SMA) +
-Hans ÖIÅS, Sweden (SMA) +
+Hans ÖIÅS, Sweden (SMA)
 
 [align=center]
 Special thanks to Richard POWELL (USA, NOAA) for the cover image.
