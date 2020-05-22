@@ -8,7 +8,7 @@ Format Version 2.0
 
 Last Update: April 4, 2018
 
-
+[%unnumbered]
 [source,json]
 ----
 include::geojson.json[]

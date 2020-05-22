@@ -5,15 +5,15 @@ Insert logos or names.
 
 .IHO Statement on Crowdsourced Bathymetry
 
-Crowdsourced bathymetry (CSB) is the collection of depth measurements from vessels, using standard
-navigation instruments, while engaged in routine maritime operations. The International Hydrographic
-Organization (IHO) has a long history of encouraging the collection of crowdsourced bathymetry, to help
+<<term-csb,Crowdsourced bathymetry>> (CSB) is the collection of depth measurements from vessels, using standard
+navigation instruments, while engaged in routine maritime operations. The http://www.iho.int/[International Hydrographic
+Organization] (IHO) has a long history of encouraging the collection of crowdsourced bathymetry, to help
 improve mankind’s understanding of the shape and depth of the seafloor.
 
-The General Bathymetric Chart of the Ocean (GEBCO) project was initiated in 1903 by Prince Albert I of
+The http://www.gebco.net/[General Bathymetric Chart of the Ocean] (GEBCO) project was initiated in 1903 by Prince Albert I of
 Monaco to provide the most authoritative, publicly-available bathymetry (depth maps) of the world's
-oceans. Over the years, the GEBCO project, now jointly overseen by the IHO and the Intergovernmental
-Oceanographic Commission (IOC) of UNESCO, has produced maps of the ocean floor from depth
+oceans. Over the years, the GEBCO project, now jointly overseen by the IHO and the http://www.ioc-unesco.org/[Intergovernmental
+Oceanographic Commission] (IOC) of UNESCO, has produced maps of the ocean floor from depth
 measurements collected by vessels as they journeyed across the oceans. These "`passage soundings`" have
 enabled the creation of progressively more-detailed seafloor maps and digital data grids. More recently,
 systematic surveys have also been used to improve the maps and grids.
@@ -22,16 +22,16 @@ Unfortunately, despite the multitude of data that have been collected since 1903
 of the world’s ocean depths have been measured; the rest of the data used to compile seafloor maps are
 estimated depths. These estimated depths are largely derived from satellite gravity measurements, which
 can miss significant features and provide only coarse-resolution depictions of the largest seamounts,
-ridges and canyons. Progress in mapping coastal waters is only marginally better. IHO publication C-55,
-Status of Surveying and Charting Worldwide, indicates that about fifty percent of the world’s coastal
+ridges and canyons. Progress in mapping coastal waters is only marginally better. https://iho.int/iho_pubs/CB/C-55/index.html[IHO publication C-55,
+Status of Surveying and Charting Worldwide], indicates that about fifty percent of the world’s coastal
 waters shallower than 200 metres remain unsurveyed.
 
 While the hydrographic and scientific community lament this lack of data, the world’s interest in seas,
 oceans and waterways continues to increase. The concept of a blue economy is firmly established, along
 with an ever-growing public awareness of mankind’s dependence upon, and vulnerability to, the sea.
-Several high-level global initiatives are now in place that seek to address ocean issues, including the United
-Nation’s 2030 Agenda for Sustainable Development Goals, the Paris Agreement under the United Nations
-Framework Convention on Climate Change, and the Sendai Framework for Disaster Risk Reduction 2015-2030.
+Several high-level global initiatives are now in place that seek to address ocean issues, including the https://sustainabledevelopment.un.org/post2015/transformingourworld[United
+Nation’s 2030 Agenda for Sustainable Development Goals], the https://unfccc.int/2860.php[Paris Agreement under the United Nations
+Framework Convention on Climate Change], and the http://www.unisdr.org/we/inform/publications/43291[Sendai Framework for Disaster Risk Reduction 2015-2030].
 In this context, the shortfall in bathymetric data is even more significant, as it is now recognised
 that knowledge of the depth and shape of the seafloor underpins the safe, sustainable, and cost-effective
 execution of almost every human activity on, or beneath, the sea.
@@ -41,10 +41,10 @@ to improve this situation by progressing actions to improve the collection, qual
 hydrographic data worldwide. One of these actions, Proposal 4, concerned crowdsourced bathymetry.
 
 The EIHC-5, considering Proposal 4, and the comments made during the Conference, decided, in Decision
-8, to task the Inter-Regional Coordination Committee (IRCC) to establish a working group to prepare a
+8, to task the https://iho.int/srv1/index.php?option=com_content&view=article&id=419&Itemid=377&lang=en[Inter-Regional Coordination Committee (IRCC)] to establish a working group to prepare a
 new IHO publication on policy for crowdsourced bathymetry.
 
-The International Maritime Organization (IMO) Safety of Life at Sea (SOLAS) carriage requirements oblige
+The http://www.imo.org/en/Pages/Default.aspx[International Maritime Organization (IMO)] Safety of Life at Sea (SOLAS) carriage requirements oblige
 all commercial vessels to be equipped with certified echo-sounders and satellite-based navigation
 systems. As a result, the world’s commercial fleet represents a significant, untapped source of potential
 depth measurements. While CSB data may not meet accuracy requirements for charting areas of critical
@@ -53,6 +53,7 @@ information while on passage, the data can be used to identify uncharted feature
 charted information, and to help confirm that existing charts are appropriate for the latest traffic patterns.
 Crowdsourced bathymetry can also provide vital information to support national and regional
 development activities, and scientific studies in areas where little or no other data exists.
+
 Recognizing the relevance of bathymetry to international maritime policy and the blue economy and
 noting that crowdsourced bathymetry may be useful for many potential users of the world’s seas, oceans
 and waterways, the IHO has developed this guidance document to state its policy towards, and provide
