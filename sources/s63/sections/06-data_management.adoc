@@ -27,6 +27,7 @@ The following table lists the additional S-63 files and file modifications toget
 [%unnumbered]
 |===
 h| File/Field h| Primary Management Function
+
 | *PRODUCTS.TXT* a| Required to provide the following information: +
 1. The Issue Date of the Products File being installed. +
 2. A catalogue of all available cells in a Data Server's service. +
@@ -65,6 +66,7 @@ The content of the product list will be divided into sections. The Product List 
 [%unnumbered]
 |===
 h| Section h| Description
+
 | *Header* | Contains general information about the nature of the Product List, e.g. the time of creation, version number.
 | *:ENC* | Contains the current status of all ENC cells/updates provided by the data server.
 | *:ECS* | Contains information about other digital chart information provided by the data server.
@@ -114,6 +116,7 @@ This section will start with one _ENC Section Identifier_ record as defined belo
 [%unnumbered]
 |===
 h| Field h| Fieldname h| Value
+
 | ENC Section Identifier | `:ENC` | Not applicable
 
 |===
@@ -123,6 +126,7 @@ The ENC Section will then consist of repeating records defining the status of ea
 [%unnumbered]
 |===
 h| Field h| Value
+
 | *Product Name* a| Name of product as defined in S57e3 DSID-DSNM subfield. The file extension will always be 000. +
 Example: *`GB202400.000`*
 | *Base Cell Issue Date [EN Application Profile]* a| `YYYYMMDD` +
@@ -270,7 +274,8 @@ The contents of this file can be cross referenced with the installed permits to 
 
 [%unnumbered]
 |===
-h| Field ID h| Domain h| Bytes h| Range h| *Notes (see below)*
+h| Field ID h| Domain h| Bytes h| Range h| Notes (see below)
+
 | Data Server ID | character | 2 | Any two alphanumeric ^.^| 1
 | Week of Issue | character | 10 | Any ASCII characters ^.^| 2
 | Date of publication | date | 8 | YYYYMMDD ^.^| 3
@@ -324,6 +329,7 @@ The information stored in this field must be identical to that stored in the DSI
 [%unnumbered]
 |===
 h| Event ^.^h| File Extension ^.^h| EDTN ^.^h| UPDN ^.^h| UADT ^.^h| ISDT ^.^h| Comments
+
 | New ENC Cell ^.^| .000 ^.^| 1 ^.^| 0 ^.^| 19950104 ^.^| 19950104 ^.^| UADT < or = ISDT
 | Update 1 ^.^| .001 ^.^| 1 ^.^| 1 ^.^| Prohibited ^.^| 19950121 ^.^| ISDT only
 | Update 2 ^.^| .002 ^.^| 1 ^.^| 2 ^.^| Prohibited ^.^| 19950225 ^.^| ISDT only
@@ -364,6 +370,7 @@ The following table illustrates the conditions that apply to all the different t
 [%unnumbered]
 |===
 ^.^h| Version Number ^.^h| Edition Number ^.^h| Update Number ^.^h| Update Application Date [UADT] ^.^h| Issue Date [ISDT] ^.^h| Comment
+
 ^.^| `VERSION=1.0` | `EDTN=1` ^.^| `UPDN=0` ^.^| `UADT=20060703` ^.^| `ISDT=20060703` ^.^| New Cell (EN)
 ^.^| `VERSION=1.0` | `EDTN=1` ^.^| `UPDN=1` ^.^| `Prohibited` ^.^| `ISDT=20060710` ^.^| Update (ER)
 6+a| 
@@ -395,6 +402,7 @@ The header is a fixed length record containing the following information:
 [%unnumbered]
 |===
 h| Field ID h| Domain h| Bytes h| Range
+
 | Data Server ID | character ^.^| 2 | Any two alphanumeric
 | Week of Issue | character ^.^| 10 | Any ASCII characters
 | Media Type | character ^.^| 10 | UPDATE
@@ -418,6 +426,7 @@ This is a comma separated record with an end of line CR/LF delimiter.
 [%unnumbered]
 |===
 h| Field ID h| Domain h| Bytes h| Range
+
 | Base Media Number | character ^.^| 2-3 | Alphanumeric [e.g. B1, B11, M2, etc.]
 | Data Server ID | character ^.^| 2 | Alphanumeric [e.g. GB]
 | Week of Issue | character ^.^| 7 | Any ASCII characters [WKWW-YY]
