@@ -147,6 +147,7 @@ Signature file: `CC` *`[I-N]`* `XXXXX.EEE`
 [%unnumbered]
 |===
 h| Navigational Purpose h| Signature Character
+
 | 1. Overview ^.^| `I`
 | 2. General ^.^| `J`
 | 3. Coastal ^.^| `K`
@@ -179,6 +180,7 @@ There are a number of files associated with the authentication processes within 
 [%unnumbered]
 |===
 h| File Types ^.^h| Scheme Administrator ^.^h| Data Server
+
 | PQG File ^.^| ✓ ^.^| ✓
 | Private Key (X file) ^.^| ✓ ^.^| ✓
 | Public Key (Y file) ^.^| ✓ ^.^| ✓
@@ -197,6 +199,7 @@ All elements comprise of two parts, a header and a data string. The following ta
 [%unnumbered]
 |===
 h| Element h| Header h| Data String
+
 ^.^| `R` | `// Signature part R:` | `10 blocks of 4 characters.`
 ^.^| `S` | `// Signature part S:` | `10 blocks of 4 characters.`
 ^.^| `p` | `// BIG p` | `32 blocks of 4 characters.`
