@@ -36,6 +36,7 @@ The userpermit is 28 characters long and shall be written as ASCII text with the
 [%unnumbered]
 |===
 h| Encrypted HW_ID h| Check Sum (CRC) h| M_ID (Manufacturer ID)
+
 | 16 hex characters | 8 hex characters | 4 characters
 3+|
 3+| Any alphabetic character will be written in upper case. 
@@ -111,6 +112,7 @@ The Cell Permit will always be provided in a file called PERMIT.TXT, the filenam
 [%unnumbered]
 |===
 h| Section h| Description
+
 | *Header* | This includes the file creation date and the format version.
 | *:ENC* | ENC permits (official) from the Data Server are listed under this section.
 | *:ECS* | ECS permits (non-official) from the Data server can be listed under this section.
@@ -158,6 +160,7 @@ The Cell Permit Record is comprised of the following comma separated fields:
 [%unnumbered]
 |===
 h| Field h| Value
+
 | *Cell Permit* | As defined in <<definition_of_the_cell_permit>> & <<cell_permit_format>>
 | *Service Level Indicator* a| *`0`* for subscription permit +
 *`1`* for single purchase permit
@@ -177,6 +180,7 @@ The following table defines the fields contained in cell permit with a definitio
 [%unnumbered]
 |===
 h| Field h| Purpose
+
 | *Cell Name:* | The cell name enables Data Client systems to link the correct encryption key to the corresponding encrypted ENC cell file.
 | *Expiry Date:* | This is the date when the Data Clients licence expires. Systems must prevent any new ENC cells, new editions or updates created after this date from being installed.
 | *Encrypted Cell Key 1 (ECK1)* | ECK1 contains the decryption key for the current version of the ENC Cell.
@@ -238,6 +242,7 @@ The file contains a single record with the following fields:
 [%unnumbered]
 |===
 h| Field ID h| Characters h| Notes
+
 | Licensee ^.^| 40 | Name of company or individual signing the licence.
 | Vessel Name ^.^| 40 | Optional. This field may be left as spaces.
 | Fixed Site #1 ^.^| 240 | Company Name and Address. This field contains free format text arranged in 6 x 40 byte sub-fields. Text will not cross the boundaries of the sub-fields.
