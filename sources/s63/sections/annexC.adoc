@@ -194,8 +194,9 @@ Unknown:: 0/50
 
 [%unnumbered]
 |===
-2+h| *Data Server: GB* | | |
-| *Cell Name* | *Edition* | *Update* | *Issue Date* | *Status*
+2+h| Data Server: GB | | |
+h| Cell Name | Edition | Update | Issue Date | Status
+
 | DE316001 | 5 | 1 | 13 Mar 2013 | Not Up to Date
 | DE416010 | 1 | 1 | 12 Apr 2012 | Not Up to Date
 | DE416020 | 6 | 2 | 11 May 2012 | Not Up to Date
@@ -248,8 +249,9 @@ Unknown:: 0/50
 
 [%unnumbered]
 |===
-2+h| *Data Server: PM* | | |
-| *Cell Name* | *Edition* | *Update* | *Issue Date* | *Status*
+2+h| Data Server: PM | | |
+h| Cell Name h| Edition h| Update h| Issue Date h| Status
+
 | SE5GI8PA | 6 | 8 | 03 Apr 2012 | Up to Date
 | SE5HI7LB | 4 | 6 | 16 Aug 2012 | Up to Date
 | SE5HI8PA | 3 | 5 | 19 Nov 2012 | Up to Date
@@ -280,8 +282,9 @@ Unknown:: 0/50
 
 [%unnumbered]
 |===
-2+h| *Data Server: GB* | | | | |
-| *Cell Name* | *Edition* | *Update* | *Issue Date* | *Expiry Date* | *Status* | *Action*
+2+h| Data Server: GB | | | | |
+h| Cell Name h| Edition h| Update h| Issue Date h| Expiry Date h| Status h| Action
+
 | DE316001 | 5 | 1 | 13032013 | | Not Up to Date | To be installed
 | DE416010 | 1 | 1 | 12042012 | | Not Up to Date | To be installed
 | DE416020 | 6 | 2 | 11052012 | | Not Up to Date | To be installed
