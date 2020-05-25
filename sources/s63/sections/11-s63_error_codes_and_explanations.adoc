@@ -7,6 +7,7 @@ The following error codes and messages are defined in the flowcharts in <<scheme
 [%unnumbered]
 |===
 h| Error Code h| Error/Warning Message
+
 | *SSE 01* | _"Self Signed Key is invalid"_
 | *SSE 02* | _"Format of Self Signed Key file is incorrect"_
 | *SSE 03* | _"SA Signed Data Server Certificate is invalid"_
