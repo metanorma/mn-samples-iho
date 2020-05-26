@@ -2,11 +2,14 @@
 :series: S
 :docnumber: 44
 :doctype: standard
-:edition: 6.0.0
+:edition: 6
+:version: 2.0.0
 :language: en
 :published-date: 2020-03
 :copyright-year: 2020
-:status: in-force
+:status: draft-proposal
+:committee: hssc
+:workgroup: hspt
 :docfile: document.adoc
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,rxl
@@ -38,4 +41,4 @@ include::sections/ac-quality-control.adoc[]
 
 include::sections/ad-gridded-bathymetry.adoc[]
 
-
+include::sections/az-thanks.adoc[]

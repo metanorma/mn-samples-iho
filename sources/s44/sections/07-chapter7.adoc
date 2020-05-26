@@ -271,7 +271,7 @@ m = metres. All <<def-uncertainty,uncertainties>> at 95% <<def-confidence_level,
 [[scl-matrix-description]]
 === Matrix Description
 
-The Specification Matrix provides a range of selectable criteria for bathymetric parameters and other data types collected, reported, and delivered as part of a hydrographic survey. It is introduced to allow flexibility and customisation in the tasking and assessing of hydrographic surveys, accommodation of new and emerging technologies, and inclusion of hydrographic surveys conducted for purposes other than safety of navigation. By design, it is expandable and can evolve in future S-44 editions. The Matrix can be used both as a tool when specifying a survey, but also as a tool for classification of data after a completed survey.
+The Specification <<scl-matrix-description,Matrix>> provides a range of selectable criteria for bathymetric parameters and other data types collected, reported, and delivered as part of a hydrographic survey. It is introduced to allow flexibility and customisation in the tasking and assessing of hydrographic surveys, accommodation of new and emerging technologies, and inclusion of hydrographic surveys conducted for purposes other than safety of navigation. By design, it is expandable and can evolve in future S-44 editions. The Matrix can be used both as a tool when specifying a survey, but also as a tool for classification of data after a completed survey.
 
 It is important to note that the <<scl-matrix-description,Matrix>> alone does not define any standards for hydrographic survey. Safety of navigation survey standards (as defined in <<tab-minimum-bathymetry>> and <<tab-other-minimum>>) are referenced to the <<scl-matrix-description,Matrix>> criteria and the <<scl-matrix-description,Matrix>> can be used to customise and enhance these minimum standards. Standards for surveys conducted for purposes other than safety of navigation (e.g. geophysical, oil and gas, dredging, and geotechnical) are not currently defined in this document. However, the range of accuracies presented in the <<scl-matrix-description,Matrix>> was designed to accommodate these surveys and to provide a common framework for tasking and assessing hydrographic surveys in general.
 
@@ -399,7 +399,7 @@ h| B 15+^h| BATHYMETRY
 | 300 |
 
 | *h*
-| <<def-bathymetric_coverage,bathymetric coverage>> [%]
+| <<def-bathymetric_coverage,Bathymetric Coverage>> [%]
 | 1
 | 3
 | 5
@@ -413,6 +413,115 @@ h| B 15+^h| BATHYMETRY
 | 150
 | 200
 | 300 |
+
+h| P 15+^h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
+
+| *a*
+| *Fixed Aids, Features Significant to Navigation* <<def-thu,THU>> [m]
+| 50
+| 20
+| 10
+| 5
+| 3
+| 2
+| 1
+| 0.5
+| 0.2
+| 0.1
+| 0.05
+| 0.01 | |
+
+| *b*
+| *Fixed Aids, Features Significant to Navigation* <<def-tvu,TVU>> [m]
+| 3
+| 2
+| 1
+| 0.5
+| 0.25
+| 0.1
+| 0.05
+| 0.01 | | | | | |
+
+| *c*
+| *Floating Aids and Objects* <<def-thu,THU>> [m]
+| 50
+| 20
+| 10
+| 5
+| 2
+| 1
+| 0.5 | | | | | | |
+
+| *d*
+a| Coastline <<def-thu,THU>> +
+(high, low, MWL water lines, etc.) [m]
+| 20
+| 10
+| 5
+| 1
+| 0.5
+| 0.25
+| 0.1 | | | | | | |
+
+| *e*
+| *Features Less Significant to Navigation* <<def-thu,THU>> [m]
+| 50
+| 20
+| 10
+| 5
+| 3
+| 2
+| 1
+| 0.5
+| 0.2
+| 0.1
+| 0.05
+| 0.01 | |
+
+| *f*
+| *Features Less Significant to Navigation* <<def-tvu,TVU>> [m]
+| 3
+| 2
+| 1
+| 0.5
+| 0.3
+| 0.25
+| 0.1
+| 0.05
+| 0.01 | | | | |
+
+| *g*
+| *Overhead Clearance and Range line, Sector Light Heights* <<def-thu,THU>> [m]
+| 10
+| 5
+| 2
+| 1
+| 0.5
+| 0.2
+| 0.1
+| 0.05
+| 0.01 | | | | | 
+
+| *h*
+| *Overhead Clearance and Range line, Sector Light Heights* <<def-tvu,TVU>> [m]
+| 3
+| 2
+| 1
+| 0.5
+| 0.3
+| 0.1
+| 0.05
+| 0.01 | | | | | | 
+
+| *i*
+| *Angular Measurements* [degrees]
+| 5
+| 2.5
+| 1
+| 0.5
+| 0.2
+| 0.1
+| 0.05 | | | | | | |
 
 h| W 15+^h| WATER FLOW
 
@@ -472,3 +581,4 @@ h| N 15+^h| NATURE OF THE BOTTOM
 NOTE: [[note-parameter-use-1]] To use the parameter "`b`", as a percentage of depth, multiply it by 100.
 
 NOTE: [[note-acronyms-1]] PHY = Physical Sampling. VIS = Visual Analysis. LAB = Laboratory Analysis. INF = Inference Technique. w/ = With. GT = Ground Truth. As Req to GT = As Required to Ground Truth any Inference Technique (see <<scl-nature-bottom>>).
+

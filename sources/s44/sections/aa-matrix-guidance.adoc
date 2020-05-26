@@ -20,13 +20,14 @@ The string should include only those parameters and data types required for both
 
 [[tab-matrix-classes]]
 [cols="3",options="header"]
+.Matrix Classes and Description
 |===
-| | Class | Description
+| ^.^| Class ^.^| Description
 
-| *B* | Bathymetry | Depth and features
-| *P* | Other Positioning | Location of features above the vertical reference
-| *W* | Water Flow | Direction and speed of currents
-| *N* | Nature of the Bottom | Bottom characterisation
+^.^| *B* | Bathymetry | Depth and features
+^.^| *P* | Other Positioning | Location of features above the vertical reference
+^.^| *W* | Water Flow | Direction and speed of currents
+^.^| *N* | Nature of the Bottom | Bottom characterisation
 
 |===
 
@@ -52,35 +53,35 @@ The following table presents two examples of "`Matrix Realisations`": Order 1a S
 | B | BATHYMETRY | Order 1a Value | Matrix Cell Ref. | Custom | Matrix Cell Ref.
 
 | *a*
-| *Depth* THU [m]
+<.<| *Depth* THU [m]
 | 5
 | Ba8
 | 5
 | Ba8
 
 | *b*
-| *Depth* THU [% of depth]
+<.<| *Depth* THU [% of depth]
 | 5
 | Bb3
 | 5
 | Bb3
 
 | *c*
-| *Depth* TVU "a" [m]
+<.<| *Depth* TVU "a" [m]
 | 0.5
 | Bc8
 | ---
 | ---
 
 | *d*
-| *Depth* TVU "b"
+<.<| *Depth* TVU "b"
 | 0.013
 | Bd6
 | 0.010
 | Bd7
 
 | *e*
-| *Feature Detection* [m]
+<.<| *Feature Detection* [m]
 | 2 +
 (≤40 m)
 | Be5 +
@@ -90,7 +91,7 @@ The following table presents two examples of "`Matrix Realisations`": Order 1a S
 | Be6
 
 | *f*
-| *Feature Detection* [% of Depth]
+<.<| *Feature Detection* [% of Depth]
 | 10 +
 (>40 m)
 | Bf3 +
@@ -99,14 +100,14 @@ The following table presents two examples of "`Matrix Realisations`": Order 1a S
 | Bf3
 
 | *g*
-| *Feature Search* [%]
+<.<| *Feature Search* [%]
 | 100
 | Bg9
 | 100
 | Bg9
 
 | *h*
-| *Bathymetric Coverage* [%]
+<.<| *Bathymetric Coverage* [%]
 | ≤ 100
 | ≤ Bh9
 | 100
@@ -115,63 +116,63 @@ The following table presents two examples of "`Matrix Realisations`": Order 1a S
 h| P h| OTHER POSITIONING h| h| h| h|
 
 | *a*
-| *Fixed Aids, Features Significant to Navigation* THU [m]
+<.<| *Fixed Aids, Features Significant to Navigation* THU [m]
 | 2
 | Pa6
 | 2
 | Pa6
 
 | *b*
-| *Fixed Aids, Features Significant to Navigation* TVU [m]
+<.<| *Fixed Aids, Features Significant to Navigation* TVU [m]
 | 1
 | Pb3
 | 1
 | Pb3
 
 | *c*
-| *Floating Aids and Objects* THU [m]
+<.<| *Floating Aids and Objects* THU [m]
 | 10
 | Pc3
 | 10
 | Pc3
 
 | *d*
-| *Coastline* THU (high, low, MWL water lines, etc.) [m]
+<.<| *Coastline* THU (high, low, MWL water lines, etc.) [m]
 | 10
 | Pd2
 | 10
 | Pd2
 
 | *e*
-| *Topographic Features Less Significant to Navigation* THU [m]
+<.<| *Topographic Features Less Significant to Navigation* THU [m]
 | 20
 | Pe2
 | 5
 | Pe4
 
 | *f*
-| *Topographic Features Less Significant to Navigation* TVU [m]
+<.<| *Topographic Features Less Significant to Navigation* TVU [m]
 | 1
 | Pf3
 | 1
 | Pf3
 
 | *g*
-| *Overhead Clearance and Range line, Sector Light Heights* THU [m]
+<.<| *Overhead Clearance and Range line, Sector Light Heights* THU [m]
 | 5
 | Pg2
 | 5
 | Pg2
 
 | *h*
-| *Overhead Clearance and Range line, Sector Light Heights* TVU [m]
+<.<| *Overhead Clearance and Range line, Sector Light Heights* TVU [m]
 | 1
 | Ph3
 | 1
 | Ph3
 
 | *i*
-| *Angular Measurements* [degrees]
+<.<| *Angular Measurements* [degrees]
 | 0.5
 | Pi4
 | 0.5
@@ -180,14 +181,14 @@ h| P h| OTHER POSITIONING h| h| h| h|
 h| T h| WATER FLOW h| h| h| h|
 
 | *a*
-| *Flow Direction* [degrees]
+<.<| *Flow Direction* [degrees]
 | 10
 | Ta1
 | 5
 | Ta3
 
 | *b*
-| *Flow Speed Uncertainty* [knots]
+<.<| *Flow Speed Uncertainty* [knots]
 | 0.1
 | Tb5
 | 0.1
@@ -196,14 +197,14 @@ h| T h| WATER FLOW h| h| h| h|
 h| N h| NATURE OF THE BOTTOM h| h| h| h|
 
 | *a*
-| *Bottom Characterisation Method*
+<.<| *Bottom Characterisation Method*
 | ---
 | ---
 | INF w/ GT (VIS & LAB)
 | Na7
 
 | *b*
-| *Bottom Sampling Frequency*
+<.<| *Bottom Sampling Frequency*
 | ---
 | ---
 | As Req to GT
@@ -245,7 +246,7 @@ Classified according to the S-44 Matrix as: _Ba3, Bc5, Bd3_
 
 The use of text strings for classification of datasets should be articulated with a clear reference to the <<ch-safety-navigation-surveys,S-44 Survey Order>> and / or <<scl-matrix-description,Matrix>>, highlighting any variance from the Survey Order.
 
-Examples could be: "`_Classified according to the S-44 Matrix as: (Ba8, Bb3...)_`" or "`_Classified according to the S-44 Survey Order and Matrix as: Special Order, *Ba12*_`" (where Ba12 shows a further augmentation of Special Order in this case).
+Examples could be: "`_Classified according to the S-44 Matrix as: (Ba8, Bb3...)_`" or "`_Classified according to the S-44 Survey Order and Matrix as: Special Order, **Ba12**_`" (where Ba12 shows a further augmentation of Special Order in this case).
 
 NOTE: the use of text strings alone has a higher probability of translation error.
 
@@ -255,7 +256,8 @@ NOTE: the use of text strings alone has a higher probability of translation erro
 
 ==== Matrix Example
 
-Example: Order 1b using the SPECIFICATION MATRIX
+[align=left]
+Example: Order 1b using the SPECIFICATION MATRIX +
 m = metres, all <<def-uncertainty,uncertainties>> at 95% confidence level, *Order 1b cells*
 
 [cols="16*^.^",options="header,unnumbered"]
@@ -389,7 +391,7 @@ h| P 15+h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
 
 
 | *a*
-| *Fixed Aids, Features Significant to Navigation* <<def-thu,THU>> [m]
+<.<| *Fixed Aids, Features Significant to Navigation* <<def-thu,THU>> [m]
 | 50
 | 20
 | 10
@@ -404,7 +406,7 @@ h| P 15+h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
 | 0.01 | |
 
 | *b*
-| *Fixed Aids, Features Significant to Navigation* <<def-tvu,TVU>> [m]
+<.<| *Fixed Aids, Features Significant to Navigation* <<def-tvu,TVU>> [m]
 | 3
 | *2*
 | 1
@@ -415,7 +417,7 @@ h| P 15+h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
 | 0.01 | | | | | |
 
 | *c*
-| *Floating Aids and Objects* <<def-thu,THU>> [m]
+<.<| *Floating Aids and Objects* <<def-thu,THU>> [m]
 | 50
 | 20
 | *10*
@@ -425,7 +427,7 @@ h| P 15+h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
 | 0.5 | | | | | | |
 
 | *d*
-| *Coastline* <<def-thu,THU>> (high, low, MWL water lines, etc.) [m]
+<.<| *Coastline* <<def-thu,THU>> (high, low, MWL water lines, etc.) [m]
 | 20
 | *10*
 | 5
@@ -435,7 +437,7 @@ h| P 15+h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
 | 0.1 | | | | | | |
 
 | *e*
-| *Features Less Significant to Navigation* <<def-thu,THU>> [m]
+<.<| *Features Less Significant to Navigation* <<def-thu,THU>> [m]
 | 50
 | *20*
 | 10
@@ -450,7 +452,7 @@ h| P 15+h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
 | 0.01 | |
 
 | *f*
-| *Features Less Significant to Navigation* <<def-tvu,TVU>> [m]
+<.<| *Features Less Significant to Navigation* <<def-tvu,TVU>> [m]
 | 3
 | *2*
 | 1
@@ -462,7 +464,7 @@ h| P 15+h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
 | 0.01 | | | | |
 
 | *g*
-| *Overhead Clearance and Range line, Sector Light Heights* <<def-thu,THU>> [m]
+<.<| *Overhead Clearance and Range line, Sector Light Heights* <<def-thu,THU>> [m]
 | *10*
 | 5
 | 2
@@ -474,7 +476,7 @@ h| P 15+h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
 | 0.01 | | | | |
 
 | *h*
-| *Overhead Clearance and Range line, Sector Light Heights* <<def-tvu,TVU>> [m]
+<.<| *Overhead Clearance and Range line, Sector Light Heights* <<def-tvu,TVU>> [m]
 | 3
 | *2*
 | 1
@@ -485,7 +487,7 @@ h| P 15+h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
 | 0.01 | | | | | |
 
 | *i*
-| *Angular Measurements* [degrees]
+<.<| *Angular Measurements* [degrees]
 | 5
 | 2.5
 | 1
@@ -498,8 +500,8 @@ h| P 15+h| OTHER POSITIONING ABOVE THE VERTICAL REFERENCE
 h| W 15+h| WATER FLOW
 
 | *a*
-| *Flow Direction* [degrees]
-| <<scl-water-flow>>
+| *Flow Direction* [degrees] +
+<<scl-water-flow>>
 | *10*
 | 7.5
 | 5.0
@@ -507,16 +509,16 @@ h| W 15+h| WATER FLOW
 | 1.0
 | 0.5
 | 0.25
-| 0.10 | | | | |
+| 0.10 | | | | | |
 
 | *b*
-| *Flow Speed* [knots]
-| <<scl-water-flow>>
+| *Flow Speed* [knots] +
+<<scl-water-flow>>
 | 2
 | 1
 | 0.5
 | 0.25
-| *0.10* | | | | | | | |
+| *0.10* | | | | | | | | |
 
 
 h| N 15+h| NATURE OF THE BOTTOM
