@@ -41,5 +41,5 @@ can better understand the impact of various factors on the reliability of a data
 <<additional-considerations>>, "`Additional Considerations`", discusses issues that collectors and
 Trusted Nodes may wish to consider before engaging in CSB activities.
 
-Additional detail and further reading are provided via <<annex-abbreviations>> "`Abbreviations`" and external links. This guidance document is intended to be a living document and will be updated in light of further experience and feedback from data collectors and data users.
+Additional detail and further reading are provided via <<annex-abbreviations,Annexes>> and external links. This guidance document is intended to be a living document and will be updated in light of further experience and feedback from data collectors and data users.
 

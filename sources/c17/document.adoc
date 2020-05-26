@@ -7,8 +7,8 @@
 :published-date: 2017-01
 :copyright-year: 2017
 :status: in-force
-:committee: hssc
-:doctype: standard
+:committee: ircc
+:workgroup: msdiwg
 :imagesdir: images
 :docfile: document.adoc
 :mn-document-class: iho

@@ -44,6 +44,7 @@ The procedure for creating a User Permit is as follows:
 . Append to 'e' the output from 'f'. This is the User Permit. 
 
 [%unnumbered]
+[EXAMPLE]
 ====
 [%unnumbered]
 |===
@@ -86,21 +87,27 @@ New Cell permits are delivered to a Data Client's system in a file named PERMIT.
 
 The Data Client system must first check that a valid cell permit is available to install. A facility should be available for Data Clients to browse to a specific location on the system where the PERMIT.TXT file is available to install. If any text file other than one named PERMIT.TXT file is selected the system should return a warning as follows:
 
+____
 *_"SSE 11 - Cell permit not found"_*
+____
 
 [[check_cell_permit_format]]
 ==== Check Cell Permit Format
 
 If a valid PERMIT.TXT is located the system must then check that the format of the file is correct as defined in <<the_cell_permit>>. If not the data client must inform the user as follows:
 
+____
 *_"SSE 12 - Cell permit format is incorrect"._*
+____
 
 [[check_the_hw_id]]
 ==== [strike]#Check the HW_ID#
 
 [strike]#Data Client system must check that the HW_ID encoded into the dongle/software security device is comparable with the HW_ID encrypted in the cell permits. If the values are the same the system shall continue with the checks below, if not an error message must be returned as follows:#
 
+____
 [strike]#*_"SSE 19 - Permits are not valid for this system. Contact your data supplier to obtain the correct permits"_*.#
+____
 
 [[check_cell_permit_check_sum]]
 ==== Check Cell Permit Check Sum
@@ -116,6 +123,7 @@ This procedure is performed by the Data Client system and is comprised of the fo
 . Compare the output from 'e' with the output from 'b'. If they are the same, the Cell Permit is valid. If they differ, the Cell Permit is corrupt and Cell Permit is not to be used. 
 
 [%unnumbered]
+[EXAMPLE]
 ====
 [%unnumbered]
 |===
@@ -139,7 +147,9 @@ This procedure is performed by the Data Client system and is comprised of the fo
 
 If the calculated CRC32 value is not the same as the value contained in the cell permit the system must inform the Data Client as follows:
 
+____
 *_"SSE 13 Cell Permit is invalid (checksum is incorrect) or the Cell Permit is for a different system"._*
+____
 
 The system must not install any invalid permits.
 
@@ -148,17 +158,26 @@ The system must not install any invalid permits.
 
 When installing a new PERMIT.TXT file the Data Client system must check that the permits being installed have not expired. The system must check that the expiry date of each permit against the system date (Computer Clock) and if available the time from the GPS receiver/signal. If the permits have expired the following message should be displayed as follows:
 
+____
 *_"SSE 15 - Subscription service has expired. Please contact your data supplier to renew the subscription licence."_*
+____
 
-NOTE: The system may install expired/valid permits but any cells subsequently displayed in the viewer under these conditions *MUST* display a permanent warning to the user as follows:
+[NOTE]
+====
+The system may install expired/valid permits but any cells subsequently displayed in the viewer under these conditions *MUST* display a permanent warning to the user as follows:
 
+____
 *_"SSE 25 - The ENC Permit for this cell has expired. This cell may be out of date and MUST NOT be used for NAVIGATION."_*
+____
+====
 
 See <<check_if_subscription_has_expired>> for checking the expiry date at load time.
 
 If the expiry date of the permit is in advance of the computer clock/GPS signal then a further check must be made to see how long the licenced subscription has to run. If this is 30 days or less then the system should give a warning informing the Data Client as follows:
 
+____
 *_"SSE 20 - Subscription service will expire in less than 30 days. Please contact your data supplier to renew the subscription licence."_*
+____
 
 The Data Client can then take steps to renew the licence before it expires. The system should then proceed to install the permits. If the permit has more than 30 days before expiring the permits should be installed without warning.
 
@@ -225,6 +244,7 @@ In the second paragraph above click on *_"SA Certificate"_* link and a *_"File D
 Opening this file reveals a *_"Certificate"_* dialog, selecting the *_"Details"_* tab and highlighting *_"Public Key"_* displays the IHO public key. The example below is the IHO public at the time this document was published. Note that the first 4 or 6 characters [024100] represent the certificate parameters and can be either positive [0240] or negative [024100].
 
 [%unnumbered]
+[EXAMPLE]
 ====
 `0241 0096 3F14 E32B A537 2928 F24F 15B0 730C
 49D3 1B28 E5C7 6410 0256 4DB9 5995 B15C F880
@@ -241,6 +261,7 @@ This character string (minus the certificate parameters) should be compared with
 Opening this file displays the following SA public key parameters.
 
 [%unnumbered]
+[EXAMPLE]
 ====
 `// BIG p
 FCA6 82CE 8E12 CABA 26EF CCF7 110E 526D B078 B05E DECB CD1E B4A2 08F3 AE16 17AE
@@ -280,7 +301,9 @@ The authentication procedure is outlined below:
 
 If incorrect the system must terminate the process and return the following warning message:
 
+____
 *_"SSE 06 - "The SA Signed Data Server Certificate is invalid. The SA may have issued a new public key or the ENC may originate from another service. A new SA public key can be obtained from the IHO website or from your data supplier"_*
+____
 
 [[authentication_against_non_sa_signed_dsc]]
 ===== Authentication against non-SA signed Data Server Certificate
@@ -289,7 +312,9 @@ There may be instances where there is more than one certificate or public key st
 
 If the data server certificate authenticates against anything other than the IHO.CRT or IHO.PUB stored on the data client then a warning message *MUST* be displayed as follows:
 
+____
 *_"SSE 26 - "This ENC is not authenticated by the IHO acting as the Scheme Administrator"_*
+____
 
 It is only necessary for data clients to display this warning once and not for every repeated occurrence of the same failure in an exchange set. If this message is displayed the data client should still continue to the next stage of authentication (ENC signature authentication) and decryption.
 
@@ -336,7 +361,9 @@ This check is performed on new ENC base cells and update files prior to decrypti
 . If two dates (in fields two and four) are returned at b) then only the latest date {blank}footnote:[The “Issue Date of Latest Update” field, if filled, will not always be in advance of the “Product Issue Date”, for instance in the case of re-issues.] should be used when checking against the expiry date.
 . If the Issue Date of the base cell or the update obtained at b) and c) is newer (in advance of) the permit expiry date obtained at a) the permits are deemed to have expired. A warning message must be displayed as follows:
 
+____
 *_"SSE 15 - Subscription service has expired. Please contact your data supplier to renew the subscription licence."_*
+____
 
 The application may *install expired ENC permits* but must display the *_""SSE 15"_* warning above. It may also decrypt any ENC base cells and update files dated prior to the expiry date of the permits. This can be managed by using the issue date [ISDT] contained in the CATD-COMT field at import. No base cells or updates should be imported if the issue date [ISDT] is greater than the expiry date of the installed cell permits. The application must also display a permanent warning when cells with expired permits are viewed in the data client, see <<expired_enc_permits>>.
 
@@ -356,7 +383,9 @@ This check must be performed every time new ENC base cell or update files are in
 . If it is 30 days or more before the subscription expires, the system can operate without any further notices to the user.
 . If it is less than _30 days_ before the subscription expires, the system may be able to decrypt and uncompress new information issued during the subscription period. The system should issue a warning message to the user e.g.
 
+____
 *_"SSE 20 - Subscription service will expire in less than 30 days. Please contact your data supplier to renew the subscription licence."_*
+____
 
 [[decrypt_the_cell_keys_in_a_cell_permit]]
 ==== Decrypt the Cell Keys in a Cell Permit
@@ -371,6 +400,7 @@ This procedure is performed by the Data Client system after the successful authe
 . Decrypt the converted ECK2 (output from 'd') using the Blowfish algorithm with HW_ID6 as the key. This will yield CK2. 
 
 [%unnumbered]
+[EXAMPLE]
 ====
 [%unnumbered]
 |===
@@ -405,7 +435,9 @@ This procedure is performed by the Data Client's system and is carried out as ou
 . Decompress the ENC file. If decompression is successful, the ENC file is decrypted and ready for use. 
 . If decompression is unsuccessful in 'b' and 'd', this means that the Cell Permit does not contain any valid cell keys. The system should return a relevant warning message and advise the Data Client that a new Cell Permit should be obtained from the Data Server.
 
+____
 *_"SSE 21 – Decryption failed no valid cell permit found. Permits may be for another system or new permits may be required, please contact your supplier to obtain a new licence."_*
+____
 
 [[decompass_enc_file]]
 ==== Decompress ENC file (base cell or update)
@@ -435,7 +467,9 @@ The data client must display permanent warning messages in the viewer when it ca
 
 The data client must check the status of the installed ENC permit when displaying a particular ENC cell. If the permit has expired the ECDIS is to display a permanent warning informing the user that this ENC cell may be out of date as follows:
 
+____
 *_"SSE 25 - The permit for ENC<cell name> has expired. This cell may be out of date and MUST NOT be used for Primary NAVIGATION"._*
+____
 
 [[out_of_date_senc_data]]
 ==== Out-of Date SENC Data
@@ -443,8 +477,9 @@ The data client must check the status of the installed ENC permit when displayin
 The data client must check the status of the ENC cell being displayed against the known status of that cell in a particular data server's service. This must be carried out by comparing the current Edition [EDTN] and Update [UPDN] contained in the SENC for any given cell against the corresponding cell record listed in the latest PRODUCTS.TXT file.
 
 A permanent warning must be given when the ENC cell being displayed by the ECDIS is not updated to the latest new edition or update in service as follows:
-
+____
 *_"SSE 27 - ENC<cell name> is not up to date. A New Edition, Re-issue or Update for this cell is missing and therefore MUST NOT be used for Primary NAVIGATION"._*
+____
 
 [[qa_procedures_data_client]]
 === QA Procedures – Data Client

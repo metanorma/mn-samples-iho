@@ -12,9 +12,10 @@ The intention is that a Category A qualified individual with appropriate experie
 [.preface]
 == Definitions
 
+[.nonterm]
 === Subjects, topics, and elements
 
-The S5-B standard contains the following list of _Basic subjects_ and _Essential subjects:_
+The S5-B standard contains the following list of _**B**asic subjects_ and _**E**ssential subjects:_
 
 <<b1_maths_stats_toe, B1: Mathematics, Statistics, Theory of Errors>>
 
@@ -52,6 +53,7 @@ The S5-B standard contains the following list of _Basic subjects_ and _Essential
 
 For example, the _subject_ E5 "Hydrographic practice" contains the _topic_ E5.1 "Hydrographic survey projects" which has the _element_ E5.1a "Hydrographic surveys purposes".
 
+[.nonterm]
 === Learning outcomes and list of content
 
 It is important to understand that each _element_ is associated with:

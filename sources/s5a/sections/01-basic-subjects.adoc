@@ -70,7 +70,7 @@ Compute explicit solutions for linear ordinary differential equations
 and apply numerical methods to approximate solutions to non-linear
 differential equations.
 
-|B1.2c Numerical solutions of non-linear equation
+|B1.2c Numerical solutions of non-linear equation _(B)_
 |
 . Iterative methods.
 . Rounding and numerical
@@ -440,7 +440,7 @@ instruments.
 |===
 |Topic/Element |Content |Learning outcomes
 
-|B5.1 Weather fundamentals and observations (B)
+|B5.1 Weather fundamentals and observations _(B)_
 .2+|
 . Vertical structure and the variability of the atmosphere
 . Temperature, humidity, dewpoint, frost-point

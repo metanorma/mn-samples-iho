@@ -2,9 +2,9 @@
 [appendix,obligation="informative"]
 == Revision history
 
-[cols="a,a,a",options="unnumbered,header"]
+[cols="^.^a,^.^a,a",options="unnumbered,header"]
 |===
-|Date |Edition |Description and changes
+|Date |Edition ^.^|Description and changes
 
 | May 2019
 | 2.1.0

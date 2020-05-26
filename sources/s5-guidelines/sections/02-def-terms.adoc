@@ -3,28 +3,28 @@
 
 For purposes of recognition, a _programme_ is a complete schedule of study, practical exercises and final project that leads to graduation, including all learning outcomes and content defined in the standards. For purposes of delivery and assessment, a programme will typically be broken down into modules. The term module will be used hereafter to describe a delivery component.
 
-
+[.nonterm]
 [[scl-cat-programmes-schemes]]
 === Categories of Programmes and Schemes
 
 Categories of programmes and schemes for hydrographic and cartographic personnel are defined with respect to the theoretical background and working knowledge of those who successfully graduate from such programmes. The following programmes and schemes are eligible for international recognition by the FIG/IHO/ICA IBSC:
 
-
+[.nonterm]
 ==== Category "A" Programmes:
 
 A programme which provides a comprehensive and broad-based knowledge in all aspects of the theory and practice of hydrography, nautical cartography and allied disciplines for individuals who will practice analytical reasoning, decision making and development of solutions to non-routine problems.
 
-
+[.nonterm]
 ==== Category "B" Programmes:
 
 A programme which provides a practical comprehension of hydrographic surveying and nautical cartography for individuals with the skill to carry out the various hydrographic surveying and cartography tasks.
 
-
+[.nonterm]
 ==== Schemes for Professional Certification:
 
 A regional or national Scheme for the review, assessment and professional certification of an individual to ensure that they possess the relevant and up to date competencies to perform the role of a hydrographic surveyor or nautical cartographer at the appropriate level. The term "`Scheme`" will be used to differentiate professional certification from educational programmes.
 
-
+[.nonterm]
 [[scl-recognition-programmes-schemes]]
 === Recognition of Programmes and Schemes
 
@@ -47,7 +47,7 @@ The Board does not grant recognition to individuals.
 
 The Board may grant recognition to National or Regional Schemes for professional/competency certification of individuals.
 
-
+[.nonterm]
 === Classes of Subjects
 
 ==== _Basic_ Subjects
@@ -69,13 +69,13 @@ These subjects provide a detailed knowledge of the underlying principles that su
 
 These subjects are considered essential for all hydrographic surveyors and nautical cartographers respectively at the Category "A" level. When combined with _Foundation Science_ knowledge they constitute a comprehensive knowledge of hydrography or nautical cartography.
 
-
+[.nonterm]
 === Exemptions
 
 [%inline-header]
 ==== {blank}
 
-Within any submission, the Board will consider cases when an institution intends not to deliver a particular subject/topic/element within _Basic_ or _Foundation Science_ subjects to some or all of the students. No exemptions are permitted from Essential (S-5B/S-8B) or Hydrographic Science (S-5A) or Cartography Science (S-8A) subjects.
+Within any submission, the Board will consider cases when an institution intends not to deliver a particular subject/topic/element within _Basic_ or _Foundation Science_ subjects to some or all of the students. No exemptions are permitted from Essential (S-5B/S-8B) or _Hydrographic Science_ (S-5A) or _Cartography Science_ (S-8A) subjects.
 
 
 [%inline-header]
@@ -83,12 +83,12 @@ Within any submission, the Board will consider cases when an institution intends
 
 Exemptions may be granted from _Basic_ or _Foundation Science_ subjects, topics, or elements when entry requirements for a programme completely cover their content and learning outcomes. The list of elements, as indicated in the Standards, must be evidenced to have been completely covered by prior knowledge of students. Claims for exemptions must clearly describe how the student's prior learning is assessed and validated. If an entry examination process is employed to determine exemptions, it must demonstrate the student's competence in the _subjects/topics/elements_ to be exempted.
 
-
+[.nonterm]
 === Elective Modules
 
 To be recognized against the Standards, a programme must demonstrate that, independently of the student choice of elective modules, all of the S-5A/B or S-8A/B elements are covered by the common programme syllabus.
 
-
+[.nonterm]
 === Level of Knowledge
 
 Bloom's taxonomy has been used as the basis to describe each intended learning outcome of the Standards and the associated verbs are an indication of the expected level of knowledge. One of the three following levels of knowledge is associated with each element of the S-5A/B and S-8A/B.

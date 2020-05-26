@@ -530,7 +530,7 @@ Select appropriate range, scale, frequency and pulse repetition rate for specifi
 
 Identify deficiencies in multi-beam echo sounder or interferometric sonar data, relate issues encountered to system or operational factors and respond appropriately.
 
-|H4.2d Magnetic surveys _(i)_
+|H4.2d Magnetic surveys _(I)_
 |
 . Operating principles and sensitivity characteristics of magnetometers and gradiometers
 . Deployment of magnetometers and gradiometers and planning of magnetic surveys

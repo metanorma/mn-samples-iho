@@ -523,7 +523,6 @@ a| Coastline <<def-thu,THU>> +
 | 0.1
 | 0.05 | | | | | | |
 
-
 h| W 15+^h| WATER FLOW
 
 | *a*
@@ -582,3 +581,4 @@ h| N 15+^h| NATURE OF THE BOTTOM
 NOTE: [[note-parameter-use-1]] To use the parameter "`b`", as a percentage of depth, multiply it by 100.
 
 NOTE: [[note-acronyms-1]] PHY = Physical Sampling. VIS = Visual Analysis. LAB = Laboratory Analysis. INF = Inference Technique. w/ = With. GT = Ground Truth. As Req to GT = As Required to Ground Truth any Inference Technique (see <<scl-nature-bottom>>).
+
