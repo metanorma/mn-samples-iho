@@ -8,7 +8,6 @@
 :status: in-force
 :committee: hssc
 :workgroup: dpswg
-:doctype: standard
 :imagesdir: images
 :docfile: document.adoc
 :mn-document-class: iho
