@@ -411,7 +411,7 @@ B.P. 445 +
 MC 98011 MONACO CEDEX +
 Telephone: +377 93 10 81 00 +
 Fax: +377 93 10 81 40 +
-Email: mailto:info@iho.int +
+Email: mailto:info@iho.int[] +
 --
 *URL*:: link:http://www.iho.int/[www.iho.int]
 *Identifier*:: IHO:S100:S102:2:0:0
