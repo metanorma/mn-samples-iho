@@ -170,4 +170,4 @@ Changes to this standard will conform to the _“Principles and procedures for m
 
 === Support
 
-Support in using and implementing this standard is provided to users by members of the IHO DPSWG, via the IHO Secretariat (info@iho.int). In addition an inventory of frequently asked questions (FAQ) is maintained by the IHO Secretariat on the ECDIS section of the IHO website (www.iho.int).
+Support in using and implementing this standard is provided to users by members of the IHO DPSWG, via the IHO Secretariat (mailto:info@iho.int[]). In addition an inventory of frequently asked questions (FAQ) is maintained by the IHO Secretariat on the ECDIS section of the IHO website (www.iho.int).
