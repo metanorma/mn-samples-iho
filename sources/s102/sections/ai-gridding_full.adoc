@@ -48,9 +48,9 @@ In 20 metres of water the system described above would collect 400 individual de
 ==== Sonar Footprint
 Sonar footprint is a function of water depth (20 metres) and beam angle (0.5° X 0.5°). Computed footprint at nadir:
 
-Footprint @ Nadir = 2 X ((Depth) X (Tan Ø/2)), where Ø = Beam Width Footprint = 2 X ((20 m) X (Tan .25)) = 0.17 metres
+Footprint @ Nadir = stem:[2 x (("Depth") x (Tan Ø/2))], where Ø = Beam Width stem:["Footprint" = 2 x ((20 m) x (Tan .25)) = 0.17 "metres"]
 
-Since this is a 0.5° X 0.5° system, the total footprint at Nadir is: *0.17m X 0.17m*
+Since this is a stem:[0.5° x 0.5°] system, the total footprint at Nadir is: stem:[0.17m x 0.17m]
 
 
 [[fig-sonar-footprint-at-nadir]]
