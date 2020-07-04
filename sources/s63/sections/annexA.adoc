@@ -36,9 +36,9 @@ Certificate:: Certificates are digital documents attesting to the binding of a p
 [bibliography]
 ==== References
 
-* [[[iho_s63_aa,IHO S63]]], IHO S-63 Data Protection Scheme, International Hydrographic Organisation
+* [[[iho_s63_aa,IHO S-63]]], IHO S-63 Data Protection Scheme, International Hydrographic Organisation
 
-* [[[iho_s57_aa,IHO S57]]], IHO S-57 Transfer Standard for Digital Hydrographic Data, International Hydrographic Organisation
+* [[[iho_s57_aa,IHO S-57]]], IHO S-57 Transfer Standard for Digital Hydrographic Data, International Hydrographic Organisation
 
 === Procedure
 
