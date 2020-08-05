@@ -1,0 +1,2944 @@
+== Convention on the International Hydrographic Organization as Amended by the Protocol Dated 14 April 2005 that Entered into Force on 8 November 2016
+
+[%unnumbered]
+|===
+4+h| Record of changes
+| Date | Reference | Effective date | Subject
+| / | CL 83/2005 | 8 November 2016 a| Consolidated version as amended by the Protocol dated 14 April 2005
+| | | |
+|===
+
+*THE STATES PARTIES TO THIS CONVENTION,*
+
+*CONSIDERING* that the International Hydrographic Bureau was established in June 1921 to contribute to making navigation easier and safer throughout the world by improving nautical charts and documents;
+
+*CONSIDERING* that the International Hydrographic Organization is a competent international organization, as referred to in the United Nations Convention on the Law of the Sea, which coordinates on a worldwide basis the setting of standards for the production of hydrographic data and the provision of hydrographic services and which facilitates capacity building of national hydrographic services;
+
+*CONSIDERING* that the vision of the International Hydrographic Organization is to be the authoritative worldwide hydrographic body which actively engages all coastal and interested States to advance maritime safety and efficiency and which supports the protection and sustainable use of the marine environment;
+
+*CONSIDERING* that the mission of the International Hydrographic Organization is to create a global environment in which States provide adequate and timely hydrographic data, products and services and ensure their widest possible use; and
+
+*DESIRING* to pursue on an intergovernmental basis their cooperation in hydrography;
+
+*HAVE AGREED AS FOLLOWS:*
+
+<<<
+
+[[aI]]
+=== ARTICLE I
+
+There is hereby established an International Hydrographic Organization, hereinafter referred to as the Organization, the seat of which shall be in Monaco.
+
+[[aII]]
+=== ARTICLE II
+
+The Organization shall have a consultative and technical nature. It shall be 
+the object of the Organization:
+
+[[aIIa]]
+[%inline-header]
+==== {blank}
+To promote the use of hydrography for the safety of navigation and all other marine purposes and to raise global awareness of the importance of hydrography;
+
+[[aIIb]]
+[%inline-header]
+==== {blank}
+To improve global coverage, availability and quality of hydrographic data, information, products and services and to facilitate access to such data, information, products and services;
+
+[[aIIc]]
+[%inline-header]
+==== {blank}
+To improve global hydrographic capability, capacity, training, science and techniques;
+
+[[aIId]]
+[%inline-header]
+==== {blank}
+To establish and enhance the development of international standards for hydrographic data, information, products, services and techniques and to achieve the greatest possible uniformity in the use of these standards;
+
+[[aIIe]]
+[%inline-header]
+==== {blank}
+To give authoritative and timely guidance on all hydrographic matters to States and international organizations;
+
+[[aIIf]]
+[%inline-header]
+==== {blank}
+To facilitate coordination of hydrographic activities among the Member States; and
+
+[[aIIg]]
+[%inline-header]
+==== {blank}
+To enhance cooperation on hydrographic activities among States on a regional basis.
+
+[[aIII]]
+=== ARTICLE III
+
+The Member States of the Organization are the States Parties to this Convention.
+
+[[aIV]]
+=== ARTICLE IV
+
+The Organization shall comprise:
+
+[[aIVa]]
+[%inline-header]
+==== {blank}
+The Assembly;
+
+[[aIVb]]
+[%inline-header]
+==== {blank}
+The Council;
+
+[[aIVc]]
+[%inline-header]
+==== {blank}
+The Finance Committee;
+
+[[aIVd]]
+[%inline-header]
+==== {blank}
+The Secretariat; and
+
+[[aIVe]]
+[%inline-header]
+==== {blank}
+Any subsidiary organs.
+
+[[aV]]
+=== ARTICLE V
+
+[[aVa]]
+[%inline-header]
+==== {blank}
+
+The Assembly is the principal organ and shall have all the powers of the Organization unless otherwise regulated by the Convention or delegated by the Assembly to other organs.
+
+[[aVb]]
+[%inline-header]
+==== {blank}
+
+The Assembly shall be composed of all Member States.
+
+[[aVc]]
+[%inline-header]
+==== {blank}
+
+The Assembly shall meet in ordinary session every three years. Extraordinary sessions of the Assembly may be held at the request of a Member State or of the Council or of the Secretary-General, subject to the approval of the majority of the Member States.
+
+[[aVd]]
+[%inline-header]
+==== {blank}
+
+A majority of the Member States shall constitute a quorum for the meetings of the Assembly.
+
+[[aVe]]
+[%inline-header]
+==== {blank}
+
+The functions of the Assembly shall be to:
+
+[[aVe-i]]
+[%inline-header]
+===== {blank}
+Elect its Chair and Vice-Chair;
+
+[[aVe-ii]]
+[%inline-header]
+===== {blank}
+Determine its own rules of procedure and those of the Council, the Finance Committee and any subsidiary organ of the Organization;
+
+[[aVe-iii]]
+[%inline-header]
+===== {blank}
+In accordance with the General Regulations, elect the Secretary-General and the Directors and determine the terms and conditions of their service;
+
+[[aVe-iv]]
+[%inline-header]
+===== {blank}
+Establish subsidiary organs;
+
+[[aVe-v]]
+[%inline-header]
+===== {blank}
+Decide the overall policy, strategy and work programme of the Organization;
+
+[[aVe-vi]]
+[%inline-header]
+===== {blank}
+Consider reports put to it by the Council;
+
+[[aVe-vii]]
+[%inline-header]
+===== {blank}
+Consider the observations and recommendations put to it by any Member State, the Council or the Secretary-General;
+
+[[aVe-viii]]
+[%inline-header]
+===== {blank}
+Decide on any proposals put to it by any Member State, the Council or the Secretary-General;
+
+[[aVe-ix]]
+[%inline-header]
+===== {blank}
+Review the expenditures, approve the accounts and determine the financial arrangements of the Organization;
+
+[[aVe-x]]
+[%inline-header]
+===== {blank}
+Approve the three-year budget of the Organization;
+
+[[aVe-xi]]
+[%inline-header]
+===== {blank}
+Decide on operational services;
+
+[[aVe-xii]]
+[%inline-header]
+===== {blank}
+Decide on any other matters within the scope of the Organization; and
+
+[[aVe-xiii]]
+[%inline-header]
+===== {blank}
+Delegate, where appropriate and necessary, responsibilities to the Council.
+
+[[aVI]]
+=== ARTICLE VI
+
+[[aVIa]]
+[%inline-header]
+==== {blank}
+
+One-fourth of, but not less than thirty, Member States shall take seats in the Council, the first two-thirds of whom shall take their seats on a regional basis and the remaining one-third on the basis of hydrographic interests, which shall be defined in the General Regulations.
+
+[[aVIb]]
+[%inline-header]
+==== {blank}
+
+The principles for the composition of the Council shall be laid down in the General Regulations.
+
+[[aVIc]]
+[%inline-header]
+==== {blank}
+
+Members of the Council shall hold office until the end of the next ordinary session of the Assembly.
+
+[[aVId]]
+[%inline-header]
+==== {blank}
+
+Two-thirds of the members of the Council shall constitute a quorum.
+
+[[aVIe]]
+[%inline-header]
+==== {blank}
+
+The Council shall meet at least once a year.
+
+[[aVIf]]
+[%inline-header]
+==== {blank}
+
+Member States not being members of the Council may participate in Council meetings but shall not be entitled to vote.
+
+[[aVIg]]
+[%inline-header]
+==== {blank}
+
+The functions of the Council shall be to:
+
+[[aVIg-i]]
+[%inline-header]
+===== {blank}
+Elect its Chair and Vice-Chair, each of whom shall hold office until the end of the next ordinary session of the Assembly;
+
+[[aVIg-ii]]
+[%inline-header]
+===== {blank}
+Exercise such responsibilities as may be delegated to it by the Assembly;
+
+[[aVIg-iii]]
+[%inline-header]
+===== {blank}
+Coordinate, during the inter-Assembly period, the activities of the Organization within the framework of the strategy, work programme and financial arrangements, as decided by the Assembly;
+
+[[aVIg-iv]]
+[%inline-header]
+===== {blank}
+Report to the Assembly at each ordinary session on the work of the Organization;
+
+[[aVIg-v]]
+[%inline-header]
+===== {blank}
+Prepare, with the support of the Secretary-General, proposals concerning the overall strategy and the work programme to be adopted by the Assembly;
+
+[[aVIg-vi]]
+[%inline-header]
+===== {blank}
+Consider the financial statements and budget estimates prepared by the Secretary-General and submit them for approval to the Assembly with comments and recommendations regarding programmatic allocations of the budget estimates;
+
+[[aVIg-vii]]
+[%inline-header]
+===== {blank}
+Review proposals submitted to it by subsidiary organs and refer them:
+
+* To the Assembly for all matters requiring decisions by the Assembly;
+* Back to the subsidiary organ if considered necessary; or
+* To the Member States for adoption, through correspondence;
+
+[[aVIg-viii]]
+[%inline-header]
+===== {blank}
+Propose to the Assembly the establishment of subsidiary organs; and
+
+[[aVIg-ix]]
+[%inline-header]
+===== {blank}
+Review draft agreements between the Organization and other organizations, and submit them to the Assembly for approval.
+
+[[aVII]]
+=== ARTICLE VII
+
+[[aVIIa]]
+[%inline-header]
+==== {blank}
+
+The Finance Committee shall be open to all Member States. Each Member State shall have one vote.
+
+[[aVIIb]]
+[%inline-header]
+==== {blank}
+
+The Finance Committee shall normally be convened in conjunction with each ordinary session of the Assembly and may convene additional meetings as appropriate.
+
+[[aVIIc]]
+[%inline-header]
+==== {blank}
+
+The functions of the Finance Committee shall be to review the financial statements, budget estimates and reports on administrative matters prepared by the Secretary-General and to present its observations and recommendations thereon to the Assembly.
+
+[[aVIId]]
+[%inline-header]
+==== {blank}
+
+The Finance Committee shall elect its Chair and Vice-Chair.
+
+=== ARTICLE VIII
+
+[[aVIIIa]]
+[%inline-header]
+==== {blank}
+
+The Secretariat shall comprise a Secretary-General, Directors and such other personnel as the Organization may require.
+
+[[aVIIIb]]
+[%inline-header]
+==== {blank}
+
+The Secretary-General shall maintain all such records as may be necessary for the efficient discharge of the work of the Organization and shall prepare, collect, and circulate any documentation that may be required.
+
+[[aVIIIc]]
+[%inline-header]
+==== {blank}
+
+The Secretary-General shall be the chief administrative officer of the Organization.
+
+[[aVIIId]]
+[%inline-header]
+==== {blank}
+
+The Secretary-General shall:
+
+[[aVIIId-i]]
+[%inline-header]
+===== {blank}
+Prepare and submit to the Finance Committee and the Council the financial statements for each year and budget estimates on a three-year basis, with the estimates for each year shown separately; and
+
+[[aVIIId-ii]]
+[%inline-header]
+===== {blank}
+Keep Member States informed with respect to the activities of the Organization.
+
+[[aVIIIe]]
+[%inline-header]
+==== {blank}
+
+The Secretary-General shall perform such other tasks as may be assigned by the Convention, the Assembly or the Council.
+
+[[aVIIIf]]
+[%inline-header]
+==== {blank}
+
+In the performance of their duties, the Secretary-General, the Directors and the personnel shall not seek or receive instructions from any Member State or from any authority external to the Organization. They shall refrain from any action that may be incompatible with their positions as international officials. Each Member State on its part undertakes to respect the exclusively international character of the responsibilities of the Secretary-General, the Directors and the personnel and not seek to influence them in the discharge of their responsibilities.
+
+[[aIX]]
+=== ARTICLE IX
+
+Where decisions cannot be reached by consensus, the following provisions shall apply:
+
+[[aIXa]]
+[%inline-header]
+==== {blank}
+
+Except as otherwise provided in this Convention, each Member State shall  have one vote.
+
+[[aIXb]]
+[%inline-header]
+==== {blank}
+
+For the election of the Secretary-General and the Directors, each Member State shall have a number of votes determined by a scale established in relation to the tonnage of their fleets.
+
+[[aIXc]]
+[%inline-header]
+==== {blank}
+
+Except as otherwise provided in this Convention, decisions shall be taken by a simple majority of Member States present and voting, and if the votes are tied the Chair shall decide.
+
+[[aIXd]]
+[%inline-header]
+==== {blank}
+
+Decisions taken on matters related to the policy or finances of the Organization, including amendments to the General and Financial Regulations, shall be taken by a two-thirds majority of Member States present and voting,
+
+[[aIXe]]
+[%inline-header]
+==== {blank}
+
+With respect to sub-paragraphs <<aIXc>> and <<aIXd>> of this Article and sub-paragraph <<aXXIb>> of <<aXXI>> below, the phrase "Member States present and voting" means Member States present and casting an affirmative or negative vote. Member States that abstain from voting shall be considered as not voting.
+
+[[aIXf]]
+[%inline-header]
+==== {blank}
+In the case of a submission to Member States in accordance with Article <<aVIg-vii>>, the decision shall be taken by a majority of the Member States who cast a vote, with the minimum number of affirmative votes being at least one-third of all Member States.
+
+[[aX]]
+=== ARTICLE X
+
+In relation to matters within its scope, the Organization may cooperate with international organizations whose interests and activities are related to the purpose of the Organization.
+
+[[aXI]]
+=== ARTICLE XI
+
+The functioning of the Organization shall be set forth in detail in the General and Financial Regulations, which are annexed to this Convention but do not form an integral part thereof. In the event of any inconsistency between this Convention and the General or Financial Regulations, this Convention shall prevail.
+
+[[aXII]]
+=== ARTICLE XII
+
+The official languages of the Organization shall be English and French.
+
+[[aXIII]]
+=== ARTICLE XIII
+
+The Organization shall have legal personality. In the territory of each of its Member States it shall enjoy, subject to agreement with the Member State concerned, such privileges and immunities as may be necessary for the exercise of its functions and the fulfilment of its object.
+
+[[aXIV]]
+=== ARTICLE XIV
+
+The expenses necessary for the functioning of the Organization shall be met:
+
+[[aXIVa]]
+[%inline-header]
+==== {blank}
+From the ordinary annual contributions of Member States in accordance with a scale based on the tonnage of their fleets; and
+
+[[aXIVb]]
+[%inline-header]
+==== {blank}
+From donations, bequests, subventions and other sources, with the approval of the Assembly.
+
+[[aXV]]
+=== ARTICLE XV
+
+Any Member State which is two years in arrears in its contributions shall be denied all voting rights and benefits conferred on Member States by the Convention and the Regulations until such time as the outstanding contributions have been paid.
+
+[[aXVI]]
+=== ARTICLE XVI
+
+[[aXVIa]]
+[%inline-header]
+==== {blank}
+
+The Government of His Serene Highness the Prince of Monaco shall serve as Depositary.
+
+[[aXVIb]]
+[%inline-header]
+==== {blank}
+
+This original of the Convention shall be held by the Depositary, which shall transmit certified copies of this Convention to all States that have signed it or acceded thereto.
+
+[[aXVIc]]
+[%inline-header]
+==== {blank}
+
+The Depositary shall:
+
+[[aXVIc-i]]
+[%inline-header]
+===== {blank}
+Inform the Secretary-General and all Member States of applications for accession received by it from States referred to in Article <<aXXb>>; and
+
+[[aXVIc-ii]]
+[%inline-header]
+===== {blank}
+Inform the Secretary-General and all States which have signed this Convention or acceded thereto of:
+
+* Each new signature or deposit of an instrument of ratification, acceptance, approval or accession, together with the date thereof;
+* The date of entry into force of this Convention or any amendment thereto; and
+* The deposit of any instrument of denunciation of the Convention, together with the date on which it was received and the date on which the denunciation takes effect.
+
+As soon as any amendment of this Convention enters into force it shall be published by the Depositary and registered with the Secretariat of the United Nations in accordance with Article 102 of the Charter of the United Nations.
+
+[[aXVII]]
+=== ARTICLE XVII
+
+Any dispute concerning the interpretation or application of this Convention which is not settled by negotiation or by the good offices of the Secretary-General of the Organization shall, at the request of one of the parties to the dispute, be referred to an arbitrator designated by the President of the International Court of Justice.
+
+[[aXVIII]]
+=== ARTICLE XVIII {blank}footnote:hp[Historical provision.]
+
+[[aXVIII1]]
+[%inline-header]
+==== {blank}
+
+This Convention shall be open in Monaco on 3 May 1967, and subsequently at the Legation of the Principality of Monaco in Paris from 1 June until 31 December 1967, for signature by any Government which participates in the work of the Bureau on 3 May 1967.
+
+[[aXVIII2]]
+[%inline-header]
+==== {blank}
+
+The Governments referred to in paragraph <<aXVIII1>> above may become Parties to the present Convention:
+
+[[aXVIII2-a]]
+[%inline-header]
+===== {blank}
+By signature without reservation as to ratification or approval, or
+
+[[aXVIII2-b]]
+[%inline-header]
+===== {blank}
+By signature subject to ratification or approval and the subsequent deposit of an instrument of ratification or approval.
+
+[[aXVIII3]]
+[%inline-header]
+==== {blank}
+
+Instruments of ratification or approval shall be handed to the Legation of the Principality of Monaco in Paris to be deposited in the Archives of the Government of the Principality of Monaco.
+
+[[aXVIII4]]
+[%inline-header]
+==== {blank}
+
+The Government of the Principality of Monaco shall inform the Governments referred to in paragraph <<aXVIII1>> above, and the President of the Directing Committee, of each signature and of each deposit of an instrument of ratification or approval.
+
+[[aXIX]]
+=== ARTICLE XIX {blank}footnote:hp[]
+
+[[aXIX1]]
+[%inline-header]
+==== {blank}
+
+This Convention shall enter into force three months after the date on which twenty-eight Governments have become Parties in accordance with the provisions of Article <<aXVIII2>>.
+
+[[aXIX2]]
+[%inline-header]
+==== {blank}
+
+The Government of the Principality of Monaco shall notify this date to all signatory Governments and the President of the Directing Committee.
+
+[[aXX]]
+=== ARTICLE XX
+
+[[aXXa]]
+[%inline-header]
+==== {blank}
+
+This Convention shall be open for accession by any State that is a member of the United Nations. The Convention shall enter into force for such a State on the date on which it has deposited its instrument of accession with the Depositary, which shall inform the Secretary- General and all Member States.
+
+[[aXXb]]
+[%inline-header]
+==== {blank}
+
+A State that is not a member of the United Nations may only accede to this Convention by applying to the Depositary, and by having its application approved by two-thirds of the Member States. The Convention shall enter into force for such a State on the date on which it has deposited its instrument of accession with the Depositary, which shall inform the Secretary-General and all Member States.
+
+[[aXXI]]
+=== ARTICLE XXI
+
+[[aXXIa]]
+[%inline-header]
+==== {blank}
+
+Any Member State may propose amendments to this Convention. Proposals of amendments shall be transmitted to the Secretary-General not less than six months prior to the next session of the Assembly.
+
+[[aXXIb]]
+[%inline-header]
+==== {blank}
+
+Proposals of amendments shall be considered by the Assembly and decided upon by a majority of two-thirds of the Member States present and voting. When a proposed amendment has been approved by the Assembly, the Secretary-General of the Organization shall request the Depositary to submit it to all Member States.
+
+[[aXXIc]]
+[%inline-header]
+==== {blank}
+
+The amendment shall enter into force for all Member States three months after notifications of consent to be bound by two-thirds of the Member States have been received by the Depositary.
+
+[[aXXII]]
+=== ARTICLE XXII
+
+Upon expiration of a period of five years after its entry into force, this Convention may be denounced by any Contracting Party by giving at least one year’s notice, in a notification addressed to the Depositary. The denunciation shall take effect upon 1 January next following the expiration of the notice and shall involve the abandonment by the State concerned of all rights and benefits of membership in the Organization.
+
+[[aXXIII]]
+=== ARTICLE XXIII {blank}footnote:hp[]
+
+After the present Convention enters into force it shall be registered by the Government of the Principality of Monaco with the Secretariat of the United Nations in accordance with Article 102 of its Charter.
+
+NOTE: See <<annexA>>.
+
+IN WITNESS WHEREOF the undersigned, duly authorized thereto, have signed this Convention.
+
+DONE at Monaco on the third day of May nineteen hundred and sixty-seven, in a single copy in the English and French languages, each text being equally authentic, which shall be deposited in the Archives of the Government of the Principality of Monaco, which shall transmit certified copies thereof to all signatories and acceding Governments and to the President of the Directing Committee.
+
+[[annexA]]
+[appendix,obligation=normative]
+== Certificate of Registration of the IHO Convention and General Regulations with the U.N. Secretariat
+
+[[fig1]]
+[%unnumbered]
+image::image01.png[]
+
+[NOTE]
+====
+. Article 102 of the Charter of the United Nations:
+
+.. Every treaty and every international agreement entered into by any Member of the United Nations after the present Charter comes into force shall as soon as possible be registered with the Secretariat and published by it.
+.. No party to any such treaty or international agreement which has not been registered in accordance with the provisions of paragraph 1 of this Article may invoke that treaty or agreement before any organ of the United Nations.
+
+. The International Hydrographic Organization was granted Observer status at the UN General Assembly by Resolution A/56/91 of 25 January 2002.
+====
+
+== General Regulations of the International Hydrographic Organization
+
+[%unnumbered]
+|===
+4+h| Record of changes
+
+| Date | Reference | Effective date | Subject
+| / a| IHC-17 +
+Decision No. 3 .4+| 8 November 2016 a| Initial version resulting from the Protocol of Amendments to the IHO Convention dated 14 April 2005
+| / | CL 53/2008 | Amendment to Article 8
+| / a| IHC-18 +
+Decision No. 3 | Amendment to the Annex
+| / a| IHC-18 +
+Decision No. 16 | Amendment to Article 20
+| | | |
+|===
+
+*General*
+
+[[gr1]]
+=== ARTICLE 1
+
+The activities of the International Hydrographic Organization (hereinafter the Organization) are of a consultative and technical nature, and do not include matters involving questions of international politics.
+
+[[gr2]]
+=== ARTICLE 2
+
+For its relations with the Organization, each Member State shall designate an official representative, preferably the head of the hydrographic office.
+
+[[gr3]]
+=== ARTICLE 3
+
+Travelling and hotel expenses of representatives to participate in meetings of the Organization shall be defrayed by their respective States.
+
+[[gr4]]
+=== ARTICLE 4
+
+The Secretary-General shall be authorized to invite observers to any meeting of the Assembly, the Council, the Finance Committee, subsidiary organs and subordinate bodies from:
+
+[[gr4a]]
+[%inline-header]
+==== {blank}
+States that are not Parties to the Convention: one or two observers each, if proposed by a Member State, the Council or the Secretary-General, and subject to approval by two thirds of the Member States;
+
+[[gr4b]]
+[%inline-header]
+==== {blank}
+Member States with rights suspended under Article XV of the Convention, as implemented in accordance with Article 16 of the Financial Regulations: one or two observers each, one of whom should preferably be the head of the hydrographic office;
+
+[[gr4c]]
+[%inline-header]
+==== {blank}
+inter-governmental organizations with which an agreement or special arrangement has been made: one or exceptionally two observers each; and
+
+[[gr4d]]
+[%inline-header]
+==== {blank}
+non-governmental international organizations with which the Organization has established appropriate relationships in accordance with the resolution for the Accreditation of Non-governmental International Organizations: one or exceptionally two observers each.
+
+[[gr5]]
+=== ARTICLE 5
+
+When decisions of the Organization are made in the form of resolutions and recommendations, these decisions shall be recorded in the Repertory of Resolutions of the Organization. The Secretary-General shall maintain that Repertory.
+
+*Subsidiary organs and subordinate bodies*
+
+[[gr6]]
+=== ARTICLE 6
+
+[[gr6a]]
+[%inline-header]
+==== {blank}
+
+The Assembly may establish subsidiary organs and may authorise the Council, the Finance Committee or any subsidiary organ to establish bodies subordinate to them.
+
+[[gr6b]]
+[%inline-header]
+==== {blank}
+
+Any body established in accordance with paragraph <<gr6a>> above shall be open to all Member States and may take the form of:
+
+[[gr6b-i]]
+[%inline-header]
+===== {blank}
+a committee, being a subsidiary organ whose life expectancy is longer than the time period between two consecutive ordinary sessions of the Assembly;
+
+[[gr6b-ii]]
+[%inline-header]
+===== {blank}
+a sub-committee, being a subordinate body whose life expectancy is longer than the time period between two consecutive ordinary sessions of the Assembly; or
+
+[[gr6b-iii]]
+[%inline-header]
+===== {blank}
+a working group, being a subordinate body formed to examine a particular subject.
+
+[[gr6c]]
+[%inline-header]
+==== {blank}
+
+When establishing a subsidiary organ the Assembly shall determine the Terms of Reference and Rules of Procedure of that subsidiary organ, which shall clearly state, as a minimum, its objectives, its composition, the method for determining its chair, and its reporting procedures.
+
+[[gr6d]]
+[%inline-header]
+==== {blank}
+
+When establishing a sub-committee the Council, the Finance Committee or any subsidiary organ shall prepare draft Terms of Reference and Rules of Procedure for that sub-committee, which shall clearly state, as a minimum, its objectives, its composition, the method for determining its chair, and its reporting procedures.
+
+[[gr6e]]
+[%inline-header]
+==== {blank}
+
+When establishing a working group the Council, the Finance Committee, any subsidiary organ or subordinate body shall determine the Terms of Reference and Rules of Procedure of that working group, which shall clearly state, as a minimum, its objectives, its composition, the method for determining its chair, and its reporting procedures.
+
+[[gr6f]]
+[%inline-header]
+==== {blank}
+
+Draft Terms of Reference and Rules of Procedure prepared by the Finance Committee or any subsidiary organ in accordance with paragraph <<gr6d>> above shall be submitted to the Council.
+
+[[gr6g]]
+[%inline-header]
+==== {blank}
+
+Where the Council itself prepares draft Terms of Reference and Rules of Procedure, or where the Council receives submissions in accordance with paragraph <<gr6f>> above), it shall either:
+
+[[gr6g-i]]
+[%inline-header]
+===== {blank}
+submit them to Member States for approval by correspondence, in accordance with Articles <<aVIg-vii>> and <<aIXf>> of the Convention; or
+
+[[gr6g-ii]]
+[%inline-header]
+===== {blank}
+if such drafts are prepared or received by the Council one year or less before the opening day of the next ordinary session of the Assembly, submit them to the Assembly for approval.
+
+*Inter-organizational bodies*
+
+[[gr7]]
+=== ARTICLE 7
+
+The Assembly may approve participation of the Organization at inter-organizational boards and other bodies, and in inter-organizational projects and cooperative activities, including the principles for such participation, and shall approve any Terms of Reference necessary for such participation.
+
+*Regional Hydrographic Commissions*
+
+[[gr8]]
+=== ARTICLE 8
+
+[[gr8a]]
+[%inline-header]
+==== {blank}
+
+Regional Hydrographic Commissions (hereinafter RHCs) are regional bodies, established by Member States and recognized by the Assembly to improve regional co-ordination, enhance exchange of information and foster training and technical assistance.
+
+[[gr8b]]
+[%inline-header]
+==== {blank}
+
+RHCs recognized by the Assembly are listed in the Annex to these General Regulations.
+
+[[gr8c]]
+[%inline-header]
+==== {blank}
+
+RHCs shall be established by an agreement of their members.
+
+[[gr8d]]
+[%inline-header]
+==== {blank}
+
+RHC membership may include full members and associate members, both willing to contribute to the objectives of the Organization in the region concerned.
+
+[[gr8e]]
+[%inline-header]
+==== {blank}
+
+Full membership is reserved for Member States within the region. In the unique case of the Antarctic region, membership of the Hydrographic Commission on Antarctica (HCA) is reserved for Member States whose governments have acceded to the Antarctic Treaty and contribute resources and/or data to IHO INT Chart coverage of Region M.
+
+[[gr8f]]
+[%inline-header]
+==== {blank}
+
+Associate membership is available to:
+
+[[gr8f-i]]
+[%inline-header]
+===== {blank}
+other Members States; and
+
+[[gr8f-ii]]
+[%inline-header]
+===== {blank}
+States of the region who are not Member States.
+
+[[gr8g]]
+[%inline-header]
+==== {blank}
+
+Other States and international organizations active in the region concerned may be invited by the RHC to participate as observers.
+
+[[gr8h]]
+[%inline-header]
+==== {blank}
+
+RHCs shall assess regularly the hydrographic capacity and requirements within their region.
+
+*Secretary-General*
+
+[[gr9]]
+=== ARTICLE 9
+
+The Secretary-General is the head of the Secretariat and shall be responsible for its efficient operation. There shall be two Directors who shall report to and have responsibilities assigned by the Secretary-General.
+
+[[gr10]]
+=== ARTICLE 10
+
+The Secretary-General shall:
+
+[[gr10a]]
+[%inline-header]
+==== {blank}
+be the chief administrative officer of the Organization and administer the Secretariat in accordance with the provisions of the Convention and the General and Financial Regulations and with directives given by the Assembly and the Council;
+
+[[gr10b]]
+[%inline-header]
+==== {blank}
+prepare and submit to the Finance Committee and the Council the financial statements for each year and budget estimates on a three-year basis, with the estimates for each year shown separately;
+
+[[gr10c]]
+[%inline-header]
+==== {blank}
+support the Council in preparing proposals concerning the overall strategy and the work programme;
+
+[[gr10d]]
+[%inline-header]
+==== {blank}
+appoint and manage the staff needed for the efficient and effective operation of the Secretariat in accordance with the staff regulations and within the budget set by the Assembly; and
+
+[[gr10e]]
+[%inline-header]
+==== {blank}
+keep Member States informed with respect to the activities of the Organization.
+
+[[gr11]]
+=== ARTICLE 11
+
+The Secretary-General shall keep in close communication with the hydrographic offices of Member States. He/she may also correspond with related scientific organizations of Member States, provided that he/she informs the official representative of the Member State concerned. Furthermore he/she may correspond with similar bodies of other States and with international organizations.
+
+[[gr12]]
+=== ARTICLE 12
+
+The Secretary-General shall bring to the notice of the hydrographic offices of Member States any hydrographic work of an international character or problems of general interest that may be useful to undertake or study. He/she shall strive for the undertaking of such work or solutions to such problems by seeking collaboration among Member States as necessary.
+
+[[gr13]]
+=== ARTICLE 13
+
+The Secretary-General shall satisfy as far as possible all requests from representatives of Member States for information or advice related to the work of the Secretariat. Matters which can be dealt with directly among national hydrographic offices should not normally be referred to the Secretary-General.
+
+[[gr14]]
+=== ARTICLE 14
+
+A Secretary-General elected at an ordinary session of the Assembly shall assume his/her duties on the following 1 September. The duties of his or her predecessor shall terminate on 31 August.
+
+*Secretary-General and Directors*
+
+[[gr15]]
+=== ARTICLE 15
+
+A Secretary-General who has been incapacitated for duty for six consecutive months, or otherwise for an aggregate of twelve months, during his/her term of office shall automatically cease to be Secretary-General.
+
+*Selection of Members of the Council*
+
+[[gr16]]
+=== ARTICLE 16
+
+The Council shall be composed of Member States. Its composition shall be determined in accordance with the following principles.
+
+[[gr16a]]
+[%inline-header]
+==== {blank}
+
+No Member State may hold more than one Council seat;
+
+[[gr16b]]
+[%inline-header]
+==== {blank}
+
+Two-thirds of Council seats shall be held by Member States selected by the RHCs. Each RHC shall be entitled to select at least one Member State, subject to the following:
+
+[[gr16b-i]]
+[%inline-header]
+===== {blank}
+a Member State may only apply to be selected by a RHC of which it is a full member;
+
+[[gr16b-ii]]
+[%inline-header]
+===== {blank}
+a Member State may only apply to be selected by one RHC;
+
+[[gr16b-iii]]
+[%inline-header]
+===== {blank}
+a Member State must apply to the RHC for selection, copying its application to the Secretary-General, at least six months before an ordinary session of the Assembly;
+
+[[gr16b-iv]]
+[%inline-header]
+===== {blank}
+the number of seats allocated to each RHC shall be calculated by the Secretary-General based on the principle of a proportional representation in order to arrive at the required two thirds of Council seats provided for in this sub-paragraph <<gr16b>>;
+
+[[gr16b-v]]
+[%inline-header]
+===== {blank}
+for the purpose of deciding how many Council seats are allocated to each RHC the Secretary-General shall ensure that every Member State is counted as a full Member of one, but not more than one, RHC;
+
+[[gr16b-vi]]
+[%inline-header]
+===== {blank}
+three months before the ordinary session of the Assembly, the Secretary-General shall inform all Member States of the number of seats allocated to each RHC and those Member States eligible for selection by each RHC; and
+
+[[gr16b-vii]]
+[%inline-header]
+===== {blank}
+each RHC shall declare to the Secretary-General, before the last day of each ordinary session of the Assembly, the Member States it has selected to take seats on the Council from among those eligible for selection.
+
+[[gr16c]]
+[%inline-header]
+==== {blank}
+
+The remaining one-third of Council seats shall be held by Member States that have the greatest interest in hydrographic matters and have not been selected under the procedure described in sub-paragraph <<gr16b>> above. The definition of what constitutes an interest in hydrographic matters shall be reconsidered at the latest at the second Assembly meeting. Meanwhile, the scale by which an interest in hydrographic matters is measured shall be national flag tonnage. The table of national flag tonnages is derived in accordance with the procedures set forth in Articles 5 and 6 of the Financial Regulations. The Secretary-General shall determine which Member States will hold this one third of Council seats by identifying them in descending order of their national flag tonnages, referring to the table of current national flag tonnages produced in accordance with Article <<fr6a>> of the Financial Regulations, and by having ascertained the willingness of each of them to hold a seat on the Council.
+
+[[gr16d]]
+[%inline-header]
+==== {blank}
+
+Before the end of the ordinary session the Secretary-General shall submit the full list of Council members to the Assembly.
+
+[[gr16e]]
+[%inline-header]
+==== {blank}
+
+The Assembly shall review and endorse the selection process to ensure that these principles have been correctly followed.
+
+[[gr16f]]
+[%inline-header]
+==== {blank}
+
+In the event that a Member State holding a seat on the Council should be denied voting rights and benefits in accordance with Article <<aXV>> of the Convention, that Member State shall immediately forfeit its seat and the Secretary-General shall initiate the appropriate procedure to replace it in accordance with this Article <<gr16>>.
+
+*Election and terms of office of the Secretary-General and of Directors*
+
+[[gr17]]
+=== ARTICLE 17
+
+The Secretary-General and Directors, who shall be of different nationalities, shall be elected by the Assembly in accordance with Articles <<aVe-iii>> and <<aIXb>> of the Convention. The election shall be held by secret ballot.
+
+[[gr18]]
+=== ARTICLE 18
+
+[[gr18a]]
+[%inline-header]
+==== {blank}
+
+For the election of the Secretary-General and Directors, each Member State shall have two votes; those Member States that have a national flag tonnage of 100 000 tons or more shall have supplementary votes in accordance with the following table.
+
+[%unnumbered]
+|===
+^h| NATIONAL FLAG TONNAGE ^h| SUPPLEMENTARY VOTES
+
+^| 100 000 - 499 999 ^| 1
+^| 500 000 - 1 999 999 ^| 2
+^| 2 000 000 - 7 999 999 ^| 3 
+^| 8 000 000 and above ^| 4
+|===
+
+[[gr18b]]
+[%inline-header]
+==== {blank}
+
+National flag tonnage shall be determined in accordance with Article <<fr5>> of the Financial Regulations.
+
+[[gr19]]
+=== ARTICLE 19
+
+Each Member State may nominate only one candidate, who may be nominated for either or both of the posts of Secretary-General or Director, and who shall be of the nationality of the nominating Member State. If possible, nominations should reach the Secretary-General at least three months before the opening day of the next ordinary session of the Assembly. The list of candidates shall be closed ten days prior to the opening day of the ordinary session of the Assembly.
+
+[[gr20]]
+=== ARTICLE 20
+
+[[gr20a]]
+[%inline-header]
+==== {blank}
+
+Each nomination shall indicate whether it is for the post of Secretary-General or Director or for both posts, and shall include a statement detailing the candidate’s qualifications. The following specific information should be provided:
+
+* nominating Member State;
+* name;
+* nationality;
+* date of birth;
+* titles and decorations;
+* education (periods including specialized or special qualifications);
+* languages (speaking and reading capacity);
+* all service and experience relevant to the nomination and which provide an indication of the extent to which the candidate is qualified to serve as Secretary-General or Director;
+* candidate’s Position, which should include, but is not limited to, the candidate’s vision of the importance of hydrography and cartography, of the role of the IHO and of the objectives and approach envisaged to best advance the priorities of the Organization as established by the Member States; and
+* such additional information as may be relevant;
+
+[[gr20b]]
+[%inline-header]
+==== {blank}
+
+Each nomination shall be signed by the candidate and by a representative of the nominating Member State.
+
+[[gr21]]
+=== ARTICLE 21
+
+[[gr21a]]
+[%inline-header]
+==== {blank}
+
+The nominations, with the detailed statements, shall be notified to all Member States by the Secretary-General as soon as they are received.
+
+[[gr21b]]
+[%inline-header]
+==== {blank}
+
+The Secretary-General shall collate the nominations and present them to the Assembly.
+
+[[gr22]]
+=== ARTICLE 22
+
+[[gr22a]]
+[%inline-header]
+==== {blank}
+
+There shall be separate ballots, first for the election of the Secretary-General and subsequently for each of the Directors.
+
+[[gr22b]]
+[%inline-header]
+==== {blank}
+
+To register their votes Member States shall write the names of the candidates whom they wish to elect on a number of voting papers equal to the number of votes to which they are entitled.
+
+[[gr22c]]
+[%inline-header]
+==== {blank}
+
+Only the name of one candidate shall be written on each voting paper.
+
+[[gr22d]]
+[%inline-header]
+==== {blank}
+
+Any voting paper not completed in accordance with paragraphs <<gr22b>> and <<gr22c>> above shall be nullified.
+
+[[gr23]]
+=== ARTICLE 23
+
+[[gr23a]]
+[%inline-header]
+==== {blank}
+
+The candidate receiving the largest number of votes in a ballot shall be elected.
+
+[[gr23b]]
+[%inline-header]
+==== {blank}
+
+In the event that two or more candidates tie with the largest number of votes, a new ballot restricted to those candidates shall be held.
+
+[[gr24]]
+=== ARTICLE 24
+
+Individuals elected to the posts of Secretary-General and Directors by the Assembly shall serve a first term of office of six years.
+
+[[gr25]]
+=== ARTICLE 25
+
+Notwithstanding Article 17, if the post of the Secretary-General or of any Director falls vacant during the period between two ordinary sessions of the Assembly the following provisions shall apply.
+
+[[gr25a]]
+[%inline-header]
+==== {blank}
+
+If the post of Secretary-General falls vacant one year or less before the opening day of the next ordinary session of the Assembly the Council shall appoint one of the Directors as Acting Secretary-General until the 31 August following the next ordinary session of the Assembly.
+
+[[gr25b]]
+[%inline-header]
+==== {blank}
+
+If any post of Director falls vacant one year or less before the opening day of the next ordinary session of the Assembly, including where such a post falls vacant due to the operation of Article <<gr25a>> above, no replacement shall be appointed before the next ordinary session of the Assembly.
+
+[[gr25c]]
+[%inline-header]
+==== {blank}
+
+If the post of Secretary-General falls vacant more than one year before the opening day of the next ordinary session of the Assembly a new Secretary-General shall be elected by correspondence in accordance with the principles set forth in Articles <<gr17>> to <<gr23>>. In such a case the Chair of the Council, with the support of the Secretariat, shall conduct the election by postal ballot, immediately notify Member States of the result and invite the Secretary-General to take up his/her duties.
+
+[[gr25d]]
+[%inline-header]
+==== {blank}
+
+If any post of Director falls vacant more than one year before the opening day of the next ordinary session of the Assembly a new Director shall be elected by correspondence in accordance with the principles set forth in Articles <<gr17>> to <<gr23>>. In such a case the Secretary-General shall conduct the election by postal ballot, immediately notify Member States of the result and invite the Director to take up his/her duties.
+
+[[gr25e]]
+[%inline-header]
+==== {blank}
+
+The term of office of any Secretary-General or Director elected in accordance with Articles <<gr25c>> or <<gr25d>> above shall end at the same time as would have his/her predecessor's.
+
+[[gr26]]
+=== ARTICLE 26
+
+[[gr26a]]
+[%inline-header]
+==== {blank}
+
+Individuals having served a first term of office as Secretary-General or as a Director may, immediately upon expiry of that term of office but not otherwise, seek re-election to any of those posts, and if re-elected shall serve a second term of office as follows.
+
+[[gr26a-i]]
+[%inline-header]
+===== {blank}
+An individual having been elected by the Assembly and having served a full first term of office of six years shall upon re-election serve a term of office of three years.
+
+[[gr26a-ii]]
+[%inline-header]
+===== {blank}
+An individual having been elected in accordance with Articles <<gr25c>> or <<gr25d>> above shall upon re-election serve:
+
+[[gr26a-ii-A]]
+====== {blank}
+in the case of an individual having served a first term of office of three years or less, a term of office of six years; or
+
+[[gr26a-ii-B]]
+====== {blank}
+in the case of an individual having served a first term of office of more than three years, a term of office of three years.
+
+[[gr26b]]
+[%inline-header]
+==== {blank}
+
+In no circumstances shall any individual occupy the post of Secretary-General or Director or a combination of both for an aggregate term of more than nine years.
+
+[[annex1]]
+[appendix,obligation=normative]
+=== Annex
+
+RHCs referred to in Article <<gr8b>>.
+
+1. Baltic Sea Hydrographic Commission (BSHC);
+2. East Asia Hydrographic Commission (EAHC);
+3. Eastern Atlantic Hydrographic Commission (EAtHC);
+4. Mediterranean and Black Seas Hydrographic Commission (MBSHC);
+5. Meso-American and Caribbean Sea Hydrographic Commission (MACHC);
+6. Nordic Hydrographic Commission (NHC);
+7. North Indian Ocean Hydrographic Commission (NIOHC);
+8. North Sea Hydrographic Commission (NSHC);
+9. Regional Organization for the Protection of the Marine Environment (ROPME) Sea Area Hydrographic Commission (RSAHC);
+10. Southern Africa and Islands Hydrographic Commission (SAIHC);
+11. South East Pacific Regional Hydrographic Commission (SEPRHC);
+12. South West Pacific Hydrographic Commission (SWPHC);
+13. US/Canada Hydrographic Commission (USCHC);
+14. South West Atlantic Hydrographic Commission (SWAtHC); and
+15. Arctic Regional Hydrographic Commission (ARHC).
+
+== Financial Regulations of the International Hydrographic Organization
+
+[%unnumbered]
+|===
+4+h| Record of changes
+
+| Date | Reference | Effective date | Subject
+| / a| IHC-17 +
+Decision No. 4 | 8 November 2016 a| Initial version resulting from the Protocol of Amendments to the IHO Convention dated 14 April 2005
+| June 2017 a| A-1 +
+Decision No. 24 e | 28 April 2017 | Deletion of Article 13(&#x200c;c)
+| | | |
+|===
+
+*Basic provisions for financial administration*
+
+[[fr1]]
+=== ARTICLE 1
+
+The financial administration of the Organization shall be effected in accordance with the Convention.
+
+*Budget*
+
+[[fr2]]
+=== ARTICLE 2
+
+[[fr2a]]
+[%inline-header]
+==== {blank}
+
+The budget shall be drawn up on a three-year basis with the estimates for each year shown separately and expressed in Euros.
+
+[[fr2b]]
+[%inline-header]
+==== {blank}
+
+The financial year of the Organization shall coincide with the Gregorian calendar year.
+
+[[fr3]]
+=== ARTICLE 3
+
+Any misrepresentation of income and expenditure shall be prohibited in the presenting of the budget.
+
+[[fr4]]
+=== ARTICLE 4
+
+The annual contributions of Member States shall be payable in Euros into the Organization’s bank accounts. Such contributions shall be determined by the following rules:
+
+[[fr4a]]
+[%inline-header]
+==== {blank}
+each Member State shall contribute two shares;
+
+[[fr4b]]
+[%inline-header]
+==== {blank}
+those Member States which have a national flag tonnage of 100 000 tons or more shall contribute supplementary shares in accordance with the following scale:
+
+[%unnumbered]
+|===
+^| NATIONAL FLAG TONNAGE ^|SUPPLEMENTARY SHARES ^|NATIONAL FLAG TONNAGE ^|SUPPLEMENTARY SHARES
+^|100 000 - 249 999 ^| 1 ^| 7 770 000 - 9 024 999 ^| 14
+^| 250 000 - 454 999 ^| 2 ^| 9 025 000 - 10 399 999 ^| 15
+^| 455 000 - 719 999 ^| 3 ^| 10 400 000 - 11 899 999 ^| 16
+^| 720 000 - 1 049 999 ^| 4 ^| 11 900 000 - 13 529 999 ^| 17
+^| 1 050 000 - 1 449 999 ^| 5 ^| 13 530 000 - 15 294 999 ^| 18
+^| 1 450 000 - 1 924 999 ^| 6 ^| 15 295 000 - 17 199 999 ^| 19
+^| 1 925 000 - 2 479 999 ^| 7 ^| 17 200 000 - 19 249 999 ^| 20
+^| 2 480 000 - 3 119 999 ^| 8 ^| 19 250 000 - 21 449 999 ^| 21
+^| 3 120 000 - 3 849 999 ^| 9 ^| 21 450 000 - 23 804 999 ^| 22
+^| 3 850 000 - 4 674 999 ^| 10 ^| 23 805 000 - 26 319 999 ^| 23
+^| 4 675 000 - 5 599 999 ^| 11 ^| 26 320 000 - 28 999 999 ^| 24
+^| 5 600 000 - 6 629 999 ^| 12 ^| 29 000 000 and above ^| 25 (max.)
+^| 6 630 000 - 7 769 999 ^| 13 | |
+|===
+
+and
+
+[[fr4c]]
+[%inline-header]
+==== {blank}
+the maximum annual value of a share, in Euros, shall be shown in the three-year budget approved by the Assembly.
+
+[[fr5]]
+=== ARTICLE 5
+
+In application of the Convention and the General and Financial Regulations, the tonnage figures of the Member States shall be obtained by adding six sevenths of the displacement tonnage of warships exceeding 100 tons to the gross tonnage of all other vessels under their flag exceeding 100 gross tons.
+
+[[fr6]]
+=== ARTICLE 6
+
+[[fr6a]]
+[%inline-header]
+==== {blank}
+
+Seven months before the opening day of each ordinary session of the Assembly, the Secretary-General shall ask Member States to supply their tonnage figures as of 1 July of the year preceding that of the session. Two months before the opening day of the session, the Secretary-General shall notify to Member States a table of current national flag tonnages.
+
+[[fr6b]]
+[%inline-header]
+==== {blank}
+
+The table of current national flag tonnages and that of shares and votes shall be submitted to the Assembly for approval, and shall take effect on 1 January of the year following that of the ordinary session of the Assembly. Except as provided for in sub-paragraph <<fr6c>> below, these tables shall remain in effect until 31 December of the year of the subsequent ordinary session of the Assembly.
+
+[[fr6c]]
+[%inline-header]
+==== {blank}
+
+When a State desires to accede to the Convention, it shall declare its national flag tonnage and the Secretary-General shall enter it in the table of current national flag tonnages as soon as accession becomes effective.
+
+[[fr7]]
+=== ARTICLE 7
+
+In consideration of the fact that the Government of His Serene Highness the  Prince of Monaco provides the Organization with premises free of charge, it shall not pay any contribution but shall have the right to vote.
+
+[[fr8]]
+=== ARTICLE 8
+
+[[fr8a]]
+[%inline-header]
+==== {blank}
+
+Before each ordinary session of the Assembly the Secretary-General shall prepare the financial statements and the estimated 3-year budget and submit them at least two months in advance of their meetings to the Finance Committee and the Council, which will take action in accordance with Articles <<aVIIc>> and <<aVIg-vi>> of the Convention.
+
+[[fr8b]]
+[%inline-header]
+==== {blank}
+
+Between ordinary sessions of the Assembly, the Secretary-General shall submit to the Council, and to the Members of the Finance Committee by correspondence for their information, the budget estimates for the following financial year, based on the 3-year budget approved by the Assembly.
+
+[[fr9]]
+=== ARTICLE 9
+
+The Secretary-General shall carry the budget into effect and shall ensure that expenditure and commitments conform with the budgetary provisions.
+
+[[fr10]]
+=== ARTICLE 10
+
+[[fr10a]]
+[%inline-header]
+==== {blank}
+
+Allocations may be transferred between different categories of expenditure specified in the budget, referred to as Chapters, but must not result in the creation of new Chapters.
+
+[[fr10b]]
+[%inline-header]
+==== {blank}
+
+The Secretary-General may make transfers of allocations provided that such transfers do not exceed ten per cent of the total of any one of the Chapters concerned. Such transfers shall be reported, with the necessary justification, to the Council and the Finance Committee.
+
+[[fr10c]]
+[%inline-header]
+==== {blank}
+
+Transfers in excess of the said ten per cent shall require prior authorization by the Council.
+
+[[fr11]]
+=== ARTICLE 11
+
+After the close of the financial year corresponding to a budget, no further financial obligations under it may be incurred. Outstanding obligations must be met within three months of the close of the financial year.
+
+*Treasury – Operating Cash Reserve*
+
+[[fr12]]
+=== ARTICLE 12
+
+All funds of the Organization shall be under the control of the Secretary-General.
+
+[[fr13]]
+=== ARTICLE 13
+
+[[fr13a]]
+[%inline-header]
+==== {blank}
+
+Member States’ annual contributions to the budget, as specified in Article <<fr4>>, shall be due on 1 January of the corresponding financial year. Payment must be punctual.
+
+[[fr13b]]
+[%inline-header]
+==== {blank}
+
+Notice of the date of dispatch of the contribution must be promptly given to the Secretary-General.
+
+[[fr14]]
+=== ARTICLE 14
+
+A State acceding to the Convention shall pay its full contribution for that year only if its accession takes effect before 1 July. If its accession takes effect on or after that date it shall pay one half of that contribution.
+
+[[fr15]]
+=== ARTICLE 15
+
+Outstanding contributions and accrued interest shall be shown in tables annexed to the financial statements.
+
+[[fr16]]
+=== ARTICLE 16
+
+The procedure for suspension of the voting rights and benefits of a Member State pursuant to the provisions of Article XV of the Convention shall be as follows.
+
+[[fr16a]]
+[%inline-header]
+==== {blank}
+
+If a Member State is in arrears in its contributions for two years, having been advised of its outstanding arrears, and fails to make payment in full or fails to agree to a schedule of payments, the Member State shall be suspended with effect from the next 1st of January.
+
+[[fr16b]]
+[%inline-header]
+==== {blank}
+
+Any Member State thus deprived of its rights and benefits shall remain obligated to the Organization for the entire amount in arrears plus accrued interest outstanding at the time of suspension, in accordance with Article <<fr13>>.
+
+[[fr16c]]
+[%inline-header]
+==== {blank}
+
+The Secretary-General shall make appropriate arrangements with the Member State concerned for the recovery of arrears.
+
+[[fr17]]
+=== ARTICLE 17
+
+To ensure the financial stability of the Organization and to avoid any treasury difficulties, the Secretary-General shall have at its disposal an operating cash reserve the amount of which shall correspond, at 31 December each year, to not less than three-twelfths of the total annual operating budget of the Organization.
+
+*Emergency Reserve Fund*
+
+[[fr18]]
+=== ARTICLE 18
+
+The Organization shall have an emergency reserve fund, the amount of which shall be not less than one-twelfth of the total annual operating budget of the Organization. It shall be used by the Secretary-General in exceptional circumstances only.
+
+*Auditor*
+
+[[fr19]]
+=== ARTICLE 19
+
+[[fr19a]]
+[%inline-header]
+==== {blank}
+
+An external auditor shall be appointed by the Assembly; his/her term of appointment shall be for a period of three years, subject to Article <<fr19b>> below.
+
+[[fr19b]]
+[%inline-header]
+==== {blank}
+
+During periods between ordinary sessions of the Assembly the Council shall have the power to discharge the external auditor and appoint a replacement.
+
+[[fr19c]]
+[%inline-header]
+==== {blank}
+
+The external auditor shall check the cash in banks or on hand and the available or negotiable assets. He/she shall ensure that the accounts are drawn up according to the accounting rules observed by the profession and with the directives given by the Assembly. Such auditing may be carried out at any time.
+
+[[fr19d]]
+[%inline-header]
+==== {blank}
+
+The external auditor shall report annually on the accounts submitted by the Secretary-General. A copy of the external auditor's annual report shall be attached to the annual financial statements forwarded by the Secretary-General to the Council and Finance Committee.
+
+*Dissolution*
+
+[[fr20]]
+=== ARTICLE 20
+
+In the event of dissolution, the balance of the accounts of the Organization shall be divided amongst the Member States which are still Parties to the Convention on the day when the latter ceases to have effect. Any credit balance shall be divided amongst these Member States in proportion to the total number of their shares paid since 1921. Any debit balance shall be divided amongst these Member States in proportion to their last annual contribution.
+
+== RULES OF PROCEDURE OF THE IHO ASSEMBLY
+
+[%unnumbered]
+|===
+4+h| Record of changes
+| Date | Reference | Effective date | Subject
+| / a| IHC-17 +
+Decision No. 5 | 8 November 2016 a| Initial version resulting from the Protocol of Amendments to the IHO Convention dated 14 April 2005
+| | | |
+|===
+
+[[ropia1]]
+=== RULE 1
+
+*Membership*
+
+For the purposes of these Rules, "Member" means a Member State not denied voting rights and benefits in accordance with the Convention.
+
+*Sessions*
+
+[[ropia2]]
+=== RULE 2
+
+The Assembly shall meet in ordinary session every three years at the seat of the Organization in Monaco on a date fixed at the close of the previous session. The duration of the session, which shall not normally exceed one week, shall be fixed at the close of the previous session.
+
+[[ropia3]]
+=== RULE 3
+
+An extraordinary session of the Assembly may be held at the request of a Member, the Council or the Secretary-General, subject to approval by a majority of Members. Unless the Assembly has specifically decided otherwise, these Rules of Procedure shall also apply to extraordinary sessions.
+
+[[ropia4]]
+=== RULE 4
+
+Ordinary sessions of the Assembly shall be convened by the Secretary-General on at least six months' notice. A provisional agenda shall be submitted with the notice.
+
+*Invitation to Observers*
+
+[[ropia5]]
+=== RULE 5
+
+Observers invited in accordance with Article <<gr4>> of the General Regulations may, upon invitation by the Chair and with the consent of the Assembly, participate, without voting rights, in the deliberations of the Assembly in matters of direct concern to them. Observers shall receive copies of all documents issued during sessions of the Assembly.
+
+*Delegations*
+
+[[ropia6]]
+=== RULE 6
+
+Each Member may be represented at sessions of the Assembly by one or more representatives, one of whom should preferably be the head of the national hydrographic office. The Secretary-General shall ask Members, four months before the opening day of each ordinary session of the Assembly, to provide the details of the heads of delegations and names of alternative delegates.
+
+[[ropia7]]
+=== RULE 7
+
+Members' delegations shall be seated in the French alphabetical order, starting with the letter drawn by lot at the close of the previous session of the Assembly. At the end of the session of the Assembly a letter shall be drawn to establish the seating order at the next session.
+
+*Participants*
+
+[[ropia8]]
+=== RULE 8
+
+Any participant to whose admission a Member may have made objection shall participate provisionally with the same rights as other participants until the Assembly has given its decision.
+
+*Agenda*
+
+[[ropia9]]
+=== RULE 9
+
+The provisional agenda of each session of the Assembly shall be prepared by the Secretary-General. Members shall submit proposals that they wish to be discussed at the Assembly, at least four months before the opening day of the session. A revised provisional agenda, together with supporting documents, shall normally be submitted by the Secretary-General to Members at least two months prior to the opening day of the session. The first item on the provisional agenda for each session shall be the adoption of the agenda.
+
+[[ropia10]]
+=== RULE 10
+
+The provisional agenda of each ordinary session of the Assembly shall include:
+
+[[ropia10a]]
+[%inline-header]
+==== {blank}
+adoption of the Agenda;
+
+[[ropia10b]]
+[%inline-header]
+==== {blank}
+any item, the inclusion of which has been requested by the Assembly at a previous session;
+
+[[ropia10c]]
+[%inline-header]
+==== {blank}
+a report by the Council on the work of the Organization since the preceding ordinary session of the Assembly and all items the inclusion of which has been requested by the Council;
+
+[[ropia10d]]
+[%inline-header]
+==== {blank}
+the three-year budget, as well as matters pertaining to the accounts and financial arrangements of the Organization;
+
+[[ropia10e]]
+[%inline-header]
+==== {blank}
+the revised table of tonnages, shares, contributions and votes;
+
+[[ropia10f]]
+[%inline-header]
+==== {blank}
+the election of the Secretary-General and the Directors as required;
+
+[[ropia10g]]
+[%inline-header]
+==== {blank}
+any item proposed by a Member or by the Secretary-General; and
+
+[[ropia10h]]
+[%inline-header]
+==== {blank}
+in accordance with Article <<gr16e>> of the General Regulations the review and endorsement of the process to select Members of the Council.
+
+[[ropia11]]
+=== RULE 11
+
+In exceptional circumstances, the Secretary-General may include any question suitable for the agenda which may arise between the submission of the revised provisional agenda and the opening day of the session, in a supplementary provisional agenda, informing Members as soon as possible.
+
+[[ropia12]]
+=== RULE 12
+
+The provisional agenda of an extraordinary session shall consist of items proposed by the Members, the Council or the Secretary-General.
+
+[[ropia13]]
+=== RULE 13
+
+Any item of the agenda of any session of the Assembly, consideration of which has not been completed at that session, shall be included in the agenda of the next ordinary session unless otherwise decided by the Assembly.
+
+*Chair and Vice-Chair*
+
+[[ropia14]]
+=== RULE 14
+
+[[ropia14a]]
+[%inline-header]
+==== {blank}
+
+Not less than six months before the opening day of each ordinary session of the Assembly, the Secretary-General shall invite Members to submit candidates for election as Chair of the Assembly; Members should have previously established that the candidates are willing to have their names considered. Candidates from Members that nominate candidates for election as Secretary-General or Directors are ineligible.
+
+[[ropia14b]]
+[%inline-header]
+==== {blank}
+
+Not less than three months before the opening day of the ordinary session of the Assembly, the Secretary-General shall circulate a list of nominated candidates and, if necessary, request Members to vote by correspondence.
+
+[[ropia14c]]
+[%inline-header]
+==== {blank}
+
+A vote conducted by correspondence shall be decided by a simple majority of Members voting, with a minimum number of responses being at least one third of all Member States.
+
+[[ropia14d]]
+[%inline-header]
+==== {blank}
+
+If a vote conducted by correspondence produces the result that two or more candidates tie with the largest number of votes, the Secretary-General shall conduct another vote restricted to those candidates.
+
+[[ropia14e]]
+[%inline-header]
+==== {blank}
+
+Before the opening day of the ordinary session of the Assembly, the heads of delegation of Members shall agree on the nomination of the Vice-Chair of the Assembly from amongst the representatives attending the session.
+
+[[ropia14f]]
+[%inline-header]
+==== {blank}
+
+The Assembly shall, at the beginning of the session:
+
+[[ropia14f-i]]
+[%inline-header]
+===== {blank}
+confirm the election of the Chair, or, if any vote by correspondence has been inconclusive, decide on the issue, by voting if necessary; and
+
+[[ropia14f-ii]]
+[%inline-header]
+===== {blank}
+elect the Vice-Chair.
+
+[[ropia15]]
+=== RULE 15
+
+At the opening of each session of the Assembly, the Secretary-General shall preside until the Assembly has confirmed the election of the Chair.
+
+[[ropia16]]
+=== RULE 16
+
+If the Chair is absent from a session, or any part thereof, or, for any reason, is unable to carry out his/her duties, the Vice-Chair shall act as Chair with the same powers and duties.
+
+[[ropia17]]
+=== RULE 17
+
+In addition to exercising the powers conferred upon him/her elsewhere by these Rules of Procedure, the Chair shall declare the opening and closing of each meeting, direct the discussions, ensure observance of these Rules, accord the right to speak, put questions to the vote and announce decisions resulting from the voting. He/She shall rule on points of order and, subject to these Rules, shall have complete control of the proceedings. The Chair may, in the course of discussion of an item, propose to the Assembly the limitation of the time to be allowed to speakers, the limitation of the number of times each representative may speak, the closure of the list of speakers, or the closure of the debate. He/She may also propose the suspension or the adjournment of the proceedings or the adjournment of the debate on the item under discussion.
+
+*Subsidiary Organs*
+
+[[ropia18]]
+=== RULE 18
+
+The Assembly may establish such subsidiary organs as it deems necessary, in accordance with the Convention and Article <<gr6>> of the General Regulations.
+
+*Secretary-General*
+
+[[ropia19]]
+=== RULE 19
+
+The Secretary-General shall act as Secretary of the sessions of the Assembly and shall be responsible for making the necessary arrangements. The Secretary-General, or a member of the Secretariat designated by him/her for the purpose, may make either oral or written statements concerning any question under consideration.
+
+[[ropia20]]
+=== RULE 20
+
+The Secretary-General shall prepare summary records of all meetings. These summary records shall be distributed to the participants as soon as possible after the closing of the meetings to which they relate. The participants shall inform the Secretary-General in writing of any corrections to their own statements that they wish to have made; such corrections should be made within one working day.
+
+[[ropia21]]
+=== RULE 21
+
+It shall be the duty of the Secretary-General to receive, translate and circulate to Members and observers all reports, resolutions, recommendations and other documents of the Assembly
+
+*Languages*
+
+[[ropia22]]
+=== RULE 22
+
+The working languages of the Assembly shall be English, French, Spanish and Russian for purposes of simultaneous interpretation of the proceedings. Speeches at the Assembly shall be made in one of these working languages and will be interpreted into the other three languages.
+
+[[ropia23]]
+=== RULE 23
+
+All documents issued by or in connection with the Assembly shall be issued in the official languages of the Organization, English and French.
+
+*Conduct of business*
+
+[[ropia24]]
+=== RULE 24
+
+A majority of the Members shall constitute a quorum for meetings of the Assembly.
+
+[[ropia25]]
+=== RULE 25
+
+No representative may address the Assembly without having previously obtained the permission of the Chair. The Chair shall call upon speakers in the order in which they signify their desire to speak. The Chair may call a speaker to order if his/her remarks are not relevant to the subject under discussion.
+
+[[ropia26]]
+=== RULE 26
+
+During the discussion of any matter, a representative may raise a point of order, and the point of order shall be immediately decided by the Chair in accordance with these Rules of Procedure. A representative may appeal against the ruling of the Chair. The appeal shall be put to the vote immediately and the Chair’s ruling shall stand unless overruled by a majority of the Members present and voting. A representative raising a point of order may not speak on the substance of the matter under discussion.
+
+[[ropia27]]
+=== RULE 27
+
+The Assembly may, on the proposal of the Chair, limit the time to be allowed to each speaker on any particular subject under discussion.
+
+[[ropia28]]
+=== RULE 28
+
+Subject to the provisions of Rule <<ropia26>>, the following motions shall have precedence, in the order indicated below, over all other proposals or motions before the session:
+
+[[ropia28a]]
+[%inline-header]
+==== {blank}
+to suspend a meeting;
+
+[[ropia28b]]
+[%inline-header]
+==== {blank}
+to adjourn a meeting;
+
+[[ropia28c]]
+[%inline-header]
+==== {blank}
+to adjourn the debate on the question under discussion; and
+
+[[ropia28d]]
+[%inline-header]
+==== {blank}
+for the closure of the debate on the question under discussion.
+
+Permission to speak on a motion falling within <<ropia28a>> to <<ropia28d>> above shall be granted only to the proposer and, in addition, to one speaker in favour of and two against the motion, after which it shall be put immediately to the vote.
+
+[[ropia29]]
+=== RULE 29
+
+If two or more proposals relate to the same subject, the Assembly, unless it decides otherwise, shall vote on the proposals in the order in which they have been submitted.
+
+[[ropia30]]
+=== RULE 30
+
+Parts, either of a proposal or of an amendment thereto, shall be voted on separately, if the Chair so decides, or if any representative requests that the proposal be divided. The resulting proposal, which shall comprise those of its parts that have been separately adopted, shall then be put to a final vote. If all the separate parts of a proposal or amendment have been rejected, the proposal or amendment shall be considered to be rejected as a whole.
+
+[[ropia31]]
+=== RULE 31
+
+A motion to amend a proposal is a motion which merely adds to, deletes from, or revises part of that proposal. An amendment shall be voted on before the proposal to which it relates is put to the vote and if the amendment is adopted the amended proposal shall then be voted on. Once a motion or proposal has been put to the vote and either adopted or rejected, no further motions or amendments to that motion or proposal shall be discussed. This does not preclude the introduction of a new proposal on the same subject, provided that the introduction is signed by the proposing Member and two other Members, who, without necessarily approving the proposal, support its discussion by the Assembly. Such proposals must be submitted to the Chair of the Assembly and may not be discussed less than twenty-four hours after being officially announced.
+
+[[ropia32]]
+=== RULE 32
+
+If two or more amendments are moved to a proposal, the Assembly shall first vote on the amendment deemed by the Chair to be furthest removed in substance from the original proposal, and then on the amendment next furthest removed therefrom, and so on, until all amendments have been put to the vote.
+
+[[ropia33]]
+=== RULE 33
+
+A motion may be withdrawn by its proposer at any time before voting on it has begun, provided either that the motion has not been amended or that an amendment to it is not under discussion.
+
+*Voting*
+
+[[ropia34]]
+=== RULE 34
+
+Decisions of the Assembly shall be made in accordance with Article <<aIX>> of the Convention.
+
+[[ropia35]]
+=== RULE 35
+
+No Member may vote on behalf of another.
+
+[[ropia36]]
+=== RULE 36
+
+The Assembly shall normally vote by show of hands. However, any Member may request a roll-call vote, which shall be taken in the French alphabetical order of the names of the Members, beginning with the Member whose name is drawn by lot by the Chair. The vote of each Member in any roll-call shall be inserted in the summary record.
+
+*Elections*
+
+[[ropia37]]
+=== RULE 37
+
+The election of the Secretary-General and Directors shall be held by secret ballot in accordance with Articles <<gr22>> and <<gr23>> of the General Regulations.
+
+[[ropia38]]
+=== RULE 38
+
+The Chair shall appoint five scrutineers from the Members present who shall proceed to validate the votes cast. All invalid votes cast shall be reported to the Assembly.
+
+*Amendment of Rules of Procedure*
+
+[[ropia39]]
+=== RULE 39
+
+These Rules of Procedure may be amended by decision of a simple majority of the Members present and voting, in accordance with <<aIXc>> of the Convention.
+
+Overriding authority of the Convention and the Regulations
+
+[[ropia40]]
+=== RULE 40
+
+In the event of conflict between any provision of these Rules and any provision of the Convention or the General or Financial Regulations, the Convention or the General or Financial Regulations shall prevail.
+
+== RULES OF PROCEDURE OF THE IHO COUNCIL
+
+[%unnumbered]
+|===
+4+h| Record of changes
+
+| Date | Reference | Effective date | Subject
+| / a| IHC-17 +
+Decision No. 6 | 8 November 2016 a| Initial version resulting from the Protocol of Amendments to the IHO Convention dated 14 April 2005
+| | | |
+|===
+
+*Membership*
+
+[[ropic1]]
+=== RULE 1
+
+For the purpose of these Rules of Procedure, "Member" means a Member State holding a seat on the Council.
+
+*Meetings*
+
+[[ropic2]]
+=== RULE 2
+
+The Council shall meet at least once a year at the seat of the Organization unless convened elsewhere, in accordance with a decision of the Council, at a date fixed at the close of the previous meeting. The duration of the meeting, which shall not normally exceed three working days, shall be fixed at the close of the previous meeting.
+
+[[ropic3]]
+=== RULE 3
+
+The Council meetings shall be convened by the Secretary-General on at least four months’ notice. A provisional agenda shall be submitted with the notice.
+
+*Invitation to Observers*
+
+[[ropic4]]
+=== RULE 4
+
+Observers invited in accordance with Article <<gr4>> of the General Regulations may, upon invitation by the Chair and with the consent of the Council, participate in the deliberations of the Council in matters of direct concern to them, without voting rights. Observers shall receive copies of all documents issued during meetings of the Council.
+
+*Delegations*
+
+[[ropic5]]
+=== RULE 5
+
+Each Member may be represented at the meetings of the Council by one or more representatives, one of whom should preferably be the head of the hydrographic office. Member States not being Members may participate at the meetings of the Council.
+
+[[ropic6]]
+=== RULE 6
+
+Three months before the opening day of each meeting of the Council, the Secretary General shall ask the Member States to provide the names of their representatives.
+
+*Agenda*
+
+[[ropic7]]
+=== RULE 7
+
+The provisional agenda of each meeting of the Council shall be prepared and submitted to Member States by the Secretary-General. Member States shall submit proposals that they wish to be discussed by the Council, at least three months before the opening day of the meeting. A revised provisional agenda, together with supporting documents, shall normally be submitted by the Secretary-General to Member States at least two months prior to the opening day of the meeting. The first item on the provisional agenda for each meeting shall be the adoption of the agenda.
+
+[[ropic8]]
+=== RULE 8
+
+The provisional agenda of meetings of the Council shall include:
+
+[[ropic8a]]
+[%inline-header]
+==== {blank}
+adoption of the Agenda;
+
+[[ropic8b]]
+[%inline-header]
+==== {blank}
+election of the Chair and Vice-Chair, when necessary in accordance with Rule 12 of these Rules of Procedure;
+
+[[ropic8c]]
+[%inline-header]
+==== {blank}
+any item the inclusion of which has been requested by the Assembly;
+
+[[ropic8d]]
+[%inline-header]
+==== {blank}
+any item the inclusion of which has been requested by the Council at a previous meeting;
+
+[[ropic8e]]
+[%inline-header]
+==== {blank}
+any item the inclusion of which has been requested by a subsidiary organ;
+
+[[ropic8f]]
+[%inline-header]
+==== {blank}
+where required by Article 8 of the Financial Regulations, the three-year budget of the Organization;
+
+[[ropic8g]]
+[%inline-header]
+==== {blank}
+the annual financial statements;
+
+[[ropic8h]]
+[%inline-header]
+==== {blank}
+the annual work programme of the Organization; and
+
+[[ropic8i]]
+[%inline-header]
+==== {blank}
+any item proposed by a Member State or by the Secretary-General.
+
+[[ropic9]]
+=== RULE 9
+
+In exceptional circumstances the Secretary-General may include any item suitable for the agenda which may arise between the submission of the provisional agenda and the opening of the meeting, in a supplementary provisional agenda, informing Member States as soon as possible.
+
+[[ropic10]]
+=== RULE 10
+
+Any item of the agenda of any meeting of the Council, consideration of which has not been completed at that meeting, shall be included in the agenda of the next meeting unless otherwise decided by the Council.
+
+*Chair and Vice-Chair*
+
+[[ropic11]]
+=== RULE 11
+
+The Chair and Vice-Chair shall be elected by the Members for a period of three years.
+
+[[ropic12]]
+=== RULE 12
+
+[[ropic12a]]
+[%inline-header]
+==== {blank}
+Members shall elect the Chair and Vice-Chair during their first meeting after each ordinary session of the Assembly.
+
+[[ropic12b]]
+[%inline-header]
+==== {blank}
+The Secretary-General shall chair the opening of that first meeting until election of the Chair.
+
+[[ropic12c]]
+[%inline-header]
+==== {blank}
+At meetings where the Chair and Vice-Chair are to be elected those elections shall respectively be the second and third items on the agenda.
+
+[[ropic13]]
+=== RULE 13
+
+If the Chair is unable to carry out his/her duties, the Vice-Chair shall act as Chair with the same powers and duties.
+
+[[ropic14]]
+=== RULE 14
+
+In addition to exercising the powers conferred upon him/her elsewhere by these Rules of Procedure, the Chair shall declare the opening and closing of each meeting, direct the discussions, ensure observance of these Rules, accord the right to speak, put questions to the vote and announce decisions resulting from the voting. He/She shall rule on points of order and, subject to these Rules, shall have complete control of the proceedings. The Chair may, in the course of discussion of an item, propose to the Council the limitation of the time to be allowed to speakers, the limitation of the number of times each representative may speak, the closure of the list of speakers, or the closure of the debate. He/She may also propose the suspension or the adjournment of the proceedings or the adjournment of the debate on the item under discussion.
+
+*Secretary-General*
+
+[[ropic15]]
+=== RULE 15
+
+The Secretary-General shall act as Secretary at the meetings of the Council and shall be responsible for making the necessary arrangements. The Secretary-General, or a member of the Secretariat designated by him/her for the purpose, may make either oral or written statements concerning any question under consideration.
+
+[[ropic16]]
+=== RULE 16
+
+The Secretary-General shall prepare summary records of all meetings. These summary records shall be distributed to the participants as soon as possible after the closing of the meetings to which they relate. The participants shall inform the Secretary-General in writing of any corrections to their own statements that they wish to have made. Such corrections should be made within one working day.
+
+[[ropic17]]
+=== RULE 17
+
+The Secretary-General shall circulate to Member States all reports, decisions, recommendations and other documents of the Council. The report of each meeting of the Council, including any annexes to be submitted to the Assembly, shall be in the official languages of the Organization.
+
+*Conduct of business*
+
+[[ropic18]]
+=== RULE 18
+
+Two-thirds of the Members shall constitute a quorum for meetings of the Council.
+
+[[ropic19]]
+=== RULE 19
+
+No representative may address the Council without having previously obtained the permission of the Chair. The Chair shall call upon speakers in the order in which they signify their desire to speak. The Chair may call a speaker to order if his/her remarks are not relevant to the subject under discussion.
+
+[[ropic20]]
+=== RULE 20
+
+During the discussion of any matter, a representative may raise a point of order, and the point of order shall be immediately decided by the Chair in accordance with these Rules of Procedure. A representative may appeal against the ruling of the Chair. The appeal shall be put to the vote immediately and the Chair’s ruling shall stand unless overruled by a majority of the Members present and voting. A representative raising a point of order may not speak on the substance of the matter under discussion.
+
+[[ropic21]]
+=== RULE 21
+
+Subject to the provisions of Rule 20, the following motions shall have precedence, in the order indicated below, over all other proposals or motions before the meeting:
+
+[[ropic21a]]
+[%inline-header]
+==== {blank}
+to suspend a meeting;
+
+[[ropic21b]]
+[%inline-header]
+==== {blank}
+to adjourn a meeting;
+
+[[ropic21c]]
+[%inline-header]
+==== {blank}
+to adjourn the debate on the question under discussion; and
+
+[[ropic21d]]
+[%inline-header]
+==== {blank}
+for the closure of the debate on the question under discussion.
+
+Permission to speak on a motion falling within <<ropic21a>> to <<ropic21d>> above shall be granted only to the proposer and, in addition, to one speaker in favour of and two against the motion, after which it shall be put immediately to the vote.
+
+[[ropic22]]
+=== RULE 22
+
+If two or more proposals relate to the same subject, the Council, unless it decides otherwise, shall vote on the proposals in the order in which they have been submitted.
+
+[[ropic23]]
+=== RULE 23
+
+Parts, either of a proposal or of an amendment thereto, shall be voted on separately, if the Chair so decides, or if any representative requests that the proposal be divided. The resulting proposal, which shall comprise those of its parts that have been separately adopted, shall then be put to a final vote. If all the separate parts of a proposal or amendment have been rejected, the proposal or amendment shall be considered to be rejected as a whole.
+
+[[ropic24]]
+=== RULE 24
+
+A motion to amend a proposal is a motion which merely adds to, deletes from, or revises part of that proposal. An amendment shall be voted on before the proposal to which it relates is put to the vote and if the amendment is adopted the amended proposal shall then be voted on. Once a motion or proposal has been put to the vote and either adopted or rejected, no further motions or amendments to that motion or proposal shall be discussed.
+
+[[ropic25]]
+=== RULE 25
+
+If two or more amendments are moved to a proposal, the Council shall first vote on the amendment deemed by the Chair to be furthest removed in substance from the original proposal, and then on the amendment next furthest removed therefrom, and so on, until all amendments have been put to the vote.
+
+[[ropic26]]
+=== RULE 26
+
+A motion may be withdrawn by its proposer at any time before voting on it has begun, provided either that the motion has not been amended or that an amendment to it is not under discussion.
+
+*Voting*
+
+[[ropic27]]
+=== RULE 27
+
+Decisions of the Council shall be made in accordance with Article <<aIX>> of the Convention.
+
+[[ropic28]]
+=== RULE 28
+
+No Member may vote on behalf of another.
+
+*Amendment of Rules of Procedure*
+
+[[ropic29]]
+=== RULE 29
+
+The Council may propose to the Assembly amendments to these Rules of Procedure.
+
+*Overriding authority of the Convention and the Regulations*
+
+[[ropic30]]
+=== RULE 30
+
+In the event of conflict between any provision of these Rules and any provision of the Convention or the General or Financial Regulations, the Convention or the General or Financial Regulations shall prevail.
+
+== RULES OF PROCEDURE OF THE IHO FINANCE COMMITTEE
+
+[%unnumbered]
+|===
+4+h| Record of changes
+
+| Date | Reference | Effective date | Subject
+| / a| IHC-17 +
+Decision No. 7 | 8 November 2016 a| Initial version resulting from the Protocol of Amendments to the IHO Convention dated 14 April 2005
+| June 2017 a| A-1 +
+Decision No. 24 i | 28 April 2017 | Amendment to Rule 9
+| | | |
+|===
+
+*Participation*
+
+[[ropifc1]]
+=== RULE 1
+
+Any Member States not denied voting rights and benefits may participate in the work of the Finance Committee.
+
+*Meetings*
+
+[[ropifc2]]
+=== RULE 2
+
+The Finance Committee shall hold regular meetings during ordinary sessions of the Assembly. It may meet at other times at the request of the Chair or of three Member States or of the Secretary-General. The dates of meetings of the Finance Committee shall be fixed by the Chair in consultation with the Secretary-General.
+
+[[ropifc3]]
+=== RULE 3
+
+The Finance Committee shall be convened in regular meetings by the Secretary-General on at least six months’ notice. A provisional agenda shall be submitted with the notice.
+
+*Invitation to Observers*
+
+[[ropifc4]]
+=== RULE 4
+
+Observers invited in accordance with Article <<gr4>> of the General Regulations may, upon invitation by the Chair and with the consent of the Finance Committee, participate without voting rights in the deliberations of the Finance Committee in matters of direct concern to them. Observers shall receive copies of all documents issued during the meeting of the Finance Committee.
+
+*Delegations*
+
+[[ropifc5]]
+=== RULE 5
+
+Each Member State may be represented at the meetings of the Finance Committee by one or more representatives, one of whom should preferably be the head of the national hydrographic office. The Secretary-General shall ask Member States, four months before the Finance Committee meeting, to provide the details of the heads of delegations and names of alternative delegates.
+
+*Agenda*
+
+[[ropifc6]]
+=== RULE 6
+
+The provisional agenda of each meeting of the Finance Committee shall be prepared and submitted to Member States by the Secretary-General. Member States shall submit proposals that they wish to be discussed by the Finance Committee, at least three months before the opening day of the meeting. A revised provisional agenda, together with supporting documents, shall normally be submitted by the Secretary-General to Member States at least two months prior to the opening day of the meeting. The first item on the provisional agenda for each meeting shall be the adoption of the agenda.
+
+[[ropifc7]]
+=== RULE 7
+
+The provisional agenda of each meeting of the Finance Committee held concurrently with ordinary sessions of the Assembly shall include:
+
+[[ropifc7a]]
+[%inline-header]
+==== {blank}
+adoption of the Agenda;
+
+[[ropifc7b]]
+[%inline-header]
+==== {blank}
+election of the Chair and Vice-Chair, when necessary in accordance with Rule <<ropifc9>> of these Rules of Procedure;
+
+[[ropifc7c]]
+[%inline-header]
+==== {blank}
+any item the inclusion of which has been requested by the Finance Committee;
+
+[[ropifc7d]]
+[%inline-header]
+==== {blank}
+any item the inclusion of which has been requested by the Assembly, the Council, any Member State or the Secretary-General;
+
+[[ropifc7e]]
+[%inline-header]
+==== {blank}
+the financial statements, budget estimates and reports on administrative matters; and
+
+[[ropifc7f]]
+[%inline-header]
+==== {blank}
+the three-year budget of the Organization.
+
+[[ropifc8]]
+=== RULE 8
+
+In exceptional circumstances the Secretary-General may include any question suitable for the agenda which may arise between the submission of the provisional agenda and the opening of the meeting, in a supplementary provisional agenda informing Member States as soon as possible.
+
+*Chair and Vice-Chair*
+
+[[ropifc9]]
+=== RULE 9
+
+The Chair and Vice-Chair shall be elected at regular meetings of the Finance Committee. Member States represented at such meetings may participate in such elections. The Chair and Vice-Chair shall be elected for a period of three years and hold office until the end of the next ordinary session of the Assembly.
+
+[[ropifc10]]
+=== RULE 10
+
+If the Chair is unable to carry out his/her duties, the Vice-Chair shall act as Chair, with the same powers and duties.
+
+[[ropifc11]]
+=== RULE 11
+
+In addition to exercising the powers conferred upon him/her elsewhere by these Rules of Procedure, the Chair shall declare the opening and closing of each meeting, direct the discussions, ensure observance of these Rules, accord the right to speak, put questions to the vote and announce decisions resulting from the voting. He/She shall rule on points of order and, subject to these Rules, shall have complete control of the proceedings. The Chair may, in the course of discussion of an item, propose to the Finance Committee the limitation of the time to be allowed to speakers, the limitation of the number of times each representative may speak, the closure of the list of speakers, or the closure of the debate. He/She may also propose the suspension or adjournment of the proceedings or the adjournment of the debate on the item under discussion.
+
+*Secretary-General*
+
+[[ropifc12]]
+=== RULE 12
+
+The Secretary-General shall act as Secretary of the meetings of the Finance Committee and shall be responsible for making the necessary arrangements. The Secretary-General, or a member of the Secretariat designated by him/her for the purpose, may make either oral or written statements concerning any question under consideration.
+
+[[ropifc13]]
+=== RULE 13
+
+The Secretary-General shall prepare summary records, of all meetings. These summary records shall be distributed to the participants as soon as possible after the closing of the meetings to which they relate. The participants shall inform the Secretary-General in writing of any corrections to their own statements that they wish to have made. Such corrections should be made within one working day.
+
+[[ropifc14]]
+=== RULE 14
+
+The Secretary-General shall circulate to Member States all reports, recommendations and other documents of the Finance Committee. The report of each regular meeting of the Finance Committee, including any annexes to be submitted to the Assembly, shall be in the official languages of the Organization.
+
+*Conduct of business*
+
+[[ropifc15]]
+=== RULE 15
+
+No representative may address the Finance Committee without having previously obtained the permission of the Chair. The Chair shall call upon speakers in the order in which they signify their desire to speak. The Chair may call a speaker to order if his/her remarks are not relevant to the subject under discussion.
+
+[[ropifc16]]
+=== RULE 16
+
+During the discussion of any matter, a representative may raise a point of order, and the point of order shall be immediately decided by the Chair in accordance with these Rules of Procedure. A representative may appeal against the ruling of the Chair. The appeal shall be put to the vote immediately and the Chair’s ruling shall stand unless overruled by a majority of the Members present and voting. A representative raising a point of order may not speak on the substance of the matter under discussion.
+
+[[ropifc17]]
+=== RULE 17
+
+Subject to the provisions of Rule 16, the following motions shall have precedence, in the order indicated below, over all other proposals or motions before the meeting:
+
+[[ropifc17a]]
+[%inline-header]
+==== {blank}
+to suspend a meeting;
+
+[[ropifc17b]]
+[%inline-header]
+==== {blank}
+to adjourn a meeting;
+
+[[ropifc17c]]
+[%inline-header]
+==== {blank}
+to adjourn the debate on the question under discussion; and
+
+[[ropifc17d]]
+[%inline-header]
+==== {blank}
+for the closure of the debate on the question under discussion.
+
+Permission to speak on a motion falling within <<ropifc17a>> to <<ropifc17d>> above shall be granted only to the proposer and, in addition, to one speaker in favour of and two against the motion, after which it shall be put immediately to the vote.
+
+[[ropifc18]]
+=== RULE 18
+
+If two or more proposals relate to the same subject, the Finance Committee, unless it decides otherwise, shall vote on the proposals in the order in which they have been submitted.
+
+[[ropifc19]]
+=== RULE 19
+
+Parts, either of a proposal or of an amendment thereto, shall be voted on separately, if the Chair so decides, or if any representative requests that the proposal be divided. The resulting proposal, which shall comprise those of its parts that have been separately adopted, shall then be put to a final vote. If all the separate parts of a proposal or amendment have been rejected, the proposal or amendment shall be considered to be rejected as a whole.
+
+[[ropifc20]]
+=== RULE 20
+
+A motion to amend a proposal is a motion which merely adds to, deletes from, or revises part of that proposal. An amendment shall be voted on before the proposal to which it relates is put to the vote and if the amendment is adopted the amended proposal shall then be voted on. Once a motion or proposal has been put to the vote and either adopted or rejected, no further motions or amendments to that motion or proposal shall be discussed.
+
+[[ropifc21]]
+=== RULE 21
+
+If two or more amendments are moved to a proposal, the Finance Committee shall first vote on the amendment deemed by the Chair to be furthest removed in substance from the original proposal, and then on the amendment next furthest removed therefrom, and so on, until all amendments have been put to the vote.
+
+[[ropifc22]]
+=== RULE 22
+
+A motion may be withdrawn by its proposer at any time before voting on it has begun, provided either that the motion has not been amended or that an amendment to it is not under discussion.
+
+*Voting*
+
+[[ropifc23]]
+=== RULE 23
+
+Decisions of the Finance Committee shall be made in accordance with Article <<aIX>> of the Convention.
+
+[[ropifc24]]
+=== RULE 24
+
+No Member State may vote on behalf of another.
+
+*Amendment of Rules of Procedure*
+
+[[ropifc25]]
+=== RULE 25
+
+The Finance Committee may propose to the Assembly amendments to these Rules of Procedure.
+
+*Overriding authority of the Convention and the Regulations*
+
+[[ropifc26]]
+=== RULE 26
+
+In the event of conflict between any provision of these Rules and any provision of the Convention or the General or Financial Regulations, the Convention or the General or Financial Regulations shall prevail.
+
+== Agreement between The International Hydrographic Organization and The Government of H.S.H. The Prince of Monaco concerning The Headquarters of the Organization and its Privileges and Immunities on the Territory of the Principality
+
+[%unnumbered]
+|===
+4+h| Record of changes
+
+| Date | Reference | Effective date | Subject
+| / | CL 18/1978 | / | Version signed on 10 August 1978
+| / | CL 5/1997 | 8 April 1997 | Amendment to Article 3 II
+| / | CL 21/1997 | 8 April 1997 | Amendment to Article 3 II
+| June 2017 a| A-1 +
+Decision No. 29 | a| Revised version resulting from the entry into force of the Protocol of Amendments to the IHO Convention dated 14 April 2005
+| | | |
+|===
+
+The International Hydrographic Organization, hereinafter referred to as the Organization, and the Government of H.S.H. the Prince of Monaco,
+
+Considering that Article I of the inter-governmental Convention on the International Hydrographic Organization, signed on 3 May 1967, as amended by the Protocol dated 14 April 2005, provides that the headquarters of the Organization shall be in Monaco,
+
+Desiring to determine the conditions of the establishment of such headquarters and to define the privileges and immunities of the Organization in Monaco,
+
+Have agreed as follows:
+
+[[agr1]]
+=== ARTICLE 1
+
+The Government of H.S.H. the Prince of Monaco recognizes the legal personality of the Organization and its capacity to:
+
+[[agr1a]]
+[%inline-header]
+==== {blank}
+contract,
+
+[[agr1b]]
+[%inline-header]
+==== {blank}
+acquire and dispose of movable and immovable property,
+
+[[agr1c]]
+[%inline-header]
+==== {blank}
+institute legal proceedings.
+
+[[agr2]]
+=== ARTICLE 2
+
+The Organization shall enjoy on Monegasque territory the independence and liberty of action to which it is entitled as an intergovernmental organization, and in accordance with the provisions of this Agreement.
+
+[[agr3]]
+=== ARTICLE 3
+
+[[agr3I]]
+[%inline-header]
+==== {blank}
+The headquarters of the Organization shall comprise the premises it now occupies or may occupy for the fulfilment of its duties, exclusive of any premises used for residential purposes by its Staff.
+
+[[agr3II]]
+[%inline-header]
+==== {blank}
+The premises currently occupied by the Secretariat of the Organization in the building located Quai Antoine 1er (No. 4) shall be granted free of charge for use of the Organization for a period of 99 years, from 1st September 1996, by the Principality, which, in addition to the normal owner's responsibilities, agrees to assume responsibility for expenses for its heating, lighting and water supply; the Organization shall be responsible for other expenses incurred in upkeep of the interior which are normally the responsibility of the occupant.{blank}footnote:[Provision amended in accordance with IHO Circular Letter No. 5/1997 dated 3 February 1997.]
+
+[[agr4]]
+=== ARTICLE 4
+
+[[agr4I]]
+[%inline-header]
+==== {blank}
+
+The headquarters of the Organization shall be inviolable. Officers and officials of the Principality of Monaco shall be entitled to enter only with the consent of, or at the request of, the Secretary-General or a person acting on his behalf. This consent may be assumed in the case of fire or other disasters requiring prompt protective action.
+
+[[agr4II]]
+[%inline-header]
+==== {blank}
+
+The Organization shall not allow its premises to be used by any person seeking refuge from justice following a crime or serious offence or against whom a writ, a legal sentence, a deportation order, or a decision to expel has been issued by the authorities in Monaco.
+
+[[agr5]]
+=== ARTICLE 5
+
+[[agr5I]]
+[%inline-header]
+==== {blank}
+
+The Organization shall enjoy immunity from legal process except in so far as in any particular case the Organization has expressly waived immunity, the waiver being notified by the Secretary-General or a person acting on his behalf.
+
+[[agr5II]]
+[%inline-header]
+==== {blank}
+
+The movable property and assets of the Organization, wherever located, and the buildings which constitute its headquarters, shall enjoy immunity from execution except in so far as in any particular case the Organization has expressly waived immunity, the waiver being notified by the Secretary General or a person acting on his behalf.
+
+[[agr5III]]
+[%inline-header]
+==== {blank}
+
+The property referred to in paragraph <<agr5II>> above shall also enjoy immunity from search, requisition, confiscation or sequestration and from any other form of administrative or legal constraint.
+
+[[agr6]]
+=== ARTICLE 6
+
+The archives of the Organization and, in general, all documents owned or held by it shall be inviolable.
+
+[[agr7]]
+=== ARTICLE 7
+
+[[agr7I]]
+[%inline-header]
+==== {blank}
+
+Without being subject to financial control, regulation or moratoria, the Organization shall have the right, within the scope of its official activities, freely to:
+
+[[agr7I-a]]
+[%inline-header]
+===== {blank}
+receive and hold funds and currency of any nature and operate accounts in any currency;
+
+[[agr7I-b]]
+[%inline-header]
+===== {blank}
+transfer its funds and currency within the territory of Monaco and from Monaco to another country or vice-versa.
+
+[[agr7II]]
+[%inline-header]
+==== {blank}
+
+In exercising the rights conferred on it by this Article, the Organization shall take account of any representations made to it by the Government of H.S.H. the Prince of Monaco in so far as it considers that these can be complied with without prejudice to its own interests.
+
+[[agr8]]
+=== ARTICLE 8
+
+[[agr8I]]
+[%inline-header]
+==== {blank}
+
+The Organization, its assets, income and other property shall be:
+
+* exempt from all direct tax, it being understood, however, that the Organization shall not seek exemption from taxes which are, in fact, only payment for services rendered;
+* exempt from taxes on import and export of goods and from prohibition and restrictions on imports and exports as regards goods or items imported or exported by the Secretariat of the Organization for official purposes as defined in Article VIII of the Convention of 3 May 1967 referred to above, as amended by the Protocol dated 14 April 2005, (particularly all hydrographic, oceanographic and nautical publications, issued by the Secretariat or received by the Secretariat from States Members of the Organization, from States with which the Secretariat corresponds, or scientific organizations), it being understood, however, that goods or items imported under such conditions may in no circumstances be disposed of, nor may they be lent out free of charge, on Monegasque or French territory, except with the prior agreement of the relevant Monegasque or French authorities.
+
+The above facilities shall in no way be considered as preventing the relevant authorities from taking appropriate security measures.
+
+[[agr8II]]
+[%inline-header]
+==== {blank}
+
+The Organization shall be responsible in the normal way for the payment of indirect tax included in the price of goods sold or services rendered. However, any such tax paid on large purchases or operations effected by the Organization for the purposes defined in the preceding paragraph shall be reimbursable under conditions to be determined by mutual agreement between the Organization and the Government of H.S.H. the Prince of Monaco.
+
+[[agr9]]
+=== ARTICLE 9
+
+In so far as is compatible with the international conventions, regulations and arrangements to which the Government of H.S.H. the Prince of Monaco is party, the Organization shall enjoy, in respect of its official communications of whatever nature, terms at least as favourable as those accorded to diplomatic missions in Monaco as regards any priority in communications and freedom of such communications.
+
+[[agr10]]
+=== ARTICLE 10
+
+[[agr10I]]
+[%inline-header]
+==== {blank}
+
+The Government of H.S.H. the Prince of Monaco shall undertake, except where reasons of public order preclude it, to permit the entry into the Principality and the residence therein, without charge for visas and without delay, for the term of their duty or mission with the Organization, of representatives of Member Governments and observers from States with which the Secretariat corresponds who are invited to participate in the sessions of the organs of the Organization or in conferences or meetings convened by the latter, as well as experts or persons called by it for consultative purposes.
+
+[[agr10II]]
+[%inline-header]
+==== {blank}
+
+The persons concerned may not, for the duration of their missions, be compelled by the Monegasque authorities to leave the territory of Monaco save where they have abused the privileges of residence accorded to them in activities unconnected with their duties or missions with the Organization. The right of the Government of H.S.H. the Prince of Monaco to expel such officials would, however, be exercised only after prior consultation with the Secretary-General or a person acting on his behalf.
+
+[[agr10III]]
+[%inline-header]
+==== {blank}
+
+Such persons are not exempt from application of the effective rules governing quarantine and public health.
+
+[[agr10IV]]
+[%inline-header]
+==== {blank}
+
+During their missions and when travelling on the territory of the Principality, the persons referred to in this Article shall enjoy:
+
+[[agr10IV-a]]
+[%inline-header]
+===== {blank}
+immunity from personal arrest or detention and from seizure of personal baggage, except if caught in the act of committing an offence, and
+
+[[agr10IV-b]]
+[%inline-header]
+===== {blank}
+inviolability of official papers and documents.
+
+[[agr10V]]
+[%inline-header]
+==== {blank}
+
+If such persons are not of Monegasque nationality or permanently resident in Monaco, they shall also enjoy immunity from judicial process, even after completion of their mission, for all acts, including words spoken and written, done by them in the performance of their official duties, within the scope of their responsibility. This immunity shall not apply in the case of infringement by the persons concerned of the regulations governing the circulation of motor vehicles or of damage caused by a motor vehicle owned or driven by them.
+
+[[agr11]]
+=== ARTICLE 11
+
+The Personnel of the Organization comprises:
+
+[[agr11a]]
+[%inline-header]
+===== {blank}
+the Secretary-General and the Directors;
+
+[[agr11b]]
+[%inline-header]
+===== {blank}
+the Assistants, Heads of sections, permanent officials with duties of responsibility in the fields of the technical or administrative activities of the Secretariat;
+
+[[agr11c]]
+[%inline-header]
+===== {blank}
+the other permanent officials charged with execution of work in the technical or administrative sections of the Secretariat;
+
+[[agr11d]]
+[%inline-header]
+===== {blank}
+non-permanent employees of the Secretariat.
+
+[[agr12]]
+=== ARTICLE 12
+
+[[agr12I]]
+[%inline-header]
+==== {blank}
+
+The personnel specified in Article <<agr11a>>, <<agr11b>> and <<agr11c>> shall be accorded:
+
+[[agr12I-a]]
+[%inline-header]
+===== {blank}
+immunity from judicial process, even after termination of their duties, for all acts, including words spoken and written, done by them in the performance of their official duties within the scope of their responsibility. Such immunity shall not apply in the case of infringement by an official of the regulations governing the circulation of motor vehicles or of damage caused by a motor vehicle owned or driven by him;
+
+[[agr12I-b]]
+[%inline-header]
+===== {blank}
+exemption from any possible tax on the remuneration received for their activities with the Organization;
+
+[[agr12I-c]]
+[%inline-header]
+===== {blank}
+the conditions provided in Article <<agr10>> above as regards entry into Monaco and residence therein;
+
+[[agr12I-d]]
+[%inline-header]
+===== {blank}
+if they were formerly resident abroad, the right to import their household and personnel effects free of customs duty when first taking up their duties;
+
+[[agr12I-e]]
+[%inline-header]
+===== {blank}
+a special identity card issued by the relevant authorities for themselves, their wives and dependent children;
+
+[[agr12I-f]]
+[%inline-header]
+===== {blank}
+in periods of international crisis, the facilities for repatriation offered to members of diplomatic missions.
+
+[[agr12II]]
+[%inline-header]
+==== {blank}
+
+Furthermore, personnel in categories <<agr11a>> and <<agr11b>> shall be entitled to free temporary importation of a motor vehicle.
+
+[[agr12III]]
+[%inline-header]
+==== {blank}
+
+The Government of H.S.H. the Prince of Monaco is not bound to accord to permanent residents of Monaco of French nationality the privileges mentioned in paragraph <<agr12I-b>> above, nor to its own citizens and to permanent residents of Monaco the privileges mentioned in paragraph <<agr12I-c>>, <<agr12I-d>>, <<agr12I-f>> and paragraph <<agr12II>> above.
+
+[[agr13]]
+=== ARTICLE 13
+
+[[agr13I]]
+[%inline-header]
+==== {blank}
+
+The privileges and immunities provided for in this Agreement are not established with a view to granting the beneficiaries any personal advantages. They are instituted solely to ensure in all circumstances, the free functioning of the Organization and the complete independence of the persons on whom they are conferred.
+
+[[agr13II]]
+[%inline-header]
+==== {blank}
+
+The Secretary-General or, in his absence, a person acting on his behalf, or, in the case of representatives at the Assembly or at the Council, the Government of the State concerned, shall have the right and the duty to waive such immunities when they consider that such immunities will impede the course of justice and when this can be done without prejudice to the interests of the Organization.
+
+[[agr14]]
+=== ARTICLE 14
+
+The provisions of this Agreement shall not affect the right of the Government of H.S.H. the Prince of Monaco to take any measures it may consider advisable for the security of Monaco and the safeguard of public order.
+
+[[agr15]]
+=== ARTICLE 15
+
+Any difference of opinion between the Government of H.S.H. the Prince of Monaco and the International Hydrographic Organization concerning the interpretation of this Agreement, if not settled by negotiation, shall be referred for a final and irrevocable decision to a committee of three judges, comprising:
+
+[[agr15a]]
+[%inline-header]
+==== {blank}
+an arbiter designated by the Government of H.S.H. the Prince of Monaco,
+
+[[agr15b]]
+[%inline-header]
+==== {blank}
+an arbiter designated by the Organization;
+
+[[agr15c]]
+[%inline-header]
+==== {blank}
+an arbiter designated by both parties by mutual agreement, or, should such agreement not be obtained, by the President of the International Court of Justice.
+
+[[agr16]]
+=== ARTICLE 16
+
+[[agr16I]]
+[%inline-header]
+==== {blank}
+
+This Agreement shall enter into force following exchange of the instruments of approval of the Government of H.S.H. the Prince of Monaco and notification of approval by the International Hydrographic Organization.
+
+[[agr16II]]
+[%inline-header]
+==== {blank}
+
+At the request of either Party, consultations shall take place respecting the implementation, revision or extension of this Agreement. In the event of negotiations not resulting in an accord within a period of one year, this Agreement may be denounced by giving two years' notice.
+
+Done at Monaco, on the twenty-fourth day of April, two thousand and seventeen, in two copies in the French language.
+
+[align=left]
+On behalf of +
+the International Hydrographic Organization
+
+[align=left]
+(signed)
+
+[align=left]
+The Secretary-General of the Organization
+
+[align=right]
+On behalf of the Government of +
+His Serene Highness the Prince of Monaco
+
+[align=right]
+(signed)
+
+[align=right]
+The Minister of State
+
+== Decree No. 77-417 of 8 APRIL 1977 Publishing the Exchange of Letters of 31 MAY 1976 between France and Monaco Concerning the Privileges and Immunities of The International Hydrographic Organization. {blank}footnote:[The formalities provided for in Article 5 (§ 4) of the present exchange of letters, with a view to their entry into force, were completed on the Monaco side on 11 June 1976 and on the French side on 18 February 1977.]
+
+NOTE: UNOFFICIAL IHO TRANSLATION OF THE DECREE
+
+[align=left]
+The President of the Republic, +
+Further to the report by the Prime Minister and the Minister of Foreign Affairs, In view of Articles 52 to 55 of the Constitution; +
+In view of Law No. 76-1198 of 24 December 1976 authorizing approval of the exchange of letters signed in Paris on 31 May 1976 between the Government of the French Republic and the Principality of Monaco concerning the privileges and immunities of the International Hydrographic Organization; +
+In view of Decree No. 70-1154 of 7 December 1970 publishing the Convention on the International Hydrographic Organization, opened for signature in Monaco on 3 May 1967 and its General and Financial Regulations; +
+In view of the Decree of 14 March 1953 concerning the ratification and publication of international engagements to which France is a party; +
+In view of the Decree of 7 April 1977 concerning the exercise of the functions of Prime Minister during the absence of Mr Raymond Barre: +
+
+Decrees:
+
+Article 1. - The exchange of letters of 31 March 1976 between France and Monaco concerning the privileges and immunities of the International Hydrographic Organization shall be published in the Official Journal of the French Republic.
+
+Article 2. - The Prime Minister and the Minister of Foreign Affairs are charged with the execution of this decree.
+
+Done at Paris, 8 April 1977
+
+[align=right]
+VALÉRY GISCARD D'ESTAING.
+
+[align=left]
+By the President of the Republic, +
+For the Prime Minister and on his authority: +
+_The Keeper of the Seals, Minister of Justice,_ +
+ALAIN PEYREFITTE.
+
+[align=right]
+_Minister of Foreign Affairs,_ +
+LOUIS DE GUIRINGAUD.
+
+NOTE: June 2017: a new text taking into account the provisions introduced by the Protocol of Amendments to the IHO Convention dated 14 April 2005 is in preparation.
+
+<<<
+
+[align=right]
+_To His Excellency Monsieur Jean Sicurani,_ +
+_Minister of Monaco_
+
+Dear Minister,
+
+The Intergovernmental Convention on the International Hydrographic Organization signed on 3 May 1967 states that the headquarters of the Organization are established in the Principality of Monaco.
+
+In application of this Convention, the Monaco Government and the Organization envisage the signing of a Host Agreement to define the relevant conditions and to determine the privileges and immunities of the Organization in Monaco.
+
+The Government of the French Republic is concerned in two capacities by this matter.
+
+In the first place, it is, in fact, a Party to the Convention of 3 May 1967 which provides in its Article XIII that the Organization shall enjoy on the territory of each of its Member States such privileges and immunities as may be necessary for the exercise of its functions and the fulfilment of its object.
+
+In the second place, certain privileges or immunities are the subject of special agreements between France and Monaco.
+
+Consequently, and in order to facilitate the functioning of the Organization, I have the honour to inform you that the French Government, for its part, is prepared to adopt the following provisions:
+
+[[eol1]]
+=== Article 1
+
+Without being subject to any financial control, regulation or moratoria, the Organization shall have the right, within the scope of its official activities, freely to:
+
+[[eol1a]]
+[%inline-header]
+==== {blank}
+Receive and hold funds and monies of any nature and operate accounts in any currency;
+
+[[eol1b]]
+[%inline-header]
+==== {blank}
+Transfer its funds and monies within the territory of Monaco and from Monaco to another country or vice-versa.
+
+[[eol2]]
+=== Article 2
+
+The Organization, its assets, income and other property, shall be exempt from duty and taxes on importation or exportation and from prohibition and restrictions on imports or exports in respect of goods or items imported or exported by the Organization for official use as defined in Article VIII of the Convention of 3 May 1967 referred to above (notably all hydrographic, oceanographic and nautical publications, issued by the Bureau or received by the Bureau from Member States of the Organization, from States with which the Bureau corresponds, or scientific organizations), it being understood, however, that goods or items imported under such conditions may in no circumstances be disposed of, nor may they be lent out free of charge or hired out on Monegasque or French territory except with the prior agreement of the relevant French authorities.
+
+The above facilities shall in no way be considered as preventing the relevant authorities from taking appropriate security measures.
+
+[[eol3]]
+=== Article 3
+
+Except where reasons of public order preclude this, authorization to enter and to reside in the Principality without charge for visas and without delay for the term of their duty or mission with the Organization shall be granted to representatives of Member Governments and observers from the relevant States who are invited to participate in the sessions of the organs of the Organization or in conferences and meetings convened by the latter as well as experts or persons called by it for consultative purposes.
+
+[[eol4]]
+=== Article 4
+
+The personnel of the Organization comprises:
+
+[[eol4a]]
+[%inline-header]
+==== {blank}
+The three Directors of the Bureau;
+
+[[eol4b]]
+[%inline-header]
+==== {blank}
+The assistants, heads of sections, permanent officials with duties of responsibility in the fields of the technical or administrative activities of the Bureau;
+
+[[eol4c]]
+[%inline-header]
+==== {blank}
+The other permanent officials charged with the execution of work in the technical or administrative sections of the Bureau;
+
+[[eol4d]]
+[%inline-header]
+==== {blank}
+Non-permanent employees.
+
+[[eol5]]
+=== Article 5
+
+[[eol51]]
+[%inline-header]
+==== {blank}
+
+The personnel in categories <<eol4a>>, <<eol4b>> and <<eol4c>> referred to in article <<eol4>> shall be accorded:
+
+[[eol5-1a]]
+[%inline-header]
+===== {blank}
+Exemption from any possible tax on the salaries and emoluments received for their activities with the Organization;
+
+[[eol5-1b]]
+[%inline-header]
+===== {blank}
+The conditions provided in Article <<eol3>> above as regards entry into Monaco and residence therein;
+
+[[eol5-1c]]
+[%inline-header]
+===== {blank}
+If they were formerly resident abroad, the right to import their house hold and personal effects free of customs duty when first taking up residence;
+
+[[eol5-1d]]
+[%inline-header]
+===== {blank}
+A "titre de séjour spécial" (Special residence permit) issued by the relevant authorities for themselves, their spouse and their dependent children;
+
+[[eol5-1e]]
+[%inline-header]
+===== {blank}
+In periods of international crisis, the repatriation facilities offered to members of diplomatic missions.
+
+[[eol5-2]]
+[%inline-header]
+==== {blank}
+
+Furthermore, personnel in categories a) and b) shall be entitled to free temporary importation of their motor vehicle.
+
+[[eol5-3]]
+[%inline-header]
+==== {blank}
+
+The French Government is not bound to grant to its own subjects or to permanent residents in France or in Monaco the privileges referred to in paragraph <<eol5-1b>>, <<eol5-1c>>, <<eol5-1d>>, <<eol5-1e>> and in paragraph <<eol5-2>> above.
+
+[[eol5-4]]
+[%inline-header]
+==== {blank}
+
+The French Government is not bound to grant the privilege referred to in paragraph <<eol5-1a>> of this article:
+
+* To its own subjects resident in France;
+* To its own subjects resident in the Principality of Monaco but subject to tax in France by virtue of Article 7-I of the Franco-Monegasque tax agreement of 18 May 1963;
+* To permanent residents in France,
+
+unless the Organization institutes an effective internal tax on its staff. In this case the French Government will subject to income tax the income other than the official salary at a rate applicable to the entire income of its own subjects and the permanent residents referred to above.
+
+The provisions of said paragraph <<eol5-1a>> are not applicable to pensions paid by the Organization to its former officials resident in France or taxable in France under article 7-I of the Convention of 18 May 1963 referred to in the previous paragraph.
+
+If the provisions set out herein meet with the agreement of the Government of Monaco, I have the honour to propose that this letter and Your Excellency's reply should constitute the understanding of the Government of H.S.H. the Prince of Monaco and the Government of the French Republic and that this agreement should enter into force thirty days after the date on which the two Governments have notified one another of the completion of their respective formalities of approval.
+
+Yours sincerely,
+
+[align=right]
+CLAUDE CHAYET
+
+<<<
+
+LEGATION OF MONACO
+
+[align=right]
+Paris, 31^st^ May 1976
+
+[align=right]
+_To Mr Claude Chayet, Plenipotentiary Minister,_ +
+_Ministry of Foreign Affairs, Paris._
+
+Dear Minister,
+
+In your letter dated today, you kindly inform me of the following:
+
+"The Intergovernmental Convention on the International Hydrographic Organization signed on 3 May 1967 states that the headquarters of the Organization are established in the Principality of Monaco.
+
+In application of this Convention, the Monaco Government and the Organization envisage the signing of a Host Agreement to define the relevant conditions and to determine the privileges and immunities of the Organization in Monaco.
+
+The Government of the French Republic is concerned in two capacities by this matter.
+
+In the first place, it is, in fact, a Party to the Convention of 3 May 1967 which provides in its Article XIII that the Organization shall enjoy on the territory of each of its Member States such privileges and immunities as may be necessary for the exercise of its functions and the fulfilment of its object.
+
+In the second place, certain privileges or immunities are the subject of special agreements between France and Monaco.
+
+Consequently, and in order to facilitate the functioning of the Organization, I have the honour to inform you that the French Government, for its part, is prepared to adopt the following provisions:
+
+[[eolm1]]
+=== Article 1
+
+Without being subject to any financial control, regulation or moratoria, the Organization shall have the right, within the scope of its official activities, freely to:
+
+[[eolm1a]]
+[%inline-header]
+==== {blank}
+Receive and hold funds and monies of any nature and operate accounts in any currency;
+
+[[eolm1b]]
+[%inline-header]
+==== {blank}
+Transfer its funds and monies within the territory of Monaco and from Monaco to another country or vice-versa.
+
+[[eolm2]]
+=== Article 2
+
+The Organization, its assets, income and other property, shall be exempt from duty and taxes on importation or exportation and from prohibition and restrictions on imports or exports in respect of goods or items imported or exported by the Organization for official use as defined in Article VIII of the Convention of 3 May 1967 referred to above (notably all hydrographic, oceanographic and nautical publications, issued by the Bureau or received by the Bureau from Member States of the Organization, from States with which the Bureau corresponds, or scientific organizations), it being understood, however, that goods or items imported under such conditions may
+in no circumstances be disposed of, nor may they be lent out free of charge or hired out on Monegasque or French territory except with the prior agreement of the relevant French authorities.
+
+The above facilities shall in no way be considered as preventing the relevant authorities from taking appropriate security measures.
+
+[[eolm3]]
+=== Article 3
+
+Except where reasons of public order preclude this, authorization to enter and to reside in the Principality without charge for visas and without delay for the term of their duty or mission with the Organization shall be granted to representatives of Member Governments and observers from the relevant States who are invited to participate in the sessions of the organs of the Organization or in conferences and meetings convened by the latter as well as experts or persons called by it for consultative purposes.
+
+[[eolm4]]
+=== Article 4
+
+The personnel of the Organization comprises:
+
+[[eolm4a]]
+[%inline-header]
+==== {blank}
+The three Directors of the Bureau;
+
+[[eolm4b]]
+[%inline-header]
+==== {blank}
+The assistants, heads of sections, permanent officials with duties of responsibility in the fields of the technical or administrative activities of the Bureau;
+
+[[eolm4c]]
+[%inline-header]
+==== {blank}
+The other permanent officials charged with the execution of work in the technical or administrative sections of the Bureau;
+
+[[eolm4d]]
+[%inline-header]
+==== {blank}
+Non-permanent employees.
+
+[[eolm5]]
+=== Article 5
+
+[[eolm5-1]]
+[%inline-header]
+==== {blank}
+
+The personnel in categories <<eolm4a>>, <<eolm4b>> and <<eolm4c>> referred to in article <<eolm4>> shall be accorded:
+
+[[eolm5-1a]]
+[%inline-header]
+===== {blank}
+Exemption from any possible tax on the salaries and emoluments received for their activities with the Organization;
+
+[[eolm5-1b]]
+[%inline-header]
+===== {blank}
+The conditions provided in Article <<eolm3>> above as regards entry into Monaco and residence therein;
+
+[[eolm5-1c]]
+[%inline-header]
+===== {blank}
+If they were formerly resident abroad, the right to import their house hold and personal effects free of customs duty when first taking up residence;
+
+[[eolm5-1d]]
+[%inline-header]
+===== {blank}
+A _"titre de séjour spécial"_ (Special residence permit) issued by the relevant authorities for themselves, their spouse and their dependent children;
+
+[[eolm5-1e]]
+[%inline-header]
+===== {blank}
+In periods of international crisis, the repatriation facilities offered to members of diplomatic missions.
+
+[[eolm5-2]]
+[%inline-header]
+==== {blank}
+
+Furthermore, personnel in categories <<eolm4a>> and <<eolm4b>> shall be entitled to free temporary importation of their motor vehicle.
+
+[[eolm5-3]]
+[%inline-header]
+==== {blank}
+
+The French Government is not bound to grant to its own subjects or to permanent residents in France or in Monaco the privileges referred to in paragraph <<eolm5-1b>>, <<eolm5-1c>>, <<eolm5-1d>>, <<eolm5-1e>> and in paragraph <<eolm5-2>> above.
+
+[[eolm5-4]]
+[%inline-header]
+==== {blank}
+
+The French Government is not bound to grant the privilege referred to in paragraph <<eolm5-1a>> of this article:
+
+* To its own subjects resident in France;
+* To its own subjects resident in the Principality of Monaco but subject to tax in France by virtue of Article 7-I of the Franco-Monegasque tax agreement of 18 May 1963;
+* To permanent residents in France,
+
+unless the Organization institutes an effective internal tax on its staff. In this case the French Government will subject to income tax the income other than the official salary at a rate applicable to the entire income of its own subjects and the permanent residents referred to above.
+
+The provisions of said paragraph 1 a) are not applicable to pensions paid by the Organization to its former officials resident in France or taxable in France under article 7-I of the Convention of 18 May 1963 referred to in the previous paragraph.
+
+If the provisions set out herein meet with the agreement of the Government of Monaco, I have the honour to propose that this letter and Your Excellency's reply should constitute the understanding of the Government of H.S.H. the Prince of Monaco and the Government of the French Republic and that this agreement should enter into force thirty days after the date on which the two Governments have notified one another of the completion of their respective formalities of approval."
+
+It is my pleasure to convey the agreement of the Government of the Principality on the proposals above.
+
+[align=center]
+Yours sincerely,
+
+[align=center]
+JEAN SICURANI
