@@ -5,21 +5,21 @@
 
 NOTE: This annex is *not* an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, _Manual on Hydrography_.
 
-The S-44 standards refer to quality standards for both a priori and a posteriori results. In this guidance a brief view on how to determine the uncertainties for a priori and a posteriori is given. Determining uncertainties is necessary for any technique used in hydrographic surveys. Methods to establish the <<def-uncertainty,uncertainty>> may differ greatly for each survey technique used.
+The S-44 standards refer to quality standards for both _a priori_ and _a posteriori_ results. In this guidance a brief view on how to determine the uncertainties for _a priori_ and _a posteriori_ is given. Determining uncertainties is necessary for any technique used in hydrographic surveys. Methods to establish the <<def-uncertainty,uncertainty>> may differ greatly for each survey technique used.
 
 
-=== A _Priori_ Uncertainty
+=== _A Priori_ Uncertainty
 
-The a _priori_ <<def-uncertainty,uncertainty>> is a theoretical value based on best practise estimations of all factors affecting the measurements. Each instrument used in the measurement and the environmental influences will add uncertainties to the grand total. Calculating the total <<def-uncertainty,uncertainty>> horizontally and vertically prior to the survey will affirm to the hydrographer that the required survey standards will be feasible with the selected equipment in the environment of the survey area. If the survey standards are not achieved, other equipment or survey techniques may be necessary for that particular environment.
+The _a  priori_ <<def-uncertainty,uncertainty>> is a theoretical value based on best practise estimations of all factors affecting the measurements. Each instrument used in the measurement and the environmental influences will add uncertainties to the grand total. Calculating the total <<def-uncertainty,uncertainty>> horizontally and vertically prior to the survey will affirm to the hydrographer that the required survey standards will be feasible with the selected equipment in the environment of the survey area. If the survey standards are not achieved, other equipment or survey techniques may be necessary for that particular environment.
 
-During the survey, estimations of the equipment and environment uncertainties should be adjusted or assessed. By this adjustment, the a priori <<def-uncertainty,uncertainty>> is improved.
+During the survey, estimations of the equipment and environment uncertainties should be adjusted or assessed. By this adjustment, the _a priori_ <<def-uncertainty,uncertainty>> is improved.
 
 
-=== A _Posteriori_ Uncertainty
+=== _A Posteriori_ Uncertainty
 
-Fundamentally the hydrographer is most interested in the a _posteriori_ <<def-uncertainty,uncertainty>>.
+Fundamentally the hydrographer is most interested in the _a posteriori_ <<def-uncertainty,uncertainty>>.
 
-Outside of a reference area it is not possible to determine the a _posteriori_ <<def-uncertainty,uncertainty>> from the data set. The data set is the end result and contains all <<def-error,errors>> involved in the total process but it is not possible to calculate the a _posteriori_ <<def-uncertainty,uncertainty>> from the data set. There are many techniques and procedures to check the hydrographic data set and they can provide proof that the data set is to be trusted, however no tool will calculate the a _posteriori_ <<def-uncertainty,uncertainty>> of an area that is not well-known.
+Outside of a reference area it is not possible to determine the _a posteriori_ <<def-uncertainty,uncertainty>> from the data set. The data set is the end result and contains all <<def-error,errors>> involved in the total process but it is not possible to calculate the _a  posteriori_ <<def-uncertainty,uncertainty>> from the data set. There are many techniques and procedures to check the hydrographic data set and they can provide proof that the data set is to be trusted, however no tool will calculate the _a  posteriori_ <<def-uncertainty,uncertainty>> of an area that is not well-known.
 
 A preliminary task is to check the capability of the total system, to ensure that it can meet the minimal horizontal and vertical specifications and <<def-feature_detection,feature detection>> requirement, according to the specified order. Well known reference areas should be used to prevent any vertical offset on measurements. Qualification on these reference areas should be carried out periodically.
 

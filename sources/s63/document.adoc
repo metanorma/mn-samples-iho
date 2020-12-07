@@ -8,13 +8,13 @@
 :status: in-force
 :committee: hssc
 :workgroup: dpswg
-:doctype: standard
 :imagesdir: images
 :docfile: document.adoc
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,rxl
 :local-cache-only:
 :data-uri-image:
+:break-up-urls-in-tables:
 
 include::sections/00-preface.adoc[]
 

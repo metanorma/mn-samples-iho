@@ -36,28 +36,28 @@ GEBCO – Frequently Asked Questions: https://www.gebco.net/about_us/faq/#creati
 
 As data sample densities from hydrographic sensors have increased, methods of sea floor representation have shifted from vector-based products such as selected soundings and contours, to gridded <<def-bathymetric_model,bathymetric models>>. The result of an individual hydrographic survey is now commonly stored as a digital grid or series of grids of differing resolutions. These grids often include node values for both depth and <<def-uncertainty,uncertainty>> and may also include accompanying information regarding contributing sample standard deviation, sample density, shoal sample values within the vicinity of the grid node, and even information to allow conversion between tidal datum and reference ellipsoid. For many hydrographic offices, production workflows now focus on these gridded <<def-bathymetric_model,bathymetric models>> as the data source instead of the full resolution sounding files. Exploitation of the gridded bathymetric data can reduce production timelines as they provide an appropriate level of information in a lighter-weight, digital package.
 
-Gridded bathymetric models are also used for small-scale applications such as regional bottom characterisation. In many instances these grids are a combination of observed sample data, survey gridded data, estimated data and interpolated data. This Annex will not address considerations for these types of grids compilations, as substantial information on this topic is maintained by the Joint IHO-IOC Committee for the General Bathymetric Chart of the Oceans (GEBCO).
+Gridded <<def-bathymetric_model,bathymetric models>> are also used for small-scale applications such as regional bottom characterisation. In many instances these grids are a combination of observed sample data, survey gridded data, estimated data and interpolated data. This Annex will not address considerations for these types of grids compilations, as substantial information on this topic is maintained by the Joint IHO-IOC Committee for the General Bathymetric Chart of the Oceans (GEBCO).
 
 
 === Definitions
 
-Area Representation:: Representation of gridded data where the entire cell is assumed to be the same value, and changes only occur at the borders of cells. (The DEM User's Manual)
+*Area Representation*:: Representation of gridded data where the entire cell is assumed to be the same value, and changes only occur at the borders of cells. (The DEM User's Manual)
 
-[[def-bathymetric_model]] Bathymetric model:: Digital representation of the topography of the bottom by coordinates and depths.
+[[def-bathymetric_model]] *Bathymetric model*:: Digital representation of the topography of the bottom by coordinates and depths.
 
-Grid:: A network composed of two or more sets of curves in which the members of each set intersect the members of the other sets in a systematic way. (ISO 19123)
+*Grid*:: A network composed of two or more sets of curves in which the members of each set intersect the members of the other sets in a systematic way. (ISO 19123)
 
-Grid Cell:: An area defined within the interstices between the grid lines. (ISO 19123)
+*Grid Cell*:: An area defined within the interstices between the grid lines. (ISO 19123)
 
-Grid Line Registration:: Registration method where grid nodes are centred on the intersection of the grid lines. (GEBCO)
+*Grid Line Registration*:: Registration method where grid nodes are centred on the intersection of the grid lines. (GEBCO)
 
-Grid Node:: A data point, with an exact geographic location referenced by grid definition and registration. The value contained within the grid describes selected information at this location. (ONSWG)
+*Grid Node*:: A data point, with an exact geographic location referenced by grid definition and registration. The value contained within the grid describes selected information at this location. (ONSWG)
 
-Holiday:: An unintentional unsurveyed area within a given hydrographic survey where the spacing between sounding lines or surveys exceeds the maximum allowable limits (IHO Dictionary S-32).
+*Holiday*:: An unintentional unsurveyed area within a given hydrographic survey where the spacing between sounding lines or surveys exceeds the maximum allowable limits (IHO Dictionary S-32).
 
-Pixel Centred Registration:: Registration method where grid nodes are centred in the grid cells. (GEBCO)
+*Pixel Centred Registration*:: Registration method where grid nodes are centred in the grid cells. (GEBCO)
 
-Surface Representation:: Representation of gridded data where the grid node represents the surface value at the centroid of each cell. The area between cell centres is assumed to be a value between that of adjacent cells (The DEM User's Manual).
+*Surface Representation*:: Representation of gridded data where the grid node represents the surface value at the centroid of each cell. The area between cell centres is assumed to be a value between that of adjacent cells (The DEM User's Manual).
 
 
 === Grid Considerations
@@ -85,7 +85,8 @@ If statistical gridding methods are to be employed, acceptable data densities sh
 ==== Grid Coverage
 
 It is the responsibility of the hydrographic office, or authority, to define a data gap or data holiday. The definition should describe the area on the bottom, by number of continuous nodes with no depth present.
-When gridded bathymetric models are generated using a fixed resolution per a pre-defined depth range, overlap between adjacent grids should exist in order to ensure that no gaps in coverage between neighbouring grids are generated.
+
+When gridded <<def-bathymetric_model,bathymetric models>> are generated using a fixed resolution per a pre-defined depth range, overlap between adjacent grids should exist in order to ensure that no gaps in coverage between neighbouring grids are generated.
 
 
 ==== Hydrographer Overrides to Grid Nodes
@@ -109,9 +110,9 @@ The following list provides some of the methods commonly used when gridding bath
 
 * The *Basic Weighted Mean* method computes an average depth for each grid node (whereby the inverse to the distance from the sounding location to the nodal position is used as weighting schema). Contributing depth estimates within a given area of influence are weighted and averaged to compute the final nodal value.
 
-* The *Total Propagated Uncertainty* (<<def-tpu,TPU>>) *Weighted Mean* method makes use of the elevation and associated total propagated uncertainty for each contributing depth estimate to compute a weighted average depth for each nodal position.
+* The *Total Propagated Uncertainty* (<<def-tpu,TPU>>) *Weighted Mean* method makes use of the elevation and associated total propagated <<def-uncertainty,uncertainty>> for each contributing depth estimate to compute a weighted average depth for each nodal position.
 
-* The *Combined Uncertainty and Bathymetric Estimator (CUBE)* algorithm makes use of the elevation and associated total propagated uncertainty for each contributing sounding to compute one or many hypotheses for an area of interest. The resulting hypotheses are used to estimate statistical representative depths at each nodal position.
+* The *Combined Uncertainty and Bathymetric Estimator (CUBE)* algorithm makes use of the elevation and associated total propagated <<def-uncertainty,uncertainty>> for each contributing sounding to compute one or many hypotheses for an area of interest. The resulting hypotheses are used to estimate statistical representative depths at each nodal position.
 
 * The *Nearest Neighbour* method identifies the depth value of the nearest sounding in distance from the nodal point within an area of interest. This method does not consider values from other neighbouring points.
 
@@ -126,15 +127,15 @@ The following list provides some of the methods commonly used when gridding bath
 
 === Grid Uncertainty
 
-The <<def-uncertainty,uncertainty>> associated with the elevation value contained within gridded bathymetric models can be described using a variety of methods, which may include:
+The <<def-uncertainty,uncertainty>> associated with the elevation value contained within gridded <<def-bathymetric_model,bathymetric models>> can be described using a variety of methods, which may include:
 
-Raw Standard Deviation is the standard deviation of samples that contributed to the node.
+*Raw Standard Deviation* is the standard deviation of samples that contributed to the node.
 
-Standard Deviation Estimator is the standard deviation of samples captured by a hypothesis algorithm (e.g. CUBE's standard output of <<def-uncertainty,uncertainty>>).
+*Standard Deviation Estimator* is the standard deviation of samples captured by a hypothesis algorithm (e.g. CUBE's standard output of <<def-uncertainty,uncertainty>>).
 
-Product Uncertainty is a blend of Standard Deviation Estimator <<def-uncertainty,uncertainty>> and other measures which may include Raw Standard Deviation, and the average vertical <<def-uncertainty,uncertainty>> from the subset of samples used to generate the hypothesis that represents the node.
+*Product Uncertainty* is a blend of Standard Deviation Estimator <<def-uncertainty,uncertainty>> and other measures which may include Raw Standard Deviation, and the average vertical <<def-uncertainty,uncertainty>> from the subset of samples used to generate the hypothesis that represents the node.
 
-Historical Standard Deviation is an estimated standard deviation based on historical/archive data.
+*Historical Standard Deviation* is an estimated standard deviation based on historical/archive data.
 
 Other <<def-uncertainty,uncertainty>> types may be specified. Methods for <<def-uncertainty,uncertainty>> estimation should be documented within the accompanying grid <<def-metadata,metadata>>.
 
@@ -165,4 +166,4 @@ As mentioned throughout this annex, gridded <<def-bathymetric_model,bathymetric 
 
 === Metadata
 
-To ensure gridded <<def-bathymetric_model,bathymetric models>> are fit for purposes that include and extend beyond safety of navigation, an appropriate level of <<def-metadata,metadata>> describing the data set is required. IHO S-102, the Bathymetric Surface Product Specification, provides Metadata elements derived from S-100 and from ISO 19115 and ISO 19115-2. Elements described within S-102 include mandatory, optional and conditional items. Following this specification, conclusive <<def-metadata,metadata>> for gridded <<def-bathymetric_model,bathymetric models>> will include information describing the data set, depth <<def-correction,correction>> type, <<def-uncertainty,uncertainty>> type, grid reference and coordinate system information, as well as temporal descriptions, grid construction methods, and persons responsible for product generation.
+To ensure gridded <<def-bathymetric_model,bathymetric models>> are fit for purposes that include and extend beyond safety of navigation, an appropriate level of <<def-metadata,metadata>> describing the data set is required. IHO S-102, the Bathymetric Surface Product Specification, provides <<def-metadata,Metadata>> elements derived from S-100 and from ISO 19115 and ISO 19115-2. Elements described within S-102 include mandatory, optional and conditional items. Following this specification, conclusive <<def-metadata,metadata>> for gridded <<def-bathymetric_model,bathymetric models>> will include information describing the data set, depth <<def-correction,correction>> type, <<def-uncertainty,uncertainty>> type, grid reference and coordinate system information, as well as temporal descriptions, grid construction methods, and persons responsible for product generation.
