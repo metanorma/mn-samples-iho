@@ -62,7 +62,7 @@ documents:
 	mkdir -p $@
 
 documents/%.html: documents/%.xml | documents
-	${PREFIX_CMD} metanorma $<
+	${PREFIX_CMD} metanorma -r metanorma-iho $<
 
 documents/%.xml: sources/%.xml | documents
 	mkdir -p $(dir $@)
