@@ -10,9 +10,8 @@
 :status: draft-proposal
 :committee: hssc
 :workgroup: hspt
-:docfile: document.adoc
 :mn-document-class: iho
-:mn-output-extensions: xml,html,doc,rxl
+:mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
 :data-uri-image:
 :imagesdir: images

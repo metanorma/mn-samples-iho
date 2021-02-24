@@ -10,9 +10,8 @@
 :committee: ircc
 :workgroup: msdiwg
 :imagesdir: images
-:docfile: document.adoc
 :mn-document-class: iho
-:mn-output-extensions: xml,html,doc,rxl
+:mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
 :data-uri-image:
 

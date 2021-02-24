@@ -9,7 +9,6 @@
 :status: in-force
 :committee: hssc
 :workgroup: tsmad
-:docfile: document.adoc
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
