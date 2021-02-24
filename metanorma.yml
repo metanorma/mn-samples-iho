@@ -1,15 +1,16 @@
 ---
 metanorma:
   source:
-    built_targets:
-      sources/b12.xml: sources/b12/document.adoc
-      sources/c17.xml: sources/c17/document.adoc
-      sources/s102.xml: sources/s102/document.adoc
-      sources/s44.xml: sources/s44/document.adoc
-      sources/s5-guidelines.xml: sources/s5-guidelines/document.adoc
-      sources/s5a.xml: sources/s5a/document.adoc
-      sources/s5b.xml: sources/s5b/document.adoc
-      sources/s63.xml: sources/s63/document.adoc
+    files:
+      - sources/b12/document.adoc
+      - sources/c17/document.adoc
+      - sources/s102/document.adoc
+      - sources/s44/document.adoc
+      - sources/s5-guidelines/document.adoc
+      - sources/s5a/document.adoc
+      - sources/s5b/document.adoc
+      - sources/s63/document.adoc
+      - sources/m1/document.adoc
 
   collection:
     organization: "IHO: International Hydrographic Organization"
