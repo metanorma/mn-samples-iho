@@ -54,7 +54,7 @@ This document describes an S-100 compliant product specification for a bathymetr
 
 
 [%bibitem]
-====  The Navigation Surface: A New Database Approach to Creating Multiple Products from High-Density Surveys
+==== The Navigation Surface: A New Database Approach to Creating Multiple Products from High-Density Surveys
 id:: MavigationSurface
 docid::
   type::: IHO
