@@ -1,0 +1,23 @@
+= Publication M-1
+:series: M
+:docnumber: 1
+:doctype: regulation
+:edition: 2.1.0
+:language: en
+:published-date: 2017-06
+:copyright-year: 2017
+:status: in-force
+:committee:
+:workgroup:
+:docfile: document.adoc
+:mn-document-class: iho
+:mn-output-extensions: xml,html,doc,rxl
+:local-cache-only:
+:data-uri-image:
+:imagesdir: images
+
+include::sections/00-preface.adoc[]
+
+//include::sections/01-content.adoc[]
+
+include::sections/01-content_paragraphs.adoc[]

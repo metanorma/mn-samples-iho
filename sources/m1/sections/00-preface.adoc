@@ -1,0 +1,12 @@
+[preface]
+== {blank}
+
+[%unnumbered]
+|===
+4+h| Record of changes
+
+| Edition No. | Date | Reference | Effective date
+| 2.0.0 | / | CL 41/2016 | 8 November 2016
+| 2.1.0 | June 2017 | A-1 | 28 April 2017
+| | | | 
+|===
