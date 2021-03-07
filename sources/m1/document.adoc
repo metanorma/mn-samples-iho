@@ -8,7 +8,7 @@
 :copyright-year: 2017
 :status: in-force
 :committee: hssc
-:workgroup:
+:workgroup: spwg
 :mn-document-class: iho
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
