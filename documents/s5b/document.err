@@ -1,0 +1,109 @@
+/__w/mn-samples-iho/mn-samples-iho/site/documents/s5b/document.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000129): Hanging paragraph in clause
+	<clause id="_programme_preparation_and_submission" obligation="informative"><title>Programme preparation and submission</title><p id="_61db8478-4f35-4808-b335-fb613bd4edd3">The preparation of a programme submission to the IBSC should be done in accordance with the document entitled GUIDELINES FOR THE IMPLEMENTATION OF THE STANDARDS OF COMPETENCE FOR HYDROGRAPHIC SURVEYORS. This document is available from the IHO website: <link target="http://www.iho.int/">www.iho.int</link> → Standards &amp; Publications.</p>
+	<p id="_850c66fc-d6e1-46bd-84dc-533f3d715bc0">The cross reference table is a mandatory requirement for a programme submission and <strong>MUST</strong> be completed. A template is specified and is available from the IHO website: <link target="http://www.iho.int/">www.iho.int</link></p>
+	<clause id="_list_of_acronyms_and_initialisms_used_in_this_document" obligation="informative">
+	<title>List of acronyms and initialisms used in this document</title>
+	<dl id="_827feafd-dbe6-4749-8790-6d27f3037af8">
+(XML Line 000320): Hanging paragraph in clause
+	<clause id="_basic_subjects" obligation="normative"><title>Basic subjects</title><clause id="b1_maths_stats_toe" obligation="normative">
+	<title>B1: Mathematics, Statistics, Theory of Errors</title>
+	<table id="_2b7b6a6d-d9c2-4b5d-b886-8851e2068bee" unnumbered="true">
+	<thead>
+	<tr>
+(XML Line 000322): Table should have title
+	<table id="_2b7b6a6d-d9c2-4b5d-b886-8851e2068bee" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+(XML Line 000488): Table should have title
+	<table id="_a99861da-6c2a-4c36-bcf5-512cf36490d8" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+(XML Line 000630): Table should have title
+	<table id="_5beb1081-83f1-4712-8af6-e09e578a1b45" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+(XML Line 000717): Table should have title
+	<table id="_1481278d-8820-4b70-b179-d8ad6bdd6454" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+(XML Line 000782): Table should have title
+	<table id="_2a5cdda3-e9da-442d-9b40-49c55e0e2f34" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+(XML Line 001090): Table should have title
+	<table id="_0a39bbd1-d782-4cbe-8e31-1736ad766d55" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+(XML Line 001169): Hanging paragraph in clause
+	<clause id="_essential_subjects" obligation="normative"><title>Essential subjects</title><clause id="e1_underwater_acoustics" obligation="normative">
+	<title>E1: Underwater Acoustics</title>
+	<table id="_501c0e63-9cab-4ee4-9a2f-d11ead2a69a3" unnumbered="true">
+	<thead>
+	<tr>
+(XML Line 001171): Table should have title
+	<table id="_501c0e63-9cab-4ee4-9a2f-d11ead2a69a3" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+(XML Line 001409): Table should have title
+	<table id="_21bf5b44-756f-4aee-9f58-135be89a9ef3" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+(XML Line 001525): Table should have title
+	<table id="_32c07625-15c5-434d-9bb3-d102dbc7656a" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+(XML Line 001756): Table should have title
+	<table id="_06ba542e-03e3-4aa1-9cb5-18c5d8a9a4d6" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+(XML Line 002139): Table should have title
+	<table id="_b416fa65-7ccd-4812-a667-14ff56d7b741" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+(XML Line 002528): Table should have title
+	<table id="_0537dffd-3c20-40f7-ae20-f1c4e03f33ec" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+(XML Line 002827): Table should have title
+	<table id="_282079c5-96bd-4e27-9b9f-72c72b6146b8" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Topic/Element</th>
+	<th valign="top" align="left">Content</th>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000092:463): element "terms" not allowed here; expected the element end-tag or element "abstract", "acknowledgements", "clause", "foreword" or "introduction"
+(XML Line 000092:565): element "clause" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms" or "ul"
+(XML Line 000147:76): element "clause" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms" or "ul"
+(XML Line 003035:16): element "iho-standard" incomplete; missing required element "bibliography"

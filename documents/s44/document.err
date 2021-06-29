@@ -1,0 +1,148 @@
+/__w/mn-samples-iho/mn-samples-iho/site/documents/s44/document.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000165): Hanging paragraph in clause
+	<clause id="ch-safety-navigation-surveys" obligation="normative"><title>CLASSIFICATION OF SAFETY OF NAVIGATION SURVEYS</title><clause id="_introduction_2" obligation="normative"><title>Introduction</title><p id="_be31d5cc-eea3-4601-8d53-1e77a2aa0b84">This chapter describes the orders of safety of navigation surveys which are considered acceptable by hydrographic offices or authorities to generate navigational products and services that allow surface vessels to navigate safely. As requirements vary with water depth, geophysical properties, and expected shipping types, five different orders of survey are defined; each designed to cater to a range of needs.</p>
+	<p id="_931414d4-7059-4441-a607-c91af4d26b3c">The five orders are described below along with a description of the intended area(s) of usage. The minimum standards required to achieve each order (<xref target="tab-minimum-bathymetry"/> and <xref target="tab-other-minimum"/>) along with a new tool for enhancing and customising these orders (Specification <xref target="scl-matrix-description">Matrix</xref>) is presented in <xref target="ch-tables-specification-matrix"/>.</p>
+	<p id="_22db3d2c-c5e7-46e2-ae9b-d9d4108c5eea">The hydrographic offices or authorities responsible for acquiring surveys should select the order of survey that is most appropriate for the requirements for safety of navigation in the area. A single order may not be appropriate for the entire area to be surveyed and, in these cases, the different orders should be explicitly defined through the survey area. For example, in an area traversed by Very Large Crude Carriers (VLCCs) and expected to be deeper than 40 metres, an Order 1a survey may have been specified. However, if the surveyor discovers shoals of less than 40 metres depth, then it may be more appropriate to survey these shoals and surrounding areas to Special Order or even Exclusive Order in some limited circumstances.</p>
+	<p id="_280e9ebe-b5b3-4580-ab8a-177dea2d5770">To be fully compliant with an S-44 Order, a hydrographic survey must comply with all bathymetric and feature detection requirements (<xref target="tab-minimum-bathymetry"/>) for that order and with all the other requirements (<xref target="tab-other-minimum"/>) for the same order, where applicable. Additionally, the tables must be read in conjunction with the detailed text in the following chapters. The challenge presented by each order, in particular Special and Exclusive Orders, is establishing the appropriate survey methodology to achieve the specified standards.</p>
+	<p id="_6fcb9bea-7565-4fd0-9126-28744002ede5">To ensure surveys are systematic where <xref target="def-bathymetric_coverage">bathymetric coverage</xref> is specified at less than 100%, the horizontal distance between registered positions of depths should be no greater than 3 times the depth or 25 metres, whichever is greater.</p></clause>
+(XML Line 000190): Hanging paragraph in clause
+	<clause id="_horizontal_and_vertical_positioning" obligation="normative"><title>HORIZONTAL AND VERTICAL POSITIONING</title><clause id="_introduction_3" obligation="normative"><title>Introduction</title><p id="_b35e883d-710f-4706-a4a4-e5bb1f74510e">Positioning is a fundamental part for every survey operation. The hydrographer must consider the geodetic reference frame, horizontal and vertical reference systems, their connections to other systems in use (e.g. land survey datums), as well as the uncertainty inherent within associated measurements.</p>
+	<p id="_8185aa53-7120-4a95-827a-dea42d26b869">In this standard, position and its uncertainty refer to the horizontal component of the sounding or feature, while the depth and its uncertainty refers to the vertical component of the same sounding or feature.</p></clause>
+	<clause id="_geodetic_reference_frame" obligation="normative"><title>Geodetic Reference Frame</title><p id="_3c95e63b-c464-4e6c-b4e2-4642b56d5cd5">Positions should be referenced to a geodetic reference frame, which can be the realisation of either a global (e.g. ITRF2018, WGS84(G1762)) or a regional (e.g. ETRS89, NAD83) reference frame and their later iterations. As there are frequent updates to geodetic reference frames, it is essential that the epoch is recorded for surveys with low positioning <xref target="def-uncertainty">uncertainty</xref>.</p>
+	<p id="_870f5a26-9c08-4c20-a9dd-2b19218dadf7">Since positions are most often referenced in a compound coordinate reference system/frame such as geodetic, geopotential, and height reference system/frame, they can be separated into horizontal and vertical components.</p></clause>
+	<clause id="_horizontal_reference_system" obligation="normative">
+(XML Line 000211): Hanging paragraph in clause
+	<clause id="_depth_bottom_coverage_features_and_nature_of_the_bottom" obligation="normative"><title>DEPTH, BOTTOM COVERAGE, FEATURES, AND NATURE OF THE BOTTOM</title><clause id="_introduction_4" obligation="normative"><title>Introduction</title><p id="_fef45271-3638-4857-b917-c74edd145dd4">The navigation of surface vessels requires accurate knowledge of depth and <xref target="def-feature">features</xref>. Where <xref target="def-underkeel_clearance">underkeel clearance</xref> is potentially an issue, <xref target="def-bathymetric_coverage">bathymetric coverage</xref> must be at least 100%, <xref target="def-feature_detection">feature detection</xref> must be appropriate, and depth uncertainties must be tightly controlled and understood.</p>
+	<p id="_8578c312-f2d3-4521-b66f-3e1b5c7ac28c">For customisation or enhancement of safety of navigation survey orders or other applications, survey criteria may be specified by selecting required criteria values from the <xref target="scl-matrix-description">Matrix</xref> (See <xref target="scl-matrix-description"/> and <xref target="annex-matrix-guidance"/>).</p></clause>
+	<clause id="scl-depth" obligation="normative"><title>Depth</title><clause id="_depth_measurement" obligation="normative"><title>Depth Measurement</title><p id="_50255fd7-d98b-4217-a549-4513348f32bd">Depths are to be understood as <xref target="def-reduced-depth">reduced depths</xref> within a well-defined vertical reference frame. The depth of a <xref target="def-feature">feature</xref> is expressed as the minimum depth of that <xref target="def-feature">feature</xref>.</p>
+	<p id="_04061f1d-53e0-4cc6-97b3-95b7a30ad27c">In waters with very high turbidity, e.g. estuaries, this minimum depth may be determined on the basis of sediment concentrations in the water.</p>
+	<p id="_5ef41b1e-c925-47d1-8655-fed9880e337f">Under exceptional circumstances, for safety of navigation purposes, the use of a high precision method (e.g. mechanical sweep) that the hydrographic office or other responsible authority deems able to confirm the safe depth in an area, or over a feature / wreck, can be used to certify a safe depth. In this case, the uncertainty of the vertical measurement will define the survey order to be quoted.</p></clause>
+(XML Line 000213): Hanging paragraph in clause
+	<clause id="scl-depth" obligation="normative"><title>Depth</title><clause id="_depth_measurement" obligation="normative"><title>Depth Measurement</title><p id="_50255fd7-d98b-4217-a549-4513348f32bd">Depths are to be understood as <xref target="def-reduced-depth">reduced depths</xref> within a well-defined vertical reference frame. The depth of a <xref target="def-feature">feature</xref> is expressed as the minimum depth of that <xref target="def-feature">feature</xref>.</p>
+	<p id="_04061f1d-53e0-4cc6-97b3-95b7a30ad27c">In waters with very high turbidity, e.g. estuaries, this minimum depth may be determined on the basis of sediment concentrations in the water.</p>
+	<p id="_5ef41b1e-c925-47d1-8655-fed9880e337f">Under exceptional circumstances, for safety of navigation purposes, the use of a high precision method (e.g. mechanical sweep) that the hydrographic office or other responsible authority deems able to confirm the safe depth in an area, or over a feature / wreck, can be used to certify a safe depth. In this case, the uncertainty of the vertical measurement will define the survey order to be quoted.</p></clause>
+	<clause id="_drying_heights" obligation="normative">
+	<title>Drying Heights</title>
+(XML Line 000253): Hanging paragraph in clause
+	<clause id="scl-bathymetric-coverage" obligation="normative"><title>Bathymetric Coverage</title><p id="_e580349a-343e-468c-b3e6-5fc9b1207d04">The concept of <xref target="def-bathymetric_coverage">bathymetric coverage</xref> was introduced in this edition of S-44, in order to make the standard technology independent. Acquisition of <xref target="def-bathymetric_coverage">bathymetric coverage</xref> requires use of a sensor that measures and records depths. <xref target="tab-minimum-bathymetry"/> specifies the minimum <xref target="def-bathymetric_coverage">bathymetric coverage</xref> to be achieved by each survey order.</p>
+	<clause id="_100_bathymetric_coverage" obligation="normative">
+	<title>100% Bathymetric Coverage</title>
+	<p id="_ec517b33-2e69-4330-a10b-2801ed7842e5">A 100% <xref target="def-bathymetric_coverage">bathymetric coverage</xref> should be interpreted as “full” <xref target="def-bathymetric_coverage">bathymetric coverage</xref>. 100% <xref target="def-bathymetric_coverage">bathymetric coverage</xref> does not guarantee continuous depth measurements, since the depth measurements are discrete and based on the inherent physical and survey instrumentation limitations.</p>
+	</clause>
+(XML Line 000275): Hanging paragraph in clause
+	<clause id="_water_levels_and_flow" obligation="normative"><title>WATER LEVELS AND FLOW</title><clause id="_introduction_5" obligation="normative"><title>Introduction</title><p id="_d44ad8bf-4e52-41a2-8a98-2ded8c9b58f3">In this chapter, water levels are considered in the context of supporting the vertical solution of depth measurements, rather than water level measurements as a discrete dataset to define tidal harmonics etc, which are covered within other IHO documents. Tides and other changes in water levels which impact the <xref target="def-tvu">TVU</xref> of depth data must be considered for any hydrographic survey regardless of the technology used to conduct the survey. Flow observations will often be required to support safe navigation, and when specified in the survey requirement, those observations must meet the parameters presented in this standard.</p>
+	<p id="_01f0a5e6-5c60-4c95-9505-92a32bf05b53">For requirements to clearly determine chart and land survey vertical datum connections, or relationships, see <xref target="scl-datum-connections"/>.</p></clause>
+	<clause id="_water_level_tidal_predictions" obligation="normative">
+	<title>Water Level (Tidal) Predictions</title>
+	<p id="_3c063302-a3d2-4f00-9d74-aef76390cd3f">Water level observations may be required to facilitate generation and maintenance of tidal prediction models and the production of Tide Tables. Water level observations should cover as long a period as possible and preferably not less than 30 days.</p>
+(XML Line 000288): Hanging paragraph in clause
+	<clause id="_surveys_above_the_vertical_datum" obligation="normative"><title>SURVEYS ABOVE THE VERTICAL DATUM</title><clause id="_introduction_6" obligation="normative"><title>Introduction</title><p id="_9751081f-ba80-42e9-9495-aa93d772c5f1">Surveys above the vertical datum are necessary for safe and efficient navigation and mooring. Topographic and geodetic measurements that are of specific importance for navigation are presented in the following sections. Their corresponding allowable uncertainties (<xref target="def-thu">THU</xref> and <xref target="def-tvu">TVU</xref> as applicable) are defined in <xref target="tab-other-minimum"/>.</p>
+	<p id="_9f16c67b-540a-4dfa-bd95-67a147e72883">Additional information such as drawings or photographs of these <xref target="def-feature">features</xref> should be captured where possible to support the measurement.</p>
+	<p id="_5e680d04-37c1-49db-9ca6-ac9f8f3ef060">For Chart and Land Survey Vertical Datum Connection requirements see <xref target="scl-datum-connections"/>.</p></clause>
+	<clause id="scl-fixed-topographic-navigation" obligation="normative"><title>Fixed Aids and Topographic Features Significant to Navigation</title><p id="_ada9d6b3-3fae-46b6-b1b6-381280a77ee0">Fixed aids to navigation include, but are not limited to: beacons, day marks, range markers, and lighthouses.</p>
+	<p id="_41f85f4d-6a4a-4507-8f65-a72b6dc7e685">Topographic <xref target="def-feature">features</xref> significant to navigation are conspicuous <xref target="def-feature">features</xref>, landmarks, and objects which assist mooring, docking, and manoeuvring in confined spaces and / or provide some aid in navigation.</p>
+(XML Line 000314): Hanging paragraph in clause
+	<clause id="_metadata" obligation="normative"><title>METADATA</title><clause id="_introduction_7" obligation="normative">
+	<title>Introduction</title>
+	<p id="_a6bcffe4-18d0-43a5-abbe-da48ac65f6b6"><xref target="def-metadata">Metadata</xref> is fundamental to ensure that survey data is correctly understood and utilised as required for chart production or other purposes. This Standard identifies the minimum <xref target="def-metadata">metadata</xref> that is to be provided with hydrographic surveys conducted for safety of navigation. Where additional <xref target="def-metadata">metadata</xref> is available this should be included to enhance the value of the survey data for other uses. Examples of <xref target="def-metadata">metadata</xref> include overall quality, data set title, source, positional <xref target="def-uncertainty">uncertainty</xref>, and ownership.</p>
+	</clause>
+	<clause id="_metadata_content" obligation="normative"><title>Metadata Content</title><p id="_57b1f6b9-284e-43c5-bf6f-43ff098136cb"><xref target="def-metadata">Metadata</xref> can be provided in any format such as in the Report of Survey, or embedded within a specific <xref target="def-metadata">metadata</xref> file. The chosen format should support discovery, clarity of understanding, and software compatibility. Each hydrographic office or authority may adopt <xref target="def-metadata">metadata</xref> requirements beyond that specified here and should develop and document a list of additional <xref target="def-metadata">metadata</xref> used for their survey data. The table below should be seen as a schema, and not a final data model.</p>
+(XML Line 000320): Table should have title
+	<table id="_bc96532f-1c1e-4e42-a9c4-f3aec479cca2" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Category or Group</th>
+	<th valign="top" align="left">Description</th>
+(XML Line 000391): Hanging paragraph in clause
+	<clause id="ch-tables-specification-matrix" obligation="normative"><title>TABLES AND SPECIFICATION MATRIX</title><clause id="_introduction_8" obligation="normative">
+	<title>Introduction</title>
+	<p id="_fe18e810-d7bd-409e-8414-da8715ae0802">As in previous editions, this edition of S-44 presents key elements of safety of navigation survey specifications in table format. This edition has two Tables (1 and 2) and provides a new specification <xref target="scl-matrix-description">Matrix</xref> for added flexibility for other types of hydrographic surveys carried out for purposes beyond safety of navigation. The new <xref target="scl-matrix-description">Matrix</xref> allows for customisation and enhancement of safety of navigation survey standards.</p>
+	</clause>
+	<clause id="_safety_of_navigation_standards" obligation="normative"><title>Safety of Navigation Standards</title><p id="_d4026043-d6f7-449a-8ffe-10743f3a31a7">Minimum bathymetry standards are defined in <xref target="tab-minimum-bathymetry"/>. Other minimum standards for positioning and water flow measurements are defined in <xref target="tab-other-minimum"/>. Both tables must be read in conjunction with the detailed text in this document.</p>
+(XML Line 000395): Hanging paragraph in clause
+	<clause id="_safety_of_navigation_standards" obligation="normative"><title>Safety of Navigation Standards</title><p id="_d4026043-d6f7-449a-8ffe-10743f3a31a7">Minimum bathymetry standards are defined in <xref target="tab-minimum-bathymetry"/>. Other minimum standards for positioning and water flow measurements are defined in <xref target="tab-other-minimum"/>. Both tables must be read in conjunction with the detailed text in this document.</p>
+	<p id="_ca132a49-d7ba-43c0-ab8d-4363ce3a4f14">As stated above, all standards defined in <xref target="tab-minimum-bathymetry"/> and <xref target="tab-other-minimum"/> are included in the specification <xref target="scl-matrix-description">Matrix</xref> within ranges of specification values which are available to enhance and customise safety of navigation surveys. Although the <xref target="scl-matrix-description">Matrix</xref> is available for this purpose, its usage will not reduce the minimum standards defined for safety of navigation survey orders. See Annex A for guidance on how to use the Specification <xref target="scl-matrix-description">Matrix</xref>.</p>
+	<clause id="_bathymetry_standards" obligation="normative">
+	<title>Bathymetry Standards</title>
+	<p id="_56e57cad-f9ce-41b1-9e23-60d5274dd03b"><xref target="tab-minimum-bathymetry"/> defines minimum bathymetry standards for safety of navigation surveys. The standards are intended to be purpose specific but technology independent in design. The order achieved for bathymetry data (<xref target="tab-minimum-bathymetry"/>) may be assessed independently of order achieved for other positioning data (<xref target="tab-other-minimum"/>), so as not to unnecessarily degrade the representation of quality of bathymetry in nautical charts and products. <xref target="tab-minimum-bathymetry"/> follows.</p>
+(XML Line 000404): Table should have title
+	<table id="tab-minimum-bathymetry">
+	<thead>
+	<tr>
+	<th valign="middle" align="center">Reference</th>
+	<th valign="middle" align="center">Criteria</th>
+(XML Line 000531): Table should have title
+	<table id="tab-other-minimum">
+	<thead>
+	<tr>
+	<th valign="middle" align="center">Reference</th>
+	<th valign="middle" align="center">Criteria</th>
+(XML Line 000859): Table should have title
+	<table id="_f98fd187-6f70-4774-bb79-d71411c41303" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="middle" align="center"/>
+	<th valign="middle" align="center">Criteria</th>
+(XML Line 001332): Hanging paragraph in clause
+	<annex id="annex-matrix-guidance" obligation="normative"><title>MATRIX GUIDANCE</title><clause id="_introduction_9" obligation="normative"><title>Introduction</title><p id="_4e6dc2d3-24d6-4707-b1e1-9a5088a9d04f">The <xref target="scl-matrix-description">Matrix</xref>, as presented in <xref target="scl-matrix"/>, includes a range of selectable criteria for hydrographic survey parameters / data types. It is organised by the following data classes: Bathymetry, Other Positioning, Water Flow, and Nature of the Bottom.</p>
+	<p id="_e54a0a85-1952-4304-996c-45a89fd5af7a">The criteria are derived through a series of alphanumeric codes which reference the cells in the <xref target="scl-matrix-description">Matrix</xref>. A criterion requires three characters to reference a cell address:</p>
+	<ol id="_da905976-1585-4b2b-ae10-202e9395ae48" type="arabic">
+	<li>
+	<p id="_795b7010-63be-43e5-95b3-0ac3f54e7dbc">The first character is a capital letter denoting the class of data.</p>
+(XML Line 001390): Hanging paragraph in clause
+	<clause id="_examples_of_matrix_realisations" obligation="normative"><title>Examples of Matrix Realisations:</title><clause id="_matrix_representations" obligation="normative">
+	<title>Matrix Representations</title>
+	<p id="_aaecdb12-377d-427b-8929-0b0e8df522f6"><xref target="scl-matrix-description">Matrix</xref> realisations may be communicated in a variety of representations including: diagrams, tables, text strings, and shaded matrices.</p>
+	</clause>
+	<clause id="_table_examples" obligation="normative"><title>Table Examples</title><p id="_cd60eb7b-da71-4356-a79b-899ab43dac95">The following table presents two examples of “Matrix Realisations”: Order 1a Surveys, and a Customised Specification. This table includes the values associated with a <xref target="scl-matrix-description">Matrix</xref> cell. Although it may be helpful to provide those values in a technical specification for a survey, it is not explicitly necessary in order to communicate the requirement. Cells in colour highlight the differences between Order 1a and the customised specification, which is more demanding.</p>
+(XML Line 001395): Table should have title
+	<table id="_fb76812b-9276-4f27-aa2d-f0bf46778368" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="middle" align="center">B</th>
+	<th valign="middle" align="center">BATHYMETRY</th>
+(XML Line 001697): Table should have title
+	<table id="_1588f440-e4a1-4690-9637-3cf057b61149" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="middle" align="center"/>
+	<th valign="middle" align="center">Criteria</th>
+(XML Line 002203): Hanging paragraph in clause
+	<annex id="annex-guidelines-quality-management" obligation="normative"><title>Guidelines for Quality Management</title><note id="_b8609dcb-4245-479d-8e91-34843f66c93d">
+	<p id="_dd94ec37-55e4-4e7b-8274-5d94427c1afd">This annex is <strong>not</strong> an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, <em>Manual on Hydrography</em>.</p>
+	</note>
+	<dl id="_a411d41d-9e78-4228-94a8-c954e8b73821">
+	<dt>
+(XML Line 002227): Hanging paragraph in clause
+	<annex id="annex-guidance-priori" obligation="normative"><title>GUIDANCE FOR A PRIORI AND A POSTERIORI QUALITY CONTROL</title><note id="_8e15c814-d55f-4ef8-98a3-c01141b8e901">
+	<p id="_fdc78381-33f4-44fa-9187-687ed07a4367">This annex is <strong>not</strong> an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, <em>Manual on Hydrography</em>.</p>
+	</note>
+	<p id="_811458ca-4a18-440f-8401-1cd18e7b2380">The S-44 standards refer to quality standards for both <em>a priori</em> and <em>a posteriori</em> results. In this guidance a brief view on how to determine the uncertainties for <em>a priori</em> and <em>a posteriori</em> is given. Determining uncertainties is necessary for any technique used in hydrographic surveys. Methods to establish the <xref target="def-uncertainty">uncertainty</xref> may differ greatly for each survey technique used.</p>
+	<clause id="_a_priori_uncertainty" obligation="normative"><title><em>A Priori</em> Uncertainty</title><p id="_99d7452c-5f58-4b6b-ba31-f0ffaae074e7">The <em>a  priori</em> <xref target="def-uncertainty">uncertainty</xref> is a theoretical value based on best practise estimations of all factors affecting the measurements. Each instrument used in the measurement and the environmental influences will add uncertainties to the grand total. Calculating the total <xref target="def-uncertainty">uncertainty</xref> horizontally and vertically prior to the survey will affirm to the hydrographer that the required survey standards will be feasible with the selected equipment in the environment of the survey area. If the survey standards are not achieved, other equipment or survey techniques may be necessary for that particular environment.</p>
+(XML Line 002237): Hanging paragraph in clause
+	<annex id="annex-gridded-bathymetry" obligation="normative"><title>GRIDDED BATHYMETRY CONSIDERATIONS</title><note id="_6782cd28-f707-41cc-9078-e5dc9d9d794f">
+	<p id="_5c613b2c-ce09-4d74-85c9-c7fc635b00dd">This annex is <strong>not</strong> an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, <em>Manual on Hydrography</em>.</p>
+	</note>
+	<p id="_fecfa656-f583-4c75-b734-fd25335ce2f9"><strong>REFERENCES</strong>: Content from the following references was used in the composition of this Annex.</p>
+	<p id="_450e7a11-9671-4cbf-a51d-c192685bf29d">IHO S-100, The Universal Hydrographic Data Model – Edition 3.0.0</p>
+(XML Line 002311): Hanging paragraph in clause
+	<clause id="_grid_considerations" obligation="normative"><title>Grid Considerations</title><clause id="_grid_resolution" obligation="normative"><title>Grid Resolution</title><p id="_d6c34453-2ab5-46b5-b9d8-26d0ea1de115">Gridded <xref target="def-bathymetric_model">bathymetric models</xref> are commonly generated using a fixed resolution per a pre-defined depth range. A compromise is often made when selecting a fixed resolution over a given depth range, where ultimately the grid resolution cannot be chosen at the same time for the shallowest and the deepest depths.</p>
+	<p id="_715e2f8e-c1bc-4896-ad47-2f7566b788b9">In addition to the fixed resolutions per depth range, recent efforts in hydrographic data processing have allowed for the generation of variable resolution gridded <xref target="def-bathymetric_model">bathymetric models</xref>. These models can be generated using fixed resolution per a pre-defined depth range (as with individual grids) or automated methods based on depth and achieved data density.</p>
+	<p id="_c3b768eb-f0ea-4e2f-85b8-5d90dc820881">When the survey requirement calls for detection of <xref target="def-feature">features</xref> of set dimensions and the resultant gridded <xref target="def-bathymetric_model">bathymetric model</xref> is to represent the results of the survey, accurate <xref target="def-feature">feature</xref> representation within the grid will require a grid cell size no greater than the size of the <xref target="def-feature">feature</xref> the gridded <xref target="def-bathymetric_model">bathymetric model</xref> is required to depict, although it is recommended that a cell size of half the <xref target="def-feature">feature</xref> is used.</p>
+	<p id="_d948427e-cf1f-4c9f-aff5-6d793e2a3876">The grid resolution should also be chosen to consider the achieved horizontal <xref target="def-uncertainty">uncertainty</xref> of the input samples and the method for which this <xref target="def-uncertainty">uncertainty</xref> is used in the chosen gridding method or algorithm.</p>
+	<p id="_c3d7d68a-e927-4b45-afcc-991c7b1adfb1">Grid resolution should ultimately be determined based on the intended use of the grid and therefore a survey may require grids of different resolutions to satisfy multiple purposes.</p></clause>
+(XML Line 002372): Hanging paragraph in clause
+	<clause id="_applicability" obligation="normative"><title>Applicability</title><p id="_578660fb-2c11-4572-ac62-aba7bae8e25f">Gridded <xref target="def-bathymetric_model">bathymetric models</xref> are a common product of a hydrographic survey; however, the utility of the model representation begins well before a survey data set is finalised as this data can also be used to verify survey requirements during hydrographic collection and certify quality of a data set during data set validation efforts.</p>
+	<clause id="_survey_data_collection" obligation="normative">
+	<title>Survey Data Collection</title>
+	<p id="_8a516712-f241-49b5-8ec3-dc6fe7ea68b2">Gridded <xref target="def-bathymetric_model">bathymetric models</xref> can provide valuable information regarding underway bottom sample density and identification of significant bottom <xref target="def-feature">features</xref>. These models can be leveraged to assess where full <xref target="def-feature_search">feature search</xref> has been achieved and conversely where holidays exist. Monitoring of these items during survey operations is necessary for the qualification of field data completeness prior to departing the survey area.</p>
+	</clause>
+
+
+== Metanorma XML Syntax
+
+(XML Line 002455:16): element "iho-standard" incomplete; missing required element "bibliography"
