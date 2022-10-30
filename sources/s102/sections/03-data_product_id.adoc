@@ -4,7 +4,7 @@
 
 *Title*:: Bathymetric Surface
 
-*Abstract*:: The Bathymetric Surface Product consists of a set of values organized to form a regular grid coverage, with associated metadata, for an area of the sea, river, lake or other body of water. Final grid coverage includes a depth value and associated uncertainty estimate for each location in the matrix. In addition, a discrete point set called a "tracking list" is included. The tracking list contains locations where a hydrographer or the data producer overrode a grid matrix value to deliberately bias the final surface for safety of navigation. That is, the data set can carry both the corrected depth information to support the safe navigation of marine vessels as well as the original measured depth value to support scientific purposes.
+*Abstract*:: The Bathymetric Surface Product consists of a set of values organized to form a regular grid coverage, with associated metadata, for an area of the sea, river, lake or other body of water. Final grid coverage includes a depth value and associated uncertainty estimate for each location in the matrix.
 
 *Topic Category*::
 +
