@@ -4,53 +4,51 @@
 With the advent of electronic navigation and the technological progress of surveying systems and production capabilities, the ability to enhance maritime navigation with the portrayal of high resolution bathymetry has become a requirement. The provision and utilization of such data in a standardized format is essential to support the safe and precise navigation of marine vessels, and furthermore an important basis for many other maritime applications.
 
 === Introduction
-This document describes an S-100 compliant product specification for a bathymetric surface product. Incorporating aspects of the navigation surface concept [Smith et al, 2002], an S-102 bathymetric surface product is a digital elevation model which represents the seafloor in a regular grid structure. It can be used alone or as an important element/source for future S-100 conformant ECDIS navigation. The product specification is based on the IHO S-100 framework specification and the ISO 19100 series of standards. It comprises the content model (spatial structure and metadata), encoding structure, portrayal and exchange file format for a bathymetric surface product.
+This document describes an S-100 compliant product specification for a bathymetric surface product. Incorporating aspects of the navigation surface concept <<MavigationSurface,[Smith et al, 2002]>>, an S-102 bathymetric surface product is a digital elevation model which represents the seafloor in a regular grid structure. It can be used alone or as an important element/source for future S-100 conformant ECDIS navigation. The product specification is based on the IHO S-100 framework specification and the ISO 19100 series of standards. It comprises the content model (spatial structure and metadata), encoding structure, portrayal and exchange file format for a bathymetric surface product.
 
 [bibliography]
 === References
-* [[[iho-s100,IHO S-100]]], Universal Hydrographic Data Model v4.0.0, December 2018 (Encoding, Feature Catalogue)
+* [[[iho-s100,IHO S-100]]]
 
-* [[[iho-s44,IHO S-44]]], Standards for Hydrographic Surveys 5^th^ Edition, February 2008
+* [[[iho-s44,IHO S-44]]]
 
-* [[[iho-s4,IHO S-4]]], Regulations of the IHO for International (INT) Charts and Chart Specifications of the IHO, Edition 4.8.0, October/November 2018.
+* [[[iho-s4,IHO S-4]]]
 
-* [[[iho-s32,IHO S-32]]], Hydrographic Dictionary 5th Edition, Part 1, Volume 1 (English), 1994
+* [[[iho-s32,IHO S-32]]]
 
-* [[[iso-8601,ISO 8601:2004]]], Data elements and interchange formats - Information interchange - Representation of dates and times
+* [[[iso-8601,ISO 8601:2004]]]
 
-* [[[iso-639-2,ISO 639-2:1998]]], Codes for the representation of names of languages -- Part 2: Alpha-3 code
+* [[[iso-639-2,ISO 639-2:1998]]]
 
-* [[[iso-ts-19103,ISO/TS 19103:2015]]], Geographic information - Conceptual schema language
+* [[[iso-ts-19103,ISO/TS 19103:2015]]]
 
-* [[[iso-19111,ISO 19111:2007]]], Geographic information - Spatial referencing by coordinates
+* [[[iso-19111,ISO 19111:2007]]]
 
-* [[[iso19115,ISO 19115:2003]]], Geographic information -- Metadata
+* [[[iso19115,ISO 19115:2003]]]
 
-* [[[iso-19115-1,ISO 19115-1:2014/Amd 1:2018]]], Geographic information - Metadata
+* [[[iso-19115-1,ISO 19115-1:2014/Amd 1:2018]]]
 
-* [[[iso-19115-2,ISO 19115-2:2009]]], Geographic information - Metadata: Extensions for imagery and gridded data
+* [[[iso-19115-2,ISO 19115-2:2009]]]
 
-* [[[iso-19115-3,ISO/TS 19115-3:2016]]], Geographic information -- Metadata -- Part 3: XML schema implementation for fundamental concepts
+* [[[iso-19115-3,ISO/TS 19115-3:2016]]]
 
-* [[[iso-19123,ISO 19123:2005]]], Geographic information - Schema for coverage geometry and functions
+* [[[iso-19123,ISO 19123:2005]]]
 
-* [[[iso-19129,ISO 19129:2009]]], Geographic information - Imagery gridded and coverage data framework
+* [[[iso-19129,ISO 19129:2009]]]
 
-* [[[iso-19131,ISO 19131:2007/Amd 1:2011]]], Geographic information - Data product specifications
+* [[[iso-19131,ISO 19131:2007/Amd 1:2011]]]
 
-* [[[iso-iec-19501,ISO/IEC 19501:2005]]], Information technology - Open Distributed Processing - Unified Modelling Language Version 1.4.2
+* [[[iso-iec-19501,ISO/IEC 19501:2005]]]
 
-* [[[iso19107,ISO 19107:2019]]], Geographic information -- Spatial schema
+* [[[iso3166,ISO 3166-2:2013]]]
 
-* [[[iso3166,ISO 3166-2:2013]]], Codes for the representation of names of countries and their subdivisions -- Part 2: Country subdivision code
+* [[[iso-ts-19130,ISO/TS 19130:2010]]]
 
-* [[[iso-ts-19130,ISO/TS 19130:2010]]], Geographic information - Imagery sensor models for geopositioning
+* [[[iso-ts-19130-2,ISO/TS 19130-2:2014]]]
 
-* [[[iso-ts-19130-2,ISO/TS 19130-2:2014]]], Geographic information -- Imagery sensor models for geopositioning -- Part 2: SAR, InSAR, lidar and sonar
+* [[[iso19139,ISO/TS 19139:2007]]]
 
-* [[[iso19139,ISO/TS 19139:2007]]], Geographic information -- Metadata -- XML schema implementation
-
-* [[[iso-10646-1,ISO/IEC 10646-1:2000]]], Information technology -- Universal Multiple-Octet Coded Character Set (UCS) -- Part 1: Architecture and Basic Multilingual Plane
+* [[[iso-10646-1,ISO/IEC 10646-1:2000]]]
 
 
 [%bibitem]
@@ -200,7 +198,7 @@ completename::
 
 === Terms, definitions and abbreviations
 
-==== Use of Language
+==== Use of language
 
 Within this document:
 
@@ -209,7 +207,7 @@ Within this document:
 * "`May`" means "`allowed to`" or "`could possibly`" and is not mandatory.
 
 
-==== Terms and Definitions
+==== Terms and definitions
 
 ===== Accuracy
 
@@ -334,10 +332,6 @@ Connected 2-dimensional geometric primitive, representing the continuous image o
 
 NOTE: The boundary of a surface is the set of oriented, closed curves that delineate the limits of the surface.
 
-===== Tiling Scheme
-
-A discrete *grid coverage* that is used to partition data into discrete edge matched sets called tiles.
-
 ===== Uncertainty
 
 The interval (about a given value) that will contain the true value of the measurement at a specific confidence level.
@@ -352,7 +346,7 @@ NOTE: A directed line segment represents a vector if the length and direction of
 
 
 ==== Abbreviations
-This product specification adopts the following convention for presentation purposes:
+This Product Specification adopts the following convention for presentation purposes:
 
 API:: Application Programming Interface
 BAG:: Bathymetric Attributed Grid
@@ -374,13 +368,15 @@ SONAR:: Sound Navigation and Ranging
 UML:: Universal Modelling Language
 
 
-=== General S-102 Data Product Description
+=== General S-102 data product description
 
 *Title*:: Bathymetric Surface Product Specification
 
 *Abstract*:: This document is a Product Specification for a bathymetric surface which may be used alone or as an important element/source for future S-100 conformant ECDIS navigation. The product is defined as a data set with different coverages. This Product Specification includes a content model and separate encodings.
 
-*Content*:: The Product Specification defines all requirements to which S-102 bathymetric data products must conform. Specifically, it defines the data product content in terms of features and attributes within the feature catalogue. The display of features is defined by the symbols and rule sets contained in the portrayal catalogue. The Data Classification and Encoding Guide (DCEG) provides guidance on how data product content must be captured. <<annex-data-classification-and-encoding-guide>>, in addition to <<annex-normative-implementation-guidance>>, will provide implementation guidance for developers.
+*Acronym*:: S-102
+
+*Content*:: The Product Specification defines all requirements to which S-102 bathymetric data products must conform. Specifically, it defines the data product content in terms of features and attributes within the feature catalogue. The display of features is defined by the symbols and rule sets contained in the portrayal catalogue. The Data Classification and Encoding Guide (DCEG) provides guidance on how data product content must be captured. <<annex-data-classification-and-encoding-guide>>, in addition to <<annex-feature-catalogue>>, will provide implementation guidance for developers.
 
 *Spatial Extent*::
 *Description*: Areas specific to marine navigation. +
@@ -389,16 +385,16 @@ UML:: Universal Modelling Language
 *North Bounding Latitude*: 90° +
 *South Bounding Latitude*: -90°
 
-*Specific Purpose*:: The primary purpose of the Bathymetric Surface Product is to provide high resolution bathymetry in gridded form in support of safety of navigation. A Bathymetric Surface Product may exist anywhere in the maritime domain. There are no limitations to its extent. Portrayal of S-102 bathymetry with other S-100 compliant products are intended to support safe passage, precise berthing and mooring, as well as route planning of marine vessels. The secondary purpose of a bathymetric surface product is to provide high resolution bathymetric data for other maritime applications.
+*Purpose*:: The primary purpose of the Bathymetric Surface Product is to provide high resolution bathymetry in gridded form in support of safety of navigation. A Bathymetric Surface Product may exist anywhere in the maritime domain. There are no limitations to its extent. Portrayal of S-102 bathymetry with other S-100 compliant products are intended to support safe passage, precise berthing and mooring, as well as route planning of marine vessels. The secondary purpose of a bathymetric surface product is to provide high resolution bathymetric data for other maritime applications.
 
 
-=== Product Specification Metadata
-This information uniquely identifies this Product Specification and provides information about its creation and maintenance. For further information on dataset metadata, see <<sec-metadata>> - Metadata.
+=== Product Specification metadata
+This information uniquely identifies this Product Specification and provides information about its creation and maintenance. For further information on dataset metadata, see <<sec-metadata>>.
 
 *Title*:: Bathymetric Surface Product Specification
 *S-100 Version*:: 4.0.0
-*S-102 Version*:: 2.0.0
-*Date*:: October 2019
+*S-102 Version*:: 2.1.0
+*Date*:: October 2022
 
 *Language*:: English
 *Classification*:: Unclassified
@@ -414,8 +410,8 @@ Fax: +377 93 10 81 40 +
 Email: mailto:info@iho.int[] +
 --
 *URL*:: link:http://www.iho.int/[www.iho.int]
-*Identifier*:: IHO:S100:S102:2:0:0
-*Maintenance*:: Changes to the Product Specification S-201 are coordinated by the IHO S-100 Working Group (S-100WG), and must be made available via the IHO web site. Maintenance of the Product Specification must conform to IHO Resolution 2/2007, as amended.
+*Identifier*:: IHO:S100:S102:2:1:0
+*Maintenance*:: Changes to the Product Specification S-102 are coordinated by the IHO S-100 Working Group (S-100WG), and must be made available via the IHO web site. Maintenance of the Product Specification must conform to IHO Resolution 2/2007, as amended.
 
 
 === IHO Product Specification Maintenance
@@ -424,19 +420,19 @@ Email: mailto:info@iho.int[] +
 Changes to S-102 will be released by the IHO as a New Edition, revision, or clarification.
 
 ==== New Edition
-New Editions of S-102 introduce significant changes. _New Editions_ enable new concepts, such as the ability to support new functions or applications, or the introduction of new constructs or data types. _New Editions_ are likely to have a significant impact on either existing users or future users of S-102.
+_New Editions_ of S-102 introduce significant changes. _New Editions_ enable new concepts, such as the ability to support new functions or applications, or the introduction of new constructs or data types. _New Editions_ are likely to have a significant impact on either existing users or future users of S-102.
 
 ==== Revisions
-_Revisions_ are defined as substantive semantic changes to S-102. Typically, revisions will change S-102 to correct factual errors; introduce necessary changes that have become evident as a result of practical experience or changing circumstances. A _revision_ must not be classified as a clarification. Revisions could have an impact on either existing users or future users of S-102. All cumulative _clarifications_ must be included with the release of approved corrections revisions.
+_Revisions_ are defined as substantive semantic changes to S-102. Typically, _revisions_ will change S-102 to correct factual errors; introduce necessary changes that have become evident as a result of practical experience or changing circumstances. A _revision_ must not be classified as a clarification. Revisions could have an impact on either existing users or future users of S-102. All cumulative _clarifications_ must be included with the release of approved _revisions_.
 
-Changes in a revision are minor and ensure backward compatibility with the previous versions within the same Edition. Newer revisions, for example, introduce new features and attributes. Within the same Edition, a dataset of one version could always be processed with a later version of the feature and portrayal catalogues.
+Changes in a revision are minor and ensure backward compatibility with the previous versions within the same Edition. Newer revisions, for example, introduce new features and attributes. Within the same Edition, a dataset of one version could always be processed with a later version of the Feature and Portrayal Catalogues.
 
-In most cases a new feature or portrayal catalogue will result in a revision of S-102.
+In most cases a new feature or portrayal catalogue will result in a _revision_ of S-102.
 
 ==== Clarification
-Clarifications are non-substantive changes to S-102. Typically, clarifications: remove ambiguity; correct grammatical and spelling errors; amend or update cross references; insert improved graphics in spelling, punctuation and grammar. A clarification must not cause any substantive semantic change to S-102.
+_Clarifications_ are non-substantive changes to S-102. Typically, _clarifications_: remove ambiguity; correct grammatical and spelling errors; amend or update cross references; insert improved graphics in spelling, punctuation and grammar. A _clarification_ must not cause any substantive semantic change to S-102.
 
-Changes in a clarification are minor and ensure backward compatibility with the previous versions within the same Edition. Within the same Edition, a dataset of one clarification version could always be processed with a later version of the feature and portrayal catalogues, and a portrayal catalogue can always rely on earlier versions of the feature catalogues.
+Changes in a _clarification_ are minor and ensure backward compatibility with the previous versions within the same Edition. Within the same Edition, a dataset of one clarification version could always be processed with a later version of the Feature and Portrayal Catalogues, and a Portrayal Catalogue can always rely on earlier versions of the Feature Catalogue.
 
 
 ==== Version Numbers
