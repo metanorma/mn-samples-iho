@@ -2,4 +2,4 @@
 [appendix,obligation="informative"]
 == Portrayal Catalogue
 
-_Portrayal Catalogue currently under development._
+NOTE: Portrayal Catalogue currently under development.
