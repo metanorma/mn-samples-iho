@@ -4,7 +4,7 @@
 == S-102 Dataset Size and Production
 
 === Header Record
-An S-102 file will contain two header sections. The first section contains, at minimum, the mandatory metadata elements as defined in S-100 Part 4. The second section contains, at minimum, the mandatory metadata elements as defined in Section 12 of the S-102 Product Specification. The producers may add optionally defined metadata to these sections, as their processes/standards require.
+An S-102 file will contain two header sections. The first section contains, at minimum, the mandatory metadata elements as defined in S-100 Part 4. The second section contains, at minimum, the mandatory metadata elements as defined in <<sec-metadata>> of the S-102 Product Specification. The producers may add optionally defined metadata to these sections, as their processes/standards require.
 
 Given that the contents of these metadata attributes will vary between producers, it is impossible to define a definitive size for the file header. The estimated maximum size for the full header of an S-102 file is 3 MB. This is an estimate based on the expected encoding of mandatory metadata in both S-100/S-102, usage of the optional metadata elements and expected verbosity of those elements.
 

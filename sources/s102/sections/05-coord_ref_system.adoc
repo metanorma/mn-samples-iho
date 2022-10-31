@@ -41,4 +41,4 @@ The vertical datum must be taken from the code-list defined by S100_VerticalAndS
 
 
 === Temporal reference system
-The temporal reference system is the Gregorian calendar for date and UTC for time. Time is measured by reference to Calendar dates and Clock time in accordance with <<iso-8601>>, Temporal Schema, clause 5.4.4. A date-time variable will have the following 16-character format: _yyyymmddThhmmssZ_.
+The temporal reference system is the Gregorian calendar for date and UTC for time. Time is measured by reference to Calendar dates and Clock time in accordance with <<iso-8601,clause=5.4.4>>. A date-time variable will have the following 16-character format: _yyyymmddThhmmssZ_.
