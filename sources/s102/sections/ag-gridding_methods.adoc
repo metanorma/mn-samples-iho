@@ -9,7 +9,7 @@
 
 * The *Total Propagated Uncertainty (TPU) Weighted Mean* algorithm makes use of the depth and associated total propagated uncertainty for each contributing depth estimate to compute a weighted average depth for each nodal position.
 
-* Note: TPU is a measure of the expected accuracy of the depth estimate when all relevant error/uncertainty sources have been considered.
+* NOTE: TPU is a measure of the expected accuracy of the depth estimate when all relevant error/uncertainty sources have been considered.
 
 * The *Combined Uncertainty and Bathymetric Estimator, or CUBE* makes use of the depth and associated total propagated uncertainty for each contributing depth estimate to compute one or many hypotheses for an area of interest. The resulting hypotheses are used to estimate statistical representative depths at each nodal position.
 
