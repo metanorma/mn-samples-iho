@@ -25,3 +25,14 @@ This repository also contains references relating to authoring IHO documents, in
 
 NOTE: These documents are publicly available on the https://iho.int/en/standards-in-force[IHO website]
 
+== Importance of samples
+
+As per the IHO Secretariat, the importance of the samples are as follows:
+
+* C-17 is top of the list
+* C-51 is second
+* S-51 and M-1
+* S-102 and B-12
+* New edition of S-44
+* S-5 A and S-5 B
+* B-6 for multilingual
