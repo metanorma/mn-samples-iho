@@ -1,0 +1,84 @@
+/__w/mn-samples-iho/mn-samples-iho/site/documents/c17/document.err errors
+
+
+== Anchors
+
+(XML Line 000035): Crossreference target annexA is undefined
+	<xref target="annexA" style="short"/>
+(XML Line 000060): Crossreference target annexH is undefined
+	<xref target="annexH" style="short"/>
+(XML Line 000060): Crossreference target annexC is undefined
+	<xref target="annexC" style="short"/>
+(XML Line 000068): Crossreference target fig1 is undefined
+	<xref target="fig1" style="short"/>
+(XML Line 000078): Crossreference target annexF is undefined
+	<xref target="annexF" style="short"/>
+(XML Line 000115): Crossreference target fig2 is undefined
+	<xref target="fig2" style="short"/>
+(XML Line 000117): Crossreference target annexE is undefined
+	<xref target="annexE" style="short"/>
+(XML Line 000148): Crossreference target fig3 is undefined
+	<xref target="fig3" style="short"/>
+(XML Line 000194): Crossreference target fig4 is undefined
+	<xref target="fig4" style="short"/>
+(XML Line 000311): Crossreference target fig5 is undefined
+	<xref target="fig5" style="short"/>
+(XML Line 000349): Crossreference target fig6 is undefined
+	<xref target="fig6" style="short"/>
+(XML Line 000375): Crossreference target annexB is undefined
+	<xref target="annexB" style="short"/>
+(XML Line 000375): Crossreference target annexG is undefined
+	<xref target="annexG" style="short"/>
+(XML Line 000415): Crossreference target annexH is undefined
+	<xref target="annexH" style="short"/>
+(XML Line 000560): Crossreference target annexI is undefined
+	<xref target="annexI" style="short"/>
+(XML Line 000651): Crossreference target fig7 is undefined
+	<xref target="fig7" style="short"/>
+(XML Line 000801): Crossreference target fig8 is undefined
+	<xref target="fig8" style="short"/>
+(XML Line 000812): Crossreference target fig9 is undefined
+	<xref target="fig9" style="short"/>
+(XML Line 000812): Crossreference target fig10 is undefined
+	<xref target="fig10" style="short"/>
+(XML Line 000823): Crossreference target fig11 is undefined
+	<xref target="fig11" style="short"/>
+(XML Line 000834): Crossreference target fig12 is undefined
+	<xref target="fig12" style="short"/>
+(XML Line 000841): Crossreference target fig13 is undefined
+	<xref target="fig13" style="short"/>
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000041): Hanging paragraph in clause
+	<clause id="_what_is_a_spatial_data_infrastructure_sdi" obligation="normative">
+	<title>What is a Spatial Data Infrastructure (SDI)?</title>
+	<p id="_7308ce60-7380-0baf-7d45-286aa11bb2f1">Spatial Data is the data or information that identifies the geographic location of features and boundaries on Earth and Space, such as natural or constructed features, oceans and space but also includes encoding attributes, observations and other metrics concerning these features and boundaries.</p>
+	
+	<p id="_463d4909-e146-508e-e687-d5454b7901e9">Spatial data is usually stored as coordinates and topology, and is data that can be mapped. Spatial data is often accessed, manipulated or analyzed through Geographic Information Systems (GIS).</p>
+(XML Line 000066): Hanging paragraph in clause
+	<clause id="_what_constitutes_an_msdi" obligation="normative">
+	<title>What constitutes an MSDI?</title>
+	<p id="_b8512798-ebcf-3ba2-bb57-4f852a3ce6c0">An MSDI can be described as a framework comprising the key components shown in <xref target="fig1" style="short"/>.</p>
+	
+	<figure id="fig1">
+(XML Line 000371): Hanging paragraph in clause
+	<clause id="_what_role_should_a_ho_have_in_msdi" obligation="normative">
+	<title>What role should a HO have in MSDI?</title>
+	<p id="_cdfa61e4-8d94-8adf-4d91-c8a02fb389ca">Most HOs hold data in order to support nautical charting requirements with limited emphasis placed on providing that same data to support wider environmental and commercial coastal and offshore activities.</p>
+	
+	<p id="_c086f197-e989-66a7-a2a3-548ae23f4719">MSDI places a greater emphasis on the unlocking of all geospatial information, including hydrographic information, and to make that information more widely available to support the myriad of uses described in <xref target="annexB" style="short"/> of this document. HOs are well placed to support SDIs in that it provides a natural extension in the management and dissemination of the underpinning hydrographic information to a wider user community in an integrated manner. All HOs should therefore carefully consider how they might engage and play a full role in the development of, or participation in a SDI. <xref target="annexG" style="short"/> show possible ways for a HO to engage in SDI.</p>
+(XML Line 001015): Table should have title
+	<table id="_1badfe8f-a04b-d65a-2958-1e0d25d5511d" unnumbered="true"><thead><tr><th valign="middle" align="center">Time</th>
+	<th colspan="2" valign="middle" align="center">Description</th>
+	<th valign="middle" align="center">Outcome</th>
+	</tr></thead>
+	<tbody><tr><td valign="top" align="left"><p id="_72863051-7c44-4792-a88e-4a10266066e3">0830 — 0845</p>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000339:38): element "fn" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "em", "eref", "erefstack", "hr", "image", "index", "index-xref", "keyword", "link", "pagebreak", "ruby", "smallcap", "span", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "underline" or "xref"
+(XML Line 000913:70): element "fn" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "em", "eref", "erefstack", "hr", "image", "index", "index-xref", "keyword", "link", "pagebreak", "ruby", "smallcap", "span", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "underline" or "xref"
+(XML Line 001410:16): element "iho-standard" incomplete; missing required element "bibliography"
