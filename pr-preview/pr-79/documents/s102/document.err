@@ -1,0 +1,108 @@
+/__w/mn-samples-iho/mn-samples-iho/site/documents/s102/document.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000018): Table should have title
+	<table id="_c3d292a6-fc62-a281-7f71-d4822e7be659" unnumbered="true"><thead><tr><th valign="top" align="left">Version Number</th>
+	<th valign="top" align="left">Date</th>
+	<th valign="top" align="left">Approved By</th>
+	<th valign="top" align="left">Purpose</th>
+	</tr></thead>
+(XML Line 000155): Hanging paragraph in clause
+	<clause id="sec-overview" obligation="normative">
+	<title>Overview</title>
+	<p id="_57adc2f7-2dac-1670-b2ab-715437c72a7f">With the advent of electronic navigation and the technological progress of surveying systems and production capabilities, the ability to enhance maritime navigation with the portrayal of high resolution bathymetry has become a requirement. The provision and utilization of such data in a standardized format is essential to support the safe and precise navigation of marine vessels, and furthermore an important basis for many other maritime applications.</p>
+	
+	<clause id="_introduction" obligation="normative">
+(XML Line 000771): Hanging paragraph in clause
+	<clause id="_terms_definitions_and_abbreviations" obligation="normative">
+	<title>Terms, definitions and abbreviations</title>
+	<clause id="_use_of_language" obligation="normative">
+	<title>Use of language</title>
+	<p id="_9c1f5bf4-adad-3e94-c24c-437145b8f599">Within this document:</p>
+(XML Line 001221): Hanging paragraph in clause
+	<clause id="subsec-application-schema" obligation="normative">
+	<title>Application Schema</title>
+	<p id="_d9ae2971-f32f-250b-117b-20c2a0b48635">The Application Schema Data Set Structure is shown in <xref target="fig-data-set-structure-s102" style="short"/> and <xref target="fig-coverage-structure-of-s102" style="short"/>. They show a number of classes specialized for use in S-102 and two sets of implementation classes. An actual data set of S-102 bathymetry data only contains the implementation classes. All of the required attributes from the other classes in the application schema are satisfied by statements within the Product Specification. This approach to producing the Application Schema results in a very simple structure for implementation.</p>
+	
+	<figure id="fig-data-set-structure-s102">
+(XML Line 001249): Hanging paragraph in clause
+	<clause id="subsec-tiling-scheme-partitioning" obligation="normative">
+	<title>Application Schema implementation classes</title>
+	<p id="_f3a1d420-1643-f144-8499-592985fc6f52">The implementation classes for the template application schema are shown in <xref target="fig-implementation-of-classes" style="short"/>. The attributes are shown for the coverage related classes together with the attribute classes.</p>
+	
+	<p id="_b3884361-6539-bdf7-7152-46618c704cbe">In order to simplify the implementation, a number of defaults are assumed for S-102. These defaults simplify implementation and help simplify interaction with the Navigation Surface implementation from the Open Navigation Surface Working Group and other bathymetric gridded types. In the following sub clauses, the default values are emphasized so that they do not need to be encoded when generating an encoding of the implementation classes. However, if specified they must assume the stated values unless other options are stated.</p>
+(XML Line 001425): Hanging paragraph in clause
+	<clause id="_feature_types" obligation="normative">
+	<title>Feature types</title>
+	<p id="_95d6b752-e387-ab4a-790f-e4f7ca7beef7">S-102 is a coverage feature product. <strong>BathymetryCoverage</strong> implements <strong>S102_DepthCoverage</strong> and includes <strong>S102_BathymetryValues</strong>.</p>
+	
+	<clause id="_geographic" obligation="normative">
+(XML Line 001578): Hanging paragraph in clause
+	<clause id="sec-data-quality" obligation="normative">
+	<title>Data Quality</title>
+	<p id="_7c6004ff-aaa9-a316-7b27-e728a61305c9">Data quality allows users and user systems to assess fitness for use of the provided data. Data quality measures and the associated evaluation are reported as metadata of a data product. This metadata improves interoperability with other data products and provides usage by user groups that the data product was not originally intended for. The secondary users can make assessments of the data product usefulness in their application based on the reported data quality measures.</p>
+	
+	<clause id="_completeness" obligation="normative">
+(XML Line 001703): Hanging paragraph in clause
+	<clause id="_generation_and_display_of_gridded_bathymetry" obligation="normative">
+	<title>Generation and display of gridded bathymetry</title>
+	<p id="_80cde714-1b8d-f49a-8823-08a0af907625">Most modern hydrographic surveys are conducted using high-resolution multibeam sonar systems. While these systems provide a highly detailed depiction of the seafloor, the storage and processing requirements (that is, data management) can be challenging. A typical hydrographic survey can collect upwards of 10 billion depth estimates over a thirty-day collection period.</p>
+	
+	<p id="_349d6fcd-7999-ad33-8756-3d5becd0712d">Utilization of a gridded data structure eases the data management concerns of the hydrographer, providing the ability to safely decimate the total sum of collected depth estimates into a manageable quantity of representative nodal depths for processing and production. All gridded datasets should be exposed to rigid Quality Assurance/Control procedures to ensure the final gridded dataset accurately represents the real-world environment. Once a dataset passes an established Quality Assurance/Control process, modern chart production software is used to extract candidate nodal depths from the grid for consideration as final charted soundings.</p>
+(XML Line 001999): Hanging paragraph in clause
+	<clause id="subsec-product-structure" obligation="normative">
+	<title>Product structure</title>
+	<p id="_9821d4bf-3113-e57e-947e-2dbcfa56ae76">The structure of the data product follows the form given in <eref type="inline" bibitemid="iho-s100" citeas="S-100"><localityStack><locality type="part"><referenceFrom>10C</referenceFrom></locality></localityStack></eref> — HDF5 Data Model and File Format. The general structure, which was designed for several S-100 products is given in <xref target="fig-outline-of-the-generic-data-file-structure" style="short"/>.</p>
+	
+	<figure id="fig-outline-of-the-generic-data-file-structure">
+(XML Line 002606): Hanging paragraph in clause
+	<clause id="subsec-dataset-size" obligation="normative">
+	<title>Dataset size</title>
+	<p id="_64c34170-9d29-6517-9c1c-576cc2fe1ffd">S-102 delivery will take place in one form: network transfer to platform (that is, internet download). An example scenario has been provided below:<note id="_3bc22a2c-1197-1f76-c9e1-60606ce1ea26"><p id="_b2746c81-53f6-ce93-6371-2f7cd194a72a">The use of 10 MB in this and other sections should be treated as informative information only. Additionally, any computed values associated with either file size limit should be treated as approximate answers. Final selection of an appropriate file size limit or grid resolution is left to the discretion of the data producer.</p>
+	</note></p>
+	
+(XML Line 002754): Hanging paragraph in clause
+	<clause id="_data_integrity_and_encryption" obligation="normative">
+	<title>Data integrity and encryption</title>
+	<p id="_487192e4-8f5c-3aa4-2ddc-1964ba9c0920">S-100 Part 15 defines the algorithms for compressing, encrypting and digitally signing datasets based on the S-100 Data Model. The individual Product Specifications provide details about which of the elements are being used and on which files in the dataset.</p>
+	
+	<clause id="_use_of_compression" obligation="normative">
+(XML Line 003158): Hanging paragraph in clause
+	<clause id="_structure_metadata" obligation="normative">
+	<title>Structure metadata</title>
+	<p id="_83f8e2e5-e053-f095-c7a7-dffca08aeb8d">Structure metadata is used to describe the structure of an instance of a collection. Since constraints can be different on separate files (for example they could be derived from different legal sources), or security constraints may be different, the constraint information becomes part of the structure metadata. The other structure metadata is the grid representation and the reference system.</p>
+	
+	<p id="_8faef6c4-a677-3ebc-9d3c-ab160513777a"><xref target="fig-s102-structure-metadata" style="short"/> shows the <strong>S102_StructureMetadataBlock</strong>. The metadata block is generated by the inheritance of attributes from a number of <eref type="inline" bibitemid="iso19115" citeas="ISO 19115:2003"/> metadata classes and from two implementation classes for the horizontal and vertical reference system. This makes the metadata block a simple table.</p>
+(XML Line 003501): Hanging paragraph in clause
+	<clause id="subsec-s102_exchangecatalogue" obligation="normative">
+	<title>S102_ExchangeCatalogue</title>
+	<p id="_622daa2b-20c8-dc03-4111-b7fdde52696b">Each Exchange Set has a single S100_ExchangeCatalogue which contains meta information for the data and support files in the Exchange Set.</p>
+	
+	<p id="_49cfff84-1266-b25f-1895-f10a9769b0c9">The class S102_ExchangeCatalogue is realized from S100_ExchangeCatalogue without modification. S-102 restricts certain attributes and roles as described in <xref target="tab-s102-exchangeCatalogue-params" style="short"/>. S102_ExchangeCatalogue is a container substituting for the corresponding S100_ExchangeCatalogue class in the UML diagram. It is needed because S-102 extends S-100 discovery metadata.</p>
+(XML Line 003794): Hanging paragraph in clause
+	<clause id="_s102_datasetdiscoverymetadata" obligation="normative">
+	<title>S102_DatasetDiscoveryMetadata</title>
+	<p id="_bc3fb911-e2f7-b684-710c-3b9bda32c765">Dataset discovery metadata in S-102 is an extension of the generic S-100 metadata class S100_DatasetDiscoveryMetadata. S-102 adds the attribute <em>griddingMethod</em> which describes the algorithm used to calculate grid values. S-102 also restricts certain attributes and roles as described in <xref target="tab-s102-datasetDiscoveryMetadata-params" style="short"/>.</p>
+	
+	<table id="tab-s102-datasetDiscoveryMetadata-params">
+(XML Line 004958): Hanging paragraph in clause
+	<clause id="_s102_cataloguemetadata" obligation="normative">
+	<title>S102_CatalogueMetadata</title>
+	<p id="_1944e10c-4af7-bdf0-d341-66281e242ae9">The class S102_CatalogueMetadata is realized from S100_CatalogueMetadata without modification. The S-102 class is defined in order to act as a proxy for the corresponding S-100 generic class in S-102 UML diagrams of Exchange Set structure.</p>
+	
+	<table id="tab-s102-catalogueMetadata-params">
+(XML Line 005400): Hanging paragraph in clause
+	<clause id="_modern_high_resolution_hydrographic_multibeam_sonars" obligation="normative">
+	<title>Modern High-Resolution Hydrographic Multibeam Sonars</title>
+	<p id="_769a8d5f-0dec-81ce-1622-8e0d098b49b8">As stated in <xref target="sec-data-content-and-structure" style="short"/>, the majority of modern hydrographic surveys are conducted using high-resolution multibeam sonar systems. These systems provide great target detection capability and allow for the production of highly detailed images of the seafloor. It must be understood that this capability comes at a price. These systems collect a tremendous amount of information which requires sufficient processing power and data storage to reduce an overwhelming quantity of depth estimates to a manageable number for charting production. The following example describes one method to grid high-resolution multibeam sonar data. This example additionally shows the relationship of a product scale grid to the actual charted sounding.</p>
+	
+	<clause id="_example_collection_scenario" obligation="normative">
+
+
+== Metanorma XML Syntax
+
+(XML Line 000194:72): element "references" not allowed here; expected the element end-tag or element "clause", "definitions" or "terms"
+(XML Line 004552:50): element "note" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 005218:16): element "iho-standard" incomplete; missing required element "bibliography"

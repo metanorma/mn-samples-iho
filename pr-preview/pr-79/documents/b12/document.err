@@ -1,0 +1,77 @@
+/__w/mn-samples-iho/mn-samples-iho/site/documents/b12/document.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000121): Hanging paragraph in clause
+	<clause id="data-contribution" obligation="normative">
+	<title>Data Contribution</title>
+	<p id="_748191ce-20fd-5eb5-8404-d85d47d8fdda">This chapter details the process for contributing crowdsourced bathymetry (CSB) data to the IHO Data
+	Centre for Digital Bathymetry (DCDB), via Trusted Nodes, and specifies required data formats. CSB data
+	collectors and Trusted Nodes are strongly encouraged to provide their data to the DCDB to help fill gaps
+(XML Line 000140): Hanging paragraph in clause
+	<clause id="_the_trusted_node_model" obligation="normative">
+	<title>The Trusted Node Model</title>
+	<p id="_b809e45b-3c5f-b666-b7d3-b35c0716962b">The DCDB currently accepts crowdsourced bathymetry (CSB) contributions through a network of <xref target="term-trusted-nodes" style="short">Trusted Nodes</xref>, which are organizations or individuals that serve as data liaisons between mariners (data collectors) and the DCDB (<xref target="figure-01" style="short"/>). Trusted Nodes may assist the mariner by supplying data logging equipment, providing technical support to vessels, downloading data from data loggers, and providing the information to the DCDB. The DCDB works with each Trusted Node to standardize metadata and data formats and define data delivery requirements. This model normalises data contributions and minimizes the requirements and effort for mariners.</p>
+	
+	<p id="_2b344e90-9818-185e-e80a-45a99b6d71b8">At present, individual data contributors are encouraged to join an existing Trusted Node. In the future, the DCDB may expand its capability to support individual contributors or other models of contribution.</p>
+(XML Line 000168): Hanging paragraph in clause
+	<clause id="_overview_of_csb_data_flow" obligation="normative">
+	<title>Overview of CSB Data Flow</title>
+	<p id="_4ef4e69d-3dc5-fbff-3ce3-9c07c5a085f0">CSB data, identified as belonging to the high seas (according to UNCLOS as “the area”), will be ingested into the DCDB database without restrictions on its further reuse. <xref target="figure-02" style="short"/> is designed to show future filter processes, including a geographical location checking process and any subsequent masking actions, which will be applied to any incoming CSB data, collected within waters of national jurisdiction, before ingestion into the DCDB database. The flow diagram is of generic nature. The filtered flow of CSB data will be based on the information received by the IHO Secretariat from individual coastal states on request. Further details of which coastal states support CSB activities within their waters of national jurisdiction, along with any caveats they have articulated, will available from the IHO website. CSB data, collected within waters of national jurisdiction of coastal states who did not notify their respective CSB support towards the IHO Secretariat, will not be ingested. This data will be stored and only made available at such time as authorization is received by the IHO from the respective coastal state.</p>
+	
+	<figure id="figure-02">
+(XML Line 000200): Hanging paragraph in clause
+	<clause id="_systems_and_sensors" obligation="normative">
+	<title>Systems and Sensors</title>
+	<p id="_7c1cf66f-32bb-ba5b-66e9-dc98f44a6ba6">Many vessels already possess the minimum equipment needed to collect CSB, and only need to install a data logger, or enable logging software, to begin collecting CSB. The following sections provide basic information about sensors, as well as best practices and recommendations for collecting CSB. For more in-depth information about systems and sensors, please refer to the IHO publication <link target="https://iho.int/iho_pubs/CB/C13_Index.htm">C-13, Manual on Hydrography</link> (Chapters 2 and 3).</p>
+	
+	<clause id="_echo_sounders" obligation="normative">
+(XML Line 000204): Hanging paragraph in clause
+	<clause id="_echo_sounders" obligation="normative">
+	<title>Echo-sounders</title>
+	<p id="_9750e8d4-2ac2-635f-ba03-7051c628191b">Echo-sounders, or depth sounders, determine the water depth by transmitting sound pulses from a transducer, and recording the time it takes for the sensor to receive the return echo from the seafloor. Transducers are usually mounted on the hull of a vessel, but can be mounted on other platforms, as well. There are two main types of echo-sounders: single beam and multibeam. Either of these echo-sounders can be used to collect crowdsourced bathymetry, however the guidance developed in this document will focus on single beam CSB, as the Trusted Node/DCDB model is currently equipped to receive and process those data. Vessels using multibeam for safety of navigation purposes and wishing to contribute their single profiles should submit their data to the appropriate coastal state national Hydrographic Office under cover of a Hydrographic Note.</p>
+	
+	<clause id="_single_beam_echo_sounders" obligation="normative">
+(XML Line 000230): Hanging paragraph in clause
+	<clause id="_hardware_and_software" obligation="normative">
+	<title>Hardware and Software</title>
+	<p id="_295676a8-f46e-fef5-55d5-d9198705178b">In addition to depth, positioning, and motion sensors, there are several hardware and software variables that mariners should consider, when collecting CSB data.</p>
+	
+	<clause id="_data_loggers" obligation="normative">
+(XML Line 000240): Hanging paragraph in clause
+	<clause id="_understanding_nmea_0183" obligation="normative">
+	<title>Understanding NMEA 0183</title>
+	<p id="_4c166a28-3e58-261f-5876-d0f921744e85">It is helpful for mariners to understand the raw data that is being output by their sensors. Many marine sensors, such as GNSS positioning systems or echo-sounder transducers, transmit data in accordance with standards developed by the <link target="https://www.nmea.org/">National Marine Electronics Association (NMEA)</link>. The NMEA 0183 standard data format, or ‘sentences,’ are both human- and machine-readable, and provide information about the sensor measurement and status. All NMEA sentences begin with a $, and each field is comma-delimited. There are many different types of NMEA sentences. The following sections describe a few that may be useful for CSB data collection.</p>
+	
+	<clause id="_gnss_nmea_sentences" obligation="normative">
+(XML Line 000287): Hanging paragraph in clause
+	<clause id="_vessel_and_sensor_measurements" obligation="normative">
+	<title>Vessel and Sensor Measurements</title>
+	<p id="_51672bc0-d0b5-f8d6-4510-9031b350bf9c">The horizontal and vertical measurements between the GNSS and the echo-sounder, and between the waterline and the transducer, are key components of the quality and accuracy of the data. Some systems are programmed to incorporate these offsets when the sensors are installed. If they do not, mariners should record these measurements as best as possible, and include them in their metadata. The following sections provide information about these measurements, and best practices for collecting and recording them.</p>
+	
+	<clause id="_sensor_offsets" obligation="normative">
+(XML Line 000320): Hanging paragraph in clause
+	<clause id="_the_importance_of_metadata" obligation="normative">
+	<title>The Importance of Metadata</title>
+	<p id="_748406d8-b739-4cde-f091-37f2a8768d28">Metadata provides information to data users that helps them determine the quality of the data, and therefore use the data for more applications than would be possible with depth and position information alone. If the metadata are also consistent, it is easier to incorporate the data into a database, and for users to manipulate the data for their own purposes.</p>
+	
+	<clause id="_tidal_information" obligation="normative">
+(XML Line 000337): Hanging paragraph in clause
+	<clause id="_metadata_and_data_formats" obligation="normative">
+	<title>Metadata and Data Formats</title>
+	<p id="_c162bf90-83f5-d104-d2e2-f7fc92eed1fe">This section provides guidance to data collectors and Trusted Nodes about the standard metadata that is required for submitting data to the DCDB. In addition, it provides information about additional metadata that would enhance the value of the data for end users. Mariners should collect and forward this information whenever possible.</p>
+	
+	<clause id="_required_data" obligation="normative">
+(XML Line 000632): Hanging paragraph in clause
+	<clause id="_uncertainty_for_trusted_nodes_and_data_users" obligation="normative">
+	<title>Uncertainty for Trusted Nodes and Data Users</title>
+	<p id="_a1b7873f-4e8a-c6f2-6bbc-feb66ae8b5d7">There are additional uncertainty components that Trusted Nodes and data users should understand when dealing with crowdsourced bathymetry. These uncertainty concerns are mostly about validation and processing of the data, and therefore can only truly be assessed at the Trusted Node, or from the DCDB as a whole. It is expected that data collectors are unlikely to be able to assess these types of uncertainty, although they may find the information of interest.</p>
+	
+	<clause id="_effects_of_sensor_integration_on_data_capture" obligation="normative">
+
+
+== Metanorma XML Syntax
+
+(XML Line 000878:98): value of attribute "obligation" is invalid; must be equal to "informative" or "normative"
+(XML Line 001091:16): element "iho-standard" incomplete; missing required element "bibliography"
