@@ -59,7 +59,7 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: site
-        path: site
+        path: _site
 
   deploy-gh-pages:
     if: ${{ github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' }} # inputs.deploy-gh-pages == 'true' &&
