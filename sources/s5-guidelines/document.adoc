@@ -1,4 +1,4 @@
-= Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers
+= Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers (Preview PR)
 :series: S
 :docnumber: Guidelines-S5-S8
 :doctype: specification

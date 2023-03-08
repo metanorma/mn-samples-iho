@@ -1,4 +1,4 @@
-= IHO Standards for Hydrographic Surveys
+= IHO Standards for Hydrographic Surveys (Preview PR)
 :series: S
 :docnumber: 44
 :doctype: standard
