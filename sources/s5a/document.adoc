@@ -1,4 +1,4 @@
-= Standards of Competence for Category "A" Hydrographic Surveyors (Preview PR)
+= Standards of Competence for Category "A" Hydrographic Surveyors
 :series: S
 :docnumber: 5A
 :doctype: standard

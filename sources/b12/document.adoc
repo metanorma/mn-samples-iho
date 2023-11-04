@@ -1,4 +1,4 @@
-= Guidance on Crowdsourced Bathymetry (Preview PR)
+= Guidance on Crowdsourced Bathymetry
 :series: B
 :docnumber: 12
 :doctype: standard

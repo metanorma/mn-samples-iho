@@ -1,4 +1,4 @@
-= IHO Data Protection Scheme (Preview PR)
+= IHO Data Protection Scheme
 :series: S
 :docnumber: 63
 :edition: 1.2.1

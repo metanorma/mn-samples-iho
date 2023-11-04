@@ -1,4 +1,4 @@
-= Publication M-1 (Preview PR)
+= Publication M-1
 :series: M
 :docnumber: 1
 :doctype: regulation

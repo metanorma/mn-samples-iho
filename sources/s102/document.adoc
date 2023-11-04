@@ -1,4 +1,4 @@
-= Bathymetric Surface Product Specification (Preview PR)
+= Bathymetric Surface Product Specification
 :series: S
 :docnumber: 102
 :doctype: standard
