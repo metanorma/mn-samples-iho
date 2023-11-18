@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="0.8.2" schema-version="v1.2.6">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="0.8.3" schema-version="v1.2.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">Guidance on Crowdsourced Bathymetry</title>
 <docidentifier type="IHO">B-12</docidentifier><docnumber>12</docnumber><date type="published"><on>2020-01-20</on></date><contributor><role type="author"/><organization>
@@ -11,14 +11,14 @@
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Bathymetric</title>
 <abbreviation>B</abbreviation></series><ext><doctype>standard</doctype><editorialgroup><committee><abbreviation>IRCC</abbreviation></committee><workgroup><abbreviation>CSBWG</abbreviation></workgroup></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
-<boilerplate><clause id="_copyright_statement" obligation="normative">
-<title>copyright-statement&gt;</title>
-<clause id="_028d9a44-5270-89a4-3222-53a557619a0b" obligation="normative">
-<p id="_84d1410c-bbfc-3a3f-7ee4-1d7710598b94" align="center">© Copyright International Hydrographic Organization 2020</p>
+<boilerplate><copyright-statement>
 
-<p id="_931e106f-68c2-a229-ec5b-085662d0916a">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
+<clause id="_c3f9df44-9b09-8f4a-2371-b50ecb72e3ee" obligation="normative">
+<p id="_8e7ef4dd-01a9-97a9-dabc-ea06332a26ba" align="center">© Copyright International Hydrographic Organization 2020</p>
+
+<p id="_ec27f444-fab2-34d0-f87f-47e927e851d7">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
 </clause>
-</clause>
+</copyright-statement>
 
 <license-statement>
 

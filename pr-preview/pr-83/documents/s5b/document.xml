@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="0.8.2" schema-version="v1.2.6">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="0.8.3" schema-version="v1.2.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">Standards of Competence for Category "B" Hydrographic Surveyors</title>
 <docidentifier type="IHO">S-5B</docidentifier><docnumber>5B</docnumber><date type="published"><on>2017-06</on></date><contributor><role type="author"/><organization>
@@ -11,14 +11,14 @@
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Standards and Specifications</title>
 <abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>IBSC</abbreviation></workgroup></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
-<boilerplate><clause id="_copyright_statement" obligation="normative">
-<title>copyright-statement&gt;</title>
-<clause id="_856bac7c-4cb8-5644-1efa-1a7c00641c0d" obligation="normative">
-<p id="_52434662-c69f-e880-ced0-1a3a71c79032" align="center">© Copyright International Hydrographic Organization 2017</p>
+<boilerplate><copyright-statement>
 
-<p id="_931e106f-68c2-a229-ec5b-085662d0916a">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
+<clause id="_ee304aae-ae09-8821-7cb2-9423337c6ee2" obligation="normative">
+<p id="_a08cf32f-4c10-9455-1412-ffe6721750b8" align="center">© Copyright International Hydrographic Organization 2017</p>
+
+<p id="_ec27f444-fab2-34d0-f87f-47e927e851d7">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
 </clause>
-</clause>
+</copyright-statement>
 
 <license-statement>
 

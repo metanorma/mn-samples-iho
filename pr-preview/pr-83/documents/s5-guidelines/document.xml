@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="0.8.2" schema-version="v1.2.6">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="0.8.3" schema-version="v1.2.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers</title>
 <docidentifier type="IHO">S-Guidelines-S5-S8</docidentifier><docnumber>Guidelines-S5-S8</docnumber><date type="published"><on>2019-05</on></date><contributor><role type="author"/><organization>
@@ -11,14 +11,14 @@
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Standards and Specifications</title>
 <abbreviation>S</abbreviation></series><ext><doctype>specification</doctype><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>IBSC</abbreviation></workgroup></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
-<boilerplate><clause id="_copyright_statement" obligation="normative">
-<title>copyright-statement&gt;</title>
-<clause id="_0e12c7b0-8614-30a6-b2a0-cc404399980e" obligation="normative">
-<p id="_c4127ecc-38f3-b8c9-aa76-e1eecb995e28" align="center">© Copyright International Hydrographic Organization 2019</p>
+<boilerplate><copyright-statement>
 
-<p id="_931e106f-68c2-a229-ec5b-085662d0916a">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
+<clause id="_b345c31a-f4bb-b469-8ae7-d064e429bc4c" obligation="normative">
+<p id="_66cc916f-35b7-3e51-5303-5e14346268a9" align="center">© Copyright International Hydrographic Organization 2019</p>
+
+<p id="_ec27f444-fab2-34d0-f87f-47e927e851d7">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
 </clause>
-</clause>
+</copyright-statement>
 
 <license-statement>
 
