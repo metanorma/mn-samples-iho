@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="0.7.2">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="0.9.1" schema-version="v1.3.0">
 <bibdata type="standard">
-<title language="en" format="text/plain">Standards of Competence for Category "A" Hydrographic Surveyors</title>
+<title language="en" format="text/plain">Standards of Competence for Category "A" Hydrographic Surveyors (Preview PR)</title>
 <docidentifier type="IHO">S-5A</docidentifier><docnumber>5A</docnumber><date type="published"><on>2018-06</on></date><contributor><role type="author"/><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
@@ -10,38 +10,44 @@
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Standards and Specifications</title>
-<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>IBSC</abbreviation></workgroup></editorialgroup></ext></bibdata>
-<boilerplate>
-  <copyright-statement>
-    <clause>
-      <p align="center" id="_a3bf154d-6e1c-093c-6d9d-0024dde27fd2"> © Copyright International Hydrographic Organization 2018</p>
-      <p id="_ec27f444-fab2-34d0-f87f-47e927e851d7">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
-    </clause>
-  </copyright-statement>
-  <license-statement>
-    <clause>
-      <p id="_f96ad834-9c07-1e0a-8b8d-2a2f2d2422d2">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO and any other copyright holders.</p>
-      <p id="_b98de9d0-8908-dc2b-5520-a9f074aee80d">In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:</p>
-      <quote id="_f6b456c8-2bca-70cf-10b1-e93b6c97a465">
-        <p id="_600cf91e-6b20-41f5-4865-37dec2972c81"><em>“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</em></p>
-        <p id="_200d16b4-7678-b606-a56a-da83eede45c1"><em>“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</em></p>
-</quote>
-<p id="_55169b69-666c-352d-faff-474bd357991a">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO.</p>
-    </clause>
-  </license-statement>
-  <feedback-statement>
-    <p id="_3327aa9f-529b-1acb-c94e-9505c0df02e8">Published by the<br/>
-      International Hydrographic Organization<br/>
-      4b quai Antoine 1<sup>er</sup><br/>
-      Principauté de Monaco<br/>
-      Tel: (377) 93.10.81.00<br/>
-      Fax: (377) 93.10.81.40<br/>
-      info@iho.int<br/>
-www.iho.int</p>
-  </feedback-statement>
-</boilerplate>
+<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>IBSC</abbreviation></workgroup></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
 
-<preface><foreword id="_f183182d-462c-c912-d631-19c66cd40137" obligation="informative">
+<clause id="_f35e36c5-9cca-07d7-43da-dbd875a943cc" obligation="normative">
+<p id="_879420c1-c229-359d-9a2b-d2f4186a1571" align="center">© Copyright International Hydrographic Organization 2018</p>
+
+<p id="_ec27f444-fab2-34d0-f87f-47e927e851d7">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
+</clause>
+</copyright-statement>
+
+<license-statement>
+
+<clause id="_e162095f-d94e-46c4-1ddb-64d4bff1e613" obligation="normative">
+<p id="_f96ad834-9c07-1e0a-8b8d-2a2f2d2422d2">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO and any other copyright holders.</p>
+
+<p id="_b98de9d0-8908-dc2b-5520-a9f074aee80d">In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:</p>
+
+<quote id="_466793f9-bd6b-f0fd-04e6-cde21c11f878"><p id="_600cf91e-6b20-41f5-4865-37dec2972c81"><em>“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</em></p>
+
+<p id="_200d16b4-7678-b606-a56a-da83eede45c1"><em>“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</em></p>
+</quote>
+
+<p id="_55169b69-666c-352d-faff-474bd357991a">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO.</p>
+</clause>
+</license-statement>
+
+<feedback-statement>
+
+<p id="_305ad546-f0f3-33e9-7d51-a4a5ff155b34">Published by the<br/>
+International Hydrographic Organization<br/>
+4b quai Antoine 1<sup>er</sup><br/>
+Principauté de Monaco<br/>
+Tel: (377) 93.10.81.00<br/>
+Fax: (377) 93.10.81.40<br/>
+info@iho.int<br/>
+\www.iho.int<br/></p>
+</feedback-statement>
+</boilerplate><preface><foreword id="_f183182d-462c-c912-d631-19c66cd40137" obligation="informative">
 <title>Foreword</title>
 <p id="_9089afa0-d080-34e8-b639-645bdee0efba">Comments arising from the experience gained in the application of the guidance are welcome. They should be addressed to the Chair of the International Board on Standards of Competence for Hydrographic Surveyors and Nautical Cartographers at the above address. This document is published periodically. Please check with IHO for the latest edition, including current amendments.</p>
 </foreword><introduction id="_introduction" obligation="informative">
@@ -57,39 +63,39 @@ www.iho.int</p>
 <title>Subjects, topics, and elements</title>
 <p id="_1f988cd9-ee04-098b-27f9-fe22bb38b4ec">The S5-A standard contains the following list of <em><strong>B</strong>asic subjects, <strong>F</strong>oundation Science subjects and <strong>H</strong>ydrographic Science subjects</em>:</p>
 
-<ul id="_fdd6eace-90da-fb74-ed0b-78260dc4ee2f"><li><p id="_b15f871f-efc3-bff8-12a8-1ec6cdf6ae5a"><xref target="b1-mathematics-statistics-theory-of-observations" style="short">B1: Mathematics, statistics, theory of observations</xref></p>
+<ul id="_fdd6eace-90da-fb74-ed0b-78260dc4ee2f"><li><p id="_b15f871f-efc3-bff8-12a8-1ec6cdf6ae5a"><xref target="b1-mathematics-statistics-theory-of-observations">B1: Mathematics, statistics, theory of observations</xref></p>
 </li>
-<li><p id="_7b51aac3-0ed6-87a8-c089-e5e2b2b16b89"><xref target="b2-information-and-communication-technology" style="short">B2: Information and Communication Technology</xref></p>
+<li><p id="_7b51aac3-0ed6-87a8-c089-e5e2b2b16b89"><xref target="b2-information-and-communication-technology">B2: Information and Communication Technology</xref></p>
 </li>
-<li><p id="_d81efc66-f508-9ee5-5456-265a04dc05f5"><xref target="b3-physics" style="short">B3: Physics</xref></p>
+<li><p id="_d81efc66-f508-9ee5-5456-265a04dc05f5"><xref target="b3-physics">B3: Physics</xref></p>
 </li>
-<li><p id="_b604fe97-08fc-5ea3-5e7e-1dc3d9913ac2"><xref target="b4-nautical-science" style="short">B4: Nautical science</xref></p>
+<li><p id="_b604fe97-08fc-5ea3-5e7e-1dc3d9913ac2"><xref target="b4-nautical-science">B4: Nautical science</xref></p>
 </li>
-<li><p id="_609bf4c6-b921-3933-4602-04b677ab1fb1"><xref target="b5-meteorology" style="short">B5: Meteorology</xref></p>
+<li><p id="_609bf4c6-b921-3933-4602-04b677ab1fb1"><xref target="b5-meteorology">B5: Meteorology</xref></p>
 </li>
-<li><p id="_17aafd82-8a33-0c5f-2db6-4a27bee5da94"><xref target="f1-earth-models" style="short">F1: Earth Models</xref></p>
+<li><p id="_17aafd82-8a33-0c5f-2db6-4a27bee5da94"><xref target="f1-earth-models">F1: Earth Models</xref></p>
 </li>
-<li><p id="_e21aa5ec-f598-00a1-37b7-3a1b391c07b5"><xref target="f2-oceanography" style="short">F2: Oceanography</xref></p>
+<li><p id="_e21aa5ec-f598-00a1-37b7-3a1b391c07b5"><xref target="f2-oceanography">F2: Oceanography</xref></p>
 </li>
-<li><p id="_a2595be6-79cc-e90a-f955-05caec54b20d"><xref target="f3-geology-and-geophysics" style="short">F3: Geology and geophysics</xref></p>
+<li><p id="_a2595be6-79cc-e90a-f955-05caec54b20d"><xref target="f3-geology-and-geophysics">F3: Geology and geophysics</xref></p>
 </li>
-<li><p id="_c0796fc8-80a4-523a-26f1-4305413bcc06"><xref target="h1-positioning" style="short">H1: Positioning</xref></p>
+<li><p id="_c0796fc8-80a4-523a-26f1-4305413bcc06"><xref target="h1-positioning">H1: Positioning</xref></p>
 </li>
-<li><p id="_7403d294-55f6-e945-2d83-cc6a3c674427"><xref target="h2-underwater-sensors-and-data-processing" style="short">H2: Underwater Sensors and Data Processing</xref></p>
+<li><p id="_7403d294-55f6-e945-2d83-cc6a3c674427"><xref target="h2-underwater-sensors-and-data-processing">H2: Underwater Sensors and Data Processing</xref></p>
 </li>
-<li><p id="_cdd0e9a5-1469-5af2-66a7-67ad3853855c"><xref target="h3-lidar-and-remote-sensing" style="short">H3: LiDAR and Remote Sensing</xref></p>
+<li><p id="_cdd0e9a5-1469-5af2-66a7-67ad3853855c"><xref target="h3-lidar-and-remote-sensing">H3: LiDAR and Remote Sensing</xref></p>
 </li>
-<li><p id="_2ccf548f-b874-8a58-9d1d-8a9bc3c1b14a"><xref target="h4-survey-operations-and-applications" style="short">H4: Survey Operations and Applications</xref></p>
+<li><p id="_2ccf548f-b874-8a58-9d1d-8a9bc3c1b14a"><xref target="h4-survey-operations-and-applications">H4: Survey Operations and Applications</xref></p>
 </li>
-<li><p id="_4b621657-a21b-cbcb-0756-02038231ce13"><xref target="h5-water-levels-and-flow" style="short">H5: Water Levels and Flow</xref></p>
+<li><p id="_4b621657-a21b-cbcb-0756-02038231ce13"><xref target="h5-water-levels-and-flow">H5: Water Levels and Flow</xref></p>
 </li>
-<li><p id="_b3500b76-3437-df04-8fdd-82b5374b83b5"><xref target="h6-hydrographic-data-acquisition-and-processing" style="short">H6: Hydrographic Data Acquisition and Processing</xref></p>
+<li><p id="_b3500b76-3437-df04-8fdd-82b5374b83b5"><xref target="h6-hydrographic-data-acquisition-and-processing">H6: Hydrographic Data Acquisition and Processing</xref></p>
 </li>
-<li><p id="_f36e4b46-b4cb-c306-462c-5df2859e36b2"><xref target="h7-management-of-hydrographic-data" style="short">H7: Management of Hydrographic Data</xref></p>
+<li><p id="_f36e4b46-b4cb-c306-462c-5df2859e36b2"><xref target="h7-management-of-hydrographic-data">H7: Management of Hydrographic Data</xref></p>
 </li>
-<li><p id="_f3dfb0d0-451b-29c3-2b71-5a38e97c3454"><xref target="h8-legal-aspects" style="short">H8: Legal Aspects</xref></p>
+<li><p id="_f3dfb0d0-451b-29c3-2b71-5a38e97c3454"><xref target="h8-legal-aspects">H8: Legal Aspects</xref></p>
 </li>
-<li><p id="_c44b8e09-3a4f-1e0a-7866-d1371020ffb6"><xref target="cmfp-complex-multidisciplinary-field-project" style="short">CMFP: COMPLEX MULTIDISCIPLINARY FIELD PROJECT</xref></p>
+<li><p id="_c44b8e09-3a4f-1e0a-7866-d1371020ffb6"><xref target="cmfp-complex-multidisciplinary-field-project">CMFP: COMPLEX MULTIDISCIPLINARY FIELD PROJECT</xref></p>
 </li>
 </ul>
 
@@ -3031,7 +3037,7 @@ sedimentary channels.</p>
 
 <p id="_5cf3afdd-2fb7-30a0-fd59-a996acf973c0">Students should undertake:</p>
 
-<ul id="_ac38bc11-f9fb-7a00-f146-cfffedff812c"><li><p id="_331cf609-236e-fc81-bc70-cf382727c475">Survey specification and planning;</p>
+<ul id="_239db6e2-6dd1-4f83-67d7-0c2426003480"><li><p id="_331cf609-236e-fc81-bc70-cf382727c475">Survey specification and planning;</p>
 </li>
 <li><p id="_5dbd977d-26ca-9087-bc48-153795d22616">Hydrographic and oceanographic measurements using a comprehensive suite of instruments;</p>
 </li>
@@ -3039,10 +3045,10 @@ sedimentary channels.</p>
 </li>
 <li><p id="_3170bab6-024e-1f77-f081-76e2e1c089a5">Preparation of different type of product deliverables and reports.</p>
 </li>
-</ul>
+<note id="_f73541ff-9e34-a7b4-60c6-a4a627d81526"><p id="_2b6d93f9-c221-a3ba-8b1a-0e2fb4dff944">The Complex Multidisciplinary Field Project does not include the practical exercises that form a part of the course modules syllabi and are designed to complement the theory component.</p>
+</note></ul>
 
-<note id="_26ca7537-05d0-46f4-5e8c-fbef3b903805"><p id="_d9be9231-a32e-34e1-113d-e27c3f3503f8">The Complex Multidisciplinary Field Project does not include the practical exercises that form a part of the course modules syllabi and are designed to complement the theory component.</p>
-</note>
+
 </clause>
 </sections>
 </iho-standard>
