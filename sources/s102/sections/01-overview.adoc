@@ -198,6 +198,7 @@ completename::
 
 === Terms, definitions and abbreviations
 
+[.nonterm]
 ==== Use of language
 
 Within this document:
