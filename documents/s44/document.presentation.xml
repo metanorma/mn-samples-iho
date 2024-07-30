@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="presentation" version="0.9.1" schema-version="v1.3.0">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="presentation" version="0.9.12" schema-version="v1.3.3">
 <bibdata type="standard">
 <title language="en" format="text/plain">IHO Standards for Hydrographic Surveys (Preview PR)</title>
-<docidentifier type="IHO">S-44</docidentifier><docnumber>44</docnumber><date type="published"><on>2020-03</on></date><contributor><role type="author"/><organization>
+<docidentifier primary="true" type="IHO">S-44</docidentifier><docnumber>44</docnumber><date type="published"><on>2020-03</on></date><contributor><role type="author"/><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
 <name>International Hydrographic Organization</name>
@@ -10,17 +10,17 @@
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Standards and Specifications</title>
-<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>HSPT</abbreviation></workgroup></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Foreword</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="clause" language="en">Chapter</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
+<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>HSPT</abbreviation></workgroup></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Foreword</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">Chapter</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
 </localized-string><localized-string key="internal_terms_boilerplate" language="en"><p>For the purposes of this document, 
     the following terms and definitions apply.</p>
 </localized-string><localized-string key="norm_with_refs_pref" language="en">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</localized-string><localized-string key="norm_empty_pref" language="en">There are no normative references in this document.</localized-string><localized-string key="external_terms_boilerplate" language="en"><p>For the purposes of this document, 
   the terms and definitions given in % apply.</p>
 </localized-string><localized-string key="internal_external_terms_boilerplate" language="en"><p>For the purposes of this document, the terms and definitions 
   given in % and the following apply.</p>
-</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%1, %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">%Spellout edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of figures</localized-string><localized-string key="toc_tables" language="en">List of tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="subclause" language="en">Section</localized-string><localized-string key="dochistory" language="en">Document History</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><metanorma><source><semantic__iho-standard type="semantic" version="0.9.1" schema-version="v1.3.0">
+</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%1, %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="no_identifier" language="en">(NO ID)</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of figures</localized-string><localized-string key="toc_tables" language="en">List of tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="subclause" language="en">Section</localized-string><localized-string key="dochistory" language="en">Document History</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><metanorma><source><semantic__iho-standard type="semantic" version="0.9.12" schema-version="v1.3.3">
 <semantic__bibdata type="standard">
 <semantic__title language="en" format="text/plain">IHO Standards for Hydrographic Surveys (Preview PR)</semantic__title>
-<semantic__docidentifier type="IHO">S-44</semantic__docidentifier><semantic__docnumber>44</semantic__docnumber><semantic__date type="published"><semantic__on>2020-03</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
+<semantic__docidentifier primary="true" type="IHO">S-44</semantic__docidentifier><semantic__docnumber>44</semantic__docnumber><semantic__date type="published"><semantic__on>2020-03</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
 <semantic__name>International Hydrographic Organization</semantic__name>
 <semantic__abbreviation>IHO</semantic__abbreviation></semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="publisher"/><semantic__organization>
 <semantic__name>International Hydrographic Organization</semantic__name>
@@ -36,35 +36,27 @@
 
 <semantic__p id="semantic___ec27f444-fab2-34d0-f87f-47e927e851d7">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</semantic__p>
 </semantic__clause>
-</semantic__copyright-statement>
+ </semantic__copyright-statement>
 
 <semantic__license-statement>
 
-<semantic__clause id="semantic___e162095f-d94e-46c4-1ddb-64d4bff1e613" obligation="normative">
+<semantic__clause id="semantic___faf68309-0ea1-289a-63d0-171a33b1ba15" obligation="normative">
 <semantic__p id="semantic___f96ad834-9c07-1e0a-8b8d-2a2f2d2422d2">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO and any other copyright holders.</semantic__p>
 
 <semantic__p id="semantic___b98de9d0-8908-dc2b-5520-a9f074aee80d">In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:</semantic__p>
 
-<semantic__quote id="semantic___466793f9-bd6b-f0fd-04e6-cde21c11f878"><semantic__p id="semantic___600cf91e-6b20-41f5-4865-37dec2972c81"><semantic__em>“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</semantic__em></semantic__p>
-
-<semantic__p id="semantic___200d16b4-7678-b606-a56a-da83eede45c1"><semantic__em>“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</semantic__em></semantic__p>
+<semantic__quote id="semantic___b11c69b5-d247-acf7-ba27-c130d6ea2169"><semantic__p id="semantic___600cf91e-6b20-41f5-4865-37dec2972c81"><semantic__em>“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</semantic__em></semantic__p>
+ <semantic__p id="semantic___200d16b4-7678-b606-a56a-da83eede45c1"><semantic__em>“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</semantic__em></semantic__p>
 </semantic__quote>
 
 <semantic__p id="semantic___55169b69-666c-352d-faff-474bd357991a">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO.</semantic__p>
 </semantic__clause>
-</semantic__license-statement>
+ </semantic__license-statement>
 
 <semantic__feedback-statement>
 
-<semantic__p id="semantic___305ad546-f0f3-33e9-7d51-a4a5ff155b34">Published by the<semantic__br/>
-International Hydrographic Organization<semantic__br/>
-4b quai Antoine 1<semantic__sup>er</semantic__sup><semantic__br/>
-Principauté de Monaco<semantic__br/>
-Tel: (377) 93.10.81.00<semantic__br/>
-Fax: (377) 93.10.81.40<semantic__br/>
-info@iho.int<semantic__br/>
-\www.iho.int<semantic__br/></semantic__p>
-</semantic__feedback-statement>
+<semantic__p id="semantic___1b519f92-9f08-d32d-89c9-aafcf9e15788">Published by the<semantic__br/> International Hydrographic Organization<semantic__br/> 4b quai Antoine 1<semantic__sup>er</semantic__sup><semantic__br/> Principauté de Monaco<semantic__br/> Tel: (377) 93.10.81.00<semantic__br/> Fax: (377) 93.10.81.40<semantic__br/> info@iho.int<semantic__br/> \www.iho.int<semantic__br/></semantic__p>
+ </semantic__feedback-statement>
 </semantic__boilerplate><semantic__preface><semantic__introduction id="semantic___introduction" obligation="informative">
 <semantic__title>Introduction</semantic__title>
 <semantic__p id="semantic___ab3d6ebf-9468-e904-296c-6214db6ef542">This publication aims to provide a set of standards for hydrographic surveys primarily used to compile navigational charts essential for the safety of navigation, knowledge and the protection of the marine environment. It specifies the <semantic__strong>minimum standards</semantic__strong> to be achieved based on the intended use. Where and when necessary, hydrographic offices or organisations are encouraged to define more stringent or specific requirements as national or regional realisations of the standard. This publication does not contain procedures for setting up equipment, conducting the survey, or for processing the resultant data. IHO Publication C-13, <semantic__em>Manual on Hydrography</semantic__em>, should be consulted for information on those topics (downloadable from the IHO homepage: <semantic__link target="https://iho.int/">www.iho.int</semantic__link>).</semantic__p>
@@ -262,7 +254,7 @@ info@iho.int<semantic__br/>
 
 <semantic__p id="semantic___036becc5-e7fa-988f-5556-1854a84210c9">It must be noted that <semantic__xref target="semantic__def-confidence_level">confidence levels</semantic__xref> (e.g. 95%) depend on the assumed statistical distribution of the data and are calculated differently for one-dimensional (1D) and two-dimensional (2D) quantities. In the context of this standard, which assumes normal distribution of <semantic__xref target="semantic__def-error">error</semantic__xref>, the 95% <semantic__xref target="semantic__def-confidence_level">confidence level</semantic__xref> for 1D quantities (e.g. depth) is defined as 1.96 x standard deviation, and the 95% <semantic__xref target="semantic__def-confidence_level">confidence level</semantic__xref> for 2D quantities (e.g. position) is defined as 2.45 x standard deviation.</semantic__p>
 </semantic__clause>
-</semantic__clause>
+ </semantic__clause>
 
 <semantic__clause id="semantic___depth_bottom_coverage_features_and_nature_of_the_bottom" obligation="normative">
 <semantic__title>DEPTH, BOTTOM COVERAGE, FEATURES, AND NATURE OF THE BOTTOM</semantic__title>
@@ -345,7 +337,7 @@ info@iho.int<semantic__br/>
 
 <semantic__p id="semantic___c14cb74e-9457-e789-7475-1c2c0b7c0f44"><semantic__xref target="semantic__tab-minimum-bathymetry"/> specifies the parameters “a” and “b” to compute the maximum allowable <semantic__xref target="semantic__def-tvu">TVU</semantic__xref> of <semantic__xref target="semantic__def-reduced-depth">reduced depths</semantic__xref> for each survey order. The <semantic__xref target="semantic__def-tvu">total vertical uncertainties</semantic__xref> of depth measurements calculated with a 95% <semantic__xref target="semantic__def-confidence_level">confidence level</semantic__xref> must not exceed this value.</semantic__p>
 </semantic__clause>
-</semantic__clause>
+ </semantic__clause>
 
 <semantic__clause id="semantic__scl-feature-detection" obligation="normative">
 <semantic__title>Feature Detection</semantic__title>
@@ -418,7 +410,7 @@ info@iho.int<semantic__br/>
 
 <semantic__p id="semantic___55add538-5565-44eb-fa40-b80d210ec18e">There are currently no IHO safety of navigation standards for bottom characterisation methods or bottom sample frequencies. However, the <semantic__xref target="semantic__scl-matrix-description">Matrix</semantic__xref> may be used to task and classify any such work performed. What is appropriate for these parameters varies greatly based on the nature and configuration of the bottom as well as the intended use of the area. The surveyor should exercise judgement in determining appropriate bottom characterisation methods and bottom sample frequency to adequately characterise the area.</semantic__p>
 </semantic__clause>
-</semantic__clause>
+ </semantic__clause>
 
 <semantic__clause id="semantic___water_levels_and_flow" obligation="normative">
 <semantic__title>WATER LEVELS AND FLOW</semantic__title>
@@ -447,7 +439,7 @@ info@iho.int<semantic__br/>
 
 <semantic__p id="semantic___b2278e18-825f-e7cd-9fb3-4df5bbd1ee61">The speed and direction of the water flow (tidal stream and current) must be measured at 95% <semantic__xref target="semantic__def-confidence_level">confidence level</semantic__xref> as defined in <semantic__xref target="semantic__tab-other-minimum"/>. Where there is reason to believe that other factors (e.g. seasonal river discharge) influence the water flows, measurements should be made to cover the entire period of variability.</semantic__p>
 </semantic__clause>
-</semantic__clause>
+ </semantic__clause>
 
 <semantic__clause id="semantic___surveys_above_the_vertical_datum" obligation="normative">
 <semantic__title>SURVEYS ABOVE THE VERTICAL DATUM</semantic__title>
@@ -556,7 +548,7 @@ info@iho.int<semantic__br/>
 
 <semantic__p id="semantic___ef96835c-664d-b489-8dca-96aa4c438309"><semantic__xref target="semantic__def-metadata">Metadata</semantic__xref> should preferably be an integral part of the digital survey record and conform to the “IHO S-100 Discovery <semantic__xref target="semantic__def-metadata">Metadata</semantic__xref> Standard”, when this is adopted. Prior to the adoption of S-100, ISO 19115 can be used as a model for the <semantic__xref target="semantic__def-metadata">Metadata</semantic__xref>. If this is not feasible, similar information should be included in the documentation of a survey.</semantic__p>
 </semantic__clause>
-</semantic__clause>
+ </semantic__clause>
 
 <semantic__clause id="semantic__ch-tables-specification-matrix" obligation="normative">
 <semantic__title>TABLES AND SPECIFICATION MATRIX</semantic__title>
@@ -581,7 +573,7 @@ info@iho.int<semantic__br/>
 <semantic__p id="semantic___6da17cac-7eba-0a5f-2065-85663894b05e"><semantic__xref target="semantic__tab-other-minimum"/> defines minimum navigational aid, structural, and topographic positioning standards for safety of navigation surveys above the vertical datum. It also includes minimum standards for angular measurement in relation to range lines, sectors lights, and similar aids to navigation used on an established course or heading. Finally, requirements are set for direction and speed measurements for tidal stream and current. These standards only apply where such measurements are required for the survey. <semantic__xref target="semantic__tab-other-minimum"/> follows.</semantic__p>
 
 <semantic__pagebreak orientation="landscape"/></semantic__clause>
-</semantic__clause>
+ </semantic__clause>
 
 <semantic__clause id="semantic___minimum_bathymetry_standards_for_safety_of_navigation_hydrographic_surveys" obligation="normative">
 <semantic__title>Minimum Bathymetry Standards for Safety of Navigation Hydrographic Surveys</semantic__title>
@@ -708,184 +700,140 @@ or<semantic__br/>
 </semantic__td>
 <semantic__td valign="middle" align="center"><semantic__p id="semantic___962ca277-813d-1569-1a0e-d861c5cae7da"><semantic__xref target="semantic__def-thu">THU</semantic__xref> [m]</semantic__p>
 </semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___905686d5-14d4-0692-5d5e-2615c74677c7">5 m<semantic__br/>
-*Pa4</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___5c158a05-7dd3-2702-13e1-18651fab2cb8">2 m<semantic__br/>
-*Pa6</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___65e656b3-f8df-c54d-18b6-e51317093c8c">2 m<semantic__br/>
-*Pa6</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___a556b450-0356-bec0-3488-c72f6e9bb2e3">2 m<semantic__br/>
-*Pa6</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___003e091d-ac1a-41cd-0593-77daa8a7898b">1 m<semantic__br/>
-*Pa7</semantic__p>
-</semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___8b1c57bc-a60b-d99a-0097-630bab39ee46">5 m<semantic__br/> *Pa4</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___304104b9-a66c-d5f1-4cdd-fd2ed842b22c">2 m<semantic__br/> *Pa6</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___d93928c8-a708-4934-d874-3416ef2804d0">2 m<semantic__br/> *Pa6</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___c2317a47-b4fb-ba7e-4c3a-c0f17e3b86c6">2 m<semantic__br/> *Pa6</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___35f4ece2-6145-f5de-d43b-94f668671704">1 m<semantic__br/> *Pa7</semantic__p>
+ </semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="center"><semantic__p id="semantic___55c3697f-b277-0b5c-86ed-ae61b4347e01"><semantic__xref target="semantic__def-tvu">TVU</semantic__xref> [m]</semantic__p>
 </semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___96d02d8b-48f1-efd5-fa39-69eca05e5312">2 m<semantic__br/>
-*Pb2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___cf902158-f27b-8212-80af-8552fe4a90ef">2 m<semantic__br/>
-*Pb2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___4b03cf68-325f-b70c-6d1d-60999bea26f2">1 m<semantic__br/>
-*Pb3</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___58eb300d-f4b3-486c-6382-31cd531fe8b1">0.5 m<semantic__br/>
-*Pb4</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___dafad353-3f80-8d7b-dd59-9ecdff5d2b89">0.25 m<semantic__br/>
-*Pb5</semantic__p>
-</semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___0b186774-8f40-d41f-37fd-1d1260d8075c">2 m<semantic__br/> *Pb2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___886c2021-17e2-5c57-2626-7dd94b2b55e0">2 m<semantic__br/> *Pb2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___124f150b-d996-be41-9b1d-9108cd22b372">1 m<semantic__br/> *Pb3</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___d20a1e15-4c99-8d91-b3d1-e72a83c5c028">0.5 m<semantic__br/> *Pb4</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___abb43c32-dae2-98d1-8764-5ddf5d1d5f98">0.25 m<semantic__br/> *Pb5</semantic__p>
+ </semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="center"><semantic__p id="semantic___c4f552c8-3de5-3bfb-c2eb-d4a97f1a1766"><semantic__xref target="semantic__scl-floating-objects"/></semantic__p>
 </semantic__td>
 <semantic__td valign="middle" align="center"><semantic__p id="semantic___00ac3f0d-a769-5ac3-5198-b5a1c26a296e"><semantic__strong>Floating Objects and Aids to Navigation</semantic__strong></semantic__p>
 </semantic__td>
 <semantic__td valign="middle" align="center"><semantic__p id="semantic___9cce0a9c-1555-a44a-6129-be4b70546204"><semantic__xref target="semantic__def-thu">THU</semantic__xref> [m]</semantic__p>
 </semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___f3709fe7-fd20-9ffa-d1c0-2ef2f131c4fe">20 m<semantic__br/>
-*Pc2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___619dbcd1-fa79-5a6b-b8c9-d0d0851b7c12">10 m<semantic__br/>
-*Pc3</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___8b5819e2-1f32-9d07-95bd-4186b496a2f8">10 m<semantic__br/>
-*Pc3</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___a85acd07-01b5-055c-29ba-d6b26aca02da">10 m<semantic__br/>
-*Pc3</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___cdc1d3fb-c459-2b9d-cac5-38eaef93039b">5 m<semantic__br/>
-*Pc4</semantic__p>
-</semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___6f463c6f-caef-2390-10b0-e1984173adb9">20 m<semantic__br/> *Pc2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___d93c16f6-0f50-5252-ee68-d7e2badd68a0">10 m<semantic__br/> *Pc3</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___26af2359-b926-83d3-968b-8db1b7911127">10 m<semantic__br/> *Pc3</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___3e313eae-b154-07ee-21ae-0674209407b6">10 m<semantic__br/> *Pc3</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___164c071f-def4-75a1-20f1-d8a986bc3164">5 m<semantic__br/> *Pc4</semantic__p>
+ </semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="center"><semantic__p id="semantic___f4406745-dae5-c8f4-392c-80cc45e4cffa"><semantic__xref target="semantic__scl-coastline"/></semantic__p>
 </semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___038123c3-8ca2-8fc1-4d0a-1ead97e1a177"><semantic__strong>Coastline</semantic__strong><semantic__br/>
-(high, low, MWL water lines, etc)</semantic__p>
-</semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___24ad31f8-5ac1-9724-18b9-fc53261bfe4d"><semantic__strong>Coastline</semantic__strong><semantic__br/> (high, low, MWL water lines, etc)</semantic__p>
+ </semantic__td>
 <semantic__td valign="middle" align="center"><semantic__p id="semantic___d34c154f-c04e-8060-e960-ac47a666a756"><semantic__xref target="semantic__def-thu">THU</semantic__xref> [m]</semantic__p>
 </semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___8c9b1d6f-18b3-71f5-e929-a798c8d3cddc">10 m<semantic__br/>
-*Pd2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___787815ce-aa72-ff46-4f5b-928c8fdfc696">10 m<semantic__br/>
-*Pd2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___ae554206-f72d-4c65-547d-3a1ab20dda52">10 m<semantic__br/>
-*Pd2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___e61213d2-e5ed-eac2-15be-975ec11bc265">10 m<semantic__br/>
-*Pd2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___d9237eed-aa60-9c18-edba-0629c3ce5d03">5 m<semantic__br/>
-*Pd3</semantic__p>
-</semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___7e4f4d5a-9b71-b91a-2d85-245e92886eea">10 m<semantic__br/> *Pd2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___75400888-9bd4-04e8-c00f-b7710a3d233e">10 m<semantic__br/> *Pd2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___abe064e9-bf58-b0cc-be8b-2dc72876e848">10 m<semantic__br/> *Pd2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___45343e3d-5ae0-0dd7-ad64-5709733b80ab">10 m<semantic__br/> *Pd2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___d1ddfea7-fae9-fc7b-6135-9db38a670b0b">5 m<semantic__br/> *Pd3</semantic__p>
+ </semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" rowspan="2" align="center"><semantic__p id="semantic___5b602ec6-5fb5-869e-d8c9-e87ad569f232"><semantic__xref target="semantic__scl-features-navigation"/></semantic__p>
 </semantic__td>
 <semantic__td valign="middle" rowspan="2" align="center"><semantic__p id="semantic___b386befc-8e71-42dd-0395-03655611b092"><semantic__strong>Features Above the Vertical Reference Less Significant to Navigation</semantic__strong></semantic__p>
 </semantic__td>
 <semantic__td valign="middle" align="center"><semantic__p id="semantic___c18a4a02-577d-9e11-82b9-64d21013dfc7"><semantic__xref target="semantic__def-thu">THU</semantic__xref> [m]</semantic__p>
 </semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___b6902296-fe64-4ea0-a3eb-cb31fe4b42cb">20 m<semantic__br/>
-*Pe2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___712f9527-0081-c14d-5227-f07fb33997ca">20 m<semantic__br/>
-*Pe2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___79d2b163-53f9-632a-db93-6096b1986244">20 m<semantic__br/>
-*Pe2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___1c28fbfc-466a-0a20-9c5b-f0e004e9f3c6">10 m<semantic__br/>
-*Pe3</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___dde6a75c-3e1c-3ab3-4632-058fa9fd0fbc">5 m<semantic__br/>
-*Pe4</semantic__p>
-</semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___69ff33a0-5351-c345-752e-5c8f10641803">20 m<semantic__br/> *Pe2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___681293c0-13be-b70d-d40a-5ae2305f4996">20 m<semantic__br/> *Pe2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___5c5f34ba-e339-e9ed-2b05-799630dbc4b3">20 m<semantic__br/> *Pe2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___5059e1a2-26a4-42a0-34ce-29df5bd386e9">10 m<semantic__br/> *Pe3</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___baf12810-cef8-88a5-6f9f-5bb6dea339a8">5 m<semantic__br/> *Pe4</semantic__p>
+ </semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="center"><semantic__p id="semantic___53775e1a-0f9c-be6b-0bd4-d2d48b745374"><semantic__xref target="semantic__def-tvu">TVU</semantic__xref> [m]</semantic__p>
 </semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___8c0e16c5-8e1a-bfd0-7c92-c7feeb1efb0a">3 m<semantic__br/>
-*Pf1</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___2127bddb-a043-1692-6329-4387bb392576">2 m<semantic__br/>
-*Pf2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___1b2e880f-daa4-6d00-6ea8-3a5ced06b531">1 m<semantic__br/>
-*Pf3</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___6a664d45-8fbe-1f07-45d3-07a5cd12d45d">0.5 m<semantic__br/>
-*Pf4</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___b67f456a-953b-0514-5734-515534f2829a">0.3 m<semantic__br/>
-*Pf5</semantic__p>
-</semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___8b65613d-a915-5c1d-3554-bef70585b1b4">3 m<semantic__br/> *Pf1</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___524ed663-af00-9bc7-d773-ae0664ee9f3c">2 m<semantic__br/> *Pf2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___343f9907-d3f3-c2c6-09f9-cd0b60ff3592">1 m<semantic__br/> *Pf3</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___3ebb4f07-7824-5aa0-6ddd-9e8e9baffcab">0.5 m<semantic__br/> *Pf4</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___f509eb2b-596d-8474-c3b7-c2df7268d1cb">0.3 m<semantic__br/> *Pf5</semantic__p>
+ </semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" rowspan="2" align="center"><semantic__p id="semantic___cf3bcc98-d1e3-bf54-7fe4-e8b607ae292b"><semantic__xref target="semantic__scl-overhead-clearances"/></semantic__p>
 </semantic__td>
 <semantic__td valign="middle" rowspan="2" align="center"><semantic__p id="semantic___54aeef88-7050-5337-cf9d-ad49d36e32d8"><semantic__strong>Overhead Clearances and Range Line, Sector Light Heights</semantic__strong></semantic__p>
 </semantic__td>
 <semantic__td valign="middle" align="center"><semantic__p id="semantic___a52d5e5f-2f0a-0ef7-99a9-0d86f94c5ecc"><semantic__xref target="semantic__def-thu">THU</semantic__xref> [m]</semantic__p>
 </semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___5ee11353-4d34-4254-4ca0-91806015a301">10 m<semantic__br/>
-*Pg1</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___bc7fd777-2122-ac6c-119a-409d1f6b30b9">10 m<semantic__br/>
-*Pg1</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___dc38126e-28be-7b18-c0a3-f79cac8ddeb1">5 m<semantic__br/>
-*Pg2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___4acaf896-77ce-09a2-da39-09a243a1ac4c">2 m<semantic__br/>
-*Pg3</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___6f0b24d6-6610-4efe-f419-3dd72023b6da">1 m<semantic__br/>
-*Pg4</semantic__p>
-</semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___e87eaaef-4893-0b44-12b8-452beca22744">10 m<semantic__br/> *Pg1</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___29bb5950-b062-3345-6e1d-4aedc1986ea0">10 m<semantic__br/> *Pg1</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___61f50cfc-a87a-492b-d507-f0909ccc0164">5 m<semantic__br/> *Pg2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___5b1f1d80-1dba-5481-aadd-45a3174d6703">2 m<semantic__br/> *Pg3</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___d8eeb7d8-23b1-dd8f-5d46-3e94bf305777">1 m<semantic__br/> *Pg4</semantic__p>
+ </semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="center"><semantic__p id="semantic___dc9426e1-8e19-0c58-b474-31981dfd4607"><semantic__xref target="semantic__def-tvu">TVU</semantic__xref> [m]</semantic__p>
 </semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___c6cae64c-f307-9cdb-a7d0-5debcc3f4d36">3 m<semantic__br/>
-*Ph1</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___b35b2eb5-ab9a-1e3b-3527-f6b7125e3e3e">2 m<semantic__br/>
-*Ph2</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___3ff202c9-5b5b-8243-8469-f344b2403dc7">1 m<semantic__br/>
-*Ph3</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___06b179a9-464f-e590-77dd-738859891e5a">0.5 m<semantic__br/>
-*Ph4</semantic__p>
-</semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___efed3cfe-8928-0339-dec9-233d3b74c8a1">0.3 m<semantic__br/>
-*Ph5</semantic__p>
-</semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___f108b891-1d38-6e1f-3750-b4643d6eed3c">3 m<semantic__br/> *Ph1</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___de476b99-7916-e278-cbde-7be195ce5794">2 m<semantic__br/> *Ph2</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___3bef862e-b556-1013-187c-e31352c7274c">1 m<semantic__br/> *Ph3</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___22f476df-fef4-227f-f926-2cf5df940ab5">0.5 m<semantic__br/> *Ph4</semantic__p>
+ </semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___34beb8c3-2668-bb8a-953b-2628df9d7549">0.3 m<semantic__br/> *Ph5</semantic__p>
+ </semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="center"><semantic__p id="semantic___b2dc3dd9-1643-db5e-d280-690f6d92406b"><semantic__xref target="semantic__scl-angula-measurements"/></semantic__p>
 </semantic__td>
 <semantic__td valign="middle" align="center"><semantic__p id="semantic___d0811228-a247-1931-f415-0901d6a5b513"><semantic__strong>Angular Measurements</semantic__strong></semantic__p>
 </semantic__td>
 <semantic__td valign="middle" align="center"><semantic__p id="semantic___67b5320a-2f5e-d1c0-1573-48f7f2ab040e">[‌degrees]</semantic__p>
 </semantic__td>
-<semantic__td colspan="5" valign="middle" align="center"><semantic__p id="semantic___5afd044b-6bcd-bda7-30d8-4abfd94780f5">0.5 degrees<semantic__br/>
-*Pi4</semantic__p>
-</semantic__td>
+<semantic__td colspan="5" valign="middle" align="center"><semantic__p id="semantic___0bbe32fa-30f2-7ef5-610b-46afe4892cdd">0.5 degrees<semantic__br/> *Pi4</semantic__p>
+ </semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="center"><semantic__p id="semantic___46a26f11-ddbc-cb39-f15a-2ccff6421e15"><semantic__xref target="semantic__scl-water-flow"/></semantic__p>
 </semantic__td>
 <semantic__td valign="middle" align="center"><semantic__p id="semantic___5e069eef-cf3d-6722-8bba-740f7588a565"><semantic__strong>Water Flow Direction</semantic__strong></semantic__p>
 </semantic__td>
 <semantic__td valign="middle" align="center"><semantic__p id="semantic___7eb8dc67-01f0-aa02-44ec-e206ae9d1862">[‌degrees]</semantic__p>
 </semantic__td>
-<semantic__td colspan="5" valign="middle" align="center"><semantic__p id="semantic___4c4da111-3ae3-0d61-72a4-e07ec186f1f9">10 degrees<semantic__br/>
-*Wa1</semantic__p>
-</semantic__td>
+<semantic__td colspan="5" valign="middle" align="center"><semantic__p id="semantic___b5989d4d-912e-c508-b0ac-ccc630d258ac">10 degrees<semantic__br/> *Wa1</semantic__p>
+ </semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="center"><semantic__p id="semantic___7cb1b686-1810-6b80-4b36-6878006ecd80"><semantic__xref target="semantic__scl-water-flow"/></semantic__p>
 </semantic__td>
 <semantic__td valign="middle" align="center"><semantic__p id="semantic___2906b277-9dd2-b93d-16fe-e11accfd7440"><semantic__strong>Water Flow Speed</semantic__strong></semantic__p>
 </semantic__td>
 <semantic__td valign="middle" align="center"><semantic__p id="semantic___78ee8fc9-4802-8da9-0f95-05a93cd87949">[‌knots]</semantic__p>
 </semantic__td>
-<semantic__td colspan="5" valign="middle" align="center"><semantic__p id="semantic___854b8b19-972d-1161-cd00-1004aea141c8">0.1 knots<semantic__br/>
-*Wb5</semantic__p>
-</semantic__td>
+<semantic__td colspan="5" valign="middle" align="center"><semantic__p id="semantic___cdc0fecd-a39a-8666-3d3b-a0af1e252f50">0.1 knots<semantic__br/> *Wb5</semantic__p>
+ </semantic__td>
 </semantic__tr></semantic__tbody>
 </semantic__table>
 </semantic__clause>
@@ -906,7 +854,7 @@ or<semantic__br/>
 <semantic__title>MATRIX</semantic__title>
 <semantic__p id="semantic___153dea24-2bac-f20b-59c8-928e5afead62"><semantic__xref target="semantic__scl-matrix-description">Matrix</semantic__xref> for Hydrographic Surveys. To be read in conjunction with the full text set out in this document, m = metres, all <semantic__xref target="semantic__def-uncertainty">uncertainties</semantic__xref> at 95% confidence level.</semantic__p>
 
-<semantic__table id="semantic___9a84aa55-da17-5640-777a-a82cea9282d7" unnumbered="true"><semantic__thead><semantic__tr><semantic__th valign="middle" align="center"/><semantic__th valign="middle" align="center">Criteria</semantic__th>
+<semantic__table id="semantic___6fe142c1-1168-ed2b-17f9-80ed3212a999" unnumbered="true"><semantic__thead><semantic__tr><semantic__th valign="middle" align="center"/><semantic__th valign="middle" align="center">Criteria</semantic__th>
 <semantic__th valign="middle" align="center">1</semantic__th>
 <semantic__th valign="middle" align="center">2</semantic__th>
 <semantic__th valign="middle" align="center">3</semantic__th>
@@ -1072,9 +1020,8 @@ or<semantic__br/>
 <semantic__td valign="middle" align="center">1</semantic__td>
 <semantic__td valign="middle" align="center">0.5</semantic__td>
 <semantic__td valign="middle" align="center"/><semantic__td valign="middle" align="center"/><semantic__td valign="middle" align="center"/><semantic__td valign="middle" align="center"/><semantic__td valign="middle" align="center"/><semantic__td valign="middle" align="center"/><semantic__td valign="middle" align="center"/></semantic__tr><semantic__tr><semantic__td valign="middle" align="center"><semantic__strong>d</semantic__strong></semantic__td>
-<semantic__td valign="middle" align="center"><semantic__p id="semantic___f44aae6a-c5c8-a877-0471-6639c48dc982">Coastline <semantic__xref target="semantic__def-thu">THU</semantic__xref><semantic__br/>
-(high, low, MWL water lines, etc.) [m]</semantic__p>
-</semantic__td>
+<semantic__td valign="middle" align="center"><semantic__p id="semantic___28bcfcff-202b-d21e-87c0-1f0388c2a824">Coastline <semantic__xref target="semantic__def-thu">THU</semantic__xref><semantic__br/> (high, low, MWL water lines, etc.) [m]</semantic__p>
+ </semantic__td>
 <semantic__td valign="middle" align="center">20</semantic__td>
 <semantic__td valign="middle" align="center">10</semantic__td>
 <semantic__td valign="middle" align="center">5</semantic__td>
@@ -1195,7 +1142,7 @@ or<semantic__br/>
 
 
 <semantic__pagebreak orientation="portrait"/></semantic__clause>
-</semantic__clause>
+ </semantic__clause>
 
 
 
@@ -1204,7 +1151,7 @@ or<semantic__br/>
 
 
 
-</semantic__sections><semantic__annex id="semantic__annex-matrix-guidance" obligation="normative">
+ </semantic__sections><semantic__annex id="semantic__annex-matrix-guidance" obligation="normative">
 <semantic__title>MATRIX GUIDANCE</semantic__title>
 <semantic__clause id="semantic___introduction_9" obligation="normative">
 <semantic__title>Introduction</semantic__title>
@@ -1404,21 +1351,18 @@ or<semantic__br/>
 <semantic__td valign="middle" align="center">Nb1</semantic__td>
 </semantic__tr></semantic__tbody>
 </semantic__table>
-</semantic__clause>
+ </semantic__clause>
 
 <semantic__clause id="semantic___text_string_examples" obligation="normative">
 <semantic__title>Text String Examples</semantic__title>
 <semantic__p id="semantic___0dc0749b-4260-f4f3-8b6c-28ea1c6f4496">The following text strings present examples of “Matrix Realisations”: Order 1a Surveys, and a Crowd Sourced dataset example.</semantic__p>
 
-<semantic__example id="semantic___700ae3c7-ca12-3636-97af-8e7420595b3f">
+<semantic__example id="semantic___18589147-7d6d-0b66-d70c-420e308d897e">
 <semantic__name>Order 1a Matrix text string example</semantic__name>
 <semantic__p id="semantic___dc9fc1d3-2173-29c7-fd71-219551de07b8">Classified according to the S-44 Matrix as:</semantic__p>
-
-<semantic__p id="semantic___4e4cb419-1397-1f7b-b7d9-9d4ec7e285ad"><semantic__em>Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (&#x3e;40m), Bg9, ≤Bh9, Pa6, Pb3, Pc3, Pd2, Pe1, Pf3, Pg2, Ph3, Pi4, Wa1, Wb5.</semantic__em></semantic__p>
-
-<semantic__p id="semantic___161d3db9-5077-71e5-1492-af7badc427df">Can be divided into the separate parts as not all parameters need to be surveyed at all times depending on area and survey specification requirements. Classified according to the S-44 Matrix as:</semantic__p>
-
-<semantic__ul id="semantic___4eaf48ce-be46-a866-3c03-3827fa51b8b5"><semantic__li><semantic__p id="semantic___53e9dcff-bd70-19fc-d526-c4c099ba1673">Bathymetry: <semantic__em>Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (&#x3e;40m), Bg9, ≤ Bh9</semantic__em></semantic__p>
+ <semantic__p id="semantic___4e4cb419-1397-1f7b-b7d9-9d4ec7e285ad"><semantic__em>Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (&#x3e;40m), Bg9, ≤Bh9, Pa6, Pb3, Pc3, Pd2, Pe1, Pf3, Pg2, Ph3, Pi4, Wa1, Wb5.</semantic__em></semantic__p>
+ <semantic__p id="semantic___161d3db9-5077-71e5-1492-af7badc427df">Can be divided into the separate parts as not all parameters need to be surveyed at all times depending on area and survey specification requirements. Classified according to the S-44 Matrix as:</semantic__p>
+ <semantic__ul id="semantic___4eaf48ce-be46-a866-3c03-3827fa51b8b5"><semantic__li><semantic__p id="semantic___53e9dcff-bd70-19fc-d526-c4c099ba1673">Bathymetry: <semantic__em>Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (&#x3e;40m), Bg9, ≤ Bh9</semantic__em></semantic__p>
 </semantic__li>
 <semantic__li><semantic__p id="semantic___ad30ed82-5dae-735c-7e73-b87ca9dd8e5c">Fixed Objects, Aids, Features Above the Vertical Reference Significant to Navigation: <semantic__em>Pa6, Pb3</semantic__em></semantic__p>
 </semantic__li>
@@ -1437,11 +1381,10 @@ or<semantic__br/>
 </semantic__ul>
 </semantic__example>
 
-<semantic__example id="semantic___bdb6b2ad-8db5-89d4-fef8-8bad48d3eb64">
+<semantic__example id="semantic___ba83767d-3018-9f67-e1a1-45789e7923b2">
 <semantic__name>Crowd Sourced Dataset Example</semantic__name>
 <semantic__p id="semantic___39678123-ae98-7ac4-1367-ba8768be203a">A “Crowd Sourced” bathymetric dataset acquired in deep water, with a single beam echosounder and no sound velocity correction, could be classified by the use of <semantic__xref target="semantic__def-tvu">TVU</semantic__xref> and <semantic__xref target="semantic__def-thu">THU</semantic__xref> (the coverage is of no use as it is not a systematic survey):</semantic__p>
-
-<semantic__p id="semantic___857de761-348b-019a-27a8-3299ab2baa56">Classified according to the S-44 Matrix as: <semantic__em>Ba3, Bc5, Bd3</semantic__em></semantic__p>
+ <semantic__p id="semantic___857de761-348b-019a-27a8-3299ab2baa56">Classified according to the S-44 Matrix as: <semantic__em>Ba3, Bc5, Bd3</semantic__em></semantic__p>
 </semantic__example>
 
 <semantic__p id="semantic___db3495a2-c262-4b50-7d41-80795f70bee6"><semantic__strong>Referencing:</semantic__strong></semantic__p>
@@ -1457,8 +1400,7 @@ or<semantic__br/>
 
 <semantic__clause id="semantic___matrix_example" obligation="normative">
 <semantic__title>Matrix Example</semantic__title>
-<semantic__p id="semantic___cf82a8d2-55eb-9065-3e63-f2cedccf074c" align="left">Example: Order 1b using the SPECIFICATION MATRIX<semantic__br/>
-m = metres, all <semantic__xref target="semantic__def-uncertainty">uncertainties</semantic__xref> at 95% confidence level, <semantic__strong>Order 1b cells</semantic__strong></semantic__p>
+<semantic__p id="semantic___ea05aa12-2728-b1c7-d8ec-4fd9ffa13250" align="left">Example: Order 1b using the SPECIFICATION MATRIX<semantic__br/> m = metres, all <semantic__xref target="semantic__def-uncertainty">uncertainties</semantic__xref> at 95% confidence level, <semantic__strong>Order 1b cells</semantic__strong></semantic__p>
 
 <semantic__table id="semantic___74f4233e-4943-5206-13db-28eab60c7459" unnumbered="true"><semantic__thead><semantic__tr><semantic__th valign="middle" align="center"/><semantic__th valign="middle" align="center">Criteria</semantic__th>
 <semantic__th valign="middle" align="center">1</semantic__th>
@@ -1751,8 +1693,8 @@ m = metres, all <semantic__xref target="semantic__def-uncertainty">uncertainties
 
 
 <semantic__pagebreak orientation="portrait"/></semantic__clause>
-</semantic__clause>
-</semantic__annex><semantic__annex id="semantic__annex-guidelines-quality-management" obligation="normative">
+ </semantic__clause>
+ </semantic__annex><semantic__annex id="semantic__annex-guidelines-quality-management" obligation="normative">
 <semantic__title>Guidelines for Quality Management</semantic__title>
 <semantic__note id="semantic___3135a924-5bf6-671a-40e8-8ec89c10196a"><semantic__p id="semantic___3c38780e-de91-79d6-266f-866c8badb0f6">This annex is <semantic__strong>not</semantic__strong> an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, <semantic__em>Manual on Hydrography</semantic__em>.</semantic__p>
 </semantic__note>
@@ -1811,7 +1753,7 @@ m = metres, all <semantic__xref target="semantic__def-uncertainty">uncertainties
 
 <semantic__p id="semantic___508253cf-622c-9318-8a7a-7a7424d1f15b">During the survey, consideration should be given to confirm the validity of the vertical model by assessing the spatial and temporal repeatability of the survey system.</semantic__p>
 </semantic__clause>
-</semantic__annex><semantic__annex id="semantic__annex-gridded-bathymetry" obligation="normative">
+ </semantic__annex><semantic__annex id="semantic__annex-gridded-bathymetry" obligation="normative">
 <semantic__title>GRIDDED BATHYMETRY CONSIDERATIONS</semantic__title>
 <semantic__note id="semantic___114eda70-3992-999e-f81c-9ad0b8d41aa4"><semantic__p id="semantic___6d650424-c236-f207-d6c9-f360142bd07e">This annex is <semantic__strong>not</semantic__strong> an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, <semantic__em>Manual on Hydrography</semantic__em>.</semantic__p>
 </semantic__note>
@@ -1993,46 +1935,11 @@ m = metres, all <semantic__xref target="semantic__def-uncertainty">uncertainties
 <semantic__pagebreak/>
 <semantic__p id="semantic___a14ef2b1-ca10-0d26-2acd-f552e7a34b97">The Chair of the Hydrographic Surveys Project Team, Christophe VRIGNAUD (France, Shom), supported by the Vice Chair Nickolas DE ANDRADE ROSCHER (Brazil, DHN) and the IHO Secretariat, would like to thank the following participants (in alphabetic order) for their efforts and contributions:</semantic__p>
 
-<semantic__p id="semantic___966e931e-fa3d-ed7d-000d-2fd0c0c47263" align="center">Sejin AHN, Republic of Korea (KHRA)<semantic__br/>
-Anderson BARBOSA DA CRUZ PEÇANHA, Brazil (DHN)<semantic__br/>
-Erik BISCOTTI, Italy (IIM)<semantic__br/>
-Vidar BØE, Norway (NHS)<semantic__br/>
-James CHAPMAN, UK (UKHO)<semantic__br/>
-Andrew COULLS, Australia (AHO)<semantic__br/>
-Rodrigo DE CAMPOS CARVALHO, Brazil (DHN)<semantic__br/>
-Cristina MONTEIRO, Portugal (IH)<semantic__br/>
-David DODD, Expert Contributor (IIC Technologies)<semantic__br/>
-Marco FILIPPONE, Expert Contributor (Fugro)<semantic__br/>
-Maxim FRITS VAN NORDEN, Expert Contributor (University of Southern Mississippi)<semantic__br/>
-Fabien GERMOND, Expert Contributor (iXblue)<semantic__br/>
-Megan GREENAWAY, USA (NOAA)<semantic__br/>
-Florian IMPERADORI, France (Shom)<semantic__br/>
-Iji KIM, Republic of Korea (KHOA)<semantic__br/>
-Jean LAPORTE, Expert Contributor (ARGANS)<semantic__br/>
-Kwanchang Lim, Republic of Korea (KHOA)<semantic__br/>
-John LOOG, Netherlands (NLHO)<semantic__br/>
-Jean-Guy NISTAD, Germany (BSH)<semantic__br/>
-JongYeon PARK, Republic of Korea (KHOA)<semantic__br/>
-Hugh PARKER, Expert Contributor (Fugro)<semantic__br/>
-David PARKER, UK (UKHO)<semantic__br/>
-Stephen PARSONS, Canada (CHS)<semantic__br/>
-Alistair PHILIP, UK (UKHO)<semantic__br/>
-Ronan PRONOST, France (Shom)<semantic__br/>
-Misty SAVELL, USA (NGA)<semantic__br/>
-Thierry SCHMITT, France (Shom)<semantic__br/>
-Iain SLADE, Expert Contributor (IFHS)<semantic__br/>
-Diego TARTARINI, Italy (IIM)<semantic__br/>
-Matthew THOMPSON, USA (NAVOCEANO)<semantic__br/>
-David VINCENTELLI, Expert Contributor (iXblue and IFHS)<semantic__br/>
-James WALTON, Expert Contributor (AML)<semantic__br/>
-Neil WESTON, USA (NOAA)<semantic__br/>
-Enrico ZANONE, Italy (IIM)<semantic__br/>
-Anders ÅKERBERG, Sweden (SMA)<semantic__br/>
-Hans ÖIÅS, Sweden (SMA)</semantic__p>
+<semantic__p id="semantic___6d6e866a-fea8-26ea-14fe-a6d0e557c725" align="center">Sejin AHN, Republic of Korea (KHRA)<semantic__br/> Anderson BARBOSA DA CRUZ PEÇANHA, Brazil (DHN)<semantic__br/> Erik BISCOTTI, Italy (IIM)<semantic__br/> Vidar BØE, Norway (NHS)<semantic__br/> James CHAPMAN, UK (UKHO)<semantic__br/> Andrew COULLS, Australia (AHO)<semantic__br/> Rodrigo DE CAMPOS CARVALHO, Brazil (DHN)<semantic__br/> Cristina MONTEIRO, Portugal (IH)<semantic__br/> David DODD, Expert Contributor (IIC Technologies)<semantic__br/> Marco FILIPPONE, Expert Contributor (Fugro)<semantic__br/> Maxim FRITS VAN NORDEN, Expert Contributor (University of Southern Mississippi)<semantic__br/> Fabien GERMOND, Expert Contributor (iXblue)<semantic__br/> Megan GREENAWAY, USA (NOAA)<semantic__br/> Florian IMPERADORI, France (Shom)<semantic__br/> Iji KIM, Republic of Korea (KHOA)<semantic__br/> Jean LAPORTE, Expert Contributor (ARGANS)<semantic__br/> Kwanchang Lim, Republic of Korea (KHOA)<semantic__br/> John LOOG, Netherlands (NLHO)<semantic__br/> Jean-Guy NISTAD, Germany (BSH)<semantic__br/> JongYeon PARK, Republic of Korea (KHOA)<semantic__br/> Hugh PARKER, Expert Contributor (Fugro)<semantic__br/> David PARKER, UK (UKHO)<semantic__br/> Stephen PARSONS, Canada (CHS)<semantic__br/> Alistair PHILIP, UK (UKHO)<semantic__br/> Ronan PRONOST, France (Shom)<semantic__br/> Misty SAVELL, USA (NGA)<semantic__br/> Thierry SCHMITT, France (Shom)<semantic__br/> Iain SLADE, Expert Contributor (IFHS)<semantic__br/> Diego TARTARINI, Italy (IIM)<semantic__br/> Matthew THOMPSON, USA (NAVOCEANO)<semantic__br/> David VINCENTELLI, Expert Contributor (iXblue and IFHS)<semantic__br/> James WALTON, Expert Contributor (AML)<semantic__br/> Neil WESTON, USA (NOAA)<semantic__br/> Enrico ZANONE, Italy (IIM)<semantic__br/> Anders ÅKERBERG, Sweden (SMA)<semantic__br/> Hans ÖIÅS, Sweden (SMA)</semantic__p>
 
 <semantic__p id="semantic___f207c55f-ced7-a9b5-908e-17986c7c0097" align="center">Special thanks to Richard POWELL (USA, NOAA) for the cover image.</semantic__p>
 </semantic__clause>
-</semantic__annex>
+ </semantic__annex>
 </semantic__iho-standard></source></metanorma><render><preprocess-xslt format="xml">
   <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
   <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
@@ -2224,36 +2131,28 @@ sourcecode .nt {
 
 <p id="_ec27f444-fab2-34d0-f87f-47e927e851d7">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
 </clause>
-</copyright-statement>
+ </copyright-statement>
 
 <license-statement>
 
-<clause id="_e162095f-d94e-46c4-1ddb-64d4bff1e613" obligation="normative">
+<clause id="_faf68309-0ea1-289a-63d0-171a33b1ba15" obligation="normative">
 <p id="_f96ad834-9c07-1e0a-8b8d-2a2f2d2422d2">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO and any other copyright holders.</p>
 
 <p id="_b98de9d0-8908-dc2b-5520-a9f074aee80d">In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:</p>
 
-<quote id="_466793f9-bd6b-f0fd-04e6-cde21c11f878"><p id="_600cf91e-6b20-41f5-4865-37dec2972c81"><em>“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</em></p>
-
-<p id="_200d16b4-7678-b606-a56a-da83eede45c1"><em>“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</em></p>
+<quote id="_b11c69b5-d247-acf7-ba27-c130d6ea2169"><p id="_600cf91e-6b20-41f5-4865-37dec2972c81"><em>“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</em></p>
+ <p id="_200d16b4-7678-b606-a56a-da83eede45c1"><em>“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</em></p>
 </quote>
 
 <p id="_55169b69-666c-352d-faff-474bd357991a">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO.</p>
 </clause>
-</license-statement>
+ </license-statement>
 
 <feedback-statement>
 
-<p id="_305ad546-f0f3-33e9-7d51-a4a5ff155b34">Published by the<br/>
-International Hydrographic Organization<br/>
-4b quai Antoine 1<sup>er</sup><br/>
-Principauté de Monaco<br/>
-Tel: (377) 93.10.81.00<br/>
-Fax: (377) 93.10.81.40<br/>
-info@iho.int<br/>
-\www.iho.int<br/></p>
-</feedback-statement>
-</boilerplate><preface><clause type="toc" id="_49071e9a-2f61-4275-8384-58fd90da80fc" displayorder="1"><title depth="1">Contents</title></clause>
+<p id="_1b519f92-9f08-d32d-89c9-aafcf9e15788">Published by the<br/> International Hydrographic Organization<br/> 4b quai Antoine 1<sup>er</sup><br/> Principauté de Monaco<br/> Tel: (377) 93.10.81.00<br/> Fax: (377) 93.10.81.40<br/> info@iho.int<br/> \www.iho.int<br/></p>
+ </feedback-statement>
+</boilerplate><preface><clause type="toc" id="_eddd93de-f6c9-4fd0-8b29-7bd73fe3d335" displayorder="1"><title depth="1">Contents</title></clause>
 <introduction id="_introduction" obligation="informative" displayorder="2">
 <title>Introduction</title>
 <p id="_ab3d6ebf-9468-e904-296c-6214db6ef542">This publication aims to provide a set of standards for hydrographic surveys primarily used to compile navigational charts essential for the safety of navigation, knowledge and the protection of the marine environment. It specifies the <strong>minimum standards</strong> to be achieved based on the intended use. Where and when necessary, hydrographic offices or organisations are encouraged to define more stringent or specific requirements as national or regional realisations of the standard. This publication does not contain procedures for setting up equipment, conducting the survey, or for processing the resultant data. IHO Publication C-13, <em>Manual on Hydrography</em>, should be consulted for information on those topics (downloadable from the IHO homepage: <link target="https://iho.int/">www.iho.int</link>).</p>
@@ -2451,7 +2350,7 @@ info@iho.int<br/>
 
 <p id="_036becc5-e7fa-988f-5556-1854a84210c9">It must be noted that <xref target="def-confidence_level">confidence levels</xref> (e.g. 95%) depend on the assumed statistical distribution of the data and are calculated differently for one-dimensional (1D) and two-dimensional (2D) quantities. In the context of this standard, which assumes normal distribution of <xref target="def-error">error</xref>, the 95% <xref target="def-confidence_level">confidence level</xref> for 1D quantities (e.g. depth) is defined as 1.96 x standard deviation, and the 95% <xref target="def-confidence_level">confidence level</xref> for 2D quantities (e.g. position) is defined as 2.45 x standard deviation.</p>
 </clause>
-</clause>
+ </clause>
 
 <clause id="_depth_bottom_coverage_features_and_nature_of_the_bottom" obligation="normative" displayorder="7">
 <title depth="1">3.<tab/>DEPTH, BOTTOM COVERAGE, FEATURES, AND NATURE OF THE BOTTOM</title>
@@ -2534,7 +2433,7 @@ info@iho.int<br/>
 
 <p id="_c14cb74e-9457-e789-7475-1c2c0b7c0f44"><xref target="tab-minimum-bathymetry">Table 1</xref> specifies the parameters “a” and “b” to compute the maximum allowable <xref target="def-tvu">TVU</xref> of <xref target="def-reduced-depth">reduced depths</xref> for each survey order. The <xref target="def-tvu">total vertical uncertainties</xref> of depth measurements calculated with a 95% <xref target="def-confidence_level">confidence level</xref> must not exceed this value.</p>
 </clause>
-</clause>
+ </clause>
 
 <clause id="scl-feature-detection" obligation="normative">
 <title depth="2">3.3.<tab/>Feature Detection</title>
@@ -2607,7 +2506,7 @@ info@iho.int<br/>
 
 <p id="_55add538-5565-44eb-fa40-b80d210ec18e">There are currently no IHO safety of navigation standards for bottom characterisation methods or bottom sample frequencies. However, the <xref target="scl-matrix-description">Matrix</xref> may be used to task and classify any such work performed. What is appropriate for these parameters varies greatly based on the nature and configuration of the bottom as well as the intended use of the area. The surveyor should exercise judgement in determining appropriate bottom characterisation methods and bottom sample frequency to adequately characterise the area.</p>
 </clause>
-</clause>
+ </clause>
 
 <clause id="_water_levels_and_flow" obligation="normative" displayorder="8">
 <title depth="1">4.<tab/>WATER LEVELS AND FLOW</title>
@@ -2636,7 +2535,7 @@ info@iho.int<br/>
 
 <p id="_b2278e18-825f-e7cd-9fb3-4df5bbd1ee61">The speed and direction of the water flow (tidal stream and current) must be measured at 95% <xref target="def-confidence_level">confidence level</xref> as defined in <xref target="tab-other-minimum">Table 2</xref>. Where there is reason to believe that other factors (e.g. seasonal river discharge) influence the water flows, measurements should be made to cover the entire period of variability.</p>
 </clause>
-</clause>
+ </clause>
 
 <clause id="_surveys_above_the_vertical_datum" obligation="normative" displayorder="9">
 <title depth="1">5.<tab/>SURVEYS ABOVE THE VERTICAL DATUM</title>
@@ -2745,7 +2644,7 @@ info@iho.int<br/>
 
 <p id="_ef96835c-664d-b489-8dca-96aa4c438309"><xref target="def-metadata">Metadata</xref> should preferably be an integral part of the digital survey record and conform to the “IHO S-100 Discovery <xref target="def-metadata">Metadata</xref> Standard”, when this is adopted. Prior to the adoption of S-100, ISO 19115 can be used as a model for the <xref target="def-metadata">Metadata</xref>. If this is not feasible, similar information should be included in the documentation of a survey.</p>
 </clause>
-</clause>
+ </clause>
 
 <clause id="ch-tables-specification-matrix" obligation="normative" displayorder="11">
 <title depth="1">7.<tab/>TABLES AND SPECIFICATION MATRIX</title>
@@ -2770,7 +2669,7 @@ info@iho.int<br/>
 <p id="_6da17cac-7eba-0a5f-2065-85663894b05e"><xref target="tab-other-minimum">Table 2</xref> defines minimum navigational aid, structural, and topographic positioning standards for safety of navigation surveys above the vertical datum. It also includes minimum standards for angular measurement in relation to range lines, sectors lights, and similar aids to navigation used on an established course or heading. Finally, requirements are set for direction and speed measurements for tidal stream and current. These standards only apply where such measurements are required for the survey. <xref target="tab-other-minimum">Table 2</xref> follows.</p>
 
 <pagebreak orientation="landscape"/></clause>
-</clause>
+ </clause>
 
 <clause id="_minimum_bathymetry_standards_for_safety_of_navigation_hydrographic_surveys" obligation="normative">
 <title depth="2">7.3.<tab/>Minimum Bathymetry Standards for Safety of Navigation Hydrographic Surveys</title>
@@ -2897,184 +2796,140 @@ or<br/>
 </td>
 <td valign="middle" align="center"><p id="_962ca277-813d-1569-1a0e-d861c5cae7da"><xref target="def-thu">THU</xref> [m]</p>
 </td>
-<td valign="middle" align="center"><p id="_905686d5-14d4-0692-5d5e-2615c74677c7">5 m<br/>
-*Pa4</p>
-</td>
-<td valign="middle" align="center"><p id="_5c158a05-7dd3-2702-13e1-18651fab2cb8">2 m<br/>
-*Pa6</p>
-</td>
-<td valign="middle" align="center"><p id="_65e656b3-f8df-c54d-18b6-e51317093c8c">2 m<br/>
-*Pa6</p>
-</td>
-<td valign="middle" align="center"><p id="_a556b450-0356-bec0-3488-c72f6e9bb2e3">2 m<br/>
-*Pa6</p>
-</td>
-<td valign="middle" align="center"><p id="_003e091d-ac1a-41cd-0593-77daa8a7898b">1 m<br/>
-*Pa7</p>
-</td>
+<td valign="middle" align="center"><p id="_8b1c57bc-a60b-d99a-0097-630bab39ee46">5 m<br/> *Pa4</p>
+ </td>
+<td valign="middle" align="center"><p id="_304104b9-a66c-d5f1-4cdd-fd2ed842b22c">2 m<br/> *Pa6</p>
+ </td>
+<td valign="middle" align="center"><p id="_d93928c8-a708-4934-d874-3416ef2804d0">2 m<br/> *Pa6</p>
+ </td>
+<td valign="middle" align="center"><p id="_c2317a47-b4fb-ba7e-4c3a-c0f17e3b86c6">2 m<br/> *Pa6</p>
+ </td>
+<td valign="middle" align="center"><p id="_35f4ece2-6145-f5de-d43b-94f668671704">1 m<br/> *Pa7</p>
+ </td>
 </tr><tr><td valign="middle" align="center"><p id="_55c3697f-b277-0b5c-86ed-ae61b4347e01"><xref target="def-tvu">TVU</xref> [m]</p>
 </td>
-<td valign="middle" align="center"><p id="_96d02d8b-48f1-efd5-fa39-69eca05e5312">2 m<br/>
-*Pb2</p>
-</td>
-<td valign="middle" align="center"><p id="_cf902158-f27b-8212-80af-8552fe4a90ef">2 m<br/>
-*Pb2</p>
-</td>
-<td valign="middle" align="center"><p id="_4b03cf68-325f-b70c-6d1d-60999bea26f2">1 m<br/>
-*Pb3</p>
-</td>
-<td valign="middle" align="center"><p id="_58eb300d-f4b3-486c-6382-31cd531fe8b1">0.5 m<br/>
-*Pb4</p>
-</td>
-<td valign="middle" align="center"><p id="_dafad353-3f80-8d7b-dd59-9ecdff5d2b89">0.25 m<br/>
-*Pb5</p>
-</td>
+<td valign="middle" align="center"><p id="_0b186774-8f40-d41f-37fd-1d1260d8075c">2 m<br/> *Pb2</p>
+ </td>
+<td valign="middle" align="center"><p id="_886c2021-17e2-5c57-2626-7dd94b2b55e0">2 m<br/> *Pb2</p>
+ </td>
+<td valign="middle" align="center"><p id="_124f150b-d996-be41-9b1d-9108cd22b372">1 m<br/> *Pb3</p>
+ </td>
+<td valign="middle" align="center"><p id="_d20a1e15-4c99-8d91-b3d1-e72a83c5c028">0.5 m<br/> *Pb4</p>
+ </td>
+<td valign="middle" align="center"><p id="_abb43c32-dae2-98d1-8764-5ddf5d1d5f98">0.25 m<br/> *Pb5</p>
+ </td>
 </tr><tr><td valign="middle" align="center"><p id="_c4f552c8-3de5-3bfb-c2eb-d4a97f1a1766"><xref target="scl-floating-objects">Section 5.3</xref></p>
 </td>
 <td valign="middle" align="center"><p id="_00ac3f0d-a769-5ac3-5198-b5a1c26a296e"><strong>Floating Objects and Aids to Navigation</strong></p>
 </td>
 <td valign="middle" align="center"><p id="_9cce0a9c-1555-a44a-6129-be4b70546204"><xref target="def-thu">THU</xref> [m]</p>
 </td>
-<td valign="middle" align="center"><p id="_f3709fe7-fd20-9ffa-d1c0-2ef2f131c4fe">20 m<br/>
-*Pc2</p>
-</td>
-<td valign="middle" align="center"><p id="_619dbcd1-fa79-5a6b-b8c9-d0d0851b7c12">10 m<br/>
-*Pc3</p>
-</td>
-<td valign="middle" align="center"><p id="_8b5819e2-1f32-9d07-95bd-4186b496a2f8">10 m<br/>
-*Pc3</p>
-</td>
-<td valign="middle" align="center"><p id="_a85acd07-01b5-055c-29ba-d6b26aca02da">10 m<br/>
-*Pc3</p>
-</td>
-<td valign="middle" align="center"><p id="_cdc1d3fb-c459-2b9d-cac5-38eaef93039b">5 m<br/>
-*Pc4</p>
-</td>
+<td valign="middle" align="center"><p id="_6f463c6f-caef-2390-10b0-e1984173adb9">20 m<br/> *Pc2</p>
+ </td>
+<td valign="middle" align="center"><p id="_d93c16f6-0f50-5252-ee68-d7e2badd68a0">10 m<br/> *Pc3</p>
+ </td>
+<td valign="middle" align="center"><p id="_26af2359-b926-83d3-968b-8db1b7911127">10 m<br/> *Pc3</p>
+ </td>
+<td valign="middle" align="center"><p id="_3e313eae-b154-07ee-21ae-0674209407b6">10 m<br/> *Pc3</p>
+ </td>
+<td valign="middle" align="center"><p id="_164c071f-def4-75a1-20f1-d8a986bc3164">5 m<br/> *Pc4</p>
+ </td>
 </tr><tr><td valign="middle" align="center"><p id="_f4406745-dae5-c8f4-392c-80cc45e4cffa"><xref target="scl-coastline">Section 5.4</xref></p>
 </td>
-<td valign="middle" align="center"><p id="_038123c3-8ca2-8fc1-4d0a-1ead97e1a177"><strong>Coastline</strong><br/>
-(high, low, MWL water lines, etc)</p>
-</td>
+<td valign="middle" align="center"><p id="_24ad31f8-5ac1-9724-18b9-fc53261bfe4d"><strong>Coastline</strong><br/> (high, low, MWL water lines, etc)</p>
+ </td>
 <td valign="middle" align="center"><p id="_d34c154f-c04e-8060-e960-ac47a666a756"><xref target="def-thu">THU</xref> [m]</p>
 </td>
-<td valign="middle" align="center"><p id="_8c9b1d6f-18b3-71f5-e929-a798c8d3cddc">10 m<br/>
-*Pd2</p>
-</td>
-<td valign="middle" align="center"><p id="_787815ce-aa72-ff46-4f5b-928c8fdfc696">10 m<br/>
-*Pd2</p>
-</td>
-<td valign="middle" align="center"><p id="_ae554206-f72d-4c65-547d-3a1ab20dda52">10 m<br/>
-*Pd2</p>
-</td>
-<td valign="middle" align="center"><p id="_e61213d2-e5ed-eac2-15be-975ec11bc265">10 m<br/>
-*Pd2</p>
-</td>
-<td valign="middle" align="center"><p id="_d9237eed-aa60-9c18-edba-0629c3ce5d03">5 m<br/>
-*Pd3</p>
-</td>
+<td valign="middle" align="center"><p id="_7e4f4d5a-9b71-b91a-2d85-245e92886eea">10 m<br/> *Pd2</p>
+ </td>
+<td valign="middle" align="center"><p id="_75400888-9bd4-04e8-c00f-b7710a3d233e">10 m<br/> *Pd2</p>
+ </td>
+<td valign="middle" align="center"><p id="_abe064e9-bf58-b0cc-be8b-2dc72876e848">10 m<br/> *Pd2</p>
+ </td>
+<td valign="middle" align="center"><p id="_45343e3d-5ae0-0dd7-ad64-5709733b80ab">10 m<br/> *Pd2</p>
+ </td>
+<td valign="middle" align="center"><p id="_d1ddfea7-fae9-fc7b-6135-9db38a670b0b">5 m<br/> *Pd3</p>
+ </td>
 </tr><tr><td valign="middle" rowspan="2" align="center"><p id="_5b602ec6-5fb5-869e-d8c9-e87ad569f232"><xref target="scl-features-navigation">Section 5.5</xref></p>
 </td>
 <td valign="middle" rowspan="2" align="center"><p id="_b386befc-8e71-42dd-0395-03655611b092"><strong>Features Above the Vertical Reference Less Significant to Navigation</strong></p>
 </td>
 <td valign="middle" align="center"><p id="_c18a4a02-577d-9e11-82b9-64d21013dfc7"><xref target="def-thu">THU</xref> [m]</p>
 </td>
-<td valign="middle" align="center"><p id="_b6902296-fe64-4ea0-a3eb-cb31fe4b42cb">20 m<br/>
-*Pe2</p>
-</td>
-<td valign="middle" align="center"><p id="_712f9527-0081-c14d-5227-f07fb33997ca">20 m<br/>
-*Pe2</p>
-</td>
-<td valign="middle" align="center"><p id="_79d2b163-53f9-632a-db93-6096b1986244">20 m<br/>
-*Pe2</p>
-</td>
-<td valign="middle" align="center"><p id="_1c28fbfc-466a-0a20-9c5b-f0e004e9f3c6">10 m<br/>
-*Pe3</p>
-</td>
-<td valign="middle" align="center"><p id="_dde6a75c-3e1c-3ab3-4632-058fa9fd0fbc">5 m<br/>
-*Pe4</p>
-</td>
+<td valign="middle" align="center"><p id="_69ff33a0-5351-c345-752e-5c8f10641803">20 m<br/> *Pe2</p>
+ </td>
+<td valign="middle" align="center"><p id="_681293c0-13be-b70d-d40a-5ae2305f4996">20 m<br/> *Pe2</p>
+ </td>
+<td valign="middle" align="center"><p id="_5c5f34ba-e339-e9ed-2b05-799630dbc4b3">20 m<br/> *Pe2</p>
+ </td>
+<td valign="middle" align="center"><p id="_5059e1a2-26a4-42a0-34ce-29df5bd386e9">10 m<br/> *Pe3</p>
+ </td>
+<td valign="middle" align="center"><p id="_baf12810-cef8-88a5-6f9f-5bb6dea339a8">5 m<br/> *Pe4</p>
+ </td>
 </tr><tr><td valign="middle" align="center"><p id="_53775e1a-0f9c-be6b-0bd4-d2d48b745374"><xref target="def-tvu">TVU</xref> [m]</p>
 </td>
-<td valign="middle" align="center"><p id="_8c0e16c5-8e1a-bfd0-7c92-c7feeb1efb0a">3 m<br/>
-*Pf1</p>
-</td>
-<td valign="middle" align="center"><p id="_2127bddb-a043-1692-6329-4387bb392576">2 m<br/>
-*Pf2</p>
-</td>
-<td valign="middle" align="center"><p id="_1b2e880f-daa4-6d00-6ea8-3a5ced06b531">1 m<br/>
-*Pf3</p>
-</td>
-<td valign="middle" align="center"><p id="_6a664d45-8fbe-1f07-45d3-07a5cd12d45d">0.5 m<br/>
-*Pf4</p>
-</td>
-<td valign="middle" align="center"><p id="_b67f456a-953b-0514-5734-515534f2829a">0.3 m<br/>
-*Pf5</p>
-</td>
+<td valign="middle" align="center"><p id="_8b65613d-a915-5c1d-3554-bef70585b1b4">3 m<br/> *Pf1</p>
+ </td>
+<td valign="middle" align="center"><p id="_524ed663-af00-9bc7-d773-ae0664ee9f3c">2 m<br/> *Pf2</p>
+ </td>
+<td valign="middle" align="center"><p id="_343f9907-d3f3-c2c6-09f9-cd0b60ff3592">1 m<br/> *Pf3</p>
+ </td>
+<td valign="middle" align="center"><p id="_3ebb4f07-7824-5aa0-6ddd-9e8e9baffcab">0.5 m<br/> *Pf4</p>
+ </td>
+<td valign="middle" align="center"><p id="_f509eb2b-596d-8474-c3b7-c2df7268d1cb">0.3 m<br/> *Pf5</p>
+ </td>
 </tr><tr><td valign="middle" rowspan="2" align="center"><p id="_cf3bcc98-d1e3-bf54-7fe4-e8b607ae292b"><xref target="scl-overhead-clearances">Section 5.6</xref></p>
 </td>
 <td valign="middle" rowspan="2" align="center"><p id="_54aeef88-7050-5337-cf9d-ad49d36e32d8"><strong>Overhead Clearances and Range Line, Sector Light Heights</strong></p>
 </td>
 <td valign="middle" align="center"><p id="_a52d5e5f-2f0a-0ef7-99a9-0d86f94c5ecc"><xref target="def-thu">THU</xref> [m]</p>
 </td>
-<td valign="middle" align="center"><p id="_5ee11353-4d34-4254-4ca0-91806015a301">10 m<br/>
-*Pg1</p>
-</td>
-<td valign="middle" align="center"><p id="_bc7fd777-2122-ac6c-119a-409d1f6b30b9">10 m<br/>
-*Pg1</p>
-</td>
-<td valign="middle" align="center"><p id="_dc38126e-28be-7b18-c0a3-f79cac8ddeb1">5 m<br/>
-*Pg2</p>
-</td>
-<td valign="middle" align="center"><p id="_4acaf896-77ce-09a2-da39-09a243a1ac4c">2 m<br/>
-*Pg3</p>
-</td>
-<td valign="middle" align="center"><p id="_6f0b24d6-6610-4efe-f419-3dd72023b6da">1 m<br/>
-*Pg4</p>
-</td>
+<td valign="middle" align="center"><p id="_e87eaaef-4893-0b44-12b8-452beca22744">10 m<br/> *Pg1</p>
+ </td>
+<td valign="middle" align="center"><p id="_29bb5950-b062-3345-6e1d-4aedc1986ea0">10 m<br/> *Pg1</p>
+ </td>
+<td valign="middle" align="center"><p id="_61f50cfc-a87a-492b-d507-f0909ccc0164">5 m<br/> *Pg2</p>
+ </td>
+<td valign="middle" align="center"><p id="_5b1f1d80-1dba-5481-aadd-45a3174d6703">2 m<br/> *Pg3</p>
+ </td>
+<td valign="middle" align="center"><p id="_d8eeb7d8-23b1-dd8f-5d46-3e94bf305777">1 m<br/> *Pg4</p>
+ </td>
 </tr><tr><td valign="middle" align="center"><p id="_dc9426e1-8e19-0c58-b474-31981dfd4607"><xref target="def-tvu">TVU</xref> [m]</p>
 </td>
-<td valign="middle" align="center"><p id="_c6cae64c-f307-9cdb-a7d0-5debcc3f4d36">3 m<br/>
-*Ph1</p>
-</td>
-<td valign="middle" align="center"><p id="_b35b2eb5-ab9a-1e3b-3527-f6b7125e3e3e">2 m<br/>
-*Ph2</p>
-</td>
-<td valign="middle" align="center"><p id="_3ff202c9-5b5b-8243-8469-f344b2403dc7">1 m<br/>
-*Ph3</p>
-</td>
-<td valign="middle" align="center"><p id="_06b179a9-464f-e590-77dd-738859891e5a">0.5 m<br/>
-*Ph4</p>
-</td>
-<td valign="middle" align="center"><p id="_efed3cfe-8928-0339-dec9-233d3b74c8a1">0.3 m<br/>
-*Ph5</p>
-</td>
+<td valign="middle" align="center"><p id="_f108b891-1d38-6e1f-3750-b4643d6eed3c">3 m<br/> *Ph1</p>
+ </td>
+<td valign="middle" align="center"><p id="_de476b99-7916-e278-cbde-7be195ce5794">2 m<br/> *Ph2</p>
+ </td>
+<td valign="middle" align="center"><p id="_3bef862e-b556-1013-187c-e31352c7274c">1 m<br/> *Ph3</p>
+ </td>
+<td valign="middle" align="center"><p id="_22f476df-fef4-227f-f926-2cf5df940ab5">0.5 m<br/> *Ph4</p>
+ </td>
+<td valign="middle" align="center"><p id="_34beb8c3-2668-bb8a-953b-2628df9d7549">0.3 m<br/> *Ph5</p>
+ </td>
 </tr><tr><td valign="middle" align="center"><p id="_b2dc3dd9-1643-db5e-d280-690f6d92406b"><xref target="scl-angula-measurements">Section 5.7</xref></p>
 </td>
 <td valign="middle" align="center"><p id="_d0811228-a247-1931-f415-0901d6a5b513"><strong>Angular Measurements</strong></p>
 </td>
 <td valign="middle" align="center"><p id="_67b5320a-2f5e-d1c0-1573-48f7f2ab040e">[‌degrees]</p>
 </td>
-<td colspan="5" valign="middle" align="center"><p id="_5afd044b-6bcd-bda7-30d8-4abfd94780f5">0.5 degrees<br/>
-*Pi4</p>
-</td>
+<td colspan="5" valign="middle" align="center"><p id="_0bbe32fa-30f2-7ef5-610b-46afe4892cdd">0.5 degrees<br/> *Pi4</p>
+ </td>
 </tr><tr><td valign="middle" align="center"><p id="_46a26f11-ddbc-cb39-f15a-2ccff6421e15"><xref target="scl-water-flow">Section 4.4</xref></p>
 </td>
 <td valign="middle" align="center"><p id="_5e069eef-cf3d-6722-8bba-740f7588a565"><strong>Water Flow Direction</strong></p>
 </td>
 <td valign="middle" align="center"><p id="_7eb8dc67-01f0-aa02-44ec-e206ae9d1862">[‌degrees]</p>
 </td>
-<td colspan="5" valign="middle" align="center"><p id="_4c4da111-3ae3-0d61-72a4-e07ec186f1f9">10 degrees<br/>
-*Wa1</p>
-</td>
+<td colspan="5" valign="middle" align="center"><p id="_b5989d4d-912e-c508-b0ac-ccc630d258ac">10 degrees<br/> *Wa1</p>
+ </td>
 </tr><tr><td valign="middle" align="center"><p id="_7cb1b686-1810-6b80-4b36-6878006ecd80"><xref target="scl-water-flow">Section 4.4</xref></p>
 </td>
 <td valign="middle" align="center"><p id="_2906b277-9dd2-b93d-16fe-e11accfd7440"><strong>Water Flow Speed</strong></p>
 </td>
 <td valign="middle" align="center"><p id="_78ee8fc9-4802-8da9-0f95-05a93cd87949">[‌knots]</p>
 </td>
-<td colspan="5" valign="middle" align="center"><p id="_854b8b19-972d-1161-cd00-1004aea141c8">0.1 knots<br/>
-*Wb5</p>
-</td>
+<td colspan="5" valign="middle" align="center"><p id="_cdc0fecd-a39a-8666-3d3b-a0af1e252f50">0.1 knots<br/> *Wb5</p>
+ </td>
 </tr></tbody>
 </table>
 </clause>
@@ -3095,7 +2950,7 @@ or<br/>
 <title depth="2">7.6.<tab/>MATRIX</title>
 <p id="_153dea24-2bac-f20b-59c8-928e5afead62"><xref target="scl-matrix-description">Matrix</xref> for Hydrographic Surveys. To be read in conjunction with the full text set out in this document, m = metres, all <xref target="def-uncertainty">uncertainties</xref> at 95% confidence level.</p>
 
-<table id="_9a84aa55-da17-5640-777a-a82cea9282d7" unnumbered="true"><thead><tr><th valign="middle" align="center"/><th valign="middle" align="center">Criteria</th>
+<table id="_6fe142c1-1168-ed2b-17f9-80ed3212a999" unnumbered="true"><thead><tr><th valign="middle" align="center"/><th valign="middle" align="center">Criteria</th>
 <th valign="middle" align="center">1</th>
 <th valign="middle" align="center">2</th>
 <th valign="middle" align="center">3</th>
@@ -3261,9 +3116,8 @@ or<br/>
 <td valign="middle" align="center">1</td>
 <td valign="middle" align="center">0.5</td>
 <td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/></tr><tr><td valign="middle" align="center"><strong>d</strong></td>
-<td valign="middle" align="center"><p id="_f44aae6a-c5c8-a877-0471-6639c48dc982">Coastline <xref target="def-thu">THU</xref><br/>
-(high, low, MWL water lines, etc.) [m]</p>
-</td>
+<td valign="middle" align="center"><p id="_28bcfcff-202b-d21e-87c0-1f0388c2a824">Coastline <xref target="def-thu">THU</xref><br/> (high, low, MWL water lines, etc.) [m]</p>
+ </td>
 <td valign="middle" align="center">20</td>
 <td valign="middle" align="center">10</td>
 <td valign="middle" align="center">5</td>
@@ -3384,7 +3238,7 @@ or<br/>
 
 
 <pagebreak orientation="portrait"/></clause>
-</clause>
+ </clause>
 
 
 
@@ -3393,7 +3247,7 @@ or<br/>
 
 
 
-</sections><annex id="annex-matrix-guidance" obligation="normative" displayorder="12">
+ </sections><annex id="annex-matrix-guidance" obligation="normative" displayorder="12">
 <title><strong>Annex A</strong><br/><strong>MATRIX GUIDANCE</strong></title>
 <clause id="_introduction_9" obligation="normative">
 <title depth="2">A.1.<tab/>Introduction</title>
@@ -3401,11 +3255,11 @@ or<br/>
 
 <p id="_3202a8da-359a-a014-ea77-d8c94f184d78">The criteria are derived through a series of alphanumeric codes which reference the cells in the <xref target="scl-matrix-description">Matrix</xref>. A criterion requires three characters to reference a cell address:</p>
 
-<ol id="_e0afc55f-1bd7-6a81-11ac-31e4171b73c8" type="arabic"><li id="_191ad3b5-bde8-41a8-a866-e67e6f2f01c5" label="1"><p id="_d1971b20-ad53-313a-ac4f-a490f9890552">The first character is a capital letter denoting the class of data.</p>
+<ol id="_e0afc55f-1bd7-6a81-11ac-31e4171b73c8" type="arabic"><li id="_82341a4a-ecef-4e2b-8a92-1da061372e28" label="1"><p id="_d1971b20-ad53-313a-ac4f-a490f9890552">The first character is a capital letter denoting the class of data.</p>
 </li>
-<li id="_489a125a-b7c0-4197-b365-0ba7227dfe72" label="2"><p id="_8f2ab8e1-5cb4-a6df-139e-058a3f5634d6">The second character is a lower-case letter referencing the intended criteria by row.</p>
+<li id="_5e47958e-264e-4cd2-88da-0971dafae93f" label="2"><p id="_8f2ab8e1-5cb4-a6df-139e-058a3f5634d6">The second character is a lower-case letter referencing the intended criteria by row.</p>
 </li>
-<li id="_7a0404d8-5c98-46a7-a01e-422c5d0c2197" label="3"><p id="_755f432b-ad87-8524-775f-b291cea050aa">The third character is a number referencing the intended criteria value by column.</p>
+<li id="_e109557e-8f1f-42d4-a684-3f7869f5d32f" label="3"><p id="_755f432b-ad87-8524-775f-b291cea050aa">The third character is a number referencing the intended criteria value by column.</p>
 </li>
 </ol>
 
@@ -3593,21 +3447,18 @@ or<br/>
 <td valign="middle" align="center">Nb1</td>
 </tr></tbody>
 </table>
-</clause>
+ </clause>
 
 <clause id="_text_string_examples" obligation="normative">
 <title depth="3">A.2.3.<tab/>Text String Examples</title>
 <p id="_0dc0749b-4260-f4f3-8b6c-28ea1c6f4496">The following text strings present examples of “Matrix Realisations”: Order 1a Surveys, and a Crowd Sourced dataset example.</p>
 
-<example id="_700ae3c7-ca12-3636-97af-8e7420595b3f">
+<example id="_18589147-7d6d-0b66-d70c-420e308d897e">
 <name>EXAMPLE  1 — Order 1a Matrix text string example</name>
 <p id="_dc9fc1d3-2173-29c7-fd71-219551de07b8">Classified according to the S-44 Matrix as:</p>
-
-<p id="_4e4cb419-1397-1f7b-b7d9-9d4ec7e285ad"><em>Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (&#x3e;40m), Bg9, ≤Bh9, Pa6, Pb3, Pc3, Pd2, Pe1, Pf3, Pg2, Ph3, Pi4, Wa1, Wb5.</em></p>
-
-<p id="_161d3db9-5077-71e5-1492-af7badc427df">Can be divided into the separate parts as not all parameters need to be surveyed at all times depending on area and survey specification requirements. Classified according to the S-44 Matrix as:</p>
-
-<ul id="_4eaf48ce-be46-a866-3c03-3827fa51b8b5"><li><p id="_53e9dcff-bd70-19fc-d526-c4c099ba1673">Bathymetry: <em>Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (&#x3e;40m), Bg9, ≤ Bh9</em></p>
+ <p id="_4e4cb419-1397-1f7b-b7d9-9d4ec7e285ad"><em>Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (&#x3e;40m), Bg9, ≤Bh9, Pa6, Pb3, Pc3, Pd2, Pe1, Pf3, Pg2, Ph3, Pi4, Wa1, Wb5.</em></p>
+ <p id="_161d3db9-5077-71e5-1492-af7badc427df">Can be divided into the separate parts as not all parameters need to be surveyed at all times depending on area and survey specification requirements. Classified according to the S-44 Matrix as:</p>
+ <ul id="_4eaf48ce-be46-a866-3c03-3827fa51b8b5"><li><p id="_53e9dcff-bd70-19fc-d526-c4c099ba1673">Bathymetry: <em>Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (&#x3e;40m), Bg9, ≤ Bh9</em></p>
 </li>
 <li><p id="_ad30ed82-5dae-735c-7e73-b87ca9dd8e5c">Fixed Objects, Aids, Features Above the Vertical Reference Significant to Navigation: <em>Pa6, Pb3</em></p>
 </li>
@@ -3626,11 +3477,10 @@ or<br/>
 </ul>
 </example>
 
-<example id="_bdb6b2ad-8db5-89d4-fef8-8bad48d3eb64">
+<example id="_ba83767d-3018-9f67-e1a1-45789e7923b2">
 <name>EXAMPLE  2 — Crowd Sourced Dataset Example</name>
 <p id="_39678123-ae98-7ac4-1367-ba8768be203a">A “Crowd Sourced” bathymetric dataset acquired in deep water, with a single beam echosounder and no sound velocity correction, could be classified by the use of <xref target="def-tvu">TVU</xref> and <xref target="def-thu">THU</xref> (the coverage is of no use as it is not a systematic survey):</p>
-
-<p id="_857de761-348b-019a-27a8-3299ab2baa56">Classified according to the S-44 Matrix as: <em>Ba3, Bc5, Bd3</em></p>
+ <p id="_857de761-348b-019a-27a8-3299ab2baa56">Classified according to the S-44 Matrix as: <em>Ba3, Bc5, Bd3</em></p>
 </example>
 
 <p id="_db3495a2-c262-4b50-7d41-80795f70bee6"><strong>Referencing:</strong></p>
@@ -3646,8 +3496,7 @@ or<br/>
 
 <clause id="_matrix_example" obligation="normative">
 <title depth="3">A.2.4.<tab/>Matrix Example</title>
-<p id="_cf82a8d2-55eb-9065-3e63-f2cedccf074c" align="left">Example: Order 1b using the SPECIFICATION MATRIX<br/>
-m = metres, all <xref target="def-uncertainty">uncertainties</xref> at 95% confidence level, <strong>Order 1b cells</strong></p>
+<p id="_ea05aa12-2728-b1c7-d8ec-4fd9ffa13250" align="left">Example: Order 1b using the SPECIFICATION MATRIX<br/> m = metres, all <xref target="def-uncertainty">uncertainties</xref> at 95% confidence level, <strong>Order 1b cells</strong></p>
 
 <table id="_74f4233e-4943-5206-13db-28eab60c7459" unnumbered="true"><thead><tr><th valign="middle" align="center"/><th valign="middle" align="center">Criteria</th>
 <th valign="middle" align="center">1</th>
@@ -3940,8 +3789,8 @@ m = metres, all <xref target="def-uncertainty">uncertainties</xref> at 95% confi
 
 
 <pagebreak orientation="portrait"/></clause>
-</clause>
-</annex><annex id="annex-guidelines-quality-management" obligation="normative" displayorder="13">
+ </clause>
+ </annex><annex id="annex-guidelines-quality-management" obligation="normative" displayorder="13">
 <title><strong>Annex B</strong><br/><strong>Guidelines for Quality Management</strong></title>
 <note id="_3135a924-5bf6-671a-40e8-8ec89c10196a"><name>NOTE</name><p id="_3c38780e-de91-79d6-266f-866c8badb0f6">This annex is <strong>not</strong> an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, <em>Manual on Hydrography</em>.</p>
 </note>
@@ -4000,7 +3849,7 @@ m = metres, all <xref target="def-uncertainty">uncertainties</xref> at 95% confi
 
 <p id="_508253cf-622c-9318-8a7a-7a7424d1f15b">During the survey, consideration should be given to confirm the validity of the vertical model by assessing the spatial and temporal repeatability of the survey system.</p>
 </clause>
-</annex><annex id="annex-gridded-bathymetry" obligation="normative" displayorder="15">
+ </annex><annex id="annex-gridded-bathymetry" obligation="normative" displayorder="15">
 <title><strong>Annex D</strong><br/><strong>GRIDDED BATHYMETRY CONSIDERATIONS</strong></title>
 <note id="_114eda70-3992-999e-f81c-9ad0b8d41aa4"><name>NOTE</name><p id="_6d650424-c236-f207-d6c9-f360142bd07e">This annex is <strong>not</strong> an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, <em>Manual on Hydrography</em>.</p>
 </note>
@@ -4182,44 +4031,9 @@ m = metres, all <xref target="def-uncertainty">uncertainties</xref> at 95% confi
 <pagebreak/>
 <p id="_a14ef2b1-ca10-0d26-2acd-f552e7a34b97">The Chair of the Hydrographic Surveys Project Team, Christophe VRIGNAUD (France, Shom), supported by the Vice Chair Nickolas DE ANDRADE ROSCHER (Brazil, DHN) and the IHO Secretariat, would like to thank the following participants (in alphabetic order) for their efforts and contributions:</p>
 
-<p id="_966e931e-fa3d-ed7d-000d-2fd0c0c47263" align="center">Sejin AHN, Republic of Korea (KHRA)<br/>
-Anderson BARBOSA DA CRUZ PEÇANHA, Brazil (DHN)<br/>
-Erik BISCOTTI, Italy (IIM)<br/>
-Vidar BØE, Norway (NHS)<br/>
-James CHAPMAN, UK (UKHO)<br/>
-Andrew COULLS, Australia (AHO)<br/>
-Rodrigo DE CAMPOS CARVALHO, Brazil (DHN)<br/>
-Cristina MONTEIRO, Portugal (IH)<br/>
-David DODD, Expert Contributor (IIC Technologies)<br/>
-Marco FILIPPONE, Expert Contributor (Fugro)<br/>
-Maxim FRITS VAN NORDEN, Expert Contributor (University of Southern Mississippi)<br/>
-Fabien GERMOND, Expert Contributor (iXblue)<br/>
-Megan GREENAWAY, USA (NOAA)<br/>
-Florian IMPERADORI, France (Shom)<br/>
-Iji KIM, Republic of Korea (KHOA)<br/>
-Jean LAPORTE, Expert Contributor (ARGANS)<br/>
-Kwanchang Lim, Republic of Korea (KHOA)<br/>
-John LOOG, Netherlands (NLHO)<br/>
-Jean-Guy NISTAD, Germany (BSH)<br/>
-JongYeon PARK, Republic of Korea (KHOA)<br/>
-Hugh PARKER, Expert Contributor (Fugro)<br/>
-David PARKER, UK (UKHO)<br/>
-Stephen PARSONS, Canada (CHS)<br/>
-Alistair PHILIP, UK (UKHO)<br/>
-Ronan PRONOST, France (Shom)<br/>
-Misty SAVELL, USA (NGA)<br/>
-Thierry SCHMITT, France (Shom)<br/>
-Iain SLADE, Expert Contributor (IFHS)<br/>
-Diego TARTARINI, Italy (IIM)<br/>
-Matthew THOMPSON, USA (NAVOCEANO)<br/>
-David VINCENTELLI, Expert Contributor (iXblue and IFHS)<br/>
-James WALTON, Expert Contributor (AML)<br/>
-Neil WESTON, USA (NOAA)<br/>
-Enrico ZANONE, Italy (IIM)<br/>
-Anders ÅKERBERG, Sweden (SMA)<br/>
-Hans ÖIÅS, Sweden (SMA)</p>
+<p id="_6d6e866a-fea8-26ea-14fe-a6d0e557c725" align="center">Sejin AHN, Republic of Korea (KHRA)<br/> Anderson BARBOSA DA CRUZ PEÇANHA, Brazil (DHN)<br/> Erik BISCOTTI, Italy (IIM)<br/> Vidar BØE, Norway (NHS)<br/> James CHAPMAN, UK (UKHO)<br/> Andrew COULLS, Australia (AHO)<br/> Rodrigo DE CAMPOS CARVALHO, Brazil (DHN)<br/> Cristina MONTEIRO, Portugal (IH)<br/> David DODD, Expert Contributor (IIC Technologies)<br/> Marco FILIPPONE, Expert Contributor (Fugro)<br/> Maxim FRITS VAN NORDEN, Expert Contributor (University of Southern Mississippi)<br/> Fabien GERMOND, Expert Contributor (iXblue)<br/> Megan GREENAWAY, USA (NOAA)<br/> Florian IMPERADORI, France (Shom)<br/> Iji KIM, Republic of Korea (KHOA)<br/> Jean LAPORTE, Expert Contributor (ARGANS)<br/> Kwanchang Lim, Republic of Korea (KHOA)<br/> John LOOG, Netherlands (NLHO)<br/> Jean-Guy NISTAD, Germany (BSH)<br/> JongYeon PARK, Republic of Korea (KHOA)<br/> Hugh PARKER, Expert Contributor (Fugro)<br/> David PARKER, UK (UKHO)<br/> Stephen PARSONS, Canada (CHS)<br/> Alistair PHILIP, UK (UKHO)<br/> Ronan PRONOST, France (Shom)<br/> Misty SAVELL, USA (NGA)<br/> Thierry SCHMITT, France (Shom)<br/> Iain SLADE, Expert Contributor (IFHS)<br/> Diego TARTARINI, Italy (IIM)<br/> Matthew THOMPSON, USA (NAVOCEANO)<br/> David VINCENTELLI, Expert Contributor (iXblue and IFHS)<br/> James WALTON, Expert Contributor (AML)<br/> Neil WESTON, USA (NOAA)<br/> Enrico ZANONE, Italy (IIM)<br/> Anders ÅKERBERG, Sweden (SMA)<br/> Hans ÖIÅS, Sweden (SMA)</p>
 
 <p id="_f207c55f-ced7-a9b5-908e-17986c7c0097" align="center">Special thanks to Richard POWELL (USA, NOAA) for the cover image.</p>
 </clause>
-</annex>
+ </annex>
 </iho-standard>

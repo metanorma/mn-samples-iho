@@ -1,6 +1,6 @@
 <bibdata type="standard">
 <title language="en" format="text/plain">Guidance for Hydrographic Offices</title>
-<docidentifier type="IHO">C-17</docidentifier><docnumber>17</docnumber><date type="published"><on>2017-01</on></date><contributor><role type="author"/><organization>
+<docidentifier primary="true" type="IHO">C-17</docidentifier><docnumber>17</docnumber><date type="published"><on>2017-01</on></date><contributor><role type="author"/><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
 <name>International Hydrographic Organization</name>

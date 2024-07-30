@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="0.9.1" schema-version="v1.3.0">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="0.9.12" schema-version="v1.3.3">
 <bibdata type="standard">
 <title language="en" format="text/plain">Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers (Preview PR)</title>
-<docidentifier type="IHO">S-Guidelines-S5-S8</docidentifier><docnumber>Guidelines-S5-S8</docnumber><date type="published"><on>2019-05</on></date><contributor><role type="author"/><organization>
+<docidentifier primary="true" type="IHO">S-Guidelines-S5-S8</docidentifier><docnumber>Guidelines-S5-S8</docnumber><date type="published"><on>2019-05</on></date><contributor><role type="author"/><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
 <name>International Hydrographic Organization</name>
@@ -18,35 +18,27 @@
 
 <p id="_ec27f444-fab2-34d0-f87f-47e927e851d7">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
 </clause>
-</copyright-statement>
+ </copyright-statement>
 
 <license-statement>
 
-<clause id="_e162095f-d94e-46c4-1ddb-64d4bff1e613" obligation="normative">
+<clause id="_faf68309-0ea1-289a-63d0-171a33b1ba15" obligation="normative">
 <p id="_f96ad834-9c07-1e0a-8b8d-2a2f2d2422d2">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO and any other copyright holders.</p>
 
 <p id="_b98de9d0-8908-dc2b-5520-a9f074aee80d">In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:</p>
 
-<quote id="_466793f9-bd6b-f0fd-04e6-cde21c11f878"><p id="_600cf91e-6b20-41f5-4865-37dec2972c81"><em>“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</em></p>
-
-<p id="_200d16b4-7678-b606-a56a-da83eede45c1"><em>“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</em></p>
+<quote id="_b11c69b5-d247-acf7-ba27-c130d6ea2169"><p id="_600cf91e-6b20-41f5-4865-37dec2972c81"><em>“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</em></p>
+ <p id="_200d16b4-7678-b606-a56a-da83eede45c1"><em>“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</em></p>
 </quote>
 
 <p id="_55169b69-666c-352d-faff-474bd357991a">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO.</p>
 </clause>
-</license-statement>
+ </license-statement>
 
 <feedback-statement>
 
-<p id="_305ad546-f0f3-33e9-7d51-a4a5ff155b34">Published by the<br/>
-International Hydrographic Organization<br/>
-4b quai Antoine 1<sup>er</sup><br/>
-Principauté de Monaco<br/>
-Tel: (377) 93.10.81.00<br/>
-Fax: (377) 93.10.81.40<br/>
-info@iho.int<br/>
-\www.iho.int<br/></p>
-</feedback-statement>
+<p id="_1b519f92-9f08-d32d-89c9-aafcf9e15788">Published by the<br/> International Hydrographic Organization<br/> 4b quai Antoine 1<sup>er</sup><br/> Principauté de Monaco<br/> Tel: (377) 93.10.81.00<br/> Fax: (377) 93.10.81.40<br/> info@iho.int<br/> \www.iho.int<br/></p>
+ </feedback-statement>
 </boilerplate><preface><foreword id="_9def9c4b-4706-fbda-1c82-f3eb465b13cf" obligation="informative">
 <title>Foreword</title>
 <p id="_a3097e95-7ef6-2cba-0f63-14345ca1ec35">These guidelines are to be used by educational and training organizations for the preparation of submissions of programmes in hydrographic surveying or nautical charting against the IHO Publications S-5A/B and S-8A/B Standards of Competence for Hydrographic Surveyors and Nautical Cartographers.</p>
@@ -274,8 +266,8 @@ info@iho.int<br/>
 <quote id="_e56620ed-0dfd-0824-6f6a-8b9c46871d20"><p id="_79a5f348-0e37-930d-2b85-29d911e647ab">Category “B” programmes are intended to deliver Basic and Intermediate levels of knowledge and Category “A” programmes are intended to deliver Basic, Intermediate and Advanced levels of knowledge.</p>
 </quote>
 </clause>
-</clause>
-</terms>
+ </clause>
+ </terms>
 
 <clause id="_time_frames" obligation="normative">
 <title>TIME FRAMES</title>
@@ -296,7 +288,7 @@ info@iho.int<br/>
 <p id="_242c83b5-f626-b936-93ac-f72be3b3472a">At Category “A”, forty (40) weeks, including the final project.</p>
 </clause>
 </clause>
-</clause>
+ </clause>
 
 <clause id="_practical_exercises_and_final_project" obligation="normative">
 <title>PRACTICAL EXERCISES AND FINAL PROJECT</title>
@@ -328,12 +320,11 @@ info@iho.int<br/>
 
 <p id="_67c9475f-f409-5225-3cd2-aebda7671899">The final project should occur at the end of the programme, so that knowledge gained in earlier work can be put into practice, and the practical limitations involved in field and office operations experienced by the student. Final projects must reflect the level of knowledge outlined in the programme syllabus.</p>
 
-<p id="_653e2146-9b4a-b26f-b1b8-1686fb10e270">Reference material should be available to students, including an archive of case study material, equipment and costing information in order to allow students to plan and design the survey/nautical chart.
-Consideration should be given to involving experienced hydrographers and nautical cartographers, and, when necessary, equipment provided by external agencies in the final project, in order to supplement the resources of the training institution.</p>
+<p id="_3ba51df0-6cf0-a2cf-1210-b80ecb48c67d">Reference material should be available to students, including an archive of case study material, equipment and costing information in order to allow students to plan and design the survey/nautical chart. Consideration should be given to involving experienced hydrographers and nautical cartographers, and, when necessary, equipment provided by external agencies in the final project, in order to supplement the resources of the training institution.</p>
 
 <p id="_af0baf51-9632-83fe-9378-ea3e4d5fd20c">Students should prepare a complete final project report and associated survey or nautical charting deliverables. The final project report must form part of the performance assessment for students.</p>
 </clause>
-</clause>
+ </clause>
 
 <clause id="cl-field-office-experience" obligation="normative">
 <title>FIELD AND OFFICE EXPERIENCE</title>
@@ -470,7 +461,7 @@ Consideration should be given to involving experienced hydrographers and nautica
 <p id="_10c17020-acc0-37c0-62b7-6e839d5c338f"><strong>Documentation and Submission</strong>. The procedure for recognition of schemes will generally follow that described for programmes at <xref target="cl-procedures-recognition-programmes"/> below. The documentation required for schemes will vary depending on the scope of each scheme but as a minimum must comply with the requirements of <xref target="cl-professional-certification"/> and include other relevant general information such as that described in <xref target="chapter1-programme-Identification"/> and <xref target="chapter1-aims-programme"/>.</p>
 </clause>
 </clause>
-</clause>
+ </clause>
 
 <clause id="cl-procedures-recognition-programmes" obligation="normative">
 <title>PROCEDURES FOR RECOGNITION OF PROGRAMMES</title>
@@ -502,7 +493,7 @@ Consideration should be given to involving experienced hydrographers and nautica
 <title>CHAPTER 1: General Information on the Programme.</title>
 <p id="_ce49b2c7-b1c1-5708-ccf2-428a3e92176f">Chapter 1 of the submission must include the following sections:</p>
 
-<ol id="_56387169-9277-81c6-b7c4-d53e63f28c67" type="arabic"><li id="chapter1-programme-Identification"><p id="_f80ef95e-b73d-61ec-3217-29aedc4efd3e"><strong>Programme Identification</strong></p>
+<ol id="_740195e4-9145-9546-1f4b-0d71213d3c95" type="arabic"><li id="chapter1-programme-Identification"><p id="_f80ef95e-b73d-61ec-3217-29aedc4efd3e"><strong>Programme Identification</strong></p>
 <table id="_b069c450-f524-efe6-4b6c-ea2e3200ff00" unnumbered="true"><tbody><tr><td valign="top" align="left">Name of the Programme</td>
 </tr><tr><td valign="top" align="left">Institution submitting the Programme for recognition</td>
 </tr><tr><td valign="top" align="left">Previous recognition year (if any)</td>
@@ -522,27 +513,23 @@ Consideration should be given to involving experienced hydrographers and nautica
 </li>
 <li id="chapter1-aims-programme"><p id="_857282d0-fa66-bbfd-3ea6-693e9cfe44c6"><strong>Aims of the Programme</strong></p>
 <p id="_1e5c6e28-e262-6450-4139-1dc111e4eb3a">The submission should, in this section, provide a clear narrative outline of the programme, with details of the target audience and intended outcome and where it fits within the institution and national/international hydrographic/cartographic community. The section should describe the academic elements of the programme and the objectives set for each student and their general learning outcomes.</p>
-
-<p id="_5f1f22d4-6f2d-1614-addb-d13e832ccd0f">‌[Comment: The Board is interested in the underlying rationale for the programme to the extent this assists its review process. It is necessary for the Board to know as much of the background detail as necessary to comprehend why the programme is designed the way it is, especially if there is some specific or even unique local learning outcome required.]</p>
+ <p id="_5f1f22d4-6f2d-1614-addb-d13e832ccd0f">‌[Comment: The Board is interested in the underlying rationale for the programme to the extent this assists its review process. It is necessary for the Board to know as much of the background detail as necessary to comprehend why the programme is designed the way it is, especially if there is some specific or even unique local learning outcome required.]</p>
 </li>
 <li><p id="_d35eaeb0-fd01-4e25-3db0-c50e709a3fa6"><strong>Entry Requirements and Exemptions</strong></p>
 <p id="_7c2e487b-faa7-fcc9-ee8b-dcaaeb9de3dc">Identify normal qualifications required for entry and alternative qualification routes that may be acceptable for entry.</p>
-
-<p id="_e077e0f9-24f6-e339-67da-0dc6b7aa3965">For Programmes seeking exemption of some or all the <em>Basic</em> or <em>Foundation Science</em> subjects, provide a clear indication of where students would previously have attained that knowledge, and a clear description of the formal procedures used to evaluate claims for such exemptions. <strong><em>No exemptions are permitted for Essential, Hydrographic and Cartographic Science subjects</em></strong>.</p>
-
-<p id="_c884ece4-1d31-c37b-08d3-7824a47f6569">‌[Comment: The Board will examine in detail the entry processes of the submitting organization. It will be focused on ensuring the entry requirements are properly and adequately met. Where an entry examination or test is employed the Board requires an outline of how the examination or test addresses the entry standards required.]</p>
+ <p id="_e077e0f9-24f6-e339-67da-0dc6b7aa3965">For Programmes seeking exemption of some or all the <em>Basic</em> or <em>Foundation Science</em> subjects, provide a clear indication of where students would previously have attained that knowledge, and a clear description of the formal procedures used to evaluate claims for such exemptions. <strong><em>No exemptions are permitted for Essential, Hydrographic and Cartographic Science subjects</em></strong>.</p>
+ <p id="_c884ece4-1d31-c37b-08d3-7824a47f6569">‌[Comment: The Board will examine in detail the entry processes of the submitting organization. It will be focused on ensuring the entry requirements are properly and adequately met. Where an entry examination or test is employed the Board requires an outline of how the examination or test addresses the entry standards required.]</p>
 </li>
 </ol>
-</clause>
+ </clause>
 
 <clause id="_chapter_2_information_about_the_programme_infrastructure" obligation="normative">
 <title>CHAPTER 2: Information About the Programme Infrastructure</title>
 <p id="_8bc61959-a9ef-0999-e59d-2b95d5f88bbd">Chapter 2 of the submission must include the following sections:</p>
 
-<ol id="_b969e84e-6ba3-d6c4-5589-ea8fd37178fa" type="arabic"><li><p id="_d5db9cd5-3dca-6169-6714-dd0008d9bf40">Staff List:</p>
+<ol id="_fa65e2f9-3490-53d1-44e0-6200ec8401b0" type="arabic"><li><p id="_d5db9cd5-3dca-6169-6714-dd0008d9bf40">Staff List:</p>
 <p id="_356a4984-00af-fd7e-b0ee-ed2bfd2796a1">For each instructor contributing to the programme, provide a Curriculum Vitae (CV) which will include:</p>
-
-<ul id="_485e1fb2-2d87-e98f-2720-06c7371b07ca"><li><p id="_5bf6ba2d-f785-6ff1-47a0-c9c4abd73d60">Module taught;</p>
+ <ul id="_485e1fb2-2d87-e98f-2720-06c7371b07ca"><li><p id="_5bf6ba2d-f785-6ff1-47a0-c9c4abd73d60">Module taught;</p>
 </li>
 <li><p id="_5a1bbf0d-8310-8ba7-56c7-296ee7c21526">Academic qualifications;</p>
 </li>
@@ -551,8 +538,7 @@ Consideration should be given to involving experienced hydrographers and nautica
 <li><p id="_95126709-5040-5fd9-c624-2912293880ae">Recent publications.</p>
 </li>
 </ul>
-
-<p id="_81c0b8d1-d956-fc10-76da-3d9555c9ce6c">‌[Comment: The Board will look closely at staff CVs, in particular at the specific experience brought to teaching of the programme.]</p>
+ <p id="_81c0b8d1-d956-fc10-76da-3d9555c9ce6c">‌[Comment: The Board will look closely at staff CVs, in particular at the specific experience brought to teaching of the programme.]</p>
 </li>
 <li><p id="_a912f544-00a5-9ec9-2540-fd8783758fbe"><strong>Facilities Available to Students:</strong></p>
 <ul id="_9c5c03d3-9598-122e-4108-b35540e2a6d9"><li><p id="_bebe5663-a800-bf94-c092-24685930f628">Equipment: Provide a list of relevant equipment/systems that will be used in the delivery of practical work and in the final project;</p>
@@ -579,16 +565,15 @@ Consideration should be given to involving experienced hydrographers and nautica
 </ul>
 </li>
 </ol>
-</clause>
+ </clause>
 
 <clause id="_chapter_3_programme_description" obligation="normative">
 <title>CHAPTER 3: Programme Description</title>
 <p id="_1d0f6fcd-c57c-cdaf-2706-448b4926921c">Chapter 3 of the submission must include the following sections:</p>
 
-<ol id="_cf924b60-3fea-af3b-9bf6-2d7a7952b5c9" type="arabic"><li><p id="_90e2866e-5ccf-e256-9643-a8f921f91f07"><strong>Programme Structure</strong></p>
+<ol id="_087a3848-8b44-e53b-7ae0-64e84569ecf0" type="arabic"><li><p id="_90e2866e-5ccf-e256-9643-a8f921f91f07"><strong>Programme Structure</strong></p>
 <p id="_3ea50edc-3933-97b6-34f5-8b812ec9ac97">The Programme may involve a series of modules and formal training sessions that must include practicals, tutorials and field experience to reinforce and complement theoretical material. It is important that the programme structure is clearly described within the submission and that sufficient details of the components are provided. As a minimum the submission should include:</p>
-
-<ul id="_ff5c4c2a-812f-5fb4-89b3-20e6506a48c7"><li><p id="_c3cc4a28-5289-551e-2068-6127b63c958f">Table of programme modules;</p>
+ <ul id="_ff5c4c2a-812f-5fb4-89b3-20e6506a48c7"><li><p id="_c3cc4a28-5289-551e-2068-6127b63c958f">Table of programme modules;</p>
 </li>
 <li><p id="_fe71ed2e-db8b-68fd-c316-900da7348c4b">Schedule of programme modules identifying where in the sequence each module it taken by students (programme timetable); and</p>
 </li>
@@ -600,10 +585,8 @@ Consideration should be given to involving experienced hydrographers and nautica
 </li>
 <li><p id="_c3e5dbe5-dd64-6c28-c952-f4d9638284ce"><strong>Information About Each Module in the Programme</strong></p>
 <p id="_852a66c4-1fcb-ec09-ef3c-57f18a829a49">This section should be easily understood and contain a full and detailed description of each programme module, including a reference to <em>elements</em> of the Standards for each course module item. This enables the institution to describe fully the programme in relation to the Standards and aids greatly in the Board’s review. Each module of the programme being submitted should be described in more detail than the Standards, with a tabulation of theory, practical exercises and self-guidance hours devoted to the elements of the Standards. This will allow the Board to relate the module and lectures to the cross-reference table (see <xref target="scl-chapter7"/>) and tabulated programme description.</p>
-
-<p id="_6d2275ad-8a8c-d4a1-3959-9d148240a486"><strong>A schedule should be provided that shows all delivered items (lectures, tutorials, assignments and practicals) within the module and relates them to <em>elements</em> of the Standards</strong>. This must include for each delivered item: means of delivery; hours allocated; reference to <em>elements</em> of the Standards. For the purpose of these Guidelines the nominal duration of a teaching hour is 50 minutes. If less, then this must be stated in the submission. An example of a Module Schedule that might be delivered in an S-5B programme is provided in <xref target="tab-example-module-schedule"/> where the teaching scheme shows the first five lectures and associated practical/tutorial work. Coverage in the example is aligned with a student intake directly from high school with passes in mathematics and physics where no previous knowledge or experience in spatial science exists, hence the extended introduction offering familiarisation with relevant fundamentals. Time allocated is indicative of the entry level.</p>
-
-<table id="tab-example-module-schedule">
+ <p id="_6d2275ad-8a8c-d4a1-3959-9d148240a486"><strong>A schedule should be provided that shows all delivered items (lectures, tutorials, assignments and practicals) within the module and relates them to <em>elements</em> of the Standards</strong>. This must include for each delivered item: means of delivery; hours allocated; reference to <em>elements</em> of the Standards. For the purpose of these Guidelines the nominal duration of a teaching hour is 50 minutes. If less, then this must be stated in the submission. An example of a Module Schedule that might be delivered in an S-5B programme is provided in <xref target="tab-example-module-schedule"/> where the teaching scheme shows the first five lectures and associated practical/tutorial work. Coverage in the example is aligned with a student intake directly from high school with passes in mathematics and physics where no previous knowledge or experience in spatial science exists, hence the extended introduction offering familiarisation with relevant fundamentals. Time allocated is indicative of the entry level.</p>
+ <table id="tab-example-module-schedule">
 <name>Example of a Module Schedule</name>
 <tbody><tr><th colspan="6" valign="top" align="left">Geodesy</th>
 </tr><tr><th valign="top" align="left">Learning Activities</th>
@@ -641,12 +624,10 @@ Consideration should be given to involving experienced hydrographers and nautica
 <td valign="top" align="left"><p id="_68a5a9a3-100c-8f4b-7796-918b5b104a72">7</p>
 </td>
 <td colspan="2" valign="top" align="left"/></tr><tr><td colspan="6" valign="top" align="left"><p id="_7bd019d9-0561-1222-af97-4cad2b4f8f51"><strong>Module Outline:</strong></p>
-
-<p id="_0ce02f76-6028-8e78-e46c-102f1ac9a34c">A first course in geodesy that provides students with foundations in reference frames and surfaces used in surveying. Knowledge and skills acquired in this module are essential in underpinning further module content within the programme. Through the combination of theory and practical work with computer software the module offers an applied approach to the subject. Geodesy concerns the dimensions and shape of the Earth and reference frames used in data collection and computations for position. From geophysical data used to determine the figure of the Earth as a surface, mathematical approximations that are used in surveying are presented and realization of reference systems for practical applications defined. A contrast is drawn between traditional methods employed for control of surveys using terrestrial data and the use of modern satellite methods adopted for real-time mapping applications as well as techniques for precise geodetic control used in national mapping and geodynamics.</p>
+ <p id="_0ce02f76-6028-8e78-e46c-102f1ac9a34c">A first course in geodesy that provides students with foundations in reference frames and surfaces used in surveying. Knowledge and skills acquired in this module are essential in underpinning further module content within the programme. Through the combination of theory and practical work with computer software the module offers an applied approach to the subject. Geodesy concerns the dimensions and shape of the Earth and reference frames used in data collection and computations for position. From geophysical data used to determine the figure of the Earth as a surface, mathematical approximations that are used in surveying are presented and realization of reference systems for practical applications defined. A contrast is drawn between traditional methods employed for control of surveys using terrestrial data and the use of modern satellite methods adopted for real-time mapping applications as well as techniques for precise geodetic control used in national mapping and geodynamics.</p>
 </td>
 </tr><tr><td colspan="6" valign="top" align="left"><p id="_3883a300-0742-3bb5-34cc-4a13fc292a7c"><strong>Learning Outcomes</strong></p>
-
-<ol id="_ce0ccbf3-b404-377f-3490-d24f58e5601d" type="arabic"><li><p id="_9538c099-a281-bb6a-8dad-e6adf625d062">Identify properties and needs for different surfaces used to represent the Earth for different applications and undertake geodetic computations in relation to such surfaces.</p>
+ <ol id="_ce0ccbf3-b404-377f-3490-d24f58e5601d" type="arabic"><li><p id="_9538c099-a281-bb6a-8dad-e6adf625d062">Identify properties and needs for different surfaces used to represent the Earth for different applications and undertake geodetic computations in relation to such surfaces.</p>
 </li>
 <li><p id="_474bb7eb-789f-98f5-66b9-6c58a6d76411">Describe the reference frames used in geodesy with appreciating their applications, compare methods for moving positional data between them and perform associated computations.</p>
 </li>
@@ -659,16 +640,8 @@ Consideration should be given to involving experienced hydrographers and nautica
 </ol>
 </td>
 </tr><tr><td colspan="6" valign="top" align="left"><p id="_a9d9396b-3bcf-1ed0-7292-8e62b049f323"><strong>Module Reference Material and Bibliography:</strong></p>
-
-<p id="_7d8df27a-cc75-b5f4-df2f-eed32df058f6">Meyer, T.H. Introduction to Geometrical and Physical Geodesy: Foundations of Geomatics, ESRI Press, March 2018.<br/>
-Hofman-Wellenhof, B. and Moritz, H. Physical Geodesy. Springer, September 2006.<br/>
-National Imagery and Mapping Agency, Department of Defense World Geodetic System 1984. Technical Report Technical Report NIMA 8350.2, January 2000.<br/>
-ICSM ANZLIC Committee on Surveying and Mapping. Geocentric Datum of Australia, Technical manual Version 2.4, December 2014.<br/>
-IERS. Terrestrial reference systems and frames. IERS Technical Note No. 36.<br/>
-Dawson, J. and Woods, A. ITRF to GDA94 coordinate transformations, Journal of Applied Geodesy No. 4, 2010<br/>
-Thomas, C.M., and Featherstone, W.E. Validation of Vincenty’s Formulas for the Geodesic Using a New Fourth-Order Extension of Kivioja’s Formula. Journal of Surveying Engineering, February 2005.<br/>
-Amos, M. New Zealand Vertical Datum 2009. New Zealand Surveyor, No. 300, 2010.</p>
-</td>
+ <p id="_1adff6a3-b324-115c-8973-81f6d813184e">Meyer, T.H. Introduction to Geometrical and Physical Geodesy: Foundations of Geomatics, ESRI Press, March 2018.<br/> Hofman-Wellenhof, B. and Moritz, H. Physical Geodesy. Springer, September 2006.<br/> National Imagery and Mapping Agency, Department of Defense World Geodetic System 1984. Technical Report Technical Report NIMA 8350.2, January 2000.<br/> ICSM ANZLIC Committee on Surveying and Mapping. Geocentric Datum of Australia, Technical manual Version 2.4, December 2014.<br/> IERS. Terrestrial reference systems and frames. IERS Technical Note No. 36.<br/> Dawson, J. and Woods, A. ITRF to GDA94 coordinate transformations, Journal of Applied Geodesy No. 4, 2010<br/> Thomas, C.M., and Featherstone, W.E. Validation of Vincenty’s Formulas for the Geodesic Using a New Fourth-Order Extension of Kivioja’s Formula. Journal of Surveying Engineering, February 2005.<br/> Amos, M. New Zealand Vertical Datum 2009. New Zealand Surveyor, No. 300, 2010.</p>
+ </td>
 </tr><tr><th colspan="6" valign="top" align="left">Module Activity Breakdown</th>
 </tr><tr><th valign="top" align="left">Activity — Lecture, Practical, Assignment</th>
 <th valign="middle" align="center">Contents</th>
@@ -691,10 +664,8 @@ Amos, M. New Zealand Vertical Datum 2009. New Zealand Surveyor, No. 300, 2010.</
 <td valign="top" align="left"/><td valign="top" align="left"><p id="_f92a2758-28b0-1086-a9a9-8ec2baf59492">E1.1</p>
 </td>
 </tr><tr><th valign="top" align="left">Lecture 2</th>
-<td valign="top" align="left"><p id="_da2456da-10a0-7373-9c06-5954a7b3a946">The Earth as a sphere, defining points in 3D by latitude, longitude and radius, Defining great circles, small circles rhumb lines and azimuth.
-Spherical trigonometry and its application.
-Use of solar observations to determine azimuth.</p>
-</td>
+<td valign="top" align="left"><p id="_74753e9e-73b7-1926-d6d7-a0dadf5c1dae">The Earth as a sphere, defining points in 3D by latitude, longitude and radius, Defining great circles, small circles rhumb lines and azimuth. Spherical trigonometry and its application. Use of solar observations to determine azimuth.</p>
+ </td>
 <td valign="middle" align="center"><p id="_a7b1d861-e6c6-7b65-1538-41a3b63138dc">3.0</p>
 </td>
 <td valign="top" align="left"/><td valign="top" align="left"/><td valign="top" align="left"><p id="_b04619ee-0b9a-a090-0bf6-0ea0fb0854c2">B1.3, E4.3a</p>
@@ -710,10 +681,8 @@ Use of solar observations to determine azimuth.</p>
 </td>
 </tr><tr><th valign="top" align="left">Assignment 1</th>
 <td valign="top" align="left"><p id="_e68d457a-36e7-1606-af2d-a5ed08072d9e">The Equatorial Sundial</p>
-
-<p id="_975f0231-6841-1571-7877-0d68df0ea138">Working in pairs, use 4 rounds of observations to the Sun to determine azimuth of an RO and hence align a sundial to North.</p>
-
-<p id="_e2ab1aec-ef26-508e-b730-d526da7f3111">Write a report with (i) Introduction; (ii) Principles detailing how the Sun can be used to determine both direction and time to explain corrections required to data for both components and computations required for solutions; (iii) Field booking sheet and computations for azimuth performed in the field; (iv) a discussion on precision of the azimuth using results from 4 rounds and accuracy from corrected time read from the sundial with true local time; and, (v) conclusions.</p>
+ <p id="_975f0231-6841-1571-7877-0d68df0ea138">Working in pairs, use 4 rounds of observations to the Sun to determine azimuth of an RO and hence align a sundial to North.</p>
+ <p id="_e2ab1aec-ef26-508e-b730-d526da7f3111">Write a report with (i) Introduction; (ii) Principles detailing how the Sun can be used to determine both direction and time to explain corrections required to data for both components and computations required for solutions; (iii) Field booking sheet and computations for azimuth performed in the field; (iv) a discussion on precision of the azimuth using results from 4 rounds and accuracy from corrected time read from the sundial with true local time; and, (v) conclusions.</p>
 </td>
 <td valign="top" align="left"/><td valign="middle" align="center"><p id="_69f3804c-a655-2866-0442-ce98e8ece01e">2.0</p>
 </td>
@@ -738,9 +707,8 @@ Use of solar observations to determine azimuth.</p>
 <td valign="top" align="left"><p id="_dae8858a-dc3c-9ea0-db4d-a7f5f13fde8b">E4.1a, B4.1</p>
 </td>
 </tr><tr><th valign="top" align="left">Lecture 4</th>
-<td valign="top" align="left"><p id="_0396b794-919b-172e-bca9-ddc2a5800718">The Earth as a spheroid. Latitude, longitude, radius of curvature and meridional distance. Lines of sight and geodesic on the spheroid. Computations on the spheroid by Normal Section, Vincenty’s formula and Kivioja’s algorithm.
-Deflection of the vertical, geoid/spheroid separation and their relationship.</p>
-</td>
+<td valign="top" align="left"><p id="_f6c435bc-e7af-0081-7b1d-3c12362dab87">The Earth as a spheroid. Latitude, longitude, radius of curvature and meridional distance. Lines of sight and geodesic on the spheroid. Computations on the spheroid by Normal Section, Vincenty’s formula and Kivioja’s algorithm. Deflection of the vertical, geoid/spheroid separation and their relationship.</p>
+ </td>
 <td valign="middle" align="center"><p id="_56bc4eeb-b326-c3af-f13c-7d9eb44f6dab">3.0</p>
 </td>
 <td valign="top" align="left"/><td valign="top" align="left"/><td valign="top" align="left"><p id="_339d4b8e-b562-9444-4737-1349d6a267c3">E4.1d</p>
@@ -759,17 +727,15 @@ Deflection of the vertical, geoid/spheroid separation and their relationship.</p
 </td>
 <td valign="middle" align="center"><p id="_bf18cafa-2e63-7e09-f532-89cd76759a19">3.0</p>
 </td>
-<td valign="top" align="left"/><td valign="top" align="left"/><td valign="top" align="left"><p id="_71d4e348-2125-87ed-5b13-c02050f8d19f">E4.4a<br/>
-E4.1c</p>
-</td>
+<td valign="top" align="left"/><td valign="top" align="left"/><td valign="top" align="left"><p id="_da5587ef-c1cf-c438-e9f5-9d8bbc742c46">E4.4a<br/> E4.1c</p>
+ </td>
 </tr><tr><th valign="top" align="left">Practical test 1 (computer lab)</th>
 <td valign="top" align="left"><p id="_181cbabe-2278-1c39-09fd-fa85546badc2">Computations relation to; (i) Comparing traditional bench mark data with heights obtained from GNSS corrected with global and local geoidal models; (ii) Use of normal-orthometric heights. Discussion of methods and results in both parts.</p>
 </td>
 <td valign="top" align="left"/><td valign="middle" align="center"><p id="_ae29c33d-7160-4c58-c5b5-49239083f6da">2.0</p>
 </td>
-<td valign="top" align="left"/><td valign="top" align="left"><p id="_e4b6b478-0850-3417-3bc9-a2e0ed03abb9">E4.4a<br/>
-E4.1c</p>
-</td>
+<td valign="top" align="left"/><td valign="top" align="left"><p id="_7edab097-881c-d223-20cf-1ea592054541">E4.4a<br/> E4.1c</p>
+ </td>
 </tr><tr><td valign="middle" align="center"><p id="_cd98dbab-c8ef-332d-4e59-a7fb2d6eca89">⁞</p>
 </td>
 <td valign="middle" align="center"><p id="_ff70ecba-d26b-aee1-fcfc-947266f53c4a">⁞</p>
@@ -784,29 +750,25 @@ E4.1c</p>
 </td>
 </tr></tbody>
 </table>
-
-<p id="_1cd8b2be-a4dc-d9f5-603b-6caab0a3a832">Each assessment component (through exams, assignments, etc.) must be clearly defined and related to learning outcomes from the Standards. It must be supported with assignment specifications and assessment criteria (i.e. the way each assignment and exam is graded).</p>
-
-<p id="_ba5075f9-2145-0b37-3e1d-5466d897ae41">Where e-learning components are used, the expected student total working time for each component, the estimated number of tutor-student interaction hours, e-lecture schedule, tests, exercises, and the way the student study time is monitored should be provided.</p>
-
-<p id="_e1626102-0ee4-5305-c031-13674ed5116f">The IBSC does not intend to be prescriptive in how the modules or sub-components of a Programme are structured, but it requires that they be properly and fully related to the cross-reference table.</p>
+ <p id="_1cd8b2be-a4dc-d9f5-603b-6caab0a3a832">Each assessment component (through exams, assignments, etc.) must be clearly defined and related to learning outcomes from the Standards. It must be supported with assignment specifications and assessment criteria (i.e. the way each assignment and exam is graded).</p>
+ <p id="_ba5075f9-2145-0b37-3e1d-5466d897ae41">Where e-learning components are used, the expected student total working time for each component, the estimated number of tutor-student interaction hours, e-lecture schedule, tests, exercises, and the way the student study time is monitored should be provided.</p>
+ <p id="_e1626102-0ee4-5305-c031-13674ed5116f">The IBSC does not intend to be prescriptive in how the modules or sub-components of a Programme are structured, but it requires that they be properly and fully related to the cross-reference table.</p>
 </li>
 <li><p id="_b8681db2-c8b9-128e-e56c-e1544a98d704"><strong>Texts and Reference Material</strong></p>
 <p id="_515aad95-747b-df34-a272-a953c07db202">A list of texts and reference material used for each subject area, with an indication of the editorial house/publisher, and year of publication should be provided. Where e-learning components are included, then a description of the e-learning materials, including their source, year of publication and a description of the material access method, should be submitted.</p>
-
-<p id="_fd878578-43e7-0351-55e0-1228ddd5dd39">‌[Comment: The Board will look to the adequacy and relevance of texts and reference materials. The section also serves as important feedback to the Board itself as to the availability of adequate and up to date teaching material. The IBSC wishes to ensure that students are adequately supported in terms of access and availability to required texts and reference material.]</p>
+ <p id="_fd878578-43e7-0351-55e0-1228ddd5dd39">‌[Comment: The Board will look to the adequacy and relevance of texts and reference materials. The section also serves as important feedback to the Board itself as to the availability of adequate and up to date teaching material. The IBSC wishes to ensure that students are adequately supported in terms of access and availability to required texts and reference material.]</p>
 </li>
 <li id="it-timeline"><p id="_d6b6b273-df2c-abc2-5cfd-a28745b314ac"><strong>Timeline</strong></p>
 <p id="_4668bf55-ff3b-5e0e-ecde-9bc4918514e4">Provide a graphical representation (e.g. Gantt chart) of the complete programme schedule detailing the sequence in which all modules are delivered and assessed in chronological order.</p>
 </li>
 </ol>
-</clause>
+ </clause>
 
 <clause id="_chapter_4_student_assessment" obligation="normative">
 <title>CHAPTER 4: Student Assessment</title>
 <p id="_ade76d6c-e8fd-2ba6-b78c-a9a7afe46dc4">Chapter 4 of the submission must include the following sections:</p>
 
-<ol id="_6461a22e-153e-bea5-228a-6a03e6964716" type="arabic"><li><p id="_53182dde-95c0-0849-9fe0-7c56648a25b0"><strong>Student Assessment and Grading:</strong></p>
+<ol id="_83095fdc-8010-23ef-5839-f0969fc2a009" type="arabic"><li><p id="_53182dde-95c0-0849-9fe0-7c56648a25b0"><strong>Student Assessment and Grading:</strong></p>
 <ul id="_2018e119-1cb1-bd6f-ee7c-ca0a703ecd24"><li><p id="_59c9cbf7-d161-c94d-0cdc-627655a0cdee">Describe how a mark in each module is determined on the basis of assessment components within that module together with requirements for obtaining a pass.</p>
 </li>
 <li><p id="_98a819b5-dd2e-ef0f-bcc2-1c65ebb265a0">Describe how grades awarded within the Programme are combined to give an overall grade and the requirement for award of recognition.</p>
@@ -816,16 +778,14 @@ E4.1c</p>
 <li><p id="_1494d452-0072-4756-6d21-da0c5e1c0ea5">Describe how individuals are assessed in the final project</p>
 </li>
 </ul>
-
-<p id="_061ccca1-fe86-c9eb-664f-b5b1c7cc168c">‌[Comment: The expectation of the IBSC is that all learning outcomes of the Standards will be assessed in some form for example by examination, quiz, assignments, practical tasks, field-work, office-work or project tasks.]</p>
+ <p id="_061ccca1-fe86-c9eb-664f-b5b1c7cc168c">‌[Comment: The expectation of the IBSC is that all learning outcomes of the Standards will be assessed in some form for example by examination, quiz, assignments, practical tasks, field-work, office-work or project tasks.]</p>
 </li>
 <li><p id="_9288f530-8690-a6e6-4713-c40362fdffaa"><strong>Examination Papers</strong></p>
 <p id="_1e5bdf33-36f0-f4c6-eb12-af52e7164f02">Representative examination papers, sample writing or self-guided assignments, and e-learning assessment components from each <em>Subject</em> area, taken by students during the programme (i.e. not only the final examination), must be submitted. For new programmes a prospective sample set must be provided.</p>
-
-<p id="_cf10ec0a-c004-138b-5008-95ae1a5b5ecf">‌[Comment: In reviewing a submission the Board will check that the format and level of the examinations and tests employed are appropriate to the learning outcomes required and the category of recognition sought. New submissions will be expected to have developed as a minimum an examining or testing strategy appropriate to the planned course.]</p>
+ <p id="_cf10ec0a-c004-138b-5008-95ae1a5b5ecf">‌[Comment: In reviewing a submission the Board will check that the format and level of the examinations and tests employed are appropriate to the learning outcomes required and the category of recognition sought. New submissions will be expected to have developed as a minimum an examining or testing strategy appropriate to the planned course.]</p>
 </li>
 </ol>
-</clause>
+ </clause>
 
 <clause id="_chapter_5_practical_exercises" obligation="normative">
 <title>CHAPTER 5: Practical Exercises</title>
@@ -840,9 +800,8 @@ E4.1c</p>
 </tr></thead>
 <tbody><tr><td valign="top" align="left"><p id="_618d6f0b-4ea4-d009-f895-6fdbb5a36c35"><strong>Fire Extinguishers</strong></p>
 
-<p id="_cd300a12-c379-e67f-5a18-bfc981ed05c2">Types and operation of fire extinguishers.
-Demonstration and hands-on practice using various types of fire extinguishers, led by university fire department.</p>
-</td>
+<p id="_1d6556cc-610a-8c2e-0bad-9b2b90d07375">Types and operation of fire extinguishers. Demonstration and hands-on practice using various types of fire extinguishers, led by university fire department.</p>
+ </td>
 <td valign="middle" align="center"><p id="_4716393d-878b-f280-5e97-f26537d06e56"><strong>OE 677 Class 4</strong></p>
 </td>
 <td valign="middle" align="center"><p id="_63f24a1c-4b9a-3db5-05f9-bbb3961162f3">3.0</p>
@@ -909,7 +868,7 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 </td>
 <td valign="middle" align="center"/><td valign="top" align="left"/></tr></tbody>
 </table>
-</clause>
+ </clause>
 
 <clause id="_chapter_6_final_project" obligation="normative">
 <title>CHAPTER 6: Final Project</title>
@@ -917,14 +876,11 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 
 <p id="_95b7e186-17d8-7415-752f-62913e3a6c04">In addition, a table MUST BE COMPLETED IN THE SPECIFIED TEMPLATE PROVIDED, as prescribed below. In this table the Final Project, whether CFFP, CCP. CMFP or CFCP, should be described in terms of Task Outcomes. Tasks defined by the institution, must ensure that the programme content is covered in an integrated manner. These tasks are to be cross-referenced to the <strong>Essential, Foundation or Hydrographic/Cartographic Science</strong> <em>subjects</em>.</p>
 
-<ol id="_93344645-e123-8c3b-1146-b3131586023b" type="arabic"><li><p id="_5259ce1a-6beb-0dba-ad03-d8dafdd4de57"><strong>Guidance to Complete the Final Project Description Table</strong></p>
+<ol id="_fbc80dd0-6f82-b616-f9e0-38449b5ca2de" type="arabic"><li><p id="_5259ce1a-6beb-0dba-ad03-d8dafdd4de57"><strong>Guidance to Complete the Final Project Description Table</strong></p>
 <p id="_f662e49e-5b46-4769-10ce-ace8f67284be">The project should be described as a series of phases and associated tasks (project activities) each itemized as separate rows of the table (example in <xref target="tab-final-project-descriptive-tables"/>). Each task should be identified in the first column and the other columns populated with attributes of that task.</p>
-
-<p id="_c363a10d-b15f-345a-44d0-cbf34113bf2a">The Task Outcome describes the intended result of the completed task. The required resources, equipment, software, data sources, etc. for each task are to be itemized. The number of hours devoted by the student to a particular task is to be itemized.</p>
-
-<p id="_9e3c6920-00a0-644d-b2c0-2f028bf57081">Each task should refer to the module identifier for the project and related (S-5 or S-8) subjects from the Standards.</p>
-
-<table id="tab-final-project-descriptive-tables">
+ <p id="_c363a10d-b15f-345a-44d0-cbf34113bf2a">The Task Outcome describes the intended result of the completed task. The required resources, equipment, software, data sources, etc. for each task are to be itemized. The number of hours devoted by the student to a particular task is to be itemized.</p>
+ <p id="_9e3c6920-00a0-644d-b2c0-2f028bf57081">Each task should refer to the module identifier for the project and related (S-5 or S-8) subjects from the Standards.</p>
+ <table id="tab-final-project-descriptive-tables">
 <name>Final Project Descriptive Tables</name>
 <thead><tr><th colspan="6" valign="top" align="left"><strong>Final Project (Hydrographic) Description Table (CFFP or CMFP)</strong></th>
 </tr></thead>
@@ -983,7 +939,7 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 </table>
 </li>
 </ol>
-</clause>
+ </clause>
 
 <clause id="scl-chapter7" obligation="normative">
 <title>CHAPTER 7: Programme Cross-Reference Table</title>
@@ -991,10 +947,9 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 
 <p id="_83e57691-a529-6a95-ed51-cfdb2df6739e">‌[Comment: Particular care should be taken in ensuring the cross-referencing is completed accurately and comprehensively. The Board needs to reference the learning outcomes sought against the content delivered.]</p>
 
-<ol id="_e6e7505a-7070-23b7-05e8-751d51e55deb" type="arabic"><li><p id="_f38f2333-0955-2f07-be32-99d38349373c"><strong>Guidance to Complete the Cross-Reference Table</strong></p>
+<ol id="_c724ae50-1651-c9c2-af81-df187bc6f603" type="arabic"><li><p id="_f38f2333-0955-2f07-be32-99d38349373c"><strong>Guidance to Complete the Cross-Reference Table</strong></p>
 <p id="_11b731bd-9194-5845-5379-1aea44fe0bd7">Submitting institutions MUST complete the Module and content and the Hours columns of the table shown below for each <em>Basic, Essential, Foundation, Hydrographic or Cartographic Science subject</em>:</p>
-
-<ul id="_0ea66591-7a71-c502-279b-e7247b0dd5ba"><li><p id="_5b6705de-d61f-193f-021f-77bb1d4698dd">T/P/SG (Theory/Practicals or Labs/Self-guided):</p>
+ <ul id="_0ea66591-7a71-c502-279b-e7247b0dd5ba"><li><p id="_5b6705de-d61f-193f-021f-77bb1d4698dd">T/P/SG (Theory/Practicals or Labs/Self-guided):</p>
 <ul id="_d996f0e3-88d2-cda7-1615-bd337cedfa13"><li><p id="_2664b442-80e3-1bbc-88bd-7d185d914ac2">Theory through lectures;</p>
 </li>
 <li><p id="_b7e98d43-0654-6a7e-a43f-8bd0b59b6ebc">Practicals (fieldwork and/or laboratories);</p>
@@ -1004,18 +959,14 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 </ul>
 </li>
 </ul>
-
-<p id="_19513aee-d38b-0bde-4ef3-17937a7470bc">For each element, the combined means of delivery should be clearly and uniquely identified.</p>
-
-<ul id="_c6be4aae-82fc-ec2c-67c5-5a6c21e7a2a1"><li><p id="_2652a19a-efd0-3161-dd91-3d944c3eb7fd">Hours: Indicate the number of teaching hours for the different categories of delivery;</p>
+ <p id="_19513aee-d38b-0bde-4ef3-17937a7470bc">For each element, the combined means of delivery should be clearly and uniquely identified.</p>
+ <ul id="_c6be4aae-82fc-ec2c-67c5-5a6c21e7a2a1"><li><p id="_2652a19a-efd0-3161-dd91-3d944c3eb7fd">Hours: Indicate the number of teaching hours for the different categories of delivery;</p>
 </li>
 <li><p id="_3abc8d2f-91e5-8c5b-4d8b-4cd7d2a0050f">Module and content: For each relevant course module to a S-5 element, indicate its name and the list of content it is addressing.</p>
 </li>
 </ul>
-
-<p id="_51808579-bc89-9cf7-1fbe-05e813bc6283">The following <xref target="tab-generic-example"/> provides a generic example for an element &lt;c&gt; of an essential subject topic Ex.y</p>
-
-<table id="tab-generic-example">
+ <p id="_51808579-bc89-9cf7-1fbe-05e813bc6283">The following <xref target="tab-generic-example"/> provides a generic example for an element &lt;c&gt; of an essential subject topic Ex.y</p>
+ <table id="tab-generic-example">
 <name>Generic Example</name>
 <tbody><tr><td colspan="7" valign="top" align="left"><strong><em>Ex (subject)</em></strong></td>
 </tr><tr><td colspan="7" valign="top" align="left"><strong><em>Ex.y (topic)</em></strong></td>
@@ -1028,8 +979,7 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 <th valign="top" align="left">P</th>
 <th valign="top" align="left">SG</th>
 </tr><tr><td valign="top" align="left"><p id="_e2b73f8a-73bf-3cc8-ba63-99d530839d0d">Ex.y&lt;c&gt;</p>
-
-<p id="_830da6df-5975-37f4-4327-fc090d361905"><em>(B/I)</em></p>
+ <p id="_830da6df-5975-37f4-4327-fc090d361905"><em>(B/I)</em></p>
 </td>
 <td valign="top" align="left">Core content which are required to achieve the learning outcomes. These may apply to multiple elements and learning outcomes.</td>
 <td valign="top" align="left">Students should be able to meet these outcomes at the completion of the programme. All <em>learning outcomes</em> should be evaluated either by, or a combination of, assessment, examination, laboratory work or final project</td>
@@ -1040,12 +990,9 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 </tr><tr><td valign="top" align="left">Total</td>
 <td colspan="3" valign="top" align="left"/><td valign="top" align="left"/><td valign="top" align="left"/><td valign="top" align="left"/></tr></tbody>
 </table>
-
-<p id="_6d32bce8-f4c4-2009-aeb2-637fe1206ed1">Each <em>Basic, Essential, Foundation, Hydrographic or Cartographic Science subject</em> is comprised of a list of topics which are denoted by Bx.y, Ex.y, Fx.y, Hx.y or Cx.y. Each topic contains elements which are denoted by &lt;c&gt;.</p>
-
-<p id="_85ba3149-9788-1e0e-4cde-a9e031db9133">All modules of a programme submission MUST include a detailed breakdown of content and associated hours. The cross-reference should refer to those modules as provided in the following example (<xref target="tab-detailed-breakdown-content-associated-hours"/>):</p>
-
-<table id="tab-detailed-breakdown-content-associated-hours">
+ <p id="_6d32bce8-f4c4-2009-aeb2-637fe1206ed1">Each <em>Basic, Essential, Foundation, Hydrographic or Cartographic Science subject</em> is comprised of a list of topics which are denoted by Bx.y, Ex.y, Fx.y, Hx.y or Cx.y. Each topic contains elements which are denoted by &lt;c&gt;.</p>
+ <p id="_85ba3149-9788-1e0e-4cde-a9e031db9133">All modules of a programme submission MUST include a detailed breakdown of content and associated hours. The cross-reference should refer to those modules as provided in the following example (<xref target="tab-detailed-breakdown-content-associated-hours"/>):</p>
+ <table id="tab-detailed-breakdown-content-associated-hours">
 <name>Detailed Breakdown of Content and Associated Hours</name>
 <tbody><tr><td colspan="7" valign="top" align="left"><p id="_fa60b263-4341-27b3-53b4-4ff423d1803b"><strong><em>Ex (subject)</em></strong></p>
 </td>
@@ -1123,7 +1070,7 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 </table>
 </li>
 </ol>
-</clause>
+ </clause>
 
 <clause id="_chapter_8_student_feedback" obligation="normative">
 <title>CHAPTER 8: Student Feedback</title>
@@ -1138,8 +1085,8 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 
 <p id="_9d5b1d08-bff2-7934-889f-3749c3f462f6">The Board wishes to see how feedback from all sources, including students, is formally taken into account within and by the Programme.</p>
 </clause>
-</clause>
-</clause>
+ </clause>
+ </clause>
 
 <clause id="_ibsc_procedure_for_recognition_of_programmes" obligation="normative">
 <title>IBSC PROCEDURE FOR RECOGNITION OF PROGRAMMES</title>
@@ -1201,7 +1148,7 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 
 <p id="_7fbf471f-9e36-b5fc-4eee-d27f50790c32">Institutions cannot include any FIG, IHO, ICA or IBSC logos in their certificates.</p>
 </clause>
-</clause>
+ </clause>
 
 <clause id="_follow_up_of_recognized_programmes_by_the_ibsc" obligation="normative">
 <title>FOLLOW-UP OF RECOGNIZED PROGRAMMES BY THE IBSC</title>
@@ -1292,7 +1239,7 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 </li>
 </ul>
 </clause>
-</clause>
+ </clause>
 
 <clause id="_register_of_recognized_programs_and_schemes" obligation="normative">
 <title>Register of Recognized Programs and Schemes</title>
@@ -1305,10 +1252,7 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 
 <p id="_06043fc1-0eb9-eb4d-dabb-7bfba5c4dfd0">The annual report should be provided by the end of January each calendar year and contain the following information:</p>
 
-<p id="_dcc84dee-25b6-a371-22c9-125364cd204c"><strong>Name of Programme:</strong> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>
-<strong>Name of Contact Person:</strong> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>
-<strong>Contact information:</strong> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>
-<strong>Period Covered:</strong> _ _ _ _ _ _ _ _ _ _ _ _ <strong>to</strong> _ _ _ _ _ _ _ _ _ _ _ _</p>
+<p id="_a13d8ab9-4076-8ee2-8e6f-1ba3ac8b1327"><strong>Name of Programme:</strong> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/> <strong>Name of Contact Person:</strong> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/> <strong>Contact information:</strong> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/> <strong>Period Covered:</strong> _ _ _ _ _ _ _ _ _ _ _ _ <strong>to</strong> _ _ _ _ _ _ _ _ _ _ _ _</p>
 
 <p id="_9390811b-403a-1d2e-7335-db30db7cde07"><strong>Programme Changes</strong></p>
 
@@ -1345,10 +1289,7 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 
 <p id="_8f8b8ad9-37ee-364d-ad74-09cb6157e3d9">The annual report should contain the following header information:</p>
 
-<p id="_11262d31-50de-6dce-727c-d368719db4ca"><strong>Name of Scheme:</strong> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>
-<strong>Name of Contact Person:</strong> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>
-<strong>Contact information:</strong>  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>
-<strong>Period Covered:</strong> _ _ _ _ _ _ _ _ _ _ _ _  <strong>to</strong> _ _ _ _ _ _ _ _ _ _ _ _</p>
+<p id="_59deda36-7133-8c87-737e-d027882a646f"><strong>Name of Scheme:</strong> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/> <strong>Name of Contact Person:</strong> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/> <strong>Contact information:</strong>  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/> <strong>Period Covered:</strong> _ _ _ _ _ _ _ _ _ _ _ _  <strong>to</strong> _ _ _ _ _ _ _ _ _ _ _ _</p>
 
 <p id="_69835b42-8eb0-287a-6941-8385baaa79ba">The content of the report should include:</p>
 
@@ -1374,7 +1315,7 @@ Demonstration and hands-on practice using various types of fire extinguishers, l
 
 <p id="_0f78a06e-e466-8787-6c48-bde30104ee96">Annual reports for Schemes are to be submitted to the IBSC by 31 January.</p>
 </clause>
-</clause>
+ </clause>
 
 
 

@@ -1,6 +1,6 @@
 <bibdata type="standard">
 <title language="en" format="text/plain">IHO Data Protection Scheme (Preview PR)</title>
-<docidentifier type="IHO">S-63</docidentifier><docnumber>63</docnumber><date type="published"><on>2020-03</on></date><contributor><role type="author"/><organization>
+<docidentifier primary="true" type="IHO">S-63</docidentifier><docnumber>63</docnumber><date type="published"><on>2020-03</on></date><contributor><role type="author"/><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
 <name>International Hydrographic Organization</name>
