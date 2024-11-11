@@ -1,3 +1,4 @@
+[heading="terms and definitions"]
 == Glossary
 
 === Glossary of S-63 Data Protection Scheme Terms
