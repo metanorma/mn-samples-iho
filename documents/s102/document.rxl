@@ -8,4 +8,4 @@
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Standards and Specifications</title>
-<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>TSMAD</abbreviation></workgroup></editorialgroup></ext></bibdata>
+<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><flavor>iho</flavor><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>TSMAD</abbreviation></workgroup></editorialgroup></ext></bibdata>

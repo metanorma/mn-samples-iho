@@ -8,4 +8,4 @@
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Capacity Building</title>
-<abbreviation>C</abbreviation></series><ext><doctype>standard</doctype><editorialgroup><committee><abbreviation>IRCC</abbreviation></committee><workgroup><abbreviation>MSDIWG</abbreviation></workgroup></editorialgroup></ext></bibdata>
+<abbreviation>C</abbreviation></series><ext><doctype>standard</doctype><flavor>iho</flavor><editorialgroup><committee><abbreviation>IRCC</abbreviation></committee><workgroup><abbreviation>MSDIWG</abbreviation></workgroup></editorialgroup></ext></bibdata>

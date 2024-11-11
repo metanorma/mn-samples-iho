@@ -8,4 +8,4 @@
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Miscellaneous</title>
-<abbreviation>M</abbreviation></series><ext><doctype>regulation</doctype><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>SPWG</abbreviation></workgroup></editorialgroup></ext></bibdata>
+<abbreviation>M</abbreviation></series><ext><doctype>regulation</doctype><flavor>iho</flavor><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>SPWG</abbreviation></workgroup></editorialgroup></ext></bibdata>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="0.9.12" schema-version="v1.3.3">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="1.0.6" schema-version="v1.3.4">
 <bibdata type="standard">
 <title language="en" format="text/plain">IHO Standards for Hydrographic Surveys (Preview PR)</title>
 <docidentifier primary="true" type="IHO">S-44</docidentifier><docnumber>44</docnumber><date type="published"><on>2020-03</on></date><contributor><role type="author"/><organization>
@@ -10,7 +10,7 @@
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Standards and Specifications</title>
-<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>HSPT</abbreviation></workgroup></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><flavor>iho</flavor><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>HSPT</abbreviation></workgroup></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
 <clause id="_c3f9df44-9b09-8f4a-2371-b50ecb72e3ee" obligation="normative">
@@ -18,27 +18,28 @@
 
 <p id="_ec27f444-fab2-34d0-f87f-47e927e851d7">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
 </clause>
- </copyright-statement>
+</copyright-statement>
 
 <license-statement>
 
-<clause id="_faf68309-0ea1-289a-63d0-171a33b1ba15" obligation="normative">
+<clause id="_e162095f-d94e-46c4-1ddb-64d4bff1e613" obligation="normative">
 <p id="_f96ad834-9c07-1e0a-8b8d-2a2f2d2422d2">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO and any other copyright holders.</p>
 
 <p id="_b98de9d0-8908-dc2b-5520-a9f074aee80d">In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:</p>
 
-<quote id="_b11c69b5-d247-acf7-ba27-c130d6ea2169"><p id="_600cf91e-6b20-41f5-4865-37dec2972c81"><em>“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</em></p>
- <p id="_200d16b4-7678-b606-a56a-da83eede45c1"><em>“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</em></p>
+<quote id="_466793f9-bd6b-f0fd-04e6-cde21c11f878"><p id="_600cf91e-6b20-41f5-4865-37dec2972c81">“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</p>
+
+<p id="_200d16b4-7678-b606-a56a-da83eede45c1">“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</p>
 </quote>
 
 <p id="_55169b69-666c-352d-faff-474bd357991a">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO.</p>
 </clause>
- </license-statement>
+</license-statement>
 
 <feedback-statement>
 
-<p id="_1b519f92-9f08-d32d-89c9-aafcf9e15788">Published by the<br/> International Hydrographic Organization<br/> 4b quai Antoine 1<sup>er</sup><br/> Principauté de Monaco<br/> Tel: (377) 93.10.81.00<br/> Fax: (377) 93.10.81.40<br/> info@iho.int<br/> \www.iho.int<br/></p>
- </feedback-statement>
+<p id="_297be5c1-e945-9004-5f4d-ea41f8ce8ab9">Published by the<br/> International Hydrographic Organization <br/> 4b quai Antoine 1 <sup>er</sup><br/> Principauté de Monaco <br/> Tel: (377) 93.10.81.00 <br/> Fax: (377) 93.10.81.40 <br/> info@iho.int <br/> \www.iho.int<br/></p>
+</feedback-statement>
 </boilerplate><preface><introduction id="_introduction" obligation="informative">
 <title>Introduction</title>
 <p id="_ab3d6ebf-9468-e904-296c-6214db6ef542">This publication aims to provide a set of standards for hydrographic surveys primarily used to compile navigational charts essential for the safety of navigation, knowledge and the protection of the marine environment. It specifies the <strong>minimum standards</strong> to be achieved based on the intended use. Where and when necessary, hydrographic offices or organisations are encouraged to define more stringent or specific requirements as national or regional realisations of the standard. This publication does not contain procedures for setting up equipment, conducting the survey, or for processing the resultant data. IHO Publication C-13, <em>Manual on Hydrography</em>, should be consulted for information on those topics (downloadable from the IHO homepage: <link target="https://iho.int/">www.iho.int</link>).</p>
@@ -236,7 +237,7 @@
 
 <p id="_036becc5-e7fa-988f-5556-1854a84210c9">It must be noted that <xref target="def-confidence_level">confidence levels</xref> (e.g. 95%) depend on the assumed statistical distribution of the data and are calculated differently for one-dimensional (1D) and two-dimensional (2D) quantities. In the context of this standard, which assumes normal distribution of <xref target="def-error">error</xref>, the 95% <xref target="def-confidence_level">confidence level</xref> for 1D quantities (e.g. depth) is defined as 1.96 x standard deviation, and the 95% <xref target="def-confidence_level">confidence level</xref> for 2D quantities (e.g. position) is defined as 2.45 x standard deviation.</p>
 </clause>
- </clause>
+</clause>
 
 <clause id="_depth_bottom_coverage_features_and_nature_of_the_bottom" obligation="normative">
 <title>DEPTH, BOTTOM COVERAGE, FEATURES, AND NATURE OF THE BOTTOM</title>
@@ -269,7 +270,7 @@
 
 <p id="_6538f905-7713-6152-c4b8-c991655d2832">The parameters “a” and “b”, together with the depth “d”, have to be introduced into the formula below in order to calculate the maximum allowable TVU:</p>
 
-<formula id="_8742bbac-a14d-b520-27d9-252647c31a5a" unnumbered="true"><stem type="MathML" block="true"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<formula id="_a880ff81-8b23-225a-30cf-852d3eff70a9" unnumbered="true"><stem block="true" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="true">
     <msub>
       <mtext>TVU</mtext>
@@ -301,8 +302,7 @@
       </mrow>
     </msqrt>
   </mstyle>
-</math>
-<asciimath>"TVU"_{"max"} (d) = sqrt {a^2 + (b xx d)^2}</asciimath></stem><dl id="_d5ccdaae-dc06-696f-def5-a9d39b824183" key="true"><dt><strong>a</strong></dt>
+</math><asciimath>"TVU"_{"max"} (d) = sqrt {a^2 + (b xx d)^2}</asciimath></stem><dl id="_d5ccdaae-dc06-696f-def5-a9d39b824183" key="true"><dt><strong>a</strong></dt>
 <dd><p id="_30691d27-67e6-5a40-c36c-89da8c637d43">represents that portion of the <xref target="def-uncertainty">uncertainty</xref> that does not vary with the depth</p>
 </dd>
 <dt><strong>b</strong></dt>
@@ -319,7 +319,7 @@
 
 <p id="_c14cb74e-9457-e789-7475-1c2c0b7c0f44"><xref target="tab-minimum-bathymetry"/> specifies the parameters “a” and “b” to compute the maximum allowable <xref target="def-tvu">TVU</xref> of <xref target="def-reduced-depth">reduced depths</xref> for each survey order. The <xref target="def-tvu">total vertical uncertainties</xref> of depth measurements calculated with a 95% <xref target="def-confidence_level">confidence level</xref> must not exceed this value.</p>
 </clause>
- </clause>
+</clause>
 
 <clause id="scl-feature-detection" obligation="normative">
 <title>Feature Detection</title>
@@ -392,7 +392,7 @@
 
 <p id="_55add538-5565-44eb-fa40-b80d210ec18e">There are currently no IHO safety of navigation standards for bottom characterisation methods or bottom sample frequencies. However, the <xref target="scl-matrix-description">Matrix</xref> may be used to task and classify any such work performed. What is appropriate for these parameters varies greatly based on the nature and configuration of the bottom as well as the intended use of the area. The surveyor should exercise judgement in determining appropriate bottom characterisation methods and bottom sample frequency to adequately characterise the area.</p>
 </clause>
- </clause>
+</clause>
 
 <clause id="_water_levels_and_flow" obligation="normative">
 <title>WATER LEVELS AND FLOW</title>
@@ -421,7 +421,7 @@
 
 <p id="_b2278e18-825f-e7cd-9fb3-4df5bbd1ee61">The speed and direction of the water flow (tidal stream and current) must be measured at 95% <xref target="def-confidence_level">confidence level</xref> as defined in <xref target="tab-other-minimum"/>. Where there is reason to believe that other factors (e.g. seasonal river discharge) influence the water flows, measurements should be made to cover the entire period of variability.</p>
 </clause>
- </clause>
+</clause>
 
 <clause id="_surveys_above_the_vertical_datum" obligation="normative">
 <title>SURVEYS ABOVE THE VERTICAL DATUM</title>
@@ -530,7 +530,7 @@
 
 <p id="_ef96835c-664d-b489-8dca-96aa4c438309"><xref target="def-metadata">Metadata</xref> should preferably be an integral part of the digital survey record and conform to the “IHO S-100 Discovery <xref target="def-metadata">Metadata</xref> Standard”, when this is adopted. Prior to the adoption of S-100, ISO 19115 can be used as a model for the <xref target="def-metadata">Metadata</xref>. If this is not feasible, similar information should be included in the documentation of a survey.</p>
 </clause>
- </clause>
+</clause>
 
 <clause id="ch-tables-specification-matrix" obligation="normative">
 <title>TABLES AND SPECIFICATION MATRIX</title>
@@ -555,7 +555,7 @@
 <p id="_6da17cac-7eba-0a5f-2065-85663894b05e"><xref target="tab-other-minimum"/> defines minimum navigational aid, structural, and topographic positioning standards for safety of navigation surveys above the vertical datum. It also includes minimum standards for angular measurement in relation to range lines, sectors lights, and similar aids to navigation used on an established course or heading. Finally, requirements are set for direction and speed measurements for tidal stream and current. These standards only apply where such measurements are required for the survey. <xref target="tab-other-minimum"/> follows.</p>
 
 <pagebreak orientation="landscape"/></clause>
- </clause>
+</clause>
 
 <clause id="_minimum_bathymetry_standards_for_safety_of_navigation_hydrographic_surveys" obligation="normative">
 <title>Minimum Bathymetry Standards for Safety of Navigation Hydrographic Surveys</title>
@@ -570,92 +570,47 @@
 <th valign="middle" align="center">Exclusive Order</th>
 </tr></thead>
 <tbody><tr><td valign="middle" align="center"><xref target="ch-safety-navigation-surveys"/></td>
-<td valign="middle" align="center"><strong>Area description</strong><br/>
-(Generally)</td>
+<td valign="middle" align="center"><strong>Area description</strong><br/> (Generally)</td>
 <td valign="middle" align="center">Areas where a general description of the sea floor is considered adequate.</td>
 <td valign="middle" align="center">Areas where underkeel clearance is not considered to be an issue for the type of surface shipping expected to transit the area.</td>
 <td valign="middle" align="center">Areas where underkeel clearance is considered not to be critical but features of concern to surface shipping may exist.</td>
 <td valign="middle" align="center">Areas where underkeel clearance is critical</td>
 <td valign="middle" align="center">Areas where there is strict minimum underkeel clearance and manoeuvrability criteria</td>
 </tr><tr><td valign="middle" align="center"><xref target="scl-uncertainties"/></td>
-<td valign="middle" align="center"><strong>Depth</strong> <xref target="def-thu">THU</xref><br/>
-[m]<br/>
-+<br/>
-[‌% of Depth]</td>
-<td valign="middle" align="center">20 m<br/>
-+<br/>
-10% of depth<br/>
-*Ba5, Bb2</td>
-<td valign="middle" align="center">5 m <br/>
-+<br/>
-5% of depth<br/>
-*Ba8, Bb3</td>
-<td valign="middle" align="center">5 m<br/>
-+<br/>
-5% of depth<br/>
-*Ba8, Bb3</td>
-<td valign="middle" align="center">2 m<br/>
-*Ba9</td>
-<td valign="middle" align="center">1 m<br/>
-*Ba10</td>
-</tr><tr><td valign="middle" align="center"><xref target="scl-uncertainties"/><br/>
-<xref target="scl-depth"/><br/>
-<xref target="scl-maximum-allowable"/></td>
-<td valign="middle" align="center"><strong>Depth</strong> <xref target="def-tvu">TVU</xref><br/>
-(a) [m]<br/>
-and (b)</td>
-<td valign="middle" align="center">a = 1.0 m<br/>
-b = 0.023<br/>
-*Bc7, Bd4</td>
-<td valign="middle" align="center">a = 0.5 m<br/>
-b = 0.013<br/>
-*Bc8, Bd6</td>
-<td valign="middle" align="center">a = 0.5 m<br/>
-b = 0.013<br/>
-*Bc8, Bd6</td>
-<td valign="middle" align="center">a = 0.25 m<br/>
-b = 0.0075<br/>
-*Bc10, Bd8</td>
-<td valign="middle" align="center">a = 0.15 m<br/>
-b = 0.0075<br/>
-*Bc12, Bd8</td>
+<td valign="middle" align="center"><strong>Depth</strong> <xref target="def-thu">THU</xref><br/> [m] <br/> + <br/> [‌% of Depth]</td>
+<td valign="middle" align="center">20 m<br/> + <br/> 10% of depth <br/> *Ba5, Bb2</td>
+<td valign="middle" align="center">5 m <br/> + <br/> 5% of depth <br/> *Ba8, Bb3</td>
+<td valign="middle" align="center">5 m<br/> + <br/> 5% of depth <br/> *Ba8, Bb3</td>
+<td valign="middle" align="center">2 m<br/> *Ba9</td>
+<td valign="middle" align="center">1 m<br/> *Ba10</td>
+</tr><tr><td valign="middle" align="center"><xref target="scl-uncertainties"/><br/> <xref target="scl-depth"/><br/><xref target="scl-maximum-allowable"/></td>
+<td valign="middle" align="center"><strong>Depth</strong> <xref target="def-tvu">TVU</xref><br/> (a) [m] <br/> and (b)</td>
+<td valign="middle" align="center">a = 1.0 m<br/> b = 0.023 <br/> *Bc7, Bd4</td>
+<td valign="middle" align="center">a = 0.5 m<br/> b = 0.013 <br/> *Bc8, Bd6</td>
+<td valign="middle" align="center">a = 0.5 m<br/> b = 0.013 <br/> *Bc8, Bd6</td>
+<td valign="middle" align="center">a = 0.25 m<br/> b = 0.0075 <br/> *Bc10, Bd8</td>
+<td valign="middle" align="center">a = 0.15 m<br/> b = 0.0075 <br/> *Bc12, Bd8</td>
 </tr><tr><td valign="middle" align="center"><xref target="scl-feature-detection"/></td>
-<td valign="middle" align="center"><xref target="def-feature_detection">Feature Detection</xref><br/>
-[m]<br/>
-or<br/>
-[% of Depth]</td>
+<td valign="middle" align="center"><xref target="def-feature_detection">Feature Detection</xref><br/> [m] <br/> or <br/> [% of Depth]</td>
 <td valign="middle" align="center">Not Specified</td>
 <td valign="middle" align="center">Not Specified</td>
-<td valign="middle" align="center">Cubic features &gt; 2 m, in depths down to 40 m; 10% of depth beyond 40 m <br/>
-*Be5, Bf3 beyond 40m</td>
-<td valign="middle" align="center">Cubic features &gt; 1 m<br/>
-*Be6</td>
-<td valign="middle" align="center">Cubic features &gt; 0.5 m<br/>
-*Be9</td>
+<td valign="middle" align="center">Cubic features &gt; 2 m, in depths down to 40 m; 10% of depth beyond 40 m <br/> *Be5, Bf3 beyond 40m</td>
+<td valign="middle" align="center">Cubic features &gt; 1 m<br/> *Be6</td>
+<td valign="middle" align="center">Cubic features &gt; 0.5 m<br/> *Be9</td>
 </tr><tr><td valign="middle" align="center"><xref target="scl-feature-search"/></td>
-<td valign="middle" align="center"><xref target="def-feature_search">Feature Search</xref><br/>
-[‌%]</td>
+<td valign="middle" align="center"><xref target="def-feature_search">Feature Search</xref><br/> [‌%]</td>
 <td valign="middle" align="center">Recommended but Not Required</td>
 <td valign="middle" align="center">Recommended but Not Required</td>
-<td valign="middle" align="center">100%<br/>
-*Bg9</td>
-<td valign="middle" align="center">100%<br/>
-*Bg9</td>
-<td valign="middle" align="center">200%<br/>
-*Bg12</td>
+<td valign="middle" align="center">100%<br/> *Bg9</td>
+<td valign="middle" align="center">100%<br/> *Bg9</td>
+<td valign="middle" align="center">200%<br/> *Bg12</td>
 </tr><tr><td valign="middle" align="center"><xref target="scl-bathymetric-coverage"/></td>
-<td valign="middle" align="center"><xref target="def-bathymetric_coverage">bathymetric coverage</xref><br/>
-[‌%]</td>
-<td valign="middle" align="center">5%<br/>
-*Bh3</td>
-<td valign="middle" align="center">5%<br/>
-*Bh3</td>
-<td valign="middle" align="center">≤ 100%<br/>
-*≤ Bh9</td>
-<td valign="middle" align="center">100%<br/>
-*Bh9</td>
-<td valign="middle" align="center">200%<br/>
-*Bh12</td>
+<td valign="middle" align="center"><xref target="def-bathymetric_coverage">bathymetric coverage</xref><br/> [‌%]</td>
+<td valign="middle" align="center">5%<br/> *Bh3</td>
+<td valign="middle" align="center">5%<br/> *Bh3</td>
+<td valign="middle" align="center">≤ 100%<br/> *≤ Bh9</td>
+<td valign="middle" align="center">100%<br/> *Bh9</td>
+<td valign="middle" align="center">200%<br/> *Bh12</td>
 </tr></tbody>
 </table>
 
@@ -683,27 +638,27 @@ or<br/>
 <td valign="middle" align="center"><p id="_962ca277-813d-1569-1a0e-d861c5cae7da"><xref target="def-thu">THU</xref> [m]</p>
 </td>
 <td valign="middle" align="center"><p id="_8b1c57bc-a60b-d99a-0097-630bab39ee46">5 m<br/> *Pa4</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_304104b9-a66c-d5f1-4cdd-fd2ed842b22c">2 m<br/> *Pa6</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_d93928c8-a708-4934-d874-3416ef2804d0">2 m<br/> *Pa6</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_c2317a47-b4fb-ba7e-4c3a-c0f17e3b86c6">2 m<br/> *Pa6</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_35f4ece2-6145-f5de-d43b-94f668671704">1 m<br/> *Pa7</p>
- </td>
+</td>
 </tr><tr><td valign="middle" align="center"><p id="_55c3697f-b277-0b5c-86ed-ae61b4347e01"><xref target="def-tvu">TVU</xref> [m]</p>
 </td>
 <td valign="middle" align="center"><p id="_0b186774-8f40-d41f-37fd-1d1260d8075c">2 m<br/> *Pb2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_886c2021-17e2-5c57-2626-7dd94b2b55e0">2 m<br/> *Pb2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_124f150b-d996-be41-9b1d-9108cd22b372">1 m<br/> *Pb3</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_d20a1e15-4c99-8d91-b3d1-e72a83c5c028">0.5 m<br/> *Pb4</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_abb43c32-dae2-98d1-8764-5ddf5d1d5f98">0.25 m<br/> *Pb5</p>
- </td>
+</td>
 </tr><tr><td valign="middle" align="center"><p id="_c4f552c8-3de5-3bfb-c2eb-d4a97f1a1766"><xref target="scl-floating-objects"/></p>
 </td>
 <td valign="middle" align="center"><p id="_00ac3f0d-a769-5ac3-5198-b5a1c26a296e"><strong>Floating Objects and Aids to Navigation</strong></p>
@@ -711,31 +666,31 @@ or<br/>
 <td valign="middle" align="center"><p id="_9cce0a9c-1555-a44a-6129-be4b70546204"><xref target="def-thu">THU</xref> [m]</p>
 </td>
 <td valign="middle" align="center"><p id="_6f463c6f-caef-2390-10b0-e1984173adb9">20 m<br/> *Pc2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_d93c16f6-0f50-5252-ee68-d7e2badd68a0">10 m<br/> *Pc3</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_26af2359-b926-83d3-968b-8db1b7911127">10 m<br/> *Pc3</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_3e313eae-b154-07ee-21ae-0674209407b6">10 m<br/> *Pc3</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_164c071f-def4-75a1-20f1-d8a986bc3164">5 m<br/> *Pc4</p>
- </td>
+</td>
 </tr><tr><td valign="middle" align="center"><p id="_f4406745-dae5-c8f4-392c-80cc45e4cffa"><xref target="scl-coastline"/></p>
 </td>
 <td valign="middle" align="center"><p id="_24ad31f8-5ac1-9724-18b9-fc53261bfe4d"><strong>Coastline</strong><br/> (high, low, MWL water lines, etc)</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_d34c154f-c04e-8060-e960-ac47a666a756"><xref target="def-thu">THU</xref> [m]</p>
 </td>
 <td valign="middle" align="center"><p id="_7e4f4d5a-9b71-b91a-2d85-245e92886eea">10 m<br/> *Pd2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_75400888-9bd4-04e8-c00f-b7710a3d233e">10 m<br/> *Pd2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_abe064e9-bf58-b0cc-be8b-2dc72876e848">10 m<br/> *Pd2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_45343e3d-5ae0-0dd7-ad64-5709733b80ab">10 m<br/> *Pd2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_d1ddfea7-fae9-fc7b-6135-9db38a670b0b">5 m<br/> *Pd3</p>
- </td>
+</td>
 </tr><tr><td valign="middle" rowspan="2" align="center"><p id="_5b602ec6-5fb5-869e-d8c9-e87ad569f232"><xref target="scl-features-navigation"/></p>
 </td>
 <td valign="middle" rowspan="2" align="center"><p id="_b386befc-8e71-42dd-0395-03655611b092"><strong>Features Above the Vertical Reference Less Significant to Navigation</strong></p>
@@ -743,27 +698,27 @@ or<br/>
 <td valign="middle" align="center"><p id="_c18a4a02-577d-9e11-82b9-64d21013dfc7"><xref target="def-thu">THU</xref> [m]</p>
 </td>
 <td valign="middle" align="center"><p id="_69ff33a0-5351-c345-752e-5c8f10641803">20 m<br/> *Pe2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_681293c0-13be-b70d-d40a-5ae2305f4996">20 m<br/> *Pe2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_5c5f34ba-e339-e9ed-2b05-799630dbc4b3">20 m<br/> *Pe2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_5059e1a2-26a4-42a0-34ce-29df5bd386e9">10 m<br/> *Pe3</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_baf12810-cef8-88a5-6f9f-5bb6dea339a8">5 m<br/> *Pe4</p>
- </td>
+</td>
 </tr><tr><td valign="middle" align="center"><p id="_53775e1a-0f9c-be6b-0bd4-d2d48b745374"><xref target="def-tvu">TVU</xref> [m]</p>
 </td>
 <td valign="middle" align="center"><p id="_8b65613d-a915-5c1d-3554-bef70585b1b4">3 m<br/> *Pf1</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_524ed663-af00-9bc7-d773-ae0664ee9f3c">2 m<br/> *Pf2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_343f9907-d3f3-c2c6-09f9-cd0b60ff3592">1 m<br/> *Pf3</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_3ebb4f07-7824-5aa0-6ddd-9e8e9baffcab">0.5 m<br/> *Pf4</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_f509eb2b-596d-8474-c3b7-c2df7268d1cb">0.3 m<br/> *Pf5</p>
- </td>
+</td>
 </tr><tr><td valign="middle" rowspan="2" align="center"><p id="_cf3bcc98-d1e3-bf54-7fe4-e8b607ae292b"><xref target="scl-overhead-clearances"/></p>
 </td>
 <td valign="middle" rowspan="2" align="center"><p id="_54aeef88-7050-5337-cf9d-ad49d36e32d8"><strong>Overhead Clearances and Range Line, Sector Light Heights</strong></p>
@@ -771,27 +726,27 @@ or<br/>
 <td valign="middle" align="center"><p id="_a52d5e5f-2f0a-0ef7-99a9-0d86f94c5ecc"><xref target="def-thu">THU</xref> [m]</p>
 </td>
 <td valign="middle" align="center"><p id="_e87eaaef-4893-0b44-12b8-452beca22744">10 m<br/> *Pg1</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_29bb5950-b062-3345-6e1d-4aedc1986ea0">10 m<br/> *Pg1</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_61f50cfc-a87a-492b-d507-f0909ccc0164">5 m<br/> *Pg2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_5b1f1d80-1dba-5481-aadd-45a3174d6703">2 m<br/> *Pg3</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_d8eeb7d8-23b1-dd8f-5d46-3e94bf305777">1 m<br/> *Pg4</p>
- </td>
+</td>
 </tr><tr><td valign="middle" align="center"><p id="_dc9426e1-8e19-0c58-b474-31981dfd4607"><xref target="def-tvu">TVU</xref> [m]</p>
 </td>
 <td valign="middle" align="center"><p id="_f108b891-1d38-6e1f-3750-b4643d6eed3c">3 m<br/> *Ph1</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_de476b99-7916-e278-cbde-7be195ce5794">2 m<br/> *Ph2</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_3bef862e-b556-1013-187c-e31352c7274c">1 m<br/> *Ph3</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_22f476df-fef4-227f-f926-2cf5df940ab5">0.5 m<br/> *Ph4</p>
- </td>
+</td>
 <td valign="middle" align="center"><p id="_34beb8c3-2668-bb8a-953b-2628df9d7549">0.3 m<br/> *Ph5</p>
- </td>
+</td>
 </tr><tr><td valign="middle" align="center"><p id="_b2dc3dd9-1643-db5e-d280-690f6d92406b"><xref target="scl-angula-measurements"/></p>
 </td>
 <td valign="middle" align="center"><p id="_d0811228-a247-1931-f415-0901d6a5b513"><strong>Angular Measurements</strong></p>
@@ -799,7 +754,7 @@ or<br/>
 <td valign="middle" align="center"><p id="_67b5320a-2f5e-d1c0-1573-48f7f2ab040e">[‌degrees]</p>
 </td>
 <td colspan="5" valign="middle" align="center"><p id="_0bbe32fa-30f2-7ef5-610b-46afe4892cdd">0.5 degrees<br/> *Pi4</p>
- </td>
+</td>
 </tr><tr><td valign="middle" align="center"><p id="_46a26f11-ddbc-cb39-f15a-2ccff6421e15"><xref target="scl-water-flow"/></p>
 </td>
 <td valign="middle" align="center"><p id="_5e069eef-cf3d-6722-8bba-740f7588a565"><strong>Water Flow Direction</strong></p>
@@ -807,7 +762,7 @@ or<br/>
 <td valign="middle" align="center"><p id="_7eb8dc67-01f0-aa02-44ec-e206ae9d1862">[‌degrees]</p>
 </td>
 <td colspan="5" valign="middle" align="center"><p id="_b5989d4d-912e-c508-b0ac-ccc630d258ac">10 degrees<br/> *Wa1</p>
- </td>
+</td>
 </tr><tr><td valign="middle" align="center"><p id="_7cb1b686-1810-6b80-4b36-6878006ecd80"><xref target="scl-water-flow"/></p>
 </td>
 <td valign="middle" align="center"><p id="_2906b277-9dd2-b93d-16fe-e11accfd7440"><strong>Water Flow Speed</strong></p>
@@ -815,7 +770,7 @@ or<br/>
 <td valign="middle" align="center"><p id="_78ee8fc9-4802-8da9-0f95-05a93cd87949">[‌knots]</p>
 </td>
 <td colspan="5" valign="middle" align="center"><p id="_cdc0fecd-a39a-8666-3d3b-a0af1e252f50">0.1 knots<br/> *Wb5</p>
- </td>
+</td>
 </tr></tbody>
 </table>
 </clause>
@@ -836,7 +791,7 @@ or<br/>
 <title>MATRIX</title>
 <p id="_153dea24-2bac-f20b-59c8-928e5afead62"><xref target="scl-matrix-description">Matrix</xref> for Hydrographic Surveys. To be read in conjunction with the full text set out in this document, m = metres, all <xref target="def-uncertainty">uncertainties</xref> at 95% confidence level.</p>
 
-<table id="_6fe142c1-1168-ed2b-17f9-80ed3212a999" unnumbered="true"><thead><tr><th valign="middle" align="center"/><th valign="middle" align="center">Criteria</th>
+<table id="_a6fe1f32-4522-6199-9a84-6b9ece9cfd80" unnumbered="true"><thead><tr><th valign="middle" align="center"/><th valign="middle" align="center">Criteria</th>
 <th valign="middle" align="center">1</th>
 <th valign="middle" align="center">2</th>
 <th valign="middle" align="center">3</th>
@@ -897,8 +852,7 @@ or<br/>
 <td valign="middle" align="center">0.1</td>
 <td valign="middle" align="center">0.05</td>
 </tr><tr><td valign="middle" align="center"><strong>d</strong></td>
-<td valign="middle" align="center"><strong>Depth</strong> <xref target="def-tvu">TVU</xref> “b”<br/>
-<xref target="note-parameter-use-1">NOTE 1</xref></td>
+<td valign="middle" align="center"><strong>Depth</strong> <xref target="def-tvu">TVU</xref> “b”<br/> <xref target="note-parameter-use-1">NOTE 1</xref></td>
 <td valign="middle" align="center">0.20</td>
 <td valign="middle" align="center">0.10</td>
 <td valign="middle" align="center">0.05</td>
@@ -1003,7 +957,7 @@ or<br/>
 <td valign="middle" align="center">0.5</td>
 <td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/></tr><tr><td valign="middle" align="center"><strong>d</strong></td>
 <td valign="middle" align="center"><p id="_28bcfcff-202b-d21e-87c0-1f0388c2a824">Coastline <xref target="def-thu">THU</xref><br/> (high, low, MWL water lines, etc.) [m]</p>
- </td>
+</td>
 <td valign="middle" align="center">20</td>
 <td valign="middle" align="center">10</td>
 <td valign="middle" align="center">5</td>
@@ -1088,8 +1042,7 @@ or<br/>
 <td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/></tr><tr><th valign="middle" align="center">N</th>
 <th colspan="15" valign="middle" align="center">NATURE OF THE BOTTOM</th>
 </tr><tr><td valign="middle" align="center"><strong>a</strong></td>
-<td valign="middle" align="center"><strong>Bottom Characterisation Method</strong><br/>
-<xref target="note-acronyms-1">NOTE 2</xref></td>
+<td valign="middle" align="center"><strong>Bottom Characterisation Method</strong><br/> <xref target="note-acronyms-1">NOTE 2</xref></td>
 <td valign="middle" align="center">PHY — VIS</td>
 <td valign="middle" align="center">PHY — LAB</td>
 <td valign="middle" align="center">PHY — VIS &amp; LAB</td>
@@ -1098,8 +1051,7 @@ or<br/>
 <td valign="middle" align="center">INF w/ GT (LAB)</td>
 <td valign="middle" align="center">INF w/ GT (VIS &amp; LAB)</td>
 <td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/></tr><tr><td valign="middle" align="center"><strong>b</strong></td>
-<td valign="middle" align="center"><strong>Bottom Sampling Frequency approximate</strong> [m]<br/>
-<xref target="note-acronyms-1">NOTE 2</xref></td>
+<td valign="middle" align="center"><strong>Bottom Sampling Frequency approximate</strong> [m]<br/> <xref target="note-acronyms-1">NOTE 2</xref></td>
 <td valign="middle" align="center">As Req to GT</td>
 <td valign="middle" align="center">10,000</td>
 <td valign="middle" align="center">5,000</td>
@@ -1124,7 +1076,7 @@ or<br/>
 
 
 <pagebreak orientation="portrait"/></clause>
- </clause>
+</clause>
 
 
 
@@ -1133,7 +1085,7 @@ or<br/>
 
 
 
- </sections><annex id="annex-matrix-guidance" obligation="normative">
+</sections><annex id="annex-matrix-guidance" obligation="normative">
 <title>MATRIX GUIDANCE</title>
 <clause id="_introduction_9" obligation="normative">
 <title>Introduction</title>
@@ -1187,7 +1139,7 @@ or<br/>
 <title>Table Examples</title>
 <p id="_8b182f24-a7ff-9c45-c8db-1d98c29c03ad">The following table presents two examples of “Matrix Realisations”: Order 1a Surveys, and a Customised Specification. This table includes the values associated with a <xref target="scl-matrix-description">Matrix</xref> cell. Although it may be helpful to provide those values in a technical specification for a survey, it is not explicitly necessary in order to communicate the requirement. Cells in colour highlight the differences between Order 1a and the customised specification, which is more demanding.</p>
 
-<table id="_69d1cdce-9f53-baea-fac0-6b21454f4bcf" unnumbered="true"><thead><tr><th valign="middle" align="center">B</th>
+<table id="_1371c52d-ad2f-afde-b41f-099dc6865838" unnumbered="true"><thead><tr><th valign="middle" align="center">B</th>
 <th valign="middle" align="center">BATHYMETRY</th>
 <th valign="middle" align="center">Order 1a Value</th>
 <th valign="middle" align="center">Matrix Cell Ref.</th>
@@ -1220,19 +1172,14 @@ or<br/>
 <td valign="middle" align="center">Bd7</td>
 </tr><tr><td valign="middle" align="center"><strong>e</strong></td>
 <td valign="top" align="left"><strong>Feature Detection</strong> [m]</td>
-<td valign="middle" align="center">2<br/>
-(≤40 m)</td>
-<td valign="middle" align="center">Be5<br/>
-(≤40 m)</td>
-<td valign="middle" align="center">1<br/>
-(≤40 m)</td>
+<td valign="middle" align="center">2<br/> (≤40 m)</td>
+<td valign="middle" align="center">Be5<br/> (≤40 m)</td>
+<td valign="middle" align="center">1<br/> (≤40 m)</td>
 <td valign="middle" align="center">Be6</td>
 </tr><tr><td valign="middle" align="center"><strong>f</strong></td>
 <td valign="top" align="left"><strong>Feature Detection</strong> [% of Depth]</td>
-<td valign="middle" align="center">10<br/>
-(&gt;40 m)</td>
-<td valign="middle" align="center">Bf3<br/>
-(&gt;40 m)</td>
+<td valign="middle" align="center">10<br/> (&gt;40 m)</td>
+<td valign="middle" align="center">Bf3<br/> (&gt;40 m)</td>
 <td valign="middle" align="center">10</td>
 <td valign="middle" align="center">Bf3</td>
 </tr><tr><td valign="middle" align="center"><strong>g</strong></td>
@@ -1333,18 +1280,21 @@ or<br/>
 <td valign="middle" align="center">Nb1</td>
 </tr></tbody>
 </table>
- </clause>
+</clause>
 
 <clause id="_text_string_examples" obligation="normative">
 <title>Text String Examples</title>
 <p id="_0dc0749b-4260-f4f3-8b6c-28ea1c6f4496">The following text strings present examples of “Matrix Realisations”: Order 1a Surveys, and a Crowd Sourced dataset example.</p>
 
-<example id="_18589147-7d6d-0b66-d70c-420e308d897e">
+<example id="_700ae3c7-ca12-3636-97af-8e7420595b3f">
 <name>Order 1a Matrix text string example</name>
 <p id="_dc9fc1d3-2173-29c7-fd71-219551de07b8">Classified according to the S-44 Matrix as:</p>
- <p id="_4e4cb419-1397-1f7b-b7d9-9d4ec7e285ad"><em>Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (&gt;40m), Bg9, ≤Bh9, Pa6, Pb3, Pc3, Pd2, Pe1, Pf3, Pg2, Ph3, Pi4, Wa1, Wb5.</em></p>
- <p id="_161d3db9-5077-71e5-1492-af7badc427df">Can be divided into the separate parts as not all parameters need to be surveyed at all times depending on area and survey specification requirements. Classified according to the S-44 Matrix as:</p>
- <ul id="_4eaf48ce-be46-a866-3c03-3827fa51b8b5"><li><p id="_53e9dcff-bd70-19fc-d526-c4c099ba1673">Bathymetry: <em>Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (&gt;40m), Bg9, ≤ Bh9</em></p>
+
+<p id="_4e4cb419-1397-1f7b-b7d9-9d4ec7e285ad"><em>Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (&gt;40m), Bg9, ≤Bh9, Pa6, Pb3, Pc3, Pd2, Pe1, Pf3, Pg2, Ph3, Pi4, Wa1, Wb5.</em></p>
+
+<p id="_161d3db9-5077-71e5-1492-af7badc427df">Can be divided into the separate parts as not all parameters need to be surveyed at all times depending on area and survey specification requirements. Classified according to the S-44 Matrix as:</p>
+
+<ul id="_4eaf48ce-be46-a866-3c03-3827fa51b8b5"><li><p id="_53e9dcff-bd70-19fc-d526-c4c099ba1673">Bathymetry: <em>Ba8, Bb3, Bc8, Bd6, Be5 (≤40m), Bf3 (&gt;40m), Bg9, ≤ Bh9</em></p>
 </li>
 <li><p id="_ad30ed82-5dae-735c-7e73-b87ca9dd8e5c">Fixed Objects, Aids, Features Above the Vertical Reference Significant to Navigation: <em>Pa6, Pb3</em></p>
 </li>
@@ -1363,10 +1313,11 @@ or<br/>
 </ul>
 </example>
 
-<example id="_ba83767d-3018-9f67-e1a1-45789e7923b2">
+<example id="_bdb6b2ad-8db5-89d4-fef8-8bad48d3eb64">
 <name>Crowd Sourced Dataset Example</name>
 <p id="_39678123-ae98-7ac4-1367-ba8768be203a">A “Crowd Sourced” bathymetric dataset acquired in deep water, with a single beam echosounder and no sound velocity correction, could be classified by the use of <xref target="def-tvu">TVU</xref> and <xref target="def-thu">THU</xref> (the coverage is of no use as it is not a systematic survey):</p>
- <p id="_857de761-348b-019a-27a8-3299ab2baa56">Classified according to the S-44 Matrix as: <em>Ba3, Bc5, Bd3</em></p>
+
+<p id="_857de761-348b-019a-27a8-3299ab2baa56">Classified according to the S-44 Matrix as: <em>Ba3, Bc5, Bd3</em></p>
 </example>
 
 <p id="_db3495a2-c262-4b50-7d41-80795f70bee6"><strong>Referencing:</strong></p>
@@ -1382,9 +1333,9 @@ or<br/>
 
 <clause id="_matrix_example" obligation="normative">
 <title>Matrix Example</title>
-<p id="_ea05aa12-2728-b1c7-d8ec-4fd9ffa13250" align="left">Example: Order 1b using the SPECIFICATION MATRIX<br/> m = metres, all <xref target="def-uncertainty">uncertainties</xref> at 95% confidence level, <strong>Order 1b cells</strong></p>
+<p id="_84a18ded-b679-b742-6853-66f3dcc80825" align="left">Example: Order 1b using the SPECIFICATION MATRIX<br/> m = metres, all  <xref target="def-uncertainty">uncertainties</xref> at 95% confidence level, <strong>Order 1b cells</strong></p>
 
-<table id="_74f4233e-4943-5206-13db-28eab60c7459" unnumbered="true"><thead><tr><th valign="middle" align="center"/><th valign="middle" align="center">Criteria</th>
+<table id="_a3241b12-ad65-85b0-9a3f-404cfd65cd9e" unnumbered="true"><thead><tr><th valign="middle" align="center"/><th valign="middle" align="center">Criteria</th>
 <th valign="middle" align="center">1</th>
 <th valign="middle" align="center">2</th>
 <th valign="middle" align="center">3</th>
@@ -1445,8 +1396,7 @@ or<br/>
 <td valign="middle" align="center">0.1</td>
 <td valign="middle" align="center">0.05</td>
 </tr><tr><td valign="middle" align="center"><strong>d</strong></td>
-<td valign="middle" align="center"><strong>Depth</strong> <xref target="def-tvu">TVU</xref> “b”<br/>
-<xref target="note-parameter-use-2">NOTE 1</xref></td>
+<td valign="middle" align="center"><strong>Depth</strong> <xref target="def-tvu">TVU</xref> “b”<br/> <xref target="note-parameter-use-2">NOTE 1</xref></td>
 <td valign="middle" align="center">0.20</td>
 <td valign="middle" align="center">0.10</td>
 <td valign="middle" align="center">0.05</td>
@@ -1616,8 +1566,7 @@ or<br/>
 <td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/></tr><tr><th valign="middle" align="center">W</th>
 <th colspan="15" valign="middle" align="center">WATER FLOW</th>
 </tr><tr><td valign="middle" align="center"><strong>a</strong></td>
-<td valign="middle" align="center"><strong>Flow Direction</strong> [degrees]<br/>
-<xref target="scl-water-flow"/></td>
+<td valign="middle" align="center"><strong>Flow Direction</strong> [degrees]<br/><xref target="scl-water-flow"/></td>
 <td valign="middle" align="center"><strong>10</strong></td>
 <td valign="middle" align="center">7.5</td>
 <td valign="middle" align="center">5.0</td>
@@ -1627,8 +1576,7 @@ or<br/>
 <td valign="middle" align="center">0.25</td>
 <td valign="middle" align="center">0.10</td>
 <td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/></tr><tr><td valign="middle" align="center"><strong>b</strong></td>
-<td valign="middle" align="center"><strong>Flow Speed</strong> [knots]<br/>
-<xref target="scl-water-flow"/></td>
+<td valign="middle" align="center"><strong>Flow Speed</strong> [knots]<br/><xref target="scl-water-flow"/></td>
 <td valign="middle" align="center">2</td>
 <td valign="middle" align="center">1</td>
 <td valign="middle" align="center">0.5</td>
@@ -1637,9 +1585,7 @@ or<br/>
 <td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/></tr><tr><th valign="middle" align="center">N</th>
 <th colspan="15" valign="middle" align="center">NATURE OF THE BOTTOM</th>
 </tr><tr><td valign="middle" align="center"><strong>a</strong></td>
-<td valign="middle" align="center"><strong>Bottom Characterisation Method</strong><br/>
-<xref target="scl-nature-bottom"/><br/>
-<xref target="note-acronyms-2">NOTE 2</xref></td>
+<td valign="middle" align="center"><strong>Bottom Characterisation Method</strong><br/> <xref target="scl-nature-bottom"/><br/> <xref target="note-acronyms-2">NOTE 2</xref></td>
 <td valign="middle" align="center">PHY — VIS</td>
 <td valign="middle" align="center">PHY — LAB</td>
 <td valign="middle" align="center">PHY — VIS &amp; LAB</td>
@@ -1648,9 +1594,7 @@ or<br/>
 <td valign="middle" align="center">INF w/ GT (LAB)</td>
 <td valign="middle" align="center">INF w/ GT (VIS &amp; LAB)</td>
 <td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/><td valign="middle" align="center"/></tr><tr><td valign="middle" align="center"><strong>b</strong></td>
-<td valign="middle" align="center"><strong>Bottom Sampling Frequency approximate</strong> [m]<br/>
-<xref target="scl-nature-bottom"/><br/>
-<xref target="note-acronyms-2">NOTE 2</xref></td>
+<td valign="middle" align="center"><strong>Bottom Sampling Frequency approximate</strong> [m]<br/> <xref target="scl-nature-bottom"/><br/> <xref target="note-acronyms-2">NOTE 2</xref></td>
 <td valign="middle" align="center">As Req to GT</td>
 <td valign="middle" align="center">10,000</td>
 <td valign="middle" align="center">5,000</td>
@@ -1675,8 +1619,8 @@ or<br/>
 
 
 <pagebreak orientation="portrait"/></clause>
- </clause>
- </annex><annex id="annex-guidelines-quality-management" obligation="normative">
+</clause>
+</annex><annex id="annex-guidelines-quality-management" obligation="normative">
 <title>Guidelines for Quality Management</title>
 <note id="_3135a924-5bf6-671a-40e8-8ec89c10196a"><p id="_3c38780e-de91-79d6-266f-866c8badb0f6">This annex is <strong>not</strong> an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, <em>Manual on Hydrography</em>.</p>
 </note>
@@ -1735,7 +1679,7 @@ or<br/>
 
 <p id="_508253cf-622c-9318-8a7a-7a7424d1f15b">During the survey, consideration should be given to confirm the validity of the vertical model by assessing the spatial and temporal repeatability of the survey system.</p>
 </clause>
- </annex><annex id="annex-gridded-bathymetry" obligation="normative">
+</annex><annex id="annex-gridded-bathymetry" obligation="normative">
 <title>GRIDDED BATHYMETRY CONSIDERATIONS</title>
 <note id="_114eda70-3992-999e-f81c-9ad0b8d41aa4"><p id="_6d650424-c236-f207-d6c9-f360142bd07e">This annex is <strong>not</strong> an integral part of the S-44 Standards and will be removed when the information therein is fully incorporated into IHO Publication C-13, <em>Manual on Hydrography</em>.</p>
 </note>
@@ -1917,9 +1861,9 @@ or<br/>
 <pagebreak/>
 <p id="_a14ef2b1-ca10-0d26-2acd-f552e7a34b97">The Chair of the Hydrographic Surveys Project Team, Christophe VRIGNAUD (France, Shom), supported by the Vice Chair Nickolas DE ANDRADE ROSCHER (Brazil, DHN) and the IHO Secretariat, would like to thank the following participants (in alphabetic order) for their efforts and contributions:</p>
 
-<p id="_6d6e866a-fea8-26ea-14fe-a6d0e557c725" align="center">Sejin AHN, Republic of Korea (KHRA)<br/> Anderson BARBOSA DA CRUZ PEÇANHA, Brazil (DHN)<br/> Erik BISCOTTI, Italy (IIM)<br/> Vidar BØE, Norway (NHS)<br/> James CHAPMAN, UK (UKHO)<br/> Andrew COULLS, Australia (AHO)<br/> Rodrigo DE CAMPOS CARVALHO, Brazil (DHN)<br/> Cristina MONTEIRO, Portugal (IH)<br/> David DODD, Expert Contributor (IIC Technologies)<br/> Marco FILIPPONE, Expert Contributor (Fugro)<br/> Maxim FRITS VAN NORDEN, Expert Contributor (University of Southern Mississippi)<br/> Fabien GERMOND, Expert Contributor (iXblue)<br/> Megan GREENAWAY, USA (NOAA)<br/> Florian IMPERADORI, France (Shom)<br/> Iji KIM, Republic of Korea (KHOA)<br/> Jean LAPORTE, Expert Contributor (ARGANS)<br/> Kwanchang Lim, Republic of Korea (KHOA)<br/> John LOOG, Netherlands (NLHO)<br/> Jean-Guy NISTAD, Germany (BSH)<br/> JongYeon PARK, Republic of Korea (KHOA)<br/> Hugh PARKER, Expert Contributor (Fugro)<br/> David PARKER, UK (UKHO)<br/> Stephen PARSONS, Canada (CHS)<br/> Alistair PHILIP, UK (UKHO)<br/> Ronan PRONOST, France (Shom)<br/> Misty SAVELL, USA (NGA)<br/> Thierry SCHMITT, France (Shom)<br/> Iain SLADE, Expert Contributor (IFHS)<br/> Diego TARTARINI, Italy (IIM)<br/> Matthew THOMPSON, USA (NAVOCEANO)<br/> David VINCENTELLI, Expert Contributor (iXblue and IFHS)<br/> James WALTON, Expert Contributor (AML)<br/> Neil WESTON, USA (NOAA)<br/> Enrico ZANONE, Italy (IIM)<br/> Anders ÅKERBERG, Sweden (SMA)<br/> Hans ÖIÅS, Sweden (SMA)</p>
+<p id="_81ee58a4-2582-131f-112b-cb1b38c2125c" align="center">Sejin AHN, Republic of Korea (KHRA)<br/> Anderson BARBOSA DA CRUZ PEÇANHA, Brazil (DHN) <br/> Erik BISCOTTI, Italy (IIM) <br/> Vidar BØE, Norway (NHS) <br/> James CHAPMAN, UK (UKHO) <br/> Andrew COULLS, Australia (AHO) <br/> Rodrigo DE CAMPOS CARVALHO, Brazil (DHN) <br/> Cristina MONTEIRO, Portugal (IH) <br/> David DODD, Expert Contributor (IIC Technologies) <br/> Marco FILIPPONE, Expert Contributor (Fugro) <br/> Maxim FRITS VAN NORDEN, Expert Contributor (University of Southern Mississippi) <br/> Fabien GERMOND, Expert Contributor (iXblue) <br/> Megan GREENAWAY, USA (NOAA) <br/> Florian IMPERADORI, France (Shom) <br/> Iji KIM, Republic of Korea (KHOA) <br/> Jean LAPORTE, Expert Contributor (ARGANS) <br/> Kwanchang Lim, Republic of Korea (KHOA) <br/> John LOOG, Netherlands (NLHO) <br/> Jean-Guy NISTAD, Germany (BSH) <br/> JongYeon PARK, Republic of Korea (KHOA) <br/> Hugh PARKER, Expert Contributor (Fugro) <br/> David PARKER, UK (UKHO) <br/> Stephen PARSONS, Canada (CHS) <br/> Alistair PHILIP, UK (UKHO) <br/> Ronan PRONOST, France (Shom) <br/> Misty SAVELL, USA (NGA) <br/> Thierry SCHMITT, France (Shom) <br/> Iain SLADE, Expert Contributor (IFHS) <br/> Diego TARTARINI, Italy (IIM) <br/> Matthew THOMPSON, USA (NAVOCEANO) <br/> David VINCENTELLI, Expert Contributor (iXblue and IFHS) <br/> James WALTON, Expert Contributor (AML) <br/> Neil WESTON, USA (NOAA) <br/> Enrico ZANONE, Italy (IIM) <br/> Anders ÅKERBERG, Sweden (SMA) <br/> Hans ÖIÅS, Sweden (SMA)</p>
 
 <p id="_f207c55f-ced7-a9b5-908e-17986c7c0097" align="center">Special thanks to Richard POWELL (USA, NOAA) for the cover image.</p>
 </clause>
- </annex>
+</annex>
 </iho-standard>

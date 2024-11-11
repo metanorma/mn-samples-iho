@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="0.9.12" schema-version="v1.3.3">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="1.0.6" schema-version="v1.3.4">
 <bibdata type="standard">
 <title language="en" format="text/plain">Standards of Competence for Category "B" Hydrographic Surveyors (Preview PR)</title>
 <docidentifier primary="true" type="IHO">S-5B</docidentifier><docnumber>5B</docnumber><date type="published"><on>2017-06</on></date><contributor><role type="author"/><organization>
@@ -10,7 +10,7 @@
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Standards and Specifications</title>
-<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>IBSC</abbreviation></workgroup></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><flavor>iho</flavor><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>IBSC</abbreviation></workgroup></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
 <clause id="_ee304aae-ae09-8821-7cb2-9423337c6ee2" obligation="normative">
@@ -18,27 +18,28 @@
 
 <p id="_ec27f444-fab2-34d0-f87f-47e927e851d7">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
 </clause>
- </copyright-statement>
+</copyright-statement>
 
 <license-statement>
 
-<clause id="_faf68309-0ea1-289a-63d0-171a33b1ba15" obligation="normative">
+<clause id="_e162095f-d94e-46c4-1ddb-64d4bff1e613" obligation="normative">
 <p id="_f96ad834-9c07-1e0a-8b8d-2a2f2d2422d2">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO and any other copyright holders.</p>
 
 <p id="_b98de9d0-8908-dc2b-5520-a9f074aee80d">In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:</p>
 
-<quote id="_b11c69b5-d247-acf7-ba27-c130d6ea2169"><p id="_600cf91e-6b20-41f5-4865-37dec2972c81"><em>“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</em></p>
- <p id="_200d16b4-7678-b606-a56a-da83eede45c1"><em>“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</em></p>
+<quote id="_466793f9-bd6b-f0fd-04e6-cde21c11f878"><p id="_600cf91e-6b20-41f5-4865-37dec2972c81">“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</p>
+
+<p id="_200d16b4-7678-b606-a56a-da83eede45c1">“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</p>
 </quote>
 
 <p id="_55169b69-666c-352d-faff-474bd357991a">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO.</p>
 </clause>
- </license-statement>
+</license-statement>
 
 <feedback-statement>
 
-<p id="_1b519f92-9f08-d32d-89c9-aafcf9e15788">Published by the<br/> International Hydrographic Organization<br/> 4b quai Antoine 1<sup>er</sup><br/> Principauté de Monaco<br/> Tel: (377) 93.10.81.00<br/> Fax: (377) 93.10.81.40<br/> info@iho.int<br/> \www.iho.int<br/></p>
- </feedback-statement>
+<p id="_297be5c1-e945-9004-5f4d-ea41f8ce8ab9">Published by the<br/> International Hydrographic Organization <br/> 4b quai Antoine 1 <sup>er</sup><br/> Principauté de Monaco <br/> Tel: (377) 93.10.81.00 <br/> Fax: (377) 93.10.81.40 <br/> info@iho.int <br/> \www.iho.int<br/></p>
+</feedback-statement>
 </boilerplate><preface><foreword id="_90becba1-0a56-82bc-c099-8d111df2af7e" obligation="informative">
 <title>Foreword</title>
 <p id="_9d0072ea-8750-a224-7612-d596cc3084fb">Comments arising from the experience gained in the application of the standards are welcome. They should be addressed to the Chair of the International Board on Standards of Competence for Hydrographic Surveyors and Nautical Cartographers at the above address. This document is published periodically. Please check with IHO for the latest edition, including current amendments.</p>
@@ -108,7 +109,7 @@
 
 <p id="_143e3ee9-ea8b-71ba-8e77-7e7c8aa435c6">For the sake of clarity, a level of knowledge associated with each learning outcome has been defined. It is indicated in italics in the left column, by a letter (<em>B: Basic, I: Intermediate;</em> see “Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors”). This letter designation (<em>B: Basic, I: Intermediate</em>) complements the learning outcome description associated with each element.</p>
 </clause>
- </clause><clause id="_programme_preparation_and_submission" obligation="informative">
+</clause><clause id="_programme_preparation_and_submission" obligation="informative">
 <title>Programme preparation and submission</title>
 <p id="_a325f5ea-e743-b2ab-de66-90db0e56b476">The preparation of a programme submission to the IBSC should be done in accordance with the document entitled GUIDELINES FOR THE IMPLEMENTATION OF THE STANDARDS OF COMPETENCE FOR HYDROGRAPHIC SURVEYORS. This document is available from the IHO website: <link target="http://www.iho.int/">www.iho.int</link> → Standards &amp; Publications.</p>
 
@@ -266,7 +267,7 @@
 <title>Basic subjects</title>
 <clause id="b1_maths_stats_toe" obligation="normative">
 <title>B1: Mathematics, Statistics, Theory of Errors</title>
-<table id="_9265cff3-2e0e-1a40-f9fc-e976092699b6" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
+<table id="_b22215fb-4ad6-f823-44b5-60f587227fe2" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
 <th valign="top" align="left">Content</th>
 <th valign="top" align="left">Learning outcomes</th>
 </tr></thead>
@@ -285,7 +286,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_1f1f2b4b-489a-9a1d-4b1b-8e2a8d0c34f4">Describe and apply 2D transformations involved in surveying and mapping. (E4.1c)<br/> Solve linear equations using matrix methods.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_d50049bf-dfac-fb2b-82bb-f3aa3afae2ad">B1.2 Differential calculus <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><ol id="_5b5c2615-66d1-dde1-90ae-2c5b9223bd42" type="arabic"><li><p id="_5c2b8c7e-ad7d-d5b7-c813-f1bfb45acb67">Real and vector valued functions.</p>
@@ -297,7 +298,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_24856b66-1b3a-5ed0-89f3-1278471ad167">Compute the gradient of a vector valued function. Define a function as a series.<br/> Calculate explicit integrals of classical functions.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_4ebd3472-bde0-336a-5088-2ac8c0303e04">B1.3 Trigonometry <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><ol id="_133374bb-b4e8-a3ea-2e89-adc7071ec4b5" type="arabic"><li><p id="_36ec39ce-b31a-2043-522e-9a0f8fd1d17e">Basic trigonometry</p>
@@ -362,7 +363,7 @@
 
 <clause id="b2_ict" obligation="normative">
 <title>B2: Information and Communication Technology</title>
-<table id="_ec86899c-b7fb-ea86-e96b-64402298f559" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
+<table id="_fe5169ea-9bab-cbf9-aab9-fedd75572b7e" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
 <th valign="top" align="left">Content</th>
 <th valign="top" align="left">Learning outcomes</th>
 </tr></thead>
@@ -385,7 +386,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_e1e8df2f-54f4-f23a-d2ef-60f5ddd14ebf">Describe the different components of a real-time data acquisition system, including various modes of communication and time-tagging.<br/> Describe the role of a device driver and its relation to data exchange.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_5d1769ef-ecf3-2793-95dc-b520aecb8bd9">B2.2 Office work software suites <em>(I)</em></p>
 </td>
 <td valign="top" align="left"><ol id="_cdf70ae1-55a1-ed86-6824-693bdca37a51" type="arabic"><li><p id="_b95231d9-ba58-d686-b0ee-885b7e87c913">Word processors</p>
@@ -399,7 +400,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_1dbc17f9-3e40-6fa5-3034-17a42f43da08">Use classical office work software suites.<br/> Construct a database, populate it and query its content.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_5539a9ec-87ac-8f6f-ea1a-35ade5822383">B2.3 Programming <em>(I)</em></p>
 </td>
 <td valign="top" align="left"><ol id="_f08f2507-0109-9dad-652b-279b7f350171" type="arabic"><li><p id="_4669c048-fa22-08b9-0176-d66ce1e18073">Basic operations of a computer program or script</p>
@@ -446,7 +447,7 @@
 
 <clause id="b3_physics" obligation="normative">
 <title>B3: Physics</title>
-<table id="_972eb45a-4b3c-ffc7-7d9c-0d2cc0a86cb8" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
+<table id="_2d0fca80-868d-6376-8077-3a2ca1ce1575" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
 <th valign="top" align="left">Content</th>
 <th valign="top" align="left">Learning outcomes</th>
 </tr></thead>
@@ -491,7 +492,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_6c63f9f3-496a-344b-3546-735e980d8a98">Differentiate between types of waves and their generation and propagation.<br/> Explain how medium parameters affect wave behavior.</p>
- </td>
+</td>
 </tr></tbody>
 </table>
 </clause>
@@ -538,7 +539,7 @@
 
 <clause id="b5_nautical_science" obligation="normative">
 <title>B5: Nautical science</title>
-<table id="_50c84607-a073-fc6d-bd14-514eed6b00c7" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
+<table id="_efec74fa-80e4-a370-e75a-9a880c1abed3" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
 <th valign="top" align="left">Content</th>
 <th valign="top" align="left">Learning outcomes</th>
 </tr></thead>
@@ -586,8 +587,8 @@
 </li>
 </ol>
 </td>
-<td valign="top" align="left"><p id="_bb31c98f-2bf1-16f2-9f3f-305e589f325d">Layout a route on a nautical chart, plot positions, identifies navigational hazards and revise navigational plan as required.<br/> Describe the content of a nautical chart and explain datum, projection, scale<br/> Describe the uncertainty indicators associated with nautical charts.</p>
- </td>
+<td valign="top" align="left"><p id="_90af469e-76fc-6235-9122-004a6b9fb78c">Layout a route on a nautical chart, plot positions, identifies navigational hazards and revise navigational plan as required.<br/> Describe the content of a nautical chart and explain datum, projection, scale <br/> Describe the uncertainty indicators associated with nautical charts.</p>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_5b7a5b62-8011-1adf-8b4a-3711998fcd76">B5.4 Navigation publications <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><ol id="_06561cf5-2406-3621-61f9-8dbf2ad36942" type="arabic"><li><p id="_733bbd4e-e4cb-dbc9-c510-b0dbc8ca1ae8">Sailing directions,</p>
@@ -654,8 +655,8 @@
 </li>
 </ol>
 </td>
-<td valign="top" align="left"><p id="_7359623f-950d-555e-96ec-016f294abb7a">Describe procedures for maintaining a safe working environment.<br/> Draw a diagram to indicate safe cable routes for survey instruments.<br/> Describe methods for securing equipment for heavy weather.</p>
- </td>
+<td valign="top" align="left"><p id="_464e38a4-dfc2-a195-5deb-70e782e7dd78">Describe procedures for maintaining a safe working environment.<br/> Draw a diagram to indicate safe cable routes for survey instruments. <br/> Describe methods for securing equipment for heavy weather.</p>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_5a670548-c1dd-da71-ef4b-38a1cea538ca">B5.8 Rope and wires <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><ol id="_a65a0634-2f64-95c3-ad0e-6c9aa25ade77" type="arabic"><li><p id="_a01930fb-12bd-7493-8b23-81e94bfdbd8d">Types of wire and rope</p>
@@ -667,7 +668,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_30370415-1aeb-2f1b-000c-37c925cf4916">Select and tie basic knots.<br/> Select appropriate wire or rope.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_84779507-7e4b-424a-7529-52ff3c831018">B5.9 Towed and over the side instruments <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><ol id="_d87bebb6-738e-4304-6497-c59928016a55" type="arabic"><li><p id="_4c4db3ac-22d9-5268-000a-327694d8c27a">Rosette systems and instruments</p>
@@ -697,7 +698,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_fa008827-ea73-df4d-3d58-58f568967adf">Describe ship and small boats anchoring and ground tackle.<br/> Explain how the final position of the vessel can be adjusted through the use of anchors.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_e577b856-1948-82c8-e0f5-9cd4684f4175">B5.11 Instrument moorings <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><ol id="_7643caae-059f-cedf-6a49-4c7076ab1f48" type="arabic"><li><p id="_fd9936dd-4c0d-fc8b-152e-401667bfe910">Launch and recovery</p>
@@ -718,7 +719,7 @@
 
 <clause id="b6_meteorology" obligation="normative">
 <title>B6: Meteorology</title>
-<table id="_3b9e6a8e-289c-b078-a9af-567d0f2bc96e" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
+<table id="_4b48862c-37be-1a5c-c229-95afb33effd3" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
 <th valign="top" align="left">Content</th>
 <th valign="top" align="left">Learning outcomes</th>
 </tr></thead>
@@ -744,8 +745,8 @@
 </li>
 </ol>
 </td>
-<td valign="top" align="left"><p id="_9e284fa3-985a-70ca-db41-d4e25fe2dbcc">Define physical meteorological parameters<br/> Operate instruments and sensors used to register temperature, pressure, direction and intensity of wind. Record these parameters according to internationally accepted standards.<br/> Identify characteristics of weather by simple observation of the sea and the sky.</p>
- </td>
+<td valign="top" align="left"><p id="_c0b1cf69-01f2-9acd-02b8-978518e153b0">Define physical meteorological parameters<br/> Operate instruments and sensors used to register temperature, pressure, direction and intensity of wind. Record these parameters according to internationally accepted standards. <br/> Identify characteristics of weather by simple observation of the sea and the sky.</p>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_476320d6-3004-3b83-3fab-88ae845e6b36">B6.2 Wind <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><p id="_f101df68-316f-04ba-2810-1639b7a464aa">Explain the relation between atmospheric pressure, temperature and wind. Describe wind circulation around pressure systems and the effect of friction.</p>
@@ -769,7 +770,7 @@
 <title>Essential subjects</title>
 <clause id="e1_underwater_acoustics" obligation="normative">
 <title>E1: Underwater Acoustics</title>
-<table id="_fecb4c91-340f-5283-d6e4-f90c7dc299d0" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
+<table id="_a1a6ba6a-f481-7148-f6f3-ef8d1ec8c67f" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
 <th valign="top" align="left">Content</th>
 <th valign="top" align="left">Learning outcomes</th>
 </tr></thead>
@@ -797,7 +798,7 @@
 </tr><tr><td valign="top" align="left"><p id="_c02fbecf-da14-6be9-8f37-0a9b7f69b426">E1.1b Propagation of acoustic waves <em>(I)</em></p>
 </td>
 <td valign="top" align="left"><p id="_e996b13b-e871-75b5-343c-d3b466113478">Using appropriate units, describe acoustic wave behavior with reference to physical properties of the water column.<br/> Create a sound speed profiles from water column measurements and describe its effect on the acoustic ray path.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_63d5bd22-863a-ad72-ce44-5d472ea62b10">E1.1c Reflection, scattering and system performance <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><p id="_e75b04ba-f935-7165-673c-a3dd1d336470">Detail sources of noise and the impact of noise on operation of acoustic systems.</p>
@@ -834,7 +835,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_1004a1fa-b0cc-e602-b10b-18378847d37e">Set up, deploy and operate a single beam echo sounder.<br/> Select appropriate range, scale, frequency and pulse repetition rate for specific applications in relation to spatial resolution, bottom penetration and depth of water.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_8c5948d1-f0ea-d477-43eb-08c55f572d8f">E1.2b Single beam echo sounder data recording. <em>(I)</em></p>
 </td>
 <td valign="top" align="left"><p id="_646d5bcf-e68b-bde4-212a-87e3a16c890b">Interpret echo sounder returns through differentiation between return signals.</p>
@@ -873,7 +874,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_c1acce81-9b88-f1ac-7ae8-7e449cb80c85">Define characteristics of beams in relation to transducer settings.<br/> Compare phase and interferometric systems with multi-beam systems</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_73bb61f1-e113-0e66-eaa0-eb653242d663">E1.3b Backscatter and water column returns <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><p id="_ff174c06-63e7-ea08-6a9f-4a8059dd6683">Describe characteristics of returns in the context of seabed type, angle of incidence and scatter from within the water column</p>
@@ -889,18 +890,18 @@
 </tr><tr><td valign="top" align="left"><p id="_3ca15aae-eaf4-8e54-3b11-bb7cbc0097b6">E1.3e Range and angle uncertainty <em>(I)</em></p>
 </td>
 <td valign="top" align="left"><p id="_4db5c922-8749-d057-e5cd-009700baa461">Differentiate between error sources in phase and amplitude detection modes.<br/> Identify sources of range and angle uncertainty depending on acoustic parameter configuration</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_0c872701-4bac-ee0a-96f6-deb59f62be5f">E1.3f Operation <em>(I)</em></p>
 </td>
-<td valign="top" align="left"><p id="_09ba15d7-f4d1-c976-9d0a-af4468ba562e">Set up, deploy and operate a swath sonar system.<br/> Identify problems or artefacts in on-line data due to inappropriate configuration or changing environmental parameters.<br/> Tune acoustic parameters for optimum performance.<br/> Apply quality control procedures to data acquisition and on-line processing</p>
- </td>
+<td valign="top" align="left"><p id="_d6eb7ddc-35ea-4458-80db-36c5706b455f">Set up, deploy and operate a swath sonar system.<br/> Identify problems or artefacts in on-line data due to inappropriate configuration or changing environmental parameters. <br/> Tune acoustic parameters for optimum performance. <br/> Apply quality control procedures to data acquisition and on-line processing</p>
+</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="e2_remote_sensing" obligation="normative">
 <title>E2: Remote Sensing</title>
-<table id="_34da5349-8d25-037c-42b4-817e58391226" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
+<table id="_312a8ab1-ecad-5a5c-8acc-9f8b0d451d73" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
 <th valign="top" align="left">Content</th>
 <th valign="top" align="left">Learning outcomes</th>
 </tr></thead>
@@ -928,11 +929,11 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_65a0dcc9-851c-c0e4-790f-422c912b02ab">Explain the principles, capabilities and limitations of topographic and bathymetric LiDAR.<br/> Describe the physical environment and operational situations in which bathymetric LiDAR surveys are complementary to echo sounder surveys</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_96fd4c84-c069-c328-17eb-12585857589a">E2.1b Airborne LiDAR data products <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><p id="_8e15d7ca-a3cb-b929-ff8b-7d266ed90a5e">Extract high and low water lines from bathymetric and topographic LiDAR data sets.<br/> Use topographic and bathymetric LiDAR data to complement other spatial data.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_ae98208a-ff3e-61a2-655b-373b8dee3a22">E2.1c Terrestrial LiDAR <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><p id="_c1e0c0b2-b728-c52f-c0eb-3479ecddb3d3">Use terrestrial LiDAR data to complement other coastal spatial data.</p>
@@ -966,7 +967,7 @@
 
 <clause id="e3_water_levels_and_flow" obligation="normative">
 <title>E3: Water Levels and Flow</title>
-<table id="_742b43b2-3275-d10c-a6e7-b25306ab6188" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
+<table id="_900f4f1d-96f5-e572-e7f5-f73e3faf792d" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
 <th valign="top" align="left">Content</th>
 <th valign="top" align="left">Learning outcomes</th>
 </tr></thead>
@@ -1006,7 +1007,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_cf247087-17ed-85db-0338-effa4d9e7953">Describe the effect of non-tidal influences on tidal water levels in the conduct of a hydrographic survey<br/> Describe sources of water level variations occurring in inland waters</p>
- </td>
+</td>
 </tr><tr><th colspan="3" valign="top" align="left">E3.2 Water Level Measurement</th>
 </tr><tr><td valign="top" align="left"><p id="_b809bbe4-db9e-f7a2-b96d-940ab9266dad">E3.2a Water level gauges <em>(I)</em></p>
 </td>
@@ -1029,7 +1030,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_4f1826ba-aa56-dae5-a959-546c2a770203">Explain the principles of operation of different types of water level gauges.<br/> Install, level and calibrate a water level gauge.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_a44d9002-ebfe-6669-fa61-f4f023f163f1">E3.2b Tidal measurement <em>(I)</em></p>
 </td>
 <td valign="top" align="left"><p id="_e68fe439-4e12-7809-172c-4ed8c7a3cec1">Configure water level gauges for logging data, data communication, data download and for network operation with appropriate quality control measures.</p>
@@ -1037,7 +1038,7 @@
 </tr><tr><td valign="top" align="left"><p id="_d4267763-5bcf-4c71-0cc4-327ce08eeca9">E3.2c Water level datums <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><p id="_63ba948e-6b5d-3550-4da2-0adec5382bed">Define various tidally based reference levels on the basis of tide time series and explain how these values are computed.<br/> Describe how vertical reference levels in rivers and lakes are defined, and determined in practice.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_68ae6387-21cd-e396-47f0-90357f09ebc6">E3.2d Uncertainty in water level <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><p id="_a42f9f70-ab55-6b65-8fe5-21c491256ce7">Relate uncertainty in water levels to uncertainties in measurement, duration and distance from water level gauge.</p>
@@ -1096,7 +1097,7 @@
 
 <clause id="e4_positioning" obligation="normative">
 <title>E4: Positioning</title>
-<table id="_66f7e48e-594f-ede4-552a-3c6fde92055e" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
+<table id="_b600118e-234b-c2c0-d938-af17774e1d5f" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
 <th valign="top" align="left">Content</th>
 <th valign="top" align="left">Learning outcomes</th>
 </tr></thead>
@@ -1149,7 +1150,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_8396fbb9-3ad7-b882-1ccb-eab22f318f62">Describe the properties and distortions in different types of projections used in maps and charts.<br/> Explain the selection of projection type and apply appropriate projection formulae.</p>
- </td>
+</td>
 </tr><tr><th colspan="3" valign="top" align="left">E4.3 Positioning Measurements, Methods and Techniques</th>
 </tr><tr><td valign="top" align="left"><p id="_7e5eff65-eff5-4d3c-3b0f-4f23172ac4cc">E4.3a Positioning fundamentals <em>(I)</em></p>
 </td>
@@ -1186,7 +1187,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_d5b64d86-3ab6-0506-7eee-c3698e8dcba8">Undertake control surveys, establish, mark and describe control stations, describe horizontal positioning procedures, apply appropriate methods and use corresponding instruments for positioning.<br/> Correct gyros using astronomic methods.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_ab3381c3-ced7-3a82-86f1-092d6014348b">E4.3b Satellite positioning <em>(I)</em></p>
 </td>
 <td valign="top" align="left"><p id="_357fbd15-a672-bc5e-9f1f-4ef3b650a69f">Explain the GNSS concept and principles. Define pseudo ranging and carrier phase based modes of satellite positioning Differentiate between base station and permanent networks, real-time and post-processing.</p>
@@ -1194,7 +1195,7 @@
 </tr><tr><td valign="top" align="left"><p id="_d14381cb-09f7-b8ac-256a-cbb6d9e9a18c">E4.3c Positioning systems <em>(I)</em></p>
 </td>
 <td valign="top" align="left"><p id="_8c932548-b72f-2944-7dfe-ffae69e64099">Field test and use distance and angle measurement instruments. Apply field validation procedures<br/> Operate GNSS and DGNSS equipment, assess accuracy and precision, post-process GNSS data using appropriate software.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_a5fe6199-f7d1-55d7-3520-b04dd81df92e">E4.3d Historical surveys <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><p id="_68c0e56d-3d17-8bd8-0203-a3656eee033a">Relate historical surveys to legacy positioning systems.</p>
@@ -1222,8 +1223,8 @@
 </td>
 </tr><tr><td valign="top" align="left"><p id="_8410e183-a2cc-0066-868f-26b6b8eee3ad">E4.4b Elevation measurements and computation <em>(I)</em></p>
 </td>
-<td valign="top" align="left"><p id="_15806c36-039e-3a71-7f1f-c783f812e528">Describe methods for determining elevation differences.<br/> Determine height using GNSS equipment.<br/> Compute elevations and leveling networks from observed leveling data. Use observation techniques for correction of curvature and refraction.</p>
- </td>
+<td valign="top" align="left"><p id="_7539716d-e713-74d7-0939-56361b5c36b5">Describe methods for determining elevation differences.<br/> Determine height using GNSS equipment. <br/> Compute elevations and leveling networks from observed leveling data. Use observation techniques for correction of curvature and refraction.</p>
+</td>
 </tr><tr><th colspan="3" valign="top" align="left">E4.5 Acoustic Positioning</th>
 </tr><tr><td valign="top" align="left"><p id="_13e9e685-d810-be3f-f564-04d46819750e">E4.5a Acoustic positioning concepts <em>(B)</em></p>
 </td>
@@ -1276,7 +1277,7 @@
 </tr><tr><td valign="top" align="left"><p id="_26b4191f-3ac2-dbc1-55fa-c5f2d545a1d0">E4.6b Inertial Navigation Systems <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><p id="_396e6c99-b07c-4e12-a13e-d80ec81ad0e1">Distinguish IMUs and INS, and describe dynamic alignment of INS.<br/> Explain the concepts of aided inertial navigation system.</p>
- </td>
+</td>
 </tr><tr><th colspan="3" valign="top" align="left">E4.7 Uncertainty in Positioning</th>
 </tr><tr><td valign="top" align="left"><p id="_7db01d00-8f30-2b23-3be8-1083434d2d22">E4.7 Sources of uncertainty <em>(I)</em></p>
 </td>
@@ -1305,14 +1306,14 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_187afe85-21a1-4ae2-e35f-bb182a9a0f4e">Describe and explain the sources and magnitude of uncertainties associated with each positioning method and positioning system.<br/> Monitor, review and assess the performance of each positioning system to be used including repeatability, precision and accuracies of relative and absolute positions using appropriate statistical tools.</p>
- </td>
+</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="e5_hydrographic_practice" obligation="normative">
 <title>E5: Hydrographic Practice</title>
-<table id="_fdfa2d7b-1cfd-0193-64a8-31e053aeb7c8" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
+<table id="_e48d47e3-3b7c-75f4-0754-2dceebb2aac4" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
 <th valign="top" align="left">Content</th>
 <th valign="top" align="left">Learning outcomes</th>
 </tr></thead>
@@ -1376,7 +1377,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_f4aa4a66-0834-4fb7-0809-a45190ecabdc">Describe data telemetry in support of on board survey data including applications and methods.<br/> Implement a data telemetry link between a survey infrastructure component and a survey system for real-time use.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_44a17607-d951-2bed-fbbd-ecaccac9fbfe">E5.2b Survey systems <em>(I)</em></p>
 </td>
 <td valign="top" rowspan="2" align="left"><ol id="_b1a7a7be-8863-1043-193c-ef1b6f05f938" type="arabic"><li><p id="_c392e69d-27ae-d8a6-702f-b922e95eb1b0">Installation and calibration requirements for:</p>
@@ -1409,7 +1410,7 @@
 </tr><tr><td valign="top" align="left"><p id="_5e846021-48ac-e2d8-e011-902c4d300c5f">E5.2c Calibration and corrections <em>(I)</em></p>
 </td>
 <td valign="top" align="left"><p id="_7f9bbf2d-16a7-91ac-26e2-bf4419291d32">Setup, integrate and test survey system including sensors, acquisition system time-stamping strategy with appropriate physical offset determination.<br/> Explain the purposes and apply speed of sound measurements in acoustic systems.</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_ad420e5f-6a99-e593-5db2-7484c9c3f25c">E5.2d Line planning <em>(I)</em></p>
 </td>
 <td valign="top" rowspan="2" align="left"><ol id="_bb1e57dd-3fd4-64f4-46ae-916a22eafdd2" type="arabic"><li><p id="_cc3544bb-92b2-d2f8-a02c-8d7929730317">Planning for data acquisition including line spacing and sample locations in alignment with tasks to be performed on surveys and equipment to be used.</p>
@@ -1495,7 +1496,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_ae2fb92a-4175-d4d2-3c33-88b095aa59d9">Create and compare different documents associated with survey procedures in alignment with requirements using files, charts and reporting tools.<br/> Describe the sources and means by which metadata files are created and populated.</p>
- </td>
+</td>
 </tr><tr><th colspan="3" valign="top" align="left">E5.4 Legal Aspects</th>
 </tr><tr><td valign="top" align="left"><p id="_2bb52d89-ceaa-003d-08da-8a3630539073">E5.4a Liability of the hydrographic surveyor <em>(B)</em></p>
 </td>
@@ -1510,7 +1511,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_311fd576-86de-d27e-566a-b7e250286d42">Detail the role and responsibilities of the hydrographic surveyor as required under professional ethics, industry standards and national/international legislation/conventions.<br/> Explain the potential liability of the hydrographic surveyor</p>
- </td>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_0a48e73d-7ce2-0181-1d46-6b1d294a605f">E5.4b Delimitations <em>(B)</em></p>
 </td>
 <td valign="top" align="left"><ol id="_a4106e1f-028d-61a5-3fde-9fdc8c7049eb" type="arabic"><li><p id="_5299f4ca-1b7b-6a41-1ac2-0494e5c89f62">Historical development of 1982 UNCLOS Baselines – normal (including closing lines); straight and archipelagic</p>
@@ -1541,7 +1542,7 @@
 
 <clause id="e6_hydrographic_data" obligation="normative">
 <title>E6: Hydrographic Data Management</title>
-<table id="_76d4b451-940d-07c5-8878-a9b00a3e344e" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
+<table id="_c52ac4b5-b498-41e3-cbc5-58b01a1881d5" unnumbered="true"><thead><tr><th valign="top" align="left">Topic/Element</th>
 <th valign="top" align="left">Content</th>
 <th valign="top" align="left">Learning outcomes</th>
 </tr></thead>
@@ -1592,7 +1593,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_4ca27262-ad53-e495-5913-0e8b9f8a568e">Create the required data types that will be part of standard exchange formats.<br/> Configure systems for secure storage, transfer and backup of survey data</p>
- </td>
+</td>
 </tr><tr><th colspan="3" valign="top" align="left">E6.2 Data Processing and Analysis</th>
 </tr><tr><td valign="top" align="left"><p id="_dcc4a192-84f8-5aea-6c08-af87f0c40fb1">E6.2a Spatial data cleaning <em>(I)</em></p>
 </td>
@@ -1604,8 +1605,8 @@
 </li>
 </ol>
 </td>
-<td valign="top" align="left"><p id="_935a05d3-d33d-f766-8aef-989ea71853b0">Apply data cleaning techniques using appropriate software.<br/> Distinguish between noise, outliers &amp; real features</p>
- </td>
+<td valign="top" align="left"><p id="_aa8834ba-f18f-e412-1f70-481fcfe36e24">Apply data cleaning techniques using appropriate software.<br/> Distinguish between noise, outliers  real features</p>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_d642a5ac-5a82-a1aa-9eac-0f7cb3eec367">E6.2b Spatial data quality control <em>(I)</em></p>
 </td>
 <td valign="top" align="left"><ol id="_aa1dd2cd-114d-45b1-9f1d-a83ad5ff7095" type="arabic"><li><p id="_e04b717c-536c-a72c-6394-bd5cda594007">Total propagated uncertainty — horizontal</p>
@@ -1635,7 +1636,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_f90b4e59-3770-14ff-1768-ec3bf13da46f">Apply spatial data processing methods to create digital terrain models or gridded surfaces and contouring.<br/> Apply estimation procedures to survey measurements and volume computations.</p>
- </td>
+</td>
 </tr><tr><th colspan="3" valign="top" align="left">E6.3 Data Organization and Presentation</th>
 </tr><tr><td valign="top" align="left"><p id="_d476d91a-4f6a-147d-169f-6a8fdbeb6e4f">E6.3a Databases <em>(B)</em></p>
 </td>
@@ -1665,8 +1666,8 @@
 </li>
 </ol>
 </td>
-<td valign="top" align="left"><p id="_49a162bb-4c37-b866-de1e-bab9024dc4c3">Explain the concept and use of Geographical Information Systems (GIS) within the marine environment.<br/> Create a GIS project using marine spatial data.<br/> Merge and mash up data sets of different origin by applying datum and projection transformations.</p>
- </td>
+<td valign="top" align="left"><p id="_38e9fa7c-9738-ec0a-f051-a7cfc70bd268">Explain the concept and use of Geographical Information Systems (GIS) within the marine environment.<br/> Create a GIS project using marine spatial data. <br/> Merge and mash up data sets of different origin by applying datum and projection transformations.</p>
+</td>
 </tr><tr><td valign="top" align="left"><p id="_497169df-ad93-5ad5-194f-676752cbd7df">E6.3c Visualization and presentation <em>(I)</em></p>
 </td>
 <td valign="top" align="left"><ol id="_cf5c67ca-b945-d88e-4046-e50fdf1019ea" type="arabic"><li><p id="_c4ae0b15-4628-8908-0f6f-2dd8312b52b2">Symbology</p>
@@ -1707,7 +1708,7 @@
 </ol>
 </td>
 <td valign="top" align="left"><p id="_44fad949-e9b7-7457-cbe4-82053df2728f">Describe hydrographic deliverables and produce paper products as well as digital products in accordance with specifications and standards.<br/> Prepare a report on a hydrographic survey.</p>
- </td>
+</td>
 </tr></tbody>
 </table>
 </clause>
@@ -1825,5 +1826,5 @@
 
 
 </clause>
- </sections>
+</sections>
 </iho-standard>
