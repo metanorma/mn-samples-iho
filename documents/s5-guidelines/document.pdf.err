@@ -1,6 +1,6 @@
 Content overflows the viewport of an fo:block-container in block-progression direction by 34673 millipoints. (See position 1:30536)
 PDF isn't valid PDF/UA-1:
-ValidationResult [flavour=ua1, totalAssertions=259458, assertions=[
+ValidationResult [flavour=ua1, totalAssertions=259384, assertions=[
 TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=27], status=failed,
 message=TOC element may contain only TOC, TOCI and Caption elements,
 location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](1808 0 obj PDStructTreeRoot)/K[0](1810 0 obj SEDocument Document)/K[1](1815 0 obj SEPart Part)/K[0](1845 0 obj SESect Sect)/K[1](1848 0 obj SETOC TOC)], locationContext=null, errorMessage=null], 

@@ -1,6 +1,6 @@
 The contents of fo:region-body on page 27 exceed its viewport by 104458 millipoints. (See position 1:1674)
 PDF isn't valid PDF/UA-1:
-ValidationResult [flavour=ua1, totalAssertions=273462, assertions=[
+ValidationResult [flavour=ua1, totalAssertions=273383, assertions=[
 TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=27], status=failed,
 message=TOC element may contain only TOC, TOCI and Caption elements,
 location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](1734 0 obj PDStructTreeRoot)/K[0](1736 0 obj SEDocument Document)/K[1](1766 0 obj SEPart Part)/K[0](1798 0 obj SESect Sect)/K[1](1801 0 obj SETOC TOC)], locationContext=null, errorMessage=null], 

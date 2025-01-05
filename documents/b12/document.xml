@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="1.0.6" schema-version="v1.3.4">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="1.0.8" schema-version="v1.4.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">Guidance on Crowdsourced Bathymetry (Preview PR)</title>
 <docidentifier primary="true" type="IHO">B-12</docidentifier><docnumber>12</docnumber><date type="published"><on>2020-01-20</on></date><contributor><role type="author"/><organization>
@@ -22,17 +22,17 @@
 
 <license-statement>
 
-<clause id="_e162095f-d94e-46c4-1ddb-64d4bff1e613" obligation="normative">
-<p id="_f96ad834-9c07-1e0a-8b8d-2a2f2d2422d2">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO and any other copyright holders.</p>
+<clause id="_0a24ff3d-1f66-e0d1-aec7-e6c8125a7e70" obligation="normative">
+<p id="_bdf207c9-cfea-451e-c391-9074f81ffa83">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO Secretariat and any other copyright holders.</p>
 
 <p id="_b98de9d0-8908-dc2b-5520-a9f074aee80d">In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:</p>
 
-<quote id="_466793f9-bd6b-f0fd-04e6-cde21c11f878"><p id="_600cf91e-6b20-41f5-4865-37dec2972c81">“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</p>
+<quote id="_0ef8675f-ba7d-68cc-2958-ef357484aa82"><p id="_a8f18f9a-ebee-e435-e5e2-cf13ee6997c7">“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the IHO Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</p>
 
 <p id="_200d16b4-7678-b606-a56a-da83eede45c1">“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</p>
 </quote>
 
-<p id="_55169b69-666c-352d-faff-474bd357991a">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO.</p>
+<p id="_c0d5bde4-4e8c-34f6-3ba0-d926565af27b">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO Secretariat.</p>
 </clause>
 </license-statement>
 

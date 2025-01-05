@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="presentation" version="1.0.6" schema-version="v1.3.4">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="presentation" version="1.0.8" schema-version="v1.4.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">IHO Standards for Hydrographic Surveys (Preview PR)</title>
 <docidentifier primary="true" type="IHO">S-44</docidentifier><docnumber>44</docnumber><date type="published"><on>2020-03</on></date><contributor><role type="author"/><organization>
@@ -14,7 +14,7 @@
 </localized-string><localized-string key="internal_terms_boilerplate" language="en">For the purposes of this document, the following terms and definitions apply.
 </localized-string><localized-string key="norm_with_refs_pref" language="en">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</localized-string><localized-string key="norm_empty_pref" language="en">There are no normative references in this document.</localized-string><localized-string key="external_terms_boilerplate" language="en">For the purposes of this document, the terms and definitions given in % apply.
 </localized-string><localized-string key="internal_external_terms_boilerplate" language="en">For the purposes of this document, the terms and definitions given in % and the following apply.
-</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%1, %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="no_identifier" language="en">(NO ID)</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of figures</localized-string><localized-string key="toc_tables" language="en">List of tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="subclause" language="en">Clause</localized-string><localized-string key="dochistory" language="en">Document History</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><metanorma><source><semantic__iho-standard type="semantic" version="1.0.6" schema-version="v1.3.4">
+</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%1, %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="no_identifier" language="en">(NO ID)</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of figures</localized-string><localized-string key="toc_tables" language="en">List of tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="subclause" language="en">Clause</localized-string><localized-string key="dochistory" language="en">Document History</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><metanorma><source><semantic__iho-standard type="semantic" version="1.0.8" schema-version="v1.4.0">
 <semantic__bibdata type="standard">
 <semantic__title language="en" format="text/plain">IHO Standards for Hydrographic Surveys (Preview PR)</semantic__title>
 <semantic__docidentifier primary="true" type="IHO">S-44</semantic__docidentifier><semantic__docnumber>44</semantic__docnumber><semantic__date type="published"><semantic__on>2020-03</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
@@ -37,17 +37,17 @@
 
 <semantic__license-statement>
 
-<semantic__clause id="semantic___e162095f-d94e-46c4-1ddb-64d4bff1e613" obligation="normative">
-<semantic__p id="semantic___f96ad834-9c07-1e0a-8b8d-2a2f2d2422d2">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO and any other copyright holders.</semantic__p>
+<semantic__clause id="semantic___0a24ff3d-1f66-e0d1-aec7-e6c8125a7e70" obligation="normative">
+<semantic__p id="semantic___bdf207c9-cfea-451e-c391-9074f81ffa83">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO Secretariat and any other copyright holders.</semantic__p>
 
 <semantic__p id="semantic___b98de9d0-8908-dc2b-5520-a9f074aee80d">In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:</semantic__p>
 
-<semantic__quote id="semantic___466793f9-bd6b-f0fd-04e6-cde21c11f878"><semantic__p id="semantic___600cf91e-6b20-41f5-4865-37dec2972c81">“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</semantic__p>
+<semantic__quote id="semantic___0ef8675f-ba7d-68cc-2958-ef357484aa82"><semantic__p id="semantic___a8f18f9a-ebee-e435-e5e2-cf13ee6997c7">“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the IHO Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</semantic__p>
 
 <semantic__p id="semantic___200d16b4-7678-b606-a56a-da83eede45c1">“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</semantic__p>
 </semantic__quote>
 
-<semantic__p id="semantic___55169b69-666c-352d-faff-474bd357991a">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO.</semantic__p>
+<semantic__p id="semantic___c0d5bde4-4e8c-34f6-3ba0-d926565af27b">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO Secretariat.</semantic__p>
 </semantic__clause>
 </semantic__license-statement>
 
@@ -1881,151 +1881,7 @@
 <semantic__p id="semantic___f207c55f-ced7-a9b5-908e-17986c7c0097" align="center">Special thanks to Richard POWELL (USA, NOAA) for the cover image.</semantic__p>
 </semantic__clause>
 </semantic__annex>
-</semantic__iho-standard></source></metanorma><render><preprocess-xslt format="html">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',html,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="html">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="doc">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',doc,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="doc">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="xml">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',xml,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="xml">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="rxl">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',rxl,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="rxl">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="pdf">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',pdf,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="pdf">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-</render><source-highlighter-css>sourcecode table td { padding: 5px; }
+</semantic__iho-standard></source></metanorma><source-highlighter-css>sourcecode table td { padding: 5px; }
 sourcecode table pre { margin: 0; }
 sourcecode, sourcecode .w {
   color: #444444;
@@ -2076,17 +1932,17 @@ sourcecode .nt {
 
 <license-statement>
 
-<clause id="_e162095f-d94e-46c4-1ddb-64d4bff1e613" obligation="normative">
-<p id="_f96ad834-9c07-1e0a-8b8d-2a2f2d2422d2">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO and any other copyright holders.</p>
+<clause id="_0a24ff3d-1f66-e0d1-aec7-e6c8125a7e70" obligation="normative">
+<p id="_bdf207c9-cfea-451e-c391-9074f81ffa83">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO Secretariat and any other copyright holders.</p>
 
 <p id="_b98de9d0-8908-dc2b-5520-a9f074aee80d">In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:</p>
 
-<quote id="_466793f9-bd6b-f0fd-04e6-cde21c11f878"><p id="_600cf91e-6b20-41f5-4865-37dec2972c81">“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</p>
+<quote id="_0ef8675f-ba7d-68cc-2958-ef357484aa82"><p id="_a8f18f9a-ebee-e435-e5e2-cf13ee6997c7">“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the IHO Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</p>
 
 <p id="_200d16b4-7678-b606-a56a-da83eede45c1">“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</p>
 </quote>
 
-<p id="_55169b69-666c-352d-faff-474bd357991a">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO.</p>
+<p id="_c0d5bde4-4e8c-34f6-3ba0-d926565af27b">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO Secretariat.</p>
 </clause>
 </license-statement>
 
@@ -2094,7 +1950,7 @@ sourcecode .nt {
 
 <p id="_297be5c1-e945-9004-5f4d-ea41f8ce8ab9">Published by the<br/> International Hydrographic Organization <br/> 4b quai Antoine 1 <sup>er</sup><br/> Principauté de Monaco <br/> Tel: (377) 93.10.81.00 <br/> Fax: (377) 93.10.81.40 <br/> info@iho.int <br/> \www.iho.int<br/></p>
 </feedback-statement>
-</boilerplate><preface><clause type="toc" id="_3095ba87-1a3b-4897-abe1-8250769aaebe" displayorder="1"><title depth="1">Contents</title></clause>
+</boilerplate><preface><clause type="toc" id="_16ee7d3e-7b18-4e0b-a233-330ba0e3eb6c" displayorder="1"><title depth="1">Contents</title></clause>
 <introduction id="_introduction" obligation="informative" displayorder="2">
 <title>Introduction</title>
 <p id="_ab3d6ebf-9468-e904-296c-6214db6ef542">This publication aims to provide a set of standards for hydrographic surveys primarily used to compile navigational charts essential for the safety of navigation, knowledge and the protection of the marine environment. It specifies the <strong>minimum standards</strong> to be achieved based on the intended use. Where and when necessary, hydrographic offices or organisations are encouraged to define more stringent or specific requirements as national or regional realisations of the standard. This publication does not contain procedures for setting up equipment, conducting the survey, or for processing the resultant data. IHO Publication C-13, <em>Manual on Hydrography</em>, should be consulted for information on those topics (downloadable from the IHO homepage: <link target="https://iho.int/">www.iho.int</link>).</p>
@@ -3148,11 +3004,11 @@ sourcecode .nt {
 
 <p id="_3202a8da-359a-a014-ea77-d8c94f184d78">The criteria are derived through a series of alphanumeric codes which reference the cells in the <xref target="scl-matrix-description">Matrix</xref>. A criterion requires three characters to reference a cell address:</p>
 
-<ol id="_e0afc55f-1bd7-6a81-11ac-31e4171b73c8" type="arabic"><li id="_3cd9a5a7-50a2-4908-b130-dc2626dfee1b" label="1"><p id="_d1971b20-ad53-313a-ac4f-a490f9890552">The first character is a capital letter denoting the class of data.</p>
+<ol id="_e0afc55f-1bd7-6a81-11ac-31e4171b73c8" type="arabic"><li id="_ecd41895-b1b6-4d47-b4ff-d2fe955c7eb3" label="1"><p id="_d1971b20-ad53-313a-ac4f-a490f9890552">The first character is a capital letter denoting the class of data.</p>
 </li>
-<li id="_74e0ee75-aa6b-4c09-a365-45422f08e47c" label="2"><p id="_8f2ab8e1-5cb4-a6df-139e-058a3f5634d6">The second character is a lower-case letter referencing the intended criteria by row.</p>
+<li id="_97d2b230-1a69-4fac-8f09-3d908219f14b" label="2"><p id="_8f2ab8e1-5cb4-a6df-139e-058a3f5634d6">The second character is a lower-case letter referencing the intended criteria by row.</p>
 </li>
-<li id="_241d4950-161d-4bee-96e7-3b7c66ca49bf" label="3"><p id="_755f432b-ad87-8524-775f-b291cea050aa">The third character is a number referencing the intended criteria value by column.</p>
+<li id="_ed7dbcca-9c99-427b-a4c4-7079023fa505" label="3"><p id="_755f432b-ad87-8524-775f-b291cea050aa">The third character is a number referencing the intended criteria value by column.</p>
 </li>
 </ol>
 

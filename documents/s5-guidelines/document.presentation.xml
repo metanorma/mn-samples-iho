@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="presentation" version="1.0.6" schema-version="v1.3.4">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="presentation" version="1.0.8" schema-version="v1.4.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers (Preview PR)</title>
 <docidentifier primary="true" type="IHO">S-Guidelines-S5-S8</docidentifier><docnumber>Guidelines-S5-S8</docnumber><date type="published"><on>2019-05</on></date><contributor><role type="author"/><organization>
@@ -14,7 +14,7 @@
 </localized-string><localized-string key="internal_terms_boilerplate" language="en">For the purposes of this document, the following terms and definitions apply.
 </localized-string><localized-string key="norm_with_refs_pref" language="en">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</localized-string><localized-string key="norm_empty_pref" language="en">There are no normative references in this document.</localized-string><localized-string key="external_terms_boilerplate" language="en">For the purposes of this document, the terms and definitions given in % apply.
 </localized-string><localized-string key="internal_external_terms_boilerplate" language="en">For the purposes of this document, the terms and definitions given in % and the following apply.
-</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%1, %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="no_identifier" language="en">(NO ID)</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of figures</localized-string><localized-string key="toc_tables" language="en">List of tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="subclause" language="en">Clause</localized-string><localized-string key="dochistory" language="en">Document History</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><metanorma><source><semantic__iho-standard type="semantic" version="1.0.6" schema-version="v1.3.4">
+</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%1, %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="no_identifier" language="en">(NO ID)</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of figures</localized-string><localized-string key="toc_tables" language="en">List of tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="subclause" language="en">Clause</localized-string><localized-string key="dochistory" language="en">Document History</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><metanorma><source><semantic__iho-standard type="semantic" version="1.0.8" schema-version="v1.4.0">
 <semantic__bibdata type="standard">
 <semantic__title language="en" format="text/plain">Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers (Preview PR)</semantic__title>
 <semantic__docidentifier primary="true" type="IHO">S-Guidelines-S5-S8</semantic__docidentifier><semantic__docnumber>Guidelines-S5-S8</semantic__docnumber><semantic__date type="published"><semantic__on>2019-05</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
@@ -37,17 +37,17 @@
 
 <semantic__license-statement>
 
-<semantic__clause id="semantic___e162095f-d94e-46c4-1ddb-64d4bff1e613" obligation="normative">
-<semantic__p id="semantic___f96ad834-9c07-1e0a-8b8d-2a2f2d2422d2">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO and any other copyright holders.</semantic__p>
+<semantic__clause id="semantic___0a24ff3d-1f66-e0d1-aec7-e6c8125a7e70" obligation="normative">
+<semantic__p id="semantic___bdf207c9-cfea-451e-c391-9074f81ffa83">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO Secretariat and any other copyright holders.</semantic__p>
 
 <semantic__p id="semantic___b98de9d0-8908-dc2b-5520-a9f074aee80d">In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:</semantic__p>
 
-<semantic__quote id="semantic___466793f9-bd6b-f0fd-04e6-cde21c11f878"><semantic__p id="semantic___600cf91e-6b20-41f5-4865-37dec2972c81">“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</semantic__p>
+<semantic__quote id="semantic___0ef8675f-ba7d-68cc-2958-ef357484aa82"><semantic__p id="semantic___a8f18f9a-ebee-e435-e5e2-cf13ee6997c7">“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the IHO Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</semantic__p>
 
 <semantic__p id="semantic___200d16b4-7678-b606-a56a-da83eede45c1">“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</semantic__p>
 </semantic__quote>
 
-<semantic__p id="semantic___55169b69-666c-352d-faff-474bd357991a">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO.</semantic__p>
+<semantic__p id="semantic___c0d5bde4-4e8c-34f6-3ba0-d926565af27b">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO Secretariat.</semantic__p>
 </semantic__clause>
 </semantic__license-statement>
 
@@ -1606,151 +1606,7 @@
 </semantic__tr></semantic__tbody>
 </semantic__table>
 </semantic__annex>
-</semantic__iho-standard></source></metanorma><render><preprocess-xslt format="html">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',html,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="html">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="doc">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',doc,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="doc">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="xml">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',xml,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="xml">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="rxl">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',rxl,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="rxl">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="pdf">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',pdf,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="pdf">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-</render><source-highlighter-css>sourcecode table td { padding: 5px; }
+</semantic__iho-standard></source></metanorma><source-highlighter-css>sourcecode table td { padding: 5px; }
 sourcecode table pre { margin: 0; }
 sourcecode, sourcecode .w {
   color: #444444;
@@ -1801,17 +1657,17 @@ sourcecode .nt {
 
 <license-statement>
 
-<clause id="_e162095f-d94e-46c4-1ddb-64d4bff1e613" obligation="normative">
-<p id="_f96ad834-9c07-1e0a-8b8d-2a2f2d2422d2">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO and any other copyright holders.</p>
+<clause id="_0a24ff3d-1f66-e0d1-aec7-e6c8125a7e70" obligation="normative">
+<p id="_bdf207c9-cfea-451e-c391-9074f81ffa83">This document or partial material from this document may be translated, reproduced or distributed for general information, on no more than a cost recovery basis. Copies may not be sold or distributed for profit or gain without prior written agreement of the IHO Secretariat and any other copyright holders.</p>
 
 <p id="_b98de9d0-8908-dc2b-5520-a9f074aee80d">In the event that this document or partial material from this document is reproduced, translated or distributed under the terms described above, the following statements are to be included:</p>
 
-<quote id="_466793f9-bd6b-f0fd-04e6-cde21c11f878"><p id="_600cf91e-6b20-41f5-4865-37dec2972c81">“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the International Hydrographic Organization (IHO) Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</p>
+<quote id="_0ef8675f-ba7d-68cc-2958-ef357484aa82"><p id="_a8f18f9a-ebee-e435-e5e2-cf13ee6997c7">“Material from IHO publication [reference to extract: Title, Edition] is reproduced with the permission of the IHO Secretariat (Permission No ……./…) acting for the International Hydrographic Organization (IHO), which does not accept responsibility for the correctness of the material as reproduced: in case of doubt, the IHO’s authentic text shall prevail. The incorporation of material sourced from IHO shall not be construed as constituting an endorsement by IHO of this product.”</p>
 
 <p id="_200d16b4-7678-b606-a56a-da83eede45c1">“This [document/publication] is a translation of IHO [document/publication] [name]. The IHO has not checked this translation and therefore takes no responsibility for its accuracy. In case of doubt the source version of [name] in [language] should be consulted.”</p>
 </quote>
 
-<p id="_55169b69-666c-352d-faff-474bd357991a">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO.</p>
+<p id="_c0d5bde4-4e8c-34f6-3ba0-d926565af27b">The IHO Logo or other identifiers shall not be used in any derived product without prior written permission from the IHO Secretariat.</p>
 </clause>
 </license-statement>
 
@@ -1819,7 +1675,7 @@ sourcecode .nt {
 
 <p id="_297be5c1-e945-9004-5f4d-ea41f8ce8ab9">Published by the<br/> International Hydrographic Organization <br/> 4b quai Antoine 1 <sup>er</sup><br/> Principauté de Monaco <br/> Tel: (377) 93.10.81.00 <br/> Fax: (377) 93.10.81.40 <br/> info@iho.int <br/> \www.iho.int<br/></p>
 </feedback-statement>
-</boilerplate><preface><clause type="toc" id="_69948ef5-78aa-412b-818e-d79fc1cacd60" displayorder="1"><title depth="1">Contents</title></clause>
+</boilerplate><preface><clause type="toc" id="_a3a6c847-f782-4f2d-a04e-ed40915aac17" displayorder="1"><title depth="1">Contents</title></clause>
 <foreword id="_9def9c4b-4706-fbda-1c82-f3eb465b13cf" obligation="informative" displayorder="2">
 <title>Foreword</title>
 <p id="_a3097e95-7ef6-2cba-0f63-14345ca1ec35">These guidelines are to be used by educational and training organizations for the preparation of submissions of programmes in hydrographic surveying or nautical charting against the IHO Publications S-5A/B and S-8A/B Standards of Competence for Hydrographic Surveyors and Nautical Cartographers.</p>
@@ -2125,13 +1981,13 @@ sourcecode .nt {
 <clause id="_9" obligation="normative"><title>5.1.2</title>
 <p id="_f5e3f0c4-0ac4-ff66-85f2-6cf6fbb1cad2">The underpinning philosophy of the work of the Board in recognizing professional certification schemes for individuals is that competence equals knowledge plus experience, and must be demonstrated. Thus, upon successful achievement by any individual of a Category “A” or a Category “B” Programme, a competency certification within any Scheme consists of <em>both</em> successful completion of a programme of study which addresses the topics within the relevant Standard <em>and</em> a satisfactory period of relevant experience during which competence has been demonstrated. In addition, the IBSC notes that hydrographic technology is constantly advancing and that, in order to maintain competence, an individual must pursue continuing professional training and education to ensure that they maintain currency. Consequently national organizations and academic institutions may decide to recognize and/or certify individuals in order to monitor competency and currency. The IBSC requires that professional certification of individual competency should be based on completion of:</p>
 
-<ol id="_b919c74a-ead7-20c7-3ff9-72b8da2f591f" type="arabic"><li id="_0dc67f26-e26a-4a05-823c-7830ab801f5b" label="1"><p id="_b1cfc851-87de-f1b9-a9e4-3744ac2a6345">A programme of formal education or training, normally as outlined in <xref target="scl-cat-programmes-schemes">Clause 1.1</xref>;</p>
+<ol id="_b919c74a-ead7-20c7-3ff9-72b8da2f591f" type="arabic"><li id="_d6dbe489-3940-4d62-8841-f994180dc584" label="1"><p id="_b1cfc851-87de-f1b9-a9e4-3744ac2a6345">A programme of formal education or training, normally as outlined in <xref target="scl-cat-programmes-schemes">Clause 1.1</xref>;</p>
 </li>
-<li id="_42a60356-96fe-4bd4-95ba-f5c7f2088033" label="2"><p id="_8cb46e95-1084-9595-4d06-9766c8d2066e">Experience, as outlined in <xref target="cl-field-office-experience">Section 4</xref>;</p>
+<li id="_37ae8f5e-276f-44c6-8b9a-f20ae914c8fc" label="2"><p id="_8cb46e95-1084-9595-4d06-9766c8d2066e">Experience, as outlined in <xref target="cl-field-office-experience">Section 4</xref>;</p>
 </li>
-<li id="_46ea4912-b588-4a9d-b6aa-9fc7603dda90" label="3"><p id="_fe168d9f-8bf2-7719-11d2-09b5cc2a0697">A methodology to demonstrate and document competencies;</p>
+<li id="_401b00d6-b5be-4297-b278-78d013daa2cb" label="3"><p id="_fe168d9f-8bf2-7719-11d2-09b5cc2a0697">A methodology to demonstrate and document competencies;</p>
 </li>
-<li id="_8030c1f6-2f9a-457f-b99c-599f5d362f98" label="4"><p id="_9dd7e05a-b3ae-5de9-d8a1-3e7b8c5d0177">Continuing professional education and training.</p>
+<li id="_eade7231-b783-4f4e-aafb-e31e7816161f" label="4"><p id="_9dd7e05a-b3ae-5de9-d8a1-3e7b8c5d0177">Continuing professional education and training.</p>
 </li>
 </ol>
 
@@ -2297,7 +2153,7 @@ sourcecode .nt {
 
 <p id="_5f1f22d4-6f2d-1614-addb-d13e832ccd0f">‌[Comment: The Board is interested in the underlying rationale for the programme to the extent this assists its review process. It is necessary for the Board to know as much of the background detail as necessary to comprehend why the programme is designed the way it is, especially if there is some specific or even unique local learning outcome required.]</p>
 </li>
-<li id="_411f1b42-ae51-4cb3-bc1c-598ce4b50710" label="3"><p id="_d35eaeb0-fd01-4e25-3db0-c50e709a3fa6"><strong>Entry Requirements and Exemptions</strong></p>
+<li id="_a5924677-5264-41aa-a28c-0eb42bfb4f58" label="3"><p id="_d35eaeb0-fd01-4e25-3db0-c50e709a3fa6"><strong>Entry Requirements and Exemptions</strong></p>
 <p id="_7c2e487b-faa7-fcc9-ee8b-dcaaeb9de3dc">Identify normal qualifications required for entry and alternative qualification routes that may be acceptable for entry.</p>
 
 <p id="_e077e0f9-24f6-e339-67da-0dc6b7aa3965">For Programmes seeking exemption of some or all the <em>Basic</em> or <em>Foundation Science</em> subjects, provide a clear indication of where students would previously have attained that knowledge, and a clear description of the formal procedures used to evaluate claims for such exemptions. <strong><em>No exemptions are permitted for Essential, Hydrographic and Cartographic Science subjects</em></strong>.</p>
@@ -2311,7 +2167,7 @@ sourcecode .nt {
 <title depth="3">6.1.2<tab/>CHAPTER 2: Information About the Programme Infrastructure</title>
 <p id="_8bc61959-a9ef-0999-e59d-2b95d5f88bbd">Chapter 2 of the submission must include the following sections:</p>
 
-<ol id="_b969e84e-6ba3-d6c4-5589-ea8fd37178fa" type="arabic"><li id="_4a550fed-451e-4279-971f-a521220ab1dd" label="1"><p id="_d5db9cd5-3dca-6169-6714-dd0008d9bf40">Staff List:</p>
+<ol id="_b969e84e-6ba3-d6c4-5589-ea8fd37178fa" type="arabic"><li id="_12216527-d6ce-4a36-b8a7-87a76a1d87d2" label="1"><p id="_d5db9cd5-3dca-6169-6714-dd0008d9bf40">Staff List:</p>
 <p id="_356a4984-00af-fd7e-b0ee-ed2bfd2796a1">For each instructor contributing to the programme, provide a Curriculum Vitae (CV) which will include:</p>
 
 <ul id="_485e1fb2-2d87-e98f-2720-06c7371b07ca"><li><p id="_5bf6ba2d-f785-6ff1-47a0-c9c4abd73d60">Module taught;</p>
@@ -2326,7 +2182,7 @@ sourcecode .nt {
 
 <p id="_81c0b8d1-d956-fc10-76da-3d9555c9ce6c">‌[Comment: The Board will look closely at staff CVs, in particular at the specific experience brought to teaching of the programme.]</p>
 </li>
-<li id="_7e3ca49d-2ff2-44b5-b2bd-7ed830e985bc" label="2"><p id="_a912f544-00a5-9ec9-2540-fd8783758fbe"><strong>Facilities Available to Students:</strong></p>
+<li id="_52457f42-cf52-436b-bc47-d315cc100cd6" label="2"><p id="_a912f544-00a5-9ec9-2540-fd8783758fbe"><strong>Facilities Available to Students:</strong></p>
 <ul id="_9c5c03d3-9598-122e-4108-b35540e2a6d9"><li><p id="_bebe5663-a800-bf94-c092-24685930f628">Equipment: Provide a list of relevant equipment/systems that will be used in the delivery of practical work and in the final project;</p>
 </li>
 <li><p id="_e1038fb8-8c41-bc93-82fa-798e35f55bb3">Software: List specific software (with emphasis on hydrographic and cartographic software);</p>
@@ -2357,7 +2213,7 @@ sourcecode .nt {
 <title depth="3">6.1.3<tab/>CHAPTER 3: Programme Description</title>
 <p id="_1d0f6fcd-c57c-cdaf-2706-448b4926921c">Chapter 3 of the submission must include the following sections:</p>
 
-<ol id="_6d145c00-6e15-c6d5-dc31-22b732ea6434" type="arabic"><li id="_d6507780-ba76-454b-8d4c-3d398828a57f" label="1"><p id="_90e2866e-5ccf-e256-9643-a8f921f91f07"><strong>Programme Structure</strong></p>
+<ol id="_6d145c00-6e15-c6d5-dc31-22b732ea6434" type="arabic"><li id="_bf98c59c-b039-48ec-9474-477a46230196" label="1"><p id="_90e2866e-5ccf-e256-9643-a8f921f91f07"><strong>Programme Structure</strong></p>
 <p id="_3ea50edc-3933-97b6-34f5-8b812ec9ac97">The Programme may involve a series of modules and formal training sessions that must include practicals, tutorials and field experience to reinforce and complement theoretical material. It is important that the programme structure is clearly described within the submission and that sufficient details of the components are provided. As a minimum the submission should include:</p>
 
 <ul id="_ff5c4c2a-812f-5fb4-89b3-20e6506a48c7"><li><p id="_c3cc4a28-5289-551e-2068-6127b63c958f">Table of programme modules;</p>
@@ -2370,7 +2226,7 @@ sourcecode .nt {
 </li>
 </ul>
 </li>
-<li id="_a5c28a26-1800-4c9e-a769-d140a913573d" label="2"><p id="_c3e5dbe5-dd64-6c28-c952-f4d9638284ce"><strong>Information About Each Module in the Programme</strong></p>
+<li id="_8df03fd4-100f-4469-9e16-e6b0bcc58f67" label="2"><p id="_c3e5dbe5-dd64-6c28-c952-f4d9638284ce"><strong>Information About Each Module in the Programme</strong></p>
 <p id="_852a66c4-1fcb-ec09-ef3c-57f18a829a49">This section should be easily understood and contain a full and detailed description of each programme module, including a reference to <em>elements</em> of the Standards for each course module item. This enables the institution to describe fully the programme in relation to the Standards and aids greatly in the Board’s review. Each module of the programme being submitted should be described in more detail than the Standards, with a tabulation of theory, practical exercises and self-guidance hours devoted to the elements of the Standards. This will allow the Board to relate the module and lectures to the cross-reference table (see <xref target="scl-chapter7">Clause 6.1.7</xref>) and tabulated programme description.</p>
 
 <p id="_6d2275ad-8a8c-d4a1-3959-9d148240a486"><strong>A schedule should be provided that shows all delivered items (lectures, tutorials, assignments and practicals) within the module and relates them to <em>elements</em> of the Standards</strong>. This must include for each delivered item: means of delivery; hours allocated; reference to <em>elements</em> of the Standards. For the purpose of these Guidelines the nominal duration of a teaching hour is 50 minutes. If less, then this must be stated in the submission. An example of a Module Schedule that might be delivered in an S-5B programme is provided in <xref target="tab-example-module-schedule">Table 6-1</xref> where the teaching scheme shows the first five lectures and associated practical/tutorial work. Coverage in the example is aligned with a student intake directly from high school with passes in mathematics and physics where no previous knowledge or experience in spatial science exists, hence the extended introduction offering familiarisation with relevant fundamentals. Time allocated is indicative of the entry level.</p>
@@ -2418,15 +2274,15 @@ sourcecode .nt {
 </td>
 </tr><tr><td colspan="6" valign="top" align="left"><p id="_3883a300-0742-3bb5-34cc-4a13fc292a7c"><strong>Learning Outcomes</strong></p>
 
-<ol id="_ce0ccbf3-b404-377f-3490-d24f58e5601d" type="arabic"><li id="_7389c132-4273-45c7-97fb-a593406281f9" label="1"><p id="_9538c099-a281-bb6a-8dad-e6adf625d062">Identify properties and needs for different surfaces used to represent the Earth for different applications and undertake geodetic computations in relation to such surfaces.</p>
+<ol id="_ce0ccbf3-b404-377f-3490-d24f58e5601d" type="arabic"><li id="_c1982ddc-c425-4f7a-b402-ae19e13adb4a" label="1"><p id="_9538c099-a281-bb6a-8dad-e6adf625d062">Identify properties and needs for different surfaces used to represent the Earth for different applications and undertake geodetic computations in relation to such surfaces.</p>
 </li>
-<li id="_97856ade-3967-44f1-9269-88a501aa4973" label="2"><p id="_474bb7eb-789f-98f5-66b9-6c58a6d76411">Describe the reference frames used in geodesy with appreciating their applications, compare methods for moving positional data between them and perform associated computations.</p>
+<li id="_289673af-d0d5-4c4d-a9e7-00f0c2fce87d" label="2"><p id="_474bb7eb-789f-98f5-66b9-6c58a6d76411">Describe the reference frames used in geodesy with appreciating their applications, compare methods for moving positional data between them and perform associated computations.</p>
 </li>
-<li id="_375a4076-9413-4d24-baf2-69e593af63b4" label="3"><p id="_f7fe84da-159b-347b-84cd-928dd469834e">Explain traditional methods used in the establishment and realisation of traditional datums for horizontal and vertical control and reasons why this approach has changed with development of satellite technology.</p>
+<li id="_0d529876-852c-4c70-b421-8c3ff1fd5042" label="3"><p id="_f7fe84da-159b-347b-84cd-928dd469834e">Explain traditional methods used in the establishment and realisation of traditional datums for horizontal and vertical control and reasons why this approach has changed with development of satellite technology.</p>
 </li>
-<li id="_3260607d-24a8-4aed-9f36-7cacb5dcfc02" label="4"><p id="_108330a4-6c8d-08f9-ee27-056947d48e3d">Through the use of international examples, explain how modern horizontal and vertical datums for surveying and mapping at national level are established and realised to accommodate temporal components and perform associated computations.</p>
+<li id="_94f8ca90-fbef-41f7-9795-76ffb6ce6a98" label="4"><p id="_108330a4-6c8d-08f9-ee27-056947d48e3d">Through the use of international examples, explain how modern horizontal and vertical datums for surveying and mapping at national level are established and realised to accommodate temporal components and perform associated computations.</p>
 </li>
-<li id="_81ed4c94-dca6-4e5a-a636-f250d2323431" label="5"><p id="_f7207cf9-20a4-ff14-07f9-f519c3bfd906">Distinguish between broadcast and precise satellite ephemerides, identifying the parameters involved in each case and perform computations to determine satellite location at a particular time in a standard reference frame and relative to the location of a receiver on the surface of the Earth.</p>
+<li id="_e0fec7f5-a1bd-4efa-8fd5-7ab9d86eafde" label="5"><p id="_f7207cf9-20a4-ff14-07f9-f519c3bfd906">Distinguish between broadcast and precise satellite ephemerides, identifying the parameters involved in each case and perform computations to determine satellite location at a particular time in a standard reference frame and relative to the location of a receiver on the surface of the Earth.</p>
 </li>
 </ol>
 </td>
@@ -2551,7 +2407,7 @@ sourcecode .nt {
 
 <p id="_e1626102-0ee4-5305-c031-13674ed5116f">The IBSC does not intend to be prescriptive in how the modules or sub-components of a Programme are structured, but it requires that they be properly and fully related to the cross-reference table.</p>
 </li>
-<li id="_c75c55e5-ce81-403f-bd83-01e63151449b" label="3"><p id="_b8681db2-c8b9-128e-e56c-e1544a98d704"><strong>Texts and Reference Material</strong></p>
+<li id="_eb0059f1-50ba-4416-a645-94e38ebc80ba" label="3"><p id="_b8681db2-c8b9-128e-e56c-e1544a98d704"><strong>Texts and Reference Material</strong></p>
 <p id="_515aad95-747b-df34-a272-a953c07db202">A list of texts and reference material used for each subject area, with an indication of the editorial house/publisher, and year of publication should be provided. Where e-learning components are included, then a description of the e-learning materials, including their source, year of publication and a description of the material access method, should be submitted.</p>
 
 <p id="_fd878578-43e7-0351-55e0-1228ddd5dd39">‌[Comment: The Board will look to the adequacy and relevance of texts and reference materials. The section also serves as important feedback to the Board itself as to the availability of adequate and up to date teaching material. The IBSC wishes to ensure that students are adequately supported in terms of access and availability to required texts and reference material.]</p>
@@ -2566,7 +2422,7 @@ sourcecode .nt {
 <title depth="3">6.1.4<tab/>CHAPTER 4: Student Assessment</title>
 <p id="_ade76d6c-e8fd-2ba6-b78c-a9a7afe46dc4">Chapter 4 of the submission must include the following sections:</p>
 
-<ol id="_6461a22e-153e-bea5-228a-6a03e6964716" type="arabic"><li id="_783ae27d-075d-4ee0-9b6d-83a89c21ab52" label="1"><p id="_53182dde-95c0-0849-9fe0-7c56648a25b0"><strong>Student Assessment and Grading:</strong></p>
+<ol id="_6461a22e-153e-bea5-228a-6a03e6964716" type="arabic"><li id="_9e60420d-b61a-4e1b-b1fa-08bb1dd5e926" label="1"><p id="_53182dde-95c0-0849-9fe0-7c56648a25b0"><strong>Student Assessment and Grading:</strong></p>
 <ul id="_2018e119-1cb1-bd6f-ee7c-ca0a703ecd24"><li><p id="_59c9cbf7-d161-c94d-0cdc-627655a0cdee">Describe how a mark in each module is determined on the basis of assessment components within that module together with requirements for obtaining a pass.</p>
 </li>
 <li><p id="_98a819b5-dd2e-ef0f-bcc2-1c65ebb265a0">Describe how grades awarded within the Programme are combined to give an overall grade and the requirement for award of recognition.</p>
@@ -2579,7 +2435,7 @@ sourcecode .nt {
 
 <p id="_061ccca1-fe86-c9eb-664f-b5b1c7cc168c">‌[Comment: The expectation of the IBSC is that all learning outcomes of the Standards will be assessed in some form for example by examination, quiz, assignments, practical tasks, field-work, office-work or project tasks.]</p>
 </li>
-<li id="_66437369-b48d-4edb-a707-d81f95a6c22c" label="2"><p id="_9288f530-8690-a6e6-4713-c40362fdffaa"><strong>Examination Papers</strong></p>
+<li id="_776c0a4c-697c-437f-9c98-c1d71612e384" label="2"><p id="_9288f530-8690-a6e6-4713-c40362fdffaa"><strong>Examination Papers</strong></p>
 <p id="_1e5bdf33-36f0-f4c6-eb12-af52e7164f02">Representative examination papers, sample writing or self-guided assignments, and e-learning assessment components from each <em>Subject</em> area, taken by students during the programme (i.e. not only the final examination), must be submitted. For new programmes a prospective sample set must be provided.</p>
 
 <p id="_cf10ec0a-c004-138b-5008-95ae1a5b5ecf">‌[Comment: In reviewing a submission the Board will check that the format and level of the examinations and tests employed are appropriate to the learning outcomes required and the category of recognition sought. New submissions will be expected to have developed as a minimum an examining or testing strategy appropriate to the planned course.]</p>
@@ -2676,7 +2532,7 @@ sourcecode .nt {
 
 <p id="_95b7e186-17d8-7415-752f-62913e3a6c04">In addition, a table MUST BE COMPLETED IN THE SPECIFIED TEMPLATE PROVIDED, as prescribed below. In this table the Final Project, whether CFFP, CCP. CMFP or CFCP, should be described in terms of Task Outcomes. Tasks defined by the institution, must ensure that the programme content is covered in an integrated manner. These tasks are to be cross-referenced to the <strong>Essential, Foundation or Hydrographic/Cartographic Science</strong> <em>subjects</em>.</p>
 
-<ol id="_93344645-e123-8c3b-1146-b3131586023b" type="arabic"><li id="_9ff59ea0-3f89-4fbc-8e18-6dba451a6f1f" label="1"><p id="_5259ce1a-6beb-0dba-ad03-d8dafdd4de57"><strong>Guidance to Complete the Final Project Description Table</strong></p>
+<ol id="_93344645-e123-8c3b-1146-b3131586023b" type="arabic"><li id="_7cf5738d-598a-4490-b0db-d234c9e7aaef" label="1"><p id="_5259ce1a-6beb-0dba-ad03-d8dafdd4de57"><strong>Guidance to Complete the Final Project Description Table</strong></p>
 <p id="_f662e49e-5b46-4769-10ce-ace8f67284be">The project should be described as a series of phases and associated tasks (project activities) each itemized as separate rows of the table (example in <xref target="tab-final-project-descriptive-tables">Table 6-3</xref>). Each task should be identified in the first column and the other columns populated with attributes of that task.</p>
 
 <p id="_c363a10d-b15f-345a-44d0-cbf34113bf2a">The Task Outcome describes the intended result of the completed task. The required resources, equipment, software, data sources, etc. for each task are to be itemized. The number of hours devoted by the student to a particular task is to be itemized.</p>
@@ -2750,7 +2606,7 @@ sourcecode .nt {
 
 <p id="_83e57691-a529-6a95-ed51-cfdb2df6739e">‌[Comment: Particular care should be taken in ensuring the cross-referencing is completed accurately and comprehensively. The Board needs to reference the learning outcomes sought against the content delivered.]</p>
 
-<ol id="_e6e7505a-7070-23b7-05e8-751d51e55deb" type="arabic"><li id="_cc3e4c39-c631-4a6a-8a2f-fc81859d91be" label="1"><p id="_f38f2333-0955-2f07-be32-99d38349373c"><strong>Guidance to Complete the Cross-Reference Table</strong></p>
+<ol id="_e6e7505a-7070-23b7-05e8-751d51e55deb" type="arabic"><li id="_811d2be7-563c-48c3-8c86-98238557d9bf" label="1"><p id="_f38f2333-0955-2f07-be32-99d38349373c"><strong>Guidance to Complete the Cross-Reference Table</strong></p>
 <p id="_11b731bd-9194-5845-5379-1aea44fe0bd7">Submitting institutions MUST complete the Module and content and the Hours columns of the table shown below for each <em>Basic, Essential, Foundation, Hydrographic or Cartographic Science subject</em>:</p>
 
 <ul id="_0ea66591-7a71-c502-279b-e7247b0dd5ba"><li><p id="_5b6705de-d61f-193f-021f-77bb1d4698dd">T/P/SG (Theory/Practicals or Labs/Self-guided):</p>
@@ -2820,17 +2676,17 @@ sourcecode .nt {
 <th valign="top" align="left">SG</th>
 </tr><tr><td valign="top" rowspan="3" align="left"><p id="_daf58ffe-d1ae-5428-b4d7-3a0db47c5061">Ex.y&#x3c;c1&#x3e;</p>
 </td>
-<td valign="top" rowspan="5" align="left"><ol id="_e7f800e0-1b99-fc6d-ad96-a41a56870af2" type="arabic"><li id="_06a32b0c-11d1-40cc-af00-10f17a326a04" label="1"><p id="_8bcb9864-a58a-f0c6-d21d-0b66926ca7d2">Content 1</p>
+<td valign="top" rowspan="5" align="left"><ol id="_e7f800e0-1b99-fc6d-ad96-a41a56870af2" type="arabic"><li id="_2383c109-5ed8-48c1-8669-596c84603ad1" label="1"><p id="_8bcb9864-a58a-f0c6-d21d-0b66926ca7d2">Content 1</p>
 </li>
-<li id="_24cbdb3e-d239-4f2f-bb94-f834907fff2f" label="2"><p id="_50261723-27b2-b2f1-6a2d-5354656e4b1c">Content 2</p>
+<li id="_5634587a-2728-4f37-a2cb-84858033194d" label="2"><p id="_50261723-27b2-b2f1-6a2d-5354656e4b1c">Content 2</p>
 </li>
-<li id="_d8ed3918-98c7-4449-bd3b-c057e2f2bc58" label="3"><p id="_fb36c668-0946-201c-fe24-d9a897f205cb">Content 3</p>
+<li id="_90761968-d543-48ae-8999-06efd898ee58" label="3"><p id="_fb36c668-0946-201c-fe24-d9a897f205cb">Content 3</p>
 </li>
-<li id="_c1bef57a-d6cb-43c9-8cb0-5d8cdff9456e" label="4"><p id="_7e6fc911-8a69-3b58-1690-4cfbe5adb884">Content 4</p>
+<li id="_aa790196-ba9b-4923-99e9-785923dbed0d" label="4"><p id="_7e6fc911-8a69-3b58-1690-4cfbe5adb884">Content 4</p>
 </li>
-<li id="_d86a7f15-a246-49d2-a952-0dc6ae6de7ba" label="5"><p id="_59606be1-97a1-5309-b655-77a9715df648">Content 5</p>
+<li id="_84ac47c2-7533-49c8-94b2-fd8c2e6024fe" label="5"><p id="_59606be1-97a1-5309-b655-77a9715df648">Content 5</p>
 </li>
-<li id="_e330e128-0f26-48c9-8529-da808db9abf8" label="6"><p id="_e55ada92-6f29-5787-0d34-ad6ea2515869">Content 6</p>
+<li id="_402b563a-fd05-47cb-9b77-e1eb43bcb685" label="6"><p id="_e55ada92-6f29-5787-0d34-ad6ea2515869">Content 6</p>
 </li>
 </ol>
 </td>
@@ -2941,11 +2797,11 @@ sourcecode .nt {
 
 <p id="_ae432915-8b93-58b1-0666-9bd0eacb0698">The Board’s decision will be one of the following:</p>
 
-<ol id="_2eda7e2d-5c67-8df7-1b45-7fef64f1783b" type="arabic"><li id="_7ed2acb5-be54-4469-ba9a-fa3950e97f8c" label="1"><p id="_d904a0c5-7a03-5e29-4aa4-d4a8c96cd6e4"><strong>RECOGNISED</strong>: no further requirements or changes are necessary;</p>
+<ol id="_2eda7e2d-5c67-8df7-1b45-7fef64f1783b" type="arabic"><li id="_dff81138-e0ae-4987-b3e4-31f4bce65181" label="1"><p id="_d904a0c5-7a03-5e29-4aa4-d4a8c96cd6e4"><strong>RECOGNISED</strong>: no further requirements or changes are necessary;</p>
 </li>
-<li id="_fff103e3-0ad2-4632-8be4-145f5dbe9fe1" label="2"><p id="_041e3013-6cd7-eec2-eb78-94c6fcea50d7"><strong>RECOGNISED WITH CONDITIONS</strong>: further requirements or changes are necessary in response to identified issues. The required information is to be submitted within a period specified by the Board;</p>
+<li id="_f9a4cf32-95fc-4315-8e9b-daa851066d43" label="2"><p id="_041e3013-6cd7-eec2-eb78-94c6fcea50d7"><strong>RECOGNISED WITH CONDITIONS</strong>: further requirements or changes are necessary in response to identified issues. The required information is to be submitted within a period specified by the Board;</p>
 </li>
-<li id="_5c4fa171-7b86-4713-9119-a8f1297de295" label="3"><p id="_04353733-766a-a6bb-c6c6-c0aef5215ba8"><strong>NOT RECOGNISED</strong>: a full resubmission is required, including all documentation (In exceptional circumstances the Board may consider an inter-sessional resubmission).</p>
+<li id="_6db1c957-1895-42cc-b98a-8462b77111b6" label="3"><p id="_04353733-766a-a6bb-c6c6-c0aef5215ba8"><strong>NOT RECOGNISED</strong>: a full resubmission is required, including all documentation (In exceptional circumstances the Board may consider an inter-sessional resubmission).</p>
 </li>
 </ol>
 

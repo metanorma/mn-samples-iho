@@ -1,5 +1,5 @@
 PDF isn't valid PDF/UA-1:
-ValidationResult [flavour=ua1, totalAssertions=248397, assertions=[
+ValidationResult [flavour=ua1, totalAssertions=248318, assertions=[
 TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=27], status=failed,
 message=TOC element may contain only TOC, TOCI and Caption elements,
 location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](1381 0 obj PDStructTreeRoot)/K[0](1383 0 obj SEDocument Document)/K[1](1390 0 obj SEPart Part)/K[0](1420 0 obj SESect Sect)/K[1](1423 0 obj SETOC TOC)], locationContext=null, errorMessage=null], 
