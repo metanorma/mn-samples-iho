@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="1.0.8" schema-version="v1.4.0">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="1.0.14" schema-version="v1.4.1">
 <bibdata type="standard">
 <title language="en" format="text/plain">Publication M-1 (Preview PR)</title>
 <docidentifier primary="true" type="IHO">M-1</docidentifier><docnumber>1</docnumber><date type="published"><on>2017-06</on></date><contributor><role type="author"/><organization>

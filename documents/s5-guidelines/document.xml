@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="1.0.8" schema-version="v1.4.0">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="1.0.14" schema-version="v1.4.1">
 <bibdata type="standard">
 <title language="en" format="text/plain">Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers (Preview PR)</title>
 <docidentifier primary="true" type="IHO">S-Guidelines-S5-S8</docidentifier><docnumber>Guidelines-S5-S8</docnumber><date type="published"><on>2019-05</on></date><contributor><role type="author"/><organization>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="1.0.8" schema-version="v1.4.0">
+<iho-standard xmlns="https://www.metanorma.org/ns/iho" type="semantic" version="1.0.14" schema-version="v1.4.1">
 <bibdata type="standard">
 <title language="en" format="text/plain">Standards of Competence for Category "A" Hydrographic Surveyors (Preview PR)</title>
 <docidentifier primary="true" type="IHO">S-5A</docidentifier><docnumber>5A</docnumber><date type="published"><on>2018-06</on></date><contributor><role type="author"/><organization>
