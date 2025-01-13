@@ -1,0 +1,11 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">Standards of Competence for Category "B" Hydrographic Surveyors (Preview PR)</title>
+<docidentifier primary="true" type="IHO">S-5B</docidentifier><docnumber>5B</docnumber><date type="published"><on>2017-06</on></date><contributor><role type="author"/><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></contributor><edition>1.0.1</edition><language>en</language><script>Latn</script><status><stage>in-force</stage></status><copyright><from>2017</from><owner><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
+<title>Standards and Specifications</title>
+<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><flavor>iho</flavor><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>IBSC</abbreviation></workgroup></editorialgroup></ext></bibdata>
