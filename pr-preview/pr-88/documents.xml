@@ -1,0 +1,514 @@
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>IHO Publications in Metanorma</title><contributor><role type='author'/><organization><name>IHO: International Hydrographic Organization</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title format="text/plain" language="en">Guidance on Crowdsourced Bathymetry (Preview PR)</title>
+  <uri type="xml">documents/b12/document.xml</uri>
+  <uri type="pdf">documents/b12/document.pdf</uri>
+  <uri type="doc">documents/b12/document.doc</uri>
+  <uri type="html">documents/b12/document.html</uri>
+  <uri type="rxl">documents/b12/document.rxl</uri>
+  <docidentifier type="IHO" primary="true">B-12</docidentifier>
+  <docnumber>12</docnumber>
+  <date type="published">
+    <on>2020-01-20</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2.0.3</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2020</from>
+    <owner>
+      <organization>
+        <name>International Hydrographic Organization</name>
+        <abbreviation>IHO</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>Bathymetric</title>
+    <abbreviation>B</abbreviation>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>standard</doctype>
+    <editorialgroup>
+      <committee>
+        <abbreviation>IRCC</abbreviation>
+      </committee>
+      <workgroup>
+        <abbreviation>CSBWG</abbreviation>
+      </workgroup>
+    </editorialgroup>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title format="text/plain" language="en">Guidance for Hydrographic Offices</title>
+  <uri type="xml">documents/c17/document.xml</uri>
+  <uri type="pdf">documents/c17/document.pdf</uri>
+  <uri type="doc">documents/c17/document.doc</uri>
+  <uri type="html">documents/c17/document.html</uri>
+  <uri type="rxl">documents/c17/document.rxl</uri>
+  <docidentifier type="IHO" primary="true">C-17</docidentifier>
+  <docnumber>17</docnumber>
+  <date type="published">
+    <on>2017-01-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2.0.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        <name>International Hydrographic Organization</name>
+        <abbreviation>IHO</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>Capacity Building</title>
+    <abbreviation>C</abbreviation>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>standard</doctype>
+    <editorialgroup>
+      <committee>
+        <abbreviation>IRCC</abbreviation>
+      </committee>
+      <workgroup>
+        <abbreviation>MSDIWG</abbreviation>
+      </workgroup>
+    </editorialgroup>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title format="text/plain" language="en">Publication M-1 (Preview PR)</title>
+  <uri type="xml">documents/m1/document.xml</uri>
+  <uri type="pdf">documents/m1/document.pdf</uri>
+  <uri type="doc">documents/m1/document.doc</uri>
+  <uri type="html">documents/m1/document.html</uri>
+  <uri type="rxl">documents/m1/document.rxl</uri>
+  <docidentifier type="IHO" primary="true">M-1</docidentifier>
+  <docnumber>1</docnumber>
+  <date type="published">
+    <on>2017-06-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2.1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        <name>International Hydrographic Organization</name>
+        <abbreviation>IHO</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>Miscellaneous</title>
+    <abbreviation>M</abbreviation>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>regulation</doctype>
+    <editorialgroup>
+      <committee>
+        <abbreviation>HSSC</abbreviation>
+      </committee>
+      <workgroup>
+        <abbreviation>SPWG</abbreviation>
+      </workgroup>
+    </editorialgroup>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title format="text/plain" language="en">Bathymetric Surface Product Specification (Preview PR)</title>
+  <uri type="xml">documents/s102/document.xml</uri>
+  <uri type="pdf">documents/s102/document.pdf</uri>
+  <uri type="doc">documents/s102/document.doc</uri>
+  <uri type="html">documents/s102/document.html</uri>
+  <uri type="rxl">documents/s102/document.rxl</uri>
+  <docidentifier type="IHO" primary="true">S-102</docidentifier>
+  <docnumber>102</docnumber>
+  <date type="published">
+    <on>2022-10-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2.1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>International Hydrographic Organization</name>
+        <abbreviation>IHO</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>Standards and Specifications</title>
+    <abbreviation>S</abbreviation>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>standard</doctype>
+    <editorialgroup>
+      <committee>
+        <abbreviation>HSSC</abbreviation>
+      </committee>
+      <workgroup>
+        <abbreviation>TSMAD</abbreviation>
+      </workgroup>
+    </editorialgroup>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title format="text/plain" language="en">IHO Standards for Hydrographic Surveys (Preview PR)</title>
+  <uri type="xml">documents/s44/document.xml</uri>
+  <uri type="pdf">documents/s44/document.pdf</uri>
+  <uri type="doc">documents/s44/document.doc</uri>
+  <uri type="html">documents/s44/document.html</uri>
+  <uri type="rxl">documents/s44/document.rxl</uri>
+  <docidentifier type="IHO" primary="true">S-44</docidentifier>
+  <docnumber>44</docnumber>
+  <date type="published">
+    <on>2020-03-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>6</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>draft-proposal</stage>
+  </status>
+  <copyright>
+    <from>2020</from>
+    <owner>
+      <organization>
+        <name>International Hydrographic Organization</name>
+        <abbreviation>IHO</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>Standards and Specifications</title>
+    <abbreviation>S</abbreviation>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>standard</doctype>
+    <editorialgroup>
+      <committee>
+        <abbreviation>HSSC</abbreviation>
+      </committee>
+      <workgroup>
+        <abbreviation>HSPT</abbreviation>
+      </workgroup>
+    </editorialgroup>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title format="text/plain" language="en">Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers (Preview PR)</title>
+  <uri type="xml">documents/s5-guidelines/document.xml</uri>
+  <uri type="pdf">documents/s5-guidelines/document.pdf</uri>
+  <uri type="doc">documents/s5-guidelines/document.doc</uri>
+  <uri type="html">documents/s5-guidelines/document.html</uri>
+  <uri type="rxl">documents/s5-guidelines/document.rxl</uri>
+  <docidentifier type="IHO" primary="true">S-Guidelines-S5-S8</docidentifier>
+  <docnumber>Guidelines-S5-S8</docnumber>
+  <date type="published">
+    <on>2019-05-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2.1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2019</from>
+    <owner>
+      <organization>
+        <name>International Hydrographic Organization</name>
+        <abbreviation>IHO</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>Standards and Specifications</title>
+    <abbreviation>S</abbreviation>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>specification</doctype>
+    <editorialgroup>
+      <committee>
+        <abbreviation>HSSC</abbreviation>
+      </committee>
+      <workgroup>
+        <abbreviation>IBSC</abbreviation>
+      </workgroup>
+    </editorialgroup>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title format="text/plain" language="en">Standards of Competence for Category "A" Hydrographic Surveyors (Preview PR)</title>
+  <uri type="xml">documents/s5a/document.xml</uri>
+  <uri type="pdf">documents/s5a/document.pdf</uri>
+  <uri type="doc">documents/s5a/document.doc</uri>
+  <uri type="html">documents/s5a/document.html</uri>
+  <uri type="rxl">documents/s5a/document.rxl</uri>
+  <docidentifier type="IHO" primary="true">S-5A</docidentifier>
+  <docnumber>5A</docnumber>
+  <date type="published">
+    <on>2018-06-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1.0.2</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        <name>International Hydrographic Organization</name>
+        <abbreviation>IHO</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>Standards and Specifications</title>
+    <abbreviation>S</abbreviation>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>standard</doctype>
+    <editorialgroup>
+      <committee>
+        <abbreviation>HSSC</abbreviation>
+      </committee>
+      <workgroup>
+        <abbreviation>IBSC</abbreviation>
+      </workgroup>
+    </editorialgroup>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title format="text/plain" language="en">Standards of Competence for Category "B" Hydrographic Surveyors (Preview PR)</title>
+  <uri type="xml">documents/s5b/document.xml</uri>
+  <uri type="pdf">documents/s5b/document.pdf</uri>
+  <uri type="doc">documents/s5b/document.doc</uri>
+  <uri type="html">documents/s5b/document.html</uri>
+  <uri type="rxl">documents/s5b/document.rxl</uri>
+  <docidentifier type="IHO" primary="true">S-5B</docidentifier>
+  <docnumber>5B</docnumber>
+  <date type="published">
+    <on>2017-06-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1.0.1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        <name>International Hydrographic Organization</name>
+        <abbreviation>IHO</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>Standards and Specifications</title>
+    <abbreviation>S</abbreviation>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>standard</doctype>
+    <editorialgroup>
+      <committee>
+        <abbreviation>HSSC</abbreviation>
+      </committee>
+      <workgroup>
+        <abbreviation>IBSC</abbreviation>
+      </workgroup>
+    </editorialgroup>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
+  <title format="text/plain" language="en">IHO Data Protection Scheme (Preview PR)</title>
+  <uri type="xml">documents/s63/document.xml</uri>
+  <uri type="pdf">documents/s63/document.pdf</uri>
+  <uri type="doc">documents/s63/document.doc</uri>
+  <uri type="html">documents/s63/document.html</uri>
+  <uri type="rxl">documents/s63/document.rxl</uri>
+  <docidentifier type="IHO" primary="true">S-63</docidentifier>
+  <docnumber>63</docnumber>
+  <date type="published">
+    <on>2020-03-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1.2.1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2020</from>
+    <owner>
+      <organization>
+        <name>International Hydrographic Organization</name>
+        <abbreviation>IHO</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title>Standards and Specifications</title>
+    <abbreviation>S</abbreviation>
+  </series>
+  <ext schema-version="v1.0.0">
+    <doctype>standard</doctype>
+    <editorialgroup>
+      <committee>
+        <abbreviation>HSSC</abbreviation>
+      </committee>
+      <workgroup>
+        <abbreviation>DPSWG</abbreviation>
+      </workgroup>
+    </editorialgroup>
+  </ext>
+</bibdata></relation>
+</relaton-collection>
