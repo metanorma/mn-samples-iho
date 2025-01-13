@@ -1,4 +1,4 @@
-= Spatial Data Infrastructures "The Marine Dimension" (Preview PR)
+= Spatial Data Infrastructures "The Marine Dimension"
 :series: C
 :docnumber: 17
 :doctype: standard
