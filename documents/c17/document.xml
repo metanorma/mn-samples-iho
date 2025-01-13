@@ -58,7 +58,7 @@
 <p id="_8c58b56e-5b61-4551-e5eb-8a8deb6cdae2">Due to the ongoing dynamic developments in MSDI the MSDIWG made selected and important changes. This version was subsequently adopted by the IHO Member States as version 2.0.0.</p>
 </foreword><introduction id="_introduction" obligation="informative">
 <title>Introduction</title>
-<p id="_6e08bcc4-5b09-61c4-e6fd-af9b324c0ec0">The purpose of this document isto explain the way that a Hydrographic Office (HO) should promote, support, and participate in Spatial Data Infrastructures (SDIs). It is not definitive in its nature, preferring instead to provide guidance on how best to achieve this through practical advice, simple step by step processes, useful links to reference material and examples of best practice.</p>
+<p id="_de5c6933-d4c2-86e6-73d7-6794c9879fd7">The purpose of this document is to explain the way that a Hydrographic Office (HO) should promote, support, and participate in Spatial Data Infrastructures (SDIs). It is not definitive in its nature, preferring instead to provide guidance on how best to achieve this through practical advice, simple step by step processes, useful links to reference material and examples of best practice.</p>
 
 <p id="_99bedd8f-3e97-6851-3fa3-9f9abfe50d85">We now have a growing body of knowledge and information available to the HO community that provides guidelines rather than advice to enable us to better understand and appreciate the value and benefit of SDI. Rather than repeat this general information at length, the relevant literature reviews are provided at <xref target="annexA"/> of this document.</p>
 
@@ -141,7 +141,7 @@
 
 <clause id="_education_and_learning" obligation="normative">
 <title>Education and Learning</title>
-<p id="_1c61a1fa-9040-51cb-057a-9c1a1150b812">SDI cannot be successfully delivered without the four key pillars above. However, a fifth key element which underpins the four pillars; education and learning, is very important but often overlooked (<xref target="fig2"/>). In the HO community, involvement in MSDI take up and adoption has been slow. A lack of understanding of SDI has been responsible, in part, for MSDI input lagging behind its terrestrial counterparts with MSDI, as part of existing SDI not considered a priority orconsidered unnecessary.</p>
+<p id="_1d9b8b38-7e24-4aa0-56cd-fef73d3458d6">SDI cannot be successfully delivered without the four key pillars above. However, a fifth key element which underpins the four pillars; education and learning, is very important but often overlooked (<xref target="fig2"/>). In the HO community, involvement in MSDI take up and adoption has been slow. A lack of understanding of SDI has been responsible, in part, for MSDI input lagging behind its terrestrial counterparts with MSDI, as part of existing SDI not considered a priority or considered unnecessary.</p>
 
 <p id="_2b364a32-1f99-edef-53e2-09eeec12e65a"><xref target="annexE"/> introduces a 1-Day Training Session template with the Fundamentals of a Marine Spatial Data Infrastructure (MSDI).</p>
 
@@ -620,7 +620,7 @@
 
 <p id="_d86c5078-1c04-8e77-d5e3-03f19c9b161b">The HO should also identify the organization’s data custodians/stewards for each specific data set.</p>
 
-<p id="_eea4e9ea-9384-a442-103e-19278792b0b7">Types of Hydrographic data (by theme) suitable for MSDI mayinclude:</p>
+<p id="_e0cf64a3-eb0c-b9a9-0249-1f5673cb9d90">Types of Hydrographic data (by theme) suitable for MSDI may include:</p>
 
 <ul id="_3cbf263c-4a8f-263c-5b91-dfdcb4c5862c"><li><p id="_957fc0e6-a36d-4271-2504-c1e250697aac">Bathymetry (e.g. Digital Elevation Model, Triangulated Irregular Network, Grid, points);</p>
 </li>
