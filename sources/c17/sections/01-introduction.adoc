@@ -1,6 +1,6 @@
 == Introduction
 
-The purpose of this document isto explain the way that a Hydrographic Office (HO) should promote, support, and participate in Spatial Data Infrastructures (SDIs). It is not definitive in its nature, preferring instead to provide guidance on how best to achieve this through practical advice, simple step by step processes, useful links to reference material and examples of best practice.
+The purpose of this document is to explain the way that a Hydrographic Office (HO) should promote, support, and participate in Spatial Data Infrastructures (SDIs). It is not definitive in its nature, preferring instead to provide guidance on how best to achieve this through practical advice, simple step by step processes, useful links to reference material and examples of best practice.
 
 We now have a growing body of knowledge and information available to the HO community that provides guidelines rather than advice to enable us to better understand and appreciate the value and benefit of SDI. Rather than repeat this general information at length, the relevant literature reviews are provided at <<annexA>> of this document.
 

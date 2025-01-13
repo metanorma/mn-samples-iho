@@ -60,7 +60,7 @@ Arguably, the most important component of SDI is the information content which i
 
 ==== Education and Learning
 
-SDI cannot be successfully delivered without the four key pillars above. However, a fifth key element which underpins the four pillars; education and learning, is very important but often overlooked (<<fig2>>). In the HO community, involvement in MSDI take up and adoption has been slow. A lack of understanding of SDI has been responsible, in part, for MSDI input lagging behind its terrestrial counterparts with MSDI, as part of existing SDI not considered a priority orconsidered unnecessary.
+SDI cannot be successfully delivered without the four key pillars above. However, a fifth key element which underpins the four pillars; education and learning, is very important but often overlooked (<<fig2>>). In the HO community, involvement in MSDI take up and adoption has been slow. A lack of understanding of SDI has been responsible, in part, for MSDI input lagging behind its terrestrial counterparts with MSDI, as part of existing SDI not considered a priority or considered unnecessary.
 
 <<annexE>> introduces a 1-Day Training Session template with the Fundamentals of a Marine Spatial Data Infrastructure (MSDI).
 

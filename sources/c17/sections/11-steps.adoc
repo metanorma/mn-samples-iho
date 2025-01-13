@@ -24,7 +24,7 @@ An HO which provides information/data into an MSDI must take steps to ensure tha
 
 The HO should also identify the organization's data custodians/stewards for each specific data set.
 
-Types of Hydrographic data (by theme) suitable for MSDI mayinclude:
+Types of Hydrographic data (by theme) suitable for MSDI may include:
 
 * Bathymetry (e.g. Digital Elevation Model, Triangulated Irregular Network, Grid, points);
 * Coastline;
