@@ -1,6 +1,7 @@
 = Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers (Preview PR)
 :series: S
-:docnumber: Guidelines-S5-S8
+:docnumberx: Guidelines-S5-S8 // illegal now in IHO
+:docnumber: 5080
 :doctype: specification
 :edition: 2.1.0
 :language: en
