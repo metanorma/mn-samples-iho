@@ -10,7 +10,7 @@
 <name>hspt</name>
 </subdivision></organization></contributor><contributor><role type="publisher"/><organization>
 <name>International Hydrographic Organization</name>
-<abbreviation>IHO</abbreviation></organization></contributor><edition>6</edition><version><draft>2.0.0</draft></version><language>en</language><script>Latn</script><status><stage>draft-proposal</stage></status><copyright><from>2020</from><owner><organization>
+<abbreviation>IHO</abbreviation></organization></contributor><edition>6</edition><version>2.0.0</version><language>en</language><script>Latn</script><status><stage>draft-proposal</stage></status><copyright><from>2020</from><owner><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Standards and Specifications</title>

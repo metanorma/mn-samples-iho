@@ -1,3 +1,2 @@
 The contents of fo:region-body on page 28 exceed its viewport by 104458 millipoints. (See position 1:2614)
 Please check the PDF and if necessary, report this issue at the following link: https://github.com/metanorma/mn-native-pdf/issues/new, and attach the XSL-FO file or fragment: '/__w/mn-samples-iho/mn-samples-iho/_site/documents/c17/document.pdf.fo.xml'.
-Bookmarks: Unresolved ID reference "_13d7055e-30fc-845a-c60e-8972faf092d9" found.

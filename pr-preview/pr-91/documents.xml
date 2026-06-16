@@ -1,11 +1,11 @@
-<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>IHO Publications in Metanorma</title><contributor><role type='author'/><organization><name>IHO: International Hydrographic Organization</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" language="en">Guidance on Crowdsourced Bathymetry (Preview PR)</title>
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>IHO Publications in Metanorma</title><contributor><role type='author'/><organization><name>IHO: International Hydrographic Organization</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <title language="en" type="main">Guidance on Crowdsourced Bathymetry (Preview PR)</title>
   <uri type="xml">./documents/b12/document.xml</uri>
   <uri type="pdf">./documents/b12/document.pdf</uri>
   <uri type="doc">./documents/b12/document.doc</uri>
   <uri type="html">./documents/b12/document.html</uri>
   <uri type="rxl">./documents/b12/document.rxl</uri>
-  <docidentifier type="IHO" primary="true">B-12</docidentifier>
+  <docidentifier primary="true" type="IHO">B-12</docidentifier>
   <docnumber>12</docnumber>
   <date type="published">
     <on>2020-01-20</on>
@@ -23,12 +23,12 @@
     </role>
     <organization>
       <name>International Hydrographic Organization</name>
-      <subdivision>
-ircc
-</subdivision>
-      <subdivision>
-csbwg
-</subdivision>
+      <subdivision type="Committee">
+        <name>ircc</name>
+      </subdivision>
+      <subdivision type="Workgroup">
+        <name>csbwg</name>
+      </subdivision>
     </organization>
   </contributor>
   <contributor>
@@ -57,21 +57,25 @@ csbwg
     <title>Bathymetric</title>
     <abbreviation>B</abbreviation>
   </series>
-  <ext schema-version="v1.0.0">
+  <ext schema-version="v1.1.2">
     <doctype>standard</doctype>
+    <flavor>iho</flavor>
+    <structuredidentifier>
+      <docnumber>12</docnumber>
+    </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" language="en">Spatial Data Infrastructures "The Marine Dimension"</title>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <title language="en" type="main">Spatial Data Infrastructures "The Marine Dimension"</title>
   <uri type="xml">./documents/c17/document.xml</uri>
   <uri type="pdf">./documents/c17/document.pdf</uri>
   <uri type="doc">./documents/c17/document.doc</uri>
   <uri type="html">./documents/c17/document.html</uri>
   <uri type="rxl">./documents/c17/document.rxl</uri>
-  <docidentifier type="IHO" primary="true">C-17</docidentifier>
+  <docidentifier primary="true" type="IHO">C-17</docidentifier>
   <docnumber>17</docnumber>
   <date type="published">
-    <on>2017-01-01</on>
+    <on>2017-01</on>
   </date>
   <contributor>
     <role type="author"/>
@@ -86,12 +90,12 @@ csbwg
     </role>
     <organization>
       <name>International Hydrographic Organization</name>
-      <subdivision>
-ircc
-</subdivision>
-      <subdivision>
-msdiwg
-</subdivision>
+      <subdivision type="Committee">
+        <name>ircc</name>
+      </subdivision>
+      <subdivision type="Workgroup">
+        <name>msdiwg</name>
+      </subdivision>
     </organization>
   </contributor>
   <contributor>
@@ -120,21 +124,25 @@ msdiwg
     <title>Capacity Building</title>
     <abbreviation>C</abbreviation>
   </series>
-  <ext schema-version="v1.0.0">
+  <ext schema-version="v1.1.2">
     <doctype>standard</doctype>
+    <flavor>iho</flavor>
+    <structuredidentifier>
+      <docnumber>17</docnumber>
+    </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" language="en">Publication M-1 (Preview PR)</title>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <title language="en" type="main">Publication M-1 (Preview PR)</title>
   <uri type="xml">./documents/m1/document.xml</uri>
   <uri type="pdf">./documents/m1/document.pdf</uri>
   <uri type="doc">./documents/m1/document.doc</uri>
   <uri type="html">./documents/m1/document.html</uri>
   <uri type="rxl">./documents/m1/document.rxl</uri>
-  <docidentifier type="IHO" primary="true">M-1</docidentifier>
+  <docidentifier primary="true" type="IHO">M-1</docidentifier>
   <docnumber>1</docnumber>
   <date type="published">
-    <on>2017-06-01</on>
+    <on>2017-06</on>
   </date>
   <contributor>
     <role type="author"/>
@@ -149,12 +157,12 @@ msdiwg
     </role>
     <organization>
       <name>International Hydrographic Organization</name>
-      <subdivision>
-hssc
-</subdivision>
-      <subdivision>
-spwg
-</subdivision>
+      <subdivision type="Committee">
+        <name>hssc</name>
+      </subdivision>
+      <subdivision type="Workgroup">
+        <name>spwg</name>
+      </subdivision>
     </organization>
   </contributor>
   <contributor>
@@ -183,21 +191,25 @@ spwg
     <title>Miscellaneous</title>
     <abbreviation>M</abbreviation>
   </series>
-  <ext schema-version="v1.0.0">
+  <ext schema-version="v1.1.2">
     <doctype>regulation</doctype>
+    <flavor>iho</flavor>
+    <structuredidentifier>
+      <docnumber>1</docnumber>
+    </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" language="en">Bathymetric Surface Product Specification (Preview PR)</title>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <title language="en" type="main">Bathymetric Surface Product Specification (Preview PR)</title>
   <uri type="xml">./documents/s102/document.xml</uri>
   <uri type="pdf">./documents/s102/document.pdf</uri>
   <uri type="doc">./documents/s102/document.doc</uri>
   <uri type="html">./documents/s102/document.html</uri>
   <uri type="rxl">./documents/s102/document.rxl</uri>
-  <docidentifier type="IHO" primary="true">S-102</docidentifier>
+  <docidentifier primary="true" type="IHO">S-102</docidentifier>
   <docnumber>102</docnumber>
   <date type="published">
-    <on>2022-10-01</on>
+    <on>2022-10</on>
   </date>
   <contributor>
     <role type="author"/>
@@ -212,12 +224,12 @@ spwg
     </role>
     <organization>
       <name>International Hydrographic Organization</name>
-      <subdivision>
-hssc
-</subdivision>
-      <subdivision>
-tsmad
-</subdivision>
+      <subdivision type="Committee">
+        <name>hssc</name>
+      </subdivision>
+      <subdivision type="Workgroup">
+        <name>tsmad</name>
+      </subdivision>
     </organization>
   </contributor>
   <contributor>
@@ -246,21 +258,25 @@ tsmad
     <title>Standards and Specifications</title>
     <abbreviation>S</abbreviation>
   </series>
-  <ext schema-version="v1.0.0">
+  <ext schema-version="v1.1.2">
     <doctype>standard</doctype>
+    <flavor>iho</flavor>
+    <structuredidentifier>
+      <docnumber>102</docnumber>
+    </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" language="en">IHO Standards for Hydrographic Surveys (Preview PR)</title>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <title language="en" type="main">IHO Standards for Hydrographic Surveys (Preview PR)</title>
   <uri type="xml">./documents/s44/document.xml</uri>
   <uri type="pdf">./documents/s44/document.pdf</uri>
   <uri type="doc">./documents/s44/document.doc</uri>
   <uri type="html">./documents/s44/document.html</uri>
   <uri type="rxl">./documents/s44/document.rxl</uri>
-  <docidentifier type="IHO" primary="true">S-44</docidentifier>
+  <docidentifier primary="true" type="IHO">S-44</docidentifier>
   <docnumber>44</docnumber>
   <date type="published">
-    <on>2020-03-01</on>
+    <on>2020-03</on>
   </date>
   <contributor>
     <role type="author"/>
@@ -275,12 +291,12 @@ tsmad
     </role>
     <organization>
       <name>International Hydrographic Organization</name>
-      <subdivision>
-hssc
-</subdivision>
-      <subdivision>
-hspt
-</subdivision>
+      <subdivision type="Committee">
+        <name>hssc</name>
+      </subdivision>
+      <subdivision type="Workgroup">
+        <name>hspt</name>
+      </subdivision>
     </organization>
   </contributor>
   <contributor>
@@ -291,9 +307,7 @@ hspt
     </organization>
   </contributor>
   <edition>6</edition>
-  <version>
-    <draft>2.0.0</draft>
-  </version>
+  <version>2.0.0</version>
   <language>en</language>
   <script>Latn</script>
   <status>
@@ -312,21 +326,25 @@ hspt
     <title>Standards and Specifications</title>
     <abbreviation>S</abbreviation>
   </series>
-  <ext schema-version="v1.0.0">
+  <ext schema-version="v1.1.2">
     <doctype>standard</doctype>
+    <flavor>iho</flavor>
+    <structuredidentifier>
+      <docnumber>44</docnumber>
+    </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" language="en">Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers (Preview PR)</title>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <title language="en" type="main">Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers (Preview PR)</title>
   <uri type="xml">./documents/s5-guidelines/document.xml</uri>
   <uri type="pdf">./documents/s5-guidelines/document.pdf</uri>
   <uri type="doc">./documents/s5-guidelines/document.doc</uri>
   <uri type="html">./documents/s5-guidelines/document.html</uri>
   <uri type="rxl">./documents/s5-guidelines/document.rxl</uri>
-  <docidentifier type="IHO" primary="true">S-Guidelines-S5-S8</docidentifier>
-  <docnumber>Guidelines-S5-S8</docnumber>
+  <docidentifier primary="true" type="IHO">S-5080</docidentifier>
+  <docnumber>5080</docnumber>
   <date type="published">
-    <on>2019-05-01</on>
+    <on>2019-05</on>
   </date>
   <contributor>
     <role type="author"/>
@@ -341,12 +359,12 @@ hspt
     </role>
     <organization>
       <name>International Hydrographic Organization</name>
-      <subdivision>
-hssc
-</subdivision>
-      <subdivision>
-ibsc
-</subdivision>
+      <subdivision type="Committee">
+        <name>hssc</name>
+      </subdivision>
+      <subdivision type="Workgroup">
+        <name>ibsc</name>
+      </subdivision>
     </organization>
   </contributor>
   <contributor>
@@ -375,21 +393,25 @@ ibsc
     <title>Standards and Specifications</title>
     <abbreviation>S</abbreviation>
   </series>
-  <ext schema-version="v1.0.0">
+  <ext schema-version="v1.1.2">
     <doctype>specification</doctype>
+    <flavor>iho</flavor>
+    <structuredidentifier>
+      <docnumber>5080</docnumber>
+    </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" language="en">Standards of Competence for Category "A" Hydrographic Surveyors (Preview PR)</title>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <title language="en" type="main">Standards of Competence for Category "A" Hydrographic Surveyors (Preview PR)</title>
   <uri type="xml">./documents/s5a/document.xml</uri>
   <uri type="pdf">./documents/s5a/document.pdf</uri>
   <uri type="doc">./documents/s5a/document.doc</uri>
   <uri type="html">./documents/s5a/document.html</uri>
   <uri type="rxl">./documents/s5a/document.rxl</uri>
-  <docidentifier type="IHO" primary="true">S-5A</docidentifier>
+  <docidentifier primary="true" type="IHO">S-5A</docidentifier>
   <docnumber>5A</docnumber>
   <date type="published">
-    <on>2018-06-01</on>
+    <on>2018-06</on>
   </date>
   <contributor>
     <role type="author"/>
@@ -404,12 +426,12 @@ ibsc
     </role>
     <organization>
       <name>International Hydrographic Organization</name>
-      <subdivision>
-hssc
-</subdivision>
-      <subdivision>
-ibsc
-</subdivision>
+      <subdivision type="Committee">
+        <name>hssc</name>
+      </subdivision>
+      <subdivision type="Workgroup">
+        <name>ibsc</name>
+      </subdivision>
     </organization>
   </contributor>
   <contributor>
@@ -438,21 +460,25 @@ ibsc
     <title>Standards and Specifications</title>
     <abbreviation>S</abbreviation>
   </series>
-  <ext schema-version="v1.0.0">
+  <ext schema-version="v1.1.2">
     <doctype>standard</doctype>
+    <flavor>iho</flavor>
+    <structuredidentifier>
+      <docnumber>5A</docnumber>
+    </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" language="en">Standards of Competence for Category "B" Hydrographic Surveyors (Preview PR)</title>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <title language="en" type="main">Standards of Competence for Category "B" Hydrographic Surveyors (Preview PR)</title>
   <uri type="xml">./documents/s5b/document.xml</uri>
   <uri type="pdf">./documents/s5b/document.pdf</uri>
   <uri type="doc">./documents/s5b/document.doc</uri>
   <uri type="html">./documents/s5b/document.html</uri>
   <uri type="rxl">./documents/s5b/document.rxl</uri>
-  <docidentifier type="IHO" primary="true">S-5B</docidentifier>
+  <docidentifier primary="true" type="IHO">S-5B</docidentifier>
   <docnumber>5B</docnumber>
   <date type="published">
-    <on>2017-06-01</on>
+    <on>2017-06</on>
   </date>
   <contributor>
     <role type="author"/>
@@ -467,12 +493,12 @@ ibsc
     </role>
     <organization>
       <name>International Hydrographic Organization</name>
-      <subdivision>
-hssc
-</subdivision>
-      <subdivision>
-ibsc
-</subdivision>
+      <subdivision type="Committee">
+        <name>hssc</name>
+      </subdivision>
+      <subdivision type="Workgroup">
+        <name>ibsc</name>
+      </subdivision>
     </organization>
   </contributor>
   <contributor>
@@ -501,21 +527,25 @@ ibsc
     <title>Standards and Specifications</title>
     <abbreviation>S</abbreviation>
   </series>
-  <ext schema-version="v1.0.0">
+  <ext schema-version="v1.1.2">
     <doctype>standard</doctype>
+    <flavor>iho</flavor>
+    <structuredidentifier>
+      <docnumber>5B</docnumber>
+    </structuredidentifier>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" language="en">IHO Data Protection Scheme (Preview PR)</title>
+<relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <title language="en" type="main">IHO Data Protection Scheme (Preview PR)</title>
   <uri type="xml">./documents/s63/document.xml</uri>
   <uri type="pdf">./documents/s63/document.pdf</uri>
   <uri type="doc">./documents/s63/document.doc</uri>
   <uri type="html">./documents/s63/document.html</uri>
   <uri type="rxl">./documents/s63/document.rxl</uri>
-  <docidentifier type="IHO" primary="true">S-63</docidentifier>
+  <docidentifier primary="true" type="IHO">S-63</docidentifier>
   <docnumber>63</docnumber>
   <date type="published">
-    <on>2020-03-01</on>
+    <on>2020-03</on>
   </date>
   <contributor>
     <role type="author"/>
@@ -530,12 +560,12 @@ ibsc
     </role>
     <organization>
       <name>International Hydrographic Organization</name>
-      <subdivision>
-hssc
-</subdivision>
-      <subdivision>
-dpswg
-</subdivision>
+      <subdivision type="Committee">
+        <name>hssc</name>
+      </subdivision>
+      <subdivision type="Workgroup">
+        <name>dpswg</name>
+      </subdivision>
     </organization>
   </contributor>
   <contributor>
@@ -564,8 +594,12 @@ dpswg
     <title>Standards and Specifications</title>
     <abbreviation>S</abbreviation>
   </series>
-  <ext schema-version="v1.0.0">
+  <ext schema-version="v1.1.2">
     <doctype>standard</doctype>
+    <flavor>iho</flavor>
+    <structuredidentifier>
+      <docnumber>63</docnumber>
+    </structuredidentifier>
   </ext>
 </bibdata></relation>
 </relaton-collection>

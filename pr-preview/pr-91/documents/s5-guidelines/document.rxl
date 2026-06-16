@@ -1,6 +1,6 @@
 <bibdata type="standard">
 <title language="en" type="main">Guidelines for the Implementation of the Standards of Competence for Hydrographic Surveyors and Nautical Cartographers (Preview PR)</title>
-<docidentifier primary="true" type="IHO">S-Guidelines-S5-S8</docidentifier><docnumber>Guidelines-S5-S8</docnumber><date type="published"><on>2019-05</on></date><contributor><role type="author"/><organization>
+<docidentifier primary="true" type="IHO">S-5080</docidentifier><docnumber>5080</docnumber><date type="published"><on>2019-05</on></date><contributor><role type="author"/><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="author"><description>committee</description></role><organization>
 <name>International Hydrographic Organization</name>
@@ -14,4 +14,4 @@
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Standards and Specifications</title>
-<abbreviation>S</abbreviation></series><ext><doctype>specification</doctype><flavor>iho</flavor><structuredidentifier><docnumber>Guidelines-S5-S8</docnumber></structuredidentifier></ext></bibdata>
+<abbreviation>S</abbreviation></series><ext><doctype>specification</doctype><flavor>iho</flavor><structuredidentifier><docnumber>5080</docnumber></structuredidentifier></ext></bibdata>
