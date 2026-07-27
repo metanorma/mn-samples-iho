@@ -1,11 +1,17 @@
 <bibdata type="standard">
-<title language="en" format="text/plain">IHO Standards for Hydrographic Surveys (Preview PR)</title>
+<title language="en" type="main">IHO Standards for Hydrographic Surveys (Preview PR)</title>
 <docidentifier primary="true" type="IHO">S-44</docidentifier><docnumber>44</docnumber><date type="published"><on>2020-03</on></date><contributor><role type="author"/><organization>
 <name>International Hydrographic Organization</name>
-<abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="author"><description>committee</description></role><organization>
 <name>International Hydrographic Organization</name>
-<abbreviation>IHO</abbreviation></organization></contributor><edition>6</edition><language>en</language><script>Latn</script><status><stage>draft-proposal</stage></status><copyright><from>2020</from><owner><organization>
+<subdivision type="Committee">
+<name>hssc</name>
+</subdivision><subdivision type="Workgroup">
+<name>hspt</name>
+</subdivision></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></contributor><edition>6</edition><version>2.0.0</version><language>en</language><script>Latn</script><status><stage>draft-proposal</stage></status><copyright><from>2020</from><owner><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Standards and Specifications</title>
-<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><flavor>iho</flavor><editorialgroup><committee><abbreviation>HSSC</abbreviation></committee><workgroup><abbreviation>HSPT</abbreviation></workgroup></editorialgroup></ext></bibdata>
+<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><flavor>iho</flavor><structuredidentifier><docnumber>44</docnumber></structuredidentifier></ext></bibdata>
