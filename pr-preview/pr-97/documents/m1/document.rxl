@@ -1,0 +1,17 @@
+<bibdata type="standard">
+<title language="en" type="main">Publication M-1 (Preview PR)</title>
+<docidentifier primary="true" type="IHO">M-1</docidentifier><docnumber>1</docnumber><date type="published"><on>2017-06</on></date><contributor><role type="author"/><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="author"><description>committee</description></role><organization>
+<name>International Hydrographic Organization</name>
+<subdivision type="Committee">
+<name>hssc</name>
+</subdivision><subdivision type="Workgroup">
+<name>spwg</name>
+</subdivision></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></contributor><edition>2.1.0</edition><language>en</language><script>Latn</script><status><stage>in-force</stage></status><copyright><from>2017</from><owner><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
+<title>Miscellaneous</title>
+<abbreviation>M</abbreviation></series><ext><doctype>regulation</doctype><flavor>iho</flavor><structuredidentifier><docnumber>1</docnumber></structuredidentifier></ext></bibdata>
