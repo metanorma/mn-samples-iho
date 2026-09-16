@@ -1,0 +1,5329 @@
+[[sec-feature-catalogue-entries]]
+== Feature Catalogue Entries
+
+The objects and attributes identified for use in the S-121 Product Specification are described in conformance with the IHO Geospatial Information (GI) Registry.
+
+[NOTE]
+====
+In this version 1.0.0 of the S-121 Product Specification the following tables constitute the Feature Catalogue as a document. These tables will then be entered into the IHO GI Registry and a subsequent version of the Feature Catalogue will be generated from the Registry. These tables in a subsequent version of the S-121 Product Specification will also be generated from the Registry. This process ensures complete alignment between the Feature Catalogue, the Registry and this document.
+====
+
+[[sec-s-121-location-feature-objects]]
+=== S-121 Location Feature Objects
+
+[[sec-limit-point]]
+==== Limit Point
+
+[[tbl-4]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Domain*|MLB
+h|*AlphaCode*|LIMPNT
+h|*Name*|Limit Point
+h|*Alias*|MA_LimitPoint
+h|*CamelCase*|LimitPoint
+h|*Use Type*|Geographic; Administrative
+h|*Definition*|A limit point is a point on the outer limit of a maritime zone.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|locationObjectType, pointType, interpolationType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|"BaselinePoint", "BoundaryPoint", "ContributingPoint"
+h|*Remarks*|A point typically associated with only one party.
+h|*Permitted Primitives*|P
+|===
+
+[[sec-baseline-point]]
+==== Baseline Point
+
+[[tbl-5]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Domain*|MLB
+h|*AlphaCode*|BASEPT
+h|*Name*|Baseline Point
+h|*Alias*|MA_BaselinePoint
+h|*CamelCase*|BaselinePoint
+h|*Use Type*|Administrative
+h|*Definition*|A baseline point is a point on a baseline.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|locationObjectType, pointType, interpolationType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|"LimitPoint", "BoundaryPoint", "ContributingPoint"
+h|*Remarks*|Can be any point that makes up a "Baseline".
+h|*Permitted Primitives*|P
+|===
+
+[[sec-boundary-point]]
+==== Boundary Point
+
+[[tbl-6]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|BDNPNT
+h|*Name*|Boundary Point
+h|*Alias*|MA_BoundaryPoint
+h|*CamelCase*|BoundaryPoint
+h|*Use Type*|Administrative
+h|*Definition*|A point on a boundary.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|locationObjectType, pointType, interpolationType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|"BaselinePoint", "LimitPoint", "ContributingPoint"
+h|*Remarks*|A point associated with more than one party.
+h|*Permitted Primitives*|P
+|===
+
+[[sec-contributing-point]]
+==== Contributing Point
+
+[[tbl-7]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|CNTPNT
+h|*Name*|Contributing Point
+h|*Alias*|MA_ContributingPoint
+h|*CamelCase*|ContributingPoint
+h|*Use Type*|Administrative
+h|*Definition*|A point used for computation.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|locationObjectType, pointType, interpolationType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|"BaselinePoint", "LimitPoint", "BoundaryPoint"
+h|*Remarks*|
+h|*Permitted Primitives*|P
+|===
+
+[[sec-s-121-limit-feature-objects]]
+=== S-121 Limit Feature Objects
+
+[[sec-boundary]]
+==== Boundary
+
+[[tbl-8]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|BNDARY
+h|*Name*|Boundary
+h|*Alias*|MA_Boundary
+h|*CamelCase*|Boundary
+h|*Use Type*|Administrative
+h|*Definition*|A delimitation line between two or more entities.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|InternationalBoundary
+h|*Remarks*|In accordance with articles 74, 75, 83, and 84 of UNCLOS, information on maritime boundaries, such as information about the delimitation of exclusive economic zones and continental shelves between states, may be provided for S-121 only when an agreement is reached between relevant states.
+h|*Permitted Primitives*|L
+|===
+
+[[sec-international-boundary]]
+==== International Boundary
+
+[[tbl-9]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|INTBND
+h|*Name*|International Boundary
+h|*Alias*|MA_InternationalBoundary
+h|*CamelCase*|InternationalBoundary
+h|*Use Type*|Administrative
+h|*Definition*|A delimitation between two or more States.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|Boundary
+h|*Remarks*|In accordance with articles 74, 75, 83, and 84 of UNCLOS, information on maritime boundaries, such as information about the delimitation of exclusive economic zones and continental shelves between states, may be provided for S-121 only when an agreement is reached between relevant states.
+h|*Permitted Primitives*|L
+|===
+
+[[sec-baseline]]
+==== Baseline
+
+[[tbl-10]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|BASELN
+h|*Name*|Baseline
+h|*Alias*|MA_Baseline
+h|*CamelCase*|Baseline
+h|*Use Type*|Administrative
+h|*Definition*|A baseline is a line from which the breadths of the territorial sea, and other maritime zones are measured.
+h|*Reference*|UNCLOS: Articles 5, 6, 7, 9, 10, 11, 13, 14 and 47;
+h|*IHO-S32*|390
+h|*Definition Source*|UNCLOS "CI_Citation"; IHO S-32, 5th Ed. "CI_Citation
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|NormalBaseline, StraightBaseline, ArchipelagicBaseline, LowTideElevationsBaseline, MouthOfRiversBaseline, ReefsBaseline, BaysBaseline,  PortsBaseline
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-normal-baseline]]
+==== Normal Baseline
+
+[[tbl-11]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|NORBLN
+h|*Name*|Normal Baseline
+h|*Alias*|MA_NormalBaseline
+h|*CamelCase*|NormalBaseline
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Articles 5
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|Baseline, StraightBaseline, ArchipelagicBaseline, LowTideElevationsBaseline, MouthOfRiversBaseline, ReefsBaseline, BaysBaseline,  PortsBaseline
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-straight-baseline]]
+==== Straight Baseline
+
+[[tbl-12]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Unspecified
+h|*Domain*|HYDRO
+h|*AlphaCode*|STSLNE
+h|*Name*|Straight Baseline
+h|*Alias*|MA_StraightBaseline
+h|*CamelCase*|StraightBaseline
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 7
+h|*IHO-S32*|393;
+h|*Definition Source*|IHO S-32, 5th Ed. "CI_Citation
+h|*Similarity to Source*|
+h|*Int1*|N42
+h|*S-4*|440.4
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|Baseline, NormalBaseline, ArchipelagicBaseline, LowTideElevationsBaseline, MouthOfRiversBaseline, ReefsBaseline, BaysBaseline,  PortsBaseline
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-archipelagic-baseline]]
+==== Archipelagic Baseline
+
+[[tbl-13]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|ARCBLN
+h|*Name*|Archipelagic Baseline
+h|*Alias*|MA_ArchipelagicBaseline
+h|*CamelCase*|ArchipelagicBaseline
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 47
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|Baseline, NormalBaseline, StraightBaseline, LowTideElevationsBaseline, MouthOfRiversBaseline, ReefsBaseline, BaysBaseline,  PortsBaseline
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-low-tide-elevations]]
+==== Low Tide Elevations
+
+[[tbl-14]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|LTEBLN
+h|*Name*|Low Tide Elevations
+h|*Alias*|MA_LowTideElevationsBaseline
+h|*CamelCase*|LowTideElevationBaseline
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 13
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|Baseline, NormalBaseline, StraightBaseline, ArchipelagicBaseline, MouthOfRiversBaseline, ReefsBaseline, BaysBaseline,  PortsBaseline
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-mouths-of-rivers]]
+==== Mouths of Rivers
+
+[[tbl-15]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|MRVBLN
+h|*Name*|Mouths of Rivers
+h|*Alias*|MA_MouthsOfRiversBaseline
+h|*CamelCase*|MouthsOfRiversBaseline
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 9
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|Baseline, NormalBaseline, StraightBaseline, ArchipelagicBaseline, LowTideElevationsBaseline, ReefsBaseline, BaysBaseline,  PortsBaseline
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-reefs]]
+==== Reefs
+
+[[tbl-16]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|REFBLN
+h|*Name*|Reefs
+h|*Alias*|MA_ReefsBaseline
+h|*CamelCase*|ReefsBaseline
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 6
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|Baseline, NormalBaseline, StraightBaseline, ArchipelagicBaseline, LowTideElevationsBaseline, MouthOfRiversBaseline, BaysBaseline,  PortsBaseline
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-bays]]
+==== Bays
+
+[[tbl-17]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|BAYBLN
+h|*Name*|Bays
+h|*Alias*|MA_BaysBaseline
+h|*CamelCase*|BaysBaseline
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 10
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|Baseline, NormalBaseline, StraightBaseline, ArchipelagicBaseline, LowTideElevationsBaseline, MouthOfRiversBaseline, ReefsBaseline, PortsBaseline
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-ports]]
+==== Ports
+
+[[tbl-18]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|PRTBLN
+h|*Name*|Ports Baseline
+h|*Alias*|MA_PortsBaseline
+h|*CamelCase*|PortsBaseline
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 11
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|Baseline, NormalBaseline, StraightBaseline, ArchipelagicBaseline, LowTideElevationsBaseline, MouthOfRiversBaseline, ReefsBaseline, BaysBaseline
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-outer-limit-of-the-territorial-sea]]
+==== Outer Limit of the Territorial Sea
+
+[[tbl-19]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|TESLIM
+h|*Name*|Outer Limit of the Territorial Sea
+h|*Alias*|MA_OuterLimitOfTheTerritorialSea
+h|*CamelCase*|OuterLimitOfTheTerritorialSea
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Articles 3, 4and 15
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|OuterLimitOfTheContiguousZone, OuterLimitOfTheExclusiveEconomicZone, OuterLimitOfTheContinentalShelf, OuterLimitOfTheRoadstead
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-outer-limit-of-the-contiguous-zone]]
+==== Outer Limit of the Contiguous Zone
+
+[[tbl-20]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|CZOLIM
+h|*Name*|Outer Limit of the Contiguous Zone
+h|*Alias*|MA_OuterLimitOfTheContiguousZone
+h|*CamelCase*|OuterLimitOfTheContiguousZone
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 33
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|OuterLimitOfTheTerritorialSea, OuterLimitOfTheExclusiveEconomicZone, OuterLimitOfTheContinentalShelf, OuterLimitOfTheRoadstead
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-outer-limit-of-the-exclusive-economic-zone]]
+==== Outer Limit of the Exclusive Economic Zone
+
+[[tbl-21]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|EEZLIM
+h|*Name*|Outer Limit of the Exclusive Economic Zone
+h|*Alias*|MA_OuterLimitOfTheExclusiveEconomicZone
+h|*CamelCase*|OuterLimitOfTheExclusiveEconomicZone
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 57 and 74
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|OuterLimitOfTheTerritorialSea, OuterLimitOfTheContiguousZone, OuterLimitOfTheContinentalShelf, OuterLimitOfTheRoadstead
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-outer-limit-of-the-continental-shelf]]
+==== Outer Limit of the Continental Shelf
+
+[[tbl-22]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|CSOLIM
+h|*Name*|Outer Limit of the Continental Shelf
+h|*Alias*|MA_OuterLimitOfTheContinentalShelf
+h|*CamelCase*|OuterLimitOfTheContinentalShelf
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 76 and 83
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|OuterLimitOfTheTerritorialSea, OuterLimitOfTheContiguousZone, OuterLimitOfTheExclusiveEconomicZone, OuterLimitOfTheRoadstead
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-outer-limit-of-the-roadstead]]
+==== Outer Limit of the Roadstead
+
+[[tbl-23]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|RDSLIM
+h|*Name*|Outer Limit of the Roadstead
+h|*Alias*|MA_OuterLimitOfTheRoadstead
+h|*CamelCase*|OuterLimitOfTheRoadstead
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 12
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|OuterLimitOfTheTerritorialSea, OuterLimitOfTheContiguousZone, OuterLimitOfTheExclusiveEconomicZone, OuterLimitOfTheContinentalShelf.
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-construction-line]]
+==== Construction Line
+
+[[tbl-24]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|CONLIN
+h|*Name*|Construction Line
+h|*Alias*|MA_ConstructionLine
+h|*CamelCase*|ConstructionLine
+h|*Use Type*|Administrative
+h|*Definition*|An arc used for constructing aLimit or Boundary typically linking to a ContributingPoint.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|
+h|*Remarks*|
+h|*Permitted Primitives*|L
+|===
+
+[[sec-s-121-zone-feature-objects]]
+=== S-121 Zone Feature Objects
+
+[[sec-internal-waters]]
+==== Internal Waters
+
+[[tbl-25]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|INTWTR
+h|*Name*|Internal Waters
+h|*Alias*|MA_InternalWaters
+h|*CamelCase*|InternalWaters
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 8;
+h|*Definition Source*|UNCLOS "CI_Citation"; IHO S-32, 5th Ed. "CI_Citation
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|zoneObjectType, jurisdictionDomainType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|
+h|*Remarks*|
+h|*Permitted Primitives*|A
+|===
+
+[[sec-archipelagic-waters]]
+==== Archipelagic Waters
+
+[[tbl-26]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|ARCWTR
+h|*Name*|Archipelagic Waters
+h|*Alias*|MA_ArchipelagicWaters
+h|*CamelCase*|ArchipelagicWaters
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 49
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|zoneObjectType, jurisdictionDomainType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|TerritorialSea, ContiguousZone, ExclusiveEconomicZone, ContinentalShelf,  Roadsteads, HighSeas, TheArea.
+h|*Remarks*|Archipelagic waters are waters enclosed by the archipelagic baselines drawn in accordance with Article 47
+h|*Permitted Primitives*|A
+|===
+
+[[sec-territorial-sea]]
+==== Territorial Sea
+
+[[tbl-27]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Unspecified
+h|*Domain*|HYDRO
+h|*AlphaCode*|TESARE
+h|*Name*|Territorial Sea
+h|*Alias*|MA_TerritorialSea
+h|*CamelCase*|TerritorialSea
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Part II, Sections 1-3;
+h|*Definition Source*|UNCLOS "CI_Citation"; IHO S-32, 5th Ed. "CI_Citation
+h|*Similarity to Source*|by reference
+h|*Int1*|N43
+h|*S-4*|440.5
+h|*Recommended Attributes*|zoneObjectType, jurisdictionDomainType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|ArchipelagicWaters, ContiguousZone, ExclusiveEconomicZone, ContinentalShelf,  Roadsteads, HighSeas, TheArea.
+h|*Remarks*|
+h|*Permitted Primitives*|A
+|===
+
+[[sec-contiguous-zone]]
+==== Contiguous Zone
+
+[[tbl-28]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Unspecified
+h|*Domain*|HYDRO
+h|*AlphaCode*|CONZNE
+h|*Name*|Contiguous Zone
+h|*Alias*|MA_ContiguousZone
+h|*CamelCase*|ContiguousZone
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Part II, Section 4;
+h|*Definition Source*|UNCLOS "CI_Citation"; IHO S-32, 5th Ed. "CI_Citation
+h|*Similarity to Source*|by reference
+h|*Int1*|N44
+h|*S-4*|440.6
+h|*Recommended Attributes*|zoneObjectType, jurisdictionDomainType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|ArchipelagicWaters, TerritorialSea, ExclusiveEconomicZone, ContinentalShelf,  Roadsteads, HighSeas, TheArea.
+h|*Remarks*|
+h|*Permitted Primitives*|A
+|===
+
+[[sec-exclusive-economic-zone]]
+==== Exclusive Economic Zone
+
+[[tbl-29]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Unspecified
+h|*Domain*|HYDRO
+h|*AlphaCode*|EXEZNE
+h|*Name*|Exclusive Economic Zone
+h|*Alias*|MA_ExclusiveEconomicZone
+h|*CamelCase*|ExclusiveEconomicZone
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Part V;
+h|*Definition Source*|UNCLOS "CI_Citation"; IHO S-32, 5th Ed. "CI_Citation
+h|*Similarity to Source*|by reference
+h|*Int1*|N47
+h|*S-4*|440.9
+h|*Recommended Attributes*|zoneObjectType, jurisdictionDomainType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|ArchipelagicWaters, TerritorialSea, ContiguousZone, ContinentalShelf,  Roadsteads, HighSeas, TheArea.
+h|*Remarks*|
+h|*Permitted Primitives*|A
+|===
+
+[[sec-continental-shelf]]
+==== Continental Shelf
+
+[[tbl-30]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Unspecified
+h|*Domain*|HYDRO
+h|*AlphaCode*|COSARE
+h|*Name*|Continental Shelf
+h|*Alias*|MA_ContinentalShelf
+h|*CamelCase*|ContinentalShelf
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Part VI
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|N 46
+h|*S-4*|440.8
+h|*Recommended Attributes*|zoneObjectType, jurisdictionDomainType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|ArchipelagicWaters, TerritorialSea, ContiguousZone, ExclusiveEconomicZone,  Roadsteads, HighSeas, TheArea.
+h|*Remarks*|
+h|*Permitted Primitives*|A
+|===
+
+[[sec-roadsteads]]
+==== Roadsteads
+
+[[tbl-31]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|RDSZNE
+h|*Name*|Roadsteads
+h|*Alias*|MA_Roadsteads
+h|*CamelCase*|Roadsteads
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Article 12
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|zoneObjectType, jurisdictionDomainType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|ArchipelagicWaters, TerritorialSea, ContiguousZone, ExclusiveEconomicZone, ContinentalShelf,  HighSeas, TheArea.
+h|*Remarks*|
+h|*Permitted Primitives*|A
+|===
+
+[[sec-high-seas]]
+==== High Seas
+
+[[tbl-32]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|HIGHSE
+h|*Name*|High Seas
+h|*Alias*|MA_HighSeas
+h|*CamelCase*|HighSeas
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Part VII
+h|*Definition Source*|UNCLOS "CI_Citation"
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|zoneObjectType, jurisdictionDomainType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|ArchipelagicWaters, TerritorialSea, ContiguousZone, ExclusiveEconomicZone, ContinentalShelf,  Roadsteads, TheArea.
+h|*Remarks*|
+h|*Permitted Primitives*|A
+|===
+
+[[sec-the-area]]
+==== The Area
+
+[[tbl-33]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*AlphaCode*|SBAREA
+h|*Name*|The Area
+h|*Alias*|MA_TheArea
+h|*CamelCase*|TheArea
+h|*Use Type*|Administrative
+h|*Definition*|See the UNCLOS reference.
+h|*Reference*|UNCLOS: Part XI;
+h|*Definition Source*|UNCLOS "CI_Citation"; IHO S-32, 5th Ed. "CI_Citation
+h|*Similarity to Source*|by reference
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|zoneObjectType, jurisdictionDomainType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|ArchipelagicWaters, TerritorialSea, ContiguousZone, ExclusiveEconomicZone, ContinentalShelf,  Roadsteads, HighSeas.
+h|*Remarks*|
+h|*Permitted Primitives*|A
+|===
+
+[[sec-s-121-mlb-generic-feature-objects]]
+=== S-121 MLB Generic Feature Objects
+
+[[sec-location]]
+==== Location
+
+[[tbl-34]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Domain*|MLB
+h|*AlphaCode*|MLOCTN
+h|*Name*|Location
+h|*Alias*|MA_Location
+h|*CamelCase*|Location
+h|*Use Type*|Geographic; Administrative
+h|*Definition*|An object that defines and attributes a point in space.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|locationObjectType, interpolationRule, pointType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|Limit, Zone, Space
+h|*Remarks*|
+h|*Permitted Primitives*|P
+|===
+
+[[sec-limit]]
+==== Limit
+
+[[tbl-35]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Domain*|MLB
+h|*AlphaCode*|MLBLIM
+h|*Name*|Limit
+h|*Alias*|MA_Limit
+h|*CamelCase*|Limit
+h|*Use Type*|Geographic; Administrative
+h|*Definition*|An object that defines any limit or boundary either relating to terrestrial, marine or both environments.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|limitObjectType, arcGeometryType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|Location, Zone, Space
+h|*Remarks*|
+h|*Permitted Primitives*|P,L
+|===
+
+[[sec-zone]]
+==== Zone
+
+[[tbl-36]]
+[cols="a,a"]
+|===
+h|*Item Type*|Feature
+h|*Domain*|MLB
+h|*AlphaCode*|MAZONE
+h|*Name*|Zone
+h|*Alias*|MA_Zone
+h|*CamelCase*|Zone
+h|*Use Type*|Geographic; Administrative
+h|*Definition*|An object that defines an area which is logically delimited by instances of "Limit".
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Recommended Attributes*|zoneObjectType, jurisdictionDomainType, referencePoint, areaValue, surfaceRelationType, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinctions*|Location, Limit, Space
+h|*Remarks*|
+h|*Permitted Primitives*|P,L,A
+|===
+
+[[sec-space]]
+==== Space
+
+[[tbl-37]]
+[cols="a,a"]
+|===
+h|*Item Type:*|Feature
+h|*Domain:*|MLB
+h|*AlphaCode:*|MSPACE
+h|*Name:*|Space
+h|*Alias:*|MA_Space
+h|*CamelCase:*|Space
+h|*Use Type:*|Geographic; Administrative
+h|*Definition:*|An object that defines a volume which is logically delimited by instances of "Zone".
+h|*Reference:*|
+h|*Definition Source:*|
+h|*Similarity to Source:*|
+h|*Int1:*|
+h|*S-4:*|
+h|*Recommended Attributes:*|spaceObjectType, jurisdictionDomainType, referencePoint, volumeValue, label, name, context and releasabilityType, beginLifespanVersion, endLifespanVersion, collection
+h|*Distinguishing Features:*|Location, Limit, Zone
+h|*Remarks:*|A "Space" is an object of 2 dimensions with a height description located in 2 or 3 dimensional "Space". This is sometimes called 2 1/2 dimensions. A "Space" has the same geometry as a "Zone" with the attributes of vertical position. The vertical position may be explicit numerical attributes of height above a reference or a textual description.
+h|*Permitted Primitives:*|P,L,A
+|===
+
+[[sec-s-121-information-objects]]
+=== S-121 Information Objects
+
+[[sec-basic-administrative-unit]]
+==== Basic Administrative Unit
+
+[[tbl-38]]
+[cols="a,a"]
+|===
+h|*Item Type*|Information
+h|*Domain*|MLB
+h|*AlphaCode*|BAUNIT
+h|*Name*|Basic Administrative Unit
+h|*Alias*|MA_BasicAdministrativeUnit
+h|*CamelCase*|basicAdministrativeUnit
+h|*Definition*|An information object to which (one or more) unique and homogeneous "Right", "Responsibility" or "Restriction" are associated. It is an information object since it does not directly take on spatial attributes.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 4.1.2
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-right]]
+==== Right
+
+[[tbl-39]]
+[cols="a,a"]
+|===
+h|*Item Type*|Information
+h|*Domain*|MLB
+h|*AlphaCode*|MARGHT
+h|*Name*|Right
+h|*Alias*|MA_Right
+h|*CamelCase*|right
+h|*Definition*|An action, activity or class of actions that a system participant may perform on or using an associated resource.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 4.1.2
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Realized from ISO 19152 LADM "LA_Right" which stereotypes this object as a "featureType". Since it is not a feature in the same sense as the term feature is used in IHO S-100, the stereotype has been removed. For the S-121 code lists have been specialized to the marine environment. They can be referenced as objects from the attributes associated with an S-100 Feature Object. Used in this way an information object such as a "Right" is a shared attribute by reference.
+|===
+
+[[sec-responsibility]]
+==== Responsibility
+
+[[tbl-40]]
+[cols="a,a"]
+|===
+h|*Item Type*|Information
+h|*Domain*|MLB
+h|*AlphaCode*|MARSPN
+h|*Name*|Responsibility
+h|*Alias*|MA_Responsibility
+h|*CamelCase*|responsibility
+h|*Definition*|A formal or informal obligation to do something.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.5
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Realized from ISO 19152 LADM "LA_Responsibility" which stereotypes this object as a "featureType". Since it is not a feature in the same sense as the term feature is used in IHO S-100, the stereotype has been removed. For the S-121 code lists have been specialized to the marine environment. They can be referenced as objects from the attributes associated with an S-100 Feature Object. Used in this way an information object such as a "Responsibility" is a shared attribute by reference.
+|===
+
+[[sec-restriction]]
+==== Restriction
+
+[[tbl-41]]
+[cols="a,a"]
+|===
+h|*Item Type*|Information
+h|*Domain*|MLB
+h|*AlphaCode*|MARSTN
+h|*Name*|Restriction
+h|*Alias*|MA_Restriction
+h|*CamelCase*|restriction
+h|*Definition*|A formal or informal entitlement to refrain from doing something.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.4
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Realized from ISO 19152 LADM "LA_Restriction" which stereotypes this object as a "featureType". Since it is not a feature in the same sense as the term feature is used in IHO S-100, the stereotype has been removed. For the S-121 code lists have been specialized to the marine environment. They can be referenced as objects from the attributes associated with an S100 Feature Object. Used in this way an information object such as a "Restriction" is a shared attribute by reference. Out of the RRR objects, it is the only one that does not require a relation with Party, since restrictions can apply to all.
+|===
+
+[[sec-s121-party]]
+==== S121 Party
+
+[[tbl-42]]
+[cols="a,a"]
+|===
+h|*Item Type*|Information
+h|*Domain*|MLB
+h|*AlphaCode*|MAPART
+h|*Name*|Party
+h|*Alias*|MA_Party
+h|*CamelCase*|party
+h|*Definition*|A person or organisation or group.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.3.1
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Realized from ISO 19152 LADM "LA_Party"  which stereotypes this object as a "featureType". Since it is not a feature in the same sense as the term feature is used in IHO S-100, the stereotype has been removed. LA_GroupParty describes  any number of parties, forming together a distinct entity, with each party registered. Since LA_GroupParty is a subtype of LA_Party this is described as a single class "Party" that includes a conditional attribute "partyGroupTypeList" that defines the type of a group party.
+|===
+
+[[sec-s121-group-party]]
+==== S121 Group Party
+
+[[tbl-43]]
+[cols="a,a"]
+|===
+h|*Item Type:*|Information
+h|*Domain:*|MLB
+h|*AlphaCode:*|MAGPRT
+h|*Name:*|Group Party
+h|*Alias:*|MA_GroupParty
+h|*CamelCase:*|groupParty
+h|*Definition:*|A group of two or more parties .
+h|*Reference:*|ISO 19152
+h|*Definition Source:*|ISO 19152:2012 clause 6.3.2
+h|*Similarity to Source:*|specialization
+h|*Int1:*|
+h|*S-4:*|
+h|*Remarks:*|Realized from ISO 19152 LADM "LA_GroupParty" which stereotypes this object as a "featureType". Since it is not a feature in the same sense as the term feature is used in IHO S-100, the stereotype has been removed. LA_GroupParty describes  any number of parties, forming together a distinct entity, with each party registered. Since LA_GroupParty is a subtype of LA_Party this is described as a single class "Party" that includes a conditional attribute "partyGroupTypeList" that defines the type of a group party.
+|===
+
+[[sec-source]]
+==== Source
+
+[[tbl-44]]
+[cols="a,a"]
+|===
+h|*Item Type*|Information
+h|*Domain*|MLB
+h|*AlphaCode*|
+h|*Name*|Source
+h|*Alias*|
+h|*CamelCase*|Source
+h|*Definition*a|Descriptive documentation that supports, complement or describes the associated object.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 4.1.3.1 and 6.2.4
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Realized from ISO 19152 LADM "LA_Source" which stereotypes this object as a "featureType". Since it is not a feature in the same sense as the term feature is used in IHO S-100, the stereotype has been removed. The "Source" objects are shared attributes by reference.
+|===
+
+[[sec-governance]]
+==== Governance
+
+[[tbl-45]]
+[cols="a,a"]
+|===
+h|*Item Type*|Information
+h|*Domain*|MLB
+h|*AlphaCode*|GOVERN
+h|*Name*|Governance
+h|*Alias*|MA_Goverance
+h|*CamelCase*|Governance
+h|*Definition*|A description of the context information from a proclamation, law or treaty document.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Governance information defines title, reference number, date and other associated information linked to the particular proclamation, law and treaty documents to support the provision of specific description or interpretation that is applicable to the selected set of features.
+|===
+
+[[sec-s-121-attributes]]
+=== S-121 Attributes
+
+[[sec-label]]
+==== Label
+
+[[tbl-46]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAFLAB
+h|*Name*|Label
+h|*Alias*|MA_Label
+h|*CamelCase*|label
+h|*Data Type*|CharacterString
+h|*Definition*|A short textual identifier of the feature or information object.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|For features or information objects registered in the Feature Context Dictionary this is the full textual Feature / Information Object Type Name. This attribute is mandatory because it is used as part of the human readable textual encoding.
+h|*Quantity Specifications*|
+|===
+
+[[sec-name]]
+==== Name
+
+[[tbl-47]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MANAME
+h|*Name*|Name
+h|*Alias*|MA_Name
+h|*CamelCase*|name
+h|*Data Type*|CharacterString
+h|*Definition*|The name of the feature or information object.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-context]]
+==== Context
+
+[[tbl-48]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MACONT
+h|*Name*|Context
+h|*Alias*|MA_Context
+h|*CamelCase*|context
+h|*Data Type*|CharacterString
+h|*Definition*|This attribute describes the administrative aspects of the feature object.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-releasability-type]]
+==== Releasability Type
+
+[[tbl-49]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MARELT
+h|*Name*|Releasability Type
+h|*Alias*|MA_ReleasabilityType
+h|*CamelCase*|releasabilityType
+h|*Data Type*|releasabilityTypeList
+h|*Definition*|This attribute is used to differentiate between releasability status for particular features or information objects.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-start-lifespan]]
+==== Start Lifespan
+
+[[tbl-50]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|STAVER
+h|*Name*|Start Lifespan
+h|*Alias*|MA_beginLifespanVersion
+h|*CamelCase*|startLifespan
+h|*Data Type*|DateTime
+h|*Definition*|Start time of a specific instance version.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|The start time/date is mandatory.
+h|*Quantity Specifications*|
+|===
+
+[[sec-end-lifespan]]
+==== End Lifespan
+
+[[tbl-51]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|ENDVER
+h|*Name*|End Lifespan
+h|*Alias*|MA_EndLifespanVersion
+h|*CamelCase*|endLifespan
+h|*Data Type*|DateTime
+h|*Definition*|End time of a specific instance version.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|The end time/date is optional and when missing indicates that the version is current.
+h|*Quantity Specifications*|
+|===
+
+[[sec-collection]]
+==== Collection
+
+[[tbl-52]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|
+h|*Name*|Collection
+h|*Alias*|MA_Collection
+h|*CamelCase*|collection
+h|*Data Type*|CharacterString
+h|*Definition*|This attribute identifies the data set or series to which the data belongs.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Each nation or organization creating data needs to identify the data. It is expected that the State name should be used when depositing.
+h|*Quantity Specifications*|
+|===
+
+[[sec-reference-number]]
+==== Reference Number
+
+[[tbl-53]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|GORFNB
+h|*Name*|Reference Number
+h|*Alias*|
+h|*Data Type*|CharacterString
+h|*CamelCase*|referenceNumber
+h|*Definition*|An attribute describing the reference number of the source reference.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-governance-title]]
+==== Governance Title
+
+[[tbl-54]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|GOVTIT
+h|*Name*|Governance Title
+h|*Alias*|
+h|*Data Type*|CharacterString
+h|*CamelCase*|governanceTitle
+h|*Definition*|The title of the source reference.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-governance-description]]
+==== Governance Description
+
+[[tbl-55]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|GOVDES
+h|*Name*|Governance Description
+h|*Alias*|
+h|*Data Type*|CharacterString
+h|*CamelCase*|governanceDescription
+h|*Definition*|A character string attribute containing the description of the governance statement.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This attribute contains the block or blocks of text that may act as a preamble to the source document.
+|===
+
+[[sec-date-approved]]
+==== Date Approved
+
+[[tbl-56]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|
+h|*Name*|Date Approved
+h|*Alias*|
+h|*CamelCase*|dateApproved
+h|*Data Type*|Date
+h|*Definition*|The date at which the source statement or document was approved by the appropriate governing body.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-date-considered]]
+==== Date Considered
+
+[[tbl-57]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|
+h|*Name*|Date Considered
+h|*Alias*|
+h|*CamelCase*|dateConsidered
+h|*Data Type*|Date
+h|*Definition*|The date at which the source statement or document was considered by the appropriate governing body.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-date-introduced]]
+==== Date Introduced
+
+[[tbl-58]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|
+h|*Name*|Date Introduced
+h|*Alias*|
+h|*CamelCase*|dateIntroduced
+h|*Data Type*|Date
+h|*Definition*|The date at which the source statement or document was introduced.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-basic-administrative-unit-name]]
+==== Basic Administrative Unit Name
+
+[[tbl-59]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MABAUN
+h|*Name*|Basic Administrative Unit Name
+h|*Alias*|MA_BAUnitName
+h|*CamelCase*|basicAdministrativeUnitName
+h|*Data Type*|CharacterString
+h|*Definition*|Optional name for an instance of a "BasicAdministrativeUnit".
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.1
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-basic-administrative-unit-type]]
+==== Basic Administrative Unit Type
+
+[[tbl-60]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MABAUT
+h|*Name*|Basic Administrative Unit Type
+h|*Alias*|MA_BAUnitType
+h|*CamelCase*|basicAdministrativeUnitType
+h|*Data Type*|CharacterString
+h|*Definition*|The use type of a "BasicAdministrativeUnit".
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.1
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-basic-administrative-unit-context]]
+==== Basic Administrative Unit Context
+
+[[tbl-61]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MABAUC
+h|*Name*|Basic Administrative Unit Context
+h|*Alias*|MA_BAUnitContext
+h|*CamelCase*|basicAdministrativeUnitContext
+h|*Data Type*|CharacterString
+h|*Definition*|Description of the context for an instance of a "BasicAdministrativeUnit".
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-right-restriction-responsibility-description]]
+==== Right Restriction Responsibility Description
+
+[[tbl-62]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MARRRD
+h|*Name*|Right Restriction Responsibility Description
+h|*Alias*|MA_RRRDescription
+h|*CamelCase*|rightRestrictionResponsibilitiesDescription
+h|*Data Type*|CharacterString
+h|*Definition*|Description regarding the "Right", "Restriction" or "Responsibility".
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.2
+h|*Similarity to Source*|restyled
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-right-restriction-responsibility-share]]
+==== Right Restriction Responsibility Share
+
+[[tbl-63]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MARSHR
+h|*Name*|Right Restriction Responsibility Share
+h|*Alias*|MA_RRRShare
+h|*CamelCase*|rightRestrictionResponsibilitiesShare
+h|*Data Type*|CharacterString
+h|*Definition*|A share in an instance of a subclass of a Right, Restriction or Responsibility.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.2
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-right-restriction-responsibility-share-check]]
+==== Right Restriction Responsibility Share Check
+
+[[tbl-64]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MARSHC
+h|*Name*|Right Restriction Responsibility Share Check
+h|*Alias*|MA_RRRShareCheck
+h|*CamelCase*|rightRestrictionResponsibilitiesShareCheck
+h|*Data Type*|Boolean
+h|*Definition*|Boolean indicating whether the constraint is applicable.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.2
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-right-restriction-responsibility-time-specification]]
+==== Right Restriction Responsibility Time Specification
+
+[[tbl-65]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MARRRT
+h|*Name*|Right Restriction Responsibility Time Specification
+h|*Alias*|MA_RRRtimeSpec
+h|*CamelCase*|rightRestrictionResponsibilitiesTimeSpec
+h|*Data Type*|CharacterString
+h|*Definition*|Operational use of a right in time sharing.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.2
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-right-type]]
+==== Right Type
+
+[[tbl-66]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MARIGT
+h|*Name*|Right Type
+h|*Alias*|MA_RightType
+h|*CamelCase*|rightType
+h|*Data Type*|Enumeration
+h|*Definition*|The type of the right.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.3
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-responsibility-type]]
+==== Responsibility Type
+
+[[tbl-67]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MAREST
+h|*Name*|Responsibility Type
+h|*Alias*|MA_ResponsibilityType
+h|*CamelCase*|responsibilityType
+h|*Data Type*|Enumeration
+h|*Definition*|The type of the responsibility.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.5
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-restriction-type]]
+==== Restriction Type
+
+[[tbl-68]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MARSTT
+h|*Name*|Restriction Type
+h|*Alias*|MA_RestrictionType
+h|*CamelCase*|restrictionType
+h|*Data Type*|Enumeration
+h|*Definition*|The type of the restriction.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.9
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-party-required]]
+==== Party Required
+
+[[tbl-69]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MAPREQ
+h|*Name*|Party Required
+h|*Alias*|MA_PartyRequired
+h|*CamelCase*|partyRequired
+h|*Data Type*|Boolean
+h|*Definition*|Indicates whether a party is required for the registration of the restriction.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.4
+h|*Similarity to Source*|specilization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-party-name]]
+==== Party Name
+
+[[tbl-70]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAPNAM
+h|*Name*|Party Name
+h|*Alias*|MA_PartyName
+h|*CamelCase*|partyName
+h|*Data Type*|CharacterString
+h|*Definition*|The name of the party.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.3.1
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-party-role]]
+==== Party Role
+
+[[tbl-71]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAPROL
+h|*Name*|Party Role
+h|*Alias*|MA_PartyRole
+h|*CamelCase*|partyRole
+h|*Data Type*|CharacterString
+h|*Definition*|The role of the party.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.3.1
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-party-type]]
+==== Party Type
+
+[[tbl-72]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAPTYP
+h|*Name*|Party Type
+h|*Alias*|MA_PartyType
+h|*CamelCase*|partyType
+h|*Data Type*|Party Type List
+h|*Definition*|The type of party
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.3.1
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-party-group-type]]
+==== Party Group Type
+
+[[tbl-73]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|
+h|*Name*|Party Group Type
+h|*Alias*|MA_PartyGroupType
+h|*CamelCase*|partyGroupType
+h|*Data Type*|Enumeration
+h|*Definition*|The type of "partyGroup".
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.3.2
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-party-share]]
+==== Party Share
+
+[[tbl-74]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|
+h|*Name*|Party Share
+h|*Alias*|MA_PartyShare
+h|*CamelCase*|partyShare
+h|*Data Type*|Real
+h|*Definition*|The fraction of the whole.
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-original-location]]
+==== Original Location
+
+[[tbl-75]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAORGL
+h|*Name*|Original Location
+h|*Alias*|MA_OriginalLocation
+h|*CamelCase*|originalLocation
+h|*Data Type*|CharacterString
+h|*Definition*|Reference location of a point when it was first established.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This includes a description of the point as a textual string, so that the exact representation of the point may be maintained in terms of degrees and decimal degrees, or degrees, minutes and seconds, or other description. In the case of the original location this may be a description of meets and bounds or whatever is included in the treaty or other original document. A reference system (CRS) shall be included where available. Often a CRS is not available for original locations derived from very old treaties.
+h|*Quantity Specifications*|
+|===
+
+[[sec-official-location]]
+==== Official Location
+
+[[tbl-76]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAOFFL
+h|*Name*|Official Location
+h|*Alias*|MA_OfficialLocation
+h|*CamelCase*|officialLocation
+h|*Data Type*|CharacterString
+h|*Definition*|Official reference of the point.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This is the official description of the point in a textual form, so that the exact representation of the point may be maintained in terms of degrees and decimal degrees, or degrees, minutes and seconds, or other description. A reference system (CRS) shall be included where available. A CRS is required, but it may only be included in the base text and therefore only included by reference through a Source object.
+h|*Quantity Specifications*|
+|===
+
+[[sec-common-location]]
+==== Common Location
+
+[[tbl-77]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MACOML
+h|*Name*|Common Location
+h|*Alias*|MA_CommonLocation
+h|*CamelCase*|commonLocation
+h|*Data Type*|CharacterString
+h|*Definition*|Common reference location of point in a datum that is defaulted to the other points in the dataset.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-global-location]]
+==== Global Location
+
+[[tbl-78]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAGLOL
+h|*Name*|Global Location
+h|*Alias*|MA_GlobalLocation
+h|*CamelCase*|globalLocation
+h|*Data Type*|CharcterString
+h|*Definition*|Global reference to a point in a world global datum such ITRF2000.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-wgs84-location]]
+==== WGS84 Location
+
+[[tbl-79]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAWGSL
+h|*Name*|WGS84 Location
+h|*Alias*|MA_wgs84Location
+h|*CamelCase*|wgs84Location
+h|*Data Type*|CharacterString
+h|*Definition*|Reference to a point in global datum WGS84.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This attribute is optional but it is requested for data deposited with DOALOS.
+h|*Quantity Specifications*|
+|===
+
+[[sec-volume-vertical-position]]
+==== Volume Vertical Position
+
+[[tbl-80]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAVPOS
+h|*Name*|Volume Vertical Position
+h|*Alias*|MA_VerticalPosition
+h|*CamelCase*|volumeVerticalPosition
+h|*Data Type*|CharacterString
+h|*Definition*|A reference point used to establish a bound for the vertical extent of a volume.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|GM_Point geometry as per IHO S100 Part 7 Spatial Schema, defining a reference from which to measure vertical extent.
+h|*Quantity Specifications*|
+|===
+
+[[sec-volume-vertical-extent]]
+==== Volume Vertical Extent
+
+[[tbl-81]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAVEXT
+h|*Name*|Volume Vertical Extent
+h|*Alias*|MA_verticalExtent
+h|*CamelCase*|volumeVerticalExtent
+h|*Data Type*|Real
+h|*Definition*|The vertical extent of a volume established as a distance measured against a vertical position reference point.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Vertical extent is given in the units established through units of measure.
+h|*Quantity Specifications*|
+|===
+
+[[sec-textual-position]]
+==== Textual Position
+
+[[tbl-82]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MATXTP
+h|*Name*|Textual Position
+h|*Alias*|MA_TextualPosition
+h|*CamelCase*|textualPosition
+h|*Data Type*|CharacterString
+h|*Definition*|A point coordinate values in a textual form.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-reference-system]]
+==== Reference System
+
+[[tbl-83]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MALCRS
+h|*Name*|Reference System
+h|*Alias*|MA_ReferenceSystem
+h|*CamelCase*|referenceSystem
+h|*Data Type*|CharacterString
+h|*Definition*|The attribute "ReferenceSystem" allows a CoordinateReferencingSystem (CRS) to optionally be specified at the "spatialAttributeTypeList" level.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|In many other S-100 based products the CRS is only defined at the metadata level and applies for the whole data set; however, in S-121 it is necessary to detail it right down to the specific instances of geometry since treaty points and lines may come from different sources such as different treaties that may use different CRS.
+h|*Quantity Specifications*|
+|===
+
+[[sec-interpolation-role]]
+==== Interpolation Role
+
+[[tbl-84]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAINTP
+h|*Name*|Interpolation Role
+h|*Alias*|MA_ Interpolation Role
+h|*CamelCase*|interpolationRole
+h|*Data Type*|interpolationTypeList
+h|*Definition*|The role of point in the structure of a "Straight" line or curve.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.6.1
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-location-object-type]]
+==== Location Object Type
+
+[[tbl-85]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MALOBT
+h|*Name*|Location Object Type
+h|*Alias*|MA_LocationObjectType
+h|*CamelCase*|locationObjectType
+h|*Data Type*|locationTypeList
+h|*Definition*|This attribute identifies which Feature Unit Location Object type this object refers to based on the feature catalogue.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-point-type]]
+==== Point Type
+
+[[tbl-86]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAPNTT
+h|*Name*|Point Type
+h|*Alias*|MA_PointType
+h|*CamelCase*|pointType
+h|*Data Type*|pointTypeList
+h|*Definition*|The type of point.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.6.1
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-limit-object-type]]
+==== Limit Object Type
+
+[[tbl-87]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MALIMT
+h|*Name*|Limit Object Type
+h|*Alias*|MA_Limit Object Type
+h|*CamelCase*|limitObjectType
+h|*Data Type*|limitTypeList
+h|*Definition*|This attribute identifies which Feature Unit LimitObject type this object refers to based on the feature catalogue.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-arc-geometry-type]]
+==== Arc Geometry Type
+
+[[tbl-88]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAARTP
+h|*Name*|Arc Geometry Type
+h|*Alias*|MA_ArcGeometryType
+h|*CamelCase*|arcGeometryType
+h|*Data Type*|arcGeometryTypeList
+h|*Definition*|Type of computation used to define an arc (line).
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-zone-object-type]]
+==== Zone Object Type
+
+[[tbl-89]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAZONT
+h|*Name*|Zone Object Type
+h|*Alias*|MA_ZoneObjectType
+h|*CamelCase*|zoneObjectType
+h|*Data Type*|zoneTypeList
+h|*Definition*|This attribute identifies which Feature Unit Zone Object type this object refers to based on the feature catalogue.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-jurisdiction-domain-type]]
+==== Jurisdiction Domain Type
+
+[[tbl-90]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAJDOM
+h|*Name*|Jurisdiction Domain Type
+h|*Alias*|MA_JurisdictionDomainType
+h|*CamelCase*|jurisdictionDomainType
+h|*Data Type*|jurisdictionDomainTypeList
+h|*Definition*|Defines the vertical jurisdictional domain of the object delimited.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-area-value]]
+==== Area Value
+
+[[tbl-91]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAAREA
+h|*Name*|Area Value
+h|*Alias*|MA_AreaValue
+h|*CamelCase*|areaValue
+h|*Data Type*|LA_AreaValue
+h|*Definition*|The area value.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.5.1
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-reference-point]]
+==== Reference Point
+
+[[tbl-92]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAREFP
+h|*Name*|Reference Point
+h|*Alias*|MA_ReferencePoint
+h|*CamelCase*|referencePoint
+h|*Data Type*|GM_Point
+h|*Definition*|The coordinates of a point inside the spatial unit
+h|*Reference*|ISO 19107  and S-100
+h|*Definition Source*|ISO 19152:2012 clause 6.5.1
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-surface-relation]]
+==== Surface Relation
+
+[[tbl-93]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASURR
+h|*Name*|Surface Relation
+h|*Alias*|MA_SurfaceRelation
+h|*CamelCase*|surfaceRelation
+h|*Data Type*|LA_SurfaceRelationType
+h|*Definition*|Relationship to surface.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.5.1
+h|*Similarity to Source*|generalization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-space-object-type]]
+==== Space Object Type
+
+[[tbl-94]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASPOT
+h|*Name*|Space Object Type
+h|*Alias*|MA_SpaceObjectType
+h|*CamelCase*|spaceObjectType
+h|*Data Type*|spaceTypeList
+h|*Definition*|This attribute identifies which Feature Unit Space Object type this object refers to based on the feature catalogue.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-volume-value]]
+==== Volume Value
+
+[[tbl-95]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASUUR
+h|*Name*|Volume Value
+h|*Alias*|MA_VolumeValue
+h|*CamelCase*|volumeValue
+h|*Data Type*|LA_VolumeValue
+h|*Definition*|The volume of the 3D spatial unit.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.5.1
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-type]]
+==== Type
+
+[[tbl-96]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MATYPE
+h|*Name*|Type
+h|*Alias*|MA_Type
+h|*CamelCase*|type
+h|*Data Type*|LA_VolumeType or LA_AreaType
+h|*Definition*|Indicates the type of area or volume provided.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.5.7
+h|*Similarity to Source*|generalization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This attribute is derived directly from ISO 19152 and is used in classes derived from ISO 19152. In S-121 this attribute is used in the two classes LA_VolumeValue and LA_AreaValue and relates to the two attribute data types LA_VolumeType and LA_AreaType respectively. Sine the term “type” is such a generic word, the meaning of this attribute must be constrained to only the S-121 MLB namespace.
+h|*Quantity Specifications*|
+|===
+
+[[sec-volume-size]]
+==== Volume Size
+
+[[tbl-97]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAVSIZ
+h|*Name*|Volume Size
+h|*Alias*|MA_VolumeSize
+h|*CamelCase*|volumeSize
+h|*Data Type*|Real
+h|*Definition*|Indicates the value of the volume.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.5.7
+h|*Similarity to Source*|generalization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This attribute is derived directly from ISO 19152 and is used in classes derived from ISO 19152.
+h|*Quantity Specifications*|
+|===
+
+[[sec-area-size]]
+==== Area Size
+
+[[tbl-98]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAASIZ
+h|*Name*|Area Size
+h|*Alias*|MA_AreaSize
+h|*CamelCase*|areaSize
+h|*Data Type*|Real
+h|*Definition*|Indicates the value of the area.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.5.7
+h|*Similarity to Source*|generalization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This attribute is derived directly from ISO 19152 and is used in classes derived from ISO 19152.
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-administrative-date-stamp]]
+==== Source Administrative Date Stamp
+
+[[tbl-99]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASASD
+h|*Name*|Source Administrative Date Stamp
+h|*Alias*|MA_SourceAdministrativeDateStamp
+h|*CamelCase*|sourceAdministrativeDateStamp
+h|*Data Type*|DateTime
+h|*Definition*|The moment that the event represented by the instance of "Source" is further processed.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2014 clause 6.2.4
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This is the moment of "endLifespan" of old instances, and the moment of "startLifespan" of new instances.
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-authoritative-date]]
+==== Source Authoritative Date
+
+[[tbl-100]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAACPT
+h|*Name*|Source Authoritative Date
+h|*Alias*|MA_SourceAuthoritiveDate
+h|*CamelCase*|sourceAuthoritiveDate
+h|*Data Type*|DateTime
+h|*Definition*|The date of force of law of the "Source" by an authority.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2014 clause 6.2.4
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-document-type]]
+==== Source Document Type
+
+[[tbl-101]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASODT
+h|*Name*|Source Document Type
+h|*Alias*|MA_SourceDocumentType
+h|*CamelCase*|sourceDocumentType
+h|*Data Type*|CharacterString
+h|*Definition*|The type of document.
+h|*Reference*|ISO 19152; ISO 19115
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|In ISO 19152 the equivalent attribute takes its value from ISO 19115 metadata from the class CI_PresentationFormCode. This part of the ISO metadata standard is not included in S-100 Part 4  - Metadata. Therefore a free form character string is provided as the data type.
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-availability-status]]
+==== Source Availability Status
+
+[[tbl-102]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASLSS
+h|*Name*|Source Availability Status
+h|*Alias*|MA_SourceAvailabilityStatus
+h|*CamelCase*|sourceAvailabilityStatus
+h|*Data Type*|LA_AvailableStatusType
+h|*Definition*|The availability status of source document.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152 clause 6.2.4
+h|*Similarity to Source*|restyled
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|The code list is taken directly for ISO 19152.
+h|*Quantity Specifications*|
+|===
+
+[[sec-administrative-source-type]]
+==== Administrative Source Type
+
+[[tbl-103]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MAASTY
+h|*Name*|Administrative Source Type
+h|*Alias*|MA_AdministrativeSourceType
+h|*CamelCase*|administrativeSourceType
+h|*Data Type*|administrativeSourceTypeList
+h|*Definition*|The type of administrative "Source" document.
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-spatial-source-type]]
+==== Spatial Source Type
+
+[[tbl-104]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASSTY
+h|*Name*|Spatial Source Type
+h|*Alias*|MA_SpatialSourceType
+h|*CamelCase*|spatialSourceType
+h|*Data Type*|spatialSourceTypeList
+h|*Definition*|The type of spatial "Source" document.
+h|*Reference:*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-type]]
+==== Source Type
+
+[[tbl-105]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASTYP
+h|*Name*|Source Type
+h|*Alias*|MA_SourceType
+h|*CamelCase*|sourceType
+h|*Data Type*|CharacterString
+h|*Definition*|The type of "Source" document.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Allows for generic sources other than "spatialSourceType" or "adminstrativeSourceType".
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-reference]]
+==== Source Reference
+
+[[tbl-106]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASOUR
+h|*Name*|Source Reference
+h|*Alias*|MA_SourceReference
+h|*CamelCase*|sourceReference
+h|*Data Type*|S121_ResponsibleParty
+h|*Definition*|The responsible party of the "Source".
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.2.4
+h|*Similarity to Source*|restyled
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-quality]]
+==== Source Quality
+
+[[tbl-107]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASODQ
+h|*Name*|Source Quality
+h|*Alias*|MA_SourceQuality
+h|*CamelCase*|sourceQuality
+h|*Data Type*|DQ_Element
+h|*Definition*|The quality of the "Source".
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.2.4
+h|*Similarity to Source*|restyled
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This attribute value type is inherited directly from ISO 19115 Metadata and the code list values are described in the ISO document. S-100 also used DQ_Element directly from ISO 19115.
+h|*The DQ_Element attributes are*|"nameOfMeasure", "measureIdentification", "measureDescription", "evaluationMethodType", "evaluationMethodDescription", "evaluationProcedure", "dateTime", "result".
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-submission-date]]
+==== Source Submission Date
+
+[[tbl-108]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASOSU
+h|*Name*|Source Submission Date
+h|*Alias*|MA_SourceSubmissionDate
+h|*CamelCase*|sourceSubmissionDate
+h|*Data Type*|DateTime
+h|*Definition*|The date of submission of the "Source" by a party.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.2.4
+h|*Similarity to Source*|restyled
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-external-archive-identifier]]
+==== Source External Archive Identifier
+
+[[tbl-109]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MAEXAI
+h|*Name*|Source External Archive Identifier
+h|*Alias*|MA_ExternalArchiveID
+h|*CamelCase*|sourceExternalArchiveIdentifier
+h|*Data Type*|ExtArchive
+h|*Definition*|The identifier of a "Source" in an external registration.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.2.4
+h|*Similarity to Source*|restyled
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|The code list is taken directly for ISO 19152.
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-registration-date]]
+==== Source Registration Date
+
+[[tbl-110]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASORC
+h|*Name*|Source Registration Date
+h|*Alias*|MA_SourceRecordation
+h|*CamelCase*|sourceRecordation
+h|*Data Type*|DateTime
+h|*Definition*|The date of registration (recordation) of the "Source" by registering authority.
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-document-name]]
+==== Source Document Name
+
+[[tbl-111]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MASODN
+h|*Name*|Source Document Name
+h|*Alias*|MA_SourceDocumentName
+h|*CamelCase*|sourceDocumentName
+h|*Data Type*|CharacterString
+h|*Definition*|Name of the document that defines the object  - for example the document (legislation, treaty, title).
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-online-resource]]
+==== Source Online Resource
+
+[[tbl-112]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Domain*|MLB
+h|*AlphaCode*|MASURL
+h|*Name*|Source Online Resource
+h|*Alias*|MA_SourceOnlineResource
+h|*CamelCase*|sourceOnlineResource
+h|*Data Type*|onlineResource
+h|*Definition*|URL - this is official the URL (or equivalent online resource) where the document is distributed.
+h|*Reference*|ISO 19115
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-source-registry-number]]
+==== Source Registry Number
+
+[[tbl-113]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MASORN
+h|*Name*|Source Registry Number
+h|*Alias*|MA_SourceRegistryNumber
+h|*CamelCase*|sourceRegistryNumber
+h|*Data Type*|CharacterString
+h|*Definition*|Unique official identifier of the record in a registry.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|For example, in states with registers of legislative instruments, versioning is controlled by the registry ID.
+h|*Quantity Specifications*|
+|===
+
+[[sec-acceptance]]
+==== Acceptance
+
+[[tbl-114]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MAACCPT
+h|*Name*|Acceptance
+h|*Alias*|MA_Acceptance
+h|*CamelCase*|acceptance
+h|*Data Type*|DateTime
+h|*Definition*|The date of force of law of the source by the authority.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause Annex K.10
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This attribute is derived directly from the ExArchive class of ISO 19152. Since the term is so generic it should be restricted to the meaning within the MLB context.
+h|*Quantity Specifications*|
+|===
+
+[[sec-data]]
+==== Data
+
+[[tbl-115]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MADATA
+h|*Name*|Data
+h|*Alias*|MA_ExternalArchiveData
+h|*CamelCase*|data
+h|*Data Type*|CharacterString
+h|*Definition*|The content of the source.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause Annex K.10
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This attribute is derived directly from the ExArchive class of ISO 19152. Since the term is so generic it should be restricted to the meaning within the MLB context. The data may include multilingual text per ISO 19115 Annex J (Localization).
+h|*Quantity Specifications*|
+|===
+
+[[sec-extraction]]
+==== Extraction
+
+[[tbl-116]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MAEXTR
+h|*Name*|Extraction
+h|*Alias*|MA_ExternalArchiveExtraction
+h|*CamelCase*|extraction
+h|*Data Type*|DateTime
+h|*Definition*|The date the source was consulted.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause Annex K.10
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This attribute is derived directly from the ExArchive class of ISO 19152. Since the term is so generic it should be restricted to the meaning within the MLB context.
+h|*Quantity Specifications*|
+|===
+
+[[sec-recordation]]
+==== Recordation
+
+[[tbl-117]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MARECR
+h|*Name*|Recordation
+h|*Alias*|MA_ExternalArchiveRecordation
+h|*CamelCase*|recordation
+h|*Data Type*|DateTime
+h|*Definition*|The date of registration (recordation) of the source by registering authority.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause Annex K.10
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This attribute is derived directly from the ExArchive class of ISO 19152. Since the term is so generic it should be restricted to the meaning within the MLB context.
+h|*Quantity Specifications:*|
+|===
+
+[[sec-submission]]
+==== Submission
+
+[[tbl-118]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MASUBM
+h|*Name*|Submission
+h|*Alias*|MA_ExternalArchiveSubmission
+h|*CamelCase*|submission
+h|*Data Type*|DateTime
+h|*Definition*|The date of submission of the source by a party.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause Annex K.10
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This attribute is derived directly from the ExArchive class of ISO 19152. Since the term is so generic it should be restricted to the meaning within the MLB context.
+h|*Quantity Specifications*|
+|===
+
+[[sec-online-resource-linkage-url]]
+==== Online Resource Linkage URL
+
+[[tbl-119]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MARURL
+h|*Name*|Online Resource Linkage URL
+h|*Alias*|MA_OnlineResourceLinkageURL
+h|*CamelCase*|onlineResourceLinkageURL
+h|*Data Type*|CharacterString
+h|*Definition*|Universal Resource Locator (URL) of the online resource.
+h|*Reference*|ISO 19115
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-online-resource-protocol]]
+==== Online Resource Protocol
+
+[[tbl-120]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MARPRO
+h|*Name*|Online Resource Protocol
+h|*Alias*|MA_Online Resource Protocol
+h|*CamelCase*|onlineResourceProtocol
+h|*Data Type*|CharacterString
+h|*Definition*|Protocol used by the online resource.
+h|*Reference*|ISO 19115
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-online-resource-application-profile]]
+==== Online Resource Application Profile
+
+[[tbl-121]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MAAPPR
+h|*Name*|Online Resource Application Profile
+h|*Alias*|MA_OnlineResourceApplicationProfile
+h|*CamelCase*|onlineResourceApplicationProfile
+h|*Data Type*|CharacterString
+h|*Definition*|Application Profile of the online resource.
+h|*Reference*|ISO 19115
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-online-resource-name]]
+==== Online Resource Name
+
+[[tbl-122]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MAOLNM
+h|*Name*|Online Resource Name
+h|*Alias*|MA_OnlineResourceName
+h|*CamelCase*|onlineResourceName
+h|*Data Type*|CharacterString
+h|*Definition*|Name of the online resource.
+h|*Reference*|ISO 19115
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-online-resource-description]]
+==== Online Resource Description
+
+[[tbl-123]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MAORDS
+h|*Name*|Online Resource Description
+h|*Alias*|MA_OnlineResourceDescription
+h|*CamelCase*|onlineResourceDescription
+h|*Data Type*|CharacterString
+h|*Definition*|Universal Resource Locator (URL) of the online resource.
+h|*Reference*|ISO 19115
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-online-resource-function]]
+==== Online Resource Function
+
+[[tbl-124]]
+[cols="a,a"]
+|===
+h|*Item Type*|Simple Attribute
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*AlphaCode*|MAORFN
+h|*Name*|Online Resource Function
+h|*Alias*|MA_OnlineResourceFunction
+h|*CamelCase*|onlineResourceFunction
+h|*Data Type*|CI_OnlineFunctionCode
+h|*Definition*|Function of the online resource.
+h|*Reference*|ISO 19115
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|The code list CI_OnlineFunctionCode is derived from ISO 19115 metadata.
+|===
+
+[[sec-s-121-data-types]]
+=== S-121 Data Types
+
+[[sec-area-value-2]]
+==== Area Value
+
+[[tbl-125]]
+[cols="a,a"]
+|===
+h|*Item Type*|Data Type
+h|*Domain*|MLB
+h|*AlphaCode*|LAARAV
+h|*Name*|LA_AreaValue
+h|*Alias*|Area Value
+h|*CamelCase*|areaValue
+h|*Data Type*|
+h|*Definition*|Area of the 2D object.
+h|*Reference*|ISO19152:2012
+h|*Definition Source*|ISO19152:2012 clause 6.5.7
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Derived directly from ISO 19152
+h|*Quantity Specifications*|
+|===
+
+[[sec-volume-value-2]]
+==== Volume Value
+
+[[tbl-126]]
+[cols="a,a"]
+|===
+h|*Item Type*|Data Type
+h|*Domain*|MLB
+h|*AlphaCode*|LAVOLV
+h|*Name*|LA_VolumeValue
+h|*Alias*|Volume Value
+h|*CamelCase*|volumeValue
+h|*Data Type*|
+h|*Definition*|Volume of the 3D object.
+h|*Reference*|ISO19152:2012
+h|*Definition Source*|ISO19152:2012 clause 6.5.7
+h|*Similarity to Source*|Specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Derived directly from ISO 19152
+h|*Quantity Specifications*|
+|===
+
+[[sec-location-reference]]
+==== Location Reference
+
+[[tbl-127]]
+[cols="a,a"]
+|===
+h|*Item Type*|Data Type
+h|*Domain*|MLB
+h|*AlphaCode*|MALORE
+h|*Name*|Location Reference
+h|*Alias*|
+h|*CamelCase*|locationReference
+h|*Data Type*|
+h|*Definition*|This data type provides information about a point location.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+h|*Quantity Specifications*|
+|===
+
+[[sec-online-resource]]
+==== Online Resource
+
+[[tbl-128]]
+[cols="a,a"]
+|===
+h|*Item Type*|Data Type
+h|*Domain*|MLB
+h|*AlphaCode*|MAOLRS
+h|*Name*|Online Resource
+h|*Alias*|MA_OnlineResource
+h|*CamelCase*|onlineResource
+h|*Data Type*|
+h|*Definition*|This data type provides describes an online resource.
+h|*Reference*|ISO_19115
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Online Resource derives from the ISO 19115 metadata standard.
+h|*Quantity Specifications*|
+|===
+
+[[sec-s-121-type-lists]]
+=== S-121 Type Lists
+
+[[sec-location-type-list]]
+==== Location Type List
+
+[[tbl-129]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*Name*|Location Type List
+h|*Alias*|MA_LocationTypeList
+h|*CamelCase*|locationTypeList
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|This code list describes categories of "LocationType" that have a common characteristic related to the administrative aspects of the marine environment. In effect this list consist of all S-121 features under the location type classes.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|The code list is registered in the IHO GI Registry as listed values and can be extended as needed.
+|===
+
+[[sec-limit-type-list]]
+==== Limit Type List
+
+[[tbl-130]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*Name*|Limit Type List
+h|*Alias*|MA_LimitTypeList
+h|*CamelCase*|limitTypeList
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|This code list describes categories of "LimitType" that have a common characteristic related to the administrative aspects of the marine environment. In effect this list consist of all S-121 feature unit limit type classes.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|The code list is registered in the IHO GI Registry as listed values and can be extended as needed.
+|===
+
+[[sec-zone-type-list]]
+==== Zone Type List
+
+[[tbl-131]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*Name*|Feature Unit Type List
+h|*Alias*|MA_featureUnitTypeList
+h|*CamelCase*|featureUnitTypeList
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|This code list describes categories of "ZoneType" that have a common characteristic related to the administrative aspects of the marine environment. In effect this list consist of all S-121 feature unit zone type classes.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|The code list is registered in the IHO GI Registry as listed values and can be extended as needed.
+|===
+
+[[sec-space-type-list]]
+==== Space Type List
+
+[[tbl-132]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Proposal Type*|Addition
+h|*Domain*|MLB
+h|*Name*|Space Type List
+h|*Alias*|MA_SpaceTypeList
+h|*CamelCase*|spaceTypeList
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|This code list describes categories of "SpaceType" that have a common characteristic related to the administrative aspects of the marine environment. In effect this list consist of all S-121 feature unit space type classes.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|The code list is registered in the IHO GI Registry as listed values and can be extended as needed.
+|===
+
+[[sec-jurisdiction-domain-type-list]]
+==== Jurisdiction Domain Type List
+
+[[tbl-133]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Associated Attribute*|jurisdictionDomainType
+h|*Name*|Jurisdiction Domain Type List
+h|*Alias*|MA_JurisdictionDomainTypeList
+h|*CamelCase*|jurisdictionDomainTypeList
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|Defines the vertical juridical domain of the object delimited, based on a breakdown of vertical jurisdictions used in UNCLOS.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Any particular object may span more than one jurisdiction domain.
+|===
+
+[[sec-releasability-type-list]]
+==== Releasability Type List
+
+[[tbl-134]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Associated Attribute*|releasabilityType
+h|*Name*|Releasability Type List
+h|*Alias*|MA_ReleasabilityTypeList
+h|*CamelCase*|releasabilityTypeList
+h|*Code List Type*|Open Enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|A list of value providing a releasability status for the "FeatureUnit" described.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-arc-geometry-type-list]]
+==== Arc Geometry Type List
+
+[[tbl-135]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Associated Attribute*|arcGeometryType
+h|*Name*|Arc Geometry Type List
+h|*Alias*|MA_ArcGeometryTypeList
+h|*CamelCase*|arcGeometryTypeList
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|This code list describes the category of lines or arcs that can be represented on the surface of the ellipsoid.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-spatial-source-type-list]]
+==== Spatial Source Type List
+
+[[tbl-136]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Name*|Spatial Source Type List
+h|*Alias*|MA_SpatialSourceTypeList
+h|*CamelCase*|spatialSourceTypeList
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|Category of "spatialSourceType".
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.6.6
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-administrative-source-type-list]]
+==== Administrative Source Type List
+
+[[tbl-137]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Associated Attribute*|administrativeSourceType
+h|*Name*|Administrative Source Type List
+h|*Alias*|MA_AdministrativeSourceTypeList
+h|*CamelCase*|administrativeSourceTypeList
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|Category of "administrativeSourceType".
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|  The code list includes: "internationalAgreement", "domesticLegislativeInstrument", "domesticAdministration".
+|===
+
+[[sec-party-type-list]]
+==== Party Type List
+
+[[tbl-138]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Name*|Party Type List
+h|*Alias*|MA_PartyTypeList
+h|*CamelCase*|partyTypeList
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|This code list describes categories of "partyType".
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.3.1
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|The code list is registered in the IHO GI Registry as listed values and as such can be expanded to include all party types.
+|===
+
+[[sec-party-group-type-list]]
+==== Party Group Type List
+
+[[tbl-139]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Name*|Party Group Type List
+h|*Alias*|MA_PartyGroupTypeList
+h|*CamelCase*|partyGroupTypeList
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|This code list describes categories of "partyGroupType".
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.3.2
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|The code list is registered in the IHO GI Registry as listed values and as such can be expanded to include all administrative types.
+|===
+
+[[sec-basic-administrative-unit-type-list]]
+==== Basic Administrative Unit Type List
+
+[[tbl-140]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Name*|Basic Administrative Unit Type List
+h|*Alias*|MA_ basicAdministrativeUnitTypeList
+h|*CamelCase*|basicAdministrativeUnitTypeList
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|Categories of "basicAdministrativeUnitType".
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|The code list includes: "maritimeLimitsAndBoundaries".
+|===
+
+[[sec-la-availability-status-type]]
+==== LA Availability Status Type
+
+[[tbl-141]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Associated Attribute*|sourceAvailabilityStatus
+h|*Name*|LA Availability Status Type
+h|*Alias*|MAAVST
+h|*CamelCase*|LA_AvailabilityStatusType
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|Category of " sourceAvailabilityStatus ".
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152:2012 clause 6.4.9
+h|*Similarity to Source*|specialization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|Derived directly from the ISO 19152 standard. Values are “archiveConverted”, archiveDestroyed”, archiveIncomplete”, “archiveUnknown”, “docAvailable”.
+|===
+
+[[sec-la-surface-relation-type]]
+==== LA Surface Relation Type
+
+[[tbl-142]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Associated Attribute*|MASURT
+h|*Name*|LA Surface Relation Type
+h|*Alias*|MA_surfaceRelationType
+h|*CamelCase*|surfaceRelationType
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|This data type provides information about the relationship to the surface.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152 clause 6.5.8
+h|*Similarity to Source*|identical
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This code list is taken directly from ISO 19152.
+|===
+
+[[sec-la-volume-type]]
+==== LA Volume Type
+
+[[tbl-143]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Associated Attribute*|MAVOLT
+h|*Name*|LA Volume Type
+h|*Alias*|MA_volumeType
+h|*CamelCase*|volumeType
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|Description of the type of volume.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152 clause 6.5.8
+h|*Similarity to Source*|generalization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This code list is taken directly from ISO 19152.
+|===
+
+[[sec-la-area-type]]
+==== LA Area Type
+
+[[tbl-144]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Associated Attribute*|MAARTY
+h|*Name*|LA Area Type
+h|*Alias*|MA_areaType
+h|*CamelCase*|areaType
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|Description of the type of volume.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152 clause 6.5.8
+h|*Similarity to Source*|generalization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This code list is taken directly from ISO 19152.
+|===
+
+[[sec-la-interpolation-type]]
+==== LA Interpolation Type
+
+[[tbl-145]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|ISO 19152
+h|*Associated Attribute*|arcGeometry
+h|*Name*|Arc Interpolation Type
+h|*Alias*|MA_InterpolationTypeList
+h|*CamelCase*|LA_InterpolationType
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|Interpolation Types.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152 clause 6.5.8
+h|*Similarity to Source*|generalization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This code list derives directly from ISO 19152.
+|===
+
+[[sec-la-point-type]]
+==== LA Point Type
+
+[[tbl-146]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|ISO 19152
+h|*Associated Attribute*|pointType
+h|*Name*|Point Type
+h|*Alias*|MA_PointType
+h|*CamelCase*|LA_PointType
+h|*Code List Type*|closed enumeration (source, control, noSource)
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|Point Types.
+h|*Reference*|ISO 19152
+h|*Definition Source*|ISO 19152 clause 6.5.8
+h|*Similarity to Source*|generalization
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|This code list derives directly from ISO 19152.
+|===
+
+[[sec-ci-onlinefunctioncode]]
+==== CI_OnlineFunctionCode
+
+[[tbl-147]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List
+h|*Domain*|MLB
+h|*Associated Attribute*|ronlineResourceFunction
+h|*Name*|CI_OnlineFunctionCode
+h|*Alias*|MA_CI_OnlineFunctionCode
+h|*CamelCase*|onlineFunctionCode
+h|*Code List Type*|open enumeration
+h|*URI*|
+h|*Encoding*|
+h|*Definition*|Function performed by the resource.
+h|*Reference*|ISO 19115
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks:*|Derived directly from the ISO 19115 standard. Values are “download”, information”, offlineAccess”, “order”, “search”.
+|===
+
+[[sec-s-121-listed-values]]
+=== S-121 Listed Values
+
+[[sec-releasability-type-list-2]]
+==== -- Releasability Type List
+
+[[sec-official]]
+===== Official
+
+[[tbl-148]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|releasabilityTypeList
+h|*Name*|Official
+h|*Alias*|
+h|*CamelCase*|official
+h|*Definition*|Describes a "FeatureUnit" that can be officially released.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-internal]]
+===== Internal
+
+[[tbl-149]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|releasabilityTypeList
+h|*Name*|Internal
+h|*Alias*|
+h|*CamelCase*|internal
+h|*Definition*|Describes a "FeatureUnit" that can only be released internally.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-controlled]]
+===== Controlled
+
+[[tbl-150]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|releasabilityTypeList
+h|*Name*|Controlled
+h|*Alias*|
+h|*CamelCase*|controlled
+h|*Definition*|Describes a "FeatureUnit" that bears security restrictions.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-la-surfacerelationtype]]
+==== -- LA_SurfaceRelationType
+
+[[sec-mixed]]
+===== Mixed
+
+[[tbl-151]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_surfaceRelationType
+h|*Name*|Mixed
+h|*Alias*|
+h|*CamelCase*|mixed
+h|*Definition*|Relationship of spatial unit to surface. Mixed relationship.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-below]]
+===== Below
+
+[[tbl-152]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_surfaceRelationType
+h|*Name*|Below
+h|*Alias*|
+h|*CamelCase*|below
+h|*Definition*|Relationship of spatial unit to surface. Below Surface.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-above]]
+===== Above
+
+[[tbl-153]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_surfaceRelationType
+h|*Name*|Above
+h|*Alias*|
+h|*CamelCase*|above
+h|*Definition*|Relationship of spatial unit to surface. Above surface.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-on-surface]]
+===== On Surface
+
+[[tbl-154]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_surfaceRelationType
+h|*Name*|On Surface
+h|*Alias*|
+h|*CamelCase*|onSurface
+h|*Definition*|Relationship of spatial unit to surface. On surface.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-basic-administrative-unit-type-list-2]]
+==== -- Basic Administrative Unit Type List
+
+[[sec-maritime-limits-and-boundaries]]
+===== Maritime Limits and Boundaries
+
+[[tbl-155]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|basicAdministrativeUnitTypeList
+h|*Name*|Maritime Limits and Boundaries
+h|*Alias*|
+h|*CamelCase*|maritimeLimitsAndBoundaries
+h|*Definition*|Administrative Unit relates to "Maritime Limits and Boundaries".
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-location-type-list-2]]
+==== -- Location Type List
+
+[[sec-location-2]]
+===== Location
+
+[[tbl-156]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|locationTypeList
+h|*Name*|Location
+h|*Alias*|
+h|*CamelCase*|location
+h|*Definition*|Identifier that a Feature Unit is of type generic Location.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-baseline-point-2]]
+===== Baseline Point
+
+[[tbl-157]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|locationTypeList
+h|*Name*|Baseline Point
+h|*Alias*|
+h|*CamelCase*|baselinePoint
+h|*Definition*|Identifier that a Feature Unit is of type Baseline Point.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-contributing-point-2]]
+===== Contributing Point
+
+[[tbl-158]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|locationTypeList
+h|*Name*|Contributing Point
+h|*Alias*|
+h|*CamelCase*|contributingPoint
+h|*Definition*|Identifier that a Feature Unit is of type Contributing Point
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-limit-point-2]]
+===== Limit Point
+
+[[tbl-159]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|locationTypeList
+h|*Name*|Limit Point
+h|*Alias*|
+h|*CamelCase*|limitPoint
+h|*Definition*|Identifier that a Feature Unit is of type Limit Point.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-boundary-point-2]]
+===== Boundary Point
+
+[[tbl-160]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|locationTypeList
+h|*Name*|Boundary Point
+h|*Alias*|
+h|*CamelCase*|boundaryPoint
+h|*Definition*|Identifier that a Feature Unit is of type Boundary Point.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-limit-type-list-2]]
+==== -- Limit Type List
+
+[[sec-limit-2]]
+===== Limit
+
+[[tbl-161]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Limit
+h|*Alias*|
+h|*CamelCase*|limit
+h|*Definition*|Identifier that a Feature Unit is of type generic Limit.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-international-boundary-2]]
+===== International Boundary
+
+[[tbl-162]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|International Boundary
+h|*Alias*|
+h|*CamelCase*|internationalBoundary
+h|*Definition*|Identifier that a Feature Unit is of type International Boundary.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-baseline-2]]
+===== Baseline
+
+[[tbl-163]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Baseline
+h|*Alias*|
+h|*CamelCase*|baseline
+h|*Definition*|Identifier that a Feature Unit is of type Baseline.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-archipelagic-baseline-2]]
+===== Archipelagic Baseline
+
+[[tbl-164]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Archipelagic Baseline
+h|*Alias*|
+h|*CamelCase*|archipelagicBaseline
+h|*Definition*|Identifier that a Feature Unit is of type Archipelagic Baseline.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-bays-2]]
+===== Bays
+
+[[tbl-165]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Bays
+h|*Alias*|
+h|*CamelCase*|baysBaseline
+h|*Definition*|Identifier that a Feature Unit is of type Bays baseline.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-normal-baseline-2]]
+===== Normal Baseline
+
+[[tbl-166]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Normal Baseline
+h|*Alias*|
+h|*CamelCase*|normalBaseline
+h|*Definition*|Identifier that a Feature Unit is of type Normal Baseline.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-straight-baselines]]
+===== Straight Baselines
+
+[[tbl-167]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Straight Baselines
+h|*Alias*|
+h|*CamelCase*|straightBaselines
+h|*Definition*|Identifier that a Feature Unit is of type Straight Baselines.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-low-tide-elevations-2]]
+===== Low-Tide Elevations
+
+[[tbl-168]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Low-Tide Elevations
+h|*Alias*|
+h|*CamelCase*|lowTideElevationsBaseline
+h|*Definition*|Identifier that a Feature Unit is of type Low-Tide Elevations baseline.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-mouths-of-rivers-2]]
+===== Mouths of Rivers
+
+[[tbl-169]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Mouths of Rivers
+h|*Alias*|
+h|*CamelCase*|mouthsOfRiversBaseline
+h|*Definition*|Identifier that a Feature Unit is of type Mouths of Rivers baseline.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-ports-2]]
+===== Ports
+
+[[tbl-170]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Ports
+h|*Alias*|
+h|*CamelCase*|portsBaseline
+h|*Definition*|Identifier that a Feature Unit is of type Ports baseline.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-reefs-2]]
+===== Reefs
+
+[[tbl-171]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Reefs
+h|*Alias*|
+h|*CamelCase*|reefsBaseline
+h|*Definition*|Identifier that a Feature Unit is of type Reefs baseline.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-outer-limit-of-the-territorial-sea-2]]
+===== Outer Limit of the Territorial Sea
+
+[[tbl-172]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Outer Limit of the Territorial Sea
+h|*Alias*|
+h|*CamelCase*|outerLimitOfTheTerritorialSea
+h|*Definition*|Identifier that a Feature Unit is of type Outer Limit of the Territorial Sea.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-outer-limit-of-the-contiguous-zone-2]]
+===== Outer Limit of the Contiguous Zone
+
+[[tbl-173]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Outer Limit of the Contiguous Zone
+h|*Alias*|
+h|*CamelCase*|outerLimitOfTheContiguousZone
+h|*Definition*|Identifier that a Feature Unit is of type Outer Limit of the Contiguous Zone.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-outer-limit-of-the-exclusive-economic-zone-2]]
+===== Outer Limit of the Exclusive Economic Zone
+
+[[tbl-174]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Outer Limit of the Exclusive Economic Zone
+h|*Alias*|
+h|*CamelCase*|outerLimitOfTheExclusiveEconomicZone
+h|*Definition*|Identifier that a Feature Unit is of type Outer Limit of the Exclusive Economic Zone.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-outer-limit-of-the-continental-shelf-2]]
+===== Outer Limit of the Continental Shelf
+
+[[tbl-175]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Outer Limit of the Continental Shelf
+h|*Alias*|
+h|*CamelCase*|outerLimitOfTheContinentalShelf
+h|*Definition*|Identifier that a Feature Unit is of type Outer Limit of the Continental Shelf.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-outer-limit-of-the-roadstead-2]]
+===== Outer Limit of the Roadstead
+
+[[tbl-176]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Outer Limit of the Roadstead
+h|*Alias*|
+h|*CamelCase*|outerLimitOfTheRoadstead
+h|*Definition*|Identifier that a Feature Unit is of type Outer Limit of the Roadstead.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-construction-line-2]]
+===== Construction Line
+
+[[tbl-177]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|limitTypeList
+h|*Name*|Construction Line
+h|*Alias*|
+h|*CamelCase*|constructionLine
+h|*Definition*|Identifier that a Feature Unit is of type Construction Line.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-zone-type-list-2]]
+==== -- Zone Type List
+
+[[sec-zone-2]]
+===== Zone
+
+[[tbl-178]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|zoneTypeList
+h|*Name*|Zone
+h|*Alias*|
+h|*CamelCase*|zone
+h|*Definition*|Identifier that a Feature Unit is of type generic Zone.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-internal-waters-2]]
+===== Internal Waters
+
+[[tbl-179]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|zoneTypeList
+h|*Name*|Internal Waters
+h|*Alias*|
+h|*CamelCase*|internalWaters
+h|*Definition*|Identifier that a Feature Unit is of type Internal Waters.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-archipelagic-waters-2]]
+===== Archipelagic Waters
+
+[[tbl-180]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|zoneTypeList
+h|*Name*|Archipelagic Waters
+h|*Alias*|
+h|*CamelCase*|archipelagicWaters
+h|*Definition*|Identifier that a Feature Unit is of type Archipelagic Waters.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-territorial-sea-2]]
+===== Territorial Sea
+
+[[tbl-181]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|zoneTypeList
+h|*Name*|Territorial Sea
+h|*Alias*|
+h|*CamelCase*|territorialSea
+h|*Definition*|Identifier that a Feature Unit is of type Territorial Sea.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-roadsteads-2]]
+===== Roadsteads
+
+[[tbl-182]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|zoneTypeList
+h|*Name*|Roadsteads
+h|*Alias*|
+h|*CamelCase*|roadsteads
+h|*Definition*|Identifier that a Feature Unit is of type Roadstead.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-contiguous-zone-2]]
+===== Contiguous Zone
+
+[[tbl-183]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|zoneTypeList
+h|*Name*|Contiguous Zone
+h|*Alias*|
+h|*CamelCase*|contiguousZone
+h|*Definition*|Identifier that a Feature Unit is of type Contiguous Zone.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-exclusive-economic-zone-2]]
+===== Exclusive Economic Zone
+
+[[tbl-184]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|zoneTypeList
+h|*Name*|Exclusive Economic Zone
+h|*Alias*|
+h|*CamelCase*|exclusiveEconomicZone
+h|*Definition*|Identifier that a Feature Unit is of type Exclusive Economic Zone.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-continental-shelf-2]]
+===== Continental Shelf
+
+[[tbl-185]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|zoneTypeList
+h|*Name*|Continental Shelf
+h|*Alias*|
+h|*CamelCase*|continentalShelf
+h|*Definition*|Identifier that a Feature Unit is of type Continental Shelf.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-high-seas-2]]
+===== High Seas
+
+[[tbl-186]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|zoneTypeList
+h|*Name*|High Seas
+h|*Alias*|
+h|*CamelCase*|highSeas
+h|*Definition*|Identifier that a Feature Unit is of type High Seas.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-the-area-2]]
+===== The Area
+
+[[tbl-187]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|zoneTypeList
+h|*Name*|The Area
+h|*Alias*|
+h|*CamelCase*|theArea
+h|*Definition*|Identifier that a Feature Unit is of type The Area.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-space-type-list-2]]
+==== -- Space Type List
+
+[[sec-space-2]]
+===== Space
+
+[[tbl-188]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|spaceTypeList
+h|*Name*|Space
+h|*Alias*|
+h|*CamelCase*|space
+h|*Definition*|Identifier that a Feature Unit is of type generic Space.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-interpolation-type-list]]
+==== -- Interpolation Type List
+
+[[sec-deflection]]
+===== Deflection
+
+[[tbl-189]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|interpolationTypeList
+h|*Name*|Deflection
+h|*Alias*|
+h|*CamelCase*|deflection
+h|*Definition*|A turning point along a line.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-densification]]
+===== Densification
+
+[[tbl-190]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|interpolationTypeList
+h|*Name*|Densification
+h|*Alias*|
+h|*CamelCase*|Densification
+h|*Definition*|Describes a location that densifies a line to ensure the geometry of a feature is correctly represented.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-point-type-list]]
+==== -- Point Type List
+
+[[sec-defined]]
+===== Defined
+
+[[tbl-191]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|pointTypeList
+h|*Name*|Defined
+h|*Alias*|
+h|*CamelCase*|defined
+h|*Definition*|Describes a "Location" that is derived from a legislative document or other definitive sources.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-computed]]
+===== Computed
+
+[[tbl-192]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|pointTypeList
+h|*Name*|Computed
+h|*Alias*|
+h|*CamelCase*|computed
+h|*Definition*|Describes a location that is computed in accordance with the definition described in the source through proper geodetic calculations; for example, the intersection of two arcs over an ellipsoidal surface. A point may be established to support construction computations.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-arc-geometry-type-list-2]]
+==== -- Arc Geometry Type List
+
+[[sec-geodesic]]
+===== Geodesic
+
+[[tbl-193]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|arcGeometryTypeList
+h|*Name*|Geodesic
+h|*Alias*|
+h|*CamelCase*|geodesic
+h|*Definition*|Describes a path of shortest distance along the surface of an ellipsoid.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S4*|
+h|*Remarks*|
+|===
+
+[[sec-loxodrome]]
+===== Loxodrome
+
+[[tbl-194]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|arcGeometryTypeList
+h|*Name*|Loxodrome
+h|*Alias*|
+h|*CamelCase*|loxodrome
+h|*Definition*|Describes an arc crossing all meridians of longitude at the same angle; a path with constant bearing.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-jurisdiction-domain-type-list-2]]
+==== -- Jurisdiction Domain Type List
+
+[[sec-airspace]]
+===== Airspace
+
+[[tbl-195]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|jurisdictionDomainTypeList
+h|*Name*|Airspace
+h|*Alias*|
+h|*CamelCase*|airspace
+h|*Definition*|Describes a space in the air above the "landSurface" or "waterSurface".
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-land-surface]]
+===== Land Surface
+
+[[tbl-196]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|jurisdictionDomainTypeList
+h|*Name*|Land Surface
+h|*Alias*|
+h|*CamelCase*|landSurface
+h|*Definition*|Describe the interface between "subsoil" and "airspace".
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-water-surface]]
+===== Water Surface
+
+[[tbl-197]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|jurisdictionDomainTypeList
+h|*Name*|Water Surface
+h|*Alias*|
+h|*CamelCase*|waterSurface
+h|*Definition*|Describe the interface between the "airspace" and "waterColumn".
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-water-column]]
+===== Water Column
+
+[[tbl-198]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|jurisdictionDomainTypeList
+h|*Name*|Water Column
+h|*Alias*|
+h|*CamelCase*|waterColumn
+h|*Definition*|Describes a space from the "seabedSurface" up to the "waterSurface".
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-seabed-surface]]
+===== Seabed Surface
+
+[[tbl-199]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|jurisdictionDomainTypeList
+h|*Name*|Seabed Surface
+h|*Alias*|
+h|*CamelCase*|seabedSurface
+h|*Definition*|Describes the interface between the "waterColumn" and the "subsoil", submerged land surface found under the oceans.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-subsoil]]
+===== Subsoil
+
+[[tbl-200]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|jurisdictionDomainTypeList
+h|*Name*|Subsoil
+h|*Alias*|
+h|*CamelCase*|subsoil
+h|*Definition*|Describes a space below the "landSurface" and the "seabedSurface".
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-administrative-source-type-list-2]]
+==== -- Administrative Source Type List
+
+[[sec-international-agreement]]
+===== International Agreement
+
+[[tbl-201]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|administrativeSourceTypeList
+h|*Name*|International Agreement
+h|*Alias*|
+h|*CamelCase*|internationalAgreement
+h|*Definition*|Describes an international agreement for example: Treaty, Agreement, MOU (Memorandum of Understanding), Exchange of letters.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-domestic-legislative-instrument]]
+===== Domestic Legislative Instrument
+
+[[tbl-202]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|administrativeSourceTypeList
+h|*Name*|Domestic Legislative Instrument
+h|*Alias*|
+h|*CamelCase*|domesticLegislativeInstrument
+h|*Definition*|Defines a source describing a primary and secondary legislative processes and domestic implementations of treaties.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-domestic-administrative]]
+===== Domestic Administrative
+
+[[tbl-203]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|administrativeSourceTypeList
+h|*Name*|Domestic Administrative
+h|*Alias*|
+h|*CamelCase*|domesticAdministrative
+h|*Definition*|Defines a source that is based under a legislative framework by the authority given under domestic legislation; for example, petroleum permits.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-spatial-source-type-list-2]]
+==== -- Spatial Source Type List
+
+[[sec-field-sketch]]
+===== Field Sketch
+
+[[tbl-204]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|spatialSourceTypeList
+h|*Name*|Field Sketch
+h|*Alias*|
+h|*CamelCase*|fieldSketch
+h|*Definition*|Source data collected from hydrographer's or mapper's field sketch.
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-gnss-survey]]
+===== GNSS Survey
+
+[[tbl-205]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|SpatialSourceTypeList
+h|*Name*|GNSS Survey
+h|*Alias*|
+h|*CamelCase*|gnssSurvey
+h|*Definition*|Source data collected from GNSS satellite positioning.
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-relative-measurement]]
+===== Relative Measurement
+
+[[tbl-206]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|SpatialSourceTypeList
+h|*Name*|Relative Measurement
+h|*Alias*|
+h|*CamelCase*|relativeMeasurement
+h|*Definition*|Source data collected based on relative measurement.
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-orthographic-photo]]
+===== Orthographic Photo
+
+[[tbl-207]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|SpatialSourceTypeList
+h|*Name*|Orthographic Photo
+h|*Alias*|
+h|*CamelCase*|orthoPhoto
+h|*Definition*|Source data collected base on "Orthographic Photo".
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-satellite-imagery]]
+===== Satellite Imagery
+
+[[tbl-208]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|SpatialSourceTypeList
+h|*Name*|Satellite Imagery
+h|*camelCaseCode*|satelliteImagery
+h|*Definition*|Source data collected base on "Satellite Imagery".
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-topographic-map]]
+===== Topographic Map
+
+[[tbl-209]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|SpatialSourceTypeList
+h|*Name*|Topographic Map
+h|*Alias*|
+h|*CamelCase*|topographicMap
+h|*Definition*|Source data collected base on "Topographic Map" data.
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-lidar-survey]]
+===== LiDAR Survey
+
+[[tbl-210]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|SpatialSourceTypeList
+h|*Name*|LiDAR Survey
+h|*Alias*|
+h|*CamelCase*|lidarSurvey
+h|*Definition*|Source data collected from a "LiDAR Survey".
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-video]]
+===== Video
+
+[[tbl-211]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|SpatialSourceTypeList
+h|*Name*|Video
+h|*Alias*|
+h|*CamelCase*|video
+h|*Definition*|Source data collected base on "Video" information.
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-hydrographic-chart]]
+===== Hydrographic Chart
+
+[[tbl-212]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|SpatialSourceTypeList
+h|*Name*|Hydrographic Chart
+h|*Alias*|
+h|*CamelCase*|hydrographicChart
+h|*Definition*|Source data collected base on "Hydrographic Chart" data.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-party-type-list-2]]
+==== -- Party Type List
+
+[[sec-international-organisation]]
+===== International Organisation
+
+[[tbl-213]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|partyTypeList
+h|*Name*|International Organisation
+h|*Alias*|
+h|*CamelCase*|internationalOrganisation
+h|*Definition*|Identifies party as being an International Organization.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-state-country]]
+===== State Country
+
+[[tbl-214]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|partyTypeList
+h|*Name*|StateCountry
+h|*Alias*|
+h|*CamelCase*|stateCountry
+h|*Definition*|Identifies party as being a State or Country.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-province-state]]
+===== Province State
+
+[[tbl-215]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*Associated Attribute*|partyTypeList
+h|*Name*|Province State
+h|*Alias*|
+h|*CamelCase*|provinceState
+h|*Definition*|Identifies party as being a province or state.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-non-natural-person]]
+===== Non Natural Person
+
+[[tbl-216]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|partyTypeList
+h|*Name*|Non Natural Person
+h|*Alias*|
+h|*CamelCase*|nonNaturalPerson
+h|*Definition*|Identifies party as being a non-natural person such as a corporation.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-natural-person]]
+===== Natural Person
+
+[[tbl-217]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*Associated Attribute*|partyTypeList
+h|*Name*|Natural Person
+h|*Alias*|
+h|*CamelCase*|naturalPerson
+h|*Definition*|Defines a natural person.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-party-group-type-list-2]]
+==== -- Party Group Type List
+
+[[sec-agreement]]
+===== Agreement
+
+[[tbl-218]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Proposal Type*|
+h|*Domain*|MLB
+h|*Associated Attribute*|groupPartyTypeList
+h|*Name*|Agreement
+h|*Alias*|
+h|*CamelCase*|agreement
+h|*Definition*|The resulting group consists of parties related to an agreement.
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-association]]
+===== Association
+
+[[tbl-219]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|partyGroupTypeList
+h|*Name*|Association
+h|*Alias*|
+h|*CamelCase*|association
+h|*Definition*|The resulting group is an association.
+h|*Reference*|ISO 19152
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-condominium]]
+===== Condominium
+
+[[tbl-220]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|partyGroupTypeList
+h|*Name*|Condominium
+h|*Alias*|
+h|*CamelCase*|condominium
+h|*Definition*|The resulting group is a condominium.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks:*|
+|===
+
+[[sec-la-availability-status-type-2]]
+==== -- LA Availability Status Type
+
+[[sec-archive-converted]]
+===== Archive Converted
+
+[[tbl-221]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_AvailabilityStatusType
+h|*Name*|Archive Converted
+h|*Alias*|
+h|*CamelCase*|archiveConverted
+h|*Definition*|Source archive has been converted.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-archive-destroyed]]
+===== Archive Destroyed
+
+[[tbl-222]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_AvailabilityStatusType
+h|*Name*|Archive Destroyed
+h|*Alias*|
+h|*CamelCase*|archiveDestroyed
+h|*Definition*|Source archive has been destroved.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-archive-incomplete]]
+===== Archive Incomplete
+
+[[tbl-223]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_AvailabilityStatusType
+h|*Name*|Archive Incomplete
+h|*Alias*|
+h|*CamelCase*|archiveIncomplete
+h|*Definition*|Source archive I incomplete.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-archive-unknown]]
+===== Archive Unknown
+
+[[tbl-224]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_AvailabilityStatusType
+h|*Name*|Archive Unknown
+h|*Alias*|
+h|*CamelCase*|archiveUnknown
+h|*Definition*|Source archive is unknown.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-document-available]]
+===== Document Available
+
+[[tbl-225]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_AvailabilityStatusType
+h|*Name*|Document Available
+h|*Alias*|
+h|*CamelCase*|docAvailable
+h|*Definition*|Source document is available.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-la-area-type-2]]
+==== -- LA Area Type
+
+[[sec-official-area]]
+===== Official Area
+
+[[tbl-226]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_AreaType
+h|*Name*|Official Area
+h|*Alias*|
+h|*CamelCase*|officialArea
+h|*Definition*|Area has been officially established.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-non-official-area]]
+===== Non Official Area
+
+[[tbl-227]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_AreaType
+h|*Name*|Non-official Area
+h|*Alias*|
+h|*CamelCase*|nonOfficialArea
+h|*Definition*|Area has not been officially established.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-calculated-area]]
+===== Calculated Area
+
+[[tbl-228]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_AreaType
+h|*Name*|Calculated Area
+h|*Alias*|
+h|*CamelCase*|calculatedArea
+h|*Definition*|Area has been established through a calculation.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-surveyed-area]]
+===== Surveyed Area
+
+[[tbl-229]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_AreaType
+h|*Name*|Surveyed Area
+h|*Alias*|
+h|*CamelCase*|surveyedArea
+h|*Definition*|Area has been established through use of a survey technique.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-la-volume-type-2]]
+==== -- LA Volume Type
+
+[[sec-official-volume]]
+===== Official Volume
+
+[[tbl-230]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_VolumeType
+h|*Name*|Official Volume
+h|*Alias*|
+h|*CamelCase*|officialVolume
+h|*Definition*|Volume has been officially established.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-non-official-volume]]
+===== Non Official Volume
+
+[[tbl-231]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_VolumeType
+h|*Name*|Non-official Volume
+h|*Alias*|
+h|*CamelCase*|nonOfficialVolume
+h|*Definition*|Volume has not been officially established.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-calculated-volume]]
+===== Calculated Volume
+
+[[tbl-232]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_VolumeType
+h|*Name*|Calculated Volume
+h|*Alias*|
+h|*CamelCase*|calculatedVolume
+h|*Definition*|Volume has been established through a calculation.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===
+
+[[sec-surveyed-volume]]
+===== Surveyed Volume
+
+[[tbl-233]]
+[cols="a,a"]
+|===
+h|*Item Type*|Code List Value
+h|*Domain*|MLB
+h|*Associated Attribute*|LA_VolumeType
+h|*Name*|Surveyed Volume
+h|*Alias*|
+h|*CamelCase*|surveyedVolume
+h|*Definition*|Volume has been established through use of a survey technique.
+h|*Reference*|
+h|*Definition Source*|
+h|*Similarity to Source*|
+h|*Int1*|
+h|*S-4*|
+h|*Remarks*|
+|===

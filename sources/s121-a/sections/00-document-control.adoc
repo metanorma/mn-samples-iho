@@ -1,0 +1,14 @@
+[.preface]
+== Document Control
+
+Changes to this document are coordinated by the IHO S-121 Project Team (S-121PT) which is a subsidiary group of the S-100 Working Group (S-100WG). New editions of this document will produced in coordination with the S-121 Product Specification, and will be made available on the IHO web site. +
+
+[[tbl-3]]
+[cols="a,a,a,a"]
+|===
+|Edition Number|Date|Author|Purpose
+|Draft Edition 1.0.0|April 2018|S-121PT|Approved by HSSC 10 under the new review cycle for testing. (Reference; HSSC10/16)
+|Draft Edition 1.0.1|January 2019|S-121PT|Minor revision after S-121 Project Team meeting December 2017, including , the addition of the code list “Interpolation Type” in Fig 3 Section 3.1. and the addition of an information object “S121_AdditionalSpatialInformationType”  to support alignment with the S-100 Spatial Attribute.
+|Ballot version of Edition 1.0.0|February 2019|IHO Sec|Revised format and structure.
+|Edition 1.0.0|October 2019|S-121PT|Revised as per results of ballot comment review meeting August 2019
+|===

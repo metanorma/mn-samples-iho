@@ -1,0 +1,91 @@
+[appendix,obligation=normative]
+[[annex-validation-tests]]
+== Validation Tests
+
+[[sec-test-case-for-attribute-assignment-to-feature-classes]]
+=== Test case for attribute assignment to feature classes
+
+Test purpose: Verify that all mandatory attributes associated with feature classes are provided. 
+
+Test method: Check that all mandatory attributes that are defined for each feature class in the Feature Catalogue are provided.
+
+Reference: Appendix B, clause B 2.3.
+
+Test type: Basic.
+
+[[sec-test-case-for-attribute-domains]]
+=== Test case for attribute domains
+
+. Test purpose: Verify that attribute domains respect Feature Catalogue definition.
+
+Test method: Check that all attribute domains defined in the Feature Catalogue are respected.
+
+Reference: Appendix B, clause B 2.3.
+
+Test type: Basic.
+
+[[sec-test-case-for-feature-duplication]]
+=== Test case for feature duplication
+
+. Test purpose: Verify that a feature is not duplicated (that is, with identical geometry, feature definition and attribution) with another feature in the same dataset.
+
+Test method: Check that each feature is not duplicated with itself. If two instances of a feature class exist they must be differentiated by means of attributes such as the versioning attribute or metadata.
+
+Reference: Clause 6.2.1.
+
+Test type: Basic.
+
+[[sec-test-case-for-data-omission]]
+=== Test case for data omission
+
+. Test purpose: Verify that data is not missing.
+
+Test method: Check that geometrically defined linear features are logically continuous and that geometrically defined area features are bounded by as set of boundary objects. 
+
+Reference: Clauses 6.2.2. 
+
+Test type: Basic.
+
+[[sec-test-case-for-domain-consistency]]
+=== Test case for domain consistency
+
+. Test purpose: Verify that attribute values are within specified ranges.
+
+Test method: Check that attribute values are within range by means of test software.
+
+Reference: Clause 6.3.1
+
+Test type: Basic.
+
+[[sec-test-case-for-format-consistency]]
+=== Test case for format consistency
+
+. Test purpose: Verify that the encoding is compliant with the encoding specified by this Product Specification.
+
+Test method: Conformance with encoding specification. 
+
+Reference: Clause 6.3.2.
+
+Test type: Basic.
+
+[[sec-test-case-for-topological-consistency]]
+=== Test case for topological consistency
+
+. Test purpose: Verify that the dataset geometry is in line with S-100 Level 3a geometry.
+
+Test method: The object topology consistency test is done by the GIS software. 
+
+Reference: Clause 6.3.3.
+
+Test type: Basic.
+
+[[sec-test-case-for-data-accuracy]]
+=== Test case for data accuracy
+
+. Test purpose: Verify that objects and attributes are represented to the accuracies specified in the metadata or associated source objects associated with the data types within the data set.
+
+Test method: Verify that all data elements are either of officially declared absolute accuracy or associated with metadata elements or source objects that describe the accuracy. 
+
+Reference: Clause 6.4.
+
+Test type: Basic.

@@ -11,6 +11,9 @@ metanorma:
       - sources/s5b/document.adoc
       - sources/s63/document.adoc
       - sources/m1/document.adoc
+      - sources/s121/document.adoc
+      - sources/s121-a/document.adoc
+      - sources/s121-b/document.adoc
 
   collection:
     organization: "IHO: International Hydrographic Organization"

@@ -1,0 +1,27 @@
+[[sec-coordinate-reference-system-crs]]
+== Coordinate Reference System (CRS)
+
+[[sec-horizontal-reference-system]]
+=== Horizontal reference system
+
+Spatial data are expressed in latitude and longitude geographic coordinates in reference to a horizontal reference system. 
+
+The longitude is stored as a negative number to represent a position west of the prime meridian (0°). Latitude is stored as a negative number to represent a position south of the equator.
+
+Latitude and Longitude may also be stored as textual strings. This is required so that positions may be described in the exact format that they are described in the source document (treaty or national legislation) they were extracted from. If a position is described in a source document in degrees, minutes and seconds then this description must be retained in the textual string as degrees, minutes and seconds because a conversion to decimal degrees would constitute a change in format from its defined value. The same latitude and longitude position may also be stored as a set of real numbers within a GIS system so that it can be used digitally. That is, the values used in a source document must be preserved, but points and other geometric primitives may have multiple representations.
+
+Different reference systems are used by various nations. Since data may come from different sources such as different treaties, multiple coordinate reference systems may be used in the same dataset. 
+
+MLB data is geographic data and therefore is not projected. 
+
+[[sec-vertical-coordinate-reference-system]]
+=== Vertical coordinate reference system
+
+Vertical position is expressed in meters above or below a vertical reference. 
+
+The IHO Geospatial Information (GI) Registry includes vertical datums as registered concepts, although IHO also indicates that the IHO GI Registry is not an exhaustive or authoritative definition.
+
+[[sec-temporal-reference-system]]
+=== Temporal reference system
+
+Time is measured by reference to Calendar dates and Clock time in accordance with ISO 19108:2002 Temporal Schema clause 5.4.4.
