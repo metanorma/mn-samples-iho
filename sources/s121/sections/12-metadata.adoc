@@ -1,0 +1,6 @@
+[[sec-metadata]]
+== Metadata
+
+The S-121 Product Specification makes use of IHO S-100 and ISO 19115:2003 metadata. The Metadata in this dataset complies with S-100 Part 4a. The metadata for an entire data product dataset is defined in Table 1-1, clause 1.6 in this document. Additional metadata may be defined to be associated with any feature instance in a dataset.
+
+Currently metadata addressing the Product Specification is described in clause 1.6, Table 1-1 in this document.   There will need to be some restructuring to include dataset metadata in this section and rewrite clause 1.6 in a future version of this Product Specification.

@@ -1,0 +1,533 @@
+[appendix,obligation=normative]
+[[annex-record-oriented-encoding-structure-in-abstract-syntax-notati]]
+== Record Oriented Encoding Structure
+ in Abstract Syntax Notation ASN.1
+
+This Appendix describes the structure of the Explicit Text Record Oriented Format using the Abstract Syntax Notation (ASN.1). A description of the ASN.1 description language is given in Appendix B. 
+
+The metadata elements are derived from the S-121 Product Specification that themselves are derived from S-100. Additional metadata may be added in accordance with S-100 and ISO 19115 Geographic Information Metadata. 
+
+*S-121 Data Set Abstract Syntax*
+
+[source]
+----
+-- ---- Dataset Structure  ---
+-- An S121 Data set consists of a Sequence of Blocks corresponding to each type of information element
+-- The first two blocks are MetadataBlock, and a GovernanceBlock. For simplicity there may only
+-- be one MetadataBlock, GovernanceBlock and BAUnitBlock per dataset. These blocks are required, but they may be empty; that is, a block may consist of only an EndOfBlockMarker.
+S121DataSet
+    ::= SEQUENCE {
+        MetadataBlock,    -- Data set metadata
+        GovernanceBlock,    -- S121 Governance information
+        SEQUENCE OF    -- Multiple Blocks or Groups of Blocks
+            CHOICE {    -- corresponding to information elements
+                Block,     -- may exist in a data set
+                Group    -- in accordance with the
+            }        -- S121 Application Schema.
+        EndOfFile    -- The file is terminated with
+-- an explicit human readable
+-- End of File Marker.
+    }
+-- ---- Block Structure  ---
+-- Each S121 Block corresponds to an Information Element class in the S-121 UML model. There are two types of blocks, Linear Blocks and Table Blocks.
+Block                   -- An S121 Block contains the
+-- information pertaining to an
+-- information element from the
+-- S121 model.
+    ::= CHOICE{
+        LinearBlock    -- A LinearBlock is a description
+-- of a single object instance with its
+-- attributes.
+        TableBlock       -- A TableBlock is a description of a set
+-- of object instances with attributes
+-- laid out in a table form.
+    }
+-- Each S121 LinearBlock consists of a set of Records terminated by an end of EndOfBlockMarker.
+-- An EndofBlockMarker is equivalent to a blank record at the end of a block resulting in two
+-- EndOfRecordMarkers in a row.
+LinearBlock                   -- An S121 LinearBlock contains the
+-- information pertaining to an
+-- information element from the
+-- S121 model.
+    ::= SEQUENCE OF{
+        BlockDescriptorRecord    -- An S121 BlockDescriptorRecord
+-- identifies the type of information
+-- element related to the block.
+        SEQUENCE {Record }      -- An S121 Record contains the
+-- information pertaining to
+-- an attribute value.
+        EndOfBlockMarker    -- A block is terminated by an
+-- EndOfBlockMarker which is a
+-- blank record resulting in two
+-- EndOfRecordMarkers in a row
+    }
+-- Each S121 TableBlock consists of a record header row describing attribute type names for columns and
+-- a set of data rows with attributes.
+TableBlock                   -- An S121 TableBlock contains the
+-- information pertaining to a set of
+-- information element of the same type
+-- organized in a table.
+    ::= SEQUENCE OF{
+        BlockDescriptorRecord    -- An S121 BlockDescriptorRecord
+-- identifies the type of information
+-- element related to the block.
+        TableHeaderRow       -- An TableHeaderRow describes the names
+-- of attribute value types
+        SEQUENCE {TableRow }      -- A TableRow describes the values
+-- corresponding to the attribute types
+-- for each column.
+        EndOfBlockMarker    -- A block is terminated by an
+-- EndOfBlockMarker which is a
+-- blank record resulting in two
+-- EndOfRecordMarkers in a row
+    }
+BlockDescriptorRecord
+    ::= SEQUENCE {
+        BlockTypeIdentifier,    -- Character string describing the
+-- the type of information
+-- element related to the block.
+        TAB_Delimiter    -- (IA5 Code 09)
+        BlockID    -- This identifier is used when it is
+-- necessary to reference a block
+-- (corresponding to an information element)
+        EndOfRecordMarker    -- Record termination delimiter sequence
+    }
+BlockTypeIdentifier     ::= Graphic String
+BlockID
+    ::= CHOICE {
+        NameAsID,     -- For a Party Block or a Source Block this can
+-- be a unique name of the Party or Block taken
+-- from the name attribute in that element
+        Oid_FormattedCharacterString    -- Object Identifier. This identifier is a
+-- formatted character string consisting of a
+-- namespace followed by a dash followed by a
+-- number. The namespace is derived from the
+-- name of the object such as “Right”.
+
+    }
+NameAsID     ::= Graphic String     -- Unique character string corresponding to a
+-- name taken from the “sourceDocumentName”
+-- attribute of a Source object or the
+-- “partyName” attribute of a Party object or
+            -- from other unique names associated with an
+             -- object.
+-- ---- Group Structure  ---
+-- Blocks may be grouped. That is a set of blocks of the same type may be expressed sequentially. At the
+-- beginning of the group there may be a block that consists of only a BlockDescriptorRecord that expresses
+-- text that described the group to the human reader. Grouping is not required but it makes the explicit text
+-- output more readable and allows for these additional descriptor records to be expressed improving
+-- readability.
+-- A Group consists of a number of blocks. The group is identified by a BlockDescriptorRecord. This Block
+-- descriptor record may be followed by a sequence of records that define attributes that are valid for the
+-- whole group. This allows constant values such as a source to be expressed once for the group. The group then
+-- consists of a sequence of blocks. A group is terminated by a blank block, that is by the terminator CRLF
+-- CRLF  following the end of a block, or specifically CRLF CRLF CRLF CRLF.
+Group                   -- An Group is a sequence of blocks.
+    ::= SEQUENCE OF{
+        BlockDescriptorRecord    -- A Group begins with a BlockDescriptorRecord
+-- which identifies the type of group of blocks
+        SEQUENCE {Record }      -- An sequence of S121 Record contains the
+-- record values that apply to the whole group.
+        SEQUENCE {Block }      -- An sequence of Blocks compose a group
+        EndOfBlockMarker    -- A Group is terminated by an EndOfBlockMarker
+-- which is a blank record resulting in two
+-- EndOfRecordMarkers in a row. Since this is
+-- after the last block in the group this is
+-- composed of specifically
+-- CRLF CRLF CRLF CRLF .
+    }
+-- ---- Record Structure  ---
+-- Each S121 Record consists of a S121 RecordTypeIdentifier followed by a TAB_Delimiter character
+-- followed by a S121_RecordContents and terminated by an EndOfRecordMarker. A record contains the information
+-- pertaining to an attribute type and value. The type of attribute is carried in the RecordTypeIdentifier and
+-- the value is carried in the RecordElement. If a record contains a blank RecordTypeIdentifier; that is, the
+-- record starts with the Tab_Delimiter, then the RecordElement contents is considered to be an extension of
+-- the previous record. In this way attribute values, such as character strings that contain CRLF or Cr or LF
+-- characters as part of the attribute can be supported.
+Record
+    ::= SEQUENCE {
+        RecordTypeIdentifier,    -- Unique identifier of the record type
+        TAB_Delimiter,    -- (IA5 Code 09)
+        RecordContent,    -- Record contents which may be multiple
+                -- elements separated by commas.
+        EndOfRecordMarker    -- Record termination delimiter sequence
+    }
+RecordContent
+    ::= SEQUENCE {
+        RecordElement,    -- Character string of the data value
+        OPTIONAL SEQUENCE OF SET { COMMA_Delimiter  ,    -- Subsequent record elements
+            SPACE OPTIONAL,     -- separated by COMMA characters (IA5 Code 32)
+                 RecordElement     -- and an optional SPACE character (IA5 Code44)
+                         },
+        EndOfRecordMarker    -- Record termination delimiter sequence
+-- ---- Table Structure  ---
+-- Each TableHeaderRow consists of a set of RecordTypeIdentifier(s) seperated by TAB_Delimiter characters
+TableHeaderRow
+    ::= SEQUENCE {
+        RecordTypeIdentifier,    -- Unique identifier of the record type in
+-- the first table column
+        OPTIONAL SEQUENCE OF SET { TAB_Delimiter,    -- Subsequent record type identifiers
+                         RecordTypeIdentifier },    -- separated by TAB characters (IA5 Code 09)
+        EndOfRecordMarker    -- Record termination delimiter sequence
+    }
+-- Each TableRow consists of a set of RecordElement(s) seperated by TAB_Delimiter characters
+TableRow
+    ::= SEQUENCE {
+        RecordElement,    -- Character string of the data value
+-- of the the first table column
+        OPTIONAL SEQUENCE OF SET { TAB_Delimiter  ,    -- Subsequent record elements in columns
+                 RecordElement     -- separated by TAB characters (IA5 Code09)
+                         },
+        EndOfRecordMarker    -- Record termination delimiter sequence
+    }
+RecordTypeIdentifier     ::= Graphic String
+-- A Record Element contains an attribute value derived from an attribute field from an object in the S-121
+-- model. The record value may be of any of a set of predetermined types or may be a character string (which
+-- could contain any information. The predefined types are: Direct Position, Coordinate, Date Time, Fraction,
+-- Boolean.
+RecordElement     ::=
+    ::= CHOICE {
+        Graphic String,    -- Character string of the data value
+        DirectPosition_FormattedCharacterString,    -- Direct Position data value
+        Coordinate,    -- Single Latitude or Longitude data value
+        DateTime    -- Date or Time or Date and Time data value
+        Fraction    -- Fraction data value
+        Boolean    -- Boolean data value
+    }
+----
+
+--   Structured or Formatted Character Strings ------------------------------------------------
+
+Oid_FormattedCharacterString
+
+ ::= SEQUENCE  { GraphicString -- namespace
+
+   DASH_Delimiter -- dashDelimiter
+
+   GraphicString -- localId
+
+ }
+
+--   ---------------------------------------
+
+-- A number of coordinate formats are permitted; however, it is recommended that only one coordinate format be
+
+-- used for one type of coordinate in a dataset. Indicators of East / West and North / South may be either 
+
+-- E / W and N / S or + / -. When + and – are used the + is optional.
+
+Coordinate      
+
+ ::= Choice  { [1] DegreeMinuteSecondDecimalSecondsCardinal -- (N/S or E/W) DD MM SS.S
+
+   [2] DegreeMinuteDecimalMinutesCardinal -- (N/S or E/W) DD MM.M
+
+   [3] DegreeDeimalDegreeCardinal -- (N/S or E/W) DD.D
+
+  [3] DegreeMinuteSecondDecimalSecondsSign -- (+ or -) DD MM SS.S
+
+  [3] DegreeMinuteDecimalMinutesSign -- (+ or -) DD MM.M
+
+  [3] DegreeDeimalDegreeSign -- (+ or -) DD.D
+
+ }
+
+DegreeMinuteSecondDecimalSecondsCardinal
+
+ ::= SEQUENCE  { CHOICE { Cardinal Direction -- Cardinal Direction +
+-- {“N”,“S”,“E,“W”
+
+   GraphicString   -- Degrees
+
+    SPACE -- Space Delimiter
+
+   GraphicString   -- Minutes
+
+    SPACE -- Space Delimiter
+
+   GraphicString   -- Seconds
+
+    Decimal_Point_Delimiter  OPTIONAL -- Decimal Point Delimiter
+
+   GraphicString   -- Decimal Seconds
+
+ }
+
+DegreeMinuteDecimalMinutesCardinal
+
+ ::= SEQUENCE  { CHOICE { Cardinal Direction -- Cardinal Direction +
+-- {“N”,“S”,“E,“W”
+
+   GraphicString   -- Degrees
+
+    SPACE -- Space Delimiter
+
+   GraphicString   -- Minutes
+
+    Decimal_Point_Delimiter  OPTIONAL -- Decimal Point Delimiter
+
+   GraphicString  OPTIONAL -- Decimal Minutes
+
+ }
+
+DegreeDecimalDegreeCardinal
+
+ ::= SEQUENCE  { CHOICE { Cardinal Direction -- Cardinal Direction +
+-- {“N”,“S”,“E,“W”
+
+   GraphicString   -- Degrees
+
+    Decimal_Point_Delimiter  OPTIONAL -- Decimal Point Delimiter
+
+   GraphicString  OPTIONAL -- Decimal Degrees
+
+ }
+
+DegreeMinuteSecondDecimalSecondsSign
+
+ ::= SEQUENCE  { CHOICE { Signed Direction -- Signed Direction “+”,“-“
+
+   GraphicString   -- Degrees
+
+    SPACE -- Space Delimiter
+
+   GraphicString   -- Minutes
+
+    SPACE -- Space Delimiter
+
+   GraphicString   -- Seconds
+
+    Decimal_Point_Delimiter  OPTIONAL -- Decimal Point Delimiter
+
+   GraphicString   -- Decimal Seconds
+
+ }
+
+DegreeMinuteDecimalMinutesSign
+
+ ::= SEQUENCE  { CHOICE { Signed Direction -- Signed Direction “+”,“-“
+
+   GraphicString   -- Degrees
+
+    SPACE -- Space Delimiter
+
+   GraphicString   -- Minutes
+
+    Decimal_Point_Delimiter  OPTIONAL {” ”} -- Decimal Point Delimiter
+
+   GraphicString  OPTIONAL -- Decimal Minutes
+
+ }
+
+DegreeDecimalDegreeSign
+
+ ::= SEQUENCE  { CHOICE { Signed Direction -- Signed Direction “+”,“-“
+
+   GraphicString   -- Degrees
+
+    Decimal_Point_Delimiter  OPTIONAL -- Decimal Point Delimiter
+
+   GraphicString  OPTIONAL -- Decimal Degrees
+
+ }
+
+Cardinal Direction
+
+ ::= SEQUENCE  { CHOICE { -- Cardinal Direction
+
+   GraphicString {“N”}  -- North indicator
+
+   GraphicString {“S”}  -- South indicator
+
+   GraphicString {“E”}  -- East indicator
+
+   GraphicString {“W”}  -- West indicator
+
+   SPACE OPTIONAL -- The Cardinal Direction indicator 
+
+ }   -- of “N”,“S”,“E,“W” may be left +
+-- blank or be a Space. In this +
+-- case the value is assumed to  +
+-- be “N” for Latitude and “E”  +
+-- for Longitude. 
+
+Signed Direction
+
+ ::= SEQUENCE  { CHOICE { -- Signed Direction
+
+   GraphicString {“+”}  -- North or East indicator
+
+   GraphicString {“-”}  -- South or West indicator
+
+   SPACE OPTIONAL -- The Signed Direction indicator 
+
+ }   -- of “+” or “-” may be left +
+-- blank or be a Space. In this +
+-- case the value is assumed to  +
+-- be “+”. 
+
+--   ---------------------------------------
+
+DirectPosition_FormattedCharacterString
+
+ ::= SEQUENCE  { Coordinate  -- Lat_position
+
+   Slash_Delimiter -- SlashDelimiter
+
+   Coordinate -- Long_position
+
+ }
+
+--   ---------------------------------------
+
+-- A structured character string represents date and time.  
+
+-- The format is    YYYY:MM:DD:hh:mm:ss:timeZone
+
+-- The sub fields are separated by the delimiter  :
+
+--    YYYY is the year    e.g.  2017
+
+--    MM is the month  e.g. 05   (May)
+
+--    DD is the day  e.g. 17
+
+--    hh is the hour  e.g. 13   (in 24 hour clock)
+
+--    mm is the minutes e.g.  15
+
+--    ss is the seconds  e.g.   00
+
+--    timeZone is a shift from Greenwich Mean Time in hours 
+
+--    e.g. -5 for Eastern North America (EST). 
+
+--    The plus sign + is optional for east of Greenwich.
+
+ --  
+
+-- Therefore a date/time would be   2017:05:17:13:15:00:-5
+
+-- Any unknown fields may be represented by consecutive delimiters e.g.   ::
+
+-- Least significant fields and delimiters may be omitted. E.g. a date may be 2018:05:12
+
+DateTime
+
+ ::= SEQUENCE { GraphicString OPTIONAL, -- centuaryAndYear
+
+  COLON_Delimiter OPTIONAL, -- ColonDelimiter
+
+  GraphicString OPTIONAL, -- month
+
+  COLON_Delimiter OPTIONAL, -- ColonDelimiter
+
+  GraphicString OPTIONAL, -- day
+
+  COLON_Delimiter OPTIONAL, -- ColonDelimiter
+
+  GraphicString OPTIONAL, -- hour
+
+  COLON_Delimiter OPTIONAL, -- ColonDelimiter
+
+  GraphicString OPTIONAL, -- minute
+
+  COLON_Delimiter OPTIONAL, -- ColonDelimiter
+
+  GraphicString OPTIONAL, -- second
+
+  COLON_Delimiter OPTIONAL, -- ColonDelimiter
+
+  GraphicString OPTIONAL -- timeZone
+
+ }
+
+--   ---------------------------------------
+
+-- In an explicit text record oriented implementation a Fraction data type will be represented
+
+-- as the text string "0.xxxx..." where xxx... is the mantissa (fractional part of a number).
+
+Fraction ::= GraphicString
+
+--   ---------------------------------------
+
+-- In an explicit text record oriented implementation a Boolean data type will be represented
+
+-- as the text Yes or No.
+
+Boolean ::= CHOICE { 
+
+  GraphicString {“Yes”},
+
+  GraphicString {“No”}
+
+  }
+
+[source]
+----
+-- ---- Terminators and Delimiters ---
+TAB_Delimiter     ::= Graphic String { IA5 Code 09}
+COMMA_Delimiter    ::= Graphic String { IA5 Code 44}
+DASH_Delimiter    ::= Graphic String { IA5 Code 45}
+COLON_Delimiter    ::= Graphic String { IA5 Code 58}
+SLASH_Delimiter    ::= Graphic String { IA5 Code 47}
+Decimal_Point_Delimiter    ::= Graphic String { IA5 Code 46}
+SPACE        ::= Graphic String { IA5 Code 32}
+CR_Delimiter     ::= Graphic String { IA5 Code 13}
+LF_Delimiter     ::= Graphic String { IA5 Code 10}
+CRLF_Delimiter     ::= SEQUENCE { CR_Delimiter, LF_Delimiter }
+CRLF_CRLF_Delimiter         ::= SEQUENCE { CRLF_Delimiter, CRLF_Delimiter }
+CR_CR_Delimiter         ::= SEQUENCE { CR_Delimiter, CR_Delimiter }
+LF_LF_Delimiter         ::= SEQUENCE { LF_Delimiter, LF_Delimiter }
+-- The EndOfRecordMarker is the sequence of characters CR LF (or CR or LF).
+EndOfRecordMarker
+    ::= CHOICE {
+        CRLF_Delimiter,    -- (IA5 Code 13)followed by (IA5 Code 10)
+        CR_Delimiter,    -- (IA5 Code 13)
+        LF_Delimiter    -- (IA5 Code 10)
+    }
+The EndOfBlockMarker is the sequence of characters CR LF followed by CR LF  (or CR followed by CR  or LF followed by LF). This is equivalent to a blank record at the end of a block resulting in two EndOfRecordMarkers in a row.
+EndOfBlockMarker
+    ::= CHOICE {
+        CRLF_CRLF_Delimiter,    -- (IA5 Codes 13,10,13,10)
+        CR_CR_Delimiter,    -- (IA5 Code 13,13)
+        LF_LF_Delimiter,    -- (IA5 Code 10,10)
+    }
+The EndOfFile is the sequence of characters ‘===- End of File ===’ followed by CR LF  (or CR followed by CR  or LF followed by LF). This is a block with a fixed content.
+EndOfFile
+    ::= SEQUENCE {
+        EndOfFileMarker    -- A type of block that contains
+-- the single record EndOfFileMarker
+-- that contains an explicit string
+-- identifying an end of file.
+        EndOfBlockMarker    -- An EndOfFile block is terminated
+-- by an EndOfBlockMarker like any other
+-- block. That is the full end of file
+-- sequence is ‘===- End of File ===CRLFCRLF’
+    }
+EndOfFileMarker     ::= Graphic String {”=== End of File ===”}
+-- ---- Specific Block Types ---
+----
+
+--  The type of a block is identified in the BlockDescriptorRecord. The first two blocks are a MetadataBlock,
+
+-- and a GovernanceBlock. The MetadataBlock, and GovernanceBlock are identified by their location at the 
+
+-- beginning of a data file. As such the content of the BlockDescriptorRecord for these blocks is optional. The
+
+-- BlockDescriptorRecord is required for each of these block types but it may be blank; that is, it may 
+
+-- consist of an EndOfRecordMarker. Also the MetadataBlock, and GovernanceBlock are required, but they may be
+
+-- empty; that is they may consist of only an EndOfBlockMarker. The contents of the metadata block is described
+
+-- the clauses 3.5.1 and 3.5.2.  Structurally both the MetadataBlock, and GovernanceBlock are simply blocks.
+
+[source]
+----
+MetadataBlock    ::= Block
+GoveranceBlock    ::= Block
+----
+
+--   ---------------------------------------

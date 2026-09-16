@@ -1,0 +1,6 @@
+[[sec-data-delivery]]
+== Data Delivery
+
+Multiple encodings and product delivery mechanisms for the data are permitted. The Explicit Text Encoding Format (S-121 Annex B) is recommended for depositing MLB to the UN DOALOS, and the GML encoding (see S-100 part 10b) is identified as a neutral encoding for other requirements. 
+
+This section needs to be expanded in a future version of this Product Specification to support dataset discovery metadata (for example in section 1.6) and how features are aggregated into datasets as per S-100 (particularly Part 4a).

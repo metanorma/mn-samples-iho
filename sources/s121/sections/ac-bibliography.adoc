@@ -1,0 +1,25 @@
+[bibliography]
+[[annex-bibliography]]
+== Bibliography
+
+* [[[iho-s-100-2,IHO S-100]]] IHO Universal Hydrographic Data Model (June 2015)
+
+* [[[iso-3166-1-2013-2,ISO 3166-1:2013]]] Codes for the representation of names of countries and their subdivisions -- Part 1: Country codes
+
+* [[[iso-19101-2003,ISO 19101:2003]]] Geographic Information – Reference model
+
+* [[[iso-19103-2003,ISO 19103:2003]]] Geographic Information – Conceptual schema language
+
+* [[[iso-19107-2003-2,ISO 19107:2003]]] Geographic Information – Spatial Schema
+
+* [[[iso-19110-2005,ISO 19110:2005]]] Geographic information – Methodology for feature cataloguing
+
+* [[[iso-19115-2003-2,ISO 19115:2003]]] Geographic information – Metadata
+
+* [[[iso-19136-2007,ISO 19136:2007]]] Geographic Information – Geography Markup Language
+
+* [[[iso-19152-2012-2,ISO 19152:2012]]] Geographic Information – Land Administration Domain Model (LADM)
+
+* [[[nima-technical-report-tr8350-2-department-of,NIMA Technical Report TR8350.2 Department of…]]] Defense World Geodetic System 1984, Its Definition and Relationships with Local Geodetic Systems, Third Edition, National Geospatial-Intelligence Agency
+
+* [[[wc3-extensible-markup-language-xml-https-www-w3-org-xml,WC3 Extensible Markup Language (XML) https://www.w3.org/XML/]]]

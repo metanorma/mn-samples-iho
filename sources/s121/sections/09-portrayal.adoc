@@ -1,0 +1,4 @@
+[[sec-portrayal]]
+== Portrayal
+
+No specific portrayal implementation is included within this Product Specification.

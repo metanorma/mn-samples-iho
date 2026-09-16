@@ -1,0 +1,43 @@
+[.preface]
+== Document Control
+
+Changes to this Product Specification are coordinated by the IHO S-121 Project Team (S-121PT) which is a subsidiary group of the S-100 Working Group (S-100WG). New editions will be made available via the IHO web site.
+
+[[tbl-3]]
+[cols="a,a,a,a"]
+|===
+h|*Edition Number*h|*Date*h|*Author*h|*Purpose*
+|Draft 1|April 2014|GA Australia|Initial Draft.
+|Draft 2|7 Nov 2016|CHS Canada|Revise BAUnit relationship.
+|Draft 2.2|23 Nov 2016|CHS Canada|Revise spatial relationships.
+|Draft 2.3.7|27 Nov 2016|CHS Canada|Overall review.
+|Draft 3|March 2017|CHS Canada|Restructuring as recommended by S-121 Project Team meeting Dec 16.
+|Draft 4|November 2017|CHS Canada|Restructuring as recommended by S-121 Project Team meetings.
+|Draft 5|March 2018|CHS Canada|Restructuring as recommended by S-121 Project Team meeting Dec 17 and editorial meetings.
+|Draft Edition 1.0.0|April 2018|S-121PT|Approved by HSSC 10 under the new review cycle for testing. (Reference; HSSC10/16).
+|Draft Edition 1.0.0|January 2019|S-121PT|Minor revision after S-121 Project Team meeting December 2017, including alignment with S-100 Spatial Attribute, changes of optionality on some attributes and acceptance of Encoding Document by UN DOALOS.
+|Ballot version of Edition 1.0.0|February 2019|IHO Sec|Revised format and structure.
+|Edition 1.0.0|October 2019|S-121PT|Revised as per results of ballot comment review meeting August 2019.
+|===
+
+*Introduction*
+
+This Product Specification provides a conceptual description of the real world entities (both physical and social) that constitute Maritime Limits and Boundaries (MLB). The MLB conceptual schema is based on S-100 Part 1 - Conceptual Schema Language.  The MLB Product Specification also documents the features, attributes, code lists and enumerated lists (and their relationships) required to encode MLB objects for use in geospatial information systems.
+
+This product specification is optional. No state is required to use this product specification in whole or in part.
+
+S-121 Annex 1 – Explicit Text Encoding Format and Implementation Specification documents the default encoding for deposit to the UN Division for Ocean Affairs and the Law of the Sea (DOALOS).   
+
+The principle purpose for S-121 is to provide a mechanism for deposit of a nation’s Maritime Limits and Boundaries to the UN DOALOS in accordance with the United Nations Convention on the Law of the Sea (UNCLOS). The MLB data submitted by coastal States does not imply official recognition by other countries, nor does it affect the maritime rights and related positions advocated by States in accordance with international law.
+
+*Disclaimer*  
+
+This Product Specification has been developed in response to paragraph 6 of United Nations, General Assembly resolution 59/24 of 17 November 2004 which 
+
+“requests the Secretary-General to improve the existing geographic information system for the deposit by States of charts and geographical coordinates concerning maritime zones, including lines of delimitation in particular by implementing, in cooperation with relevant international organizations technical standards for the collection, storage and dissemination of the information deposited, in order to ensure compatibility among the Geographic Information System, electronic nautical charts, and other systems developed by these organizations.”
+
+Nothing in this Product Specification amends or modifies a State's obligations under UNCLOS. 
+
+The boundaries, names, designations and other information inputted in databases developed in conformity with S-121 standards do not imply official endorsement or acceptance by the IHO.
+
+Information contained in, or derived from, databases developed in conformity with S-121 standards do not imply the expression of any opinion whatsoever on the part of the IHO concerning the status of any country, territory, city or area or of its authorities; or concerning the delimitation of its frontiers or boundaries.

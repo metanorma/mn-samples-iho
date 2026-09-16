@@ -1,0 +1,8 @@
+[[sec-introduction]]
+== Introduction
+
+This document has been developed to provide consistent, standardized instructions for encoding S-121 data. 
+
+The conceptual model defines four generic feature types Location, Limit, Zone, or a Space. From these generic S-121 feature types any S-121 feature may be defined. This provides great flexibility, and allows any required feature to be developed by specializing the generic features. 
+
+When used in a data set an feature may be represented using a geometry type (Point, Curve/Line, Surface/Area). For a “Space” feature the geometric representation may be as a Surface/Area with an elevation attribute.
