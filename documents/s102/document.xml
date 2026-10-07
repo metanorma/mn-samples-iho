@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="1.3.10" schema-version="v2.1.6" flavor="iho">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="1.4.0" schema-version="v2.2.0" flavor="iho">
 <bibdata type="standard">
 <title language="en" type="main">Bathymetric Surface Product Specification (Preview PR)</title>
 <docidentifier primary="true" type="IHO">S-102</docidentifier><docnumber>102</docnumber><date type="published"><on>2022-10</on></date><contributor><role type="author"/><organization>
@@ -178,7 +178,7 @@
 </table>
 </clause></preface><sections>
 
-<clause id="_3425d290-9e96-537a-7be6-367b6b827cb9" anchor="sec-overview" obligation="normative">
+<clause id="_04685970-45c4-3137-f2e2-478abfab9430" anchor="sec-overview" obligation="normative">
 <title id="_6a13218d-655a-ce5a-a75b-2a8f4a2affc3">Overview</title>
 <p id="_0b47d633-102e-dddd-d66d-74d9110359d8">With the advent of electronic navigation and the technological progress of surveying systems and production capabilities, the ability to enhance maritime navigation with the portrayal of high resolution bathymetry has become a requirement. The provision and utilization of such data in a standardized format is essential to support the safe and precise navigation of marine vessels, and furthermore an important basis for many other maritime applications.</p>
 
@@ -187,10 +187,10 @@
 <p id="_b83bc247-8615-c795-0bf2-b55449a37e69">This document describes an S-100 compliant product specification for a bathymetric surface product. Incorporating aspects of the navigation surface concept <eref type="inline" bibitemid="MavigationSurface" citeas="IHO"><display-text>[Smith et al, 2002]</display-text></eref>, an S-102 bathymetric surface product is a digital elevation model which represents the seafloor in a regular grid structure. It can be used alone or as an important element/source for future S-100 conformant ECDIS navigation. The product specification is based on the IHO S-100 framework specification and the ISO 19100 series of standards. It comprises the content model (spatial structure and metadata), encoding structure, portrayal and exchange file format for a bathymetric surface product.</p>
 </clause>
 
-<references id="_1b89d521-60c2-63cc-4b7e-b59c4901b201" normative="true" obligation="informative">
+<references id="_c7da3145-2210-2d58-7c26-51941867b746" normative="true" obligation="informative">
 <title id="_72654c3d-2b1e-ad22-df33-e3b55e043dfd">References</title>
-<bibitem id="_8f360dac-97e1-2c4e-3afd-186694bc7055" type="standard" schema-version="v1.5.6" anchor="iho-s100">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_79388c30-1781-169d-b9b9-da6d461406c9" type="standard" schema-version="v1.5.6" anchor="iho-s100">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" type="main">IHO Universal Hydrographic Data Model</title>
 
@@ -270,8 +270,8 @@
     <validityBegins>2010-01-01T00:00:00Z</validityBegins>
   </validity>
 </bibitem>
-<bibitem id="_aafebdac-d5ba-954a-52b7-98840acb8259" type="standard" schema-version="v1.5.6" anchor="iho-s44">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_b6765337-2318-cc1f-77f5-ee170f83fa19" type="standard" schema-version="v1.5.6" anchor="iho-s44">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" type="main">IHO Standards for Hydrographic Surveys</title>
 
@@ -362,8 +362,8 @@
     <validityBegins>2008-02-01T00:00:00Z</validityBegins>
   </validity>
 </bibitem>
-<bibitem id="_5e6f9075-15b0-953e-4d22-a8ba70259688" type="standard" schema-version="v1.5.6" anchor="iho-s4">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_5aa213b1-c9be-8b14-0ec0-50975e833375" type="standard" schema-version="v1.5.6" anchor="iho-s4">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" type="main">Regulations for International (INT) Charts and Chart Specifications of the IHO</title>
 
@@ -447,8 +447,8 @@
     <validityBegins>2018-10-01T00:00:00Z</validityBegins>
   </validity>
 </bibitem>
-<bibitem id="_8164125b-ed94-1eea-5bfb-292e2e2e4a47" type="standard" schema-version="v1.5.6" anchor="iho-s32">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_b70ba1ac-5308-f535-a385-d013cff412ff" type="standard" schema-version="v1.5.6" anchor="iho-s32">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" type="main">Hydrographic Dictionary — Glossary of ECDIS Related Terms</title>
 
@@ -538,8 +538,8 @@
     <validityBegins>1994-01-01T00:00:00Z</validityBegins>
   </validity>
 </bibitem>
-<bibitem id="_59051b20-87a1-2789-28b9-5accf2bfd325" type="standard" schema-version="v1.5.6" anchor="iso-8601">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_8a64ab07-cfb4-5397-e0aa-c2ecffac3093" type="standard" schema-version="v1.5.6" anchor="iso-8601">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Data elements and interchange formats</title>
 
@@ -568,6 +568,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40874:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/08/40874.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 8601:2004</docidentifier>
+  <docidentifier type="iso-undated">ISO 8601</docidentifier>
   <docidentifier type="iso-reference">ISO 8601:2004(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:8601:stage-95.99</docidentifier>
   <docnumber>8601</docnumber>
@@ -653,8 +654,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_5c524c3a-b587-3d7a-2879-e61f106f650e" type="standard" schema-version="v1.5.6" anchor="iso-639-2">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_0057bd51-ca30-57ec-1513-a0492310ace0" type="standard" schema-version="v1.5.6" anchor="iso-639-2">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">Codes for the representation of names of languages</title>
 
@@ -677,6 +678,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:4767:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/00/47/4767.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 639-2:1998</docidentifier>
+  <docidentifier type="iso-undated">ISO 639-2</docidentifier>
   <docidentifier type="iso-reference">ISO 639-2:1998(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:639:-2:stage-95.99</docidentifier>
   <docnumber>639</docnumber>
@@ -738,8 +740,8 @@
 </organization></contributor><contributor><role type="publisher"/><organization>
 <name>TS</name>
 </organization></contributor><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_c4027fa9-523b-4919-45dc-ec893ea77522" type="standard" schema-version="v1.5.6" anchor="iso-19111">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_e046ade5-2132-6154-1d0a-4a544b8e0dc9" type="standard" schema-version="v1.5.6" anchor="iso-19111">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -762,6 +764,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:41126:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/11/41126.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19111:2007</docidentifier>
+  <docidentifier type="iso-undated">ISO 19111</docidentifier>
   <docidentifier type="iso-reference">ISO 19111:2007(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19111:stage-95.99</docidentifier>
   <docnumber>19111</docnumber>
@@ -845,8 +848,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_428c830c-8c09-3f90-02ac-965ea5b64bcc" type="standard" schema-version="v1.5.6" anchor="iso19115">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_7804b631-e031-4327-d215-73d6d9b1b7dd" type="standard" schema-version="v1.5.6" anchor="iso19115">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -869,6 +872,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26020:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26020.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19115:2003</docidentifier>
+  <docidentifier type="iso-undated">ISO 19115</docidentifier>
   <docidentifier type="iso-reference">ISO 19115:2003(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19115:stage-95.99</docidentifier>
   <docnumber>19115</docnumber>
@@ -951,8 +955,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_a8f3b9d6-4b3b-d258-1750-858854379a9e" type="standard" schema-version="v1.5.6" anchor="iso-19115-1">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_fccb8b7f-ca73-40ec-2465-630a85ff0817" type="standard" schema-version="v1.5.6" anchor="iso-19115-1">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -981,6 +985,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:73118:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/07/31/73118.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19115-1:2014/Amd 1:2018</docidentifier>
+  <docidentifier type="iso-undated">ISO 19115-1/Amd 1</docidentifier>
   <docidentifier type="iso-reference">ISO 19115-1:2014/Amd 1:2018(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19115:-1:amd:2018:v1</docidentifier>
   <docnumber>19115</docnumber>
@@ -1034,8 +1039,8 @@
   </copyright>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref>ISO/AWI 19115-1</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/AWI 19115-1</docidentifier>
+      <formattedref>ISO/CD 19115-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/CD 19115-1</docidentifier>
     </bibitem>
 
   </relation>
@@ -1053,8 +1058,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_9e347655-72b7-563c-9a5b-ccdb1f1ade5f" type="standard" schema-version="v1.5.6" anchor="iso-19115-2">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_ecf7c88b-be26-e639-a4b3-ce8c60daa7fd" type="standard" schema-version="v1.5.6" anchor="iso-19115-2">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1083,6 +1088,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:39229:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/92/39229.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19115-2:2009</docidentifier>
+  <docidentifier type="iso-undated">ISO 19115-2</docidentifier>
   <docidentifier type="iso-reference">ISO 19115-2:2009(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19115:-2:stage-95.99</docidentifier>
   <docnumber>19115</docnumber>
@@ -1149,8 +1155,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_2c8d9c0e-5f09-86a0-4612-8e87ed3e0201" type="standard" schema-version="v1.5.6" anchor="iso-19115-3">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_5a957ca4-9167-993a-c4f5-1d0a62f8c021" type="standard" schema-version="v1.5.6" anchor="iso-19115-3">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1179,6 +1185,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32579:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32579.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/TS 19115-3:2016</docidentifier>
+  <docidentifier type="iso-undated">ISO/TS 19115-3</docidentifier>
   <docidentifier type="iso-reference">ISO/TS 19115-3:2016(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:ts:19115:-3:stage-95.99</docidentifier>
   <docnumber>19115</docnumber>
@@ -1234,8 +1241,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_8d28b33d-f49b-61d1-fff5-6177ca4bdd70" type="standard" schema-version="v1.5.6" anchor="iso-19123">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_9120f371-a0bf-4bb3-d07b-bc27d08dcf0d" type="standard" schema-version="v1.5.6" anchor="iso-19123">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1258,6 +1265,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40121:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/01/40121.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19123:2005</docidentifier>
+  <docidentifier type="iso-undated">ISO 19123</docidentifier>
   <docidentifier type="iso-reference">ISO 19123:2005(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19123:stage-95.99</docidentifier>
   <docnumber>19123</docnumber>
@@ -1325,8 +1333,8 @@
 <docidentifier type="ISO">ISO 19129:2009</docidentifier><docnumber>19129</docnumber><date type="published"><on>2009</on></date><contributor><role type="publisher"/><organization>
 <name>ISO</name>
 </organization></contributor><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_5f3a6d79-c194-cc23-3c01-3c4ee92d2b72" type="standard" schema-version="v1.5.6" anchor="iso-19131">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_1fc8300b-5818-c0bc-8191-e9f03fbdff4c" type="standard" schema-version="v1.5.6" anchor="iso-19131">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1355,6 +1363,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:51790:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/17/51790.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19131:2007/Amd 1:2011</docidentifier>
+  <docidentifier type="iso-undated">ISO 19131/Amd 1</docidentifier>
   <docidentifier type="iso-reference">ISO 19131:2007/Amd 1:2011(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19131:stage-95.99:amd:2011:v1</docidentifier>
   <docnumber>19131</docnumber>
@@ -1437,8 +1446,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_7c729711-d2c2-2463-8a3b-38937fbbf57d" type="standard" schema-version="v1.5.6" anchor="iso-iec-19501">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_8d51aaaa-cf78-3dd5-9121-49f19bf23b40" type="standard" schema-version="v1.5.6" anchor="iso-iec-19501">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -1467,6 +1476,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32620:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/26/32620.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 19501:2005</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 19501</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 19501:2005(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:19501:stage-90.93</docidentifier>
   <docnumber>19501</docnumber>
@@ -1532,8 +1542,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_2d14a11f-25e8-b924-f275-a9d597cc5939" type="standard" schema-version="v1.5.6" anchor="iso3166">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_07e812d5-6da3-8e31-e79e-5be075cb1186" type="standard" schema-version="v1.5.6" anchor="iso3166">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">Codes for the representation of names of countries and their subdivisions</title>
 
@@ -1556,6 +1566,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:63546:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/06/35/63546.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 3166-2:2013</docidentifier>
+  <docidentifier type="iso-undated">ISO 3166-2</docidentifier>
   <docidentifier type="iso-reference">ISO 3166-2:2013(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:3166:-2:stage-95.99</docidentifier>
   <docnumber>3166</docnumber>
@@ -1632,8 +1643,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_f6674ee0-b917-6f2c-d6b1-1039841b9cd3" type="standard" schema-version="v1.5.6" anchor="iso-ts-19130">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_a75350ba-7c2c-e370-5cdf-7dc0f8acf5f3" type="standard" schema-version="v1.5.6" anchor="iso-ts-19130">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1656,6 +1667,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:51789:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/17/51789.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/TS 19130:2010</docidentifier>
+  <docidentifier type="iso-undated">ISO/TS 19130</docidentifier>
   <docidentifier type="iso-reference">ISO/TS 19130:2010(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:ts:19130:stage-95.99</docidentifier>
   <docnumber>19130</docnumber>
@@ -1721,8 +1733,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_d3eceb9f-f4f9-099e-e6fe-6b2fddea4518" type="standard" schema-version="v1.5.6" anchor="iso-ts-19130-2">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_fcb10f06-1d69-51d8-d63d-f70ba4d4314d" type="standard" schema-version="v1.5.6" anchor="iso-ts-19130-2">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1751,6 +1763,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:56113:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/61/56113.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/TS 19130-2:2014</docidentifier>
+  <docidentifier type="iso-undated">ISO/TS 19130-2</docidentifier>
   <docidentifier type="iso-reference">ISO/TS 19130-2:2014(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:ts:19130:-2:stage-90.92</docidentifier>
   <docnumber>19130</docnumber>
@@ -1814,8 +1827,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_e81fdf48-04e6-906a-f95e-138ed77748b3" type="standard" schema-version="v1.5.6" anchor="iso19139">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_156584a6-566e-fa5d-3143-0a23e96d7baa" type="standard" schema-version="v1.5.6" anchor="iso19139">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1844,6 +1857,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32557:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32557.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/TS 19139:2007</docidentifier>
+  <docidentifier type="iso-undated">ISO/TS 19139</docidentifier>
   <docidentifier type="iso-reference">ISO/TS 19139:2007(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:ts:19139:stage-95.99</docidentifier>
   <docnumber>19139</docnumber>
@@ -1916,8 +1930,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_1b572f8a-b084-26d3-ca9a-6bb94414cd73" type="standard" schema-version="v1.5.6" anchor="iso-10646-1">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_7de4b468-ed0b-6a4a-06ce-9aa93dd3fdb7" type="standard" schema-version="v1.5.6" anchor="iso-10646-1">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -1946,6 +1960,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:29819:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/98/29819.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 10646-1:2000</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 10646-1</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 10646-1:2000(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:10646:-1:stage-95.99</docidentifier>
   <docnumber>10646</docnumber>
