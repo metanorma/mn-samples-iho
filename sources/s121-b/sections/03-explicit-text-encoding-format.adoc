@@ -1,0 +1,940 @@
+[[sec-explicit-text-encoding-format]]
+== Explicit Text Encoding Format
+
+An Explicit Text Encoding needs to be very simple and easily readable by a non-technical person. The format also needs to be parsable so that it can be read into a computer system. 
+
+The entire S-121 model allows for management of Maritime Limit and Boundary data as well as its expression in an exchange format. As such it contains capabilities, inherited from the ISO 19152 Land Administrative Domain Model, that are inherently complex such as per element versioning. Only a simple subset of the information contained in an S-121 model compliant database needs to be expressed through an explicit text exchange format interface.
+
+The approach to the establishment of an Explicit Text Format used in this document is to structure text. This is illustrated in Figure 3-1. Structured text encoding goes back in the history of computing to the early delimited formats that were suitable for record oriented media. Such formats are simple and easily readable. In early computer systems this simple approach was necessary because of the limitations of the early systems; however, a delimited record oriented approach has an advantage because it is very easy to understand. Each piece of information forms a record and delimiters identify fields within the records. Records can be assembled into larger structures, which in this case are called blocks and groups. The information structure needs to be flexible and non-limiting, and the data fields need to be of variable length. 
+
+[[fig-record-group-and-block-structure]]
+.Record, Group and Block Structure
+image::figure-record-group-and-block-structure.png[]
+
+[[sec-explicit-text-encoding-structure]]
+=== Explicit Text Encoding Structure
+
+There are three aspects to the Explicit Text Encoding Format. The first is the description of the delimiting structure that allows groups, blocks, records and sub records to be identified. This is described in clauses 3.3 to 3.3.4 below. 
+
+This structure is described in more detail in Appendix E using the Abstract Syntax Notation (ASN.1). ASN.1 is a widely usedfootnote:fn7[There are many other schema languages for encoding formats that are now more popular than ASN.1; however, ASN.1 is well suited to an explicit text encoding, whereas schema languages such as XML Schema Definition language (XSD) are suited to a delimited structure such as XML.] method for describing a syntax. ASN.1 has been standardized by ISO as standard ISO 8824.
+
+[NOTE]
+====
+ASN.1, as used in this document, IS NOT AN ENCODING. It is a formal method of describing the Explicit Text Encoding.
+====
+
+The second aspect is the description of the contents of each block. 
+
+The third aspect of the Explicit Text Encoding Format is a profile that defines which elements are required and which are optional for a particular usage. The profile also establishes the text strings used as Block Descriptors and Record Identifiers. The profile given in Appendix D is for deposit with the UN.    
+
+Spatial information needs to be explicit. Coordinates need to be described as readable numbers; and lists of coordinates need to be lists of readable numbers.
+
+The resultant Explicit Text Format needs to be printable with all of the information clearly available in the printed form. This means that there should be no hidden or “secret” unprintable charactersfootnote:fn8[Some standards such as ISO/IEC 8211:1994 Information technology -- Specification for a data descriptive file for information interchange make use of imbedded control characters as delimiters making the plain text of the data very difficult to read.]. 
+
+[[sec-cross-referencing]]
+=== Cross referencing
+
+Some information such as source statements, parties, rights, restrictions and responsibilities can be reused by a number of information objects. This is one of the powerful features of the S-121 model. However, cross referencing is difficult to follow in printed text and should be used sparingly. There are a few cases where it may be required. Where there is cross referencing between fields in the format each record that can be referenced needs to be uniquely identified, so that fields in one record can point to other records. 
+
+General numeric pointers may be conceptually simple but they are very difficult for a person to follow. A naming structure is needed for labels to make the pointers easy to follow. There are two ways that this can be accomplished, both of which are valid and may be used in the same data set. A pointer may make use of a unique identifier (unique ID) or a name. A unique ID is a structured object ID (Oid). Such an id consists of a block type name followed by a dash character delimiter (IA5footnote:fn9[IA5 is the International Alphabet number 5 standardized as ISO standard 646 International Reference Version and as a UN International Telecommunications Union recommendation T.50. It is equivalent to the US American Standard Code for Information Interchange (ASCII) except for the currency symbol $ which may be substituted in some nations for a different currency symbol. IA5 is also the base of the UTF-8 character set used widely on the internet and the base page of Unicode (ISO 10646) multilingual character set.] Code 45) followed by a number. An example would be “Responsibility-1”. A name is an attribute value for a name field that is unique and can be used as an id. An example would be the use of the name “Canada” to refer to the party Canada described in a party type information object. Names are easier for humans to follow but they need to be managed to ensure that they are unique and meaningful. The use of names is preferred over the use of structured unique identifiers (Oid). Structured unique identifiers are easier to manage especially in the case when there are multiple references. For example “Source-12” uniquely identifies a source from a list of sources represented by a number of source information objects describing each source. Where there are multiple items of the same type names can sometimes become confusing.  Both structured object ID (Oid) identifiers and names can be used in the same data set for different types of objects. 
+
+In practise it is best to use names where they are meaningful. Names work well for the Party, Right, Restriction, Responsibility and Basic Administrative Unit information object. Source and feature and geometry elements work best with Oid pointers.  For example, an attribute for a Right information object might point to a right information object that was named “xxx”. The information object named “xxx” may provide details on the right. The pointer would read as:
+
+*Right: xxx*
+
+This type of “pointer” is very readable because it provides the information needed in the pointer.
+
+[[sec-delimiting-structure]]
+=== Delimiting Structure
+
+Computer systems can easily print data, but for it to be possible for that data to be able to be read back into a computer it is necessary for the computer to know where each record of information starts and ends; and to be able to identify the record of information so that it can be placed in the correct place in the computer’s internal information schema for S-121.
+
+The S-121 Explicit Text Format makes use of five levels of structure. These are a Field (within a record), a Record, a Block and a Group (of blocks) which together compose a File.
+
+The most important delimiter in a record oriented structure is the end of record delimiter. The earliest record oriented encoding format used punch cards where the length of a card was a fixed 80 characters. Data communications systems soon emerged after the era of the punch card and allowed variable length records. This required the use of a terminator to delimit the end of a record. Appendix B gives some background on why the sequence of CR (IA5 Code 13) followed by Line Feed LF (IA5 Code 10) character combination (CR LF) became the almost universal delimiter for an unstructured character string. Other systems that support CR or LF alone generally also support the CR LF combination. The use of the CR LF unstructured character string delimiter allows the S-121 Explicit Text Format to be read by almost all text editors and directly printed. The read operations in many languages such as Python may alter the data that is read and put it into the CR LF format. It is best to consider that CR alone, LF alone and CR LF are equivalent.
+
+A record can be thought of as a “paragraph” in a printed document terminated by the CR LF (Carriage Return Line Feed) sequence. However, some attribute types allow unstructured text which may include vertical line spacing within the text. That is, an attribute value may contain several paragraphs. This needs to be allowed. There needs to be a clear way to distinguish the content of an attribute value composed of several records. For example a description attribute from a governance object may include several paragraphs of text that form one attribute value. 
+
+*Description: Whereas Canada has long maintained and exercised sovereignty over the waters of the Canadian Arctic archipelago.*
+
+*Therefore, Her Excellency the Governor General in Council, on the recommendation of the Secretary of State for External Affairs, pursuant to subsection 5(1)Footnote * of the Territorial Sea and Fishing Zones Act, is pleased hereby to make the annexed Order respecting geographical coordinates of points from which baselines may be determined, effective January 1, 1986.*
+
+If one wishes to be able to write and then read such records it is necessary to be able to know where such a record begins and ends. 
+
+The intent of the S-121 Explicit Text Format is to allow any user to read, print and interpret a set of S-121 data without the need for special tools. Text processing software such as the simple “Microsoft Notebook” program or a word processor such as “Microsoft Word” or equivalent can easily read text delimited by a CR LF. Explicit text can be output in either a *.txt*footnote:fn10[\*.txt\* is a file type supported by Microsoft Word and many other text editors that consists of only IA5 or UTF8 characters with no imbedded formatting. It is the simplest type of file that exists on a computer system.] or *.rtf*footnote:fn11[\*.rtf\* (Rich Text Format) is a Microsoft Word proprietary file format that imbeds some formatting in an otherwise simple text file. There have been many versions of .rtf since it was introduced in 1987. Microsoft stopped supporting .rtf in 2008 although current word processors still support the 2008 version.] form. Text in a *.txt* form is simple text with no formatting. Text in *.rtf* form allows some formatting that can make the output easier to read, but the essential delimiting structure is the same. That is, *.rtf*  encoded data can be converted to *.txt* encoded data with no loss of the S-121 encoded data, just a loss in the formatting.
+
+Note that the *.rtf* format allows for the insertion of pictures, externally linked tables and other OLEfootnote:fn12[OLE - Microsoft Object Linking and Embedding] embedded items. Only a very limited use of OLE items can be allowed in an S-121 Explicit Text Format data file, and only in a few general freeform character string data fields. When converted to *.txt* format all imbedded OLE items will be discarded. The only valid use of imbedding an OLE item would be to assist in formatting the *.rtf* version of an Explicit Text Format S-121 data file. For example a picture of a logo may be inserted in character string text of the Title or Description attributes in the Governance object block. Such a picture of a logo would be deleted when the data is converted to *.txt* format or read back into a computer system. It is only there to beautify the printed form of the output.
+
+An example of a title that includes an OLE object is shown below. This is a value field for a Title attribute in a Governance object represented in *.rtf* format. The imbedded image of a crest and the centered and bold formatting is entirely to enhance readability of the data to make it look like a printed document. When converted to a *.txt* form the OLE object and the formatting will disappear.
+
+Example in *.rtf* format: 
+
+*Title:* image:image-32.png[]
+
+*Maritime Boundary Definitions*
+
+Example in *.txt* format: 
+
+*Title: Maritime Boundary Definitions*
+
+The S-121 Explicit Text Format is parsable. That means that the data can be unambiguously read by a computer program and parsed allowing for it to be decoded into the original data structure from which it was generated.
+
+The S-121 Explicit Text Format is record oriented. A record or “paragraph” often corresponds to an attribute value, but sometimes one or more records may be concatenated to form an attribute value.
+
+[[sec-record-structure]]
+==== Record Structure
+
+The record structure is illustrated in Figures 3-2a and 3-2b below. There are two types of records each terminated by a CR LF end of record marker.  A basic record starts with a record type identifier such as an attribute name followed by a TAB (IA5 code 09) character and then a character string (which may contain other TAB characters) terminated by the CR LF end of record marker. An extension record begins with a TAB character and then the record contents. An extension record is an extension of the record before it. For example, an extension record may contain a second or subsequent paragraph in a text description that includes CR LF as part of the data.
+
+[[fig-5]]
+image::image-33.png[]
+
+[[fig-extension-record-structure]]
+.Extension Record Structure
+image::figure-extension-record-structure.png[]
+
+A record content may contain several data fields representing values separated by the COMMA character (IA5 code 44) and an optional SPACE character (IA5 code 32). This is shown in Figure 3-3.
+
+[[fig-record-contents-with-delimited-sub-fields]]
+.Record contents with delimited sub-fields
+image::figure-record-contents-with-delimited-sub-fields.png[]
+
+An example of a simple record would consist of an attribute name followed by a value.
+
+*Title: Test data set 1*
+
+An example of a record with multiple values would be an attribute name followed by a list of values separated by commas.
+
+*Topic: boundaries, oceans*
+
+An example of a multi-line record that includes CRLF in its value field is shown below. This consists of an attribute name followed by a record contents and additional contents in an extension record.
+
+*Description: This is an example of a textual data that consists of multiple lines of text which automatically wraps when printed.* 
+
+ *This text also includes a second paragraph which is still part of the attribute value field, but there is a CR LF character within the text. This second paragraph of text makes use of an extension record and as such begins with a TAB character causing the second paragraph of text to be indented.*
+
+[[sec-data-blocks]]
+==== Data Blocks
+
+The Explicit Text Encoding Format makes use of a set of independent data blocks. Each block corresponds to a different type of data element from the S-121 Implementation Model. Each block contains a number of records and each record is terminated by a CR LF. Each block begins with a Block Descriptor Record from which one can determine the type of block. The Block Descriptor Record may be a string of text that is meaningful in informing the reader of the purpose of the Data Block. All that is necessary is that it is unique. The Block Descriptor Record serves two purposes. It is a unique identifier for the block and also a header to inform the reader of the meaning of the block. The exact string used is defined in the profile. Each block ends with a double CR LF  CR LF (double blank line). 
+
+The content that is expressed in the Explicit Text Encoding Format is deliberately simplified from the full capability of the S-121 schema. That is, more complex data may be held in a database than can be expressed in a single output data file. 
+
+The first data block is unique. It always corresponds to Metadata. The second block always corresponds to the Governance element. The Basic Administrative Unit block may be anywhere in the dataset and is identified by the Block Descriptor Record. There may only be one Governance block and one Basic Administrative Unit block per dataset. If a usage requires more than one Governance element or more than one Basic Administrative Unit it should be output as more than one data file in the Explicit Text Format.
+
+Figure 3-4 below illustrates a block. The first record is a Block Descriptor Record followed by any number of other records and terminated by CR LF  CR LF. 
+
+[[fig-block-structure]]
+.Block Structure
+image::figure-block-structure.png[]
+
+[[sec-data-file]]
+==== Data File
+
+A data file is composed of a set of data blocks terminated by an end of file indicator. The end of file indicator is a data block that contains a single record that is a specific character string. This string is:     === End of File ===   . Since the end of file is a data block it has both the end of record terminator CR LF and the end of block CR LF. That is, an end of file is the string      === End of File ===CRLFCRLF. This is illustrated in Figure 3-5 below.
+
+[[fig-6-below-presents-a-data-file-consisting-of-a-set-of-data-blo]]
+.6 below presents a data file consisting of a set of data blocks. The first data block is Metadata followed by the Governance data block. After that there may be one Basic Administrative Unit block and any number of feature blocks, spatial element blocks and other element blocks, in any order, terminated by an end of file indicator.
+image::figure-6-below-presents-a-data-file-consisting-of-a-set-of-data-blo.png[]
+
+For simplicity there may only be one Metadata, one Governance and one Basic Administrative Unit block per dataset.  In situations where multiple Governance or Basic Administrative Unit elements needs to be described, multiple data files need to be used to express the data in the S-121 Explicit Text Format.
+
+[[fig-dataset-file-structure]]
+.Dataset File Structure
+image::figure-dataset-file-structure.png[]
+
+[[sec-block-descriptor-record]]
+==== Block Descriptor Record
+
+The block descriptor record uniquely identifies the type of data block. The identification occurs in the first field of the first record in the data block. This is the record “type identifier” field. For some block types only the type identifier is necessary. 
+
+For some block types, such as a “Source” block type it may be necessary to reference this block from attribute records in other blocks. In this case the second field of the block descriptor record would contain a unique identifier. 
+
+Pointers and identifiers are hard to follow for human readers. They should be used sparingly. The structure of a Block Descriptor Record is illustrated in Figure 3-7 below.
+
+[[fig-block-descriptor-record]]
+.Block Descriptor Record
+image::figure-block-descriptor-record.png[]
+
+The Block Type Identifier may be a character string of any (reasonable) length. It could be a whole sentence or two that describes the purpose of the data block to the reader. 
+
+An example of a Block Type Identifier is given below:
+
+*Metadata:*
+
+Note that the Block ID needs to be a unique character string. Commonly that would be a type of an element followed by a unique number (an Oid). For example an identifier could be “Right-1”.  The structure of the Oid identifier is shown in Figure 3-8 below.
+
+[[fig-12]]
+image::image-40.png[]
+
+[[tbl-namespaces-for-use-in-the-object-identifier]]
+.Namespaces for use in the object identifier
+[cols="a,a"]
+|===
+|Rights Namespace|”Right-”
+|Restrictions Namespace|”Restriction-”
+|Responsibilities Namespace|”Responsibility-”
+|Party Namespace|”Party-”
+|Source Namespace|”Source-”
+|Location Namespace|“Location-“
+|Limit Namespace|“Limit-“
+|Zone Namespace|“Zone-“
+|Space Namespace|“Space-“
+|Point Namespace|“Point-“
+|Curve Namespace|“Curve-“
+|Surface Namespace|“Surface-”
+|Space Namespace|“Space-“
+|===
+
+The record NumericID is a unique number in the namespace for the record instance. In the Explicit Text Format this is represented as a character string containing numeric characters. For example a party may be identified as “Party-3”. 
+
+A Block ID may also be a “name”. Names may be used to make the data more readable. For example the Block ID for a Party type of information block may be “Australia”. This means that a reference to that information block party would be the name “Australia”. In this case the name “Australia” would appear as an attribute value in the reference so that the reader would immediately understand the reference rather than having to follow the reference to determine that “Party-1” was Australia. Either unique names or structured Object Identifiers may be used as identifiers and therefore included in the Block ID field.
+
+A Block Descriptor Record may also be extended using an extension record. That is, an extension record may immediately follow a block descriptor record. This extension record adds to the description, but it does not extend either the Block Type Identifier field or the Block ID field. The extension allows for additional text to be added to increase human readability of the data. An example of an extended Block Descriptor Record is shown below. The Block Type Identifier field is “Maritime Limits and Boundaries Deposit” establishing this as a Governance object block. In this case there is no Block ID. The extension contains additional description. 
+
+*Maritime Limits and Boundaries Deposit:*
+
+ *This deposit addresses the arctic waters in Canada’s region 7.*
+
+[[sec-data-block-groups]]
+==== Data Block Groups
+
+A set of data blocks of the same type can form a group. For example, two parties may be defined in a particular data set. A Party Data Block Group may be established that begins with descriptive text that identifies the set of Party Data Blocks, followed by the definitions of the individual blocks. 
+
+Since a Spatial Attribute Type object (Location, Limit, Zone, Space) is related to a Feature Unit object (Point, Curve, Surface, Volume) by a composition relationship the two block types can be included in the same group. This allows for the geometry to immediately follow the Feature Unit object to which it is related. This ordering and grouping of blocks is not mandatory, but it enhances readability.
+
+A data block group begins with a data block that consists of only a Block Descriptor Record. This allows the introductory text to be expressed. The Block Type Identifier of the Block Descriptor Record needs to be unique to identify the type of Group.
+
+Technically Data Block Groups are not required because each data block is individually identified, but the use of groups allows for additional Block Descriptor Records to be expressed that makes the text more readable. 
+
+Data Block Groups are not directly referenced so the Block ID field / Group ID field (from the Descriptor Record) remains blank.
+
+The Block Descriptor Record that establishes a Data Block Group may also be extended using an extension record. This extension record adds to the description to allow for additional text to be added increasing human readability of the data. The Block Type Identifier field (that establishes the Group) is not extended.
+
+Attributes that are common to all of the information objects in a group may be expressed as attribute records immediately following the Data Block Group header record. This allows certain attributes such as a Source, or a Coordinate Reference System that may be constant for all information objects in a group to be stated once. This reduces the verbosity of the format.
+
+An example is given below that shows a Data Block Group composed of several Zone Blocks. 
+
+*The extent of the object is defined by the following zones:*
+
+*Zone Identifier:  Zone-1*
+
+     *…*
+
+*Zone Identifier:  Zone-2*
+
+     *…*
+
+[[sec-table-structure]]
+==== Table Structure
+
+A complement to the record structure is the table structure. A table is a special type of block. A table is an efficient and readable way to present a large number of instances of data elements. A data block presents one information object with its attributes. A table presents many information elements of the same type together with their attributes. A single information element corresponds to a row and attributes are represented in columns. A table is equivalent to a set of data blocks. The restriction is that the table can only be so wide. A table works well if there are only a few attributes. The limitation is the width of a printed page in an Explicit Text Format that is meant to be read by humans.
+
+The first row of a table is the BlockDescriptorRecord. This identifies the type of information element being represented by the table. The BlockDescriptorRecord may also contain a BlockID. The BlockDescriptorRecord is described in clause 3.3.4 above. 
+
+The second row of the table contains a list of Record Type Identifiers separated by TAB characters. This identifies the attribute types corresponding to each column. 
+
+The third and subsequent rows contain values corresponding to each table column.
+
+The table is terminated by an end of block sequence which is a double CR LF  CR LF (double blank line). 
+
+A table structure is illustrated in Figure 3-9 below. 
+
+[[fig-table-structure]]
+.Table Structure
+image::figure-table-structure.png[]
+
+[[sec-data-types]]
+=== Data Types
+
+There are several data types used within the Explicit Text Format. These data types are represented as formatted text strings.  These formatted strings are described below.
+
+*Character String* – a string of IA5footnote:fn13[International Alphabet 5 from ISO 646 -- equivalent to Basic ASCII text] or UTF8footnote:fn14[Unicode Transformation Format 8 bit from ISO 10646 – extended UNICODE character set.] characters. The character set and the language are described in the metadata. Although a data base may be multi-lingual making use of structures such as the ISO 19115-3 LOCALE mechanism to imbed text strings with language codes, the Explicit Text Format is unilingual. To address the same data in two different languages, two different data sets should be issued.
+
+*Coordinate* - A number of coordinate formats are permitted; however, it is recommended that only one coordinate format be used for one type of coordinate in a dataset. Indicators of East / West and North / South may be either -- E / W and N / S or + / -. When + and – are used the + is optional. The delimiters for degree, minutes and seconds of the symbols ° (U+00B0)footnote:fn15[(U+xxxx) represents a ISO 10646 Unicode UTF8 code.], ′ (U+2032), and ″ (U+2033) may be used. 
+
+[[tbl-coordinate-data-types]]
+.Coordinate data types
+[cols="a,a"]
+|===
+|DegreeMinuteSecondDecimalSecondsCardinal|(N/S or E/W) DD MM SS.S
+|DegreeMinuteDecimalMinutesCardinal|(N/S or E/W) DD MM.M
+|DegreeDeimalDegreeCardinal|(N/S or E/W) DD.D
+|DegreeMinuteSecondDecimalSecondsSign|(+ or -) DD MM SS.S
+|DegreeMinuteDecimalMinutesSign|(+ or -) DD MM.M
+|DegreeDeimalDegreeSign|(+ or -) DD.D
+|===
+
+Coordinates follow the structure defined in the ISO standard 6709footnote:fn16[ISO 6709 Standard representation of geographic point location by coordinates]. ISO defines the order Latitude then Longitude. 
+
+Coordinates may be expressed in many different formats in national legislation and treaties and it is important that the exact representation in those primary sources be retained. For this reason there is a lot of flexibility in the Explicit Text Format on how to represent coordinates. 
+
+*Direct Position –* A direct position (Latitude, Longitude) position will be represented as a sequence of coordinates separated by a delimiter sequence SPACE Slash SPACE “ / “ (IA5 codes 32, 47, 32). 
+
+*DateTime* – Date and Time are represented in a structured character string. The format is based on the standards ISO 8601 and ISO 19108.
+
+The format is    YYYY:MM:DD:hh:mm:ss:timeZone
+
+The sub fields are separated by the delimiter  *:*  (IA5 code 58)
+
+  YYYY is the year; for example  2017
+
+  MM is the month; for example  05   (May)
+
+  DD is the day; for example  17
+
+  hh is the hour; for example  13   (in 24 hour clock)
+
+  mm is the minutes; for example   15
+
+  ss is the seconds; for example    00
+
+  timeZone is a shift from Greenwich Mean Time in hours; for example -5 for Eastern North America 
+
+  The plus sign + is optional for east of Greenwich.
+
+Any unknown fields may be represented by consecutive delimiters; for example   ::
+
+Least significant fields and delimiters may be omitted. 
+
+An example date may be 2018:05:12
+
+An example date/time would be   2017:05:17:13:15:00:-5
+
+*Fraction* - a data type corresponding to only the fractional part of a number will be represented as the text string "0.xxxx..." where xxx... is the mantissa (fractional part of a number).
+
+*Boolean* - a Boolean data type will be represented as the text “Yes” or “No”.
+
+[[sec-information-elements]]
+=== Information Elements
+
+The S-121 model consists of a set of information elements described by classes in the S-121 UML model. The implementation model is presented in Figures 2-1 to 2-3. The classes are organized into four groups, the Feature/Attribute Group; the Administrative Group; the Party Group; and the Source Group. The Feature/Attribute group contains eight classes, Location; Limit; Zone and Space with Point; Curve; Surface; and Volume as associated component classes. The Administrative group contains five classes, Governance; BasicAdministrativeUnit; Rights; Responsibilities; and Restrictions. The party group contains two classes, Party; and Party Member. The Source group contains one class, Source. Together this is sixteen classes. Each class is represented by a block type. Together with metadata this is seventeen block types. The following subsections list each block type together with the allowed attributes and their definitions. 
+
+These block types correspond to the instantiable types from the Implementation Model. Each type may have a different structure and has a different namespace for the Record Number.
+
+Metadata Block 
+
+Governance Block
+
+Basic Administrative Unit Information Block 
+
+Rights Block 
+
+Restrictions Block 
+
+Responsibilities Block 
+
+Party Block 
+
+Party Member Block
+
+Source Block
+
+Location Block
+
+Limit Block
+
+Zone Block
+
+Point Spatial Attribute Block
+
+Curve Spatial Attribute Block
+
+Surface Spatial Attribute Block
+
+The conditionality of whether an attribute or information object is Mandatory or Optional is derived from the model.
+
+The attribute name column in the tables provides a name for the attribute that can be output as text in the “Record Type Identifier” field. Alternatively, an alias or alternate name can be defined in a profile that may be more meaningful to the human reader for that particular profile.
+
+[[sec-metadata-block]]
+==== Metadata Block
+
+Metadata is required in order to discover and to interpret data and is needed for data exchange. 
+
+In the Explicit Text Format may be expressed, but it is not required. The metadata a used in a legislative instrument is implicitly included in a governance object. When used the metadata block is the first data block in a dataset. If metadata is not expressed an empty metadata block is required. That is, if no metadata is expressed then a dataset must begin with an end of block terminator (two consecutive end of record terminators, which is CR LF  CR LF (or CR CR or LF LF).
+
+The metadata fields are described in clause 1.2.2. The details of which metadata fields and which Record Type Identifiers are used to identify the metadata fields for a particular situation is described in a profile.
+
+Note that when used, metadata forms a cover page for Explicit Text Format data submitted to UN/DOALOS.
+
+[[tbl-metadata-block-optional]]
+.Metadata Block - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|title|Name by which the cited resource is known
+|abstract|Brief narrative summary of the dataset’s contents
+|topic|The main theme(s) of the dataset from the ISO list of topic areas: farming, biota, *boundaries*, climatologyMeteorologyAtmosphere, economy, elevation, environment, geoscientificInformation, health, imageryBaseMapsEarthCover, intelligenceMilitary, inlandWaters, location, *oceans*, planningCadastre, society, structure, transportation, utilitiesCommunication
+|metadataContactName|Name of the individual responsible for the metadata
+|metadataContactOrganization|Organization responsible for the metadata
+|metadataContactPosition|Position of the individual responsible for the metadata
+|metadataContactRole|Role of the individual responsible for the metadata
+|referenceDate|Reference date for the cited resource
+|datasetLanguage|Languages of the dataset using standard ISO 639-2 three letter codes. Note: Three letter language code followed by an optional ISO 3166 three letter country code, For example ENG for English and FRA for French
+|metadataDate|Metadata creation date
+|metadataFileIdentifier|A unique phrase or string which uniquely identifies the metadata file
+|metadataLanguage|Language of the metadata composed of an ISO 639- 2/T three letter language code and an ISO 3166-1 three letter country code
+|metadataCharacterSet|character coding standard in the metadata. Default UTF8
+|metadataFileParentIdentifier|The unique name of the file or associated fileIdentifier, related in higher hierarchy to the file
+|metadataHierarchyLevel|Level to which the metadata applies. (for example dataset)
+|metadataHierarchyLevelName|Name of the level to which the metadata applies. (for example dataset)
+|datasetReferenceDateTypea|Type of date from code list
+
+- creation date
+
+- publication date
+
+- revision date
+
+- date became not available
+
+- date became in force
+
+- date became adopted
+
+- date became depreciated
+
+- date became superseded
+|datasetCharacterSet|Character coding standard in the dataset. Default UTF8
+|westLongitudeExtent|West limit of extent
+|eastLongitudeExtent|East limit of extent
+|southLatitudeExtent|South limit of extent
+|northLatitudeExtent|North limit of extent
+|===
+
+[[sec-governance-block]]
+==== Governance Block
+
+The second block of data in the S-121 Explicit Text Format is the Governance Block. The S-121 Governance objects carry the high level information that describe the context of the dataset. Governance information is a specialized type of metadata that is in excess of the metadata defined to allow discovery and interpretation of a dataset. The governance information is the preamble to the “list of points” that forms the body of the data submitted. It is often the title, reference number and preamble text to a set of data.
+
+In the S-121 schema multiple governance objects and multiple Basic Administrative Unit objects are permitted. This is in the database holding Marine Limit and Boundary data. For simplicity only one Metadata Block, one Governance Block and one Basic Administrative Unit (BAUnit) Block are permitted in the explicit exchange format.
+
+A Governance Block is optional. If a Governance Block is not expressed an empty block is required with an end of block terminator. 
+
+Since the Governance Block is always the second block a Block Type Identifier (BlockDescriptorRecord) is not required to determine which block is the governance block. The Block Descriptor Record for the governance block may or may not be expressed. If it is not expressed then a blank record is required terminated by an EndOfRecordMarker.  
+
+The content of a Governance Block is also structured. All of the attributes are optional or conditional. Which ones are used is described in a profile. The StartLifespan (Version) attribute may duplicate the Reference Date attribute in metadata and is not required when this metadata attribute is expressed.
+
+The following Table outlines the attributes of the Governance class in the S-121 schema and how they map to a Governance Block in the Explicit Text Format. The first column is the attribute name in the S-121 schema. The second column is a description of the information carried in that attribute. 
+
+[[tbl-governance-block-optional]]
+.Governance Block - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|label|A short textual identifier of the governance object
+|referenceNumber|The reference number of the legislative reference. This would be the reference number used by the nation for its proclamation, law or other legislative document
+|name|The name of the governance object. When used, this name is defined by the nation state
+|governanceTitle|Title of the official reference. This is the general title of the whole deposit
+|governanceDescription|Description of the governance statement. This can be a multi paragraph preamble to the deposit
+|releasabilityType|Releasability status. From the code list (official, internal, controlled)
+|dateApproved|Date at which the official statement or document was approved by the appropriate governing body
+|startLifespan|Reference date for the validity of this version of the dataset. This is the statement of versioning for an entire dataset. Note that the Explicit Text Format is versioned by dataset. If Metadata is provided then this date is equivalent to Reference Date
+|endLifeSpan      DEFAULT (“Current”)|End date of a specific instance version. This is the complementary attribute to the StartLifespan attribute. However, since the Explicit Text Format is versioned by dataset it is rare that this attribute would contain any value other than the default “current” so it would normally not be expressed
+|dateConsidered|The date at which the official statement or document was considered by the appropriate governing body
+|dateIntroduced|The date at which the official statement or document was introduced
+|collection|Description of the feature membership to a dataset or collection. For example, a set of data is part of a particular nation’s collection; that is, was deposited by that nation. It is expected that the State name should be used when depositing
+|===
+
+[[sec-basic-administrative-unit-block]]
+==== Basic Administrative Unit Block
+
+The central element of the S-121 model is the Basic Administrative Unit element. It is the interface point into the administrative structure of S121 Marine Limit and Boundary data. It contains references to Party and Source attributes by reference and Rights, Restrictions, Responsibility attributes. In the general S-121 schema the Rights, Restrictions, and Responsibility attributes are also handled as attributes by reference; however to simplify the Explicit Text Format the Rights, Restrictions, and Responsibility attribute information, maybe collapsed into simple attributes of the Basic Administrative Unit. 
+
+The Basic Administrative Unit object in the S-121 schema allows multiple objects to be defined. This allows the data in a S-121 database to be organized into logical units. For simplicity the Explicit Text Format only allows one Basic Administrative Unit to be expressed at one time. 
+
+In the S-121 schema the Basic Administrative Unit object(s) may be dynamically versioned. This is one of the important capabilities of S-121. However, in the Explicit Text Format versioning is done at the dataset level based on the reference data in the Metadata or in the Governance object. Therefore the startLifeSpan, endLifespan and collection attributes described in the S-121 model do not appear in a Basic Administrative Unit group in the Explicit Text Format.
+
+[[tbl-baunitblock-optional]]
+.BAUnitBlock - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|basicAdministrativeUnitName|Optional name for an instance of a "BasicAdministrativeUnit"
+|basicAdministrativeUnitType|The use type of a "BasicAdministrativeUnit" = MaritimeLimitsAndBoundaries. (Fixed string, therefore not required)
+|basicAdministrativeUnitContext|Description of the context for an instance of a "BasicAdministrativeUnit"
+|rights|Reference to Right object
+|responsibilities|Reference to Responsibility object
+|restrictions|Reference to Restriction object
+|party|Reference to Party object
+|source|Reference to Source object
+|===
+
+[[sec-rights-restrictions-and-responsibilities-blocks]]
+==== Rights Restrictions and Responsibilities Blocks
+
+The Right, Restriction and Responsibility objects carry the descriptions of the right, restriction and responsibility attributes. These are shared attributes through referencing.
+
+[[sec-rights-block]]
+===== Rights Block
+
+An S121_Right is an action, activity or class of actions that a system participant may perform on or using an associated resource. The RightsBlock describes a right.
+
+[[tbl-rightsblock-optional]]
+.RightsBlock - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|rID|Identifier of the Rights block in the Oid format or is a “name” for the Rights block
+|rightType|The type of the right
+|description|Description of the right
+|share|Share of an instance of a right
+|shareCheck|Boolean indicating whether the constraint is applicable
+|timeSpecification|Operational use of a right in time sharing
+|party|Reference to Party object
+|source|Reference to Source object
+|===
+
+[[sec-restrictions-block]]
+===== Restrictions Block
+
+An S121_Restriction is a formal or informal entitlement to refrain from doing something. The RestrictionBlock describes a restriction.
+
+[[tbl-restrictionblock-optional]]
+.RestrictionBlock - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|rID|Identifier of the Restrictions block in the Oid format or is a “name” for the restriction block
+|restrictionType|The type of the Restriction
+|partyRequired|Indicates whether a party is required for the registration of the restriction in the association to Party
+|description|Description of the restriction
+|share|Share of an instance of a restriction
+|shareCheck|Boolean indicating whether the constraint is applicable
+|timeSpecification|Operational use of a restriction in time sharing
+|party|Reference to Party object
+|source|Reference to Source object
+|===
+
+[[sec-responsibilities-block]]
+===== Responsibilities Block
+
+An S121_Responsibility is a formal or informal obligation to do something. The ResponsibilityBlock describes a responsibility.
+
+[[tbl-responsibilityblock-optional]]
+.ResponsibilityBlock - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|rID|Identifier of the Responsibilities block in the Oid format or is a “name” for the Responsibility block
+|responsibilityType|The type of the Responsibility
+|description|Description of the responsibility
+|share|Share of an instance of a responsibility
+|shareCheck|Boolean indicating whether the constraint is applicable
+|timeSpecification|Operational use of a responsibility in time sharing
+|party|Reference to Party object
+|source|Reference to Source object
+|===
+
+[[sec-party-group-blocks]]
+==== Party Group Blocks
+
+A party is a person or organisation or group that plays a role in a rights transaction. A group is a type of party that has other parties as members. This means that there may be relations between parties that describe membership in a group. Party members may also have a share of a group. In the S-121 model this is expressed as an attribute on the membership relationship; however, in an implementation this has been flattened to be a second attribute in the party object. 
+
+[[sec-party-block]]
+===== Party Block
+
+An S121_Party is a person or organisation or group that plays a role in a rights transaction. The PartyBlock describes a party. The party contains both a pID and a Party Name Party attribute.
+
+[[tbl-partyblock-optional]]
+.PartyBlock- optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|pID|Identifier of the Party block in the Oid format or is a “name” for the Party block
+|partyName|The name of the party (Not needed is the “Name” is used as the pID
+|partyRole|The role of the party
+|partyTypea|The type of the party
+
+- internationalOrganization
+
+- stateCountry
+
+- provinceState
+
+- nonNaturalPerson
+
+- naturalPerson
+|groupPartyType|The type of the group party: “agreement” or “association”
+|externalPartyID|The identifier of the party in an external registration
+|IsIndividualOrGroupParty|“individualParty” or “groupParty”
+|partyMemberIdentifier|Identifier of a Group Party in the Oid format
+|source|Reference to Source object
+|===
+
+[[sec-party-member-block]]
+===== Party Member Block
+
+A party may be a group and have members. A Party Block may be identified as a Group and have references to its members. A member may have a particular share of a group. The Party Member Block carries the attribute partyShare which indicates the share of a party.
+
+[[tbl-partymemberblock-optional]]
+.PartyMemberBlock - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|pID|Identifier of the Party Member Block in the Oid format or is a “name” for the Party member
+|rID|Reference to Party Block
+|Party Share|Fraction of the group represented by the party member
+|===
+
+[[sec-source-block]]
+==== Source Block
+
+All of the information elements in the S-121 model may be sourced.  This is an important capability of the standard. The Source Block carries the information for a source. The source element includes a large number of optional elements that allow a source to be described. Many of these derive from the ISO metadata standards. The “name” of a source is not normally an alternative for the sID because source document names may be long and complex.
+
+[[tbl-sourceblock-optional]]
+.SourceBlock - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|sID|Identifier of the Source block in the Oid format (or in rare cases is a “name” for the source)
+|sourceDocumentName|Document name - for example the document (legislation, treaty, title) that defines the object
+|sourceOnlineResourceLinkageURL|Official URL (or equivalent online resource) where the document is distributed;.Multiple online resource URL may be included in one character string separated by commas
+|sourceOnlineResourceProtocol|Online Resource Protocol. Multiple online resource protocols corresponding to the multiple URLs may be included in one character string separated by commas
+|sourceOnlineResourceApplicationProfile|Name of an application profile that can be used with the resource. Multiple application protocols corresponding to the multiple URLs may be included in one character string separated by commas
+|sourceOnlineResourceName|Name of the online resource
+|sourceOnlineResourceDescription|Description of what the resource is/does
+|sourceOnlineResourceFunction|Function performed by the resource: download, information, offline access, order, search
+|sourceRegistryNumber|Unique official identifier of the record in a registry. For example, in states with registers of legislative instruments, versioning is controlled by the registry ID
+|sourceAdministrativeDateStamp|The moment that the event represented by the instance of S121_Source is further processed
+|sourceAuthoritativeDate|The date of force of law of the source by an authority
+|sourceDocumentType|The type of document
+|sourceAvailabilityStatusa|The status of document from the code list LA_AvailabilityStatusType;
+
+- archiveConverted
+
+- archiveDestroyed
+
+- archiveIncomplete
+
+- archiveUnknown
+
+- docAvailable
+
+The default is “docAvailable” and the field does not need to be expressed when the source document is known to be available
+|administrativeSourceType|Descriptive documentation that supports, complement or describes the associated object
+|spatialSourceType|The type of spatial "Source" document
+|sourceType|The type of "Source" document Reference
+|sourceSubmissionDate|The date of submission of the source by a party
+|sourceRecordation|The date of registration (recordation) of the "Source" by registering authority
+|responsiblePartyIndividualName|Name of the responsible individual
+|responsiblePartyContactOnline|Method, source, or location for online access
+|responsiblePartyOnlineProtocol|Connection protocol to be used
+|responsiblePartyOnlineApplicationProfile|Name of an application profile that can be used with the resource
+|responsiblePartyOnlineContactName|Name of the resource
+|responsiblePartyOnlineDescriptiona|Function performed by the resource:
+
+- download
+
+- information
+
+- oflineAccess
+
+- order
+
+- search
+|responsiblePartyOganizationName|Name of the responsible organization
+|responsiblePartyPositionName|Name of the role or position of the responsible person
+|responsiblePartyContactPhone|Telephone numbers at which the organization or individual may be contacted
+|responsiblePartyRolea|Role of the responsible party from code list:
+
+- resourceProvider
+
+- custodian
+
+- owner
+
+- user
+
+- distributor
+
+- originator
+
+- pointOfContact
+
+- principleInvestigator
+
+- processor
+
+- publisher
+
+- author
+|responsiblePartyContactAddressCountry|Country of the physical address
+|responsiblePartyContactAddressDeliveryPoint|Address line for the physical address (street name, box number, suite)
+|responsiblePartyContactAddressCity|City of the physical address
+|responsiblePartyContactElectronicMailAddress|Electronic mail address
+|responsiblePartyContactAddressAdministrativeArea|State, province of the physical address
+|responsiblePartyContactAddressPostalCode|Postal Code for the physical address
+|qualityNameOfMeasure|Name of quality measure. Multiple measure names may be included in one character string separated by commas
+|qualityMeasureIdentification|Identification of quality measure
+|qualityMeasureDescription|Description of quality measure
+|qualityMeasureEvaluationType|Type of quality evaluation method
+|qualityEvaluation MethodDescription|Description of quality evaluation method
+|qualityEvaluationProcedure|Procedure for measuring quality
+|qualityDataTime|Reference date and time for quality. Multiple measure data times corresponding to the multiple names may be included in one character string separated by commas
+|qualityResult|Result of data quality measure. A second result may be included one character string separated by a comma
+|externalArchiveAcceptance|The date of force of law of the source by the authority
+|externalArchiveData|The content of the source
+|externalArchiveExtraction|Date of extraction from external archive
+|externalArchiveExtraction|The date of registration (recordation) of the source by registering authority
+|externalArchive_sID|The identifier of the source
+|externalArchiveExtraction|The date of submission of the source by a party
+|===
+
+[[sec-location-block]]
+===== Location Block
+
+The Location block is an object that defines the underlying structure of location. Note that the Oid block ID is used. Name and Label are not alternatives for referencing.
+
+[[tbl-locationblock-optional]]
+.LocationBlock - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|fuID|Identifier of the Location object feature unit in the "Oid" (Object ID) format. The "Oid" comprises a unique character string and a namespace identifier which is also a unique character string. An example might be "Location-1" where "Location" is the namespace and "1" is the unique id within that namespace
+|label|A short textual identifier of the feature unit
+|name|The name of the feature
+|context|The administrative aspects of the feature object
+|releasabilityType|This attribute is optionally used to differentiate between releasability status for particular features
+|locationObjectTypea|This attribute identifies which Feature Unit Location Object type this object refers to based on the Feature Catalogue:
+
+- location
+
+- baselinePoint
+
+- contributingPoint
+
+- limitPoint
+
+- boundaryPoint
+|interpolationRolea|The role of point in the structure of a "Straight" line or curve:
+
+- deflection
+
+- densification
+|pointType|The type of point
+|administrativeUnit|Reference to the Basic Administrative Unit to which this feature is associated
+|source|Reference to the source object
+|point|Reference to the associated point geometric object
+|===
+
+[[sec-limit-block]]
+===== Limit Block
+
+The Limit block is an object that defines the underlying structure of Limit. Name and Label are not alternatives for referencing.
+
+[[tbl-limitblock-optional]]
+.LimitBlock - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|fuID|Identifier of the Location object feature unit in the "Oid" (Object ID) format
+|label|A short textual identifier of the feature unit
+|name|The name of the feature
+|context|The administrative aspects of the feature object
+|releasabilityType|This attribute is optionally used to differentiate between releasability status for particular features
+|limitObjectTypea|This attribute identifies which Feature Unit Limit type this object refers to based on the Feature Catalogue:
+
+- Boundary
+
+- International Boundary
+
+- Baseline
+
+-.Normal Baseline
+
+- Straight Baselines,
+
+- Archipelagic Baseline
+
+- Low Tide Elevations
+
+- Mouths of Rivers
+
+- Reefs
+
+- Bays
+
+- Ports
+
+- Outer Limit of the Territorial Sea
+
+-.Outer Limit of the Contiguous Zone
+
+- Outer Limit of the Exclusive Economic Zone
+
+-.Outer Limit of the Continental Shelf
+
+- Outer Limit of the Roadstead
+
+- Construction Line
+|arcGeometryTypea|Type of computation used to define an arc (line):
+
+- geodesic
+
+- loxodrome
+|adminiatrativeUnit|Reference to the Basic Administrative Unit to which this feature is associated.
+|source|Reference to the source object
+|curve|Reference to the associated curve geometric object
+|delimitingPoints|Reference to the beginning and end points that delimit a limit
+|===
+
+[[sec-zone-block]]
+===== Zone Block
+
+The Zone block is an object that defines the underlying structure of zone. Name and Label are not alternatives for referencing.
+
+[[tbl-locationblock-optional-2]]
+.LocationBlock - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|fuID|Identifier of the Zone object feature unit in the "Oid" (Object ID) format
+|label|A short textual identifier of the feature unit
+|name|The name of the feature
+|context|The administrative aspects of the feature object
+|releasabilityType|This attribute is optionally used to differentiate between releasability status for particular features
+|zoneObjectTypea|This attribute identifies which Feature Unit Location Object type this object refers to based on the Feature Catalogue:
+
+- Internal Water
+
+- Archipelagic Waters
+
+- Territorial Sea
+
+-.Contiguous Zone
+
+- Exclusive Economic Zone
+
+- Continental Shelf
+
+- Roadsteads
+
+- High Seas
+
+- The Area
+|areaValue|This attribute describes the value of the area of the zone
+|jurisdictionDomainTypea|Defines the vertical juridical domain of the object:
+
+- Airspace
+
+- Land Surface
+
+- Water Surface
+
+- Water Column
+
+-.Seabed Surface
+
+- Subsoil
+|areaTypea|This attribute describes the type of the area of the zone:
+
+- Official Area
+
+- Nonofficial Area
+
+- Calculated Area
+
+- Surveyed Area
+|areaSurfaceRelationa|Relationship to surface:
+
+- Mixed
+
+- Below
+
+- Above
+
+- On Surface
+|areaReferencePoint|The coordinates of a point inside the spatial unit
+|surfaceRelation|Relationship to surface
+|areaUnitOfMeasure|The unit of measure used to define the area of the "Zone"
+|administrativeUnit|Reference to the Basic Administrative Unit to which this feature is associated
+|source|Reference to the source object
+|surface|Reference to the associated surface geometric object
+|boundary|Reference to limit or limits that define the outer boundary of zone
+|innerBoundary|Reference to limit or limits that define one or more inner boundary of zone (holes such as for islands)
+|===
+
+[[sec-point-block]]
+===== Point Block
+
+The Point block is an object that defines the spatial geometry of a Point. 
+
+[[tbl-pointblock-optional]]
+.PointBlock - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|saID|The spatial attribute identifier in the Oid format
+|locationByTexta|This attribute allows a spatial attribute to be a textual description. This allows "Location", "Limit", "Zone"s and "Space" that are not fully described geometrically to be included
+
+Quantity Specifications
+|referenceSystem|Allows a CoordinateReferencingSystem (CRS) to optionally be specified. In many other S100 based products the CRS is only defined at the metadata level and applies for the whole data set; however, in S-121 it is necessary to detail it right down to the specific instances of geometry since treaty points and lines may come from different sources such as different treaties that may use different CRS
+|originalLocationTextualPosition|Reference location of a point when it was first established
+|originalLocationReferenceSystem|Reference System for a Reference location of a point when it was first established
+|officialLocationTextualPosition|Official location reference of the point
+|officialLocationReferenceSystem|Reference System for an official reference of the point
+|globalLocationTextualPosition|Global reference to a point in a world global datum such WGS84 or ITRF2000
+|globalLocationReferenceSystem|Reference System for a global reference to a point in a world global datum such WGS84 or ITRF2000
+|WGS84LocationTextualPosition|WGS84LocationTextualPosition
+|commonLocationTextualPosition|Common reference location of point in a datum that is defaulted to the other points in the dataset
+|commonLocationReferenceSystem|Reference System for a common reference location of point in a datum that is defaulted to the other points in the dataset
+|pointGeometry|GM_Point geometry as per IHO S-100 Part 7 Spatial Schema. The associated data type is structured as a formatted Character String to assist in implementation; however, a GIS system encode a Direct Position as an internal numeric type and the type can be converted to a character string upon encoding
+|scaleMaximum|Maximum Scale at which the object should be portrayed
+|scaleMinimum|Minimum scale at which the object should be portrayed
+|source|Reference to the source object
+|===
+
+[[sec-curve-block]]
+===== Curve Block
+
+The Curve block is an object that defines the spatial geometry of a Curve. 
+
+[[tbl-curveblock-optional]]
+.CurveBlock - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|saID|The spatial attribute identifier in the Oid format
+|locationByTexta|This attribute allows a spatial attribute to be a textual description. This allows "Location", "Limit", "Zone" and "Space" that are not fully described geometrically to be included
+
+Quantity Specifications
+|referenceSystem|Allows a CoordinateReferencingSystem (CRS) to optionally be specified. In many other S-100 based products the CRS is only defined at the metadata level and applies for the whole data set; however, in S-121 it is necessary to detail it right down to the specific instances of geometry since treaty points and lines may come from different sources such as different treaties that may use different CRS
+|curveGeometrya|Polyline or arcByCentrePoint or circleByCentrePoint formatted character string consisting of:
+
+- Sequence of vertices (longitude coordinate, latitude coordinate or Direct Position), or
+
+- arcByCentre (arcStart longitude, slash delimiter, arcStart latitude, comma delimiter, arcEnd longitude, slash delimiter, arcEmd latitude, comma delimiter, arcCentre longitude, slash delimiter, arcCentre latitude),  or
+
+- circleByCentre (circleCentre longitude, slash delimiter, circleCentre latitude, comma delimiter, circlePoint longitude, slash delimiter, circlePoint latitude)
+|wGS84CurveGeometrya|Polyline or arcByCentrePoint or circleByCentrePoint formatted character string consisting of:
+
+- Sequence of vertices (longitude coordinate, latitude coordinate or Direct Position), or
+
+- arcByCentre (arcStart longitude, slash delimiter, arcStart latitude, comma delimiter, arcEnd longitude, slash delimiter, arcEmd latitude, comma delimiter, arcCentre longitude, slash delimiter, arcCentre latitude), or
+
+- circleByCentre (circleCentre longitude, slash delimiter, circleCentre latitude, comma delimiter, circlePoint longitude, slash delimiter, circlePoint latitude)
+|scaleMaximum|Maximum Scale at which the object should be portrayed
+|scaleMinimum|Minimum scale at which the object should be portrayed
+|source|Reference to the source object
+|===
+
+[[sec-surface-block]]
+===== Surface Block
+
+The Surface block is an object that defines the spatial geometry of a Surface. 
+
+[[tbl-surfaceblock-optional]]
+.SurfaceBlock - optional
+[cols="a,a"]
+|===
+h|*Attribute Name*h|*Description*
+|saID|The spatial attribute identifier in the Oid format
+|locationByTexta|This attribute allows a spatial attribute to be a textual description. This allows "Location", "Limit", "Zone"s and "Space" that are not fully described geometrically to be included
+
+Quantity Specifications
+|referenceSystem|Allows a CoordinateReferencingSystem (CRS) to optionally be specified. In many other S-100 based products the CRS is only defined at the metadata level and applies for the whole data set; however, in S-121 it is necessary to detail it right down to the specific instances of geometry since treaty points and lines may come from different sources such as different treaties that may use different CRS
+|scaleMaximum|Maximum Scale at which the object should be portrayed
+|scaleMinimum|Minimum scale at which the object should be portrayed
+|source|Reference to the source object
+|===

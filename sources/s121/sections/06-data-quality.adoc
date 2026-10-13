@@ -1,0 +1,94 @@
+[[sec-data-quality]]
+== Data Quality
+
+[[sec-introduction-3]]
+=== Introduction
+
+Data quality allows users and user systems to assess fitness for use of the provided data. Data quality measures and the associated evaluation are reported as metadata of a data product.  This metadata improves interoperability with other data products and provides usage by user groups that the data product was not originally intended for.  The secondary users can make assessments of the data product usefulness in their application based on the reported data quality measures.
+
+For S-121 the following data quality elements have been included;
+
+* Completeness of the data product in terms of coverage;
+* Logical Consistency;
+* Positional Accuracy;
+* Temporal Accuracy;
+* Thematic Accuracy;
+* Data Set Validation checks.
+
+[[sec-completeness]]
+=== Completeness
+
+An S-121 product contains a quality geometric and attributive description (current, accurate, consistent), homogeneous and standardised of the entire set of MLB managed by the organization which issued the data set. 
+
+[[sec-redundant-or-oversampled-data]]
+==== Redundant or oversampled data
+
+MLB data is official data and therefore redundant and oversampled data elements are not permitted. It is up to the data producer to ensure consistency with official source documentation and correct attribution as such in the S-121 dataset.
+
+Duplicate instances of features (defined by equal geometric realization, feature and attribute definition and temporal validity) are not permitted. Multiple instances of feature classes must be differentiated by means of attributes or metadata. Different versions of a feature instance are permitted using the versioning attributes to distinguish which is valid and any particular time.
+
+[[sec-omission]]
+==== Omission
+
+The description of jurisdictional zones through the definition of MLB is often done through conceptual descriptions which may be complete or incomplete. For the sake of clarity features defined in the Feature Catalogue have very strict geometric primitives to ensure their geometries match the feature’s definition in related legislation. 
+
+In order to also support conceptual description, these features also may be described textually or by reference to other features. Certain features such as geodetic lines or loxodromes, may have densification requirements (which may be separately documented).
+
+[[sec-logical-consistency]]
+=== Logical consistency
+
+[[sec-domain-consistency]]
+==== Domain consistency
+
+Attribute values must be validated to ensure they are within the defined range. The allowed ranges are defined in the Feature Catalogue.
+
+[[sec-format-consistency]]
+==== Format consistency
+
+Data encoded in one of the S-121 data formats; either GML or the Explicit Text Format defined in Annex B should be validated in accordance with the format specification.
+
+[[sec-topological-consistency]]
+==== Topological consistency
+
+The dataset validation tests the geometric consistency of a dataset should reflect S-100 Level 3a geometry. 
+
+[[sec-positional-accuracy]]
+=== Positional accuracy
+
+Authoritative data has by definition absolute accuracy because it represents a defined position without qualification. Authoritative data may be described in treaties, national legislation and/or deposits in compliance with UNCLOS. These absolute accuracy positions may be included in a data set along with derived data.
+
+Official data has by definition absolute accuracy because it depicts a determination of a state’s Maritime Limits and Boundaries where no process exists to make it authoritative or where a technical process has been required to realize the data; although errors may exist in the data no disadvantage will apply to a user that acts in good faith. Official data may be described in treaties, national legislation and/or deposits in compliance with UNCLOS and become authoritative data. These absolute accuracy positions may be included in a data set along with derived data. Official data may be normalized to a single spatial reference system.
+
+Data derived from authoritative or official data has the accuracy of the transformation or other process used to generate the data. A location may be represented by a point that has an absolute accuracy in one Coordinate Reference System, but has a different transformed value in another CRS. Since multiple treaties may have been agreed at different times there may be multiple locations with absolute accuracy in a MLB data set that use different CRS. If all of these points are transformed to a common CRS, so that they can be managed in a GIS and used, then each point may have an error resultant from the transformation process. The transformation source and the resultant error may be referenced in a source reference within the structure for each transformed point. 
+
+The accuracy of derived lines, such as transformed or densified lines shall also carry an accuracy statement in a referenced source for the transformation process.
+
+[[sec-temporal-accuracy]]
+=== Temporal accuracy
+
+Constituent of data features may be established at different dates. A validity attribute is mandatory for all features. A single creation date may be assigned to a component feature derived from different sources. The source description shall be used to describe the difference between the actual establishment date of a feature and any date assigned to a group.
+
+[[sec-thematic-accuracy]]
+=== Thematic accuracy
+
+[[sec-thematic-classification-correctness]]
+==== Thematic classification correctness
+
+Each of the standardized features will have an IHO code to serve as a linkage to proper depiction based on the IHO S-100 Feature Concept Dictionary. When a feature type will be realised into a specific instance the corresponding IHO code shall be linked to the object to ensure that the proper thematic classification is used. Through such automation, no further verification is needed.
+
+[[sec-non-quantitative-attribute-accuracy]]
+==== Non-quantitative attribute accuracy
+
+The method used for evaluating the accuracy of the non-quantitative attribute values with respect to reality is determined by the type of data and its method of acquisition, and thus rely on the metadata information and data description provided at the time of the dataset integration. 
+
+[[sec-quantitative-attribute-accuracy]]
+==== Quantitative attribute accuracy
+
+The method used for evaluating the accuracy of the quantitative attribute values with respect to reality is determined by the type of data and its method of acquisition, and may be calculated in accordance with clause 5.3 or may rely on the metadata information. 
+
+The presence of inconsistencies or discrepancies in information provided by different states does not indicate the existence of a dispute among the relevant states.
+
+[[sec-dataset-validation-checks]]
+=== Dataset Validation checks
+
+A set of dataset validation checks are included as Appendix A of this Product Specification. These form a minimum set of data validation tests and do not provide assurance that features meet an intended level of logical or topological consistency. This section of the Product Specification contains guidance to ensure a minimum level of consistency is achieved across all S-121 datasets.

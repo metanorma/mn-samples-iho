@@ -1,0 +1,77 @@
+[appendix,obligation=normative]
+[[annex-implementation-schema]]
+== Implementation Schema
+
+The implementation schema is a derived schema from the schema presented in the S-121 Product Specification document. The S-121 schema is a hierarchical model that builds on the S-100 model and the ISO 19152 Land Administration Domain Model. The S-121 schema presented in the Product Specification document reflects this structure of classes being derived from other classes. There is a significant depth to the hierarchy of classes within classes due to the multiple sources.
+
+In order to make implementation easier an implementation schema has been developed. This schema deliberately flattens the structure pulling many linked and shared objects into classes as simple attributes. Also many data types have been simplified to allow them to be included in character strings to allow them to be output in an Explicit Text Format. The following figures present all of the classes from the S-121 model together, on the right with equivalent implementation classes. 
+
+An example of the simplification of classes is the collapsing of the Object Identifier class Oid from a class with two parameters to a structured single character string of a particular format. Figure A-1 shows the implementation of the class Oid as Oid_FormattedCharacterString.
+
+[[fig-mapping-of-oid-to-an-implementation-class]]
+.Mapping of Oid to an Implementation Class
+image::figure-mapping-of-oid-to-an-implementation-class.png[]
+
+In an ArcGIS or other GIS system specific implementation the process may be refined one more step. The implementation classes may further be mapped to classes in the GIS system specific structure. This further level of mapping is not shown here because it is GIS system dependent.
+
+The S-100 standard allows for the specialization of features and information objects by the addition of attributes and the definition of any number of thematic attributes; however, it does not allow for the specialization of spatial attributes. This restriction is required to support display systems such as the Electronic Chart Display Information System (ECDIS). S-121 includes additional ways of describing position inherited from the ISO standard 19152. These are the description of a spatial attribute textually called “location by text” and the description of a position in a coordinate reference system different than that used to describe other positions. Both cases occur in real data. In order to ensure that the spatial information complies with S-100 an additional attribute class has been defined to carry the additional spatial attributes.
+
+The following series of figures are taken from the S-121 UML model and show the implementation classes related to each of the classes in the high level S-121 schema.
+
+[[fig-3-shows-the-spatial-attribute-implementation-classes]]
+.3 shows the Spatial Attribute Implementation classes.
+image::figure-3-shows-the-spatial-attribute-implementation-classes.png[]
+
+[[fig-16]]
+image::image-44.png[]
+
+[[fig-implementation-class-s121-location]]
+.Implementation Class - S121_Location
+image::figure-implementation-class-s121-location.png[]
+
+Figures A-5 shows the Limit class. The geometry has been reduced to a structured PolyLine or Arc.  A vertex string is a structured character string. The Arc by Centre and Circle by Centre structures are also allowed since they are supported in S-100.
+
+[[fig-implementation-class-s121-limit]]
+.Implementation Class - S121_Limit
+image::figure-implementation-class-s121-limit.png[]
+
+Figures A-6 shows the Zone class. The geometry is done by Zone to Limit relationships. The S121_Surface object carries attributes about the geometry but not the actual geometry.
+
+[[fig-implementation-class-s121-zone]]
+.Implementation Class  - S121_Zone
+image::figure-implementation-class-s121-zone.png[]
+
+Figures A-7 shows the Space class. Space is essentially a zone with a reference point and a height. The position is a direct position and a vertical.
+
+[[fig-8-shows-the-implementation-of-the-basic-administrative-unit-]]
+.8 shows the implementation of the Basic Administrative Unit class. This is a simple class with only a few character string attributes.
+image::figure-8-shows-the-implementation-of-the-basic-administrative-unit-.png[]
+
+[[fig-9-shows-the-implementation-of-the-governance-class-this-simp]]
+.9 shows the implementation of the Governance class. This simple class remains essentially unchanged in the implementation model.
+image::figure-9-shows-the-implementation-of-the-governance-class-this-simp.png[]
+
+[[fig-implementation-class-s121-governance]]
+.Implementation Class  - S121_Governance
+image::figure-implementation-class-s121-governance.png[]
+
+Each of the Rights, Restrictions and Responsibilities classes are treated separately. This is shown in Figures A-10, A-11 and A-12. The MA_RRRshare attribute is shown as a Fraction data type and MA_RRRshareCheck is shown as Boolean. The fraction and Boolean also need to be represented as character string elements. 
+
+[[fig-implementation-class-s121-right]]
+.Implementation Class  - S121_Right
+image::figure-implementation-class-s121-right.png[]
+
+[[fig-implementation-class-s121-restriction]]
+.Implementation Class  - S121_ Restriction
+image::figure-implementation-class-s121-restriction.png[]
+
+[[fig-13-shows-the-s-121-partygroup-classes-the-composition-relati]]
+.13 shows the S-121 PartyGroup classes. The composition relationship between S121_Party and S121_GroupParty can be implemented as a pointer (or set of pointers). The optional S121_PartyMember MA_partyShare attribute can be implemented as one to three attributes following the pointer.
+image::figure-13-shows-the-s-121-partygroup-classes-the-composition-relati.png[]
+
+[[fig-26]]
+image::image-54.png[]
+
+[[fig-implementation-class-s121-source]]
+.Implementation Class  - S121_Source
+image::figure-implementation-class-s121-source.png[]

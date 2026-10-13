@@ -1,0 +1,63 @@
+[[sec-data-content-and-structure]]
+== Data Content and Structure
+
+[[sec-introduction-2]]
+=== Introduction
+
+The S-121 Maritime Limits and Boundaries Product Specification is based on the S-100 General Feature Model.    The feature types, attribute types and attribute values used in S-121 are registered in the IHO Geospatial Information Registry. 
+
+S-121 makes use of elements derived from the ISO standard 19152 Land Administration Domain Model used within the scope of UNCLOS.
+
+Spatial geometry makes use of the spatial objects defined in S-100 and use Level 3a topology structures (shared spatial objects with no overlap - planar graph topology). In addition S-121 allows for spatial geometry to carry additional geometry elements that may be defined in other spatial referencing systems, such as historical points that are defined in the coordinate reference system used in the treaty, proclamation or other document that established the data element. There is also a capability to define spatial geometry using a "Location by Text" capability, derived from ISO 19152 that allows for a textual description of a spatial element. Many historical treaties use such textual descriptions. 
+
+[[sec-application-schema]]
+=== Application Schema
+
+The conceptual model of the S-121 Product Specification is provided in Appendix B. S-121 conforms to the General Feature Model (GFM) from S-100 Part 3. The implementation is defined in the Feature Catalogue. The S-121 Application Schema is realized in the Feature Catalogue.
+
+[[sec-feature-catalogue]]
+==== Feature Catalogue
+
+The S-121 Feature Catalogue describes the feature types, information types, attributes, attribute values, associations and roles which may be used in an S-121 data product. 
+
+The S-121 Feature Catalogue is available in an XML document (S-121 Annex D) which conforms to the S-100 XML Feature Catalogue Schema and can be downloaded from the IHO website.  S-121 Annex A – Data Classification and Encoding Guide, constitutes a human readable interpretation of the Feature Catalogue.
+
+[[sec-dataset-types]]
+==== Dataset types
+
+The S-121 Product Specification contains a specific set of features related specifically to MLB. This is a scale independent set of data. It is not necessarily a complete set of data and it may be combined with other data.
+
+S-121 contains geographic features, information types and both feature relationships and information associations fully documented within the Feature Catalogue.
+
+[[sec-geometry]]
+==== Geometry
+
+The S-121 product is based on the S-100 General Feature Model (GFM), and is a feature-based vector product. All S-121 features and information classes are derived from one of the abstract classes FeatureType and InformationType defined in the S-121 Application Schema, which realize the GFM meta-classes S100_GF_FeatureType and S100_GF_InformationType respectively.
+
+The S-121 Product Specification is constrained to level 3a which supports 0, 1 and 2 dimensional features (points, curves and surfaces) as defined by S-100 Part 7 – Spatial Schema. 
+
+Level 3a is described by the following constraints: 
+
+* Each curve must reference a start and end point (they may be the same).
+* Curves must not self intersect. See Figure 4-1.
+* Areas are represented by a closed loop of curves beginning and ending at a common point.
+* In the case of areas with holes, all internal boundaries must be completely contained within the external boundary and the internal boundaries must not intersect each other or the external boundary. Internal boundaries may touch other internal boundaries or the external boundary tangentially (that is at one point) as shown in Figure 4-2.
+* The outer boundary of a surface must be in a clockwise direction (surface to the right of the curve) and the curve orientation positive. The inner boundary of a surface must be in a counter-clockwise direction (surface to the right of the curve) and the curve orientation negative. See Figure 4-3.
+
+[[fig-self-intersect-example]]
+.Self Intersect Example
+image::figure-self-intersect-example.png[]
+
+[[fig-area-holes]]
+.Area Holes
+image::figure-area-holes.png[]
+
+[[fig-boundary-direction]]
+.Boundary Direction
+image::figure-boundary-direction.png[]
+
+Each feature type is independent and Maritime Boundaries may cross other Maritime Boundaries or zones (areas). Different features may be a *zone* represented by a geometric surface, a *limit* represented as curves or a *location* represented by a point. 
+
+The relationship of the geometric primitives used to represent a feature are described in Appendix B, clause B 2.3. 
+
+Although S-121 data may use the full palette of S-100 Level 3a geometry there is a distinction between the geospatial locations represented in the implicit geometry of each feature and any documented positions (and line interpolations) associated with individual features required for documentation of the source data. Alternate descriptions of locations represented in other coordinate reference systems and Location by Text do not participate in the geometric complex defined by the Level 3a topology.

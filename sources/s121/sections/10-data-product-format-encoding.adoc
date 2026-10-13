@@ -1,0 +1,9 @@
+[[sec-data-product-format-encoding]]
+== Data Product Format (encoding)
+
+The data format for the data provided is dependent upon its use. 
+
+. *Deposit* – Data is provided as one possible (GB-9) official deposit of MLB objects to the UN in accordance with UNCLOS.
+. *Exchange* – A set of MLB data may be provided as a dataset encoded as GML, in accordance with S-100 part 10b.
+
+See Annex B for a complete description of the Explicit Text Format encoding for S-121.

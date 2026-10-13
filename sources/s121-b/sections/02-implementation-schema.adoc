@@ -1,0 +1,34 @@
+[[sec-implementation-schema]]
+== Implementation Schema
+
+The Implementation Model for the S-121 standard is described in Appendix B, clause B.2 of the S-121 Product Specification document. It is described in more detail here so that the various elements that need to be encoded can be identified. 
+
+The model in the Product Specification, Figure B-14 shows the major classes; but it also shows collection classes. The collection classes are abstract and make the model look simpler but are not directly implemented. Also, this model does not show the details of the S121_FeatureUnit and S121_SpatialAttributeType class.
+
+The model in Figure 2-1 below shows all of the implementation classes without the collection classes except for the details of the S121_FeatureUnit and S121_SpatialAttributeType which are shown separately. Otherwise the figure would be too complex to read. Note that there are many more relationships shown when only the instantiable classes are exposed.
+
+In an implementation, relationships are addressed as pointers so they become a type of attribute. The composition relationship between S121_Party and S121_GroupParty includes a relationship class. This is effectively an attribute on an attribute and can be implemented as two attributes, one indicating participation of a party in a group and the other optionally indicating a percentage share in the participation.
+
+[[fig-s-121-instantiated-implementation-model]]
+.S-121 Instantiated Implementation Model
+image::figure-s-121-instantiated-implementation-model.png[]
+
+The structure of the S121_FeatureUnit and S121_SpatialAttributeType is shown in Figure 2-2 below. Since each Feature Unit and each Spatial Attribute Type can have a source there are a lot of connectors to the Source Group.
+
+[[fig-3-below-shows-the-instantiable-classes-in-the-feature-attrib]]
+.3 below shows the instantiable classes in the Feature/Attribute Group without the references to the Administrative Group or the Source Group.
+image::figure-3-below-shows-the-instantiable-classes-in-the-feature-attrib.png[]
+
+[[fig-s-121-instantiated-implementation-model-for-feature-and-attr]]
+.S-121 Instantiated Implementation Model for Feature and Attribute Group without External References
+image::figure-s-121-instantiated-implementation-model-for-feature-and-attr.png[]
+
+Each of the classes has a set of defined attributes. These are shown separately so that they can be linked to the encoding.
+
+Also the navigable relations shown in the figures above (Figures 2-1, 2-2 and 2-3) will need to be implemented as pointers in any encoding that uses them and will therefore appear as attributes (containing the Oid of the object pointed to). The use of pointers needs to be minimized in an explicit text encoding because it makes the text hard to read.
+
+Figure 2-1 shows the Feature Unit. The Feature Unit will contain the name of the feature taken from Feature Catalogue. That is, it is a template for features such as “Territorial Sea”.  Note that all of the attributes are character strings or code list entries that can be put in character string fields. 
+
+Some of the attributes, such as DateTime, are structured text. A date would look like yyyy-mm-dd hh:mm:ss:timezonefootnote:fn6[The structure for this data format with year first is defined in ISO 19108 Temporal Schema \[7\] and ISO 8601 Date and Time Format \[5\]]. Parts of the date are optional. This is described in more detail in the explicit text encoding section below.
+
+The details of the implementation schema are given in Appendix A.

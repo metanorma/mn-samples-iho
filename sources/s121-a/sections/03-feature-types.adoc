@@ -1,0 +1,78 @@
+[[sec-feature-types]]
+== Feature Types
+
+A set of predefined feature types have been established for Marine Limits and Boundaries. The stereotype <MLB> (Maritime Limits and Boundaries) is used to identify the MLB Feature Types and Defining Objects.
+
+Figure 2-1 below illustrates the relationship of the feature types to the defining objects. The information contained in the defining features’ attributes is included in the Feature Catalogue.
+
+[[fig-mlb-features]]
+.MLB Features
+image::figure-mlb-features.png[]
+
+The “location” feature types are:
+
+*Limit Point* - A limit point is a point on the outer limit of a maritime zone.
+
+*Baseline Point* – A baseline point is a point on a baseline. 
+
+*Boundary Point* – A boundary point is a point on a boundary.
+
+*Contributing Point* - A point, used for computation.
+
+The “limit” feature types are:
+
+*Boundary -* A delimitation line between two or more entities.
+
+*International Boundary -* A delimitation between two or more States.
+
+*Baseline* (Articles 5, 6, 7, 9, 10, 11, 13, 14 and 47 of UNCLOS) – A baseline is a line from which the breadth of the territorial sea, and other maritime zones is  measured. 
+
+*Normal Baseline* (Article 5 of UNCLOS).  
+
+*Straight Baselines* (Articles 7of UNCLOS).
+
+*Archipelagic Baseline* (Article 47 of UNCLOS).
+
+*Low-Tide Elevations* (Article 13 of UNCLOS).
+
+*Mouths of Rivers* (Article 9 of UNCLOS).
+
+*Reefs* (Article 6 of UNCLOS).
+
+*Bays* (Article 10 of UNCLOS).
+
+*Ports* (Article 11 of UNCLOS).
+
+*Outer Limit of the Territorial Sea* (Articles 3, 4 and 15 of UNCLOS).
+
+*Outer Limit of the Contiguous Zone* (Article 33 of UNCLOS).
+
+*Outer Limit of the Exclusive Economic Zone* (Article 57 and 74 of UNCLOS).
+
+*Outer Limit of the Continental Shelf* (Article 76 and 83 of UNCLOS).
+
+*Outer Limit of the Roadstead* (Article 12 of UNCLOS) - The outer limit of a roadstead. 
+
+*Construction Line* – An arc used for constructing "Limit" or "Boundary" typically linking to a "Contributing Point".
+
+The “zone” feature types are: 
+
+*Internal Waters* (Article 8 of UNCLOS).
+
+*Archipelagic Waters* (Article 49 of UNCLOS) – Archipelagic waters are waters enclosed by the archipelagic baselines drawn in accordance with Article 47.
+
+*Territorial Sea* (Part II, Sections 1-3, of UNCLOS).
+
+*Contiguous Zone* (Part II, Section 4, of UNCLOS).
+
+*Exclusive Economic Zone* (Part V of UNCLOS).
+
+*Continental Shelf* (Part VI of UNCLOS).
+
+*Roadsteads* (Article 12 of UNCLOS).
+
+*High Seas* (Part VII of UNCLOS).
+
+*The Area* (Part XI of UNCLOS).
+
+.

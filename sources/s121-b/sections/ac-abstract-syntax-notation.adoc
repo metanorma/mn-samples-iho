@@ -1,0 +1,144 @@
+[appendix,obligation=informative]
+[[annex-abstract-syntax-notation]]
+== Abstract Syntax Notation
+
+[[sec-introduction-2]]
+=== Introduction
+
+The ISO 8824 Abstract Syntax Notation (ASN.1) is a meta language used to describe a data interchange format in a context-independent manner. ASN.1 itself is similar to the compiler description languages used in computer science to define programming languages. In fact the structure is similar to a programming language and a particular data file is analogous to a particular program written in the language. Like a language, the definition of a data file makes use of only those words in the language which apply in a given situation. Words, or statements composed of sequences of words, may be used as often as needed, in accordance with the syntactic rules of ASN.1 and the information model being encoded. 
+
+A number of basic data types make up the "vocabulary" of the "language". A complete description of the Abstract Syntax Notation would take some space to present. However in this document only a subset of the ASN commands need be used. This subset is identified below: 
+
+-  Assignment  
+
+-  CHOICE
+
+-  SEQUENCE
+
+-  SEQUENCE OF
+
+-  SET
+
+-  SET OF
+
+-  MACRO
+
+Quite complex data types can be described. This is accomplished by defining a small number of simple data types. The complete range of values of these simple data types may be defined, and then the manner of combining these simple data types into the more complex data types are specified. A data type defined in this manner may be assigned a tag so that it may be identified in the communication or otherwise distinguished. These tagged elements correspond to the classes in the UML model. Encoding rules described separately from the syntax of the data format define the manner in which the data types are encoded and delimited. There are several sets of encoding rules established by ISO for direct use with ASN.1. A set of binary encoding rules are described in ISO 8825; however, the syntax notation is not locked to any one particular set of encoding rules and any of the encoding rules described in the annexes of this document may be used to represent data corresponding to the syntax described.
+
+[[sec-syntactic-structure]]
+=== Syntactic Structure
+
+The Abstract Syntax Notation defines a communications format in terms of a syntactic tree. At the highest level the entire data set which is interchanged is described as a sequence of sub-sections. These sub-sections are then broken down into their component elements and so on, until each of the primitive data elements is identified. Each data element has a particular data type such as a basic text string, an integer etc. When data is communicated it is in terms of the syntactic tree. Many branches of the syntactic tree may be optional. When encoding using a tag oriented encoding technique such as ISO 8825 or XML the data stream is parsed by the receiving device and matched to the elements of the syntactic tree. In a tag oriented exchange formats, it is not necessary to pad the communications with null fields to accommodate information fields which are not used. The tag numbers associated with data elements allow the parser to skip over sections of the syntactic tree, so that only the relevant information need be communicated. This approach also allows for recursive definitions, so that there is no limit to the number or length of parameter data.
+
+The S-121 Explicit Text Format is a tag oriented encoding. The tags are the Record Type Identifiers at the beginning of each record. Each record is terminated. In the S-121 Explicit Text Format each record is separate so there is no need for recursive structures.
+
+[[sec-assignment]]
+==== Assignment
+
+Branches of the syntactic tree are defined in terms of expressions in the Abstract Syntax Notation.  The Assignment operator  *::=* equates a reference name to a series of more basic commands or primitive data elements. An entire syntax is described in terms of successive refinement. A data file consists of a number of named sections, each of which consists of a number of sub-sections etc. down to the level of the primitive data elements. 
+
+[[sec-sequence-and-choice]]
+==== SEQUENCE and CHOICE
+
+The basic operator in an assignment statement is the *SEQUENCE* command.  The SEQUENCE operator specifies that a branch of the syntactic tree consists of a defined number of elements in a fixed order; that is, a list of mandatory or optional elements. The *SEQUENCE OF* operator specifies that the number of elements is variable but that the order is fixed; that is, it indicates a repeated element or list of elements.  The *SET* operator specifies that a branch of the syntactic tree consists of a defined number of elements in any order. It is equivalent to a sequence but the order is not fixed. The *SET OF* operator specifies that the number of elements is variable and that the order is variable.  The *CHOICE* operator specifies that an instance within the syntactic tree permits the inclusion of one data element (or sub-branch) out of a fixed set of choices.
+
+[[sec-optional-and-default]]
+==== OPTIONAL and DEFAULT
+
+Elements in a SEQUENCE or SET may be optional. This is, indicated by the keyword *OPTIONAL* immediately following the element name in the sequence or set.  If a default value is defined for an optional element then the keyword *DEFAULT* replaces the term OPTIONAL and the value of the default is specified following the DEFAULT keyword.
+
+[[sec-macro]]
+==== MACRO
+
+A *MACRO* definition allows a primitive data type to be constructed out of other primitive data types. It also allows a default value notation to be defined for the constructed primitive so that the DEFAULT specification may be used with this new element.
+
+[[sec-tag-numbers]]
+==== Tag Numbers
+
+*Tag numbers* are used to identify branches of the syntactic tree. A tag number is expressed in square brackets [ ] preceding an element name. Tag numbers are not necessary in a fixed SEQUENCE with no OPTIONAL elements since the order is known; however, in other cases, tag numbers must be supplied for each element. There are four classes of identifier tag codes: Universal, Context Specific, Application, and Private. *Universal tags* are used to identify operators such as CHOICE or SEQUENCE or basic data elements such as a GRAPHIC STRING.  *Context Specific tags* are assigned in each branch of the syntactic tree to number the elements of the tree in that branch. The same tag numbers are used over and over in different levels of the syntactic tree, and it is the responsibility of the syntax parser interpreting data encoded in terms of the ASN defined syntax to keep track of the levels of the tree and the local meaning of each tag. *Application wide tags* are used to define unique identifiers to specific elements. A parser does not need to keep track of the level of the syntax to identify the particular data element. Since Application wide tags are unique to a particular data element, long tag numbers would result if they were used extensively throughout a particular syntax. Therefore their use should be restricted to a few strategic places within the syntax. *Private tags* are used to build proprietary extensions to ASN.1, and are rarely used.
+
+In certain situations redundant tags are generated. For example, a Universal tag may immediately follow a Context Specific tag. The keyword *IMPLICIT* is used to suppress the generation of a universal tag in those situations where the tag is unnecessary. An *IMPLICIT SEQUENCE* of two tagged elements would be encoded using only the context specific tags identifying each of the elements. The tag identifying the overall sequence would not be included.  
+
+[[sec-grammar]]
+==== Grammar
+
+The following is a summary of the notations used in an example grammar.
+
+*::=*  - is the production symbol of the grammar and can be read "is produced by" or "is composed of". A production allows the definition of a syntactic entity by the assignment of a name to a collection of data types or other entities. Entities placed on the right of the production symbol are taken together to define the composite entity.  By the use of production statements the elements of the grammar may be defined by successive refinement.
+
+*CHOICE {    }*  - is the alternative indicator in a production definition. It can be read as "or". Alternate data entities are separated by commas within the brackets of the CHOICE indicator. Each of these entities must be identified by a TAG so that the particular entity communicated may be distinguished.  For example, the data entity Type consists of a choice of data element Type-1, Type-2, or Type-3. The TAG numbers are enclosed in square brackets.
+
+[source]
+----
+Type    ::=  CHOICE   {     [1]     Type-1,
+                            [2]     Type-2,
+                            [3]     Type-3
+             }
+----
+
+*SEQUENCE {   }* - is the cumulative indicator in a production definition. It can be read as "and". A sequence of data entities are separated by commas within the brackets of the SEQUENCE indicator. For example, a data entity process consists of the ordered sequence of entities Step-1, Step-2, Step-3.  Explicit TAGs are not required since the order of the sequence is fixed.
+
+[source]
+----
+Process  ::=  SEQUENCE   {     Step-1,
+                               Step-2,
+                               Step-3
+              }
+----
+
+*SET {    }*   - is also a cumulative indicator in a production definition, which can also be read as "and". It is similar to the SEQUENCE indicator except that the order of the elements is not fixed. Therefore TAG codes must be used to distinguish the elements. For example, data entity Flock consists of the unordered sequence of entities Bird-1, Bird-2, Bird-3.  
+
+[source]
+----
+Flock    ::=   SET      {     [1]     Bird-1,
+                              [2]     Bird-2,
+                              [3]     Bird-3
+               }
+----
+
+*SEQUENCE  OF*  - is a series indicator in a production definition. It permits zero or more data entities of the same type to be part of a production. The end of the sequence is determined when there are no more data elements of the same type. For example, a data element List is composed of a series of Entries (Entry-1, Entry-2, Entry-3,…).
+
+[source]
+----
+List     ::=   SEQUENCE OF    Entries
+----
+
+Data entities in a SEQUENCE or a SET may be optional. Optional data elements are indicated by the keyword OPTIONAL after the data element name. A default value may also be defined for an optional data element. This is indicated by the keyword DEFAULT after the data element name followed by the value of the default state. The keyword DEFAULT implies the keyword OPTIONAL. For example, data entity Group consists of the ordered sequence of entities  Element-1, Element-2, Element-3, Element-4, where Element-2 is optional and Element-3 is optional and takes on the default value 1. Explicit TAGs are required in order to distinguish which elements are included. 
+
+[source]
+----
+Group   ::=  SEQUENCE   {  [1]  Element-1,
+                           [2]  Element-2 OPTIONAL,
+                           [3]  Element-3 DEFAULT (1),
+                           [4]  Element-4
+             }
+----
+
+*--*    signifies the beginning of comments that are not part of the grammar, but are included to clarify the semantic meaning and context.
+
+*Keywords*   - such as SEQUENCE, SET, CHOICE etc. are expressed in capital letters. 
+
+*identifier name*   - the name of an identifier consists of a string of letters, digits and hyphens beginning with a lower case letter. Identifier names may be used to identify particular elements of an entity or to assign a value to a particular element of an entity.
+
+*Entity Name*    - the name of an entity consists of a string of letters, digits and hyphens beginning with an upper case letter.
+
+The primitive level of the Abstract Syntax Notation consists of a number of built-in data types. These can be classified into several categories as shown below:
+
+[source]
+----
+   Numerical Data Types    - BOOLEAN          - True or False
+                             INTEGER          - Integer number
+                                                (a signed integer number
+                                                of arbitrary length)
+   Bit Oriented Data Types - BIT STRING       - String of bits
+                             OCTET STRING     - String of 8-bit bytes
+   General Data Types      - NULL             - Null string
+                             ANY              - Any data string
+   Time/Date Data Type     - GENERALIZED TIME - Date / Time
+   Character Data Types    - GRAPHIC STRING    - A string of characters
+
+----
+
+These primitive data types correspond to those defined in ISO 19103 and used in the models in The ISO TC211 suite of standards.
+
+This description of the Meta Notation only identifies the principal functions of ASN.1.  A more comprehensive description is given in the ISO standard ISO 8824.

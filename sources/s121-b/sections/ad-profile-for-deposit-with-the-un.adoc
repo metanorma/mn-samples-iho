@@ -1,0 +1,866 @@
+[appendix,obligation=normative]
+[[annex-profile-for-deposit-with-the-un]]
+== Profile for Deposit with the UN
+
+The Explicit Text Format provides a general set of structures that can express any of the elements in an S-121 data base with the limitation that only one Metadata, Governance, and Basic Administrative Unit object may be expressed in one data set. Nations that wish to represent their proclamations, decrees or laws in the Explicit Text Format have the capability to do so. However, the requirements for deposit with the UN/DOALOS are much simpler.
+
+This profile provides a guide to foster consistency where desired. Some information types such as Spaces are not included in the profile. Only a limited number of attributes are included.
+
+ISO and S-100 require Metadata to be included with any dataset. In the Explicit Text Format, Metadata forms a “cover page” that may precede an Explicit Text Formatted document. This Metadata is optional and where used only a minimum of metadata is needed.
+
+The names of attributes used in the Record Type Identifier in the Explicit Text Format derive from the attribute names in the S-121 model. These names may be replaced by alternate names (aliases) that are defined explicitly in this profile in order to enhance readability. These alternate names are given in the tables below. 
+
+[[sec-profile-file-structure]]
+=== Profile File Structure
+
+A data set for deposit consists of the following blocks where applicable:
+
+Metadata Block
+
+Governance Block
+
+Party Block Group
+
+     Party Block   …
+
+Basic Administrative Block
+
+Rights Block Group
+
+     Rights Block   … 
+
+Responsibilities Block Group
+
+     Responsibilities Block   … 
+
+Restrictions Block Group
+
+     Restrictions Block   … 
+
+Source Block Group
+
+     Source Block   … 
+
+Zone Block Group
+
+     Zone Block   … 
+
+Limit Block Group
+
+     Limit Block   … 
+
+Curve Block Group
+
+     Curve Block   … 
+
+Location Block Group
+
+     Location Block   … 
+
+Point Block Group
+
+     Point Block   … 
+
+[[sec-profile-metadata-block]]
+=== Profile Metadata Block
+
+A subset of the available metadata fields are selected for the deposit profile. Since the profile is only a recommendation other metadata may be used as needed. There is only one Metadata Block per data file so there is no Block ID field in the Metadata Block Descriptor Record.
+
+*Profile Metadata Block First Record:*
+
+[[tbl-24]]
+[cols="a"]
+|===
+h|*Metadata Block Descriptor Record Contents*
+|Metadata
+|===
+
+*Subsequent Records:*
+
+[[tbl-25]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Title:|title|Name of deposit
+|Abstract:|abstract|Brief narrative summary of the dataset’s contents
+|Topic:|topic|Topic areas boundaries,and oceans.
+|Nation:|metadataContactOrganisation|Nation making the deposit and therefore responsible for the metadata
+|Date:|referenceDate|reference date for the deposit
+|Language:|datasetLanguage|Languages of the dataset using standard ISO 639-2 three letter codes. Note: Three letter language code followed by an optional ISO 3166 three letter country code, For example ENG for English and FRA for French
+|Metadata valid on:|metadataDate|Metadata creation date
+|File:|metadataFileIdentifier|A unique phrase or string which uniquely identifies the metadata file
+|Date Type:|datasetReferenceDateTypea|Type of date from code list:
+
+- Creation Date
+
+- Publication Date
+
+- Revision Date
+
+- Date Became In Force
+
+- Date Became Adopted
+|West Extent:|westLongitudeExtent|West limit of extent.
+|East Extent:|eastLongitudeExtent|East limit of extent.
+|South Extent:|southLatitudeExtent|South limit of extent.
+|North Extent:|northLatitudeExtent|North limit of extent.
+|===
+
+[[sec-profile-governance-block]]
+=== Profile Governance Block
+
+The profile of the Governance Block for deposit is a subset of the available elements. The names are selected to be meaningful for deposit. 
+
+The Description Attribute is expected to be many lines of text that will make use of the Record Extension capability to allow multiple paragraphs. This will correspond to the preamble of the deposit. 
+
+There is only one Governance Block per data file so there is no Block ID field in the Governance Block Descriptor Record. Reference to the Governance block from the Basic Administrative Unit Block is assumed.
+
+*Profile Governance Block First Record:*
+
+[[tbl-26]]
+[cols="a"]
+|===
+h|*Governance Block Descriptor Record Contents*
+|Maritime Limits and Boundaries deposit
+|===
+
+*Subsequent Records:*
+
+[[tbl-27]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Reference Number:|referenceNumber|Legislative reference number
+|Title:|governanceTitle|Title of the legislative reference. This is the general title of the whole deposit
+|Description:|governanceDescription|Description of the governance statement. This can be a multi paragraph preamble to the deposit
+|Approval Date:|dateApproved|Date at which the legislative statement or document was approved by the appropriate governing body
+|Validity Date:|startLifespan|Reference date for the validity of this version of the dataset. This is the statement of versioning for an entire dataset. Note that the Explicit Text Format is versioned by dataset. If Metadata is provided then this date is equivalent to Reference Date
+|Collection:|collection|The State name should be used when depositing
+|===
+
+[[sec-profile-party-block-group]]
+=== Profile Party Block Group
+
+In a deposit there normally is only one party involved. The state makes a declaration of its position. 
+
+The Party Block Group consists of two blocks. The first block in the group contains only a Group Block Descriptor Record. This allows a record of descriptive text to be expressed. The second block describes the party. In the case where there is only one party the use of the Party Group Block Descriptor Record is optional; however, it makes the output more readable.
+
+An example of both options are shown below. The first option uses “name” as the Block ID, whereas the second option uses an object id (Oid) as the Block ID. 
+
+*Party: Australia*
+
+*Type: State Country*
+
+*Party: Party-2*
+
+*Party Name: New Zealand*
+
+*Type: State Country*
+
+Both are valid and can be used together; however, the first option is more readable.
+
+*Profile Party Block Group Description:*
+
+[[tbl-28]]
+[cols="a"]
+|===
+h|*Party Group Block Descriptor Record Contents*
+|The information in this file relates to the following entity(s)
+|===
+
+*Profile Party Block First Record (multiple Party Blocks may exist where applicable):*
+
+[[tbl-29]]
+[cols="a,a"]
+|===
+h|*Party Block Descriptor Record Contents*h|*Block ID*
+|Party:|Identifier of the Party block in the Oid format for example “Party-1” or a unique “name”. In the case of “Party” the unique name would derive from the  partyName attribute. Therefore the partyName attribute is not needed.
+|===
+
+*Subsequent Records*
+
+[[tbl-30]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Party Name:|partyName|The name of the party
+|Type:|partyType|The type of the party -  “State Country”    stateCountry
+|Group:|groupPartyTypea|The type of the group party:
+
+* agreement
+
+* association
+
+* condominium
+|Individuality:|isIndividualOrGroupPartya|* individual “individualParty”
+
+* group  “groupParty”
+|===
+
+[[sec-profile-basic-administrative-unit-block]]
+=== Profile Basic Administrative Unit Block
+
+For a deposit the official entity is represented by the Basic Administrative Unit. Only one Basic Administrative Unit is permitted in one data file in the Explicit Text Format. . All references to the Basic Administrative Unit from the Feature unit (Zone, Limit and Location) are assumed. Therefore there is no need to express a Block ID for the Basic Administrative Unit. 
+
+It is necessary for the reader to know what type of entity is being described. This can be done using the Administrative Unit Name. This makes the Administrative Unit Name mandatory in the profile. 
+
+*Profile BAUnit Block First Record:* 
+
+[[tbl-31]]
+[cols="a"]
+|===
+h|*BAUnit Block Descriptor Record Contents*
+|This file depicts the following object
+|===
+
+*Subsequent Records:*
+
+[[tbl-32]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Administrative Unit Name:|basicAdministrativeUnitName|Name for an instance of a "BasicAdministrativeUnit" (for example Continental Shelf)
+|Context:|basicAdministrativeUnitContext|Description of the context for an instance of a "BasicAdministrativeUnit"
+|Right:|right|Reference to Right object
+|Responsibility:|responsibility|Reference to Responsibility  object
+|Restriction:|restriction|Reference to Restriction  object
+|Party:|party|Reference to Party object
+|Source:|source|Reference to Source object
+|===
+
+[[sec-profile-right-restriction-and-responsibility-blocks]]
+=== Profile Right Restriction and Responsibility Blocks
+
+[[sec-profile-rights-block]]
+==== Profile Rights Block
+
+For a deposit, only a subset of the description of a Right description is required.
+
+The Right Block Group consists of two or more blocks. The first block in the group contains only a Group Block Descriptor Record. This allows a record of descriptive text to be expressed. The second and subsequent blocks describe the Right(s). The Block ID for a Right Block may be either the object identifier (Oid) or a name. The name is taken from the Right Type attribute. If a name is used as the Block ID then the Right Type attribute is not required.
+
+An example of both options are shown below. The first option uses “name” as the Block ID, whereas the second option uses an object id (Oid) as the Block ID. 
+
+*Right: Sovereign Right*
+
+*Description: Australia Sovereign Right*
+
+*Party: Australia* 
+
+*Right: Right-3*
+
+*Right Type: Access Right*
+
+*Description: Australia Access Right*
+
+*Party: Australia* 
+
+Both are valid and can be used together; however, the first option is more readable.
+
+This is also true in the case of the Restriction and Responsibility Blocks.
+
+*Profile Rights Block Group Description:*
+
+[[tbl-33]]
+[cols="a"]
+|===
+h|*Rights Group Descriptor Record Contents*
+|Which relate to the following rights
+|===
+
+*Profile Rights Block First Record (multiple Rights Blocks may exist):*
+
+[[tbl-34]]
+[cols="a,a"]
+|===
+h|*Rights Block Descriptor Record Contents*h|*Block ID*
+|Right:|Identifier of the Rights block in the Oid format for example “Right-1” or a unique “name”. In the case of “Right” the unique name may derive from the rightType attribute (for example Easement Right). In this case the rightType attribute is not needed
+|===
+
+*Subsequent Records:*
+
+[[tbl-35]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Right Type:|rightTypea|The type of the right:  Character String
+
+*
+|Description:|description|Description of the right.
+|Party:|party|Reference to Party object
+|Source:|source|Reference to Source object
+|===
+
+[[sec-profile-restrictions-block]]
+==== Profile Restrictions Block
+
+For a deposit the only a subset of the description of a Restriction description is required.
+
+*Profile Restriction Block Group Description:*
+
+[[tbl-36]]
+[cols="a"]
+|===
+h|*Restriction Block Descriptor Record Contents*
+|Which relate to the following restrictions
+|===
+
+*Profile Restriction Block First Record (multiple Restrictions Blocks may exist):*
+
+[[tbl-37]]
+[cols="a,a"]
+|===
+h|*Restriction Block Descriptor Record Contents*h|*Block ID*
+|Restriction:|Identifier of the Restrictions block in the Oid format for example “Restriction-1” or a unique “name”. In the case of “Restriction” the unique name may derive from the restrictionType attribute (for example Use Restriction). In this case the restrictionType attribute is not needed
+|===
+
+*Subsequent Records:*
+
+[[tbl-38]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Restriction Type:|restrictionType|The type of the Restriction: Character String
+|Description:|description|Description of the restriction
+|Party Required:|partyRequired|Indicates whether a party is required for the registration of the restriction in the association to Party
+|Party:|party|Reference to Party object
+|Source:|source|Reference to Source object
+|===
+
+[[sec-responsibility-block]]
+==== Responsibility Block
+
+An S121_Responsibility is a formal or informal obligation to do something. The ResponsibilityBlock describes a responsibility. 
+
+For a deposit the only a subset of the description of a Restriction description is required.
+
+*Profile Responsibility Block Group Description:*
+
+[[tbl-39]]
+[cols="a"]
+|===
+h|*Responsibilities Block Descriptor Record Contents*
+|Which relate to the following responsibilities
+|===
+
+*Profile Responsibility Block First Record (multiple Responsibility Blocks may exist):*
+
+[[tbl-40]]
+[cols="a,a"]
+|===
+h|*Responsibilities Block Descriptor Record Contents*h|*Block ID*
+|Responsibility:|Identifier of the Responsibilities block in the Oid format for example “Responsibility-1” or a unique “name”. In the case of “Responsibility” the unique name may derive from the responsibilityType attribute (for example Maintenance Responsibility). In that case the responsibilityType attribute is not needed
+|===
+
+*Subsequent Records:*
+
+[[tbl-41]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Responsibility Type:|responsibilityType|The type of the Responsibility: Maintenance Responsibility: Character String
+|Description:|description|Description of the responsibility
+|Party:|party|Reference to Party object
+|Source:|source|Reference to Source object
+|===
+
+[[sec-profile-source-block]]
+=== Profile Source Block
+
+All of the information elements in the S121 model may have sources.  In a deposit the source is the depositing nation so many of the source attributes are not required. 
+
+*Profile Source Block Group Description:*
+
+[[tbl-42]]
+[cols="a"]
+|===
+h|*Source Block Descriptor Record Contents*
+|The source(s) of this object(s) is
+|===
+
+*Profile Source Block First Record (multiple Source Blocks may exist):*
+
+[[tbl-43]]
+[cols="a,a"]
+|===
+h|*Source Block Descriptor Record Contents*h|*Block ID*
+|Source:|Identifier of the Source block in the Oid format for example “Source-1”
+|===
+
+*Subsequent Records:*
+
+[[tbl-44]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Source Name:|sourceDocumentName|Document name - for example the document (legislation, treaty, title) that defines the object
+|Online Source:|onlineResourceLinkageURL|official URL (or equivalent online resource) where the document is distributed;.Multiple online resource URL may be included in one character string separated by commas
+|Source Registry Number:|sourceRegistryNumber|Unique official identifier of the record in a registry. For example, in states with registers of legislative instruments, versioning is controlled by the registry ID
+|Source Date:|sourceAuthoritativeDate|The date of force of law of the source by an authority
+|Responsible Organization:|responsiblePartyOganizationName|Name of the responsible organization
+|Role:|responsiblePartyRolea|Role of the responsible party from code list:
+
+* Resource Provider  resourceProvider
+
+* Custodian    custodian
+
+* Owner   owner
+
+* User,   user
+
+* Distributor,   distributor
+
+* Originator,   originator
+
+* Point Of Contact,   pointOfContact
+
+* Principle Investigator,   principleInvestigator
+
+* Processor,   processor
+
+* Publisher,   publisher
+
+* Author.  author
+|===
+
+[[sec-profile-zone-block-and-surface-block-group]]
+=== Profile Zone Block and Surface Block Group
+
+Zones with associated geometry may be part of a deposit. 
+
+In the S-121 model the geometry is a component of the feature object. This means that a Zone feature may be followed directly by the associated surface geometry. Typically zones are defined by reference to the limits that bound the zone and not to a specific surface geometric element. Therefore the Surface Block would be seldom expressed in the Explicit Text Format unless there was a need to express the Descriptive Location (Location by Test), Reference System, attributes or a Source reference attribute.
+
+*Profile Zone Block and Surface Block Group Description*
+
+[[tbl-45]]
+[cols="a"]
+|===
+h|*Zone and Surface Group Block Descriptor Record Contents*
+|The extent of the object is defined by the following zones
+|===
+
+[[sec-profile-zone-block]]
+==== Profile Zone Block
+
+All of the available attributes associated with Zones from the standard are made available in the profile but only those that are required need be chosen.
+
+*Profile Zone Block First Record (multiple Zone Blocks may exist):*
+
+[[tbl-46]]
+[cols="a,a"]
+|===
+h|*Zone Block Descriptor Record Contents*h|*Block ID*
+|Zone Identifier:|Identifier of the Zone block in the Oid format for example “Zone-1”
+|===
+
+*Subsequent Records:*
+
+[[tbl-47]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Label:|label|A short textual identifier of the feature unit
+|Name:|name|The name of the feature
+|Context:|context|The  administrative aspects of the feature object
+|Releasability:|releasabilityTypea|This attribute is optionally used to differentiate between releasability status for particular features:
+
+* Official,   official,
+
+* Internal,   internal,
+
+* Controlled   controlled
+|Zone Object Type:|zoneObjectTypea|This attribute identifies which Feature Unit Limit type this object refers to based on the Feature Catalogue:
+
+* Internal Water                   internalWater
+
+* Archipelagic Waters          archipelagicWaters
+
+* Territorial Sea                   territorialSea
+
+* Exclusive Economic Zone     exclusiveEconomicZone
+
+* Contiguous Zone                   contiguousZone
+
+* Continental Shelf           continentalShelf
+
+* Roadsteads                   roadsteads
+
+* High Seas                   highSeas
+
+* The Area                   theArea
+|Area Value:|areaValue|This attribute describes the value of the area of the zone
+|Jurisdiction Domain Type:|jurisdictionDomainTypea|Defines the vertical juridical domain of the object:
+
+* Airspace  airspace
+
+* Land Surface  landSurface
+
+* Water Surface  waterSurface
+
+* Water Column  waterColumn
+
+* Seabed Surface  seabedSurface
+
+* Subsoil  subsoil
+|Area Type:|areaTypea|This attribute describes the type of the area of the zone:
+
+* Official Area   officialArea
+
+* Nonofficial Area   nonofficialArea
+
+* Calculated Area   calculatedArea
+
+* Surveyed Area   surveyedArea
+|Area Surface Relation:|areaSurfaceRelationa|Relationship to surface:
+
+* Mixed  mixed
+
+* Below  below
+
+* Above  above
+
+* On Surface  onSurface
+|Area Value:|areaValue|This attribute describes the value of the area of the zone
+|Area Unit Of Measure:|areaUnitOfMeasure|The unit of measure used to define the area of the Zone
+|Surface:|surface|Reference to the associated surface geometric object
+|Bounded By:|boundary|Reference to limit or limits that define the outer boundary of zone
+|Inner Boundary:|innerBoundary|Reference to limit or limits that define one or more inner boundary of zone (holes such as for islands)
+|Administrative Unit:|administrativeUnit|Reference to the Basic Administrative Unit to which this feature is associated
+|Source:|source|Reference to the source object
+|===
+
+[[sec-profile-surface-block]]
+==== Profile Surface Block
+
+The Surface block is an object that defines the spatial geometry of a Surface. The geometry of a surface is normally implemented by the use of pointers to the bounding Limits. The object S121_Surface carries attributes about the underlying geometric surface but does not explicitly define a geometric surface.  The Surface Block would be seldom expressed in the Explicit Text Format unless there was a need to express any of the attributes (Descriptive Location, Reference System, or Source).
+
+*Profile Surface Block First Record (multiple Surface Blocks may exist):*
+
+[[tbl-48]]
+[cols="a,a"]
+|===
+h|*Curve Block Descriptor Record Contents*h|*Block ID*
+|Surface:|Identifier of the Surface block in the Oid format (used with individual blocks)
+for example “Surface-1”
+|===
+
+*Subsequent Records:*
+
+[[tbl-49]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Descriptive Location:|locationByTexta|This attribute allows a spatial attribute to be a textual description. This allows "Location", "Limit", "Zone"s and "Space" that are not fully described geometrically to be included
+
+Quantity Specifications
+|Reference System:|referenceSystem|Allows a CoordinateReferencingSystem (CRS) to optionally be specified. In many other S-100 based products the CRS is only defined at the metadata level and applies for the whole data set; however, in S-121 it is necessary to detail it right down to the specific instances of geometry since treaty points and lines may come from different sources such as different treaties that may use different CRS
+|Source:|source|Reference to the source object
+|===
+
+[[sec-space-blocks]]
+=== Space Blocks
+
+Spaces are not part of the deposit and are not included in this profile.
+
+[[sec-profile-limit-block-and-curve-block-group]]
+=== Profile Limit Block and Curve Block Group
+
+Outer limits and other limits and boundaries with associated Curve geometry may be part of a deposit. 
+
+A Limit feature may be followed directly by the associated Curve geometry in the same group because geometry is a component of a feature. This grouping makes the printed output more readable; however, referencing between limits and curves is permitted to allow for shared geometry.
+
+*Profile Limit and Curve Block Group Description:*
+
+[[tbl-50]]
+[cols="a"]
+|===
+h|*Limit and Curve Group Block Descriptor Record Contents*
+|The outer limits are defined by the following limits and associated curves
+|===
+
+Note a Record Extension record can be used to extend the Limit and Curve Group Block Descriptor line to add additional text to make the data more readable. For example the following shows a Limit and Curve Group Block Descriptor Record with an extension record.
+
+*The outer limits are defined by the following lines and associated curves*
+
+ *The outer limit of the Continental Shelf related to Macquarie Island (Zone-7) area is defined by the following lines depicted in their originally declared datum*
+
+[[sec-profile-limit-block]]
+==== Profile Limit Block
+
+Outer limits and other limits and boundaries may be part of a deposit. All of the available attributes from the standard are made available in the profile but only those that are required need be chosen.
+
+The Delimiting Points attribute is optional. It carries a pointer between a limit object and an associated Location such as a Baseline Point. This pointer would be used for specific named Location objects; however, if this pointer structure were to be used for all relations between limits and associated locations there may be too many pointers and the explicit text output would become unreadable. An alternative reference that implements the relation between limits and associated points is described in the Location and Point Block section that groups pointers and is therefore more readable.
+
+*Profile Limit Block First Record (multiple Limit Blocks may exist):*
+
+[[tbl-51]]
+[cols="a,a"]
+|===
+h|*Limit Block Descriptor Record Contents*h|*Block ID*
+|Limit Identifier:|Identifier of the Limit block in the Oid format for example “Limit-1”
+|===
+
+*Subsequent Records:*
+
+[[tbl-52]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Label:|label|A short textual identifier of the feature unit
+|Name:|name|The name of the feature
+|Context:|context|The administrative aspects of the feature object
+|Releasability:|releasabilityTypea|This attribute is optionally used to differentiate between releasability status for particular features:
+
+* Official   official
+
+* Internal   internal
+
+* Controlled   controlled
+|Limit object type:|limitObjectTypea|This attribute identifies which Feature Unit Limit type this object refers to based on the Feature Catalogue:
+
+* Boundary  boundary
+
+* International Boundary  internationalBoundary
+
+* Baseline  baseline
+
+* Normal Baseline .normalBaseline
+
+* Straight Baseline   straightBaseline
+
+* Archipelagic Baseline  archipelagicBaseline
+
+* Low Tide Elevations  lowTideElevationsBaseline
+
+* Mouths of Rivers  mouthsOfRiversBaseline
+
+* Reefs  ReefsBaseline
+
+* Bays  baysBaseline
+
+* Ports  portsBaseline
+
+* Outer Limit of the Territorial Sea  outerLimitOfTheTerritorialSea
+
+* Outer Limit of the Contiguous Zone outerLimitOfTheContiguousZone
+
+* Outer Limit of the Exclusive Economic Zone   outerLimitOfTheExclusive Economic Zone
+
+* Outer Limit of the Continental Shelf outerLimitOfTheContinentalShelf
+
+* Outer Limit of the Roadstead  outerLimitOfTheRoadstead
+
+* Construction Line constructionLine
+|Type of Arc:|arcGeometryTypea|Type of computation used to define an arc (line):
+
+- Geodesic  geodesic,
+
+- Loxodrome  loxodrome.
+|Adminiatrative Unit:|adminiatrativeUnit|Reference to the Basic Administrative Unit to which this feature is associated
+|Source:|source|Reference to the source object
+|Curve:|curve|Reference to the associated curve geometric object
+|Delimiting Points:|delimitingPoints|Reference to the beginning and end points that delimit a limit
+|===
+
+[[sec-profile-curve-block]]
+==== Profile Curve Block
+
+Curves provide the geometry for a limit. A set of vertices describing a limit is best described in a table as long as the number of attributes expressed is not excessive. Note that if an attribute is common for all rows of a table it can be expressed in the descriptor record at the head of the table. If Location by Text is used then individual Curve Blocks should be used.
+
+*Profile Curve Block First Record (multiple Curve Blocks may exist or a table may be used):*
+
+[[tbl-53]]
+[cols="a,a"]
+|===
+h|*Curve Block Descriptor Record Contents*h|*Block ID*
+|The limit is defined by the following curve:|Identifier of the Curve block in the Oid format (used with individual blocks)
+for example “Curve-1”. This is derived from the attribute “saID” the identifier of the entire curve
+|===
+
+*Subsequent Records:*
+
+[[tbl-54]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Vertex Identifier:||A generated identifier for each row in a table. This identifies each vertex in a table row
+|Descriptive Location:|locationByTexta|This attribute allows a spatial attribute to be a textual description. This allows "Location", "Limit", "Zone"s and "Space" that are not fully described geometrically to be included
+
+Quantity Specifications
+|Datum:|referenceSystem|Allows a CoordinateReferencingSystem (CRS) to optionally be specified. In many other S-100 based products the CRS is only defined at the metadata level and applies for the whole data set; however, in S-121 it is necessary to detail it right down to the specific instances of geometry since treaty points and lines may come from different sources such as different treaties that may use different CRS
+|Curve Geometry:|curveGeometrya|Polyline or arcByCentrePoint or circleByCentrePoint formatted character string consisting of:
+
+-  Sequence of vertices ( longitude coordinate, latitude coordinate or Direct Position), or
+
+-  arcByCentre ( arcStart longitude, slash delimiter, arcStart latitude, comma delimiter,   arcEnd longitude, slash delimiter, arcEmd latitude, comma delimiter, arcCentre longitude, slash delimiter, arcCentre latitude), or
+
+-  circleByCentre (circleCentre longitude, slash delimiter, circleCentre latitude, comma delimiter, circlePoint  longitude, slash delimiter, circlePoint latitude)
+|WGS84Curve Geometry:|WGS84CurveGeometrya|Polyline or arcByCentrePoint or circleByCentrePoint formatted character string consisting of:
+
+-  Sequence of vertices (longitude coordinate slash delimiter latitude coordinate), or
+
+-  arcByCentre ( arcStart longitude, slash delimiter, arcStart latitude, comma delimiter,   arcEnd longitude, slash delimiter, arcEmd latitude, comma delimiter, arcCentre longitude, slash delimiter, arcCentre latitude), or
+
+-  circleByCentre (circleCentre longitude, slash delimiter, circleCentre latitude, comma delimiter, circlePoint  longitude, slash delimiter, circlePoint latitude)
+|Source:|source|Reference to the source object
+|===
+
+[[sec-profile-location-and-point-blocks]]
+=== Profile Location and Point Blocks
+
+The Location object provides information about a specific position. The Point geometry object provides it geographic Latitude / Longitude position. A Location object can only have one Point geometry object associated with it, but a point geometry object can be shared by more than one Location object. That is, physically more than one thing can exist at the same Latitude / Longitude position. 
+
+Normally there is a direct one to one relation between a Location object and the associated Point geometry object; however, Point geometry objects may be shared. 
+
+Location objects with their associated point geometry read best as a single table. If there is a one to one relation between the Location objects and the associated points then both can be included in a single row of a combined table. If there is no point sharing then there is no need to have an identifier on the point geometry objects. If point sharing occurs then there needs to be a separate Location object block and a Point object block table. 
+
+In producing readable text the width of a table is a critical issue. There is only room for four or five columns. If there are too many attributes expressed then separate tables for the Location object and Point object are also required. One approach to reducing the number of attribute columns that need to be included in a table is to attach simple attributes to the whole Group for those attributes that do not change in the table. This means adding simple records immediately after the Group Block Description record.
+
+*Profile Location Block and Point Block Group Description:*
+
+[[tbl-55]]
+[cols="a"]
+|===
+h|*Location and Point Block Descriptor Record Contents*
+|The identified locations and associated points are given below
+|===
+
+[[sec-profile-location-block]]
+==== Profile Location Block
+
+This block is used to describe Location objects that reference Point objects. This allows for Point geometry sharing. 
+
+All of the available attributes from the standard are made available in the profile but only those that are required need be chosen. 
+
+*Profile Location Block First Record (multiple Location Blocks may exist):*
+
+[[tbl-56]]
+[cols="a,a"]
+|===
+h|*Location Block Descriptor Record Contents*h|*Block ID*
+|Location:|Identifier of the Location block in the Oid format for example “Location-1”
+|===
+
+*Subsequent Records:*
+
+[[tbl-57]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Location Identifier:|fuID|Identifier of the Location object feature unit in the "Oid" (Object ID) format. The "Oid" comprises a unique character string and a namespace identifier which is also a unique character string. An example might be "Location-1" where "Location" is the namespace and "1" is the unique id within that namespace
+|Label:|label|A short textual identifier of the feature unit
+|Name:|name|The name of the feature
+|Context:|context|The administrative aspects of the feature object
+|Releasability:|releasabilityTypea|This attribute is optionally used to differentiate between releasability status for particular features:
+
+* Official   official
+
+* Internal   internal
+
+* Controlled   controlled
+|Type:|locationObjectTypea|This attribute identifies which Feature Unit Location Object type this object refers to based on the feature catalogue:
+
+* Baseline Point    baselinePoint
+
+* Contributing Point  contributingPoint
+
+* Limit Point    limitPoint
+
+* Boundary Point   boundaryPoint
+|Interpolation:|interpolationRolea|The role of point in the structure of a "Straight" line or curve
+
+* Deflection  deflection
+
+* Densification densification
+|Point Type:|pointTypea|The type of point:
+
+* Defined  defined
+
+* Computed computed
+|Administrative Unit:|BAUnit|Reference to the Basic Administrative Unit to which this feature is associated
+|Source:|source|Reference to the source object
+|Point:|point|Reference to the associated point geometric object
+|===
+
+[[sec-profile-point-block]]
+==== Profile Point Block
+
+Lists of points provide the geometry for a set of Locations. A list of points is best described in a table as long as the number of attributes expressed is not excessive. If Location by Text is used then individual Point Blocks rather than a table should be used.
+
+*Profile Point Block First Record (multiple Point Blocks may exist or a table may be used):*
+
+[[tbl-58]]
+[cols="a,a"]
+|===
+h|*Point Block Descriptor Record Contents*h|*Block ID*
+|Point:|Identifier of the Point block in the Oid format (used with individual blocks)
+for example “Point-1”
+|===
+
+*Subsequent Records:*
+
+[[tbl-59]]
+[cols="a,a,a"]
+|===
+h|*Recommended Name*h|*Attribute Name*h|*Recommended content*
+|Point Identifier:|saID|The spatial attribute identifier in the Oid format (used in a table)
+|Descriptive Location:|locationByTexta|This attribute allows a spatial attribute to be a textual description. This allows "Location", "Limit", "Zone"s and "Space" that are not fully described geometrically to be included
+
+Quantity Specifications
+|Datum:|referenceSystem|Allows a CoordinateReferencingSystem (CRS) to optionally be specified. In many other S-100 based products the CRS is only defined at the metadata level and applies for the whole data set; however, in S-121 it is necessary to detail it right down to the specific instances of geometry since treaty points and lines may come from different sources such as different treaties that may use different CRS
+|Original Location:|originalLocationTextualPosition|Reference location of a point when it was first established
+|Original Location Reference System:|originalLocationReferenceSystem|Reference System for a Reference location of a point when it was first established
+|Official Location:|officialLocationTextualPosition|Official location reference of the point
+|Official Location Reference System:|officialLocationReferenceSystem|Reference System for an official reference of the point
+|Global Location|globalLocationTextualPosition|Global reference to a point in a world global datum such WGS84 or ITRF2000
+|Global Location Reference System:|globalLocationReferenceSystem|Reference System for a global reference to a point in a world global datum such WGS84 or ITRF2000
+|WGS84 Location:|WGS84LocationTextualPosition|WGS84LocationTextualPosition
+|Common Location:|commonLocationTextualPosition|Common reference location of point in a datum that is defaulted to the other points in the dataset
+|Common Location Reference System:|commonLocationReferenceSystem|Reference System for a common reference location of point in a datum that is defaulted to the other points in the dataset
+|Points:|pointGeometry|GM_Point geometry as per IHO S-100 Part 7 Spatial Schema. The associated data type is structured as a formatted Character String to assist in implementation; however, a GIS system encode a Direct Position as an internal numeric type and the type can be converted to a character string upon encoding
+|Source:|source|Reference to the source object
+|===
+
+[[sec-combined-location-object-and-point-object-block]]
+=== Combined Location Object and Point Object Block
+
+When there is a one to one relationship between Location objects and the associated Point objects, both can be represented in a single table. This is a common situation. 
+
+The Block ID field of the Descriptor Record contains an identifier of the associated Limit object. This allows one to not use the Delimiting Points attribute (from the Limit object), making the explicit text output more readable. This ID is structured as the word from: followed by the ID of the associated Limit object.
+
+*Profile Location Object and Point Object Block First Record:*
+
+[[tbl-60]]
+[cols="a,a"]
+|===
+2+h|*Combined Location and Point Block Descriptor Record Contents*
+|Locations and associated points:|from: ID of associated Limit object
+2+a|Table Header Row
+
+Record Type Record Type Record Type Record Type Record Type Record Type
+2+a|Table Row
+
+Record Content Record Content Record Content Record Content Record Content Record Content
+2+h|*. . .*
+|===
+
+For example a table of Location and associated Point geometry objects might be as follows.
+
+*The identified locations and associated points are given below.*
+
+ *The outer limits are defined by the following (Original) locations.*
+
+*Type: Limit Point*
+
+*Interpolation: Densification.*
+
+*Locations and associated points:  from: Limit-462*
+
+ *Macquarie Island (Zone-7)*      
+
+*Point Identifier Latitude Longitude Datum*
+
+*MAC-CS-1 -51*°*04*′*48.9600*″  *158*°*01*′*25.9800*″ *ITRF2000*
+
+*MAC-CS-25 -57*°*21*′*25.1880*″ *163*°*23*′*44.0250*″ *ITRF2000*
+
+*MAC-CS-26 -57*°*21*′*14.3454*″ *163*°*23*′*19.7500*″ *ITRF2000*

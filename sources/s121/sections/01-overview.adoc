@@ -1,0 +1,206 @@
+[[sec-overview]]
+== Overview
+
+The S-121 is a product specification for Maritime Limits and Boundaries for the administration of the maritime domain. Its data model allows for the description of maritime zones, as defined by the UN Convention on the Law of the Sea (UNCLOS), while also allowing States to represent generic objects as necessary. Its exchange formats are compatible with other S-100 based products. The standard is based on S-100 and its model on the ISO standard 19152 – Land Administration Domain Model.
+
+[[sec-scope]]
+=== Scope
+
+This document describes a product specification for the administration of Maritime Limits and Boundaries in support of the deposit by States Parties of the geographical coordinates of points identifying their baselines and outer limits of maritime zones in accordance with UNCLOS. This Product Specification complies with the IHO S-100 Universal Hydrographic Data Model.
+
+[bibliography]
+[[sec-normative-references]]
+=== Normative References
+
+The following referenced documents are indispensable for the application of this document. 
+
+* [[[iho-s-100,IHO S-100]]] IHO Universal Hydrographic Data Model, Edition 4.0.0
+
+* [[[iso-3166-1-2013,ISO 3166-1:2013]]] Codes for the representation of names of countries and their subdivisions – Part 1: Country codes
+
+* [[[iso-19107-2003,ISO 19107:2003]]] Geographic Information – Spatial Schema
+
+* [[[iso-19108-2002,ISO 19108:2002]]] Geographic Information – Temporal Schema
+
+* [[[iso-19115-2003,ISO 19115:2003]]] Geographic Information – Metadata footnote:fn2[The normative reference is to the base ISO 19115:2003 metadata standard because IHO S-100 references this version of the ISO standard. The revised standard ISO 19115-1:2014 is backward compatible with ISO 19115:2003 with respect to the metadata elements used in this S-121 Product Specification.]
+
+* [[[iso-19152-2012,ISO 19152:2012]]] Geographic Information – Land Administration Domain Model (LADM)
+
+[[sec-terms-definitions-and-abbreviations]]
+=== Terms, Definitions and Abbreviations
+
+[[sec-use-of-language]]
+==== Use of Language
+
+Within this document:
+
+“Must” indicates a mandatory requirement.
+
+“Should” indicates an optional requirement, that is the recommended process to be followed, but is not mandatory.
+
+“May” means “allowed to” or “could possibly”, and is not mandatory.
+
+[[sec-terms-and-definitions]]
+==== Terms and Definitions
+
+For the purposes of this document, the following terms and definitions apply.
+
+*Attribute*
+
+Named property of an entity. For example, number of lanes or pavement status. [ISO 19115-2:2009 from ISO/IEC 2382-17:1999]
+
+In UML “a classifier that describes a range of values that instances of the classifier may hold.” [ISO/TS 19103:2005 – adapted from ISO/IEC 19501]
+
+*Class*
+
+Description of a set of *objects* that share the same attributes, operations, methods, relationships, and semantics. [ISO/TS 19103:2005 – adapted from ISO/IEC 19501]
+
+NOTE  A class does not always have an associated geometry (for example, address range class). 
+
+*Dataset*
+
+Identifiable collection of data. [ISO 19101:2002 from ISO 19115-1:2014, 4.3]
+
+*Feature*
+
+Abstraction of real-world phenomena. [ISO 19101-1:2014 from ISO 19101:2002]
+
+*Object*
+
+An object is an instance of a *class*. 
+
+In UML “entity with a well-defined boundary and identity, which encapsulates state and behaviour.” [ISO/TS 19103:2005 – adapted from ISO/IEC 19501]
+
+[[sec-abbreviations]]
+==== Abbreviations
+
+CRS Coordinate Reference System
+
+DOALOS Division for Ocean Affairs and the Law of the Sea, Office of Legal Affairs, United Nations
+
+EEZ Exclusive Economic Zone
+
+GIS Geographic Information System
+
+GML Geography Markup Language (ISO standard 19136:2007)
+
+ID Identifier
+
+IHO  International Hydrographic Organization
+
+ISO International Organization for Standardization
+
+LADM  Land Administration Domain Model
+
+MLB  Maritime Limits and Boundaries
+
+UNCLOS United Nations Convention on the Law of the Sea
+
+UML Unified Modeling Language
+
+[[sec-s-121-general-data-product-description]]
+=== S-121 General Data Product Description
+
+*Title:* IHO S-121 - Maritime Limits and Boundaries Product Specification
+
+*Abstract:* This document describes a product specification for Maritime Limits and Boundaries (MLB) data as part of the suite of IHO S-100 standards. The purpose is to establish a framework of sourced and versioned objects for communicating in a digital form the geographic extents of some maritime zones. This product specification is also compatible with the ISO 19152 Land Administration Domain Model (LADM) structure and optionally the associated rights, responsibilities and restrictions that apply to them within the scope of UNCLOS. This integration bridges both the land and maritime domain structurally and provides to the S-100 series a product specification which effectively supports the description of objects defined in national legislation. 
+
+. 
+
+*Spatial Extent:*
+
+*Description:* This product specification applies to the maritime area, described below: The area of applicability are the global maritime areas.
+
+*East Bounding Longitude:* 180°
+
+*West Bounding Longitude:* -180°
+
+*North Bounding Latitude:* 90°
+
+*South Bounding Latitude:* -90°
+
+*Content Description*
+
+The IHO S-121 - Product Specification for Maritime Limits and Boundaries contains a set of MLB expressed as set of features compliant with the IHO S-100 Universal Hydrographic Data Model. A number of new feature types and attributes have been defined with their definitions taken from UNCLOS. The features and attributes used in this product specification are described in the Data Classification and Encoding Guide (DCEG) and are registered in the IHO Geospatial Information Registry.
+
+The product specification also includes metadata derived from both S-100 and from ISO 19115:2003 Geographic Information – Metadata. In addition to general discovery metadata and descriptive metadata, there are metadata elements used to describe the quality of the data. 
+
+*Specific Purpose*
+
+This product specification has been developed in response to paragraph 6 of United Nations, General Assembly resolution 59/24 of 17 November 2004 which “requests the Secretary-General to improve the existing geographic information system for the deposit by States of charts and geographical coordinates concerning maritime zones, including lines of delimitation in particular by implementing, in cooperation with relevant international organizations technical standards for the collection, storage and dissemination of the information deposited, in order to ensure compatibility among the Geographic Information System, electronic nautical charts, and other systems developed by these organizations.”
+
+Built on top of the data model structuring the information, there is a need for several encodings  to support: 
+
+(1) Exchange of complete MLB features between parties,. 
+
+(2) A structured text record oriented exchange format that is readable and comprehensible by both the human eye and a computer. 
+
+[[sec-data-product-specification-metadata]]
+=== Data Product Specification Metadata
+
+This information uniquely identifies this Product Specification and provides information about its creation and maintenance. 
+
+[[tbl-4]]
+[cols="a,a,a,a"]
+|===
+|h|*Item Name*h|*Description*h|*Content*
+|1|Title|Title of the data Product Specification|IHO S-121 - Product Specification for Maritime Limits and Boundaries
+|2|S-100 version|The version of S-100 upon which the product is based|Version 4.0.0
+|3|Product specification version|Version of the Product Specification.|Version 1.0.0
+|4|Date|Date the Product Specification was created / last updated|October 2019
+|5|Language|Language(s) of the data Product Specification, for example translationsa|English (this does not exclude instances of data being encoded in multiple languages)
+|6|Classification|Security classification code on the data Product Specification.|The default value is “unclassified” however any value from the code list MD_ClassificationCode may be used, see clause 3
+|7|Contact|Party responsible for the data Product Specificationa|International Hydrographic Organization +
+4b quai Antoine 1er +
+B.P. 445 +
+MC 98011 MONACO CEDEX
+
+Telephone: +377 93 10 81 00 +
+Telefax: + 377 93 10 81 40 +
+Email: info@iho.int
+|8|URL|Online-address where the resource is downloadable|link:http://www.iho.int[http://www.iho.int]
+|9|Identifier|Persistent unique identifier for a published version of the Product Specification|S-121
+|10|Maintenance|Description of the maintenance regime for the Product Specification|Changes to the Product Specification S-121 are coordinated on a needs basis by the S-121 Project Team (S-121PT), a Project Team under the IHO S-100 Working Group (S-100WG), and must be made available via the IHO web site. Maintenance of the Product Specification must conform to IHO Technical Resolution 2/2007, as amended
+|===
+
+_*Table 1-1 – Data Product Metadata*_
+
+[[sec-product-specification-maintenance]]
+=== Product Specification Maintenance
+
+[[sec-introduction]]
+==== Introduction
+
+Changes to S-121 will be released by the IHO as a New Edition, a revision, or as a document that includes clarifications.  These are described below.
+
+[[sec-new-edition]]
+==== New Edition
+
+_New Editions_ introduce significant changes. _New Editions_ enable new concepts, such as the ability to support significant new functionality. New Editions may have a significant impact on users. All cumulative _revisions_ and _clarifications_ must be included with the release of approved New Editions.
+
+[[sec-revision]]
+==== Revision
+
+_Revisions_ are defined as substantive semantic changes. Typically, _revisions_ will introduce change to correct factual errors; introduce necessary changes that have become evident as a result of practical experience or changing circumstances. A _revision_ must not be classified as a clarification. _Revisions_ could have an impact on either existing users or future users of this specification. All cumulative _clarifications_ must be included with the release of approved corrections revisions. 
+
+Changes in a revision are minor and ensure backward compatibility with the previous versions within the same Edition. Newer revisions, for example, introduce new features and attributes. Within the same Edition, a dataset of one version could always be processed with a later version of the feature and portrayal catalogues. In most cases a new feature or portrayal catalogue will result in a revision of this specification.
+
+[[sec-clarification]]
+==== Clarification
+
+_Clarifications_ are non-substantive changes. Typically, _clarifications_: remove ambiguity; correct grammatical, spelling and punctuation errors; amend or update cross references; and insert improved graphics. A _clarification_ must not cause any substantive semantic changes to S-121. 
+
+Changes in a clarification are minor and ensure backward compatibility with the previous versions within the same Edition. Within the same Edition, a dataset of one clarification version could always be processed with a later version of the feature and portrayal catalogues, and a portrayal catalogue can always rely on earlier versions of the feature catalogues. 
+
+Changes in a clarification are minor and ensure backward compatibility with the previous versions.
+
+[[sec-version-numbers]]
+==== Version numbers
+
+The associated version control numbering to identify changes (n) to S-121 must be as follows:
+
+New Editions denoted as *n*.0.0
+
+Revisions denoted as n.*n*.0
+
+Clarifications denoted as n.n.*n*

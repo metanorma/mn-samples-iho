@@ -1,0 +1,11 @@
+[appendix,obligation=informative]
+[[annex-the-carriage-return-line-feed-delimiter]]
+== The Carriage Return / Line Feed Delimiter
+
+Record oriented communications systems have used the CR LF combination – Carriage Return CR (IA5 Code 13) followed by Line Feed LF (IA5 Code 10) since the earliest days of computing. The combination derives from the Model 33 Teletype machines that were used as the terminals on early computers. Since these terminals were physical printers there was need for time for the print carriage to return to the beginning of the line before it was possible to print the next line. The Teletype machine took up to 200 milliseconds to move the carriage back to the beginning of the line. At the print rate of 10 characters per second the combination CR followed by LF returned the carriage and moved to the next line within the time window.
+
+All of the early computer systems adopted CR LF as the delimiter for a character string. Later when computer output was on a video display some of the computer systems changed for efficiency. There is only a need for a single character to delimit the end of a character string or line. In those days storage space was precious.
+
+Unfortunately all computer companies have not been consistent. Microsoft uses the CR LF combination – Carriage Return CR (IA5 Code 13) followed by Line Feed LF (IA5 Code 10). Apple used CR alone, and Unix (and recent Apple systems) use LF alone.  Most text processors accept either CR or LF or the combination CR LF.
+
+This confusion remains to this day where some data is delimited with CR and other with LF. The CR LF combination seems to be read and interpreted by all systems. Therefore S-121 should use CR LF as a character string delimiter; however, one should expect that some display systems may print two blank lines between character strings rather than one. This does not affect the readability.
