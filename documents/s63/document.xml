@@ -271,7 +271,7 @@
 </terms>
 </clause>
 
-<clause id="_5e55811b-98da-e229-edd7-0bb8da57c523" anchor="introduction" obligation="normative">
+<clause id="_6fce404a-dfd8-9243-b6d7-c81d88f76165" anchor="introduction" obligation="normative">
 <title id="_61998878-2bff-eff7-7263-05a3fe373b29">Introduction</title>
 <p id="_e3baa5ca-d2d3-0488-8cdb-3006604e3329">The publication “S-63 IHO Data Protection Scheme”, later referred to as ‘the scheme’, describes the recommended standard for the protection of ENC information. It defines security constructs and operating procedures that must be followed to ensure that the data protection scheme is operated correctly and to provide specifications that allow participants to build S-63 compliant systems and distribute data in a secure and commercially viable manner.</p>
 
@@ -362,10 +362,10 @@
 </clause>
 </clause>
 
-<references id="_6238d49d-861a-2a2a-41c9-30c641b77e7f" normative="true" obligation="informative">
+<references id="_f0911acb-2bdd-f659-81e3-74e02ff5b04f" normative="true" obligation="informative">
 <title id="_2fb2c41f-84cb-d796-e892-fadbfa0cef8c">References</title>
-<bibitem id="_3d986f96-26ca-7e97-729c-e81ae8e1709c" type="standard" schema-version="v1.5.6" anchor="iho_ts_dhd">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_ef6f1b21-7e1f-9c87-b67d-a4029514a739" type="standard" schema-version="v1.5.6" anchor="iho_ts_dhd">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" type="main">IHO Transfer Standard for Digital Hydrographic Data</title>
 
@@ -462,8 +462,8 @@
     <validityBegins>2000-11-01T00:00:00Z</validityBegins>
   </validity>
 </bibitem>
-<bibitem id="_3b070c4d-9026-cb62-757a-9d1aa8190266" type="standard" schema-version="v1.5.6" anchor="dss">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_620b692c-4c45-2436-447a-0e500dfe7f3e" type="standard" schema-version="v1.5.6" anchor="dss">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn">Digital Signature Standard (DSS)</title>
 
@@ -539,8 +539,8 @@
     <vocab>Federal Information Processing Standard</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_86f28e01-9b82-cfb5-bd53-ea777babd91e" type="standard" schema-version="v1.5.6" anchor="sha">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_383f0247-56e6-2fab-626b-f2099a485dc2" type="standard" schema-version="v1.5.6" anchor="sha">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn">Secure Hash Standard</title>
 
@@ -616,628 +616,11 @@
     <vocab>hash algorithm</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_0279147a-44e2-7635-f52a-8515e708eda2" type="standard" schema-version="v1.5.6" anchor="ITU-T_X.509">
-  <fetched>2026-10-07</fetched>
-  <uri type="src">https://handle.itu.int/11.1002/1000/16853</uri>
-  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.509-202607-P!Cor3!PDF-E&amp;type=items</uri>
-  <docidentifier type="ITU" primary="true">ITU-T X.509</docidentifier>
-  <docidentifier type="ISO" primary="true">ISO/IEC 9594-8</docidentifier>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      
-<name>International Telecommunication Union</name>
-
-      <abbreviation>ITU</abbreviation>
-      <uri>www.itu.int</uri>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="author">
-      <description>committee</description>
-    </role>
-    <organization>
-      
-<name>International Telecommunication Union</name>
-
-      <subdivision type="technical-committee" subtype="study-group">
-        
-<name>ITU-T Study Group 17</name>
-
-      </subdivision>
-      <abbreviation>ITU-T</abbreviation>
-    </organization>
-  </contributor>
-  <edition>9.4</edition>
-  <language>en</language>
-  <script>Latn</script>
-  <status>
-    <stage>Published</stage>
-  </status>
-  <copyright>
-    <from>2026</from>
-    <owner>
-      <organization>
-        
-<name>International Telecommunication Union</name>
-
-        <abbreviation>ITU</abbreviation>
-        <uri>www.itu.int</uri>
-      </organization>
-    </owner>
-  </copyright>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">Miscellaneous enhancements</title>
-
-      <docidentifier type="ITU" primary="true">X.509 (2019) Amd. 1 (10/2024)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2019) Cor. 2 (10/2023)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2019) Cor. 2 (10/2023)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2019) Cor. 1 (10/2021)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2019) Cor. 1 (10/2021)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</title>
-
-      <docidentifier type="ITU" primary="true">X.509 (10/2019)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</title>
-
-      <docidentifier type="ITU" primary="true">X.509 (10/2016)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2012) Cor. 3 (10/2016)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2012) Cor. 3 (10/2016)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2012) Cor. 2 (04/2016)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2012) Cor. 2 (04/2016)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2012) Cor. 1 (05/2015)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2012) Cor. 1 (05/2015)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</title>
-
-      <docidentifier type="ITU" primary="true">X.509 (10/2012)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2008) Cor. 3 (10/2012)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2008) Cor. 3 (10/2012)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2008) Cor. 2 (04/2012)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2008) Cor. 2 (04/2012)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2008) Cor. 1 (02/2011)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2008) Cor. 1 (02/2011)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">Information technology – Open systems interconnection – The Directory: Public-key and attribute certificate frameworks</title>
-
-      <docidentifier type="ITU" primary="true">X.509 (11/2008)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2005) Cor. 4 (04/2012)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2005) Cor. 4 (04/2012)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2005) Cor. 3 (02/2011)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2005) Cor. 3 (02/2011)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2005) Cor. 2 (11/2008)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2005) Cor. 2 (11/2008)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2005) Cor. 1 (01/2007)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2005) Cor. 1 (01/2007)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</title>
-
-      <docidentifier type="ITU" primary="true">X.509 (08/2005)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2000) Technical Cor. 4 (01/2007)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2000) Technical Cor. 4 (01/2007)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2000) Technical Cor. 3 (04/2004)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2000) Technical Cor. 3 (04/2004)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2000) Technical Cor. 3 (02/2003)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2000) Technical Cor. 3 (02/2003)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2000) Technical Cor. 2 (04/2002)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2000) Technical Cor. 2 (04/2002)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (2000) Technical Cor. 1 (10/2001)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (2000) Technical Cor. 1 (10/2001)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</title>
-
-      <docidentifier type="ITU" primary="true">X.509 (03/2000)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (1997) Technical Cor. 6 (04/2004)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (1997) Technical Cor. 6 (04/2004)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (1997) Technical Cor. 5 (02/2003)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (1997) Technical Cor. 5 (02/2003)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (1997) Technical Cor. 4 (04/2002)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (1997) Technical Cor. 4 (04/2002)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (1997) Technical Cor. 3 (10/2001)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (1997) Technical Cor. 3 (10/2001)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (1997) Technical Cor. 2 (02/2001)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (1997) Technical Cor. 2 (02/2001)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      <formattedref>X.509 (1997) Technical Cor. 1 (03/2000)</formattedref>
-      <docidentifier type="ITU" primary="true">X.509 (1997) Technical Cor. 1 (03/2000)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The Directory: Authentication framework</title>
-
-      <docidentifier type="ITU" primary="true">X.509 (08/1997)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The directory: authentication framework</title>
-
-      <docidentifier type="ITU" primary="true">X.509 (11/1993)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="hasEdition">
-    <bibitem>
-      
-<title language="en" script="Latn">The Directory – Authentication framework</title>
-
-      <docidentifier type="ITU" primary="true">X.509 (11/1988)</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="instanceOf">
-    <bibitem type="standard">
-      <uri type="src">https://handle.itu.int/11.1002/1000/16853</uri>
-      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.509-202607-P!Cor3!PDF-E&amp;type=items</uri>
-      <docidentifier type="ITU" primary="true">ITU-T X.509 (2019)</docidentifier>
-      <docidentifier type="ISO" primary="true">ISO/IEC 9594-8</docidentifier>
-      <date type="published">
-        <on>2026-07-14</on>
-      </date>
-      <contributor>
-        <role type="publisher"/>
-        <organization>
-          
-<name>International Telecommunication Union</name>
-
-          <abbreviation>ITU</abbreviation>
-          <uri>www.itu.int</uri>
-        </organization>
-      </contributor>
-      <contributor>
-        <role type="author">
-          <description>committee</description>
-        </role>
-        <organization>
-          
-<name>International Telecommunication Union</name>
-
-          <subdivision type="technical-committee" subtype="study-group">
-            
-<name>ITU-T Study Group 17</name>
-
-          </subdivision>
-          <abbreviation>ITU-T</abbreviation>
-        </organization>
-      </contributor>
-      <edition>9.4</edition>
-      <language>en</language>
-      <script>Latn</script>
-      <abstract language="en" script="Latn"/>
-      <status>
-        <stage>Published</stage>
-      </status>
-      <copyright>
-        <from>2026</from>
-        <owner>
-          <organization>
-            
-<name>International Telecommunication Union</name>
-
-            <abbreviation>ITU</abbreviation>
-            <uri>www.itu.int</uri>
-          </organization>
-        </owner>
-      </copyright>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">Miscellaneous enhancements</title>
-
-          <docidentifier type="ITU" primary="true">X.509 (2019) Amd. 1 (10/2024)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2019) Cor. 2 (10/2023)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2019) Cor. 2 (10/2023)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2019) Cor. 1 (10/2021)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2019) Cor. 1 (10/2021)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</title>
-
-          <docidentifier type="ITU" primary="true">X.509 (10/2019)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</title>
-
-          <docidentifier type="ITU" primary="true">X.509 (10/2016)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2012) Cor. 3 (10/2016)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2012) Cor. 3 (10/2016)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2012) Cor. 2 (04/2016)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2012) Cor. 2 (04/2016)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2012) Cor. 1 (05/2015)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2012) Cor. 1 (05/2015)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</title>
-
-          <docidentifier type="ITU" primary="true">X.509 (10/2012)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2008) Cor. 3 (10/2012)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2008) Cor. 3 (10/2012)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2008) Cor. 2 (04/2012)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2008) Cor. 2 (04/2012)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2008) Cor. 1 (02/2011)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2008) Cor. 1 (02/2011)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">Information technology – Open systems interconnection – The Directory: Public-key and attribute certificate frameworks</title>
-
-          <docidentifier type="ITU" primary="true">X.509 (11/2008)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2005) Cor. 4 (04/2012)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2005) Cor. 4 (04/2012)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2005) Cor. 3 (02/2011)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2005) Cor. 3 (02/2011)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2005) Cor. 2 (11/2008)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2005) Cor. 2 (11/2008)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2005) Cor. 1 (01/2007)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2005) Cor. 1 (01/2007)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</title>
-
-          <docidentifier type="ITU" primary="true">X.509 (08/2005)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2000) Technical Cor. 4 (01/2007)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2000) Technical Cor. 4 (01/2007)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2000) Technical Cor. 3 (04/2004)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2000) Technical Cor. 3 (04/2004)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2000) Technical Cor. 3 (02/2003)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2000) Technical Cor. 3 (02/2003)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2000) Technical Cor. 2 (04/2002)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2000) Technical Cor. 2 (04/2002)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (2000) Technical Cor. 1 (10/2001)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (2000) Technical Cor. 1 (10/2001)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The Directory: Public-key and attribute certificate frameworks</title>
-
-          <docidentifier type="ITU" primary="true">X.509 (03/2000)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (1997) Technical Cor. 6 (04/2004)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (1997) Technical Cor. 6 (04/2004)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (1997) Technical Cor. 5 (02/2003)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (1997) Technical Cor. 5 (02/2003)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (1997) Technical Cor. 4 (04/2002)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (1997) Technical Cor. 4 (04/2002)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (1997) Technical Cor. 3 (10/2001)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (1997) Technical Cor. 3 (10/2001)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (1997) Technical Cor. 2 (02/2001)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (1997) Technical Cor. 2 (02/2001)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          <formattedref>X.509 (1997) Technical Cor. 1 (03/2000)</formattedref>
-          <docidentifier type="ITU" primary="true">X.509 (1997) Technical Cor. 1 (03/2000)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The Directory: Authentication framework</title>
-
-          <docidentifier type="ITU" primary="true">X.509 (08/1997)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">Information technology – Open Systems Interconnection – The directory: authentication framework</title>
-
-          <docidentifier type="ITU" primary="true">X.509 (11/1993)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <relation type="hasEdition">
-        <bibitem>
-          
-<title language="en" script="Latn">The Directory – Authentication framework</title>
-
-          <docidentifier type="ITU" primary="true">X.509 (11/1988)</docidentifier>
-        </bibitem>
-
-      </relation>
-      <place>
-        <city>Geneva</city>
-      </place>
-    </bibitem>
-
-  </relation>
-  <place>
-    <city>Geneva</city>
-  </place>
-
-<title>Information Technology – Open Systems Interconnection – The Directory: Authentication Framework. X.509 version 3 — International Telecommunication Union</title>
-</bibitem>
+<bibitem anchor="ITU-T_X.509" id="_450dd0b2-93d8-78ab-a63b-7d66b9aa8481"><formattedref format="application/x-isodoc+xml">Information Technology – Open Systems Interconnection – The Directory: Authentication Framework. X.509 version 3 — International Telecommunication Union</formattedref><docidentifier type="ITU">ITU-T X.509</docidentifier><docnumber>509</docnumber><language>en</language><script>Latn</script></bibitem>
 <bibitem anchor="zip_ffs" id="_5a0c9841-3660-e04d-5a6c-b70470399a7c"><formattedref format="application/x-isodoc+xml">ZIP File Format Specification, PKWare Inc.</formattedref><docidentifier>ZIP File Format Specification</docidentifier><language>en</language><script>Latn</script></bibitem>
 <bibitem anchor="des_mf" id="_ac377490-2e8c-f36e-e1a3-51436c51276b"><formattedref format="application/x-isodoc+xml">DES Modes of Operation, FIPS Pub 81 (www.itl.nist.gov/fipspubs/fip81.htm)</formattedref><docidentifier type="NIST">NIST FIPS 81</docidentifier><docnumber>81</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_13f656c8-d4bf-dbb1-91ff-f9470037f588" type="standard" schema-version="v1.5.6" anchor="rfc1423">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_f466470a-ba1b-64fd-9a91-c061a618a2ff" type="standard" schema-version="v1.5.6" anchor="rfc1423">
+  <fetched>2026-10-15</fetched>
   
 <title type="main">Privacy Enhancement for Internet Electronic Mail: Part III: Algorithms, Modes, and Identifiers</title>
 
@@ -1317,8 +700,8 @@
   </keyword>
 </bibitem>
 <bibitem anchor="blowfish_ref" id="_a9ed317b-a738-3637-3839-9800cb04ad26"><formattedref format="application/x-isodoc+xml">Blowfish encryption algorithm, B. Schneier, Fast Software Encryption, Cambridge Security Workshop Proceedings (December 1993), Springer-Verlag, 1994, pp. 191-204. (www.counterpane.com)</formattedref><docidentifier>Blowfish encryption algorithm</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_f8bbd887-f0c2-ac6e-4d9a-2f6994067b68" type="standard" schema-version="v1.5.6" anchor="crc32">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_5410c1df-5cd5-49d8-06a9-5cab11a67868" type="standard" schema-version="v1.5.6" anchor="crc32">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4433,7 +3816,7 @@
 
 
 
-</sections><annex id="_a63f9692-dec7-90c6-34e5-81d286c5539c" anchor="appendixA" obligation="normative">
+</sections><annex id="_61f2b1ca-1809-b18e-692e-4f895144de40" anchor="appendixA" obligation="normative">
 <title id="_8fa50696-2e5e-b31a-93d5-ecda85e8cf84">Data Server Certificate Request Procedure</title>
 <clause id="_1b8bd241-5d31-de65-d304-1cabfbe8e641" obligation="normative">
 <title id="_5a3ee13d-0b9b-2da3-71c3-d3552e3bed1e">Purpose</title>
@@ -4465,7 +3848,7 @@
 </clause>
 </clause>
 
-<clause id="_ff908729-aaca-524f-0620-d03908686bfa" obligation="normative">
+<clause id="_36dd2024-4537-7973-f332-a9053e4f98d3" obligation="normative">
 <title id="_6615d05e-1735-997c-5b89-4251041a911e">Definitions</title>
 <dl id="_ac9b5828-ccd8-966d-2819-23ee4ef0b2e8"><dt>Data Server</dt>
 <dd id="_7ad9375a-b17a-f195-8a7f-4ca4428a7d6f"><p id="_595631d1-d1ed-afeb-2b47-6645906334c6">This is the term used to identify an organisation producing encrypted ENC data that is digitally signed and issuing Cell Permits to Data Clients (end-users).</p>
@@ -4475,9 +3858,9 @@
 </dd>
 </dl>
 
-<references id="_a56a55ca-3d26-927a-1e5a-09556ec5a6ca" normative="false" obligation="informative">
-<title id="_8eeacebc-31ef-c5f0-094f-0dcbc7a5095d">References</title><bibitem id="_be345ed3-667b-bb4c-1a8a-db3532a6bc31" type="standard" schema-version="v1.5.6" anchor="iho_s63_aa">
-  <fetched>2026-10-07</fetched>
+<references id="_5df3b6a6-e921-40e6-d152-cf09c91e0006" normative="false" obligation="informative">
+<title id="_8eeacebc-31ef-c5f0-094f-0dcbc7a5095d">References</title><bibitem id="_535a0687-0230-bf0d-0521-6973602caa11" type="standard" schema-version="v1.5.6" anchor="iho_s63_aa">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" type="main">IHO Data Protection Scheme</title>
 
@@ -4556,8 +3939,8 @@
   <validity>
     <validityBegins>2020-03-01T00:00:00Z</validityBegins>
   </validity>
-</bibitem><bibitem id="_40a3659a-ebc0-037d-00bc-79044da40032" type="standard" schema-version="v1.5.6" anchor="iho_s57_aa">
-  <fetched>2026-10-07</fetched>
+</bibitem><bibitem id="_5073b455-9db9-9417-3a42-004b8120c5ad" type="standard" schema-version="v1.5.6" anchor="iho_s57_aa">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" type="main">IHO Transfer Standard for Digital Hydrographic Data</title>
 
@@ -4724,7 +4107,7 @@
 </tr><tr id="_1b24bcb4-720f-4714-a74c-1ec7f62d2300"><td id="_22fc2b96-8f4d-940e-fbcb-b4f22a9a205d" colspan="2" valign="top" align="left"/></tr></tbody>
 </table>
 </clause>
-</annex><annex id="_52ba3cbd-3a53-71de-5709-db3b1df5d2b0" obligation="normative">
+</annex><annex id="_b60401d4-99c7-6314-e7de-4d582768e67a" obligation="normative">
 <title id="_0e42b6c4-def5-cf0c-dba7-4724b8a511c2">Manufacturer Information Request Procedure</title>
 <clause id="_6c16154a-f669-65b9-7d21-71010c975c89" obligation="normative">
 <title id="_6d2597b4-a261-0ece-06ca-bd641f78e781">Purpose</title>
@@ -4748,7 +4131,7 @@
 </clause>
 </clause>
 
-<clause id="_c82049fd-1e8a-52f6-ea00-065c1a0f63a4" obligation="normative">
+<clause id="_526c5ab2-3041-cc7a-2f2f-7c20ce19a3cc" obligation="normative">
 <title id="_aeb56067-b6e5-52d9-fcc3-fbeeb8d79657">Definitions</title>
 <dl id="_7fc07052-379f-5158-91c0-c58defdff127"><dt>M_ID</dt>
 <dd id="_5461b192-8493-58ea-0023-32abad1c2178"><p id="_1098f259-6bc0-1fd3-3fd4-1741447972ba">Manufacturer Identification</p>
@@ -4767,9 +4150,9 @@
 </dd>
 </dl>
 
-<references id="_7a95b507-336e-d7fb-91f4-51a92eda0825" normative="false" obligation="informative">
-<title id="_a252db93-f708-7410-fa1d-95acf9547b4c">References</title><bibitem id="_78bcb1ce-7fda-be8d-e57a-0f2f36f1aaa6" type="standard" schema-version="v1.5.6" anchor="iho_s63_ab">
-  <fetched>2026-10-07</fetched>
+<references id="_b2d600ec-3744-2ee9-f11f-9cfe5a1ad546" normative="false" obligation="informative">
+<title id="_a252db93-f708-7410-fa1d-95acf9547b4c">References</title><bibitem id="_323b5dff-7c9e-83fc-c7a0-16456f202e3b" type="standard" schema-version="v1.5.6" anchor="iho_s63_ab">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" type="main">IHO Data Protection Scheme</title>
 
@@ -4848,8 +4231,8 @@
   <validity>
     <validityBegins>2020-03-01T00:00:00Z</validityBegins>
   </validity>
-</bibitem><bibitem id="_5e1a0226-09d5-37cc-5651-e9287988e361" type="standard" schema-version="v1.5.6" anchor="iho_s57_ab">
-  <fetched>2026-10-07</fetched>
+</bibitem><bibitem id="_e2b4de2f-ca53-7938-1a48-2d69904d14fb" type="standard" schema-version="v1.5.6" anchor="iho_s57_ab">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" type="main">IHO Transfer Standard for Digital Hydrographic Data</title>
 
