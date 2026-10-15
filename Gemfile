@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
-gem "metanorma-cli"
+gem "metanorma-cli", github: "metanorma/metanorma-cli", branch: "main"
 #gem "sassc"
 gem "debug"
 gem "relaton", "= 3.0.0.pre.alpha.4"
-gem "relaton-render", "= 3.0.0.pre.alpha.19"
+gem "relaton-render", "= 3.0.0.pre.alpha.19", github: "metanorma/relaton-render", branch: "main"
 gem "relaton-bib", "2.1.9"
 gem "pubid", github: "pubid/pubid", branch: "main"
 gem "moxml", github: "lutaml/moxml", branch: "main"
