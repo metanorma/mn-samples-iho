@@ -3,9 +3,9 @@ source "https://rubygems.org"
 gem "metanorma-cli", github: "metanorma/metanorma-cli", branch: "main"
 #gem "sassc"
 gem "debug"
-gem "relaton", "~> 3.0.0.pre.alpha"
-gem "relaton-render", "~> 3.0.0.pre.alpha"
-gem "pubid", "~> 2.0.0.pre.alpha"
+gem "relaton", "~> 3.0"
+gem "relaton-render", "~> 3.0"
+gem "pubid", "~> 2.0"
 gem "moxml", github: "lutaml/moxml", branch: "main"
 
 # released standoc caps relaton-cli ~> 2.1; main carries the widened floors
