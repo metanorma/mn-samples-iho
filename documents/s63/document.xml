@@ -271,7 +271,7 @@
 </terms>
 </clause>
 
-<clause id="_3102e10a-3d28-56a4-8445-ebff4bebfd95" anchor="introduction" obligation="normative">
+<clause id="_2ed96b43-edc8-bf94-57f9-0fccc0b6c160" anchor="introduction" obligation="normative">
 <title id="_61998878-2bff-eff7-7263-05a3fe373b29">Introduction</title>
 <p id="_e3baa5ca-d2d3-0488-8cdb-3006604e3329">The publication “S-63 IHO Data Protection Scheme”, later referred to as ‘the scheme’, describes the recommended standard for the protection of ENC information. It defines security constructs and operating procedures that must be followed to ensure that the data protection scheme is operated correctly and to provide specifications that allow participants to build S-63 compliant systems and distribute data in a secure and commercially viable manner.</p>
 
@@ -362,10 +362,10 @@
 </clause>
 </clause>
 
-<references id="_d095b27e-2b6c-a035-a4fd-31e8f557a634" normative="true" obligation="informative">
+<references id="_207a2a17-8f33-de8a-1eaf-2452824174f5" normative="true" obligation="informative">
 <title id="_2fb2c41f-84cb-d796-e892-fadbfa0cef8c">References</title>
-<bibitem id="_d1c5e57b-1e9b-5ca6-b20b-535bc90c8a70" type="standard" schema-version="v1.5.6" anchor="iho_ts_dhd">
-  <fetched>2026-10-21</fetched>
+<bibitem id="_ea178ff7-0f27-b30b-36bd-77a5897cb9c1" type="standard" schema-version="v1.5.6" anchor="iho_ts_dhd">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" type="main">IHO Transfer Standard for Digital Hydrographic Data</title>
 
@@ -462,8 +462,8 @@
     <validityBegins>2000-11-01T00:00:00Z</validityBegins>
   </validity>
 </bibitem>
-<bibitem id="_e26810a2-f6c0-f727-4c0e-43b81e2f321d" type="standard" schema-version="v1.5.6" anchor="dss">
-  <fetched>2026-10-21</fetched>
+<bibitem id="_8a0f080c-9cac-cebb-3e62-0e1a0c1f61d6" type="standard" schema-version="v1.5.6" anchor="dss">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn">Digital Signature Standard (DSS)</title>
 
@@ -539,8 +539,8 @@
     <vocab>Federal Information Processing Standard</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_a777e385-7655-601d-8410-7a890a008e48" type="standard" schema-version="v1.5.6" anchor="sha">
-  <fetched>2026-10-21</fetched>
+<bibitem id="_56e6acb0-7a3f-c088-0564-e34fea7adec6" type="standard" schema-version="v1.5.6" anchor="sha">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn">Secure Hash Standard</title>
 
@@ -616,8 +616,8 @@
     <vocab>hash algorithm</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_39c8ef84-6d97-11f4-16cc-ca465fd69388" type="standard" schema-version="v1.5.6" anchor="ITU-T_X.509">
-  <fetched>2026-10-21</fetched>
+<bibitem id="_6ed2db70-a79e-96eb-dbe3-3da27f314521" type="standard" schema-version="v1.5.6" anchor="ITU-T_X.509">
+  <fetched>2026-10-27</fetched>
   <uri type="src">https://handle.itu.int/11.1002/1000/16853</uri>
   <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.509-202607-P!Cor3!PDF-E&amp;type=items</uri>
   <docidentifier type="ITU" primary="true">ITU-T X.509</docidentifier>
@@ -1236,8 +1236,8 @@
 </bibitem>
 <bibitem anchor="zip_ffs" id="_5a0c9841-3660-e04d-5a6c-b70470399a7c"><formattedref format="application/x-isodoc+xml">ZIP File Format Specification, PKWare Inc.</formattedref><docidentifier>ZIP File Format Specification</docidentifier><language>en</language><script>Latn</script></bibitem>
 <bibitem anchor="des_mf" id="_ac377490-2e8c-f36e-e1a3-51436c51276b"><formattedref format="application/x-isodoc+xml">DES Modes of Operation, FIPS Pub 81 (www.itl.nist.gov/fipspubs/fip81.htm)</formattedref><docidentifier type="NIST">NIST FIPS 81</docidentifier><docnumber>81</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_1e1c0d1b-2735-5529-4984-2cdebb3412aa" type="standard" schema-version="v1.5.6" anchor="rfc1423">
-  <fetched>2026-10-21</fetched>
+<bibitem id="_53b9c19a-b404-b456-9ecd-624432ca7a1a" type="standard" schema-version="v1.5.6" anchor="rfc1423">
+  <fetched>2026-10-27</fetched>
   
 <title type="main">Privacy Enhancement for Internet Electronic Mail: Part III: Algorithms, Modes, and Identifiers</title>
 
@@ -1317,8 +1317,8 @@
   </keyword>
 </bibitem>
 <bibitem anchor="blowfish_ref" id="_a9ed317b-a738-3637-3839-9800cb04ad26"><formattedref format="application/x-isodoc+xml">Blowfish encryption algorithm, B. Schneier, Fast Software Encryption, Cambridge Security Workshop Proceedings (December 1993), Springer-Verlag, 1994, pp. 191-204. (www.counterpane.com)</formattedref><docidentifier>Blowfish encryption algorithm</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_1e6c95cf-4938-f155-f90e-dcdf402f9073" type="standard" schema-version="v1.5.6" anchor="crc32">
-  <fetched>2026-10-21</fetched>
+<bibitem id="_3bcc8bfc-06f3-7088-3152-b3b60f6a9346" type="standard" schema-version="v1.5.6" anchor="crc32">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -4433,7 +4433,7 @@
 
 
 
-</sections><annex id="_d26054b4-c107-a91b-9add-66d125ea2cf6" anchor="appendixA" obligation="normative">
+</sections><annex id="_f0138465-ebc8-ba5b-ca31-7c61cd41e845" anchor="appendixA" obligation="normative">
 <title id="_8fa50696-2e5e-b31a-93d5-ecda85e8cf84">Data Server Certificate Request Procedure</title>
 <clause id="_1b8bd241-5d31-de65-d304-1cabfbe8e641" obligation="normative">
 <title id="_5a3ee13d-0b9b-2da3-71c3-d3552e3bed1e">Purpose</title>
@@ -4465,7 +4465,7 @@
 </clause>
 </clause>
 
-<clause id="_91be1b14-8a8a-f04d-b52a-69f8b97c61f1" obligation="normative">
+<clause id="_bcdadedc-79ea-972b-9649-3246e29de511" obligation="normative">
 <title id="_6615d05e-1735-997c-5b89-4251041a911e">Definitions</title>
 <dl id="_ac9b5828-ccd8-966d-2819-23ee4ef0b2e8"><dt>Data Server</dt>
 <dd id="_7ad9375a-b17a-f195-8a7f-4ca4428a7d6f"><p id="_595631d1-d1ed-afeb-2b47-6645906334c6">This is the term used to identify an organisation producing encrypted ENC data that is digitally signed and issuing Cell Permits to Data Clients (end-users).</p>
@@ -4475,9 +4475,9 @@
 </dd>
 </dl>
 
-<references id="_9e64f790-bbcd-4788-0ca6-9825b017c399" normative="false" obligation="informative">
-<title id="_8eeacebc-31ef-c5f0-094f-0dcbc7a5095d">References</title><bibitem id="_1f1afbd4-ff76-cc3b-1061-e3e864e58af0" type="standard" schema-version="v1.5.6" anchor="iho_s63_aa">
-  <fetched>2026-10-21</fetched>
+<references id="_1db5833a-ae99-607d-021a-eb3183578170" normative="false" obligation="informative">
+<title id="_8eeacebc-31ef-c5f0-094f-0dcbc7a5095d">References</title><bibitem id="_0f6199d1-bc4a-251c-6b12-a2bac63d2d6f" type="standard" schema-version="v1.5.6" anchor="iho_s63_aa">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" type="main">IHO Data Protection Scheme</title>
 
@@ -4556,8 +4556,8 @@
   <validity>
     <validityBegins>2020-03-01T00:00:00Z</validityBegins>
   </validity>
-</bibitem><bibitem id="_23b15c4a-034f-9e14-2757-82995475339a" type="standard" schema-version="v1.5.6" anchor="iho_s57_aa">
-  <fetched>2026-10-21</fetched>
+</bibitem><bibitem id="_81972cdb-b0b1-aa0c-ab7b-656847fa5643" type="standard" schema-version="v1.5.6" anchor="iho_s57_aa">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" type="main">IHO Transfer Standard for Digital Hydrographic Data</title>
 
@@ -4724,7 +4724,7 @@
 </tr><tr id="_1b24bcb4-720f-4714-a74c-1ec7f62d2300"><td id="_22fc2b96-8f4d-940e-fbcb-b4f22a9a205d" colspan="2" valign="top" align="left"/></tr></tbody>
 </table>
 </clause>
-</annex><annex id="_25c6941c-9afd-28f6-02e4-5ee2b6945046" obligation="normative">
+</annex><annex id="_b9a212c1-4fa4-6540-57fe-cc368b174754" obligation="normative">
 <title id="_0e42b6c4-def5-cf0c-dba7-4724b8a511c2">Manufacturer Information Request Procedure</title>
 <clause id="_6c16154a-f669-65b9-7d21-71010c975c89" obligation="normative">
 <title id="_6d2597b4-a261-0ece-06ca-bd641f78e781">Purpose</title>
@@ -4748,7 +4748,7 @@
 </clause>
 </clause>
 
-<clause id="_be5617de-cb3e-fc01-1fc0-c843ecf0237f" obligation="normative">
+<clause id="_e4bde280-0c9f-9e9c-6cc9-d82b8c45ad86" obligation="normative">
 <title id="_aeb56067-b6e5-52d9-fcc3-fbeeb8d79657">Definitions</title>
 <dl id="_7fc07052-379f-5158-91c0-c58defdff127"><dt>M_ID</dt>
 <dd id="_5461b192-8493-58ea-0023-32abad1c2178"><p id="_1098f259-6bc0-1fd3-3fd4-1741447972ba">Manufacturer Identification</p>
@@ -4767,9 +4767,9 @@
 </dd>
 </dl>
 
-<references id="_8adbb8a4-0388-7d1b-2068-428e90f1c36b" normative="false" obligation="informative">
-<title id="_a252db93-f708-7410-fa1d-95acf9547b4c">References</title><bibitem id="_65af21c7-20c8-24c1-63ee-07d564a71907" type="standard" schema-version="v1.5.6" anchor="iho_s63_ab">
-  <fetched>2026-10-21</fetched>
+<references id="_b2bdf369-c1a9-1144-5c42-b0c5869be59e" normative="false" obligation="informative">
+<title id="_a252db93-f708-7410-fa1d-95acf9547b4c">References</title><bibitem id="_ae8dd2fd-e2a7-4d09-7676-81480853cf24" type="standard" schema-version="v1.5.6" anchor="iho_s63_ab">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" type="main">IHO Data Protection Scheme</title>
 
@@ -4848,8 +4848,8 @@
   <validity>
     <validityBegins>2020-03-01T00:00:00Z</validityBegins>
   </validity>
-</bibitem><bibitem id="_acedf493-2404-7116-8857-be2e7a9fd51a" type="standard" schema-version="v1.5.6" anchor="iho_s57_ab">
-  <fetched>2026-10-21</fetched>
+</bibitem><bibitem id="_df000bb8-9b0b-fdc9-cf8d-3957df84aab9" type="standard" schema-version="v1.5.6" anchor="iho_s57_ab">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" type="main">IHO Transfer Standard for Digital Hydrographic Data</title>
 
