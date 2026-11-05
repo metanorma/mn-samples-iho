@@ -4,7 +4,6 @@ gem "metanorma-cli", github: "metanorma/metanorma-cli", branch: "main"
 #gem "sassc"
 gem "debug"
 gem "relaton", "~> 3.0"
-gem "relaton-render", "~> 3.0"
 gem "pubid", "~> 2.0"
 gem "moxml", github: "lutaml/moxml", branch: "main"
 
