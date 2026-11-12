@@ -1,0 +1,9 @@
+[[sec-overview]]
+== Overview
+
+This document is part of the Product Specification for S-121. It is a description of all the features, attributes, enumerations and enumeration values that may be required to create an S-121 compliant dataset. This document describes the various feature types and their relations and provides extensive tables describing each feature, attribute, enumeration and enumeration value in detail. This document forms the formal Data Classification and Encoding Guide for Version 1.0.0 of the S-121 Product Specification. This document contains the information that will be imported into the IHO Registry. In the future a Feature Catalogue for the S-121 Product Specification will be generated from the information imported into the registry, which at that time will be represented as an XML file. The generation of a revised DCEG document will be a largely automated process based on the XML file representation of the information currently contained in this document. This process will ensure complete alignment between the next version of this document and the XML file and the registry entries. 
+
+[NOTE]
+====
+Since this document will be largely regenerated in its next version, detailed editing and formatting of this document is not important.
+====

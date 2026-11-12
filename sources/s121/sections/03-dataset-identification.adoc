@@ -1,0 +1,42 @@
+[[sec-dataset-identification]]
+== Dataset Identification
+
+A dataset that conforms to this product specification may be identified by its discovery metadata. The information identifying the data product may include the following items from S-100 Part 11, clause 11-6 (as adapted from ISO 19115).
+
+*Title* IHO S-121 - Maritime Limits and Boundaries
+
+*Alternate Title* S-121
+
+*Abstract* This document describes a Product Specification for Maritime Limits and Boundaries (MLB).
+
+*Topic categories* Boundaries (ISO 19115-1 MD_TopicCategoryCode 003)
+
+Inland waters (ISO 19115-1 MD_TopicCategoryCode 012)
+
+Location (ISO 19115-1 MD_TopicCategoryCode 013)
+
+Oceans (ISO 19115-1 MD_TopicCategoryCode 014)
+
+*Geographic description* The extent element of MD_DataIdentification is conditional; either the EX_GeographicBoundingBox or EX_GeographicDescription subclass of extent’s geographicElement Role must be included if the dataset is spatially referenced. If necessary both may be used. If a code is used then the following applies:
+
+*Code:* Code of the geographical region covered by the product according to the ISO 3166-1:2013.
+
+Any code from ISO 3166-1 may be used to identify different national areas of interest. This IHO standard is suitable for addressing Maritime Limits and Boundaries for the whole world.
+
+*Spatial resolution* Maritime Limits and Boundaries are normally calculated to a high accuracy based on control points that themselves are normally determined to a high accuracy. The Product Specification does not require high precision, but allows for it.
+
+Data elements represent either locations or limits or derived elements as defined in national legislation and/or bilateral and multilateral treaties. Positions defined in such a manner have an absolute accuracy. Derived elements, such as a transformed point, or a densified line or a calculated limit based on a rule, such as 12 nautical miles seaward from a straight baseline, bear the accuracy of the calculation. An accuracy and precision statement may accompany a derived element or group.
+
+*Purpose* The description of a specific set of maritime locations, boundaries, limits and/or zones as described in related legislation. MLB features may be considered as an independent data set, or the data may serve as a foundation for the production of other S-100 based data products. The conformance class used by the dataset is indicative of its intended usage and purpose.
+
+*Language* Data sets for exchange internationally will be in English. Nations may also optionally maintain data sets in any other language.
+
+*Classification* The default value for Maritime Limits and Boundaries data is “For Official Use Only”; however, any value from the code list MD_ClassificationCode may be used. 
+
+Certain types of data may be “Unclassified’, “Sensitive but Unclassified”, “Protected” or of “Limited Distribution”.
+
+*Spatial Representation Type:*  001 - Vector
+
+*Point of Contact:*  Producing Agency  
+
+*Use Limitation:*  The allowed uses of the data are defined in clause 4.1 in accordance with conformance classes as defined in Appendix B.

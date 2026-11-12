@@ -1,0 +1,18 @@
+[.preface]
+== Document Control
+
+Changes to this document are coordinated by the IHO S-121 Project Team (S-121PT) which is a subsidiary group of the S-100 Working Group (S-100WG). New editions will be made available via the IHO web site.
+
+[[tbl-3]]
+[cols="a,a,a,a"]
+|===
+h|*Edition Number*h|*Date*h|*Author*h|*Purpose*
+|Edition 1.0.0|April 2018|S-121PT|Approved by HSSC 10 under the new review cycle for testing. (Reference; HSSC10/16)
+|Edition 1.0.1|January 2019|S-121PT|Major revision based on testing to and feedback from UN DOALOS to address text encoding for deposit with the UN. Reviewed and accepted as suited to purpose by UN DOALOS December 2018.
+|Ballot version of Edition 1.0.0|February 2019|IHO Sec|Revised format and structure.
+|Edition 1.0.0|September 2019|S-121PT|Revised as per results of ballot comment review meeting August 2019
+|===
+
+Overview
+
+The S-121 Maritime Limits and Boundaries Product Specification defines the structure and relationships of data elements that are used to describe Maritime Limits and Boundaries. This document describes the interfaces through which external processes and users can access MLB data. For the deposit with the United Nations under the UN Convention on the Law of the Sea (UNCLOS) and the distribution in digital form of Maritime Limits and Boundaries information, a specialized human readable encoding is needed. This explicit text encoding is described in this document. This encoding format must not only be human readable, and simple enough to be read by all interested parties, it must also be parsable so that it can also be read back into a computer system. Whereas a Maritime Limits and Boundaries data base must be capable of supporting all of the structures and relationships defined in the S-121 Product Specification, it is not necessary that all of these elements and relationships be presented in any particular encoding output or input. The internal maintenance structure of the data does not need to be exposed. In the case of deposit with the UN only those elements required to be deposited are included in the output format.

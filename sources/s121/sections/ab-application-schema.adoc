@@ -1,0 +1,270 @@
+[appendix,obligation=normative]
+[[annex-application-schema]]
+== Application Schema
+
+[[sec-overview-2]]
+=== Overview
+
+The S-100 Universal Hydrographic Model allows for the representation of many aspects of the marine environment. Marine resources maps, fisheries maps, a marine cadastre and Maritime Limits and Boundaries use concepts defined in UNCLOS. The theme behind some of these types of marine data is rights, restrictions and responsibilities. 
+
+This Appendix describes an Application Schema model for managing rights, restrictions and responsibilities within the context of S-100. The high level conceptual model is based on the General Feature Model defined in ISO 19109 and the conceptual model defined in IHO S-100. The model is similar to that defined for any S-100 compliant feature based data model. The major distinguishing characteristic is the introduction of the Rights, Restrictions, Responsibilities and Parties structure derived from the ISO 19152 Land Administration Domain Model within the scope of UNCLOS. 
+
+The conceptual model for managing rights, restrictions and responsibilities is described in this Appendix to S-121. S-121 features are shown with class names beginning "S121" followed by the name of the class. 
+
+[[sec-feature-and-attribute-structure-from-s-100]]
+=== Feature and Attribute Structure from S-100
+
+The S-121 Application Schema uses the same Feature and Attribute model as defined in IHO S-100. Feature types, attribute types and listed values for code lists and enumerations have their definitions recorded within the IHO Geospatial Information Registry. 
+
+Attributes provide detail that establish context for a feature. S-100 defines attributes that may be associated with a feature. Types of geometry are limited by the Spatial Primitive Types defined in S-100. Thematic attributes have their definitions recorded in the IHO Geospatial Information Registry and Feature Catalogue.
+
+The ISO 19152 Standard defines a structure to represent Rights, Restrictions and Responsibilities, Parties and Sources. This structure also acts as a set of attributes by reference. These attributes may be shared. For example, several of the features in a MLB data set may describe sovereign rights, or have common sources. The structure inherited from ISO 19152 is implemented using S-100 Information types. These Information types, their attributes and enumerations of listed values are also recorded in the IHO Geospatial Information Registry and the Feature Catalogue.
+
+Another attribute structure inherited from ISO 19152 is the capability to version features. Versioning allows for individual features to be revised using a start and end date. An alternative approach is to version entire datasets using metadata. Both versioned features and versioned datasets can be used together. 
+
+[[sec-application-schema-general-model]]
+==== Application Schema General Model
+
+Figure B-1 shows the overall S-121 Application Schema model. The S-121 Feature Unit derives directly from S-100 and takes on attributes defined in the Feature Catalogue. The S-121 Spatial Attribute Type takes on the spatial attribute types of S121_Point, S121_Curve, S121_Surface or S121_Volume. These spatial attributes take their geometry from S-100 Part 7. 
+
+This Feature and Attribute structure has a relationship to S121_Source so that source information can be provided on any feature or spatial attribute. Zone (or Space) features may also have a relationship to a Basic Administrative Unit type feature, which is an Information type. This allows Rights, Restrictions and Responsibilities to be described and associated to Parties or Group Parties. These may also be sourced. 
+
+All of the Information types are defined in the S-121 Feature Catalogue.
+
+The S121_Party and S121_GroupParty are non-spatial objects. Individual parties are identified by the attribute values of the party features.
+
+[[fig-application-schema-model]]
+.Application Schema Model
+image::figure-application-schema-model.png[]
+
+[[sec-basic-administrative-unit-package]]
+==== Basic Administrative Unit Package
+
+The Basic Administrative Unit is an information type to “which (one or more) unique and homogeneous rights, responsibilities or restrictions are associatedfootnote:fn3[ISO 19152]”. This class does not take on spatial attributes itself, but is associated with a FeatureUnit, which corresponds to a feature and has its own spatial attributes. The rights, restrictions and/or responsibilities and parties structure is thus shared through the BasicAdministrativeUnit. That is, a Basic Administrative Unit is an attribute by reference for a Feature Unit. The BasicAdministrativeUnit feature is also a Versioned Object which allows the duration of validity for an object to be described. The BasicAdministrativeUnit is illustrated in Figure B-2. 
+
+The attribute _basicAdministrativeUnitType_ is taken from the code list basicAdministrativeUnitType and describes the types of the administrative unit. 
+
+BasicAdministrativeUnit realizes attributes from the metaclass S121_GF_ThematicAttributeType. The _memberName_ attribute is inherited and is renamed as _basicAdministrativeUnitName_. It establishes a name for an instance of a BasicAdministrativeUnit.
+
+The feature component of the Application Schema model is derived from IHO S-100 allowing direct compatibility with other IHO Product Specifications. Features defined in S-121 can thus be imported into other S-100 based products. 
+
+The attribute uID is used in relationships between instances of the BasicAdministrativeUnit and Rights, Restrictions and/or Responsibilities and parties (Party) information objects. 
+
+The attribute _basicAdministrativeUnitContext_ allows the context for an instance of a BasicAdministrativeUnit to be described. This would include other information that would be included with a logical administrative unit in a document.
+
+Both the attribute _basicAdministrativeUnitName_ and _basicAdministrativeUnitContext_ support multilingual character strings in accordance with the ISO TC211 PT_Locale structurefootnote:fn4[PT\_Locale is defined in ISO 19139 and ISO 19115-3 which are the XML encodings for metadata, although the structure allows any text string to include an identifier of language and text in that language..].
+
+[[fig-s-121-basic-administrative-unit]]
+.S-121 Basic Administrative Unit
+image::figure-s-121-basic-administrative-unit.png[]
+
+[[sec-feature-unit]]
+==== Feature Unit
+
+The class Feature Unit realizes S121_GF_FeatureType. The definition, code and other aspects are recorded in the Feature Concept Dictionary Register. A Feature Unit would be associated to a BasicAdministrativeUnit information type to take on rights, responsibilities and restrictions and party administrative attributes.
+
+The name of a feature is optionally defined in the attribute _name_. The attribute _name_ is realized from the attribute _typeName_ from the metaclass S121_GF_FeatureType. The _definition_, and _isAbstract_ of the feature are recorded in the Feature Concept Dictionary Register so do not need to be included in attributes.
+
+The attribute _context_ optionally describes the administrative aspects of the feature object.
+
+The attribute _context_ is of type CharacterString and may support PT_Locale from ISO 19139 (or ISO 19115-3) in order to support multi-language data description.
+
+The attribute _releasability_ is optionally used to differentiate between releasability status for particular features. It makes use of the enumeration releasabilityTypeList. 
+
+Shared geometry is provided through the implementation of S-100 Level 3a geometry
+
+All FeatureUnit Features are versioned. 
+
+Only one spatial primitive (Point, Curve or Surface) may be associated with a defined feature. 
+
+A _name_ or _label_ will uniquely identify the feature.
+
+[[fig-s-121-feature-unit]]
+.S-121 Feature Unit
+image::figure-s-121-feature-unit.png[]
+
+[[sec-geometry-additional-spatial-information]]
+==== Geometry / Additional Spatial Information
+
+The approach to geometry in S-121 is different from that used in ISO 19152 which is based on a surveying model. S-100 allows one geometry per feature and composition is handled at the feature level through feature associations. It is straightforward to convert from ISO 19152 to the S-100 geometry model because both are based on the ISO 19107 spatial schema. They differ only in how composition is done. S-121 uses the IHO S-100 approach.
+
+S-121 includes additional ways of describing position inherited from the ISO standard 19152. These are the description of a spatial attribute textually called “location by text” and the description of a position in a coordinate reference system different from that used to describe other positions in the same dataset. Both cases occur in real data. A treaty or law may describe a position as “an extension of a line from …” or by some other descriptive means. Also, the reference system used in a treaty or law may be in a coordinate reference system that was used at the time the treaty or law was written. Since this textual description or position in a unique coordinate reference system are what is described in the treaty or law, they are the correct position and must be included as is in the S-121 data. However, for an implementing production system to work, and for it to be possible to calculate and display geometries it is necessary for all the spatial primitives to be within the same Coordinate Reference System. A new information type carrying additional information has been defined, “AdditionalSpatialInformation”. 
+
+ISO19152 also allows for per object versioning. All of the feature and thematic attributes in S-121 may optionally be versioned. Versioning in the other S-100 based Data Products is done at the dataset level.  If an S-121 Spatial is revised then the version of all the Features that reference that attribute as a component will need to be revised.
+
+In S-100 spatial components may be shared. Under S-100 Level 3a geometry there may be several Feature instances that share the same spatial component by reference. For example a curve may be the spatial component referenced by a limit, a boundary or an adjacent zone. Similarly, in S-121 the additional spatial information type with its attributes may be shared. A constraint is defined that locks the additional spatial information object to the corresponding S-121 Spatial Attribute object.  Since the additional spatial information object and the S-121 Spatial component are locked together they must handle versioning in the same manner. Since geometry components are not versioned versioning is done at the feature level only.
+
+The attributes and relationships of S-121_SpatialAttributeType and S-121_AdditionalSpatialInformationType are shown in Figure B-4 below. The attributes of SpatialAttributeType are the same as for any spatial attribute from S-100. The additional information type AdditionalSpatialInformation contains the additional attributes required to support the alternate coordinate reference system based positions and “Location by text” aspects.
+
+The attribute _saID_ is the spatial attribute identifier that is referenced by the FeatureUnit.The attribute _siID_ is the additional spatial attribute object identifier that is referenced by the FeatureUnit.
+
+The attribute _locationByText_ allows additional spatial information to be a textual description. This allows locations, limits, zones or spaces that are not fully described geometrically to be included. 
+
+A CoordinateReferencingSystem (CRS) may optionally be textually described using the attribute _referenceSystem._ Some treaties points or lines may come from different sources and it is possible in one dataset to make use of more than one CRS.
+
+[[fig-s-121-spatial-attribute-type]]
+.S-121 Spatial Attribute Type
+image::figure-s-121-spatial-attribute-type.png[]
+
+The attribute _referenceSystem_ references the class S100_IO_IdentifiedObject. This in turn references a series of other classes shown in Figure B-5 below that identify the CRS. This includes an optional reference to an authority that makes use of the metadata class CI_Citation. This is complex way of duplicating the role of S121_Source, so a constraint is applied to make use of the S121_Source approach.
+
+[[fig-s-121-reference-system-attribute]]
+.S-121 Reference System Attribute
+image::figure-s-121-reference-system-attribute.png[]
+
+Since the domain of rights for some of the UNCLOS feature instances have different vertical extents it is necessary to address the third dimension. This is done by using an optional height description attribute on 2D features to establish a volume. 3D space type features that support volume therefore have the same geometric primitives as 2D zone type features.
+
+Figure B-6 below shows spatial geometry for each of four feature categories Location, Limit, Zone and Space.
+
+The _locationByText_ attribute is an attribute that allows a textual description. There are some situations where MLB authoritative documents do not geometrically describe all boundaries of a zone. If both spatial geometry and text are both provided then the geometry may be considered as an approximation and the text as the authoritative description. With respect to _locationByText_, the presence of inconsistencies or discrepancies in information provided by different states does not indicate the existence of a dispute among the relevant states.
+
+Feature to feature relations are allowed between the Location, Limit, Zone and Space type features. This will allow one to associate particular treaty or control points to delimit curves and particular curves to bound zones. Since administrative attributes such as Rights only apply to Zones and Spaces it is necessary to have a mechanism to relate a Zone or a Space to Limits and Location points when the geometric elements are not described.
+
+[[fig-spatial-geometry]]
+.Spatial Geometry
+image::figure-spatial-geometry.png[]
+
+The Basic Administrative Unit (BasicAdministrativeUnit) information type acts as an attribute by association to provide administrative attributes of Rights, Restrictions or Responsibilities to the Zone and Space features. This is shown in Figure B-7 below. 
+
+[[fig-relation-of-administrative-structure-to-feature-unit]]
+.Relation of Administrative Structure to Feature Unit
+image::figure-relation-of-administrative-structure-to-feature-unit.png[]
+
+Source is described by reference to the Source information object. In the ISO 19152 standard the two subtypes of Source are a SpatialSource and an AdministrativeSource. In S-121 this has been consolidated into one Source Information Object with two conditional attributes. The attributes _spatialSourceType_ and _administrativeSourceType_ that identify different enumerations. This is shown in Figure B-8 below.
+
+[[fig-9-below-shows-the-source-object-with-all-of-the-associated-e]]
+.9 below shows the Source object with all of the associated enumerations and associated support classes. A set of attributes explicitly describe the information pertinent to source documents. These are:
+image::figure-9-below-shows-the-source-object-with-all-of-the-associated-e.png[]
+
+* _*sourceDocumentName*_ – Document name - for example the document (legislation, treaty, title) that defines the object;
+* _*sourceOnlineResource*_ – Official URL (or equivalent online resource) where the document is distributed;
+* _*sourceregistryNumber*_ – Unique official identifier of the record in a registry. For example, in states with registers of legislative instruments, versioning is controlled by the registry ID.
+
+The other S-121 Source attributes are: 
+
+* _*sID*_ – the identifier of the source;
+* _*sourceAdministrativeDateStamp*_ – The moment that the event represented by the instance of S-121_Source is further processed;
+* _*sourceAuthoratitiveDate*_ – The date of force of law of the source by an authority;
+* _*sourceDocumentType*_ – The type of document;
+* _*sourceAvailibilityStatus*_ – The status of document from the enumeration LA_AvailabilityStatusType;
+* _*administrativeSourceType*_ – Descriptive documentation that supports, complement or describes the associated object;
+* _*spatialSourceType*_ – The type of spatial "Source" document;
+* _*sourceType*_ – The type of "Source" document Reference;
+* _*sourceReference*_ – Reference to source through the class S121_ResponsibleParty;
+* _*sourceQuality*_ – Data Quality description through the metadata class DQ_Element;
+* _*sourceSubmissionDate*_– The date of submission of the source by a party;
+* _*sourceExternalArchiveIdentifier*_– The identifier of a source in an external registration;
+* _*sourceRecordation*_ – The date of registration (recordation) of the "Source" by registering authority.
+
+The code lists and classes referenced are:
+
+* _*DateTime*_ – A data type for recording clock time;
+* _*LA_AvabilityStatusType*_ – An enumeration identifying the status of a source archive;
+* _*SpatialSourceTypeList*_– Category of "spatialSourceType" (from ISO 19152:2012);
+* _*AdministrativeSourceTypeList*_ – Category of "administrativeSourceType" (from ISO 19152);
+* _*responsibleParty*_– The responsible party of the "Source";
+* _*CI_RoleCode*_ – Responsible Party Role;
+* _*EX_Archive*_ – Metadata about an external archive;
+* _*DQ_Element*_ – A metadata class describing data quality of the source data;
+* _*DQ_EvaluationMethodTypeCode*_ – A code list of the method used to evaluate data quality;
+* _*DQ_Result*_ – Results of the data quality evaluation;
+* _*CI_RoleCode*_ – A code list of information about the function performed by the responsible party for the source data;
+* _*CI_OnlineFunctionCode*_ – A code list of the online function performed by an online resource as part of a contact for a responsible party for a source.
+
+In addition the ISO metadata class CI_ResponsibleParty has been realized in S-121 to be ResponsibleParty. This includes the classes Contact, OnlineResource and Address that are realizations of the ISO classes CI_Contact, CI_Address and CI_OnlineResource. The attributes and inheritance of S121_Source are shown in Figure B-9.
+
+[[fig-s121-source-attributes]]
+.S121_Source Attributes
+image::figure-s121-source-attributes.png[]
+
+[[sec-party-unit-package]]
+==== Party Unit Package
+
+A party is “a person or organization that plays a role in rightsfootnote:fn5[ISO 19152 LADM clause 4.1.13]”. A Party is considered as an object which allows it to be shared. That is, a party may be part of several different rights, responsibilities and restrictions. A Group Party is also a Party that consists of several individual parties. The PartyMember class provides an attribute on the composition attribute that forms a group out of several party members. This optional attribute allows parties to have different shares within a group. The types of Parties and Group Parties are described by _partyType_ and _partyGroupType_. Figure B-10 below shows the Party structure.
+
+[[fig-s121-party-package]]
+.S121_Party Package
+image::figure-s121-party-package.png[]
+
+The relationship between Parties, Group Parties, Rights, Restrictions and Responsibilities and feature instances (BasicAdministrativeUnit) is by named associations. 
+
+The S121_Party is structured in an equivalent but simpler manner than ISO 19152.
+
+[[sec-rights-responsibilities-and-restrictions-rrr-administrative-]]
+==== Rights, Responsibilities and Restrictions (RRR) Administrative Package
+
+The RRR administrative package associates parties with Basic Administrative Units (BasicAdministrativeUnit). There are three subtypes realised as information types:
+
+1. Right, with rights as instances. 
+
+2. Responsibility, with responsibilities as instances. 
+
+3. Restriction, with restrictions as instances. Restrictions usually apply to features independent of the rights; that is, the related party can change and the restriction remains. 
+
+Rights, Responsibilities and Restrictions are information types associated by reference to BasicAdministrativeUnit features. 
+
+These features are stand-alone entities associated by reference. They are Information types and do not carry geometry. Feature objects therefore point to an appropriate information type. If the restriction is changed it only needs to be changed once, not through the attributes in possibly hundreds of feature objects. 
+
+[[fig-s-121-rrr-administrative-package]]
+.S-121 RRR Administrative Package
+image::figure-s-121-rrr-administrative-package.png[]
+
+[[sec-governance-object]]
+==== Governance Object
+
+Treaties and other descriptive documents normally contain a textual preamble that contains information specific to the status of the data, or exchange data set (such as a deposit in compliance with the depositary obligations of UNCLOS). This information requires another type of Information Type. This information type is called a governance object. This information is not metadata; it is an integral part of the dataset containing specific text, but it may duplicate some metadata elements such as title. The governance data object may be versioned and can reference a source or sources.
+
+All of the attributes of the governance object are optional except for a unique identifier attribute: _govID_. There may be zero or more (0..*) governance objects associated with a BasicAdministrativeUnit. When generating a data set from data held in the S-121 data model the governance objects associated with the Basic Administrative Units selected for output would be included with the output data. 
+
+There are several optional attributes that may be used to carry specific aspects of the textual preamble such as the title (governanceTitle), or the reference number (referenceNumber) of the data. The textual preamble would be carried as a character string in the governance description (governanceDescription) attribute. 
+
+The attributes are:
+
+* _*govID*_ – A unique character string and a namespace identifier which is also a unique character string;
+* _*referenceNumber*_ – The reference number of the source reference;
+* _*label*_ – A short textual identifier of the governance object;
+* _*name*_ – The name of the governance object;
+* _*governanceTitle*_ – The title of the reference;
+* _*governanceDescription*_ – A character string containing the governance statement;
+* _*releasibilityType*_ – Optionally used to differentiate between releasability status for particular features;
+* _*dateApproved*_ – The date at which the statement or document was approved by the appropriate governing body;
+* _*dateConsidered*_ – The date at which the statement or document was considered by the appropriate governing body;
+* _*dateIntroduced*_ – The date at which the statement or document was introduced.
+
+[[fig-governance-object]]
+.Governance Object
+image::figure-governance-object.png[]
+
+[[sec-versioned-object]]
+==== Versioned Object
+
+Versioning is a critical aspect for data. Each feature and information object can be separately versioned. This is done by including two attributes in each of these features that define the beginning and end dates of validity. 
+
+Versioned and non-versioned features may be combined in a dataset. Non-versioned objects are then implicitly versioned by the metadata date stamp on the whole dataset. Versioning is particularly important when data is extracted from an online database. Figure B-13 below shows the S-121 versioning attributes for S-121 features.
+
+The VersionedObject attributes also contains an attribute _collection_. This attribute allows one to describe several different collections of data. For example the UN may hold data from Canada, France and other countries in the same database. There may be a unique numbering or naming system for feature and information object instances in Canada and another one in France, but there is no assurance that the two namespaces do not conflict. The _collection_ attribute identifies which “collection” a data element is a member of. Effectively it ensures a unique namespace. This attribute is conditional. It is required in a database that contains information from different suppliers. The attribute is not required in a country’s national database (if the country has a unique and unambiguous name or numbering system and it is not required in an exchange data set because the metadata of the entire dataset uniquely identifies the dataset).
+
+With respect to versioning, the presence of inconsistencies or discrepancies in information provided by different states does not indicate the existence of a dispute among the relevant states.
+
+[[fig-versioned-objects]]
+.Versioned Objects
+image::figure-versioned-objects.png[]
+
+[[sec-implementation-model]]
+==== Implementation Model
+
+The implementation model for the S-121 Administrative Group is shown in Figure B-14 below. It shows four groups of features, the Feature/Attribute Group which is derived directly from S-100 and the three additional groups implemented by S-121. There are only 7 instantiable classes. These additional groups are the Administrative Group that defines the Basic Administrative Unit and the Rights, Restrictions and Responsibilities. The Party group defines Parties and the Source Group defines Source references. The governance object is also part of the Administrative Group.
+
+The structure is conceptually simple. There is a link from a Feature Unit to an Administrative Group BasicAdministrativeGroupUnit for Zone type features and Space type features. The Administrative and Party structure simply behaves as an attribute by association describing the Rights, Responsibilities and Restrictions and the Parties involved for that Feature.
+
+The Administrative group and the spatial primitives associated with a feature may also reference the S121_Source in the Source group. This is also by reference and it allows source references to be shared.
+
+The Feature, Administrative and Party groups are versioned objects. If a source changes a new source reference instance should be generated.
+
+The implementation model shown in Figure B-14 has resolved many of the relations to be navigable in one direction meaning that they can be implemented as pointers in an encoding structure. The pointers emanate from the FeatureUnit making the feature the central object in alignment with the philosophy of the underlying S-100 GFM.
+
+The structure of the party group has been transformed in the implementation model. Since the GroupParty class inherited from ISO 19152 is a subtype of the Party class with an extra attribute, these two classes have been combined with the inclusion of a constraint that indicates that the additional attribute party group type (partyGroupType) is to only be used in a group party. The Party Member class then becomes a related feature. This simplifies the implementation for those systems that cannot support a relationship class used for the purpose of carrying an association attribute.
+
+[[fig-s-121-implementation-model]]
+.S-121 Implementation Model
+image::figure-s-121-implementation-model.png[]

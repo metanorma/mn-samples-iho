@@ -1,0 +1,94 @@
+[[sec-attribute-types]]
+== Attribute Types
+
+The Rights, Restrictions, Responsibility and Party structure effectively provides attributes to the S-121 feature types by reference. 
+
+The S121_FeatureUnit is a feature type and may take on any of the feature attributes described in the Feature Concept Dictionary Register. Specific attributes are bound to specific features in the Product Specification. Figure 3-1 shows S121_FeatureUnit and its attributes.
+
+The S121_FeatureUnit also has five built-in attributes. These are:
+
+*fuID*: The Feature Unit Identifier allows reference to information objects using the “Oid” (Object ID) attribute. The “Oid” comprises a unique character string and a namespace identifier which is also a unique character string. An example might be "Limit-1" where "Limit" is the namespace and "1" is the unique id within that namespace.
+
+*label:* The attribute _label_ provides a short textual identifier of the feature unit. For features registered in the Feature Context Dictionary this is the full textual Feature Type Name. This attribute is mandatory because it is used as part of the human readable textual encoding.
+
+*name*: The name of the feature, that is the 6-character code or CamelCase code identifying the feature type (as defined in the Feature Concept Dictionary). The _definition_, and _isAbstract_ of the feature are recorded in the Feature Concept Dictionary so do not need to be included in attributes.
+
+*context:* This attribute describes the administrative aspects of the feature object. 
+
+*releasabilityType:*  This attribute is optionally used to differentiate between releasability status for particular features.
+
+In addition, there are three attributes inherited through the S121_VersionedObject structure. These are:
+
+*startLifespan:* start time of a specific instance version.
+
+*endLifespan:* optional end time of a specific instance version.
+
+*collection*: the data set or series to which the data belongs.
+
+Other thematic and spatial attributes are by reference.
+
+[[fig-feature-unit-attributes-for-an-s121-feature]]
+.Feature Unit Attributes for an S121_Feature
+image::figure-feature-unit-attributes-for-an-s121-feature.png[]
+
+[[sec-mlb-location-objects-and-attributes]]
+=== MLB Location Objects and Attributes
+
+The S121 MLB Location Objects may take on any of the feature attributes described in the Feature Concept Dictionary Register. In addition, the S-121 MLB Location Objects inherit the attributes from S121_FeatureUnit: _fuID, label, name_, _context_ and _releasabilityType_ as well as the three versioning attributes, _beginLifespanVersion,__endLifespanVersion_ and _collection._
+
+The attribute _locationObjectType_ from the codelist locationTypeList identifies which Feature Unit Limit Object type this object refers to based on the Feature Catalogue. 
+
+The attribute _interpolationType_ from the codelist interpolationTypeList identifies the role of point in the structure of a "Straight" line or curve.
+
+The attribute _pointType_ from the codelist originTypeList identifies the type of the point.
+
+Figure 3-2 below shows MLB Location Objects and attributes.
+
+[[fig-mlb-location-objects-and-attributes]]
+.MLB Location Objects and Attributes
+image::figure-mlb-location-objects-and-attributes.png[]
+
+[[sec-mlb-limit-objects-and-attributes]]
+=== MLB Limit Objects and Attributes
+
+The S121 MLB Limit Objects may take on any of the feature attributes described in the Feature Concept Dictionary Register. In addition, the S-121 MLB Limit Objects inherit the attributes from S121_FeatureUnit: _fuID, label, name_, _context_ and _releasabilityType_ and the versioning attributes, _beginLifespanVersion_, _endLifespanVersion_ and _collection._
+
+The feature objects Baseline, NormalBaseline, StraightBaseline, ArchipelagicBaseline, LowTideElevationBaseline, MouthOfRiverBaseline, BayBaseline, ReefBaseline, PortBaseline, Boundary, InternationalBoundary, OuterLimitOfTheTerritorialSea, OuterLimitOfTheContiguousZone, OuterLimitOfTheExclusiveEconomicZone, OuterLimitOfTheContinentalShelf, OuterLimitOfThe Roadstead, and ConstructionLine may optionally take on the attribute _arcGeometryType_ from the codelist arcGeometryTypeList which identifies the type of computation used to define an arc (line). 
+
+With respect to the feature objects Boundary and International Boundary: In accordance with articles 74, 75, 83, and 84 of UNCLOS, information on maritime boundaries, such as information about the delimitation of exclusive economic zones and continental shelves between states, may be provided for S-121 only when an agreement is reached between relevant states.
+
+The attribute _limitObjectType_ from the codelist limitTypeList identifies which Feature Unit Limit Object type this object refers to based on the Feature Catalogue. 
+
+The Figure 3-3 below shows MLB Limit Objects and attributes.
+
+[[fig-mlb-limit-objects-and-attributes]]
+.MLB Limit Objects and Attributes
+image::figure-mlb-limit-objects-and-attributes.png[]
+
+[[sec-mlb-zone-objects-and-attributes]]
+=== MLB Zone Objects and Attributes
+
+The S121 MLB Zone Objects may take on any of the feature attributes described in the Feature Concept Dictionary Register. In addition the S121 MLB Zone Objects inherit the attributes from S121_FeatureUnit: _fuID_, _label, name_, _context_ and _releasabilityType_ and the versioning attributes, _beginLifespanVersion_, _endLifespanVersion_ and _collection_. 
+
+The attribute _zoneObjectType_ from the codelist zoneTypeList which identifies which Feature Unit Zone Object type this object refers to, based on the Feature Catalogue. 
+
+The S121 MLB Zone Objects may optionally take on the attribute _jurisdictionDomain_ from the codelist jurisdictionDomainTypeList which defines the vertical juridical domain of the object. 
+
+The Figure 3-4 below shows MLB Zone Objects and attributes.
+
+[[fig-mlb-zone-objects-and-attributes]]
+.MLB Zone Objects and Attributes
+image::figure-mlb-zone-objects-and-attributes.png[]
+
+[[sec-mlb-space-objects-and-attributes]]
+=== MLB Space Objects and Attributes
+
+There no MLB Space objects defined. Any Space object will need to be generated from the generic object Space and registered in the Feature Catalogue for a particular product. 
+
+[[sec-mlb-generic-feature-objects-and-defining-attributes]]
+=== MLB Generic Feature Objects and Defining Attributes
+
+There are four generic feature object types, Location, Limit, Zone and Space. These objects serve as the root objects for all of the registered Feature Types. However these four objects may also be instantiated and specialized where there is a need to construct as special object type.  Figure 3-5 below illustrates the relationship of the generic feature objects and defining attributes. 
+
+[[fig-6]]
+image::image-12.png[]

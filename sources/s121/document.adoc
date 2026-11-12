@@ -1,0 +1,50 @@
+= Maritime Limits and Boundaries Product Specification (Preview PR)
+:series: S
+:docnumber: 121
+:doctype: standard
+:edition: 1.1.0
+:language: en
+:copyright-year: 2022
+:committee: hssc
+:workgroup: s-121pt
+:toclevels: 3
+:mn-document-class: iho
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+:imagesdir: images
+
+include::sections/00-front-matter.adoc[]
+
+include::sections/00-document-control.adoc[]
+
+include::sections/01-overview.adoc[]
+
+include::sections/02-specification-scope.adoc[]
+
+include::sections/03-dataset-identification.adoc[]
+
+include::sections/04-data-content-and-structure.adoc[]
+
+include::sections/05-coordinate-reference-system-crs.adoc[]
+
+include::sections/06-data-quality.adoc[]
+
+include::sections/07-data-capture-and-classification.adoc[]
+
+include::sections/08-maintenance.adoc[]
+
+include::sections/09-portrayal.adoc[]
+
+include::sections/10-data-product-format-encoding.adoc[]
+
+include::sections/11-data-delivery.adoc[]
+
+include::sections/12-metadata.adoc[]
+
+include::sections/aa-validation-tests.adoc[]
+
+include::sections/ab-application-schema.adoc[]
+
+include::sections/ac-bibliography.adoc[]
+

@@ -1,0 +1,6 @@
+[[sec-data-capture-and-classification]]
+== Data Capture and Classification
+
+Maritime Limits and Boundaries data is primarily acquired from multiple external and internal sources. Critical points may be defined in treaties and other agreements. The S-121 source feature is designed to support references to official sources. 
+
+The S-121 Data Classification and Encoding Guide (DCEG) describes how data defining Maritime Limits and Boundaries should be captured using the features defined in the S-121 Feature Catalogue.  This Guide is located at Annex A.

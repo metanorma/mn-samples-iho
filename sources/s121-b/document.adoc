@@ -1,0 +1,39 @@
+= Maritime Limits and Boundaries Product Specification (Preview PR)
+:series: S
+:docnumber: 121
+:doctype: standard
+:edition: 1.1.0
+:language: en
+:copyright-year: 2022
+:committee: hssc
+:workgroup: s-121pt
+:toclevels: 3
+:mn-document-class: iho
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+:imagesdir: images
+:annex: Annex B – Data Product Format (Encoding)
+
+include::sections/00-front-matter.adoc[]
+
+include::sections/00-document-control.adoc[]
+
+include::sections/01-introduction.adoc[]
+
+include::sections/02-implementation-schema.adoc[]
+
+include::sections/03-explicit-text-encoding-format.adoc[]
+
+include::sections/aa-implementation-schema.adoc[]
+
+include::sections/ab-the-carriage-return-line-feed-delimiter.adoc[]
+
+include::sections/ac-abstract-syntax-notation.adoc[]
+
+include::sections/ad-profile-for-deposit-with-the-un.adoc[]
+
+include::sections/ae-record-oriented-encoding-structure-in-abstract-syntax-notati.adoc[]
+
+include::sections/af-bibliography.adoc[]
+

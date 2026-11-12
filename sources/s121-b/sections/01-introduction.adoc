@@ -1,0 +1,121 @@
+[[sec-introduction]]
+== Introduction
+
+Encoding is the translation of information from a structure, such as an internal database, into a format that can be communicated. The converse is decoding in which the transmitted information is converted into a form that can be used in the end application. Encoding establishes the interface at which data can be used.
+
+Encoding is extremely important for S-121 Marine Limits and Boundaries to support of the deposit of the description of states sovereign boundaries to the UN DOALOS in compliance with UNCLOS. As such MLB data must be easily readable; this means that the data must be available in a human readable form. As stated in the United Nations Convention on the Law of the Sea (UNCLOS) this form could be “Charts” that can be easily viewed or it could be “Lists of Geographical Coordinates” that can be easily read.  The output format required to support machine and human readable “Lists of Geographical Coordinates” must be explicit and easy to read by non-technical experts in a legislative, administrative or other similar environments; and able to be used to support deposit with the Division for Ocean Affairs and the Law of the Sea (DOALOS) of the Office of Legal Affairs in the UN. The output needs to look closely like the information that is printed in treaties or national laws. This output must be textual so that there are no barriers to its understanding. It also needs to be simple.
+
+The Extensible Markup Language (XML) is not an appropriate human readable format for this application. It is not simple and even Information Technology experts get lost in all of the nested brackets, XLinkfootnote:fn2[XML document reference linkage] references and other complexities of the XML syntax.
+
+A structured text encoding is described in the following sub clauses that meets the requirements of being explicit and easy to read by non-technical experts. There may be multiple different textual output formats that may be used by different states, which are variations on the “Explicit Text Format” defined here. With each such output format there needs to be a complementary input process to allow the data to be read into a computer system. The deposit of a data set using a structured text encoding with UN/DOALOS requires a standardized output that can be read by a common piece of reader software.
+
+This document provides detail for an Explicit Text Format that is simple and easy to interpret in an official or legislative environment or to be used for deposit of a “List of Geographic Coordinates” to UN/DOALOS. The format allows Locations, Limits (and Boundaries) and Zones with their associated S-100 compliant geometric Points, Curves and Surfaces to be described.
+
+Data may also be exchanged between states using existing published international standards from IHO, ISO and OGC. Only the general requirements for these encodings are given in this document.
+
+No cartographic Portrayal is defined for the Explicit Text Format. Portrayal may be defined in other uses based on IHO S-100 portrayal methods.
+
+[[sec-system-dependant-exchange-file]]
+=== System Dependant Exchange File
+
+At times nation states or other organizations working with MLB data may wish to exchange whole data sets or major portions of databases between themselves. This can be done in the native format of the GIS system being used. For example, Esri Shape files can be used for communication between Esri systems and CARIS files can be used to exchange between CARIS systems. Inter system communication is dependent upon the capability of such systems to be able to read each other’s files. 
+
+It is possible for a generic GML exchange schema to be defined addressing all of the S-121 schema and this could be used for inter system data exchange. 
+
+A generic GML schema for S-121 would not support shared attributes by reference as is used to describe the information objects in S-121. This is because generic GML does not support such structures. This means that in a full GML schema these attributes would need to be collapsed into ordinary attributes; that is, these attributes would need to be repeated as direct attributes of feature objects. A structure would need to be developed to address the features *BAUnit* and *Governance*. If the XML schema were extended to support such features using structures such as XLink, these information features could be handled, but generic GML presentation software would not understand such objects and would ignore them.
+
+[[sec-explicit-textual-format-for-list-of-geographic-coordinates-f]]
+=== Explicit Textual Format for list of Geographic Coordinates for Deposit
+
+MLB data that is output for deposit with the UN/DOALOS needs to be in an explicit and easy to read textual format. The output for deposit with the UN/DOALOS needs to contain all the information required by the UN Convention on the Law of the Sea for deposit. The output needs to look closely like the information that is printed in treaties or national laws. The content will be decided by the nation state. 
+
+Coastal States, under article 16, paragraph 2; article 47, paragraph 9; article 75, paragraph 2; and article 84, paragraph 2 of UNCLOS, are required to deposit with the Secretary-General of the United Nations charts showing straight baselines and archipelagic baselines as well as the outer limits of the territorial sea, the exclusive economic zone and the continental shelf, including the extended continental shelf beyond 200 metres depth.  Alternatively, the lists of geographical coordinates of points, specifying the geodetic datum, may be substituted. 
+
+For the deposit of “a List of Geographic Coordinates” an explicit textual format is required where Latitude / Longitude coordinates are described explicitly as points “specifying the geodetic datum”. A geographic coordinate may be specified in different coordinate systems using different geodetic datums in different documents. Also, the same geographic coordinate may be specified in WGS84footnote:fn3[World Geodetic System 1984] or another world wide reference system. Only the geographic coordinate specified using the geodetic datum identified in the official legislative proclamation by a nation is considered to be correct. All other representations are derived from the official specification and may contain errors or conversion inaccuracies. Defining a common geodetic datum WGS84 or another world wide reference system is recommended.
+
+At a minimum there needs to be some sort of header establishing title, date and other context; a description of which object is being described; and a set of Longitude / Latitude points describing the geometry supporting that object. 
+
+There exist three types of features – Locations, Limits, and Zones – defined in S-121. A fourth type of feature, a Space, may be defined by a state including an area and a height. For deposit with UN/DOALOS only the Locations, Limits, and Zones need to be addressed. 
+
+The central information feature in the S-121 schema is the “BasicAdministrativeUnit”.  This feature may be related to one or more “FeatureUnit” features describing points, limits and or zones that are related. Associated with each BasicAdministrativeUnit is one or more “Governance” features. The governance feature describes the context. It includes the title, date, a description and other contextual attributes. Normally there is one Governance feature related to one BasicAdministrativeUnit, although more complex structures are permitted in the S-121 data model such as a hierarchy of sets of BasicAdministrativeUnits and multiple Governance features. “FeatureUnit” features are simple geospatial features with both thematic and spatial attributes. The “RightsRestrictionsResponsibilities” and “Party” and “GroupParty” information features are effectively shared attributes by reference in the S-121 information schema. These can be flattened into simple attributes in an explicit textual exchange format or references may be used. References need to be limited because they are hard to follow when reading a printed output. The “Source” information feature is also a shared attribute by reference. Source references, when they are used, can be verbose and it is best to maintain these as attributes by reference in an exchange structure. 
+
+To support an explicit textual exchange format for deposit with UN/DOALOS it is necessary to define methods to support all of the elements in the S-121 schema; however, in practise only a few of these structures will be used. These structures are defined in later clauses in this document. 
+
+Generating explicit text is not difficult. It is essentially a number of formatted print statements (or XSLTfootnote:fn4[Extensible Stylesheet Language Transform] transform clausesfootnote:fn5[One strategy for generating Explicit Text output is to generate GML and then use an XSLT transform to produce text.]) in the software generating the output. The difficult task is unambiguously reading the Explicit Text Formatted data back into a computer system. If a complex structure is described it will require pointers and delimiters to be able to identify the information elements. These pointers and delimiters eliminate the simplicity and are self-defeating. Their use must be minimized.
+
+The approach adopted for deposit to UN/DOALOS is to require that deposits be only simple cases. This will mean that complex cases will need to be broken down into several simpler deposits. In general this is already what the common practise is for nation states. A generic piece of ingest software can then be developed that will only implement the simple cases. 
+
+There is a very wide diversity in how nation states describe their Maritime Limits and Boundaries in their own laws and proclamations. 
+
+The basic elements of the S-121 schema are the same and would be encoded in a text format in a similar manner.
+
+[[sec-support-for-metadata]]
+==== Support for Metadata
+
+S-100 requires Product Specifications to support a minimum set of metadata. 
+
+By default the character set encoding standard used should be UTF8 (the widely used internet common standard Unicode) which corresponds to ISO standard 10646-1. Even though this could be documented in the encoding schema for the particular output format it is best to always include it in the metadata. Similarly the language of the metadata and data is best documented in the metadata. Unless it is clear from the context, such as the fact that data is extracted from a particular nation states database, it is best to also include the contact information in the metadata.
+
+Minimum elements as required by ISO are:
+
+[[tbl-4]]
+[cols="a,a,a,a,a"]
+|===
+|Name|Description|Path 
+(in ISO 19115 standard)|Optionality 
+(for data set exchange)|Data Type
+h|*Title*|Name by which the cited resource is known.|MD_Metadata.identificationInfo > MD_DataIdentification.citation >CI_Citation.title|M|free text (CharacterString)
+h|*Abstract*|Brief narrative summary of the dataset’s contents|MD_Metadata.identificationInfo > MD_DataIdentification.abstract|M|free text (CharacterString)
+h|*Topic*|The main theme(s) of the dataset from the ISO list of topic areas.|MD_Metadata.identificationInfo >MD_DataIdentification.topicCategory|M|CodeList :  
+MD_TopicCategoryCode
+h|*Metadata contact name*|Name of the individual responsible for the metadata.|MD_Metadata.contact > CI_ResponsibleParty.individualName|C (documented if ‘organisationName’ and ‘positionName’ not documented)|free text (CharacterString)
+h|*Metadata contact organisation*|Organization responsible for the metadata.|MD_Metadata.contact > CI_ResponsibleParty.organisationName|C (documented if ‘individualName’ and ‘positionName’ not documented)|free text (CharacterString)
+h|*Metadata contact position*|Position of the individual responsible for the metadata.|MD_Metadata.contact > CI_ResponsibleParty.positionName|C (documented if ‘individualName’ and ‘organisationName’ not documented)|free text (CharacterString)
+h|*Metadata contact role*|Role of the individual responsible for the metadata.|MD_Metadata.contact > CI_ResponsibleParty.role > CI_RoleCode|C|Codelist   CI_RoleCode
+h|*Reference date*|reference date for the cited resource|MD_Metadata.identificationInfo > MD_DataIdentification.citation > CI_Citation.date > CI_Date.date|M|repeatable (Date  and 
+Codelist  CI_DateTypeCode)
+h|*Dataset language*|Languages of the dataset using standard ISO 639-2 three letter codes. Note: Three letter language code followed by an optional ISO 3166 three letter country code|MD_Metadata.identificationInfo > MD_DataIdentification.language|M|free text (CharacterString
+h|*Metadata date*|Metadata creation date|MD_Metadata.dateStamp|M|Date
+|===
+
+(M) = mandatory   (M*) = mandatory and repeatable +
+(C) = conditional   (C*) = conditional and repeatable +
+(O) = optional   (O*) = optional and repeatable
+
+Additional metadata elements from the ISO Metadata Standard specified by S-100:
+
+[[tbl-5]]
+[cols="a,a,a,a,a"]
+|===
+|Name|Description|Path 
+(in ISO 19115 standard)|Optionality 
+(for data set exchange)|Data Type
+|===
+
+[[tbl-6]]
+[cols="a,a,a,a,a"]
+|===
+h|*Metadata file identifier*|A unique phrase or string which uniquely identifies the metadata file|MD_Metadata.fileIdentifier|M|free text (CharacterString)
+h|*Metadata language*|Language of the metadata composed of an ISO 639- 2/T three letter language code and an ISO 3166-1 three letter country code.|MD_Metadata.language|C ( documented if not defined by the encoding process)|free text (CharacterString)
+h|*Metadata character set*|character coding standard in the metadata.|MD_Metadata.characterSet|C (documented if ISO 10646-1, is not used and not defined by the encoding process)|CodeList
+MD_CharacterSetCode
+h|*Metadata file parent identifier*|The unique name of the file or associated fileIdentifier, related in higher hierarchy to the file.|MD_Metadata.parentIdentifier|C (documented if the hierarchy of a higher level exists)|free text (CharacterString)
+h|*Metadata hierarchy level*|Level to which the metadata applies. (e.g. dataset)|MD_Metadata.hierarchyLevel|O (assumed to be ‘dataset’ if MD_Metadata.hierarchyLevel is omitted)|CodeList  
+MD_ScopeCode
+h|*Metadata hierarchy level name*|Name of the level to which the metadata applies. (e.g. dataset)|MD_Metadata.hierarchyLevelName|O (assumed to be ‘dataset’ if MD_Metadata.hierarchyLevelName is omitted)|free text (CharacterString)
+h|*Dataset reference date type*|Type of date|MD_Metadata.identificationInfo > MD_DataIdentification.citation > CI_Citation.date > CI_Date.dateType > CI_DateTypeCode|M|CodeList
+C_DateTypeCode
+h|*Dataset character set*|Character coding standard in the dataset.|MD_Metadata.identificationInfo > MD_DataIdentification.characterSet|C (documented if ISO 10646-1 is not used)|CodeList
+MD_CharacterSetCode
+h|*Extent*|Description of the geographic location of the dataset|MD_Metadata.identificationInfo > MD_DataIdentification.extent > EX_Extent > EX_GeographicDescription.geographicIdentifier > MD_Identifier.code|C (See notes 2 and 3)|free text (CharacterString)
+h|*West longitude*|Describes the spatial coverage of the dataset.|MD_Metadata.identificationInfo > MD_DataIdentification.extent > EX_Extent > EX_GeographicBoundingBox.westBoundLongitudea|C (See notes 2 and 3)a|Decimal fields containing west coordinates of the bounding box
+h|*East longitude*|Describes the spatial coverage of the dataset.|MD_Metadata.identificationInfo > MD_DataIdentification.extent > EX_Extent > EX_GeographicBoundingBox.eastBoundLongitude|C (See notes 2 and 3)a|Decimal fields containing east coordinates of the bounding box
+h|*South latitude*|Describes the spatial coverage of the dataset.|MD_Metadata.identificationInfo > MD_DataIdentification.extent > EX_Extent > EX_GeographicBoundingBox.southBoundLatitude|C (See notes 2 and 3)a|Decimal fields containing south coordinates of the bounding box
+h|*North latitude*|Describes the spatial coverage of the dataset.|MD_Metadata.identificationInfo > MD_DataIdentification.extent > EX_Extent > EX_GeographicBoundingBox.northBoundLatitude|C (See notes 2 and 3)a|Decimal fields containing north coordinates of the bounding box
+|===
+
+NOTE1 ISO 10646-1 - Information technology — Universal Multiple-Octet Coded Character Set 
+
+NOTE2 For a geographic dataset, include metadata for the geographic bounding box (West longitude, East longitude, South latitude and North latitude) or the geographic description identifier (The use of geographic bounding box is recommended).
+
+NOTE3 If any one of west longitude, east longitude, south latitude or north latitude exists, then the remaining three must also be completed

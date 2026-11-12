@@ -1,0 +1,10 @@
+[[sec-specification-scope]]
+== Specification Scope
+
+This Product Specification describes the S-121 data model for Maritime Limits and Boundaries. 
+
+*Scope ID:*   Global
+
+*Level:*   006- series
+
+*Level name:* S-121 Dataset
