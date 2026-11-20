@@ -1,33 +1,38 @@
-[[sec-feature-types]]
 == Feature Types
 
-A set of predefined feature types have been established for Marine Limits and Boundaries. The stereotype <MLB> (Maritime Limits and Boundaries) is used to identify the MLB Feature Types and Defining Objects.
+A set of predefined feature types have been established for Marine Limits and
+Boundaries. The stereotype <MLB> (Maritime Limits and Boundaries) is used to
+identify the MLB Feature Types and Defining Objects.
 
-Figure 2-1 below illustrates the relationship of the feature types to the defining objects. The information contained in the defining features’ attributes is included in the Feature Catalogue.
+<<figure-1>> below illustrates the relationship of the feature types to the
+defining objects. The information contained in the defining features' attributes
+is included in the Feature Catalogue.
 
-[[fig-mlb-features]]
+[[figure-1]]
 .MLB Features
-image::figure-mlb-features.png[]
+image::figure-mlb-features.png[width=600]
 
-The “location” feature types are:
+The "location" feature types are:
 
 *Limit Point* - A limit point is a point on the outer limit of a maritime zone.
 
-*Baseline Point* – A baseline point is a point on a baseline. 
+*Baseline Point* -- A baseline point is a point on a baseline.
 
-*Boundary Point* – A boundary point is a point on a boundary.
+*Boundary Point* -- A boundary point is a point on a boundary.
 
 *Contributing Point* - A point, used for computation.
 
-The “limit” feature types are:
+The "limit" feature types are:
 
-*Boundary -* A delimitation line between two or more entities.
+*Boundary* - A delimitation line between two or more entities.
 
-*International Boundary -* A delimitation between two or more States.
+*International Boundary* - A delimitation between two or more States.
 
-*Baseline* (Articles 5, 6, 7, 9, 10, 11, 13, 14 and 47 of UNCLOS) – A baseline is a line from which the breadth of the territorial sea, and other maritime zones is  measured. 
+*Baseline* (Articles 5, 6, 7, 9, 10, 11, 13, 14 and 47 of UNCLOS) -- A baseline
+is a line from which the breadth of the territorial sea, and other maritime
+zones is measured.
 
-*Normal Baseline* (Article 5 of UNCLOS).  
+*Normal Baseline* (Article 5 of UNCLOS).
 
 *Straight Baselines* (Articles 7of UNCLOS).
 
@@ -51,15 +56,18 @@ The “limit” feature types are:
 
 *Outer Limit of the Continental Shelf* (Article 76 and 83 of UNCLOS).
 
-*Outer Limit of the Roadstead* (Article 12 of UNCLOS) - The outer limit of a roadstead. 
+*Outer Limit of the Roadstead* (Article 12 of UNCLOS) - The outer limit of a
+roadstead.
 
-*Construction Line* – An arc used for constructing "Limit" or "Boundary" typically linking to a "Contributing Point".
+*Construction Line* -- An arc used for constructing "Limit" or "Boundary" typically
+linking to a "Contributing Point".
 
-The “zone” feature types are: 
+The "zone" feature types are:
 
 *Internal Waters* (Article 8 of UNCLOS).
 
-*Archipelagic Waters* (Article 49 of UNCLOS) – Archipelagic waters are waters enclosed by the archipelagic baselines drawn in accordance with Article 47.
+*Archipelagic Waters* (Article 49 of UNCLOS) -- Archipelagic waters are waters
+enclosed by the archipelagic baselines drawn in accordance with Article 47.
 
 *Territorial Sea* (Part II, Sections 1-3, of UNCLOS).
 
@@ -74,5 +82,3 @@ The “zone” feature types are:
 *High Seas* (Part VII of UNCLOS).
 
 *The Area* (Part XI of UNCLOS).
-
-.

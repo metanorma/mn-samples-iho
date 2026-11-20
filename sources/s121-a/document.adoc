@@ -15,8 +15,6 @@
 :imagesdir: images
 :annex: Annex A – Data Classification and Encoding Guide
 
-include::sections/00-front-matter.adoc[]
-
 include::sections/00-document-control.adoc[]
 
 include::sections/01-introduction.adoc[]
