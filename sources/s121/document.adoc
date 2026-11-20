@@ -14,8 +14,6 @@
 :data-uri-image:
 :imagesdir: images
 
-include::sections/00-front-matter.adoc[]
-
 include::sections/00-document-control.adoc[]
 
 include::sections/01-overview.adoc[]

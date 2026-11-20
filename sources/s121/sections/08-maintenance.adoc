@@ -1,4 +1,3 @@
-[[sec-maintenance]]
 == Maintenance
 
 There is no mechanism for maintenance defined in this Product Specification.
